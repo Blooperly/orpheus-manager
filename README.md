@@ -1,7 +1,7 @@
 # Orpheus Manager
 **Making the most horrible things on Earth and beyond a bit easier.**
 
-###Feature Checklist:
+##Feature Checklist:
 1. Character Creation / Management
     - Editable character sheet
     - Motivation tracking
