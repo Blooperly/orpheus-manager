@@ -1,0 +1,10 @@
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.exe.config
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.exe
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.pdb
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csprojResolveAssemblyReference.cache
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.CharacterSheet.resources
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.Properties.Resources.resources
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csproj.GenerateResource.Cache
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.exe
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
+c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.editCharacterName.resources
