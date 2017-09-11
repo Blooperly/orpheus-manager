@@ -8,3 +8,14 @@ c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusMana
 c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.exe
 c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
 c:\users\jbrown\documents\visual studio 2017\Projects\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.editCharacterName.resources
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.exe.config
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.exe
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.pdb
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csprojResolveAssemblyReference.cache
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.CharacterSheet.resources
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.editCharacterName.resources
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.Properties.Resources.resources
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csproj.GenerateResource.Cache
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csproj.CoreCompileInputs.cache
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.exe
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
