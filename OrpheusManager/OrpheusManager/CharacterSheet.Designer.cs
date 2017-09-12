@@ -79,7 +79,7 @@
             this.cMot1 = new System.Windows.Forms.Label();
             this.cMot2 = new System.Windows.Forms.Label();
             this.cMot3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.cBackground = new System.Windows.Forms.Label();
             this.divider2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dForceOfWill = new System.Windows.Forms.Label();
@@ -160,58 +160,106 @@
             this.label34 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.s1 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
+            this.s10 = new System.Windows.Forms.Label();
+            this.s3 = new System.Windows.Forms.Label();
+            this.s5 = new System.Windows.Forms.Label();
+            this.s4 = new System.Windows.Forms.Label();
+            this.s2 = new System.Windows.Forms.Label();
+            this.s8 = new System.Windows.Forms.Label();
+            this.s7 = new System.Windows.Forms.Label();
+            this.s9 = new System.Windows.Forms.Label();
+            this.s6 = new System.Windows.Forms.Label();
+            this.sr1 = new System.Windows.Forms.Label();
+            this.sr2 = new System.Windows.Forms.Label();
+            this.sr4 = new System.Windows.Forms.Label();
+            this.sr3 = new System.Windows.Forms.Label();
+            this.sr7 = new System.Windows.Forms.Label();
+            this.sr8 = new System.Windows.Forms.Label();
+            this.sr6 = new System.Windows.Forms.Label();
+            this.sr5 = new System.Windows.Forms.Label();
+            this.sr11 = new System.Windows.Forms.Label();
+            this.sr12 = new System.Windows.Forms.Label();
+            this.sr10 = new System.Windows.Forms.Label();
+            this.sr9 = new System.Windows.Forms.Label();
+            this.sr15 = new System.Windows.Forms.Label();
+            this.sr16 = new System.Windows.Forms.Label();
+            this.sr14 = new System.Windows.Forms.Label();
+            this.sr13 = new System.Windows.Forms.Label();
+            this.sr19 = new System.Windows.Forms.Label();
+            this.sr20 = new System.Windows.Forms.Label();
+            this.sr18 = new System.Windows.Forms.Label();
+            this.sr17 = new System.Windows.Forms.Label();
+            this.sr23 = new System.Windows.Forms.Label();
+            this.sr24 = new System.Windows.Forms.Label();
+            this.sr22 = new System.Windows.Forms.Label();
+            this.sr21 = new System.Windows.Forms.Label();
+            this.s16 = new System.Windows.Forms.Label();
+            this.s19 = new System.Windows.Forms.Label();
+            this.s17 = new System.Windows.Forms.Label();
+            this.s18 = new System.Windows.Forms.Label();
+            this.s12 = new System.Windows.Forms.Label();
+            this.s14 = new System.Windows.Forms.Label();
+            this.s15 = new System.Windows.Forms.Label();
+            this.s13 = new System.Windows.Forms.Label();
+            this.s20 = new System.Windows.Forms.Label();
+            this.s11 = new System.Windows.Forms.Label();
+            this.s23 = new System.Windows.Forms.Label();
+            this.s21 = new System.Windows.Forms.Label();
+            this.s22 = new System.Windows.Forms.Label();
+            this.s24 = new System.Windows.Forms.Label();
             this.humanityBar = new OrpheusManager.vertBar();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
+            this.c23 = new System.Windows.Forms.Label();
+            this.c21 = new System.Windows.Forms.Label();
+            this.c22 = new System.Windows.Forms.Label();
+            this.c24 = new System.Windows.Forms.Label();
+            this.c16 = new System.Windows.Forms.Label();
+            this.c19 = new System.Windows.Forms.Label();
+            this.c17 = new System.Windows.Forms.Label();
+            this.c18 = new System.Windows.Forms.Label();
+            this.c12 = new System.Windows.Forms.Label();
+            this.c14 = new System.Windows.Forms.Label();
+            this.c15 = new System.Windows.Forms.Label();
+            this.c13 = new System.Windows.Forms.Label();
+            this.c20 = new System.Windows.Forms.Label();
+            this.c11 = new System.Windows.Forms.Label();
+            this.cr23 = new System.Windows.Forms.Label();
+            this.cr24 = new System.Windows.Forms.Label();
+            this.cr22 = new System.Windows.Forms.Label();
+            this.cr21 = new System.Windows.Forms.Label();
+            this.cr19 = new System.Windows.Forms.Label();
+            this.cr20 = new System.Windows.Forms.Label();
+            this.cr18 = new System.Windows.Forms.Label();
+            this.cr17 = new System.Windows.Forms.Label();
+            this.cr15 = new System.Windows.Forms.Label();
+            this.cr16 = new System.Windows.Forms.Label();
+            this.cr14 = new System.Windows.Forms.Label();
+            this.cr13 = new System.Windows.Forms.Label();
+            this.cr11 = new System.Windows.Forms.Label();
+            this.cr12 = new System.Windows.Forms.Label();
+            this.cr10 = new System.Windows.Forms.Label();
+            this.cr9 = new System.Windows.Forms.Label();
+            this.cr7 = new System.Windows.Forms.Label();
+            this.cr8 = new System.Windows.Forms.Label();
+            this.cr6 = new System.Windows.Forms.Label();
+            this.cr5 = new System.Windows.Forms.Label();
+            this.cr3 = new System.Windows.Forms.Label();
+            this.cr4 = new System.Windows.Forms.Label();
+            this.cr2 = new System.Windows.Forms.Label();
+            this.cr1 = new System.Windows.Forms.Label();
+            this.c6 = new System.Windows.Forms.Label();
+            this.c9 = new System.Windows.Forms.Label();
+            this.c7 = new System.Windows.Forms.Label();
+            this.c8 = new System.Windows.Forms.Label();
+            this.c2 = new System.Windows.Forms.Label();
+            this.c4 = new System.Windows.Forms.Label();
+            this.c5 = new System.Windows.Forms.Label();
+            this.c3 = new System.Windows.Forms.Label();
+            this.c10 = new System.Windows.Forms.Label();
+            this.c1 = new System.Windows.Forms.Label();
+            this.addSkillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearSkillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -245,31 +293,34 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open...";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.characterNameToolStripMenuItem});
+            this.characterNameToolStripMenuItem,
+            this.addSkillToolStripMenuItem,
+            this.clearSkillsToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
@@ -346,9 +397,9 @@
             this.cArch3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cArch3.Location = new System.Drawing.Point(245, 155);
             this.cArch3.Name = "cArch3";
-            this.cArch3.Size = new System.Drawing.Size(14, 20);
+            this.cArch3.Size = new System.Drawing.Size(58, 20);
             this.cArch3.TabIndex = 6;
-            this.cArch3.Text = "-";
+            this.cArch3.Text = "Soldier";
             // 
             // titlePic
             // 
@@ -365,7 +416,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(440, 103);
+            this.label6.Location = new System.Drawing.Point(368, 276);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 8;
@@ -377,7 +428,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(440, 123);
+            this.label1.Location = new System.Drawing.Point(368, 296);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 9;
@@ -389,7 +440,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(440, 143);
+            this.label2.Location = new System.Drawing.Point(368, 316);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 10;
@@ -401,7 +452,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(440, 163);
+            this.label3.Location = new System.Drawing.Point(368, 336);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 11;
@@ -413,7 +464,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(440, 183);
+            this.label4.Location = new System.Drawing.Point(368, 356);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 20);
             this.label4.TabIndex = 12;
@@ -425,7 +476,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(440, 203);
+            this.label5.Location = new System.Drawing.Point(368, 376);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 20);
             this.label5.TabIndex = 13;
@@ -437,7 +488,7 @@
             this.cPerception.AutoSize = true;
             this.cPerception.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cPerception.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cPerception.Location = new System.Drawing.Point(535, 103);
+            this.cPerception.Location = new System.Drawing.Point(463, 276);
             this.cPerception.Name = "cPerception";
             this.cPerception.Size = new System.Drawing.Size(18, 20);
             this.cPerception.TabIndex = 14;
@@ -449,7 +500,7 @@
             this.cCognition.AutoSize = true;
             this.cCognition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCognition.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cCognition.Location = new System.Drawing.Point(535, 123);
+            this.cCognition.Location = new System.Drawing.Point(463, 296);
             this.cCognition.Name = "cCognition";
             this.cCognition.Size = new System.Drawing.Size(18, 20);
             this.cCognition.TabIndex = 15;
@@ -461,7 +512,7 @@
             this.cDexterity.AutoSize = true;
             this.cDexterity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cDexterity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cDexterity.Location = new System.Drawing.Point(535, 143);
+            this.cDexterity.Location = new System.Drawing.Point(463, 316);
             this.cDexterity.Name = "cDexterity";
             this.cDexterity.Size = new System.Drawing.Size(18, 20);
             this.cDexterity.TabIndex = 16;
@@ -473,7 +524,7 @@
             this.cVitality.AutoSize = true;
             this.cVitality.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cVitality.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cVitality.Location = new System.Drawing.Point(535, 163);
+            this.cVitality.Location = new System.Drawing.Point(463, 336);
             this.cVitality.Name = "cVitality";
             this.cVitality.Size = new System.Drawing.Size(18, 20);
             this.cVitality.TabIndex = 17;
@@ -485,7 +536,7 @@
             this.cCharisma.AutoSize = true;
             this.cCharisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCharisma.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cCharisma.Location = new System.Drawing.Point(535, 183);
+            this.cCharisma.Location = new System.Drawing.Point(463, 356);
             this.cCharisma.Name = "cCharisma";
             this.cCharisma.Size = new System.Drawing.Size(18, 20);
             this.cCharisma.TabIndex = 18;
@@ -497,7 +548,7 @@
             this.cWillpower.AutoSize = true;
             this.cWillpower.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cWillpower.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cWillpower.Location = new System.Drawing.Point(535, 203);
+            this.cWillpower.Location = new System.Drawing.Point(463, 376);
             this.cWillpower.Name = "cWillpower";
             this.cWillpower.Size = new System.Drawing.Size(18, 20);
             this.cWillpower.TabIndex = 19;
@@ -509,7 +560,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(454, 64);
+            this.label7.Location = new System.Drawing.Point(382, 237);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 20;
@@ -518,7 +569,7 @@
             // divider1
             // 
             this.divider1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.divider1.Location = new System.Drawing.Point(435, 81);
+            this.divider1.Location = new System.Drawing.Point(363, 254);
             this.divider1.Name = "divider1";
             this.divider1.Size = new System.Drawing.Size(120, 20);
             this.divider1.TabIndex = 21;
@@ -743,22 +794,22 @@
             this.cMot3.TabIndex = 42;
             this.cMot3.Text = "Death Wish";
             // 
-            // label8
+            // cBackground
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(245, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 20);
-            this.label8.TabIndex = 43;
-            this.label8.Text = "Background:";
+            this.cBackground.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cBackground.AutoSize = true;
+            this.cBackground.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBackground.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cBackground.Location = new System.Drawing.Point(245, 192);
+            this.cBackground.Name = "cBackground";
+            this.cBackground.Size = new System.Drawing.Size(99, 40);
+            this.cBackground.TabIndex = 43;
+            this.cBackground.Text = "Background:\r\nCriminal";
             // 
             // divider2
             // 
             this.divider2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.divider2.Location = new System.Drawing.Point(436, 255);
+            this.divider2.Location = new System.Drawing.Point(559, 254);
             this.divider2.Name = "divider2";
             this.divider2.Size = new System.Drawing.Size(120, 20);
             this.divider2.TabIndex = 57;
@@ -770,7 +821,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(443, 238);
+            this.label9.Location = new System.Drawing.Point(566, 237);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 20);
             this.label9.TabIndex = 56;
@@ -782,7 +833,7 @@
             this.dForceOfWill.AutoSize = true;
             this.dForceOfWill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dForceOfWill.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dForceOfWill.Location = new System.Drawing.Point(536, 377);
+            this.dForceOfWill.Location = new System.Drawing.Point(659, 376);
             this.dForceOfWill.Name = "dForceOfWill";
             this.dForceOfWill.Size = new System.Drawing.Size(18, 20);
             this.dForceOfWill.TabIndex = 55;
@@ -794,7 +845,7 @@
             this.dToughness.AutoSize = true;
             this.dToughness.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dToughness.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dToughness.Location = new System.Drawing.Point(536, 357);
+            this.dToughness.Location = new System.Drawing.Point(659, 356);
             this.dToughness.Name = "dToughness";
             this.dToughness.Size = new System.Drawing.Size(18, 20);
             this.dToughness.TabIndex = 54;
@@ -806,7 +857,7 @@
             this.dClarity.AutoSize = true;
             this.dClarity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dClarity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dClarity.Location = new System.Drawing.Point(536, 337);
+            this.dClarity.Location = new System.Drawing.Point(659, 336);
             this.dClarity.Name = "dClarity";
             this.dClarity.Size = new System.Drawing.Size(18, 20);
             this.dClarity.TabIndex = 53;
@@ -818,7 +869,7 @@
             this.dSpeed.AutoSize = true;
             this.dSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dSpeed.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dSpeed.Location = new System.Drawing.Point(536, 317);
+            this.dSpeed.Location = new System.Drawing.Point(659, 316);
             this.dSpeed.Name = "dSpeed";
             this.dSpeed.Size = new System.Drawing.Size(18, 20);
             this.dSpeed.TabIndex = 52;
@@ -830,7 +881,7 @@
             this.dRangedAtt.AutoSize = true;
             this.dRangedAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dRangedAtt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dRangedAtt.Location = new System.Drawing.Point(536, 297);
+            this.dRangedAtt.Location = new System.Drawing.Point(659, 296);
             this.dRangedAtt.Name = "dRangedAtt";
             this.dRangedAtt.Size = new System.Drawing.Size(18, 20);
             this.dRangedAtt.TabIndex = 51;
@@ -842,7 +893,7 @@
             this.dMeleeAtt.AutoSize = true;
             this.dMeleeAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dMeleeAtt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dMeleeAtt.Location = new System.Drawing.Point(536, 277);
+            this.dMeleeAtt.Location = new System.Drawing.Point(659, 276);
             this.dMeleeAtt.Name = "dMeleeAtt";
             this.dMeleeAtt.Size = new System.Drawing.Size(18, 20);
             this.dMeleeAtt.TabIndex = 50;
@@ -854,7 +905,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(441, 377);
+            this.label16.Location = new System.Drawing.Point(564, 376);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(104, 20);
             this.label16.TabIndex = 49;
@@ -866,7 +917,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(441, 357);
+            this.label17.Location = new System.Drawing.Point(564, 356);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(92, 20);
             this.label17.TabIndex = 48;
@@ -878,7 +929,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(441, 337);
+            this.label18.Location = new System.Drawing.Point(564, 336);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(56, 20);
             this.label18.TabIndex = 47;
@@ -890,7 +941,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(441, 317);
+            this.label19.Location = new System.Drawing.Point(564, 316);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(60, 20);
             this.label19.TabIndex = 46;
@@ -902,7 +953,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(441, 297);
+            this.label20.Location = new System.Drawing.Point(564, 296);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(95, 20);
             this.label20.TabIndex = 45;
@@ -914,7 +965,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label21.Location = new System.Drawing.Point(441, 277);
+            this.label21.Location = new System.Drawing.Point(564, 276);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(81, 20);
             this.label21.TabIndex = 44;
@@ -923,10 +974,10 @@
             // mPerception
             // 
             this.mPerception.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mPerception.Location = new System.Drawing.Point(570, 105);
+            this.mPerception.Location = new System.Drawing.Point(498, 278);
             this.mPerception.Name = "mPerception";
             this.mPerception.Size = new System.Drawing.Size(28, 20);
-            this.mPerception.TabIndex = 58;
+            this.mPerception.TabIndex = 0;
             this.mPerception.TextChanged += new System.EventHandler(this.mPerception_TextChanged);
             // 
             // label10
@@ -935,7 +986,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(563, 86);
+            this.label10.Location = new System.Drawing.Point(491, 259);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 13);
             this.label10.TabIndex = 59;
@@ -944,46 +995,46 @@
             // mWillpower
             // 
             this.mWillpower.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mWillpower.Location = new System.Drawing.Point(570, 203);
+            this.mWillpower.Location = new System.Drawing.Point(498, 376);
             this.mWillpower.Name = "mWillpower";
             this.mWillpower.Size = new System.Drawing.Size(28, 20);
-            this.mWillpower.TabIndex = 60;
+            this.mWillpower.TabIndex = 5;
             this.mWillpower.TextChanged += new System.EventHandler(this.mWillpower_TextChanged);
             // 
             // mCharisma
             // 
             this.mCharisma.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mCharisma.Location = new System.Drawing.Point(570, 183);
+            this.mCharisma.Location = new System.Drawing.Point(498, 356);
             this.mCharisma.Name = "mCharisma";
             this.mCharisma.Size = new System.Drawing.Size(28, 20);
-            this.mCharisma.TabIndex = 61;
+            this.mCharisma.TabIndex = 4;
             this.mCharisma.TextChanged += new System.EventHandler(this.mCharisma_TextChanged);
             // 
             // mVitality
             // 
             this.mVitality.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mVitality.Location = new System.Drawing.Point(570, 165);
+            this.mVitality.Location = new System.Drawing.Point(498, 338);
             this.mVitality.Name = "mVitality";
             this.mVitality.Size = new System.Drawing.Size(28, 20);
-            this.mVitality.TabIndex = 62;
+            this.mVitality.TabIndex = 3;
             this.mVitality.TextChanged += new System.EventHandler(this.mVitality_TextChanged);
             // 
             // mDexterity
             // 
             this.mDexterity.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mDexterity.Location = new System.Drawing.Point(570, 145);
+            this.mDexterity.Location = new System.Drawing.Point(498, 318);
             this.mDexterity.Name = "mDexterity";
             this.mDexterity.Size = new System.Drawing.Size(28, 20);
-            this.mDexterity.TabIndex = 63;
+            this.mDexterity.TabIndex = 2;
             this.mDexterity.TextChanged += new System.EventHandler(this.mDexterity_TextChanged);
             // 
             // mCognition
             // 
             this.mCognition.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mCognition.Location = new System.Drawing.Point(570, 125);
+            this.mCognition.Location = new System.Drawing.Point(498, 298);
             this.mCognition.Name = "mCognition";
             this.mCognition.Size = new System.Drawing.Size(28, 20);
-            this.mCognition.TabIndex = 64;
+            this.mCognition.TabIndex = 1;
             this.mCognition.TextChanged += new System.EventHandler(this.mCognition_TextChanged);
             // 
             // label11
@@ -992,7 +1043,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(441, 397);
+            this.label11.Location = new System.Drawing.Point(564, 396);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 20);
             this.label11.TabIndex = 65;
@@ -1004,7 +1055,7 @@
             this.dInitiative.AutoSize = true;
             this.dInitiative.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dInitiative.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dInitiative.Location = new System.Drawing.Point(536, 397);
+            this.dInitiative.Location = new System.Drawing.Point(659, 396);
             this.dInitiative.Name = "dInitiative";
             this.dInitiative.Size = new System.Drawing.Size(18, 20);
             this.dInitiative.TabIndex = 66;
@@ -1014,7 +1065,7 @@
             // 
             this.SW5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW5.AutoSize = true;
-            this.SW5.Location = new System.Drawing.Point(165, 611);
+            this.SW5.Location = new System.Drawing.Point(181, 612);
             this.SW5.Name = "SW5";
             this.SW5.Size = new System.Drawing.Size(15, 14);
             this.SW5.TabIndex = 84;
@@ -1024,7 +1075,7 @@
             // 
             this.SW9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW9.AutoSize = true;
-            this.SW9.Location = new System.Drawing.Point(249, 611);
+            this.SW9.Location = new System.Drawing.Point(265, 612);
             this.SW9.Name = "SW9";
             this.SW9.Size = new System.Drawing.Size(15, 14);
             this.SW9.TabIndex = 83;
@@ -1034,7 +1085,7 @@
             // 
             this.SW6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW6.AutoSize = true;
-            this.SW6.Location = new System.Drawing.Point(186, 611);
+            this.SW6.Location = new System.Drawing.Point(202, 612);
             this.SW6.Name = "SW6";
             this.SW6.Size = new System.Drawing.Size(15, 14);
             this.SW6.TabIndex = 82;
@@ -1044,7 +1095,7 @@
             // 
             this.SW8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW8.AutoSize = true;
-            this.SW8.Location = new System.Drawing.Point(228, 611);
+            this.SW8.Location = new System.Drawing.Point(244, 612);
             this.SW8.Name = "SW8";
             this.SW8.Size = new System.Drawing.Size(15, 14);
             this.SW8.TabIndex = 81;
@@ -1054,7 +1105,7 @@
             // 
             this.SW7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW7.AutoSize = true;
-            this.SW7.Location = new System.Drawing.Point(207, 611);
+            this.SW7.Location = new System.Drawing.Point(223, 612);
             this.SW7.Name = "SW7";
             this.SW7.Size = new System.Drawing.Size(15, 14);
             this.SW7.TabIndex = 80;
@@ -1064,7 +1115,7 @@
             // 
             this.SW10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW10.AutoSize = true;
-            this.SW10.Location = new System.Drawing.Point(270, 611);
+            this.SW10.Location = new System.Drawing.Point(286, 612);
             this.SW10.Name = "SW10";
             this.SW10.Size = new System.Drawing.Size(15, 14);
             this.SW10.TabIndex = 79;
@@ -1074,7 +1125,7 @@
             // 
             this.HW5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW5.AutoSize = true;
-            this.HW5.Location = new System.Drawing.Point(165, 582);
+            this.HW5.Location = new System.Drawing.Point(181, 583);
             this.HW5.Name = "HW5";
             this.HW5.Size = new System.Drawing.Size(15, 14);
             this.HW5.TabIndex = 78;
@@ -1084,7 +1135,7 @@
             // 
             this.HW9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW9.AutoSize = true;
-            this.HW9.Location = new System.Drawing.Point(249, 582);
+            this.HW9.Location = new System.Drawing.Point(265, 583);
             this.HW9.Name = "HW9";
             this.HW9.Size = new System.Drawing.Size(15, 14);
             this.HW9.TabIndex = 77;
@@ -1094,7 +1145,7 @@
             // 
             this.HW6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW6.AutoSize = true;
-            this.HW6.Location = new System.Drawing.Point(186, 582);
+            this.HW6.Location = new System.Drawing.Point(202, 583);
             this.HW6.Name = "HW6";
             this.HW6.Size = new System.Drawing.Size(15, 14);
             this.HW6.TabIndex = 76;
@@ -1104,7 +1155,7 @@
             // 
             this.HW8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW8.AutoSize = true;
-            this.HW8.Location = new System.Drawing.Point(228, 582);
+            this.HW8.Location = new System.Drawing.Point(244, 583);
             this.HW8.Name = "HW8";
             this.HW8.Size = new System.Drawing.Size(15, 14);
             this.HW8.TabIndex = 75;
@@ -1114,7 +1165,7 @@
             // 
             this.HW7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW7.AutoSize = true;
-            this.HW7.Location = new System.Drawing.Point(207, 582);
+            this.HW7.Location = new System.Drawing.Point(223, 583);
             this.HW7.Name = "HW7";
             this.HW7.Size = new System.Drawing.Size(15, 14);
             this.HW7.TabIndex = 74;
@@ -1124,7 +1175,7 @@
             // 
             this.HW10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW10.AutoSize = true;
-            this.HW10.Location = new System.Drawing.Point(270, 582);
+            this.HW10.Location = new System.Drawing.Point(286, 583);
             this.HW10.Name = "HW10";
             this.HW10.Size = new System.Drawing.Size(15, 14);
             this.HW10.TabIndex = 73;
@@ -1134,7 +1185,7 @@
             // 
             this.FW5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW5.AutoSize = true;
-            this.FW5.Location = new System.Drawing.Point(165, 553);
+            this.FW5.Location = new System.Drawing.Point(181, 554);
             this.FW5.Name = "FW5";
             this.FW5.Size = new System.Drawing.Size(15, 14);
             this.FW5.TabIndex = 72;
@@ -1144,7 +1195,7 @@
             // 
             this.FW9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW9.AutoSize = true;
-            this.FW9.Location = new System.Drawing.Point(249, 553);
+            this.FW9.Location = new System.Drawing.Point(265, 554);
             this.FW9.Name = "FW9";
             this.FW9.Size = new System.Drawing.Size(15, 14);
             this.FW9.TabIndex = 71;
@@ -1154,7 +1205,7 @@
             // 
             this.FW6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW6.AutoSize = true;
-            this.FW6.Location = new System.Drawing.Point(186, 553);
+            this.FW6.Location = new System.Drawing.Point(202, 554);
             this.FW6.Name = "FW6";
             this.FW6.Size = new System.Drawing.Size(15, 14);
             this.FW6.TabIndex = 70;
@@ -1164,7 +1215,7 @@
             // 
             this.FW8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW8.AutoSize = true;
-            this.FW8.Location = new System.Drawing.Point(228, 553);
+            this.FW8.Location = new System.Drawing.Point(244, 554);
             this.FW8.Name = "FW8";
             this.FW8.Size = new System.Drawing.Size(15, 14);
             this.FW8.TabIndex = 69;
@@ -1174,7 +1225,7 @@
             // 
             this.FW7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW7.AutoSize = true;
-            this.FW7.Location = new System.Drawing.Point(207, 553);
+            this.FW7.Location = new System.Drawing.Point(223, 554);
             this.FW7.Name = "FW7";
             this.FW7.Size = new System.Drawing.Size(15, 14);
             this.FW7.TabIndex = 68;
@@ -1184,7 +1235,7 @@
             // 
             this.FW10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW10.AutoSize = true;
-            this.FW10.Location = new System.Drawing.Point(270, 553);
+            this.FW10.Location = new System.Drawing.Point(286, 554);
             this.FW10.Name = "FW10";
             this.FW10.Size = new System.Drawing.Size(15, 14);
             this.FW10.TabIndex = 67;
@@ -1196,7 +1247,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(131, 517);
+            this.label12.Location = new System.Drawing.Point(25, 516);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(87, 24);
             this.label12.TabIndex = 85;
@@ -1206,7 +1257,7 @@
             // 
             this.SW3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW3.AutoSize = true;
-            this.SW3.Location = new System.Drawing.Point(123, 611);
+            this.SW3.Location = new System.Drawing.Point(139, 612);
             this.SW3.Name = "SW3";
             this.SW3.Size = new System.Drawing.Size(15, 14);
             this.SW3.TabIndex = 102;
@@ -1216,7 +1267,7 @@
             // 
             this.SW2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW2.AutoSize = true;
-            this.SW2.Location = new System.Drawing.Point(102, 611);
+            this.SW2.Location = new System.Drawing.Point(118, 612);
             this.SW2.Name = "SW2";
             this.SW2.Size = new System.Drawing.Size(15, 14);
             this.SW2.TabIndex = 100;
@@ -1226,7 +1277,7 @@
             // 
             this.SW1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW1.AutoSize = true;
-            this.SW1.Location = new System.Drawing.Point(81, 611);
+            this.SW1.Location = new System.Drawing.Point(97, 612);
             this.SW1.Name = "SW1";
             this.SW1.Size = new System.Drawing.Size(15, 14);
             this.SW1.TabIndex = 99;
@@ -1236,7 +1287,7 @@
             // 
             this.SW4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SW4.AutoSize = true;
-            this.SW4.Location = new System.Drawing.Point(144, 611);
+            this.SW4.Location = new System.Drawing.Point(160, 612);
             this.SW4.Name = "SW4";
             this.SW4.Size = new System.Drawing.Size(15, 14);
             this.SW4.TabIndex = 98;
@@ -1246,7 +1297,7 @@
             // 
             this.HW3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW3.AutoSize = true;
-            this.HW3.Location = new System.Drawing.Point(123, 582);
+            this.HW3.Location = new System.Drawing.Point(139, 583);
             this.HW3.Name = "HW3";
             this.HW3.Size = new System.Drawing.Size(15, 14);
             this.HW3.TabIndex = 96;
@@ -1256,7 +1307,7 @@
             // 
             this.HW2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW2.AutoSize = true;
-            this.HW2.Location = new System.Drawing.Point(102, 582);
+            this.HW2.Location = new System.Drawing.Point(118, 583);
             this.HW2.Name = "HW2";
             this.HW2.Size = new System.Drawing.Size(15, 14);
             this.HW2.TabIndex = 94;
@@ -1266,7 +1317,7 @@
             // 
             this.HW1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW1.AutoSize = true;
-            this.HW1.Location = new System.Drawing.Point(81, 582);
+            this.HW1.Location = new System.Drawing.Point(97, 583);
             this.HW1.Name = "HW1";
             this.HW1.Size = new System.Drawing.Size(15, 14);
             this.HW1.TabIndex = 93;
@@ -1276,7 +1327,7 @@
             // 
             this.HW4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HW4.AutoSize = true;
-            this.HW4.Location = new System.Drawing.Point(144, 582);
+            this.HW4.Location = new System.Drawing.Point(160, 583);
             this.HW4.Name = "HW4";
             this.HW4.Size = new System.Drawing.Size(15, 14);
             this.HW4.TabIndex = 92;
@@ -1286,7 +1337,7 @@
             // 
             this.FW3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW3.AutoSize = true;
-            this.FW3.Location = new System.Drawing.Point(123, 553);
+            this.FW3.Location = new System.Drawing.Point(139, 554);
             this.FW3.Name = "FW3";
             this.FW3.Size = new System.Drawing.Size(15, 14);
             this.FW3.TabIndex = 90;
@@ -1296,7 +1347,7 @@
             // 
             this.FW2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW2.AutoSize = true;
-            this.FW2.Location = new System.Drawing.Point(102, 553);
+            this.FW2.Location = new System.Drawing.Point(118, 554);
             this.FW2.Name = "FW2";
             this.FW2.Size = new System.Drawing.Size(15, 14);
             this.FW2.TabIndex = 88;
@@ -1306,7 +1357,7 @@
             // 
             this.FW1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW1.AutoSize = true;
-            this.FW1.Location = new System.Drawing.Point(81, 553);
+            this.FW1.Location = new System.Drawing.Point(97, 554);
             this.FW1.Name = "FW1";
             this.FW1.Size = new System.Drawing.Size(15, 14);
             this.FW1.TabIndex = 87;
@@ -1316,7 +1367,7 @@
             // 
             this.FW4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FW4.AutoSize = true;
-            this.FW4.Location = new System.Drawing.Point(144, 553);
+            this.FW4.Location = new System.Drawing.Point(160, 554);
             this.FW4.Name = "FW4";
             this.FW4.Size = new System.Drawing.Size(15, 14);
             this.FW4.TabIndex = 86;
@@ -1328,7 +1379,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(15, 553);
+            this.label13.Location = new System.Drawing.Point(31, 554);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 20);
             this.label13.TabIndex = 103;
@@ -1340,7 +1391,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(15, 582);
+            this.label14.Location = new System.Drawing.Point(31, 583);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(56, 20);
             this.label14.TabIndex = 104;
@@ -1352,7 +1403,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(15, 611);
+            this.label15.Location = new System.Drawing.Point(31, 612);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 20);
             this.label15.TabIndex = 105;
@@ -1364,7 +1415,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label22.Location = new System.Drawing.Point(91, 642);
+            this.label22.Location = new System.Drawing.Point(107, 643);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(33, 13);
             this.label22.TabIndex = 106;
@@ -1376,7 +1427,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label23.Location = new System.Drawing.Point(144, 642);
+            this.label23.Location = new System.Drawing.Point(160, 643);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(42, 13);
             this.label23.TabIndex = 107;
@@ -1388,7 +1439,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label24.Location = new System.Drawing.Point(205, 642);
+            this.label24.Location = new System.Drawing.Point(221, 643);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(38, 13);
             this.label24.TabIndex = 108;
@@ -1400,7 +1451,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label25.Location = new System.Drawing.Point(140, 363);
+            this.label25.Location = new System.Drawing.Point(25, 384);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(63, 24);
             this.label25.TabIndex = 109;
@@ -1412,7 +1463,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label26.Location = new System.Drawing.Point(35, 461);
+            this.label26.Location = new System.Drawing.Point(45, 474);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(112, 20);
             this.label26.TabIndex = 112;
@@ -1424,7 +1475,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label27.Location = new System.Drawing.Point(35, 432);
+            this.label27.Location = new System.Drawing.Point(45, 445);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(112, 20);
             this.label27.TabIndex = 111;
@@ -1436,7 +1487,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label28.Location = new System.Drawing.Point(35, 403);
+            this.label28.Location = new System.Drawing.Point(45, 416);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(103, 20);
             this.label28.TabIndex = 110;
@@ -1445,7 +1496,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(158, 405);
+            this.textBox1.Location = new System.Drawing.Point(168, 418);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(28, 20);
             this.textBox1.TabIndex = 113;
@@ -1453,7 +1504,7 @@
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Location = new System.Drawing.Point(158, 434);
+            this.textBox2.Location = new System.Drawing.Point(168, 447);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(28, 20);
             this.textBox2.TabIndex = 114;
@@ -1461,7 +1512,7 @@
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox3.Location = new System.Drawing.Point(158, 463);
+            this.textBox3.Location = new System.Drawing.Point(168, 476);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(28, 20);
             this.textBox3.TabIndex = 115;
@@ -1472,7 +1523,7 @@
             this.dMentalStrainMax.AutoSize = true;
             this.dMentalStrainMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dMentalStrainMax.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dMentalStrainMax.Location = new System.Drawing.Point(192, 405);
+            this.dMentalStrainMax.Location = new System.Drawing.Point(202, 418);
             this.dMentalStrainMax.Name = "dMentalStrainMax";
             this.dMentalStrainMax.Size = new System.Drawing.Size(26, 20);
             this.dMentalStrainMax.TabIndex = 116;
@@ -1484,7 +1535,7 @@
             this.dPhysicalStrainMax.AutoSize = true;
             this.dPhysicalStrainMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dPhysicalStrainMax.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dPhysicalStrainMax.Location = new System.Drawing.Point(192, 434);
+            this.dPhysicalStrainMax.Location = new System.Drawing.Point(202, 447);
             this.dPhysicalStrainMax.Name = "dPhysicalStrainMax";
             this.dPhysicalStrainMax.Size = new System.Drawing.Size(26, 20);
             this.dPhysicalStrainMax.TabIndex = 117;
@@ -1496,7 +1547,7 @@
             this.dSpiritualStrainMax.AutoSize = true;
             this.dSpiritualStrainMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dSpiritualStrainMax.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dSpiritualStrainMax.Location = new System.Drawing.Point(192, 463);
+            this.dSpiritualStrainMax.Location = new System.Drawing.Point(202, 476);
             this.dSpiritualStrainMax.Name = "dSpiritualStrainMax";
             this.dSpiritualStrainMax.Size = new System.Drawing.Size(26, 20);
             this.dSpiritualStrainMax.TabIndex = 118;
@@ -1532,7 +1583,7 @@
             this.textBox4.Location = new System.Drawing.Point(802, 642);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(28, 20);
-            this.textBox4.TabIndex = 120;
+            this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
@@ -1540,8 +1591,8 @@
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox5.Size = new System.Drawing.Size(375, 202);
-            this.textBox5.TabIndex = 124;
+            this.textBox5.Size = new System.Drawing.Size(355, 202);
+            this.textBox5.TabIndex = 9;
             // 
             // label31
             // 
@@ -1560,7 +1611,7 @@
             this.textBox6.Location = new System.Drawing.Point(807, 571);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(28, 20);
-            this.textBox6.TabIndex = 126;
+            this.textBox6.TabIndex = 6;
             // 
             // label33
             // 
@@ -1592,7 +1643,7 @@
             this.textBox7.Location = new System.Drawing.Point(831, 611);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(28, 20);
-            this.textBox7.TabIndex = 129;
+            this.textBox7.TabIndex = 7;
             // 
             // label32
             // 
@@ -1606,17 +1657,17 @@
             this.label32.TabIndex = 131;
             this.label32.Text = "Initiative";
             // 
-            // label35
+            // s1
             // 
-            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label35.Location = new System.Drawing.Point(773, 219);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(26, 13);
-            this.label35.TabIndex = 132;
-            this.label35.Text = "Skill";
+            this.s1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s1.AutoSize = true;
+            this.s1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s1.Location = new System.Drawing.Point(819, 219);
+            this.s1.Name = "s1";
+            this.s1.Size = new System.Drawing.Size(26, 13);
+            this.s1.TabIndex = 132;
+            this.s1.Text = "Skill";
             // 
             // label36
             // 
@@ -1624,612 +1675,1178 @@
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label36.Location = new System.Drawing.Point(738, 183);
+            this.label36.Location = new System.Drawing.Point(772, 189);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(58, 24);
             this.label36.TabIndex = 133;
             this.label36.Text = "Skills";
             // 
-            // label37
-            // 
-            this.label37.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label37.Location = new System.Drawing.Point(773, 337);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(26, 13);
-            this.label37.TabIndex = 134;
-            this.label37.Text = "Skill";
-            // 
-            // label38
-            // 
-            this.label38.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label38.Location = new System.Drawing.Point(773, 245);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(26, 13);
-            this.label38.TabIndex = 135;
-            this.label38.Text = "Skill";
-            // 
-            // label39
-            // 
-            this.label39.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label39.Location = new System.Drawing.Point(773, 271);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(26, 13);
-            this.label39.TabIndex = 136;
-            this.label39.Text = "Skill";
-            // 
-            // label40
-            // 
-            this.label40.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label40.Location = new System.Drawing.Point(773, 258);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(26, 13);
-            this.label40.TabIndex = 137;
-            this.label40.Text = "Skill";
-            // 
-            // label41
-            // 
-            this.label41.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label41.Location = new System.Drawing.Point(773, 232);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(26, 13);
-            this.label41.TabIndex = 138;
-            this.label41.Text = "Skill";
-            // 
-            // label42
-            // 
-            this.label42.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label42.Location = new System.Drawing.Point(773, 311);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(26, 13);
-            this.label42.TabIndex = 139;
-            this.label42.Text = "Skill";
-            // 
-            // label43
-            // 
-            this.label43.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label43.Location = new System.Drawing.Point(773, 298);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(26, 13);
-            this.label43.TabIndex = 140;
-            this.label43.Text = "Skill";
-            // 
-            // label44
-            // 
-            this.label44.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label44.Location = new System.Drawing.Point(773, 324);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(26, 13);
-            this.label44.TabIndex = 141;
-            this.label44.Text = "Skill";
-            // 
-            // label45
-            // 
-            this.label45.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label45.Location = new System.Drawing.Point(773, 285);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(26, 13);
-            this.label45.TabIndex = 142;
-            this.label45.Text = "Skill";
-            // 
-            // label46
-            // 
-            this.label46.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label46.Location = new System.Drawing.Point(754, 219);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(13, 13);
-            this.label46.TabIndex = 143;
-            this.label46.Text = "0";
-            // 
-            // label47
-            // 
-            this.label47.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label47.Location = new System.Drawing.Point(754, 232);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(13, 13);
-            this.label47.TabIndex = 144;
-            this.label47.Text = "0";
-            // 
-            // label48
-            // 
-            this.label48.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label48.Location = new System.Drawing.Point(754, 258);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(13, 13);
-            this.label48.TabIndex = 145;
-            this.label48.Text = "0";
-            // 
-            // label49
-            // 
-            this.label49.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label49.Location = new System.Drawing.Point(754, 245);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(13, 13);
-            this.label49.TabIndex = 146;
-            this.label49.Text = "0";
-            // 
-            // label50
-            // 
-            this.label50.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label50.Location = new System.Drawing.Point(754, 297);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(13, 13);
-            this.label50.TabIndex = 150;
-            this.label50.Text = "0";
-            // 
-            // label51
-            // 
-            this.label51.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label51.Location = new System.Drawing.Point(754, 310);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(13, 13);
-            this.label51.TabIndex = 149;
-            this.label51.Text = "0";
-            // 
-            // label52
-            // 
-            this.label52.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label52.Location = new System.Drawing.Point(754, 284);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(13, 13);
-            this.label52.TabIndex = 148;
-            this.label52.Text = "0";
-            // 
-            // label53
-            // 
-            this.label53.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label53.Location = new System.Drawing.Point(754, 271);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(13, 13);
-            this.label53.TabIndex = 147;
-            this.label53.Text = "0";
-            // 
-            // label54
-            // 
-            this.label54.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label54.Location = new System.Drawing.Point(754, 349);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(13, 13);
-            this.label54.TabIndex = 154;
-            this.label54.Text = "0";
-            // 
-            // label55
-            // 
-            this.label55.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label55.Location = new System.Drawing.Point(754, 362);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(13, 13);
-            this.label55.TabIndex = 153;
-            this.label55.Text = "0";
-            // 
-            // label56
-            // 
-            this.label56.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label56.Location = new System.Drawing.Point(754, 336);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(13, 13);
-            this.label56.TabIndex = 152;
-            this.label56.Text = "0";
-            // 
-            // label57
-            // 
-            this.label57.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label57.Location = new System.Drawing.Point(754, 323);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(13, 13);
-            this.label57.TabIndex = 151;
-            this.label57.Text = "0";
-            // 
-            // label58
-            // 
-            this.label58.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label58.Location = new System.Drawing.Point(754, 401);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(13, 13);
-            this.label58.TabIndex = 158;
-            this.label58.Text = "0";
-            // 
-            // label59
-            // 
-            this.label59.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label59.Location = new System.Drawing.Point(754, 414);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(13, 13);
-            this.label59.TabIndex = 157;
-            this.label59.Text = "0";
-            // 
-            // label60
-            // 
-            this.label60.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label60.Location = new System.Drawing.Point(754, 388);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(13, 13);
-            this.label60.TabIndex = 156;
-            this.label60.Text = "0";
-            // 
-            // label61
-            // 
-            this.label61.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label61.Location = new System.Drawing.Point(754, 375);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(13, 13);
-            this.label61.TabIndex = 155;
-            this.label61.Text = "0";
-            // 
-            // label62
-            // 
-            this.label62.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label62.Location = new System.Drawing.Point(754, 453);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(13, 13);
-            this.label62.TabIndex = 162;
-            this.label62.Text = "0";
-            // 
-            // label63
-            // 
-            this.label63.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label63.Location = new System.Drawing.Point(754, 466);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(13, 13);
-            this.label63.TabIndex = 161;
-            this.label63.Text = "0";
-            // 
-            // label64
-            // 
-            this.label64.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label64.Location = new System.Drawing.Point(754, 440);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(13, 13);
-            this.label64.TabIndex = 160;
-            this.label64.Text = "0";
-            // 
-            // label65
-            // 
-            this.label65.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label65.Location = new System.Drawing.Point(754, 427);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(13, 13);
-            this.label65.TabIndex = 159;
-            this.label65.Text = "0";
-            // 
-            // label66
-            // 
-            this.label66.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label66.Location = new System.Drawing.Point(754, 507);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(13, 13);
-            this.label66.TabIndex = 166;
-            this.label66.Text = "0";
-            // 
-            // label67
-            // 
-            this.label67.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label67.Location = new System.Drawing.Point(754, 520);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(13, 13);
-            this.label67.TabIndex = 165;
-            this.label67.Text = "0";
-            // 
-            // label68
-            // 
-            this.label68.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label68.Location = new System.Drawing.Point(754, 494);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(13, 13);
-            this.label68.TabIndex = 164;
-            this.label68.Text = "0";
-            // 
-            // label69
-            // 
-            this.label69.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label69.Location = new System.Drawing.Point(754, 481);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(13, 13);
-            this.label69.TabIndex = 163;
-            this.label69.Text = "0";
-            // 
-            // label70
-            // 
-            this.label70.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label70.Location = new System.Drawing.Point(773, 416);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(26, 13);
-            this.label70.TabIndex = 176;
-            this.label70.Text = "Skill";
-            // 
-            // label71
-            // 
-            this.label71.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label71.Location = new System.Drawing.Point(773, 455);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(26, 13);
-            this.label71.TabIndex = 175;
-            this.label71.Text = "Skill";
-            // 
-            // label72
-            // 
-            this.label72.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label72.Location = new System.Drawing.Point(773, 429);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(26, 13);
-            this.label72.TabIndex = 174;
-            this.label72.Text = "Skill";
-            // 
-            // label73
-            // 
-            this.label73.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label73.Location = new System.Drawing.Point(773, 442);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(26, 13);
-            this.label73.TabIndex = 173;
-            this.label73.Text = "Skill";
-            // 
-            // label74
-            // 
-            this.label74.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label74.Location = new System.Drawing.Point(773, 363);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(26, 13);
-            this.label74.TabIndex = 172;
-            this.label74.Text = "Skill";
-            // 
-            // label75
-            // 
-            this.label75.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label75.Location = new System.Drawing.Point(773, 389);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(26, 13);
-            this.label75.TabIndex = 171;
-            this.label75.Text = "Skill";
-            // 
-            // label76
-            // 
-            this.label76.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label76.Location = new System.Drawing.Point(773, 402);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(26, 13);
-            this.label76.TabIndex = 170;
-            this.label76.Text = "Skill";
-            // 
-            // label77
-            // 
-            this.label77.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label77.Location = new System.Drawing.Point(773, 376);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(26, 13);
-            this.label77.TabIndex = 169;
-            this.label77.Text = "Skill";
-            // 
-            // label78
-            // 
-            this.label78.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label78.Location = new System.Drawing.Point(773, 468);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(26, 13);
-            this.label78.TabIndex = 168;
-            this.label78.Text = "Skill";
-            // 
-            // label79
-            // 
-            this.label79.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label79.Location = new System.Drawing.Point(773, 350);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(26, 13);
-            this.label79.TabIndex = 167;
-            this.label79.Text = "Skill";
-            // 
-            // label81
-            // 
-            this.label81.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label81.Location = new System.Drawing.Point(773, 507);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(26, 13);
-            this.label81.TabIndex = 185;
-            this.label81.Text = "Skill";
-            // 
-            // label82
-            // 
-            this.label82.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label82.Location = new System.Drawing.Point(773, 481);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(26, 13);
-            this.label82.TabIndex = 184;
-            this.label82.Text = "Skill";
-            // 
-            // label83
-            // 
-            this.label83.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label83.Location = new System.Drawing.Point(773, 494);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(26, 13);
-            this.label83.TabIndex = 183;
-            this.label83.Text = "Skill";
-            // 
-            // label88
-            // 
-            this.label88.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label88.Location = new System.Drawing.Point(773, 520);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(26, 13);
-            this.label88.TabIndex = 178;
-            this.label88.Text = "Skill";
+            // s10
+            // 
+            this.s10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s10.AutoSize = true;
+            this.s10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s10.Location = new System.Drawing.Point(819, 337);
+            this.s10.Name = "s10";
+            this.s10.Size = new System.Drawing.Size(26, 13);
+            this.s10.TabIndex = 134;
+            this.s10.Text = "Skill";
+            // 
+            // s3
+            // 
+            this.s3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s3.AutoSize = true;
+            this.s3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s3.Location = new System.Drawing.Point(819, 245);
+            this.s3.Name = "s3";
+            this.s3.Size = new System.Drawing.Size(26, 13);
+            this.s3.TabIndex = 135;
+            this.s3.Text = "Skill";
+            // 
+            // s5
+            // 
+            this.s5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s5.AutoSize = true;
+            this.s5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s5.Location = new System.Drawing.Point(819, 271);
+            this.s5.Name = "s5";
+            this.s5.Size = new System.Drawing.Size(26, 13);
+            this.s5.TabIndex = 136;
+            this.s5.Text = "Skill";
+            // 
+            // s4
+            // 
+            this.s4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s4.AutoSize = true;
+            this.s4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s4.Location = new System.Drawing.Point(819, 258);
+            this.s4.Name = "s4";
+            this.s4.Size = new System.Drawing.Size(26, 13);
+            this.s4.TabIndex = 137;
+            this.s4.Text = "Skill";
+            // 
+            // s2
+            // 
+            this.s2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s2.AutoSize = true;
+            this.s2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s2.Location = new System.Drawing.Point(819, 232);
+            this.s2.Name = "s2";
+            this.s2.Size = new System.Drawing.Size(26, 13);
+            this.s2.TabIndex = 138;
+            this.s2.Text = "Skill";
+            // 
+            // s8
+            // 
+            this.s8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s8.AutoSize = true;
+            this.s8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s8.Location = new System.Drawing.Point(819, 311);
+            this.s8.Name = "s8";
+            this.s8.Size = new System.Drawing.Size(26, 13);
+            this.s8.TabIndex = 139;
+            this.s8.Text = "Skill";
+            // 
+            // s7
+            // 
+            this.s7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s7.AutoSize = true;
+            this.s7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s7.Location = new System.Drawing.Point(819, 298);
+            this.s7.Name = "s7";
+            this.s7.Size = new System.Drawing.Size(26, 13);
+            this.s7.TabIndex = 140;
+            this.s7.Text = "Skill";
+            // 
+            // s9
+            // 
+            this.s9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s9.AutoSize = true;
+            this.s9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s9.Location = new System.Drawing.Point(819, 324);
+            this.s9.Name = "s9";
+            this.s9.Size = new System.Drawing.Size(26, 13);
+            this.s9.TabIndex = 141;
+            this.s9.Text = "Skill";
+            // 
+            // s6
+            // 
+            this.s6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s6.AutoSize = true;
+            this.s6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s6.Location = new System.Drawing.Point(819, 285);
+            this.s6.Name = "s6";
+            this.s6.Size = new System.Drawing.Size(26, 13);
+            this.s6.TabIndex = 142;
+            this.s6.Text = "Skill";
+            // 
+            // sr1
+            // 
+            this.sr1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr1.Location = new System.Drawing.Point(786, 219);
+            this.sr1.Name = "sr1";
+            this.sr1.Size = new System.Drawing.Size(27, 13);
+            this.sr1.TabIndex = 143;
+            this.sr1.Text = "0";
+            this.sr1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr2
+            // 
+            this.sr2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr2.Location = new System.Drawing.Point(786, 232);
+            this.sr2.Name = "sr2";
+            this.sr2.Size = new System.Drawing.Size(27, 13);
+            this.sr2.TabIndex = 144;
+            this.sr2.Text = "0";
+            this.sr2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr4
+            // 
+            this.sr4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr4.Location = new System.Drawing.Point(786, 258);
+            this.sr4.Name = "sr4";
+            this.sr4.Size = new System.Drawing.Size(27, 13);
+            this.sr4.TabIndex = 145;
+            this.sr4.Text = "0";
+            this.sr4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr3
+            // 
+            this.sr3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr3.Location = new System.Drawing.Point(786, 245);
+            this.sr3.Name = "sr3";
+            this.sr3.Size = new System.Drawing.Size(27, 13);
+            this.sr3.TabIndex = 146;
+            this.sr3.Text = "0";
+            this.sr3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr7
+            // 
+            this.sr7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr7.Location = new System.Drawing.Point(786, 297);
+            this.sr7.Name = "sr7";
+            this.sr7.Size = new System.Drawing.Size(27, 13);
+            this.sr7.TabIndex = 150;
+            this.sr7.Text = "0";
+            this.sr7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr8
+            // 
+            this.sr8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr8.Location = new System.Drawing.Point(786, 310);
+            this.sr8.Name = "sr8";
+            this.sr8.Size = new System.Drawing.Size(27, 13);
+            this.sr8.TabIndex = 149;
+            this.sr8.Text = "0";
+            this.sr8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr6
+            // 
+            this.sr6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr6.Location = new System.Drawing.Point(786, 284);
+            this.sr6.Name = "sr6";
+            this.sr6.Size = new System.Drawing.Size(27, 13);
+            this.sr6.TabIndex = 148;
+            this.sr6.Text = "0";
+            this.sr6.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr5
+            // 
+            this.sr5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr5.Location = new System.Drawing.Point(786, 271);
+            this.sr5.Name = "sr5";
+            this.sr5.Size = new System.Drawing.Size(27, 13);
+            this.sr5.TabIndex = 147;
+            this.sr5.Text = "0";
+            this.sr5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr11
+            // 
+            this.sr11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr11.Location = new System.Drawing.Point(786, 349);
+            this.sr11.Name = "sr11";
+            this.sr11.Size = new System.Drawing.Size(27, 13);
+            this.sr11.TabIndex = 154;
+            this.sr11.Text = "0";
+            this.sr11.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr12
+            // 
+            this.sr12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr12.Location = new System.Drawing.Point(786, 362);
+            this.sr12.Name = "sr12";
+            this.sr12.Size = new System.Drawing.Size(27, 13);
+            this.sr12.TabIndex = 153;
+            this.sr12.Text = "0";
+            this.sr12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr10
+            // 
+            this.sr10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr10.Location = new System.Drawing.Point(786, 336);
+            this.sr10.Name = "sr10";
+            this.sr10.Size = new System.Drawing.Size(27, 13);
+            this.sr10.TabIndex = 152;
+            this.sr10.Text = "0";
+            this.sr10.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr9
+            // 
+            this.sr9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr9.Location = new System.Drawing.Point(786, 323);
+            this.sr9.Name = "sr9";
+            this.sr9.Size = new System.Drawing.Size(27, 13);
+            this.sr9.TabIndex = 151;
+            this.sr9.Text = "0";
+            this.sr9.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr15
+            // 
+            this.sr15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr15.Location = new System.Drawing.Point(786, 401);
+            this.sr15.Name = "sr15";
+            this.sr15.Size = new System.Drawing.Size(27, 13);
+            this.sr15.TabIndex = 158;
+            this.sr15.Text = "0";
+            this.sr15.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr16
+            // 
+            this.sr16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr16.Location = new System.Drawing.Point(786, 414);
+            this.sr16.Name = "sr16";
+            this.sr16.Size = new System.Drawing.Size(27, 13);
+            this.sr16.TabIndex = 157;
+            this.sr16.Text = "0";
+            this.sr16.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr14
+            // 
+            this.sr14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr14.Location = new System.Drawing.Point(786, 388);
+            this.sr14.Name = "sr14";
+            this.sr14.Size = new System.Drawing.Size(27, 13);
+            this.sr14.TabIndex = 156;
+            this.sr14.Text = "0";
+            this.sr14.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr13
+            // 
+            this.sr13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr13.Location = new System.Drawing.Point(786, 375);
+            this.sr13.Name = "sr13";
+            this.sr13.Size = new System.Drawing.Size(27, 13);
+            this.sr13.TabIndex = 155;
+            this.sr13.Text = "0";
+            this.sr13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr19
+            // 
+            this.sr19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr19.Location = new System.Drawing.Point(786, 453);
+            this.sr19.Name = "sr19";
+            this.sr19.Size = new System.Drawing.Size(27, 13);
+            this.sr19.TabIndex = 162;
+            this.sr19.Text = "0";
+            this.sr19.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr20
+            // 
+            this.sr20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr20.Location = new System.Drawing.Point(786, 466);
+            this.sr20.Name = "sr20";
+            this.sr20.Size = new System.Drawing.Size(27, 13);
+            this.sr20.TabIndex = 161;
+            this.sr20.Text = "0";
+            this.sr20.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr18
+            // 
+            this.sr18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr18.Location = new System.Drawing.Point(786, 440);
+            this.sr18.Name = "sr18";
+            this.sr18.Size = new System.Drawing.Size(27, 13);
+            this.sr18.TabIndex = 160;
+            this.sr18.Text = "0";
+            this.sr18.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr17
+            // 
+            this.sr17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr17.Location = new System.Drawing.Point(786, 427);
+            this.sr17.Name = "sr17";
+            this.sr17.Size = new System.Drawing.Size(27, 13);
+            this.sr17.TabIndex = 159;
+            this.sr17.Text = "0";
+            this.sr17.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr23
+            // 
+            this.sr23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr23.Location = new System.Drawing.Point(786, 505);
+            this.sr23.Name = "sr23";
+            this.sr23.Size = new System.Drawing.Size(27, 13);
+            this.sr23.TabIndex = 166;
+            this.sr23.Text = "0";
+            this.sr23.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr24
+            // 
+            this.sr24.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr24.Location = new System.Drawing.Point(786, 518);
+            this.sr24.Name = "sr24";
+            this.sr24.Size = new System.Drawing.Size(27, 13);
+            this.sr24.TabIndex = 165;
+            this.sr24.Text = "0";
+            this.sr24.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr22
+            // 
+            this.sr22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr22.Location = new System.Drawing.Point(786, 492);
+            this.sr22.Name = "sr22";
+            this.sr22.Size = new System.Drawing.Size(27, 13);
+            this.sr22.TabIndex = 164;
+            this.sr22.Text = "0";
+            this.sr22.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sr21
+            // 
+            this.sr21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sr21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sr21.Location = new System.Drawing.Point(786, 479);
+            this.sr21.Name = "sr21";
+            this.sr21.Size = new System.Drawing.Size(27, 13);
+            this.sr21.TabIndex = 163;
+            this.sr21.Text = "0";
+            this.sr21.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // s16
+            // 
+            this.s16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s16.AutoSize = true;
+            this.s16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s16.Location = new System.Drawing.Point(819, 416);
+            this.s16.Name = "s16";
+            this.s16.Size = new System.Drawing.Size(26, 13);
+            this.s16.TabIndex = 176;
+            this.s16.Text = "Skill";
+            // 
+            // s19
+            // 
+            this.s19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s19.AutoSize = true;
+            this.s19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s19.Location = new System.Drawing.Point(819, 455);
+            this.s19.Name = "s19";
+            this.s19.Size = new System.Drawing.Size(26, 13);
+            this.s19.TabIndex = 175;
+            this.s19.Text = "Skill";
+            // 
+            // s17
+            // 
+            this.s17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s17.AutoSize = true;
+            this.s17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s17.Location = new System.Drawing.Point(819, 429);
+            this.s17.Name = "s17";
+            this.s17.Size = new System.Drawing.Size(26, 13);
+            this.s17.TabIndex = 174;
+            this.s17.Text = "Skill";
+            // 
+            // s18
+            // 
+            this.s18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s18.AutoSize = true;
+            this.s18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s18.Location = new System.Drawing.Point(819, 442);
+            this.s18.Name = "s18";
+            this.s18.Size = new System.Drawing.Size(26, 13);
+            this.s18.TabIndex = 173;
+            this.s18.Text = "Skill";
+            // 
+            // s12
+            // 
+            this.s12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s12.AutoSize = true;
+            this.s12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s12.Location = new System.Drawing.Point(819, 363);
+            this.s12.Name = "s12";
+            this.s12.Size = new System.Drawing.Size(26, 13);
+            this.s12.TabIndex = 172;
+            this.s12.Text = "Skill";
+            // 
+            // s14
+            // 
+            this.s14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s14.AutoSize = true;
+            this.s14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s14.Location = new System.Drawing.Point(819, 389);
+            this.s14.Name = "s14";
+            this.s14.Size = new System.Drawing.Size(26, 13);
+            this.s14.TabIndex = 171;
+            this.s14.Text = "Skill";
+            // 
+            // s15
+            // 
+            this.s15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s15.AutoSize = true;
+            this.s15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s15.Location = new System.Drawing.Point(819, 402);
+            this.s15.Name = "s15";
+            this.s15.Size = new System.Drawing.Size(26, 13);
+            this.s15.TabIndex = 170;
+            this.s15.Text = "Skill";
+            // 
+            // s13
+            // 
+            this.s13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s13.AutoSize = true;
+            this.s13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s13.Location = new System.Drawing.Point(819, 376);
+            this.s13.Name = "s13";
+            this.s13.Size = new System.Drawing.Size(26, 13);
+            this.s13.TabIndex = 169;
+            this.s13.Text = "Skill";
+            // 
+            // s20
+            // 
+            this.s20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s20.AutoSize = true;
+            this.s20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s20.Location = new System.Drawing.Point(819, 468);
+            this.s20.Name = "s20";
+            this.s20.Size = new System.Drawing.Size(26, 13);
+            this.s20.TabIndex = 168;
+            this.s20.Text = "Skill";
+            // 
+            // s11
+            // 
+            this.s11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s11.AutoSize = true;
+            this.s11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s11.Location = new System.Drawing.Point(819, 350);
+            this.s11.Name = "s11";
+            this.s11.Size = new System.Drawing.Size(26, 13);
+            this.s11.TabIndex = 167;
+            this.s11.Text = "Skill";
+            // 
+            // s23
+            // 
+            this.s23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s23.AutoSize = true;
+            this.s23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s23.Location = new System.Drawing.Point(819, 507);
+            this.s23.Name = "s23";
+            this.s23.Size = new System.Drawing.Size(26, 13);
+            this.s23.TabIndex = 185;
+            this.s23.Text = "Skill";
+            // 
+            // s21
+            // 
+            this.s21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s21.AutoSize = true;
+            this.s21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s21.Location = new System.Drawing.Point(819, 481);
+            this.s21.Name = "s21";
+            this.s21.Size = new System.Drawing.Size(26, 13);
+            this.s21.TabIndex = 184;
+            this.s21.Text = "Skill";
+            // 
+            // s22
+            // 
+            this.s22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s22.AutoSize = true;
+            this.s22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s22.Location = new System.Drawing.Point(819, 494);
+            this.s22.Name = "s22";
+            this.s22.Size = new System.Drawing.Size(26, 13);
+            this.s22.TabIndex = 183;
+            this.s22.Text = "Skill";
+            // 
+            // s24
+            // 
+            this.s24.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.s24.AutoSize = true;
+            this.s24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.s24.Location = new System.Drawing.Point(819, 520);
+            this.s24.Name = "s24";
+            this.s24.Size = new System.Drawing.Size(26, 13);
+            this.s24.TabIndex = 178;
+            this.s24.Text = "Skill";
             // 
             // humanityBar
             // 
             this.humanityBar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.humanityBar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.humanityBar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.humanityBar.Location = new System.Drawing.Point(898, 172);
             this.humanityBar.Name = "humanityBar";
             this.humanityBar.Size = new System.Drawing.Size(23, 501);
             this.humanityBar.Step = 5;
+            this.humanityBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.humanityBar.TabIndex = 123;
-            this.humanityBar.UseWaitCursor = true;
-            this.humanityBar.Value = 55;
+            this.humanityBar.Value = 40;
             this.humanityBar.Visible = false;
             // 
-            // label80
+            // c23
             // 
-            this.label80.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label80.Location = new System.Drawing.Point(536, 417);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(30, 20);
-            this.label80.TabIndex = 187;
-            this.label80.Text = "xxx";
+            this.c23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c23.AutoSize = true;
+            this.c23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c23.Location = new System.Drawing.Point(726, 507);
+            this.c23.Name = "c23";
+            this.c23.Size = new System.Drawing.Size(26, 13);
+            this.c23.TabIndex = 235;
+            this.c23.Text = "Skill";
             // 
-            // label84
+            // c21
             // 
-            this.label84.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label84.Location = new System.Drawing.Point(441, 417);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(68, 20);
-            this.label84.TabIndex = 186;
-            this.label84.Text = "Stability:";
+            this.c21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c21.AutoSize = true;
+            this.c21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c21.Location = new System.Drawing.Point(726, 481);
+            this.c21.Name = "c21";
+            this.c21.Size = new System.Drawing.Size(26, 13);
+            this.c21.TabIndex = 234;
+            this.c21.Text = "Skill";
+            // 
+            // c22
+            // 
+            this.c22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c22.AutoSize = true;
+            this.c22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c22.Location = new System.Drawing.Point(726, 494);
+            this.c22.Name = "c22";
+            this.c22.Size = new System.Drawing.Size(26, 13);
+            this.c22.TabIndex = 233;
+            this.c22.Text = "Skill";
+            // 
+            // c24
+            // 
+            this.c24.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c24.AutoSize = true;
+            this.c24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c24.Location = new System.Drawing.Point(726, 520);
+            this.c24.Name = "c24";
+            this.c24.Size = new System.Drawing.Size(26, 13);
+            this.c24.TabIndex = 232;
+            this.c24.Text = "Skill";
+            // 
+            // c16
+            // 
+            this.c16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c16.AutoSize = true;
+            this.c16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c16.Location = new System.Drawing.Point(726, 416);
+            this.c16.Name = "c16";
+            this.c16.Size = new System.Drawing.Size(26, 13);
+            this.c16.TabIndex = 231;
+            this.c16.Text = "Skill";
+            // 
+            // c19
+            // 
+            this.c19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c19.AutoSize = true;
+            this.c19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c19.Location = new System.Drawing.Point(726, 455);
+            this.c19.Name = "c19";
+            this.c19.Size = new System.Drawing.Size(26, 13);
+            this.c19.TabIndex = 230;
+            this.c19.Text = "Skill";
+            // 
+            // c17
+            // 
+            this.c17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c17.AutoSize = true;
+            this.c17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c17.Location = new System.Drawing.Point(726, 429);
+            this.c17.Name = "c17";
+            this.c17.Size = new System.Drawing.Size(26, 13);
+            this.c17.TabIndex = 229;
+            this.c17.Text = "Skill";
+            // 
+            // c18
+            // 
+            this.c18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c18.AutoSize = true;
+            this.c18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c18.Location = new System.Drawing.Point(726, 442);
+            this.c18.Name = "c18";
+            this.c18.Size = new System.Drawing.Size(26, 13);
+            this.c18.TabIndex = 228;
+            this.c18.Text = "Skill";
+            // 
+            // c12
+            // 
+            this.c12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c12.AutoSize = true;
+            this.c12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c12.Location = new System.Drawing.Point(726, 363);
+            this.c12.Name = "c12";
+            this.c12.Size = new System.Drawing.Size(26, 13);
+            this.c12.TabIndex = 227;
+            this.c12.Text = "Skill";
+            // 
+            // c14
+            // 
+            this.c14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c14.AutoSize = true;
+            this.c14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c14.Location = new System.Drawing.Point(726, 389);
+            this.c14.Name = "c14";
+            this.c14.Size = new System.Drawing.Size(26, 13);
+            this.c14.TabIndex = 226;
+            this.c14.Text = "Skill";
+            // 
+            // c15
+            // 
+            this.c15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c15.AutoSize = true;
+            this.c15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c15.Location = new System.Drawing.Point(726, 402);
+            this.c15.Name = "c15";
+            this.c15.Size = new System.Drawing.Size(26, 13);
+            this.c15.TabIndex = 225;
+            this.c15.Text = "Skill";
+            // 
+            // c13
+            // 
+            this.c13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c13.AutoSize = true;
+            this.c13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c13.Location = new System.Drawing.Point(726, 376);
+            this.c13.Name = "c13";
+            this.c13.Size = new System.Drawing.Size(26, 13);
+            this.c13.TabIndex = 224;
+            this.c13.Text = "Skill";
+            // 
+            // c20
+            // 
+            this.c20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c20.AutoSize = true;
+            this.c20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c20.Location = new System.Drawing.Point(726, 468);
+            this.c20.Name = "c20";
+            this.c20.Size = new System.Drawing.Size(26, 13);
+            this.c20.TabIndex = 223;
+            this.c20.Text = "Skill";
+            // 
+            // c11
+            // 
+            this.c11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c11.AutoSize = true;
+            this.c11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c11.Location = new System.Drawing.Point(726, 350);
+            this.c11.Name = "c11";
+            this.c11.Size = new System.Drawing.Size(26, 13);
+            this.c11.TabIndex = 222;
+            this.c11.Text = "Skill";
+            // 
+            // cr23
+            // 
+            this.cr23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr23.Location = new System.Drawing.Point(685, 505);
+            this.cr23.Name = "cr23";
+            this.cr23.Size = new System.Drawing.Size(35, 13);
+            this.cr23.TabIndex = 221;
+            this.cr23.Text = "0";
+            this.cr23.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr24
+            // 
+            this.cr24.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr24.Location = new System.Drawing.Point(685, 518);
+            this.cr24.Name = "cr24";
+            this.cr24.Size = new System.Drawing.Size(35, 13);
+            this.cr24.TabIndex = 220;
+            this.cr24.Text = "0";
+            this.cr24.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr22
+            // 
+            this.cr22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr22.Location = new System.Drawing.Point(685, 492);
+            this.cr22.Name = "cr22";
+            this.cr22.Size = new System.Drawing.Size(35, 13);
+            this.cr22.TabIndex = 219;
+            this.cr22.Text = "0";
+            this.cr22.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr21
+            // 
+            this.cr21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr21.Location = new System.Drawing.Point(685, 479);
+            this.cr21.Name = "cr21";
+            this.cr21.Size = new System.Drawing.Size(35, 13);
+            this.cr21.TabIndex = 218;
+            this.cr21.Text = "0";
+            this.cr21.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr19
+            // 
+            this.cr19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr19.Location = new System.Drawing.Point(685, 453);
+            this.cr19.Name = "cr19";
+            this.cr19.Size = new System.Drawing.Size(35, 13);
+            this.cr19.TabIndex = 217;
+            this.cr19.Text = "0";
+            this.cr19.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr20
+            // 
+            this.cr20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr20.Location = new System.Drawing.Point(685, 466);
+            this.cr20.Name = "cr20";
+            this.cr20.Size = new System.Drawing.Size(35, 13);
+            this.cr20.TabIndex = 216;
+            this.cr20.Text = "0";
+            this.cr20.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr18
+            // 
+            this.cr18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr18.Location = new System.Drawing.Point(685, 440);
+            this.cr18.Name = "cr18";
+            this.cr18.Size = new System.Drawing.Size(35, 13);
+            this.cr18.TabIndex = 215;
+            this.cr18.Text = "0";
+            this.cr18.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr17
+            // 
+            this.cr17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr17.Location = new System.Drawing.Point(685, 427);
+            this.cr17.Name = "cr17";
+            this.cr17.Size = new System.Drawing.Size(35, 13);
+            this.cr17.TabIndex = 214;
+            this.cr17.Text = "0";
+            this.cr17.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr15
+            // 
+            this.cr15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr15.Location = new System.Drawing.Point(685, 401);
+            this.cr15.Name = "cr15";
+            this.cr15.Size = new System.Drawing.Size(35, 13);
+            this.cr15.TabIndex = 213;
+            this.cr15.Text = "0";
+            this.cr15.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr16
+            // 
+            this.cr16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr16.Location = new System.Drawing.Point(685, 414);
+            this.cr16.Name = "cr16";
+            this.cr16.Size = new System.Drawing.Size(35, 13);
+            this.cr16.TabIndex = 212;
+            this.cr16.Text = "0";
+            this.cr16.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr14
+            // 
+            this.cr14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr14.Location = new System.Drawing.Point(685, 388);
+            this.cr14.Name = "cr14";
+            this.cr14.Size = new System.Drawing.Size(35, 13);
+            this.cr14.TabIndex = 211;
+            this.cr14.Text = "0";
+            this.cr14.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr13
+            // 
+            this.cr13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr13.Location = new System.Drawing.Point(685, 375);
+            this.cr13.Name = "cr13";
+            this.cr13.Size = new System.Drawing.Size(35, 13);
+            this.cr13.TabIndex = 210;
+            this.cr13.Text = "0";
+            this.cr13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr11
+            // 
+            this.cr11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr11.Location = new System.Drawing.Point(685, 349);
+            this.cr11.Name = "cr11";
+            this.cr11.Size = new System.Drawing.Size(35, 13);
+            this.cr11.TabIndex = 209;
+            this.cr11.Text = "0";
+            this.cr11.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr12
+            // 
+            this.cr12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr12.Location = new System.Drawing.Point(685, 362);
+            this.cr12.Name = "cr12";
+            this.cr12.Size = new System.Drawing.Size(35, 13);
+            this.cr12.TabIndex = 208;
+            this.cr12.Text = "0";
+            this.cr12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr10
+            // 
+            this.cr10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr10.Location = new System.Drawing.Point(685, 336);
+            this.cr10.Name = "cr10";
+            this.cr10.Size = new System.Drawing.Size(35, 13);
+            this.cr10.TabIndex = 207;
+            this.cr10.Text = "0";
+            this.cr10.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr9
+            // 
+            this.cr9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr9.Location = new System.Drawing.Point(685, 323);
+            this.cr9.Name = "cr9";
+            this.cr9.Size = new System.Drawing.Size(35, 13);
+            this.cr9.TabIndex = 206;
+            this.cr9.Text = "0";
+            this.cr9.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr7
+            // 
+            this.cr7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr7.Location = new System.Drawing.Point(685, 297);
+            this.cr7.Name = "cr7";
+            this.cr7.Size = new System.Drawing.Size(35, 13);
+            this.cr7.TabIndex = 205;
+            this.cr7.Text = "0";
+            this.cr7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr8
+            // 
+            this.cr8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr8.Location = new System.Drawing.Point(685, 310);
+            this.cr8.Name = "cr8";
+            this.cr8.Size = new System.Drawing.Size(35, 13);
+            this.cr8.TabIndex = 204;
+            this.cr8.Text = "0";
+            this.cr8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr6
+            // 
+            this.cr6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr6.Location = new System.Drawing.Point(685, 284);
+            this.cr6.Name = "cr6";
+            this.cr6.Size = new System.Drawing.Size(35, 13);
+            this.cr6.TabIndex = 203;
+            this.cr6.Text = "0";
+            this.cr6.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr5
+            // 
+            this.cr5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr5.Location = new System.Drawing.Point(685, 271);
+            this.cr5.Name = "cr5";
+            this.cr5.Size = new System.Drawing.Size(35, 13);
+            this.cr5.TabIndex = 202;
+            this.cr5.Text = "0";
+            this.cr5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr3
+            // 
+            this.cr3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr3.Location = new System.Drawing.Point(685, 245);
+            this.cr3.Name = "cr3";
+            this.cr3.Size = new System.Drawing.Size(35, 13);
+            this.cr3.TabIndex = 201;
+            this.cr3.Text = "0";
+            this.cr3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr4
+            // 
+            this.cr4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr4.Location = new System.Drawing.Point(685, 258);
+            this.cr4.Name = "cr4";
+            this.cr4.Size = new System.Drawing.Size(35, 13);
+            this.cr4.TabIndex = 200;
+            this.cr4.Text = "0";
+            this.cr4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr2
+            // 
+            this.cr2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr2.Location = new System.Drawing.Point(685, 232);
+            this.cr2.Name = "cr2";
+            this.cr2.Size = new System.Drawing.Size(35, 13);
+            this.cr2.TabIndex = 199;
+            this.cr2.Text = "0";
+            this.cr2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // cr1
+            // 
+            this.cr1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cr1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cr1.Location = new System.Drawing.Point(685, 219);
+            this.cr1.Name = "cr1";
+            this.cr1.Size = new System.Drawing.Size(35, 13);
+            this.cr1.TabIndex = 198;
+            this.cr1.Text = "0";
+            this.cr1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // c6
+            // 
+            this.c6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c6.AutoSize = true;
+            this.c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c6.Location = new System.Drawing.Point(726, 285);
+            this.c6.Name = "c6";
+            this.c6.Size = new System.Drawing.Size(26, 13);
+            this.c6.TabIndex = 197;
+            this.c6.Text = "Skill";
+            // 
+            // c9
+            // 
+            this.c9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c9.AutoSize = true;
+            this.c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c9.Location = new System.Drawing.Point(726, 324);
+            this.c9.Name = "c9";
+            this.c9.Size = new System.Drawing.Size(26, 13);
+            this.c9.TabIndex = 196;
+            this.c9.Text = "Skill";
+            // 
+            // c7
+            // 
+            this.c7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c7.AutoSize = true;
+            this.c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c7.Location = new System.Drawing.Point(726, 298);
+            this.c7.Name = "c7";
+            this.c7.Size = new System.Drawing.Size(26, 13);
+            this.c7.TabIndex = 195;
+            this.c7.Text = "Skill";
+            // 
+            // c8
+            // 
+            this.c8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c8.AutoSize = true;
+            this.c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c8.Location = new System.Drawing.Point(726, 311);
+            this.c8.Name = "c8";
+            this.c8.Size = new System.Drawing.Size(26, 13);
+            this.c8.TabIndex = 194;
+            this.c8.Text = "Skill";
+            // 
+            // c2
+            // 
+            this.c2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c2.AutoSize = true;
+            this.c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c2.Location = new System.Drawing.Point(726, 232);
+            this.c2.Name = "c2";
+            this.c2.Size = new System.Drawing.Size(26, 13);
+            this.c2.TabIndex = 193;
+            this.c2.Text = "Skill";
+            // 
+            // c4
+            // 
+            this.c4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c4.AutoSize = true;
+            this.c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c4.Location = new System.Drawing.Point(726, 258);
+            this.c4.Name = "c4";
+            this.c4.Size = new System.Drawing.Size(26, 13);
+            this.c4.TabIndex = 192;
+            this.c4.Text = "Skill";
+            // 
+            // c5
+            // 
+            this.c5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c5.AutoSize = true;
+            this.c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c5.Location = new System.Drawing.Point(726, 271);
+            this.c5.Name = "c5";
+            this.c5.Size = new System.Drawing.Size(26, 13);
+            this.c5.TabIndex = 191;
+            this.c5.Text = "Skill";
+            // 
+            // c3
+            // 
+            this.c3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c3.AutoSize = true;
+            this.c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c3.Location = new System.Drawing.Point(726, 245);
+            this.c3.Name = "c3";
+            this.c3.Size = new System.Drawing.Size(26, 13);
+            this.c3.TabIndex = 190;
+            this.c3.Text = "Skill";
+            // 
+            // c10
+            // 
+            this.c10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c10.AutoSize = true;
+            this.c10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c10.Location = new System.Drawing.Point(726, 337);
+            this.c10.Name = "c10";
+            this.c10.Size = new System.Drawing.Size(26, 13);
+            this.c10.TabIndex = 189;
+            this.c10.Text = "Skill";
+            // 
+            // c1
+            // 
+            this.c1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.c1.AutoSize = true;
+            this.c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.c1.Location = new System.Drawing.Point(726, 219);
+            this.c1.Name = "c1";
+            this.c1.Size = new System.Drawing.Size(26, 13);
+            this.c1.TabIndex = 188;
+            this.c1.Text = "Skill";
+            // 
+            // addSkillToolStripMenuItem
+            // 
+            this.addSkillToolStripMenuItem.Name = "addSkillToolStripMenuItem";
+            this.addSkillToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.addSkillToolStripMenuItem.Text = "Add Skill";
+            this.addSkillToolStripMenuItem.Click += new System.EventHandler(this.addSkillToolStripMenuItem_Click);
+            // 
+            // clearSkillsToolStripMenuItem
+            // 
+            this.clearSkillsToolStripMenuItem.Name = "clearSkillsToolStripMenuItem";
+            this.clearSkillsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.clearSkillsToolStripMenuItem.Text = "Clear Skills";
+            this.clearSkillsToolStripMenuItem.Click += new System.EventHandler(this.clearSkillsToolStripMenuItem_Click);
             // 
             // CharacterSheet
             // 
@@ -2238,57 +2855,103 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(944, 685);
-            this.Controls.Add(this.label80);
-            this.Controls.Add(this.label84);
-            this.Controls.Add(this.label81);
-            this.Controls.Add(this.label82);
-            this.Controls.Add(this.label83);
-            this.Controls.Add(this.label88);
-            this.Controls.Add(this.label70);
-            this.Controls.Add(this.label71);
-            this.Controls.Add(this.label72);
-            this.Controls.Add(this.label73);
-            this.Controls.Add(this.label74);
-            this.Controls.Add(this.label75);
-            this.Controls.Add(this.label76);
-            this.Controls.Add(this.label77);
-            this.Controls.Add(this.label78);
-            this.Controls.Add(this.label79);
-            this.Controls.Add(this.label66);
-            this.Controls.Add(this.label67);
-            this.Controls.Add(this.label68);
-            this.Controls.Add(this.label69);
-            this.Controls.Add(this.label62);
-            this.Controls.Add(this.label63);
-            this.Controls.Add(this.label64);
-            this.Controls.Add(this.label65);
-            this.Controls.Add(this.label58);
-            this.Controls.Add(this.label59);
-            this.Controls.Add(this.label60);
-            this.Controls.Add(this.label61);
-            this.Controls.Add(this.label54);
-            this.Controls.Add(this.label55);
-            this.Controls.Add(this.label56);
-            this.Controls.Add(this.label57);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.label51);
-            this.Controls.Add(this.label52);
-            this.Controls.Add(this.label53);
-            this.Controls.Add(this.label49);
-            this.Controls.Add(this.label48);
-            this.Controls.Add(this.label47);
-            this.Controls.Add(this.label46);
-            this.Controls.Add(this.label45);
-            this.Controls.Add(this.label44);
-            this.Controls.Add(this.label43);
-            this.Controls.Add(this.label42);
-            this.Controls.Add(this.label41);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.label37);
+            this.Controls.Add(this.c23);
+            this.Controls.Add(this.c21);
+            this.Controls.Add(this.c22);
+            this.Controls.Add(this.c24);
+            this.Controls.Add(this.c16);
+            this.Controls.Add(this.c19);
+            this.Controls.Add(this.c17);
+            this.Controls.Add(this.c18);
+            this.Controls.Add(this.c12);
+            this.Controls.Add(this.c14);
+            this.Controls.Add(this.c15);
+            this.Controls.Add(this.c13);
+            this.Controls.Add(this.c20);
+            this.Controls.Add(this.c11);
+            this.Controls.Add(this.cr23);
+            this.Controls.Add(this.cr24);
+            this.Controls.Add(this.cr22);
+            this.Controls.Add(this.cr21);
+            this.Controls.Add(this.cr19);
+            this.Controls.Add(this.cr20);
+            this.Controls.Add(this.cr18);
+            this.Controls.Add(this.cr17);
+            this.Controls.Add(this.cr15);
+            this.Controls.Add(this.cr16);
+            this.Controls.Add(this.cr14);
+            this.Controls.Add(this.cr13);
+            this.Controls.Add(this.cr11);
+            this.Controls.Add(this.cr12);
+            this.Controls.Add(this.cr10);
+            this.Controls.Add(this.cr9);
+            this.Controls.Add(this.cr7);
+            this.Controls.Add(this.cr8);
+            this.Controls.Add(this.cr6);
+            this.Controls.Add(this.cr5);
+            this.Controls.Add(this.cr3);
+            this.Controls.Add(this.cr4);
+            this.Controls.Add(this.cr2);
+            this.Controls.Add(this.cr1);
+            this.Controls.Add(this.c6);
+            this.Controls.Add(this.c9);
+            this.Controls.Add(this.c7);
+            this.Controls.Add(this.c8);
+            this.Controls.Add(this.c2);
+            this.Controls.Add(this.c4);
+            this.Controls.Add(this.c5);
+            this.Controls.Add(this.c3);
+            this.Controls.Add(this.c10);
+            this.Controls.Add(this.c1);
+            this.Controls.Add(this.s23);
+            this.Controls.Add(this.s21);
+            this.Controls.Add(this.s22);
+            this.Controls.Add(this.s24);
+            this.Controls.Add(this.s16);
+            this.Controls.Add(this.s19);
+            this.Controls.Add(this.s17);
+            this.Controls.Add(this.s18);
+            this.Controls.Add(this.s12);
+            this.Controls.Add(this.s14);
+            this.Controls.Add(this.s15);
+            this.Controls.Add(this.s13);
+            this.Controls.Add(this.s20);
+            this.Controls.Add(this.s11);
+            this.Controls.Add(this.sr23);
+            this.Controls.Add(this.sr24);
+            this.Controls.Add(this.sr22);
+            this.Controls.Add(this.sr21);
+            this.Controls.Add(this.sr19);
+            this.Controls.Add(this.sr20);
+            this.Controls.Add(this.sr18);
+            this.Controls.Add(this.sr17);
+            this.Controls.Add(this.sr15);
+            this.Controls.Add(this.sr16);
+            this.Controls.Add(this.sr14);
+            this.Controls.Add(this.sr13);
+            this.Controls.Add(this.sr11);
+            this.Controls.Add(this.sr12);
+            this.Controls.Add(this.sr10);
+            this.Controls.Add(this.sr9);
+            this.Controls.Add(this.sr7);
+            this.Controls.Add(this.sr8);
+            this.Controls.Add(this.sr6);
+            this.Controls.Add(this.sr5);
+            this.Controls.Add(this.sr3);
+            this.Controls.Add(this.sr4);
+            this.Controls.Add(this.sr2);
+            this.Controls.Add(this.sr1);
+            this.Controls.Add(this.s6);
+            this.Controls.Add(this.s9);
+            this.Controls.Add(this.s7);
+            this.Controls.Add(this.s8);
+            this.Controls.Add(this.s2);
+            this.Controls.Add(this.s4);
+            this.Controls.Add(this.s5);
+            this.Controls.Add(this.s3);
+            this.Controls.Add(this.s10);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.label35);
+            this.Controls.Add(this.s1);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.textBox7);
@@ -2370,7 +3033,7 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cBackground);
             this.Controls.Add(this.cMot3);
             this.Controls.Add(this.cMot2);
             this.Controls.Add(this.cMot1);
@@ -2415,6 +3078,7 @@
             this.Controls.Add(this.cName);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(960, 39);
@@ -2484,7 +3148,7 @@
         private System.Windows.Forms.Label cMot1;
         private System.Windows.Forms.Label cMot2;
         private System.Windows.Forms.Label cMot3;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label cBackground;
         private System.Windows.Forms.PictureBox divider2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label dForceOfWill;
@@ -2566,57 +3230,105 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label s1;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label s10;
+        private System.Windows.Forms.Label s3;
+        private System.Windows.Forms.Label s5;
+        private System.Windows.Forms.Label s4;
+        private System.Windows.Forms.Label s2;
+        private System.Windows.Forms.Label s8;
+        private System.Windows.Forms.Label s7;
+        private System.Windows.Forms.Label s9;
+        private System.Windows.Forms.Label s6;
+        private System.Windows.Forms.Label sr1;
+        private System.Windows.Forms.Label sr2;
+        private System.Windows.Forms.Label sr4;
+        private System.Windows.Forms.Label sr3;
+        private System.Windows.Forms.Label sr7;
+        private System.Windows.Forms.Label sr8;
+        private System.Windows.Forms.Label sr6;
+        private System.Windows.Forms.Label sr5;
+        private System.Windows.Forms.Label sr11;
+        private System.Windows.Forms.Label sr12;
+        private System.Windows.Forms.Label sr10;
+        private System.Windows.Forms.Label sr9;
+        private System.Windows.Forms.Label sr15;
+        private System.Windows.Forms.Label sr16;
+        private System.Windows.Forms.Label sr14;
+        private System.Windows.Forms.Label sr13;
+        private System.Windows.Forms.Label sr19;
+        private System.Windows.Forms.Label sr20;
+        private System.Windows.Forms.Label sr18;
+        private System.Windows.Forms.Label sr17;
+        private System.Windows.Forms.Label sr23;
+        private System.Windows.Forms.Label sr24;
+        private System.Windows.Forms.Label sr22;
+        private System.Windows.Forms.Label sr21;
+        private System.Windows.Forms.Label s16;
+        private System.Windows.Forms.Label s19;
+        private System.Windows.Forms.Label s17;
+        private System.Windows.Forms.Label s18;
+        private System.Windows.Forms.Label s12;
+        private System.Windows.Forms.Label s14;
+        private System.Windows.Forms.Label s15;
+        private System.Windows.Forms.Label s13;
+        private System.Windows.Forms.Label s20;
+        private System.Windows.Forms.Label s11;
+        private System.Windows.Forms.Label s23;
+        private System.Windows.Forms.Label s21;
+        private System.Windows.Forms.Label s22;
+        private System.Windows.Forms.Label s24;
+        private System.Windows.Forms.Label c23;
+        private System.Windows.Forms.Label c21;
+        private System.Windows.Forms.Label c22;
+        private System.Windows.Forms.Label c24;
+        private System.Windows.Forms.Label c16;
+        private System.Windows.Forms.Label c19;
+        private System.Windows.Forms.Label c17;
+        private System.Windows.Forms.Label c18;
+        private System.Windows.Forms.Label c12;
+        private System.Windows.Forms.Label c14;
+        private System.Windows.Forms.Label c15;
+        private System.Windows.Forms.Label c13;
+        private System.Windows.Forms.Label c20;
+        private System.Windows.Forms.Label c11;
+        private System.Windows.Forms.Label cr23;
+        private System.Windows.Forms.Label cr24;
+        private System.Windows.Forms.Label cr22;
+        private System.Windows.Forms.Label cr21;
+        private System.Windows.Forms.Label cr19;
+        private System.Windows.Forms.Label cr20;
+        private System.Windows.Forms.Label cr18;
+        private System.Windows.Forms.Label cr17;
+        private System.Windows.Forms.Label cr15;
+        private System.Windows.Forms.Label cr16;
+        private System.Windows.Forms.Label cr14;
+        private System.Windows.Forms.Label cr13;
+        private System.Windows.Forms.Label cr11;
+        private System.Windows.Forms.Label cr12;
+        private System.Windows.Forms.Label cr10;
+        private System.Windows.Forms.Label cr9;
+        private System.Windows.Forms.Label cr7;
+        private System.Windows.Forms.Label cr8;
+        private System.Windows.Forms.Label cr6;
+        private System.Windows.Forms.Label cr5;
+        private System.Windows.Forms.Label cr3;
+        private System.Windows.Forms.Label cr4;
+        private System.Windows.Forms.Label cr2;
+        private System.Windows.Forms.Label cr1;
+        private System.Windows.Forms.Label c6;
+        private System.Windows.Forms.Label c9;
+        private System.Windows.Forms.Label c7;
+        private System.Windows.Forms.Label c8;
+        private System.Windows.Forms.Label c2;
+        private System.Windows.Forms.Label c4;
+        private System.Windows.Forms.Label c5;
+        private System.Windows.Forms.Label c3;
+        private System.Windows.Forms.Label c10;
+        private System.Windows.Forms.Label c1;
+        private System.Windows.Forms.ToolStripMenuItem addSkillToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearSkillsToolStripMenuItem;
     }
 }
 

@@ -12,37 +12,87 @@ namespace OrpheusManager
     public static class CDATA
     {
         public static byte version = 0x01;
-        public static string cName = "Larry Talbott";
+        public static string gameVersion = "The ORPHEUS Protocol v2.1.1";
+        public static string cName = "Rodrigo Ledesma";
         public static int cLevel = 0;
-        public static string cArch1 = "Werewolf";
-        public static string cArch2 = "";
+        public static string cArch1 = "Wendigo";
+        public static string cArch2 = "Weapon Bearer";
         public static string cArch3 = "";
-        public static int[] cAttributes = { 2, 2, 3, 4, 2, 2 };         // PER, COG, DEX, VIT, CHAR, WILL
+        public static string cBackground = "Criminal";
+        public static int[] cAttributes = { 2, 0, 4, 2, 3, 3 };         // PER, COG, DEX, VIT, CHAR, WILL
         public static int[] cAttributesTemp = { 0, 0, 0, 0, 0, 0 };
-        public static string cMot1 = "Loyalty to his crew";
-        public static string cMot2 = "Not afraid to get dirty";
-        public static string cMot3 = "Will do anything for his $";
+        public static string cMot1 = "Uniting Force";
+        public static string cMot2 = "Lady Killer";
+        public static string cMot3 = "Death Wish";
+
+        public static string[] cSkillName = { "Ranged Att. (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+        public static string[] cSkillRank = { "V", "IV", "III", "III", "I", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+
+        public static string[] cCkillName = { "Deception", "Contacts (Underworld)", "Security", "Intimidation", "Presence", "Sleight of Hand", "Athletics", "Empathy", "Investigation", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+        public static string[] cCkillRank = { "III", "II", "II", "V", "V", "I", "III", "I", "I", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+
+        public static void addSkill()
+        {
+            bool full = false;
+            int loc = 0;
+            if (EDATA.eSkillType == 0)
+            {
+                for (int i = 0; i < 24; i++)
+                {
+                    if (cSkillName[i] == "") { loc = i; break; }
+                    if (i == 23) full = true;
+                }
+                if (!full)
+                {
+                    cSkillName[loc] = EDATA.eSkillName;
+                    cSkillRank[loc] = EDATA.eSkillRank;
+                }
+            }
+            else if (EDATA.eSkillType == 1)
+            {
+                for (int i = 0; i < 24; i++)
+                {
+                    if (cCkillName[i] == "") { loc = i; break; }
+                    if (i == 23) full = true;
+                }
+                if (!full)
+                {
+                    cCkillName[loc] = EDATA.eSkillName;
+                    cCkillRank[loc] = EDATA.eSkillRank;
+                }
+            }
+        }
     }
 
     public static class DDATA
     {
         public static void deriveDATA()
         {
-            DDATA.dMeleeAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2) + CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[3];
-            DDATA.dRangedAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[0]) / 2) + CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[0];
-            DDATA.dSpeed = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2) + CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[3];
+            DDATA.dMeleeAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
+            DDATA.dRangedAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[0]) / 2);
+            DDATA.dSpeed = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
 
-            if (CDATA.cAttributes[1] >= 5) DDATA.dClarity = 2 + CDATA.cAttributesTemp[1];
-            else if (CDATA.cAttributes[1] >= 3) DDATA.dClarity = 1 + CDATA.cAttributesTemp[1];
-            else DDATA.dClarity = 0 + CDATA.cAttributesTemp[1];
+            DDATA.dMeleeAttTemp = CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[3];
+            DDATA.dRangedAttTemp = CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[0];
+            DDATA.dSpeedTemp = CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[3];
 
-            if (CDATA.cAttributes[3] >= 5) DDATA.dToughness = 2 + CDATA.cAttributesTemp[3];
-            else if (CDATA.cAttributes[3] >= 3) DDATA.dToughness = 1 + CDATA.cAttributesTemp[3];
-            else DDATA.dToughness = 0 + CDATA.cAttributesTemp[3];
+            if (CDATA.cAttributes[1] >= 5) DDATA.dClarity = 2;
+            else if (CDATA.cAttributes[1] >= 3) DDATA.dClarity = 1;
+            else DDATA.dClarity = 0;
 
-            if (CDATA.cAttributes[5] >= 5) DDATA.dForceOfWill = 2 + CDATA.cAttributesTemp[5];
-            else if (CDATA.cAttributes[5] >= 3) DDATA.dForceOfWill = 1 + CDATA.cAttributesTemp[5];
-            else DDATA.dForceOfWill = 0 + CDATA.cAttributesTemp[5];
+            DDATA.dClarityTemp = CDATA.cAttributesTemp[1];
+
+            if (CDATA.cAttributes[3] >= 5) DDATA.dToughness = 2;
+            else if (CDATA.cAttributes[3] >= 3) DDATA.dToughness = 1;
+            else DDATA.dToughness = 0;
+
+            DDATA.dToughnessTemp = CDATA.cAttributesTemp[3];
+
+            if (CDATA.cAttributes[5] >= 5) DDATA.dForceOfWill = 2;
+            else if (CDATA.cAttributes[5] >= 3) DDATA.dForceOfWill = 1;
+            else DDATA.dForceOfWill = 0;
+
+            DDATA.dForceOfWillTemp = CDATA.cAttributesTemp[5];
 
             int temp1;
             int temp2;
@@ -53,9 +103,21 @@ namespace OrpheusManager
             temp3 = CDATA.cAttributes[0] + CDATA.cAttributesTemp[0] + CDATA.cAttributes[2] + CDATA.cAttributesTemp[2] + dClarity;
 
 
-            if(temp1 >= temp2 && temp1 >= temp3) DDATA.dInitiative = temp1;
-            else if (temp2 >= temp1 && temp2 >= temp3) DDATA.dInitiative = temp2;
-            else DDATA.dInitiative = temp3;
+            if (temp1 >= temp2 && temp1 >= temp3)
+            {
+                DDATA.dInitiative = CDATA.cAttributes[2] + CDATA.cAttributes[5] + dClarity;
+                DDATA.dInitiativeTemp = CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[5];
+            }
+            else if (temp2 >= temp1 && temp2 >= temp3)
+            {
+                DDATA.dInitiative = CDATA.cAttributes[0] + CDATA.cAttributes[5] + dClarity;
+                DDATA.dInitiativeTemp = CDATA.cAttributesTemp[0] + CDATA.cAttributesTemp[5];
+            }
+            else
+            {
+                DDATA.dInitiative = CDATA.cAttributes[0] + CDATA.cAttributes[2] + dClarity;
+                DDATA.dInitiativeTemp = CDATA.cAttributesTemp[0] + CDATA.cAttributesTemp[2];
+            }
 
             dMentalStrainMax = CDATA.cAttributes[0] + (3 * CDATA.cAttributes[1]);
             dPhysicalStrainMax = CDATA.cAttributes[2] + (3 * CDATA.cAttributes[3]);
@@ -72,6 +134,21 @@ namespace OrpheusManager
         public static int dMentalStrainMax = 0;
         public static int dPhysicalStrainMax = 0;
         public static int dSpiritualStrainMax = 0;
+
+        public static int dMeleeAttTemp = 0;
+        public static int dRangedAttTemp = 0;
+        public static int dSpeedTemp = 0;
+        public static int dClarityTemp = 0;
+        public static int dToughnessTemp = 0;
+        public static int dForceOfWillTemp = 0;
+        public static int dInitiativeTemp = 0;
+    }
+
+    public static class EDATA
+    {
+        public static int eSkillType = 0;
+        public static string eSkillName = "";
+        public static string eSkillRank = "";
     }
 
     static class Program

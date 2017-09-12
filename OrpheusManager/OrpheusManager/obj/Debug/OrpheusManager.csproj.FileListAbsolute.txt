@@ -19,3 +19,15 @@ C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusMa
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csproj.CoreCompileInputs.cache
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.exe
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.exe.config
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.exe
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.pdb
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csprojResolveAssemblyReference.cache
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.CharacterSheet.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.editCharacterName.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.Properties.Resources.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csproj.GenerateResource.Cache
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.exe
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.addSkillForm.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.newCharacter.resources

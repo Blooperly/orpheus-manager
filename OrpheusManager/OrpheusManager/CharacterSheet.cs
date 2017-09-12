@@ -23,6 +23,9 @@ namespace OrpheusManager
         // Update Character Sheet
         private void writeDATA()
         {
+            // Window Settings
+            this.Text = "Orpheus Manager - " + CDATA.cName;
+
             // Load CDATA
             cName.Text = CDATA.cName;
             cLevel.Text = "Lv. " + CDATA.cLevel;
@@ -38,16 +41,31 @@ namespace OrpheusManager
             cMot1.Text = CDATA.cMot1;
             cMot2.Text = CDATA.cMot2;
             cMot3.Text = CDATA.cMot3;
+            cBackground.Text = "Background:\n" + CDATA.cBackground;
 
             // Load DDATA
             DDATA.deriveDATA();
-            dMeleeAtt.Text = DDATA.dMeleeAtt + "";
-            dRangedAtt.Text = DDATA.dRangedAtt + "";
-            dSpeed.Text = DDATA.dSpeed + "";
-            dClarity.Text = DDATA.dClarity + "";
-            dToughness.Text = DDATA.dToughness + "";
-            dForceOfWill.Text = DDATA.dForceOfWill + "";
-            dInitiative.Text = DDATA.dInitiative + "";
+            if (DDATA.dMeleeAttTemp > 0) dMeleeAtt.Text = DDATA.dMeleeAtt + " + " + DDATA.dMeleeAttTemp;
+            else if (DDATA.dMeleeAttTemp < 0) dMeleeAtt.Text = DDATA.dMeleeAtt + " - " + Math.Abs(DDATA.dMeleeAttTemp);
+            else dMeleeAtt.Text = DDATA.dMeleeAtt + "";
+            if (DDATA.dRangedAttTemp > 0) dRangedAtt.Text = DDATA.dRangedAtt + " + " + DDATA.dRangedAttTemp;
+            else if (DDATA.dRangedAttTemp < 0) dRangedAtt.Text = DDATA.dRangedAtt + " - " + Math.Abs(DDATA.dRangedAttTemp);
+            else dRangedAtt.Text = DDATA.dRangedAtt + "";
+            if (DDATA.dSpeedTemp > 0) dSpeed.Text = DDATA.dSpeed + " + " + DDATA.dSpeedTemp;
+            else if (DDATA.dSpeedTemp < 0) dSpeed.Text = DDATA.dSpeed + " - " + Math.Abs(DDATA.dSpeedTemp);
+            else dSpeed.Text = DDATA.dSpeed + "";
+            if (DDATA.dClarityTemp > 0) dClarity.Text = DDATA.dClarity + " + " + DDATA.dClarityTemp;
+            else if (DDATA.dClarityTemp < 0) dClarity.Text = DDATA.dClarity + " - " + Math.Abs(DDATA.dClarityTemp);
+            else dClarity.Text = DDATA.dClarity + "";
+            if (DDATA.dToughnessTemp > 0) dToughness.Text = DDATA.dToughness + " + " + DDATA.dToughnessTemp;
+            else if (DDATA.dToughnessTemp < 0) dToughness.Text = DDATA.dToughness + " - " + Math.Abs(DDATA.dToughnessTemp);
+            else dToughness.Text = DDATA.dToughness + "";
+            if (DDATA.dForceOfWillTemp > 0) dForceOfWill.Text = DDATA.dForceOfWill + " + " + DDATA.dForceOfWillTemp;
+            else if (DDATA.dForceOfWillTemp < 0) dForceOfWill.Text = DDATA.dForceOfWill + " - " + Math.Abs(DDATA.dForceOfWillTemp);
+            else dForceOfWill.Text = DDATA.dForceOfWill + "";
+            if (DDATA.dInitiativeTemp > 0) dInitiative.Text = DDATA.dInitiative + " + " + DDATA.dInitiativeTemp;
+            else if (DDATA.dInitiativeTemp < 0) dInitiative.Text = DDATA.dInitiative + " - " + Math.Abs(DDATA.dInitiativeTemp);
+            else dInitiative.Text = DDATA.dInitiative + "";
             dMentalStrainMax.Text = "/ " + DDATA.dMentalStrainMax;
             dPhysicalStrainMax.Text = "/ " + DDATA.dPhysicalStrainMax;
             dSpiritualStrainMax.Text = "/ " + DDATA.dSpiritualStrainMax;
@@ -424,6 +442,107 @@ namespace OrpheusManager
                 SW9.FlatStyle = FlatStyle.Standard;
                 SW10.FlatStyle = FlatStyle.Standard;
             }
+
+            // Skill Display
+            s1.Text = CDATA.cSkillName[0];
+            s2.Text = CDATA.cSkillName[1];
+            s3.Text = CDATA.cSkillName[2];
+            s4.Text = CDATA.cSkillName[3];
+            s5.Text = CDATA.cSkillName[4];
+            s6.Text = CDATA.cSkillName[5];
+            s7.Text = CDATA.cSkillName[6];
+            s8.Text = CDATA.cSkillName[7];
+            s9.Text = CDATA.cSkillName[8];
+            s10.Text = CDATA.cSkillName[9];
+            s11.Text = CDATA.cSkillName[10];
+            s12.Text = CDATA.cSkillName[11];
+            s13.Text = CDATA.cSkillName[12];
+            s14.Text = CDATA.cSkillName[13];
+            s15.Text = CDATA.cSkillName[14];
+            s16.Text = CDATA.cSkillName[15];
+            s17.Text = CDATA.cSkillName[16];
+            s18.Text = CDATA.cSkillName[17];
+            s19.Text = CDATA.cSkillName[18];
+            s20.Text = CDATA.cSkillName[19];
+            s21.Text = CDATA.cSkillName[20];
+            s22.Text = CDATA.cSkillName[21];
+            s23.Text = CDATA.cSkillName[22];
+            s24.Text = CDATA.cSkillName[23];
+
+            sr1.Text = CDATA.cSkillRank[0];
+            sr2.Text = CDATA.cSkillRank[1];
+            sr3.Text = CDATA.cSkillRank[2];
+            sr4.Text = CDATA.cSkillRank[3];
+            sr5.Text = CDATA.cSkillRank[4];
+            sr6.Text = CDATA.cSkillRank[5];
+            sr7.Text = CDATA.cSkillRank[6];
+            sr8.Text = CDATA.cSkillRank[7];
+            sr9.Text = CDATA.cSkillRank[8];
+            sr10.Text = CDATA.cSkillRank[9];
+            sr11.Text = CDATA.cSkillRank[10];
+            sr12.Text = CDATA.cSkillRank[11];
+            sr13.Text = CDATA.cSkillRank[12];
+            sr14.Text = CDATA.cSkillRank[13];
+            sr15.Text = CDATA.cSkillRank[14];
+            sr16.Text = CDATA.cSkillRank[15];
+            sr17.Text = CDATA.cSkillRank[16];
+            sr18.Text = CDATA.cSkillRank[17];
+            sr19.Text = CDATA.cSkillRank[18];
+            sr20.Text = CDATA.cSkillRank[19];
+            sr21.Text = CDATA.cSkillRank[20];
+            sr22.Text = CDATA.cSkillRank[21];
+            sr23.Text = CDATA.cSkillRank[22];
+            sr24.Text = CDATA.cSkillRank[23];
+
+            c1.Text = CDATA.cCkillName[0];
+            c2.Text = CDATA.cCkillName[1];
+            c3.Text = CDATA.cCkillName[2];
+            c4.Text = CDATA.cCkillName[3];
+            c5.Text = CDATA.cCkillName[4];
+            c6.Text = CDATA.cCkillName[5];
+            c7.Text = CDATA.cCkillName[6];
+            c8.Text = CDATA.cCkillName[7];
+            c9.Text = CDATA.cCkillName[8];
+            c10.Text = CDATA.cCkillName[9];
+            c11.Text = CDATA.cCkillName[10];
+            c12.Text = CDATA.cCkillName[11];
+            c13.Text = CDATA.cCkillName[12];
+            c14.Text = CDATA.cCkillName[13];
+            c15.Text = CDATA.cCkillName[14];
+            c16.Text = CDATA.cCkillName[15];
+            c17.Text = CDATA.cCkillName[16];
+            c18.Text = CDATA.cCkillName[17];
+            c19.Text = CDATA.cCkillName[18];
+            c20.Text = CDATA.cCkillName[19];
+            c21.Text = CDATA.cCkillName[20];
+            c22.Text = CDATA.cCkillName[21];
+            c23.Text = CDATA.cCkillName[22];
+            c24.Text = CDATA.cCkillName[23];
+
+            cr1.Text = CDATA.cCkillRank[0];
+            cr2.Text = CDATA.cCkillRank[1];
+            cr3.Text = CDATA.cCkillRank[2];
+            cr4.Text = CDATA.cCkillRank[3];
+            cr5.Text = CDATA.cCkillRank[4];
+            cr6.Text = CDATA.cCkillRank[5];
+            cr7.Text = CDATA.cCkillRank[6];
+            cr8.Text = CDATA.cCkillRank[7];
+            cr9.Text = CDATA.cCkillRank[8];
+            cr10.Text = CDATA.cCkillRank[9];
+            cr11.Text = CDATA.cCkillRank[10];
+            cr12.Text = CDATA.cCkillRank[11];
+            cr13.Text = CDATA.cCkillRank[12];
+            cr14.Text = CDATA.cCkillRank[13];
+            cr15.Text = CDATA.cCkillRank[14];
+            cr16.Text = CDATA.cCkillRank[15];
+            cr17.Text = CDATA.cCkillRank[16];
+            cr18.Text = CDATA.cCkillRank[17];
+            cr19.Text = CDATA.cCkillRank[18];
+            cr20.Text = CDATA.cCkillRank[19];
+            cr21.Text = CDATA.cCkillRank[20];
+            cr22.Text = CDATA.cCkillRank[21];
+            cr23.Text = CDATA.cCkillRank[22];
+            cr24.Text = CDATA.cCkillRank[23];
         }
         
         // On Load
@@ -549,6 +668,36 @@ namespace OrpheusManager
             Form eCharName = new editCharacterName();
             eCharName.ShowDialog();
             // Update Character Name
+            writeDATA();
+        }
+
+        private void addSkillToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open Dialog Box
+            Form aSkill = new addSkillForm();
+            aSkill.ShowDialog();
+            // Update Character
+            writeDATA();
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open Dialog Box
+            Form nChar = new newCharacter();
+            nChar.ShowDialog();
+            // Update Character
+            writeDATA();
+        }
+
+        private void clearSkillsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 24; i++)
+            {
+                CDATA.cSkillName[i] = "";
+                CDATA.cSkillRank[i] = "";
+                CDATA.cCkillName[i] = "";
+                CDATA.cCkillRank[i] = "";
+            }
             writeDATA();
         }
     }
