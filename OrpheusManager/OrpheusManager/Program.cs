@@ -12,11 +12,11 @@ namespace OrpheusManager
     public static class CDATA
     {
         public static byte version = 0x01;
-        public static string gameVersion = "The ORPHEUS Protocol v2.1.1";
+        public static string gameVersion = "The ORPHEUS Protocol v2.1.2";
         public static string cName = "Rodrigo Ledesma";
         public static int cLevel = 0;
-        public static string cArch1 = "Wendigo";
-        public static string cArch2 = "Weapon Bearer";
+        public static string cArch1 = "Weapon Bearer";
+        public static string cArch2 = "Wendigo";
         public static string cArch3 = "";
         public static string cBackground = "Criminal";
         public static int[] cAttributes = { 2, 0, 4, 2, 3, 3 };         // PER, COG, DEX, VIT, CHAR, WILL
@@ -25,11 +25,15 @@ namespace OrpheusManager
         public static string cMot2 = "Lady Killer";
         public static string cMot3 = "Death Wish";
 
-        public static string[] cSkillName = { "Ranged Att. (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
-        public static string[] cSkillRank = { "V", "IV", "III", "III", "I", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
 
-        public static string[] cCkillName = { "Deception", "Contacts (Underworld)", "Security", "Intimidation", "Presence", "Sleight of Hand", "Athletics", "Empathy", "Investigation", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
-        public static string[] cCkillRank = { "III", "II", "II", "V", "V", "I", "III", "I", "I", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+        public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+        public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+
+        public static string[] cCkillName = { "Rang. Att. (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+        public static string[] cCkillRank = { "V", "V", "III", "III", "I", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+
+        public static string[] cAbilityName = { "Inspiration", "Hungry Shadows", "", "", "", "", "", "", "", "", "", "" };
+        public static string[] cAbilityRank = { "II", "I", "", "", "", "", "", "", "", "", "", "" };
 
         public static void addSkill()
         {
@@ -37,10 +41,10 @@ namespace OrpheusManager
             int loc = 0;
             if (EDATA.eSkillType == 0)
             {
-                for (int i = 0; i < 24; i++)
+                for (int i = 0; i < 22; i++)
                 {
                     if (cSkillName[i] == "") { loc = i; break; }
-                    if (i == 23) full = true;
+                    if (i == 21) full = true;
                 }
                 if (!full)
                 {
@@ -50,16 +54,33 @@ namespace OrpheusManager
             }
             else if (EDATA.eSkillType == 1)
             {
-                for (int i = 0; i < 24; i++)
+                for (int i = 0; i < 22; i++)
                 {
                     if (cCkillName[i] == "") { loc = i; break; }
-                    if (i == 23) full = true;
+                    if (i == 21) full = true;
                 }
                 if (!full)
                 {
                     cCkillName[loc] = EDATA.eSkillName;
                     cCkillRank[loc] = EDATA.eSkillRank;
                 }
+            }
+        }
+
+        public static void addAbility()
+        {
+            bool full = false;
+            int loc = 0;
+
+            for (int i = 0; i < 12; i++)
+            {
+                if (cAbilityName[i] == "") { loc = i; break; }
+                if (i == 11) full = true;
+            }
+            if (!full)
+            {
+                cAbilityName[loc] = EDATA.eAbilityName;
+                cAbilityRank[loc] = EDATA.eAbilityRank;
             }
         }
     }
@@ -149,6 +170,9 @@ namespace OrpheusManager
         public static int eSkillType = 0;
         public static string eSkillName = "";
         public static string eSkillRank = "";
+
+        public static string eAbilityName = "";
+        public static string eAbilityRank = "";
     }
 
     static class Program

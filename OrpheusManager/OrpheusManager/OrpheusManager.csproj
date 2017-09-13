@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addAbilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addAbilityForm.Designer.cs">
+      <DependentUpon>addAbilityForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="addSkillForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="vertBar.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="addAbilityForm.resx">
+      <DependentUpon>addAbilityForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addSkillForm.resx">
       <DependentUpon>addSkillForm.cs</DependentUpon>
     </EmbeddedResource>

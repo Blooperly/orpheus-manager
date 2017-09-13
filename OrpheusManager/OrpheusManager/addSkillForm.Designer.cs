@@ -38,6 +38,7 @@
             this.addSkillAlert = new System.Windows.Forms.Label();
             this.radioC = new System.Windows.Forms.RadioButton();
             this.radioNC = new System.Windows.Forms.RadioButton();
+            this.addAbilityAlert = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -132,12 +133,21 @@
             this.radioNC.Text = "Non-Combat";
             this.radioNC.UseVisualStyleBackColor = true;
             // 
+            // addAbilityAlert
+            // 
+            this.addAbilityAlert.AutoSize = true;
+            this.addAbilityAlert.Location = new System.Drawing.Point(145, 192);
+            this.addAbilityAlert.Name = "addAbilityAlert";
+            this.addAbilityAlert.Size = new System.Drawing.Size(0, 13);
+            this.addAbilityAlert.TabIndex = 11;
+            // 
             // addSkillForm
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 233);
+            this.Controls.Add(this.addAbilityAlert);
             this.Controls.Add(this.radioNC);
             this.Controls.Add(this.radioC);
             this.Controls.Add(this.addSkillAlert);
@@ -168,5 +178,6 @@
         private System.Windows.Forms.Label addSkillAlert;
         private System.Windows.Forms.RadioButton radioC;
         private System.Windows.Forms.RadioButton radioNC;
+        private System.Windows.Forms.Label addAbilityAlert;
     }
 }

@@ -466,8 +466,6 @@ namespace OrpheusManager
             s20.Text = CDATA.cSkillName[19];
             s21.Text = CDATA.cSkillName[20];
             s22.Text = CDATA.cSkillName[21];
-            s23.Text = CDATA.cSkillName[22];
-            s24.Text = CDATA.cSkillName[23];
 
             sr1.Text = CDATA.cSkillRank[0];
             sr2.Text = CDATA.cSkillRank[1];
@@ -491,8 +489,6 @@ namespace OrpheusManager
             sr20.Text = CDATA.cSkillRank[19];
             sr21.Text = CDATA.cSkillRank[20];
             sr22.Text = CDATA.cSkillRank[21];
-            sr23.Text = CDATA.cSkillRank[22];
-            sr24.Text = CDATA.cSkillRank[23];
 
             c1.Text = CDATA.cCkillName[0];
             c2.Text = CDATA.cCkillName[1];
@@ -516,8 +512,6 @@ namespace OrpheusManager
             c20.Text = CDATA.cCkillName[19];
             c21.Text = CDATA.cCkillName[20];
             c22.Text = CDATA.cCkillName[21];
-            c23.Text = CDATA.cCkillName[22];
-            c24.Text = CDATA.cCkillName[23];
 
             cr1.Text = CDATA.cCkillRank[0];
             cr2.Text = CDATA.cCkillRank[1];
@@ -541,8 +535,33 @@ namespace OrpheusManager
             cr20.Text = CDATA.cCkillRank[19];
             cr21.Text = CDATA.cCkillRank[20];
             cr22.Text = CDATA.cCkillRank[21];
-            cr23.Text = CDATA.cCkillRank[22];
-            cr24.Text = CDATA.cCkillRank[23];
+            
+            // Ability Display
+            a1.Text = CDATA.cAbilityName[0];
+            a2.Text = CDATA.cAbilityName[1];
+            a3.Text = CDATA.cAbilityName[2];
+            a4.Text = CDATA.cAbilityName[3];
+            a5.Text = CDATA.cAbilityName[4];
+            a6.Text = CDATA.cAbilityName[5];
+            a7.Text = CDATA.cAbilityName[6];
+            a8.Text = CDATA.cAbilityName[7];
+            a9.Text = CDATA.cAbilityName[8];
+            a10.Text = CDATA.cAbilityName[9];
+            a11.Text = CDATA.cAbilityName[10];
+            a12.Text = CDATA.cAbilityName[11];
+
+            ar1.Text = CDATA.cAbilityRank[0];
+            ar2.Text = CDATA.cAbilityRank[1];
+            ar3.Text = CDATA.cAbilityRank[2];
+            ar4.Text = CDATA.cAbilityRank[3];
+            ar5.Text = CDATA.cAbilityRank[4];
+            ar6.Text = CDATA.cAbilityRank[5];
+            ar7.Text = CDATA.cAbilityRank[6];
+            ar8.Text = CDATA.cAbilityRank[7];
+            ar9.Text = CDATA.cAbilityRank[8];
+            ar10.Text = CDATA.cAbilityRank[9];
+            ar11.Text = CDATA.cAbilityRank[10];
+            ar12.Text = CDATA.cAbilityRank[11];
         }
         
         // On Load
@@ -680,7 +699,7 @@ namespace OrpheusManager
             writeDATA();
         }
 
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        private void newCharacter_Click(object sender, EventArgs e)
         {
             // Open Dialog Box
             Form nChar = new newCharacter();
@@ -691,12 +710,31 @@ namespace OrpheusManager
 
         private void clearSkillsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 24; i++)
+            for (int i = 0; i < 22; i++)
             {
                 CDATA.cSkillName[i] = "";
                 CDATA.cSkillRank[i] = "";
                 CDATA.cCkillName[i] = "";
                 CDATA.cCkillRank[i] = "";
+            }
+            writeDATA();
+        }
+
+        private void addAbilityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open Dialog Box
+            Form aAbility = new addAbilityForm();
+            aAbility.ShowDialog();
+            // Update Character
+            writeDATA();
+        }
+
+        private void clearAbilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 12; i++)
+            {
+                CDATA.cAbilityName[i] = "";
+                CDATA.cAbilityRank[i] = "";
             }
             writeDATA();
         }
