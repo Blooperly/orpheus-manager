@@ -567,26 +567,53 @@ namespace OrpheusManager
         // On Load
         private void CharacterSheet_Load(object sender, EventArgs e)
         {
-            // Load Title Image
-            System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStream = myAssembly.GetManifestResourceStream("OrpheusManager.archetypeWendigo.png");
-            Bitmap image = new Bitmap(myStream);
-            archetypePic.Image = image;
+            writeDATA();
 
             // Load Archetype Image
+            System.Reflection.Assembly myAssemblyHermetic = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamHermetic = myAssemblyHermetic.GetManifestResourceStream("OrpheusManager.archetypeHermetic.png");
+            Bitmap imageHermetic = new Bitmap(myStreamHermetic);
+
+            System.Reflection.Assembly myAssemblyOccultist = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamOccultist = myAssemblyOccultist.GetManifestResourceStream("OrpheusManager.archetypeOccultist.png");
+            Bitmap imageOccultist = new Bitmap(myStreamOccultist);
+
+            System.Reflection.Assembly myAssemblyPsychic = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamPsychic = myAssemblyPsychic.GetManifestResourceStream("OrpheusManager.archetypePsychic.png");
+            Bitmap imagePsychic = new Bitmap(myStreamPsychic);
+
+            System.Reflection.Assembly myAssemblyWeapon = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamWeapon = myAssemblyWeapon.GetManifestResourceStream("OrpheusManager.archetypeWeapon.png");
+            Bitmap imageWeapon = new Bitmap(myStreamWeapon);
+
+            System.Reflection.Assembly myAssemblyWendigo = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamWendigo = myAssemblyWendigo.GetManifestResourceStream("OrpheusManager.archetypeWendigo.png");
+            Bitmap imageWendigo = new Bitmap(myStreamWendigo);
+
+            System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
+            Bitmap imageWitch = new Bitmap(myStreamWitch);
+
+            if (CDATA.cArch1 == "Hermetic Magician") archetypePic.Image = imageHermetic;
+            else if (CDATA.cArch1 == "Occultist") archetypePic.Image = imageOccultist;
+            else if (CDATA.cArch1 == "Psychic") archetypePic.Image = imagePsychic;
+            else if (CDATA.cArch1 == "Weapon Bearer") archetypePic.Image = imageWeapon;
+            else if (CDATA.cArch1 == "Wendigo") archetypePic.Image = imageWendigo;
+            else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
+            else archetypePic.Image = imageHermetic;
+
+            // Load Title Image
             System.Reflection.Assembly myAssembly2 = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStream2 = myAssembly.GetManifestResourceStream("OrpheusManager.OrpheusTitle.png");
+            Stream myStream2 = myAssembly2.GetManifestResourceStream("OrpheusManager.OrpheusTitle.png");
             Bitmap image2 = new Bitmap(myStream2);
             titlePic.Image = image2;
 
             // Load Divider Image
             System.Reflection.Assembly myAssembly3 = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStream3 = myAssembly.GetManifestResourceStream("OrpheusManager.divider.png");
+            Stream myStream3 = myAssembly3.GetManifestResourceStream("OrpheusManager.divider.png");
             Bitmap image3 = new Bitmap(myStream3);
             divider1.Image = image3;
             divider2.Image = image3;
-
-            writeDATA();
         }
 
         // Modifier Boxes
@@ -706,6 +733,39 @@ namespace OrpheusManager
             nChar.ShowDialog();
             // Update Character
             writeDATA();
+
+            // Load Archetype Image
+            System.Reflection.Assembly myAssemblyHermetic = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamHermetic = myAssemblyHermetic.GetManifestResourceStream("OrpheusManager.archetypeHermetic.png");
+            Bitmap imageHermetic = new Bitmap(myStreamHermetic);
+
+            System.Reflection.Assembly myAssemblyOccultist = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamOccultist = myAssemblyOccultist.GetManifestResourceStream("OrpheusManager.archetypeOccultist.png");
+            Bitmap imageOccultist = new Bitmap(myStreamOccultist);
+
+            System.Reflection.Assembly myAssemblyPsychic = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamPsychic = myAssemblyPsychic.GetManifestResourceStream("OrpheusManager.archetypePsychic.png");
+            Bitmap imagePsychic = new Bitmap(myStreamPsychic);
+
+            System.Reflection.Assembly myAssemblyWeapon = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamWeapon = myAssemblyWeapon.GetManifestResourceStream("OrpheusManager.archetypeWeapon.png");
+            Bitmap imageWeapon = new Bitmap(myStreamWeapon);
+
+            System.Reflection.Assembly myAssemblyWendigo = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamWendigo = myAssemblyWendigo.GetManifestResourceStream("OrpheusManager.archetypeWendigo.png");
+            Bitmap imageWendigo = new Bitmap(myStreamWendigo);
+
+            System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
+            Bitmap imageWitch = new Bitmap(myStreamWitch);
+
+            if (CDATA.cArch1 == "Hermetic Magician") archetypePic.Image = imageHermetic;
+            else if (CDATA.cArch1 == "Occultist") archetypePic.Image = imageOccultist;
+            else if (CDATA.cArch1 == "Psychic") archetypePic.Image = imagePsychic;
+            else if (CDATA.cArch1 == "Weapon Bearer") archetypePic.Image = imageWeapon;
+            else if (CDATA.cArch1 == "Wendigo") archetypePic.Image = imageWendigo;
+            else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
+            else archetypePic.Image = imageHermetic;
         }
 
         private void clearSkillsToolStripMenuItem_Click(object sender, EventArgs e)

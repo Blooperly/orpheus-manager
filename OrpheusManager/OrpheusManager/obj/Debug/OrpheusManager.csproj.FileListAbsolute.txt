@@ -34,3 +34,4 @@ C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\o
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.addSkillForm.resources
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.newCharacter.resources
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.addAbilityForm.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.addAbilityForm.resources

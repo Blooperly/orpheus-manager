@@ -126,5 +126,20 @@
   <ItemGroup>
     <EmbeddedResource Include="divider.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeHermetic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeWitch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypePsychic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeWeapon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeOccultist.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
