@@ -41,8 +41,8 @@
             this.nCharAlert = new System.Windows.Forms.Label();
             this.nCharBackground = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.nCharMot1 = new System.Windows.Forms.Label();
+            this.nCharMot1 = new System.Windows.Forms.TextBox();
+            this.noooo = new System.Windows.Forms.Label();
             this.nCharMot2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.nCharMot3 = new System.Windows.Forms.TextBox();
@@ -171,21 +171,21 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Background";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(415, 156);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 20);
-            this.textBox1.TabIndex = 14;
-            // 
             // nCharMot1
             // 
-            this.nCharMot1.AutoSize = true;
-            this.nCharMot1.Location = new System.Drawing.Point(325, 159);
+            this.nCharMot1.Location = new System.Drawing.Point(415, 156);
             this.nCharMot1.Name = "nCharMot1";
-            this.nCharMot1.Size = new System.Drawing.Size(65, 13);
-            this.nCharMot1.TabIndex = 13;
-            this.nCharMot1.Text = "Motivation 1";
+            this.nCharMot1.Size = new System.Drawing.Size(151, 20);
+            this.nCharMot1.TabIndex = 14;
+            // 
+            // noooo
+            // 
+            this.noooo.AutoSize = true;
+            this.noooo.Location = new System.Drawing.Point(325, 159);
+            this.noooo.Name = "noooo";
+            this.noooo.Size = new System.Drawing.Size(65, 13);
+            this.noooo.TabIndex = 13;
+            this.noooo.Text = "Motivation 1";
             // 
             // nCharMot2
             // 
@@ -355,8 +355,8 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.nCharMot2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.nCharMot1);
+            this.Controls.Add(this.noooo);
             this.Controls.Add(this.nCharBackground);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.nCharAlert);
@@ -393,8 +393,8 @@
         private System.Windows.Forms.Label nCharAlert;
         private System.Windows.Forms.TextBox nCharBackground;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label nCharMot1;
+        private System.Windows.Forms.TextBox nCharMot1;
+        private System.Windows.Forms.Label noooo;
         private System.Windows.Forms.TextBox nCharMot2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox nCharMot3;

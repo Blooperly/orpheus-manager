@@ -44,6 +44,8 @@ namespace OrpheusManager
                 }
                 if (good) this.Close();
             }
+            if (EDATA.eSkillName == "") EDATA.eSkillName = " ";
+            if (EDATA.eSkillRank == "") EDATA.eSkillRank = " ";
         }
     }
 }

@@ -6,13 +6,14 @@ using System.Windows.Forms;
 
 using System.Reflection;
 using System.IO;
+using System.Text;
 
 namespace OrpheusManager
 {
     public static class CDATA
     {
-        public static byte version = 0x01;
-        public static string gameVersion = "The ORPHEUS Protocol v2.1.2";
+        public static string version = "v1.0";
+        public static string gameVersion = "v2.1.2";
         public static string cName = "Rodrigo Ledesma";
         public static int cLevel = 0;
         public static string cArch1 = "Weapon Bearer";
@@ -24,16 +25,16 @@ namespace OrpheusManager
         public static string cMot1 = "Uniting Force";
         public static string cMot2 = "Lady Killer";
         public static string cMot3 = "Death Wish";
+        public static string cNotes = "";
 
+        public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
+        public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
 
-        public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", "", "", "", "", "", "", "", "", "", "", "", "", "" };
-        public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+        public static string[] cCkillName = { "Rang. Att. (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
+        public static string[] cCkillRank = { "V", "V", "III", "III", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
 
-        public static string[] cCkillName = { "Rang. Att. (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
-        public static string[] cCkillRank = { "V", "V", "III", "III", "I", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
-
-        public static string[] cAbilityName = { "Inspiration", "Hungry Shadows", "", "", "", "", "", "", "", "", "", "" };
-        public static string[] cAbilityRank = { "II", "I", "", "", "", "", "", "", "", "", "", "" };
+        public static string[] cAbilityName = { "Inspiration", "Hungry Shadows", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
+        public static string[] cAbilityRank = { "II", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
 
         public static void addSkill()
         {
@@ -168,11 +169,238 @@ namespace OrpheusManager
     public static class EDATA
     {
         public static int eSkillType = 0;
-        public static string eSkillName = "";
-        public static string eSkillRank = "";
+        public static string eSkillName = " ";
+        public static string eSkillRank = " ";
 
-        public static string eAbilityName = "";
-        public static string eAbilityRank = "";
+        public static string eAbilityName = " ";
+        public static string eAbilityRank = " ";
+    }
+
+    public static class SDATA
+    {
+        public static string sFilepath = "";
+        public static string sFullData = "";
+
+        public static void generateFile(string filepath)
+        {
+            if (CDATA.version == "v1.0")
+            {
+                if (File.Exists(filepath))
+                {
+                    File.Delete(filepath);
+                }
+
+                using (FileStream fs = File.Create(filepath))
+                {
+                    string saveString = "";
+                    saveString += "EDIT AT YOUR OWN PERIL (HERE THERE BE DRAGONS)\r\n\r\n";
+                    saveString += "Orpheus Manager:\r\n";
+                    saveString += CDATA.version + "\r\n\r\n";
+                    saveString += "The ORPHEUS Protocol:\r\n";
+                    saveString += CDATA.gameVersion + "\r\n\r\n";
+                    saveString += "Character Name:\r\n";
+                    saveString += CDATA.cName + "\r\n\r\n";
+                    saveString += "Level:\r\n";
+                    saveString += CDATA.cLevel + "\r\n\r\n";
+                    saveString += "Archetype 1:\r\n";
+                    saveString += CDATA.cArch1 + "\r\n\r\n";
+                    saveString += "Archetype 2:\r\n";
+                    saveString += CDATA.cArch2 + "\r\n\r\n";
+                    saveString += "Archetype 3:\r\n";
+                    saveString += CDATA.cArch3 + "\r\n\r\n";
+                    saveString += "Background:\r\n";
+                    saveString += CDATA.cBackground + "\r\n\r\n";
+                    saveString += "Attributes (PER, COG, DEX, VIT, CHAR, WILL):\r\n";
+                    saveString += CDATA.cAttributes[0] + "\r\n";
+                    saveString += CDATA.cAttributes[1] + "\r\n";
+                    saveString += CDATA.cAttributes[2] + "\r\n";
+                    saveString += CDATA.cAttributes[3] + "\r\n";
+                    saveString += CDATA.cAttributes[4] + "\r\n";
+                    saveString += CDATA.cAttributes[5] + "\r\n\r\n";
+                    saveString += "Modifiers (PER, COG, DEX, VIT, CHAR, WILL):\r\n";
+                    saveString += CDATA.cAttributesTemp[0] + "\r\n";
+                    saveString += CDATA.cAttributesTemp[1] + "\r\n";
+                    saveString += CDATA.cAttributesTemp[2] + "\r\n";
+                    saveString += CDATA.cAttributesTemp[3] + "\r\n";
+                    saveString += CDATA.cAttributesTemp[4] + "\r\n";
+                    saveString += CDATA.cAttributesTemp[5] + "\r\n\r\n";
+                    saveString += "Motivation 1:\r\n";
+                    saveString += CDATA.cMot1 + "\r\n\r\n";
+                    saveString += "Motivation 2:\r\n";
+                    saveString += CDATA.cMot2 + "\r\n\r\n";
+                    saveString += "Motivation 3:\r\n";
+                    saveString += CDATA.cMot3 + "\r\n\r\n";
+                    saveString += "Skills:\r\n";
+                    saveString += CDATA.cSkillName[0] + "\r\n";
+                    saveString += CDATA.cSkillRank[0] + "\r\n";
+                    saveString += CDATA.cSkillName[1] + "\r\n";
+                    saveString += CDATA.cSkillRank[1] + "\r\n";
+                    saveString += CDATA.cSkillName[2] + "\r\n";
+                    saveString += CDATA.cSkillRank[2] + "\r\n";
+                    saveString += CDATA.cSkillName[3] + "\r\n";
+                    saveString += CDATA.cSkillRank[3] + "\r\n";
+                    saveString += CDATA.cSkillName[4] + "\r\n";
+                    saveString += CDATA.cSkillRank[4] + "\r\n";
+                    saveString += CDATA.cSkillName[5] + "\r\n";
+                    saveString += CDATA.cSkillRank[5] + "\r\n";
+                    saveString += CDATA.cSkillName[6] + "\r\n";
+                    saveString += CDATA.cSkillRank[6] + "\r\n";
+                    saveString += CDATA.cSkillName[7] + "\r\n";
+                    saveString += CDATA.cSkillRank[7] + "\r\n";
+                    saveString += CDATA.cSkillName[8] + "\r\n";
+                    saveString += CDATA.cSkillRank[8] + "\r\n";
+                    saveString += CDATA.cSkillName[9] + "\r\n";
+                    saveString += CDATA.cSkillRank[9] + "\r\n";
+                    saveString += CDATA.cSkillName[10] + "\r\n";
+                    saveString += CDATA.cSkillRank[10] + "\r\n";
+                    saveString += CDATA.cSkillName[11] + "\r\n";
+                    saveString += CDATA.cSkillRank[11] + "\r\n";
+                    saveString += CDATA.cSkillName[12] + "\r\n";
+                    saveString += CDATA.cSkillRank[12] + "\r\n";
+                    saveString += CDATA.cSkillName[13] + "\r\n";
+                    saveString += CDATA.cSkillRank[13] + "\r\n";
+                    saveString += CDATA.cSkillName[14] + "\r\n";
+                    saveString += CDATA.cSkillRank[14] + "\r\n";
+                    saveString += CDATA.cSkillName[15] + "\r\n";
+                    saveString += CDATA.cSkillRank[15] + "\r\n";
+                    saveString += CDATA.cSkillName[16] + "\r\n";
+                    saveString += CDATA.cSkillRank[16] + "\r\n";
+                    saveString += CDATA.cSkillName[17] + "\r\n";
+                    saveString += CDATA.cSkillRank[17] + "\r\n";
+                    saveString += CDATA.cSkillName[18] + "\r\n";
+                    saveString += CDATA.cSkillRank[18] + "\r\n";
+                    saveString += CDATA.cSkillName[19] + "\r\n";
+                    saveString += CDATA.cSkillRank[19] + "\r\n";
+                    saveString += CDATA.cSkillName[20] + "\r\n";
+                    saveString += CDATA.cSkillRank[20] + "\r\n";
+                    saveString += CDATA.cSkillName[21] + "\r\n";
+                    saveString += CDATA.cSkillRank[21] + "\r\n\r\n";
+                    saveString += "Combat Skills:\r\n";
+                    saveString += CDATA.cCkillName[0] + "\r\n";
+                    saveString += CDATA.cCkillRank[0] + "\r\n";
+                    saveString += CDATA.cCkillName[1] + "\r\n";
+                    saveString += CDATA.cCkillRank[1] + "\r\n";
+                    saveString += CDATA.cCkillName[2] + "\r\n";
+                    saveString += CDATA.cCkillRank[2] + "\r\n";
+                    saveString += CDATA.cCkillName[3] + "\r\n";
+                    saveString += CDATA.cCkillRank[3] + "\r\n";
+                    saveString += CDATA.cCkillName[4] + "\r\n";
+                    saveString += CDATA.cCkillRank[4] + "\r\n";
+                    saveString += CDATA.cCkillName[5] + "\r\n";
+                    saveString += CDATA.cCkillRank[5] + "\r\n";
+                    saveString += CDATA.cCkillName[6] + "\r\n";
+                    saveString += CDATA.cCkillRank[6] + "\r\n";
+                    saveString += CDATA.cCkillName[7] + "\r\n";
+                    saveString += CDATA.cCkillRank[7] + "\r\n";
+                    saveString += CDATA.cCkillName[8] + "\r\n";
+                    saveString += CDATA.cCkillRank[8] + "\r\n";
+                    saveString += CDATA.cCkillName[9] + "\r\n";
+                    saveString += CDATA.cCkillRank[9] + "\r\n";
+                    saveString += CDATA.cCkillName[10] + "\r\n";
+                    saveString += CDATA.cCkillRank[10] + "\r\n";
+                    saveString += CDATA.cCkillName[11] + "\r\n";
+                    saveString += CDATA.cCkillRank[11] + "\r\n";
+                    saveString += CDATA.cCkillName[12] + "\r\n";
+                    saveString += CDATA.cCkillRank[12] + "\r\n";
+                    saveString += CDATA.cCkillName[13] + "\r\n";
+                    saveString += CDATA.cCkillRank[13] + "\r\n";
+                    saveString += CDATA.cCkillName[14] + "\r\n";
+                    saveString += CDATA.cCkillRank[14] + "\r\n";
+                    saveString += CDATA.cCkillName[15] + "\r\n";
+                    saveString += CDATA.cCkillRank[15] + "\r\n";
+                    saveString += CDATA.cCkillName[16] + "\r\n";
+                    saveString += CDATA.cCkillRank[16] + "\r\n";
+                    saveString += CDATA.cCkillName[17] + "\r\n";
+                    saveString += CDATA.cCkillRank[17] + "\r\n";
+                    saveString += CDATA.cCkillName[18] + "\r\n";
+                    saveString += CDATA.cCkillRank[18] + "\r\n";
+                    saveString += CDATA.cCkillName[19] + "\r\n";
+                    saveString += CDATA.cCkillRank[19] + "\r\n";
+                    saveString += CDATA.cCkillName[20] + "\r\n";
+                    saveString += CDATA.cCkillRank[20] + "\r\n";
+                    saveString += CDATA.cCkillName[21] + "\r\n";
+                    saveString += CDATA.cCkillRank[21] + "\r\n\r\n";
+                    saveString += "Abilities:\r\n";
+                    saveString += CDATA.cAbilityName[0] + "\r\n";
+                    saveString += CDATA.cAbilityRank[0] + "\r\n";
+                    saveString += CDATA.cAbilityName[1] + "\r\n";
+                    saveString += CDATA.cAbilityRank[1] + "\r\n";
+                    saveString += CDATA.cAbilityName[2] + "\r\n";
+                    saveString += CDATA.cAbilityRank[2] + "\r\n";
+                    saveString += CDATA.cAbilityName[3] + "\r\n";
+                    saveString += CDATA.cAbilityRank[3] + "\r\n";
+                    saveString += CDATA.cAbilityName[4] + "\r\n";
+                    saveString += CDATA.cAbilityRank[4] + "\r\n";
+                    saveString += CDATA.cAbilityName[5] + "\r\n";
+                    saveString += CDATA.cAbilityRank[5] + "\r\n";
+                    saveString += CDATA.cAbilityName[6] + "\r\n";
+                    saveString += CDATA.cAbilityRank[6] + "\r\n";
+                    saveString += CDATA.cAbilityName[7] + "\r\n";
+                    saveString += CDATA.cAbilityRank[7] + "\r\n";
+                    saveString += CDATA.cAbilityName[8] + "\r\n";
+                    saveString += CDATA.cAbilityRank[8] + "\r\n";
+                    saveString += CDATA.cAbilityName[9] + "\r\n";
+                    saveString += CDATA.cAbilityRank[9] + "\r\n";
+                    saveString += CDATA.cAbilityName[10] + "\r\n";
+                    saveString += CDATA.cAbilityRank[10] + "\r\n";
+                    saveString += CDATA.cAbilityName[11] + "\r\n";
+                    saveString += CDATA.cAbilityRank[11] + "\r\n\r\n";
+                    saveString += "Notes:\r\n";
+                    saveString += CDATA.cNotes + "[XXspecialENDstringXX]\r\n\r\n";
+
+                    saveString += "Orpheus Manager by Jason Brown\r\nFind me on Twitter @Blooperly_";
+
+                    byte[] saveData = new UTF8Encoding(true).GetBytes(saveString);
+                    fs.Write(saveData, 0, saveData.Length);
+                }
+            }
+        }
+
+        public static string parseField(string search)
+        {
+            int start = 0;
+            int end = 0;
+            int len = 0;
+            start = SDATA.sFullData.IndexOf(search, 0) + search.Length;
+            end = SDATA.sFullData.IndexOf("\r\n\r\n", start);
+            len = end - start;
+            return SDATA.sFullData.Substring(start, len);
+        }
+
+        public static string parseFieldEnd(string search)
+        {
+            int start = 0;
+            int end = 0;
+            int len = 0;
+            start = SDATA.sFullData.IndexOf(search, 0) + search.Length;
+            end = SDATA.sFullData.IndexOf("[XXspecialENDstringXX]\r\n\r\n", start);
+            len = end - start;
+            return SDATA.sFullData.Substring(start, len);
+        }
+
+        public static string parseLine(string source, int line)
+        {
+            int start = 0;
+            int end = 0;
+            int len = 0;
+            for (int i = 0; i <= line; i++)
+            {
+                end = source.IndexOf("\r\n", start);
+                start = end + 2;
+            }
+            if (line == 0) start = 0;
+            else
+            {
+                start = 0;
+                for (int i = 0; i < line; i++)
+                {
+                    len = source.IndexOf("\r\n", start);
+                    start = len + 2;
+                }
+            }
+            len = end - start;
+            return source.Substring(start, len);
+        }
     }
 
     static class Program

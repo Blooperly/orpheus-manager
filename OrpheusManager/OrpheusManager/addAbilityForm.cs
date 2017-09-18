@@ -35,6 +35,8 @@ namespace OrpheusManager
                 else if (skillRankBox.Text == "5") { EDATA.eAbilityRank = "V"; good = true; CDATA.addAbility(); }
 
                 if (!good) addSkillAlert.Text = "Ability Rank Invalid";
+                if (EDATA.eAbilityName == "") EDATA.eAbilityName = " ";
+                if (EDATA.eAbilityRank == "") EDATA.eAbilityRank = " ";
                 if (good) this.Close();
             }
         }

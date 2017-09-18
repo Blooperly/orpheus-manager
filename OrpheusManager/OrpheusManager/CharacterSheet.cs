@@ -38,10 +38,17 @@ namespace OrpheusManager
             cVitality.Text = CDATA.cAttributes[3] + "";
             cCharisma.Text = CDATA.cAttributes[4] + "";
             cWillpower.Text = CDATA.cAttributes[5] + "";
+            mPerception.Text = CDATA.cAttributesTemp[0] + "";
+            mCognition.Text = CDATA.cAttributesTemp[1] + "";
+            mDexterity.Text = CDATA.cAttributesTemp[2] + "";
+            mVitality.Text = CDATA.cAttributesTemp[3] + "";
+            mCharisma.Text = CDATA.cAttributesTemp[4] + "";
+            mWillpower.Text = CDATA.cAttributesTemp[5] + "";
             cMot1.Text = CDATA.cMot1;
             cMot2.Text = CDATA.cMot2;
             cMot3.Text = CDATA.cMot3;
             cBackground.Text = "Background:\n" + CDATA.cBackground;
+            cNotes.Text = CDATA.cNotes;
 
             // Load DDATA
             DDATA.deriveDATA();
@@ -568,8 +575,27 @@ namespace OrpheusManager
         private void CharacterSheet_Load(object sender, EventArgs e)
         {
             writeDATA();
+            this.ActiveControl = cName;
 
             // Load Archetype Image
+            reloadArch();
+
+            // Load Title Image
+            System.Reflection.Assembly myAssembly2 = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStream2 = myAssembly2.GetManifestResourceStream("OrpheusManager.OrpheusTitle.png");
+            Bitmap image2 = new Bitmap(myStream2);
+            titlePic.Image = image2;
+
+            // Load Divider Image
+            System.Reflection.Assembly myAssembly3 = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStream3 = myAssembly3.GetManifestResourceStream("OrpheusManager.divider.png");
+            Bitmap image3 = new Bitmap(myStream3);
+            divider1.Image = image3;
+            divider2.Image = image3;
+        }
+
+        private void reloadArch()
+        {
             System.Reflection.Assembly myAssemblyHermetic = System.Reflection.Assembly.GetExecutingAssembly();
             Stream myStreamHermetic = myAssemblyHermetic.GetManifestResourceStream("OrpheusManager.archetypeHermetic.png");
             Bitmap imageHermetic = new Bitmap(myStreamHermetic);
@@ -601,19 +627,6 @@ namespace OrpheusManager
             else if (CDATA.cArch1 == "Wendigo") archetypePic.Image = imageWendigo;
             else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
             else archetypePic.Image = imageHermetic;
-
-            // Load Title Image
-            System.Reflection.Assembly myAssembly2 = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStream2 = myAssembly2.GetManifestResourceStream("OrpheusManager.OrpheusTitle.png");
-            Bitmap image2 = new Bitmap(myStream2);
-            titlePic.Image = image2;
-
-            // Load Divider Image
-            System.Reflection.Assembly myAssembly3 = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStream3 = myAssembly3.GetManifestResourceStream("OrpheusManager.divider.png");
-            Bitmap image3 = new Bitmap(myStream3);
-            divider1.Image = image3;
-            divider2.Image = image3;
         }
 
         // Modifier Boxes
@@ -735,47 +748,20 @@ namespace OrpheusManager
             writeDATA();
 
             // Load Archetype Image
-            System.Reflection.Assembly myAssemblyHermetic = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamHermetic = myAssemblyHermetic.GetManifestResourceStream("OrpheusManager.archetypeHermetic.png");
-            Bitmap imageHermetic = new Bitmap(myStreamHermetic);
+            reloadArch();
 
-            System.Reflection.Assembly myAssemblyOccultist = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamOccultist = myAssemblyOccultist.GetManifestResourceStream("OrpheusManager.archetypeOccultist.png");
-            Bitmap imageOccultist = new Bitmap(myStreamOccultist);
-
-            System.Reflection.Assembly myAssemblyPsychic = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamPsychic = myAssemblyPsychic.GetManifestResourceStream("OrpheusManager.archetypePsychic.png");
-            Bitmap imagePsychic = new Bitmap(myStreamPsychic);
-
-            System.Reflection.Assembly myAssemblyWeapon = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamWeapon = myAssemblyWeapon.GetManifestResourceStream("OrpheusManager.archetypeWeapon.png");
-            Bitmap imageWeapon = new Bitmap(myStreamWeapon);
-
-            System.Reflection.Assembly myAssemblyWendigo = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamWendigo = myAssemblyWendigo.GetManifestResourceStream("OrpheusManager.archetypeWendigo.png");
-            Bitmap imageWendigo = new Bitmap(myStreamWendigo);
-
-            System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
-            Bitmap imageWitch = new Bitmap(myStreamWitch);
-
-            if (CDATA.cArch1 == "Hermetic Magician") archetypePic.Image = imageHermetic;
-            else if (CDATA.cArch1 == "Occultist") archetypePic.Image = imageOccultist;
-            else if (CDATA.cArch1 == "Psychic") archetypePic.Image = imagePsychic;
-            else if (CDATA.cArch1 == "Weapon Bearer") archetypePic.Image = imageWeapon;
-            else if (CDATA.cArch1 == "Wendigo") archetypePic.Image = imageWendigo;
-            else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
-            else archetypePic.Image = imageHermetic;
+            // Clear Notes
+            cNotes.Text = "";
         }
 
         private void clearSkillsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < 22; i++)
             {
-                CDATA.cSkillName[i] = "";
-                CDATA.cSkillRank[i] = "";
-                CDATA.cCkillName[i] = "";
-                CDATA.cCkillRank[i] = "";
+                CDATA.cSkillName[i] = " ";
+                CDATA.cSkillRank[i] = " ";
+                CDATA.cCkillName[i] = " ";
+                CDATA.cCkillRank[i] = " ";
             }
             writeDATA();
         }
@@ -793,10 +779,215 @@ namespace OrpheusManager
         {
             for (int i = 0; i < 12; i++)
             {
-                CDATA.cAbilityName[i] = "";
-                CDATA.cAbilityRank[i] = "";
+                CDATA.cAbilityName[i] = " ";
+                CDATA.cAbilityRank[i] = " ";
             }
             writeDATA();
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CDATA.cNotes = cNotes.Text;
+
+            SaveFileDialog saver = new SaveFileDialog();
+            saver.InitialDirectory = @"C:\";
+            saver.Title = this.Text;
+            saver.DefaultExt = "txt";
+            saver.CheckPathExists = true;
+            saver.FileName = CDATA.cName;
+
+            if (saver.ShowDialog() == DialogResult.OK)
+            {
+                SDATA.generateFile(saver.FileName);
+                SDATA.sFilepath = saver.FileName;
+            }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CDATA.cNotes = cNotes.Text;
+
+            if (SDATA.sFilepath != "") SDATA.generateFile(SDATA.sFilepath);
+            else
+            {
+                SaveFileDialog saver = new SaveFileDialog();
+                saver.InitialDirectory = @"C:\";
+                saver.Title = this.Text;
+                saver.DefaultExt = "txt";
+                saver.CheckPathExists = true;
+                saver.FileName = CDATA.cName;
+
+                if (saver.ShowDialog() == DialogResult.OK)
+                {
+                    SDATA.generateFile(saver.FileName);
+                    SDATA.sFilepath = saver.FileName;
+                }
+            }
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opener = new OpenFileDialog();
+            if (SDATA.sFilepath != "") opener.InitialDirectory = SDATA.sFilepath;
+            else opener.InitialDirectory = @"C:\";
+            opener.Title = "Orpheus Manager";
+
+            if (opener.ShowDialog() == DialogResult.OK)
+            {
+                if (File.Exists(opener.FileName)) 
+                {
+                    SDATA.sFilepath = opener.FileName;
+                    SDATA.sFullData = File.ReadAllText(opener.FileName);
+
+                    CDATA.cName = SDATA.parseField("Character Name:\r\n");
+                    Int32.TryParse(SDATA.parseField("Level:\r\n"), out CDATA.cLevel);
+                    CDATA.cArch1 = SDATA.parseField("Archetype 1:\r\n");
+                    CDATA.cArch2 = SDATA.parseField("Archetype 2:\r\n");
+                    CDATA.cArch3 = SDATA.parseField("Archetype 3:\r\n");
+                    CDATA.cBackground = SDATA.parseField("Background:\r\n");
+                    CDATA.cMot1 = SDATA.parseField("Motivation 1:\r\n");
+                    CDATA.cMot2 = SDATA.parseField("Motivation 2:\r\n");
+                    CDATA.cMot3 = SDATA.parseField("Motivation 3:\r\n");
+                    CDATA.cNotes = SDATA.parseFieldEnd("Notes:\r\n");
+
+                    string temp = SDATA.parseField("Attributes (PER, COG, DEX, VIT, CHAR, WILL):\r\n") + "\r\n";
+                    Int32.TryParse(SDATA.parseLine(temp, 0), out CDATA.cAttributes[0]);
+                    Int32.TryParse(SDATA.parseLine(temp, 1), out CDATA.cAttributes[1]);
+                    Int32.TryParse(SDATA.parseLine(temp, 2), out CDATA.cAttributes[2]);
+                    Int32.TryParse(SDATA.parseLine(temp, 3), out CDATA.cAttributes[3]);
+                    Int32.TryParse(SDATA.parseLine(temp, 4), out CDATA.cAttributes[4]);
+                    Int32.TryParse(SDATA.parseLine(temp, 5), out CDATA.cAttributes[5]);
+
+                    temp = SDATA.parseField("Modifiers (PER, COG, DEX, VIT, CHAR, WILL):\r\n") + "\r\n";
+                    Int32.TryParse(SDATA.parseLine(temp, 0), out CDATA.cAttributesTemp[0]);
+                    Int32.TryParse(SDATA.parseLine(temp, 1), out CDATA.cAttributesTemp[1]);
+                    Int32.TryParse(SDATA.parseLine(temp, 2), out CDATA.cAttributesTemp[2]);
+                    Int32.TryParse(SDATA.parseLine(temp, 3), out CDATA.cAttributesTemp[3]);
+                    Int32.TryParse(SDATA.parseLine(temp, 4), out CDATA.cAttributesTemp[4]);
+                    Int32.TryParse(SDATA.parseLine(temp, 5), out CDATA.cAttributesTemp[5]);
+
+                    temp = SDATA.parseField("Skills:\r\n") + "\r\n";
+                    CDATA.cSkillName[0] = SDATA.parseLine(temp, 0);
+                    CDATA.cSkillRank[0] = SDATA.parseLine(temp, 1);
+                    CDATA.cSkillName[1] = SDATA.parseLine(temp, 2);
+                    CDATA.cSkillRank[1] = SDATA.parseLine(temp, 3);
+                    CDATA.cSkillName[2] = SDATA.parseLine(temp, 4);
+                    CDATA.cSkillRank[2] = SDATA.parseLine(temp, 5);
+                    CDATA.cSkillName[3] = SDATA.parseLine(temp, 6);
+                    CDATA.cSkillRank[3] = SDATA.parseLine(temp, 7);
+                    CDATA.cSkillName[4] = SDATA.parseLine(temp, 8);
+                    CDATA.cSkillRank[4] = SDATA.parseLine(temp, 9);
+                    CDATA.cSkillName[5] = SDATA.parseLine(temp, 10);
+                    CDATA.cSkillRank[5] = SDATA.parseLine(temp, 11);
+                    CDATA.cSkillName[6] = SDATA.parseLine(temp, 12);
+                    CDATA.cSkillRank[6] = SDATA.parseLine(temp, 13);
+                    CDATA.cSkillName[7] = SDATA.parseLine(temp, 14);
+                    CDATA.cSkillRank[7] = SDATA.parseLine(temp, 15);
+                    CDATA.cSkillName[8] = SDATA.parseLine(temp, 16);
+                    CDATA.cSkillRank[8] = SDATA.parseLine(temp, 17);
+                    CDATA.cSkillName[9] = SDATA.parseLine(temp, 18);
+                    CDATA.cSkillRank[9] = SDATA.parseLine(temp, 19);
+                    CDATA.cSkillName[10] = SDATA.parseLine(temp, 20);
+                    CDATA.cSkillRank[10] = SDATA.parseLine(temp, 21);
+                    CDATA.cSkillName[11] = SDATA.parseLine(temp, 22);
+                    CDATA.cSkillRank[11] = SDATA.parseLine(temp, 23);
+                    CDATA.cSkillName[12] = SDATA.parseLine(temp, 24);
+                    CDATA.cSkillRank[12] = SDATA.parseLine(temp, 25);
+                    CDATA.cSkillName[13] = SDATA.parseLine(temp, 26);
+                    CDATA.cSkillRank[13] = SDATA.parseLine(temp, 27);
+                    CDATA.cSkillName[14] = SDATA.parseLine(temp, 28);
+                    CDATA.cSkillRank[14] = SDATA.parseLine(temp, 29);
+                    CDATA.cSkillName[15] = SDATA.parseLine(temp, 30);
+                    CDATA.cSkillRank[15] = SDATA.parseLine(temp, 31);
+                    CDATA.cSkillName[16] = SDATA.parseLine(temp, 32);
+                    CDATA.cSkillRank[16] = SDATA.parseLine(temp, 33);
+                    CDATA.cSkillName[17] = SDATA.parseLine(temp, 34);
+                    CDATA.cSkillRank[17] = SDATA.parseLine(temp, 35);
+                    CDATA.cSkillName[18] = SDATA.parseLine(temp, 36);
+                    CDATA.cSkillRank[18] = SDATA.parseLine(temp, 37);
+                    CDATA.cSkillName[19] = SDATA.parseLine(temp, 38);
+                    CDATA.cSkillRank[19] = SDATA.parseLine(temp, 39);
+                    CDATA.cSkillName[20] = SDATA.parseLine(temp, 40);
+                    CDATA.cSkillRank[20] = SDATA.parseLine(temp, 41);
+                    CDATA.cSkillName[21] = SDATA.parseLine(temp, 42);
+                    CDATA.cSkillRank[21] = SDATA.parseLine(temp, 43);
+
+                    temp = SDATA.parseField("Combat Skills:\r\n") + "\r\n";
+                    CDATA.cCkillName[0] = SDATA.parseLine(temp, 0);
+                    CDATA.cCkillRank[0] = SDATA.parseLine(temp, 1);
+                    CDATA.cCkillName[1] = SDATA.parseLine(temp, 2);
+                    CDATA.cCkillRank[1] = SDATA.parseLine(temp, 3);
+                    CDATA.cCkillName[2] = SDATA.parseLine(temp, 4);
+                    CDATA.cCkillRank[2] = SDATA.parseLine(temp, 5);
+                    CDATA.cCkillName[3] = SDATA.parseLine(temp, 6);
+                    CDATA.cCkillRank[3] = SDATA.parseLine(temp, 7);
+                    CDATA.cCkillName[4] = SDATA.parseLine(temp, 8);
+                    CDATA.cCkillRank[4] = SDATA.parseLine(temp, 9);
+                    CDATA.cCkillName[5] = SDATA.parseLine(temp, 10);
+                    CDATA.cCkillRank[5] = SDATA.parseLine(temp, 11);
+                    CDATA.cCkillName[6] = SDATA.parseLine(temp, 12);
+                    CDATA.cCkillRank[6] = SDATA.parseLine(temp, 13);
+                    CDATA.cCkillName[7] = SDATA.parseLine(temp, 14);
+                    CDATA.cCkillRank[7] = SDATA.parseLine(temp, 15);
+                    CDATA.cCkillName[8] = SDATA.parseLine(temp, 16);
+                    CDATA.cCkillRank[8] = SDATA.parseLine(temp, 17);
+                    CDATA.cCkillName[9] = SDATA.parseLine(temp, 18);
+                    CDATA.cCkillRank[9] = SDATA.parseLine(temp, 19);
+                    CDATA.cCkillName[10] = SDATA.parseLine(temp, 20);
+                    CDATA.cCkillRank[10] = SDATA.parseLine(temp, 21);
+                    CDATA.cCkillName[11] = SDATA.parseLine(temp, 22);
+                    CDATA.cCkillRank[11] = SDATA.parseLine(temp, 23);
+                    CDATA.cCkillName[12] = SDATA.parseLine(temp, 24);
+                    CDATA.cCkillRank[12] = SDATA.parseLine(temp, 25);
+                    CDATA.cCkillName[13] = SDATA.parseLine(temp, 26);
+                    CDATA.cCkillRank[13] = SDATA.parseLine(temp, 27);
+                    CDATA.cCkillName[14] = SDATA.parseLine(temp, 28);
+                    CDATA.cCkillRank[14] = SDATA.parseLine(temp, 29);
+                    CDATA.cCkillName[15] = SDATA.parseLine(temp, 30);
+                    CDATA.cCkillRank[15] = SDATA.parseLine(temp, 31);
+                    CDATA.cCkillName[16] = SDATA.parseLine(temp, 32);
+                    CDATA.cCkillRank[16] = SDATA.parseLine(temp, 33);
+                    CDATA.cCkillName[17] = SDATA.parseLine(temp, 34);
+                    CDATA.cCkillRank[17] = SDATA.parseLine(temp, 35);
+                    CDATA.cCkillName[18] = SDATA.parseLine(temp, 36);
+                    CDATA.cCkillRank[18] = SDATA.parseLine(temp, 37);
+                    CDATA.cCkillName[19] = SDATA.parseLine(temp, 38);
+                    CDATA.cCkillRank[19] = SDATA.parseLine(temp, 39);
+                    CDATA.cCkillName[20] = SDATA.parseLine(temp, 40);
+                    CDATA.cCkillRank[20] = SDATA.parseLine(temp, 41);
+                    CDATA.cCkillName[21] = SDATA.parseLine(temp, 42);
+                    CDATA.cCkillRank[21] = SDATA.parseLine(temp, 43);
+
+                    temp = SDATA.parseField("Abilities:\r\n") + "\r\n";
+                    CDATA.cAbilityName[0] = SDATA.parseLine(temp, 0);
+                    CDATA.cAbilityRank[0] = SDATA.parseLine(temp, 1);
+                    CDATA.cAbilityName[1] = SDATA.parseLine(temp, 2);
+                    CDATA.cAbilityRank[1] = SDATA.parseLine(temp, 3);
+                    CDATA.cAbilityName[2] = SDATA.parseLine(temp, 4);
+                    CDATA.cAbilityRank[2] = SDATA.parseLine(temp, 5);
+                    CDATA.cAbilityName[3] = SDATA.parseLine(temp, 6);
+                    CDATA.cAbilityRank[3] = SDATA.parseLine(temp, 7);
+                    CDATA.cAbilityName[4] = SDATA.parseLine(temp, 8);
+                    CDATA.cAbilityRank[4] = SDATA.parseLine(temp, 9);
+                    CDATA.cAbilityName[5] = SDATA.parseLine(temp, 10);
+                    CDATA.cAbilityRank[5] = SDATA.parseLine(temp, 11);
+                    CDATA.cAbilityName[6] = SDATA.parseLine(temp, 12);
+                    CDATA.cAbilityRank[6] = SDATA.parseLine(temp, 13);
+                    CDATA.cAbilityName[7] = SDATA.parseLine(temp, 14);
+                    CDATA.cAbilityRank[7] = SDATA.parseLine(temp, 15);
+                    CDATA.cAbilityName[8] = SDATA.parseLine(temp, 16);
+                    CDATA.cAbilityRank[8] = SDATA.parseLine(temp, 17);
+                    CDATA.cAbilityName[9] = SDATA.parseLine(temp, 18);
+                    CDATA.cAbilityRank[9] = SDATA.parseLine(temp, 19);
+                    CDATA.cAbilityName[10] = SDATA.parseLine(temp, 20);
+                    CDATA.cAbilityRank[10] = SDATA.parseLine(temp, 21);
+                    CDATA.cAbilityName[11] = SDATA.parseLine(temp, 22);
+                    CDATA.cAbilityRank[11] = SDATA.parseLine(temp, 23);
+
+                    reloadArch();
+                    writeDATA();
+                }
+            }
         }
     }
 }

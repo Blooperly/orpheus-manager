@@ -39,6 +39,9 @@
             this.characterNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addSkillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearSkillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addAbilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearAbilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.referenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cName = new System.Windows.Forms.Label();
             this.archetypePic = new System.Windows.Forms.PictureBox();
             this.cLevel = new System.Windows.Forms.Label();
@@ -155,7 +158,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cNotes = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -276,13 +279,11 @@
             this.a10 = new System.Windows.Forms.Label();
             this.ar9 = new System.Windows.Forms.Label();
             this.a9 = new System.Windows.Forms.Label();
-            this.referenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addAbilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearAbilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label35 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -296,7 +297,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.referenceToolStripMenuItem});
+            this.referenceToolStripMenuItem,
+            this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(944, 24);
@@ -317,27 +319,30 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newCharacter_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open...";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -372,6 +377,26 @@
             this.clearSkillsToolStripMenuItem.Text = "Clear Skills";
             this.clearSkillsToolStripMenuItem.Click += new System.EventHandler(this.clearSkillsToolStripMenuItem_Click);
             // 
+            // addAbilityToolStripMenuItem
+            // 
+            this.addAbilityToolStripMenuItem.Name = "addAbilityToolStripMenuItem";
+            this.addAbilityToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.addAbilityToolStripMenuItem.Text = "Add Ability";
+            this.addAbilityToolStripMenuItem.Click += new System.EventHandler(this.addAbilityToolStripMenuItem_Click);
+            // 
+            // clearAbilitiesToolStripMenuItem
+            // 
+            this.clearAbilitiesToolStripMenuItem.Name = "clearAbilitiesToolStripMenuItem";
+            this.clearAbilitiesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.clearAbilitiesToolStripMenuItem.Text = "Clear Abilities";
+            this.clearAbilitiesToolStripMenuItem.Click += new System.EventHandler(this.clearAbilitiesToolStripMenuItem_Click);
+            // 
+            // referenceToolStripMenuItem
+            // 
+            this.referenceToolStripMenuItem.Name = "referenceToolStripMenuItem";
+            this.referenceToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.referenceToolStripMenuItem.Text = "Reference";
+            // 
             // cName
             // 
             this.cName.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -381,7 +406,7 @@
             this.cName.Location = new System.Drawing.Point(25, 41);
             this.cName.Name = "cName";
             this.cName.Size = new System.Drawing.Size(260, 33);
-            this.cName.TabIndex = 1;
+            this.cName.TabIndex = 0;
             this.cName.Text = "Rodrigo Ledesma";
             // 
             // archetypePic
@@ -1017,7 +1042,7 @@
             this.mPerception.Location = new System.Drawing.Point(477, 286);
             this.mPerception.Name = "mPerception";
             this.mPerception.Size = new System.Drawing.Size(28, 20);
-            this.mPerception.TabIndex = 0;
+            this.mPerception.TabIndex = 1;
             this.mPerception.TextChanged += new System.EventHandler(this.mPerception_TextChanged);
             // 
             // label10
@@ -1038,7 +1063,7 @@
             this.mWillpower.Location = new System.Drawing.Point(477, 384);
             this.mWillpower.Name = "mWillpower";
             this.mWillpower.Size = new System.Drawing.Size(28, 20);
-            this.mWillpower.TabIndex = 5;
+            this.mWillpower.TabIndex = 6;
             this.mWillpower.TextChanged += new System.EventHandler(this.mWillpower_TextChanged);
             // 
             // mCharisma
@@ -1047,7 +1072,7 @@
             this.mCharisma.Location = new System.Drawing.Point(477, 364);
             this.mCharisma.Name = "mCharisma";
             this.mCharisma.Size = new System.Drawing.Size(28, 20);
-            this.mCharisma.TabIndex = 4;
+            this.mCharisma.TabIndex = 5;
             this.mCharisma.TextChanged += new System.EventHandler(this.mCharisma_TextChanged);
             // 
             // mVitality
@@ -1056,7 +1081,7 @@
             this.mVitality.Location = new System.Drawing.Point(477, 346);
             this.mVitality.Name = "mVitality";
             this.mVitality.Size = new System.Drawing.Size(28, 20);
-            this.mVitality.TabIndex = 3;
+            this.mVitality.TabIndex = 4;
             this.mVitality.TextChanged += new System.EventHandler(this.mVitality_TextChanged);
             // 
             // mDexterity
@@ -1065,7 +1090,7 @@
             this.mDexterity.Location = new System.Drawing.Point(477, 326);
             this.mDexterity.Name = "mDexterity";
             this.mDexterity.Size = new System.Drawing.Size(28, 20);
-            this.mDexterity.TabIndex = 2;
+            this.mDexterity.TabIndex = 3;
             this.mDexterity.TextChanged += new System.EventHandler(this.mDexterity_TextChanged);
             // 
             // mCognition
@@ -1074,7 +1099,7 @@
             this.mCognition.Location = new System.Drawing.Point(477, 306);
             this.mCognition.Name = "mCognition";
             this.mCognition.Size = new System.Drawing.Size(28, 20);
-            this.mCognition.TabIndex = 1;
+            this.mCognition.TabIndex = 2;
             this.mCognition.TextChanged += new System.EventHandler(this.mCognition_TextChanged);
             // 
             // label11
@@ -1623,17 +1648,17 @@
             this.textBox4.Location = new System.Drawing.Point(802, 642);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(28, 20);
-            this.textBox4.TabIndex = 8;
+            this.textBox4.TabIndex = 9;
             // 
-            // textBox5
+            // cNotes
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox5.Location = new System.Drawing.Point(324, 453);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox5.Size = new System.Drawing.Size(355, 202);
-            this.textBox5.TabIndex = 9;
+            this.cNotes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cNotes.Location = new System.Drawing.Point(324, 453);
+            this.cNotes.Multiline = true;
+            this.cNotes.Name = "cNotes";
+            this.cNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.cNotes.Size = new System.Drawing.Size(355, 202);
+            this.cNotes.TabIndex = 9;
             // 
             // label31
             // 
@@ -1653,7 +1678,7 @@
             this.textBox6.Location = new System.Drawing.Point(807, 571);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(28, 20);
-            this.textBox6.TabIndex = 6;
+            this.textBox6.TabIndex = 7;
             // 
             // label33
             // 
@@ -1685,7 +1710,7 @@
             this.textBox7.Location = new System.Drawing.Point(831, 611);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(28, 20);
-            this.textBox7.TabIndex = 7;
+            this.textBox7.TabIndex = 8;
             // 
             // label32
             // 
@@ -3067,26 +3092,6 @@
             this.a9.TabIndex = 252;
             this.a9.Text = "Skill";
             // 
-            // referenceToolStripMenuItem
-            // 
-            this.referenceToolStripMenuItem.Name = "referenceToolStripMenuItem";
-            this.referenceToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.referenceToolStripMenuItem.Text = "Reference";
-            // 
-            // addAbilityToolStripMenuItem
-            // 
-            this.addAbilityToolStripMenuItem.Name = "addAbilityToolStripMenuItem";
-            this.addAbilityToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.addAbilityToolStripMenuItem.Text = "Add Ability";
-            this.addAbilityToolStripMenuItem.Click += new System.EventHandler(this.addAbilityToolStripMenuItem_Click);
-            // 
-            // clearAbilitiesToolStripMenuItem
-            // 
-            this.clearAbilitiesToolStripMenuItem.Name = "clearAbilitiesToolStripMenuItem";
-            this.clearAbilitiesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.clearAbilitiesToolStripMenuItem.Text = "Clear Abilities";
-            this.clearAbilitiesToolStripMenuItem.Click += new System.EventHandler(this.clearAbilitiesToolStripMenuItem_Click);
-            // 
             // label35
             // 
             this.label35.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -3122,6 +3127,12 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(28, 20);
             this.textBox10.TabIndex = 263;
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
             // 
             // CharacterSheet
             // 
@@ -3254,7 +3265,7 @@
             this.Controls.Add(this.label33);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label31);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.cNotes);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label29);
@@ -3518,7 +3529,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox cNotes;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label33;
@@ -3648,6 +3659,7 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 
