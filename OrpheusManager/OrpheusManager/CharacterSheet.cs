@@ -38,17 +38,11 @@ namespace OrpheusManager
             cVitality.Text = CDATA.cAttributes[3] + "";
             cCharisma.Text = CDATA.cAttributes[4] + "";
             cWillpower.Text = CDATA.cAttributes[5] + "";
-            mPerception.Text = CDATA.cAttributesTemp[0] + "";
-            mCognition.Text = CDATA.cAttributesTemp[1] + "";
-            mDexterity.Text = CDATA.cAttributesTemp[2] + "";
-            mVitality.Text = CDATA.cAttributesTemp[3] + "";
-            mCharisma.Text = CDATA.cAttributesTemp[4] + "";
-            mWillpower.Text = CDATA.cAttributesTemp[5] + "";
             cMot1.Text = CDATA.cMot1;
             cMot2.Text = CDATA.cMot2;
             cMot3.Text = CDATA.cMot3;
             cBackground.Text = "Background:\n" + CDATA.cBackground;
-            cNotes.Text = CDATA.cNotes;
+            cHumanityMax.Text = "/ " + CDATA.cHumanityMax;
 
             // Load DDATA
             DDATA.deriveDATA();
@@ -571,6 +565,37 @@ namespace OrpheusManager
             ar12.Text = CDATA.cAbilityRank[11];
         }
         
+        private void writeDATA2()
+        {
+            // Load Editable Fields
+            if (CDATA.cAttributesTemp[0] == 0) mPerception.Text = "";
+            else mPerception.Text = CDATA.cAttributesTemp[0] + "";
+            if (CDATA.cAttributesTemp[1] == 0) mCognition.Text = "";
+            else mCognition.Text = CDATA.cAttributesTemp[1] + "";
+            if (CDATA.cAttributesTemp[2] == 0) mDexterity.Text = "";
+            else mDexterity.Text = CDATA.cAttributesTemp[2] + "";
+            if (CDATA.cAttributesTemp[3] == 0) mVitality.Text = "";
+            else mVitality.Text = CDATA.cAttributesTemp[3] + "";
+            if (CDATA.cAttributesTemp[4] == 0) mCharisma.Text = "";
+            else mCharisma.Text = CDATA.cAttributesTemp[4] + "";
+            if (CDATA.cAttributesTemp[5] == 0) mWillpower.Text = "";
+            else mWillpower.Text = CDATA.cAttributesTemp[5] + "";
+
+            cNotes.Text = CDATA.cNotes;
+
+            cMentalStrain.Text = CDATA.cMentalStrain + "";
+            cPhysicalStrain.Text = CDATA.cPhysicalStrain + "";
+            cSpiritualStrain.Text = CDATA.cSpiritualStrain + "";
+
+            cInitiative.Text = CDATA.cInitiative + "";
+            cMementoMori.Text = CDATA.cMementoMori + "";
+            cHumanity.Text = CDATA.cHumanity + "";
+
+            cOverFocus.Text = CDATA.cOverFocus + "";
+            cOverHealth.Text = CDATA.cOverHealth + "";
+            cOverSanity.Text = CDATA.cOverSanity + "";
+        }
+
         // On Load
         private void CharacterSheet_Load(object sender, EventArgs e)
         {
@@ -592,6 +617,8 @@ namespace OrpheusManager
             Bitmap image3 = new Bitmap(myStream3);
             divider1.Image = image3;
             divider2.Image = image3;
+
+            writeDATA2();
         }
 
         private void reloadArch()
@@ -626,7 +653,7 @@ namespace OrpheusManager
             else if (CDATA.cArch1 == "Weapon Bearer") archetypePic.Image = imageWeapon;
             else if (CDATA.cArch1 == "Wendigo") archetypePic.Image = imageWendigo;
             else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
-            else archetypePic.Image = imageHermetic;
+            else archetypePic.Image = imageWitch;
         }
 
         // Modifier Boxes
@@ -744,8 +771,51 @@ namespace OrpheusManager
             // Open Dialog Box
             Form nChar = new newCharacter();
             nChar.ShowDialog();
+
             // Update Character
+            mPerception.Text = "";
+            mCognition.Text = "";
+            mDexterity.Text = "";
+            mVitality.Text = "";
+            mCharisma.Text = "";
+            mWillpower.Text = "";
+            for (int i = 0; i < 6; i++) { CDATA.cAttributesTemp[i] = 0; }
+            DDATA.deriveDATA();
+            CDATA.cMentalStrain = DDATA.dMentalStrainMax;
+            CDATA.cPhysicalStrain = DDATA.dPhysicalStrainMax;
+            CDATA.cSpiritualStrain = DDATA.dSpiritualStrainMax;
+            CDATA.cInitiative = 0;
+            CDATA.cMementoMori = 0;
+            CDATA.cHumanity = CDATA.cHumanityMax;
+            CDATA.cHumanityMax = 100;
+            CDATA.cOverFocus = 0;
+            CDATA.cOverHealth = 0;
+            CDATA.cOverSanity = 0;
             writeDATA();
+            writeDATA2();
+
+            m1m1.Checked = false;
+            m1m2.Checked = false;
+            m1m3.Checked = false;
+            m1m4.Checked = false;
+            m1m5.Checked = false;
+            m1m6.Checked = false;
+            m2m1.Checked = false;
+            m2m2.Checked = false;
+            m2m3.Checked = false;
+            m2m4.Checked = false;
+            m2m5.Checked = false;
+            m2m6.Checked = false;
+            m3m1.Checked = false;
+            m3m2.Checked = false;
+            m3m3.Checked = false;
+            m3m4.Checked = false;
+            m3m5.Checked = false;
+            m3m6.Checked = false;
+
+            // Clear Skills/Abilities
+            clearSkillsToolStripMenuItem_Click(this, System.EventArgs.Empty);
+            clearAbilitiesToolStripMenuItem_Click(this, System.EventArgs.Empty);
 
             // Load Archetype Image
             reloadArch();
@@ -788,6 +858,15 @@ namespace OrpheusManager
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CDATA.cNotes = cNotes.Text;
+            Int32.TryParse(cMentalStrain.Text, out CDATA.cMentalStrain);
+            Int32.TryParse(cPhysicalStrain.Text, out CDATA.cPhysicalStrain);
+            Int32.TryParse(cSpiritualStrain.Text, out CDATA.cSpiritualStrain);
+            Int32.TryParse(cInitiative.Text, out CDATA.cInitiative);
+            Int32.TryParse(cMementoMori.Text, out CDATA.cMementoMori);
+            Int32.TryParse(cHumanity.Text, out CDATA.cHumanity);
+            Int32.TryParse(cOverFocus.Text, out CDATA.cOverFocus);
+            Int32.TryParse(cOverHealth.Text, out CDATA.cOverHealth);
+            Int32.TryParse(cOverSanity.Text, out CDATA.cOverSanity);
 
             SaveFileDialog saver = new SaveFileDialog();
             saver.InitialDirectory = @"C:\";
@@ -806,6 +885,36 @@ namespace OrpheusManager
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CDATA.cNotes = cNotes.Text;
+            Int32.TryParse(cMentalStrain.Text, out CDATA.cMentalStrain);
+            Int32.TryParse(cPhysicalStrain.Text, out CDATA.cPhysicalStrain);
+            Int32.TryParse(cSpiritualStrain.Text, out CDATA.cSpiritualStrain);
+            Int32.TryParse(cInitiative.Text, out CDATA.cInitiative);
+            Int32.TryParse(cMementoMori.Text, out CDATA.cMementoMori);
+            Int32.TryParse(cHumanity.Text, out CDATA.cHumanity);
+            Int32.TryParse(cOverFocus.Text, out CDATA.cOverFocus);
+            Int32.TryParse(cOverHealth.Text, out CDATA.cOverHealth);
+            Int32.TryParse(cOverSanity.Text, out CDATA.cOverSanity);
+
+            if (m1m1.Checked == true) CDATA.cMot1Box[0] = 1; else CDATA.cMot1Box[0] = 0;
+            if (m1m2.Checked == true) CDATA.cMot1Box[1] = 1; else CDATA.cMot1Box[1] = 0;
+            if (m1m3.Checked == true) CDATA.cMot1Box[2] = 1; else CDATA.cMot1Box[2] = 0;
+            if (m1m4.Checked == true) CDATA.cMot1Box[3] = 1; else CDATA.cMot1Box[3] = 0;
+            if (m1m5.Checked == true) CDATA.cMot1Box[4] = 1; else CDATA.cMot1Box[4] = 0;
+            if (m1m6.Checked == true) CDATA.cMot1Box[5] = 1; else CDATA.cMot1Box[5] = 0;
+
+            if (m2m1.Checked == true) CDATA.cMot2Box[0] = 1; else CDATA.cMot2Box[0] = 0;
+            if (m2m2.Checked == true) CDATA.cMot2Box[1] = 1; else CDATA.cMot2Box[1] = 0;
+            if (m2m3.Checked == true) CDATA.cMot2Box[2] = 1; else CDATA.cMot2Box[2] = 0;
+            if (m2m4.Checked == true) CDATA.cMot2Box[3] = 1; else CDATA.cMot2Box[3] = 0;
+            if (m2m5.Checked == true) CDATA.cMot2Box[4] = 1; else CDATA.cMot2Box[4] = 0;
+            if (m2m6.Checked == true) CDATA.cMot2Box[5] = 1; else CDATA.cMot2Box[5] = 0;
+
+            if (m3m1.Checked == true) CDATA.cMot3Box[0] = 1; else CDATA.cMot3Box[0] = 0;
+            if (m3m2.Checked == true) CDATA.cMot3Box[1] = 1; else CDATA.cMot3Box[1] = 0;
+            if (m3m3.Checked == true) CDATA.cMot3Box[2] = 1; else CDATA.cMot3Box[2] = 0;
+            if (m3m4.Checked == true) CDATA.cMot3Box[3] = 1; else CDATA.cMot3Box[3] = 0;
+            if (m3m5.Checked == true) CDATA.cMot3Box[4] = 1; else CDATA.cMot3Box[4] = 0;
+            if (m3m6.Checked == true) CDATA.cMot3Box[5] = 1; else CDATA.cMot3Box[5] = 0;
 
             if (SDATA.sFilepath != "") SDATA.generateFile(SDATA.sFilepath);
             else
@@ -848,6 +957,15 @@ namespace OrpheusManager
                     CDATA.cMot1 = SDATA.parseField("Motivation 1:\r\n");
                     CDATA.cMot2 = SDATA.parseField("Motivation 2:\r\n");
                     CDATA.cMot3 = SDATA.parseField("Motivation 3:\r\n");
+                    Int32.TryParse(SDATA.parseField("Mental Strain:\r\n"), out CDATA.cMentalStrain);
+                    Int32.TryParse(SDATA.parseField("Physical Strain:\r\n"), out CDATA.cPhysicalStrain);
+                    Int32.TryParse(SDATA.parseField("Spiritual Strain:\r\n"), out CDATA.cSpiritualStrain);
+                    Int32.TryParse(SDATA.parseField("Initiative:\r\n"), out CDATA.cInitiative);
+                    Int32.TryParse(SDATA.parseField("Memento Mori:\r\n"), out CDATA.cMementoMori);
+                    Int32.TryParse(SDATA.parseField("Humanity:\r\n"), out CDATA.cHumanity);
+                    Int32.TryParse(SDATA.parseField("Over Focus:\r\n"), out CDATA.cOverFocus);
+                    Int32.TryParse(SDATA.parseField("Over Health:\r\n"), out CDATA.cOverHealth);
+                    Int32.TryParse(SDATA.parseField("Over Sanity:\r\n"), out CDATA.cOverSanity);
                     CDATA.cNotes = SDATA.parseFieldEnd("Notes:\r\n");
 
                     string temp = SDATA.parseField("Attributes (PER, COG, DEX, VIT, CHAR, WILL):\r\n") + "\r\n";
@@ -984,8 +1102,33 @@ namespace OrpheusManager
                     CDATA.cAbilityName[11] = SDATA.parseLine(temp, 22);
                     CDATA.cAbilityRank[11] = SDATA.parseLine(temp, 23);
 
+                    temp = SDATA.parseField("Motivation 1 Boxes:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") m1m1.Checked = true; else m1m1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") m1m2.Checked = true; else m1m2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") m1m3.Checked = true; else m1m3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") m1m4.Checked = true; else m1m4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") m1m5.Checked = true; else m1m5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") m1m6.Checked = true; else m1m6.Checked = false;
+
+                    temp = SDATA.parseField("Motivation 2 Boxes:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") m2m1.Checked = true; else m2m1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") m2m2.Checked = true; else m2m2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") m2m3.Checked = true; else m2m3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") m2m4.Checked = true; else m2m4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") m2m5.Checked = true; else m2m5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") m2m6.Checked = true; else m2m6.Checked = false;
+
+                    temp = SDATA.parseField("Motivation 3 Boxes:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") m3m1.Checked = true; else m3m1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") m3m2.Checked = true; else m3m2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") m3m3.Checked = true; else m3m3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") m3m4.Checked = true; else m3m4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") m3m5.Checked = true; else m3m5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") m3m6.Checked = true; else m3m6.Checked = false;
+
                     reloadArch();
                     writeDATA();
+                    writeDATA2();
                 }
             }
         }

@@ -26,6 +26,16 @@ namespace OrpheusManager
         public static string cMot2 = "Lady Killer";
         public static string cMot3 = "Death Wish";
         public static string cNotes = "";
+        public static int cMentalStrain = 0;
+        public static int cPhysicalStrain = 0;
+        public static int cSpiritualStrain = 0;
+        public static int cInitiative = 0;
+        public static int cMementoMori = 0;
+        public static int cHumanity = 100;
+        public static int cHumanityMax = 100;
+        public static int cOverFocus = 0;
+        public static int cOverHealth = 0;
+        public static int cOverSanity = 0;
 
         public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
         public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
@@ -35,6 +45,10 @@ namespace OrpheusManager
 
         public static string[] cAbilityName = { "Inspiration", "Hungry Shadows", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
         public static string[] cAbilityRank = { "II", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
+
+        public static int[] cMot1Box = { 0, 0, 0, 0, 0, 0 };
+        public static int[] cMot2Box = { 0, 0, 0, 0, 0, 0 };
+        public static int[] cMot3Box = { 0, 0, 0, 0, 0, 0 };
 
         public static void addSkill()
         {
@@ -230,6 +244,26 @@ namespace OrpheusManager
                     saveString += CDATA.cMot2 + "\r\n\r\n";
                     saveString += "Motivation 3:\r\n";
                     saveString += CDATA.cMot3 + "\r\n\r\n";
+                    saveString += "Mental Strain:\r\n";
+                    saveString += CDATA.cMentalStrain + "\r\n\r\n";
+                    saveString += "Physical Strain:\r\n";
+                    saveString += CDATA.cPhysicalStrain + "\r\n\r\n";
+                    saveString += "Spiritual Strain:\r\n";
+                    saveString += CDATA.cSpiritualStrain + "\r\n\r\n";
+                    saveString += "Initiative:\r\n";
+                    saveString += CDATA.cInitiative + "\r\n\r\n";
+                    saveString += "Memento Mori:\r\n";
+                    saveString += CDATA.cMementoMori + "\r\n\r\n";
+                    saveString += "Humanity:\r\n";
+                    saveString += CDATA.cHumanity + "\r\n\r\n";
+                    saveString += "Humanity Max:\r\n";
+                    saveString += CDATA.cHumanityMax + "\r\n\r\n";
+                    saveString += "Over Focus:\r\n";
+                    saveString += CDATA.cOverFocus + "\r\n\r\n";
+                    saveString += "Over Health:\r\n";
+                    saveString += CDATA.cOverHealth + "\r\n\r\n";
+                    saveString += "Over Sanity:\r\n";
+                    saveString += CDATA.cOverSanity + "\r\n\r\n";
                     saveString += "Skills:\r\n";
                     saveString += CDATA.cSkillName[0] + "\r\n";
                     saveString += CDATA.cSkillRank[0] + "\r\n";
@@ -345,6 +379,27 @@ namespace OrpheusManager
                     saveString += CDATA.cAbilityRank[10] + "\r\n";
                     saveString += CDATA.cAbilityName[11] + "\r\n";
                     saveString += CDATA.cAbilityRank[11] + "\r\n\r\n";
+                    saveString += "Motivation 1 Boxes:\r\n";
+                    saveString += CDATA.cMot1Box[0] + "\r\n";
+                    saveString += CDATA.cMot1Box[1] + "\r\n";
+                    saveString += CDATA.cMot1Box[2] + "\r\n";
+                    saveString += CDATA.cMot1Box[3] + "\r\n";
+                    saveString += CDATA.cMot1Box[4] + "\r\n";
+                    saveString += CDATA.cMot1Box[5] + "\r\n\r\n";
+                    saveString += "Motivation 2 Boxes:\r\n";
+                    saveString += CDATA.cMot2Box[0] + "\r\n";
+                    saveString += CDATA.cMot2Box[1] + "\r\n";
+                    saveString += CDATA.cMot2Box[2] + "\r\n";
+                    saveString += CDATA.cMot2Box[3] + "\r\n";
+                    saveString += CDATA.cMot2Box[4] + "\r\n";
+                    saveString += CDATA.cMot2Box[5] + "\r\n\r\n";
+                    saveString += "Motivation 3 Boxes:\r\n";
+                    saveString += CDATA.cMot3Box[0] + "\r\n";
+                    saveString += CDATA.cMot3Box[1] + "\r\n";
+                    saveString += CDATA.cMot3Box[2] + "\r\n";
+                    saveString += CDATA.cMot3Box[3] + "\r\n";
+                    saveString += CDATA.cMot3Box[4] + "\r\n";
+                    saveString += CDATA.cMot3Box[5] + "\r\n\r\n";
                     saveString += "Notes:\r\n";
                     saveString += CDATA.cNotes + "[XXspecialENDstringXX]\r\n\r\n";
 

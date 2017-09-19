@@ -42,6 +42,7 @@
             this.addAbilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearAbilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.referenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cName = new System.Windows.Forms.Label();
             this.archetypePic = new System.Windows.Forms.PictureBox();
             this.cLevel = new System.Windows.Forms.Label();
@@ -63,24 +64,24 @@
             this.cWillpower = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.divider1 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.m1m1 = new System.Windows.Forms.CheckBox();
+            this.m1m4 = new System.Windows.Forms.CheckBox();
+            this.m1m3 = new System.Windows.Forms.CheckBox();
+            this.m1m5 = new System.Windows.Forms.CheckBox();
+            this.m1m2 = new System.Windows.Forms.CheckBox();
+            this.m1m6 = new System.Windows.Forms.CheckBox();
+            this.m2m6 = new System.Windows.Forms.CheckBox();
+            this.m2m2 = new System.Windows.Forms.CheckBox();
+            this.m2m5 = new System.Windows.Forms.CheckBox();
+            this.m2m3 = new System.Windows.Forms.CheckBox();
+            this.m2m4 = new System.Windows.Forms.CheckBox();
+            this.m2m1 = new System.Windows.Forms.CheckBox();
+            this.m3m6 = new System.Windows.Forms.CheckBox();
+            this.m3m2 = new System.Windows.Forms.CheckBox();
+            this.m3m5 = new System.Windows.Forms.CheckBox();
+            this.m3m3 = new System.Windows.Forms.CheckBox();
+            this.m3m4 = new System.Windows.Forms.CheckBox();
+            this.m3m1 = new System.Windows.Forms.CheckBox();
             this.cMot1 = new System.Windows.Forms.Label();
             this.cMot2 = new System.Windows.Forms.Label();
             this.cMot3 = new System.Windows.Forms.Label();
@@ -149,21 +150,21 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cMentalStrain = new System.Windows.Forms.TextBox();
+            this.cPhysicalStrain = new System.Windows.Forms.TextBox();
+            this.cSpiritualStrain = new System.Windows.Forms.TextBox();
             this.dMentalStrainMax = new System.Windows.Forms.Label();
             this.dPhysicalStrainMax = new System.Windows.Forms.Label();
             this.dSpiritualStrainMax = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.cHumanityMax = new System.Windows.Forms.Label();
+            this.cHumanity = new System.Windows.Forms.TextBox();
             this.cNotes = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.cInitiative = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.cMementoMori = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.s1 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -280,10 +281,9 @@
             this.ar9 = new System.Windows.Forms.Label();
             this.a9 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOverFocus = new System.Windows.Forms.TextBox();
+            this.cOverHealth = new System.Windows.Forms.TextBox();
+            this.cOverSanity = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -319,28 +319,28 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newCharacter_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -396,6 +396,12 @@
             this.referenceToolStripMenuItem.Name = "referenceToolStripMenuItem";
             this.referenceToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.referenceToolStripMenuItem.Text = "Reference";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
             // 
             // cName
             // 
@@ -640,188 +646,188 @@
             this.divider1.TabIndex = 21;
             this.divider1.TabStop = false;
             // 
-            // checkBox1
+            // m1m1
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(31, 277);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.m1m1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m1m1.AutoSize = true;
+            this.m1m1.Location = new System.Drawing.Point(31, 277);
+            this.m1m1.Name = "m1m1";
+            this.m1m1.Size = new System.Drawing.Size(15, 14);
+            this.m1m1.TabIndex = 22;
+            this.m1m1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // m1m4
             // 
-            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(94, 277);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 23;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.m1m4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m1m4.AutoSize = true;
+            this.m1m4.Location = new System.Drawing.Point(94, 277);
+            this.m1m4.Name = "m1m4";
+            this.m1m4.Size = new System.Drawing.Size(15, 14);
+            this.m1m4.TabIndex = 23;
+            this.m1m4.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // m1m3
             // 
-            this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(73, 277);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 24;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.m1m3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m1m3.AutoSize = true;
+            this.m1m3.Location = new System.Drawing.Point(73, 277);
+            this.m1m3.Name = "m1m3";
+            this.m1m3.Size = new System.Drawing.Size(15, 14);
+            this.m1m3.TabIndex = 24;
+            this.m1m3.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // m1m5
             // 
-            this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(115, 277);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 25;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.m1m5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m1m5.AutoSize = true;
+            this.m1m5.Location = new System.Drawing.Point(115, 277);
+            this.m1m5.Name = "m1m5";
+            this.m1m5.Size = new System.Drawing.Size(15, 14);
+            this.m1m5.TabIndex = 25;
+            this.m1m5.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // m1m2
             // 
-            this.checkBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(52, 277);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 26;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.m1m2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m1m2.AutoSize = true;
+            this.m1m2.Location = new System.Drawing.Point(52, 277);
+            this.m1m2.Name = "m1m2";
+            this.m1m2.Size = new System.Drawing.Size(15, 14);
+            this.m1m2.TabIndex = 26;
+            this.m1m2.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // m1m6
             // 
-            this.checkBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox6.Location = new System.Drawing.Point(136, 277);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(13, 12);
-            this.checkBox6.TabIndex = 27;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.m1m6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m1m6.AutoSize = true;
+            this.m1m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.m1m6.Location = new System.Drawing.Point(136, 277);
+            this.m1m6.Name = "m1m6";
+            this.m1m6.Size = new System.Drawing.Size(13, 12);
+            this.m1m6.TabIndex = 27;
+            this.m1m6.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // m2m6
             // 
-            this.checkBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox7.Location = new System.Drawing.Point(136, 297);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(13, 12);
-            this.checkBox7.TabIndex = 33;
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.m2m6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m2m6.AutoSize = true;
+            this.m2m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.m2m6.Location = new System.Drawing.Point(136, 297);
+            this.m2m6.Name = "m2m6";
+            this.m2m6.Size = new System.Drawing.Size(13, 12);
+            this.m2m6.TabIndex = 33;
+            this.m2m6.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // m2m2
             // 
-            this.checkBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(52, 297);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(15, 14);
-            this.checkBox8.TabIndex = 32;
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.m2m2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m2m2.AutoSize = true;
+            this.m2m2.Location = new System.Drawing.Point(52, 297);
+            this.m2m2.Name = "m2m2";
+            this.m2m2.Size = new System.Drawing.Size(15, 14);
+            this.m2m2.TabIndex = 32;
+            this.m2m2.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // m2m5
             // 
-            this.checkBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(115, 297);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
-            this.checkBox9.TabIndex = 31;
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.m2m5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m2m5.AutoSize = true;
+            this.m2m5.Location = new System.Drawing.Point(115, 297);
+            this.m2m5.Name = "m2m5";
+            this.m2m5.Size = new System.Drawing.Size(15, 14);
+            this.m2m5.TabIndex = 31;
+            this.m2m5.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // m2m3
             // 
-            this.checkBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(73, 297);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
-            this.checkBox10.TabIndex = 30;
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.m2m3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m2m3.AutoSize = true;
+            this.m2m3.Location = new System.Drawing.Point(73, 297);
+            this.m2m3.Name = "m2m3";
+            this.m2m3.Size = new System.Drawing.Size(15, 14);
+            this.m2m3.TabIndex = 30;
+            this.m2m3.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // m2m4
             // 
-            this.checkBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(94, 297);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(15, 14);
-            this.checkBox11.TabIndex = 29;
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.m2m4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m2m4.AutoSize = true;
+            this.m2m4.Location = new System.Drawing.Point(94, 297);
+            this.m2m4.Name = "m2m4";
+            this.m2m4.Size = new System.Drawing.Size(15, 14);
+            this.m2m4.TabIndex = 29;
+            this.m2m4.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // m2m1
             // 
-            this.checkBox12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(31, 297);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(15, 14);
-            this.checkBox12.TabIndex = 28;
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.m2m1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m2m1.AutoSize = true;
+            this.m2m1.Location = new System.Drawing.Point(31, 297);
+            this.m2m1.Name = "m2m1";
+            this.m2m1.Size = new System.Drawing.Size(15, 14);
+            this.m2m1.TabIndex = 28;
+            this.m2m1.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // m3m6
             // 
-            this.checkBox13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox13.Location = new System.Drawing.Point(136, 317);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(13, 12);
-            this.checkBox13.TabIndex = 39;
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.m3m6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m3m6.AutoSize = true;
+            this.m3m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.m3m6.Location = new System.Drawing.Point(136, 317);
+            this.m3m6.Name = "m3m6";
+            this.m3m6.Size = new System.Drawing.Size(13, 12);
+            this.m3m6.TabIndex = 39;
+            this.m3m6.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // m3m2
             // 
-            this.checkBox14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(52, 317);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(15, 14);
-            this.checkBox14.TabIndex = 38;
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.m3m2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m3m2.AutoSize = true;
+            this.m3m2.Location = new System.Drawing.Point(52, 317);
+            this.m3m2.Name = "m3m2";
+            this.m3m2.Size = new System.Drawing.Size(15, 14);
+            this.m3m2.TabIndex = 38;
+            this.m3m2.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // m3m5
             // 
-            this.checkBox15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(115, 317);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(15, 14);
-            this.checkBox15.TabIndex = 37;
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.m3m5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m3m5.AutoSize = true;
+            this.m3m5.Location = new System.Drawing.Point(115, 317);
+            this.m3m5.Name = "m3m5";
+            this.m3m5.Size = new System.Drawing.Size(15, 14);
+            this.m3m5.TabIndex = 37;
+            this.m3m5.UseVisualStyleBackColor = true;
             // 
-            // checkBox16
+            // m3m3
             // 
-            this.checkBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(73, 317);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(15, 14);
-            this.checkBox16.TabIndex = 36;
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.m3m3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m3m3.AutoSize = true;
+            this.m3m3.Location = new System.Drawing.Point(73, 317);
+            this.m3m3.Name = "m3m3";
+            this.m3m3.Size = new System.Drawing.Size(15, 14);
+            this.m3m3.TabIndex = 36;
+            this.m3m3.UseVisualStyleBackColor = true;
             // 
-            // checkBox17
+            // m3m4
             // 
-            this.checkBox17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(94, 317);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(15, 14);
-            this.checkBox17.TabIndex = 35;
-            this.checkBox17.UseVisualStyleBackColor = true;
+            this.m3m4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m3m4.AutoSize = true;
+            this.m3m4.Location = new System.Drawing.Point(94, 317);
+            this.m3m4.Name = "m3m4";
+            this.m3m4.Size = new System.Drawing.Size(15, 14);
+            this.m3m4.TabIndex = 35;
+            this.m3m4.UseVisualStyleBackColor = true;
             // 
-            // checkBox18
+            // m3m1
             // 
-            this.checkBox18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(31, 317);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(15, 14);
-            this.checkBox18.TabIndex = 34;
-            this.checkBox18.UseVisualStyleBackColor = true;
+            this.m3m1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.m3m1.AutoSize = true;
+            this.m3m1.Location = new System.Drawing.Point(31, 317);
+            this.m3m1.Name = "m3m1";
+            this.m3m1.Size = new System.Drawing.Size(15, 14);
+            this.m3m1.TabIndex = 34;
+            this.m3m1.UseVisualStyleBackColor = true;
             // 
             // cMot1
             // 
@@ -1558,29 +1564,29 @@
             this.label28.TabIndex = 110;
             this.label28.Text = "Mental Strain";
             // 
-            // textBox1
+            // cMentalStrain
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(155, 418);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(28, 20);
-            this.textBox1.TabIndex = 113;
+            this.cMentalStrain.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cMentalStrain.Location = new System.Drawing.Point(155, 418);
+            this.cMentalStrain.Name = "cMentalStrain";
+            this.cMentalStrain.Size = new System.Drawing.Size(28, 20);
+            this.cMentalStrain.TabIndex = 113;
             // 
-            // textBox2
+            // cPhysicalStrain
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Location = new System.Drawing.Point(155, 447);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(28, 20);
-            this.textBox2.TabIndex = 114;
+            this.cPhysicalStrain.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cPhysicalStrain.Location = new System.Drawing.Point(155, 447);
+            this.cPhysicalStrain.Name = "cPhysicalStrain";
+            this.cPhysicalStrain.Size = new System.Drawing.Size(28, 20);
+            this.cPhysicalStrain.TabIndex = 114;
             // 
-            // textBox3
+            // cSpiritualStrain
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox3.Location = new System.Drawing.Point(155, 476);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(28, 20);
-            this.textBox3.TabIndex = 115;
+            this.cSpiritualStrain.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cSpiritualStrain.Location = new System.Drawing.Point(155, 476);
+            this.cSpiritualStrain.Name = "cSpiritualStrain";
+            this.cSpiritualStrain.Size = new System.Drawing.Size(28, 20);
+            this.cSpiritualStrain.TabIndex = 115;
             // 
             // dMentalStrainMax
             // 
@@ -1630,25 +1636,25 @@
             this.label29.TabIndex = 119;
             this.label29.Text = "Humanity:";
             // 
-            // label30
+            // cHumanityMax
             // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label30.Location = new System.Drawing.Point(836, 642);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(44, 20);
-            this.label30.TabIndex = 121;
-            this.label30.Text = "/ 100";
+            this.cHumanityMax.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cHumanityMax.AutoSize = true;
+            this.cHumanityMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cHumanityMax.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cHumanityMax.Location = new System.Drawing.Point(836, 642);
+            this.cHumanityMax.Name = "cHumanityMax";
+            this.cHumanityMax.Size = new System.Drawing.Size(44, 20);
+            this.cHumanityMax.TabIndex = 121;
+            this.cHumanityMax.Text = "/ 100";
             // 
-            // textBox4
+            // cHumanity
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox4.Location = new System.Drawing.Point(802, 642);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(28, 20);
-            this.textBox4.TabIndex = 9;
+            this.cHumanity.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cHumanity.Location = new System.Drawing.Point(802, 642);
+            this.cHumanity.Name = "cHumanity";
+            this.cHumanity.Size = new System.Drawing.Size(28, 20);
+            this.cHumanity.TabIndex = 9;
             // 
             // cNotes
             // 
@@ -1672,13 +1678,13 @@
             this.label31.TabIndex = 125;
             this.label31.Text = "Notes";
             // 
-            // textBox6
+            // cInitiative
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox6.Location = new System.Drawing.Point(807, 571);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(28, 20);
-            this.textBox6.TabIndex = 7;
+            this.cInitiative.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cInitiative.Location = new System.Drawing.Point(807, 571);
+            this.cInitiative.Name = "cInitiative";
+            this.cInitiative.Size = new System.Drawing.Size(28, 20);
+            this.cInitiative.TabIndex = 7;
             // 
             // label33
             // 
@@ -1704,13 +1710,13 @@
             this.label34.TabIndex = 130;
             this.label34.Text = "/ 2";
             // 
-            // textBox7
+            // cMementoMori
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox7.Location = new System.Drawing.Point(831, 611);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(28, 20);
-            this.textBox7.TabIndex = 8;
+            this.cMementoMori.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cMementoMori.Location = new System.Drawing.Point(831, 611);
+            this.cMementoMori.Name = "cMementoMori";
+            this.cMementoMori.Size = new System.Drawing.Size(28, 20);
+            this.cMementoMori.TabIndex = 8;
             // 
             // label32
             // 
@@ -2413,9 +2419,9 @@
             this.cr22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr22.Location = new System.Drawing.Point(685, 352);
+            this.cr22.Location = new System.Drawing.Point(704, 352);
             this.cr22.Name = "cr22";
-            this.cr22.Size = new System.Drawing.Size(35, 13);
+            this.cr22.Size = new System.Drawing.Size(16, 13);
             this.cr22.TabIndex = 219;
             this.cr22.Text = "0";
             this.cr22.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2425,9 +2431,9 @@
             this.cr21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr21.Location = new System.Drawing.Point(685, 339);
+            this.cr21.Location = new System.Drawing.Point(704, 339);
             this.cr21.Name = "cr21";
-            this.cr21.Size = new System.Drawing.Size(35, 13);
+            this.cr21.Size = new System.Drawing.Size(16, 13);
             this.cr21.TabIndex = 218;
             this.cr21.Text = "0";
             this.cr21.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2437,9 +2443,9 @@
             this.cr19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr19.Location = new System.Drawing.Point(685, 313);
+            this.cr19.Location = new System.Drawing.Point(704, 313);
             this.cr19.Name = "cr19";
-            this.cr19.Size = new System.Drawing.Size(35, 13);
+            this.cr19.Size = new System.Drawing.Size(16, 13);
             this.cr19.TabIndex = 217;
             this.cr19.Text = "0";
             this.cr19.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2449,9 +2455,9 @@
             this.cr20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr20.Location = new System.Drawing.Point(685, 326);
+            this.cr20.Location = new System.Drawing.Point(704, 326);
             this.cr20.Name = "cr20";
-            this.cr20.Size = new System.Drawing.Size(35, 13);
+            this.cr20.Size = new System.Drawing.Size(16, 13);
             this.cr20.TabIndex = 216;
             this.cr20.Text = "0";
             this.cr20.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2461,9 +2467,9 @@
             this.cr18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr18.Location = new System.Drawing.Point(685, 300);
+            this.cr18.Location = new System.Drawing.Point(704, 300);
             this.cr18.Name = "cr18";
-            this.cr18.Size = new System.Drawing.Size(35, 13);
+            this.cr18.Size = new System.Drawing.Size(16, 13);
             this.cr18.TabIndex = 215;
             this.cr18.Text = "0";
             this.cr18.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2473,9 +2479,9 @@
             this.cr17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr17.Location = new System.Drawing.Point(685, 287);
+            this.cr17.Location = new System.Drawing.Point(704, 287);
             this.cr17.Name = "cr17";
-            this.cr17.Size = new System.Drawing.Size(35, 13);
+            this.cr17.Size = new System.Drawing.Size(16, 13);
             this.cr17.TabIndex = 214;
             this.cr17.Text = "0";
             this.cr17.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2485,9 +2491,9 @@
             this.cr15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr15.Location = new System.Drawing.Point(685, 261);
+            this.cr15.Location = new System.Drawing.Point(704, 261);
             this.cr15.Name = "cr15";
-            this.cr15.Size = new System.Drawing.Size(35, 13);
+            this.cr15.Size = new System.Drawing.Size(16, 13);
             this.cr15.TabIndex = 213;
             this.cr15.Text = "0";
             this.cr15.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2497,9 +2503,9 @@
             this.cr16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr16.Location = new System.Drawing.Point(685, 274);
+            this.cr16.Location = new System.Drawing.Point(704, 274);
             this.cr16.Name = "cr16";
-            this.cr16.Size = new System.Drawing.Size(35, 13);
+            this.cr16.Size = new System.Drawing.Size(16, 13);
             this.cr16.TabIndex = 212;
             this.cr16.Text = "0";
             this.cr16.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2509,9 +2515,9 @@
             this.cr14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr14.Location = new System.Drawing.Point(685, 248);
+            this.cr14.Location = new System.Drawing.Point(704, 248);
             this.cr14.Name = "cr14";
-            this.cr14.Size = new System.Drawing.Size(35, 13);
+            this.cr14.Size = new System.Drawing.Size(16, 13);
             this.cr14.TabIndex = 211;
             this.cr14.Text = "0";
             this.cr14.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2521,9 +2527,9 @@
             this.cr13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr13.Location = new System.Drawing.Point(685, 235);
+            this.cr13.Location = new System.Drawing.Point(704, 235);
             this.cr13.Name = "cr13";
-            this.cr13.Size = new System.Drawing.Size(35, 13);
+            this.cr13.Size = new System.Drawing.Size(16, 13);
             this.cr13.TabIndex = 210;
             this.cr13.Text = "0";
             this.cr13.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2533,9 +2539,9 @@
             this.cr11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr11.Location = new System.Drawing.Point(685, 209);
+            this.cr11.Location = new System.Drawing.Point(704, 209);
             this.cr11.Name = "cr11";
-            this.cr11.Size = new System.Drawing.Size(35, 13);
+            this.cr11.Size = new System.Drawing.Size(16, 13);
             this.cr11.TabIndex = 209;
             this.cr11.Text = "0";
             this.cr11.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2545,9 +2551,9 @@
             this.cr12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr12.Location = new System.Drawing.Point(685, 222);
+            this.cr12.Location = new System.Drawing.Point(704, 222);
             this.cr12.Name = "cr12";
-            this.cr12.Size = new System.Drawing.Size(35, 13);
+            this.cr12.Size = new System.Drawing.Size(16, 13);
             this.cr12.TabIndex = 208;
             this.cr12.Text = "0";
             this.cr12.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2557,9 +2563,9 @@
             this.cr10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr10.Location = new System.Drawing.Point(685, 196);
+            this.cr10.Location = new System.Drawing.Point(704, 196);
             this.cr10.Name = "cr10";
-            this.cr10.Size = new System.Drawing.Size(35, 13);
+            this.cr10.Size = new System.Drawing.Size(16, 13);
             this.cr10.TabIndex = 207;
             this.cr10.Text = "0";
             this.cr10.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2569,9 +2575,9 @@
             this.cr9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr9.Location = new System.Drawing.Point(685, 183);
+            this.cr9.Location = new System.Drawing.Point(704, 183);
             this.cr9.Name = "cr9";
-            this.cr9.Size = new System.Drawing.Size(35, 13);
+            this.cr9.Size = new System.Drawing.Size(16, 13);
             this.cr9.TabIndex = 206;
             this.cr9.Text = "0";
             this.cr9.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2581,9 +2587,9 @@
             this.cr7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr7.Location = new System.Drawing.Point(685, 157);
+            this.cr7.Location = new System.Drawing.Point(704, 157);
             this.cr7.Name = "cr7";
-            this.cr7.Size = new System.Drawing.Size(35, 13);
+            this.cr7.Size = new System.Drawing.Size(16, 13);
             this.cr7.TabIndex = 205;
             this.cr7.Text = "0";
             this.cr7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2593,9 +2599,9 @@
             this.cr8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr8.Location = new System.Drawing.Point(685, 170);
+            this.cr8.Location = new System.Drawing.Point(704, 170);
             this.cr8.Name = "cr8";
-            this.cr8.Size = new System.Drawing.Size(35, 13);
+            this.cr8.Size = new System.Drawing.Size(16, 13);
             this.cr8.TabIndex = 204;
             this.cr8.Text = "0";
             this.cr8.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2605,9 +2611,9 @@
             this.cr6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr6.Location = new System.Drawing.Point(685, 144);
+            this.cr6.Location = new System.Drawing.Point(704, 144);
             this.cr6.Name = "cr6";
-            this.cr6.Size = new System.Drawing.Size(35, 13);
+            this.cr6.Size = new System.Drawing.Size(16, 13);
             this.cr6.TabIndex = 203;
             this.cr6.Text = "0";
             this.cr6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2617,9 +2623,9 @@
             this.cr5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr5.Location = new System.Drawing.Point(685, 131);
+            this.cr5.Location = new System.Drawing.Point(704, 131);
             this.cr5.Name = "cr5";
-            this.cr5.Size = new System.Drawing.Size(35, 13);
+            this.cr5.Size = new System.Drawing.Size(16, 13);
             this.cr5.TabIndex = 202;
             this.cr5.Text = "0";
             this.cr5.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2629,9 +2635,9 @@
             this.cr3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr3.Location = new System.Drawing.Point(685, 105);
+            this.cr3.Location = new System.Drawing.Point(704, 105);
             this.cr3.Name = "cr3";
-            this.cr3.Size = new System.Drawing.Size(35, 13);
+            this.cr3.Size = new System.Drawing.Size(16, 13);
             this.cr3.TabIndex = 201;
             this.cr3.Text = "0";
             this.cr3.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2641,9 +2647,9 @@
             this.cr4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr4.Location = new System.Drawing.Point(685, 118);
+            this.cr4.Location = new System.Drawing.Point(704, 118);
             this.cr4.Name = "cr4";
-            this.cr4.Size = new System.Drawing.Size(35, 13);
+            this.cr4.Size = new System.Drawing.Size(16, 13);
             this.cr4.TabIndex = 200;
             this.cr4.Text = "0";
             this.cr4.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2653,9 +2659,9 @@
             this.cr2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr2.Location = new System.Drawing.Point(685, 92);
+            this.cr2.Location = new System.Drawing.Point(704, 92);
             this.cr2.Name = "cr2";
-            this.cr2.Size = new System.Drawing.Size(35, 13);
+            this.cr2.Size = new System.Drawing.Size(16, 13);
             this.cr2.TabIndex = 199;
             this.cr2.Text = "0";
             this.cr2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2665,9 +2671,9 @@
             this.cr1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr1.Location = new System.Drawing.Point(685, 79);
+            this.cr1.Location = new System.Drawing.Point(704, 79);
             this.cr1.Name = "cr1";
-            this.cr1.Size = new System.Drawing.Size(35, 13);
+            this.cr1.Size = new System.Drawing.Size(16, 13);
             this.cr1.TabIndex = 198;
             this.cr1.Text = "0";
             this.cr1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3104,35 +3110,29 @@
             this.label35.TabIndex = 260;
             this.label35.Text = "Over";
             // 
-            // textBox8
+            // cOverFocus
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox8.Location = new System.Drawing.Point(291, 551);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(28, 20);
-            this.textBox8.TabIndex = 261;
+            this.cOverFocus.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cOverFocus.Location = new System.Drawing.Point(291, 551);
+            this.cOverFocus.Name = "cOverFocus";
+            this.cOverFocus.Size = new System.Drawing.Size(28, 20);
+            this.cOverFocus.TabIndex = 261;
             // 
-            // textBox9
+            // cOverHealth
             // 
-            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox9.Location = new System.Drawing.Point(291, 580);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(28, 20);
-            this.textBox9.TabIndex = 262;
+            this.cOverHealth.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cOverHealth.Location = new System.Drawing.Point(291, 580);
+            this.cOverHealth.Name = "cOverHealth";
+            this.cOverHealth.Size = new System.Drawing.Size(28, 20);
+            this.cOverHealth.TabIndex = 262;
             // 
-            // textBox10
+            // cOverSanity
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox10.Location = new System.Drawing.Point(291, 609);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(28, 20);
-            this.textBox10.TabIndex = 263;
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.cOverSanity.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cOverSanity.Location = new System.Drawing.Point(291, 609);
+            this.cOverSanity.Name = "cOverSanity";
+            this.cOverSanity.Size = new System.Drawing.Size(28, 20);
+            this.cOverSanity.TabIndex = 263;
             // 
             // CharacterSheet
             // 
@@ -3141,9 +3141,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(944, 685);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.cOverSanity);
+            this.Controls.Add(this.cOverHealth);
+            this.Controls.Add(this.cOverFocus);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.ar12);
             this.Controls.Add(this.a12);
@@ -3261,20 +3261,20 @@
             this.Controls.Add(this.s1);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label34);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.cMementoMori);
             this.Controls.Add(this.label33);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.cInitiative);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.cNotes);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.cHumanityMax);
+            this.Controls.Add(this.cHumanity);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.dSpiritualStrainMax);
             this.Controls.Add(this.dPhysicalStrainMax);
             this.Controls.Add(this.dMentalStrainMax);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cSpiritualStrain);
+            this.Controls.Add(this.cPhysicalStrain);
+            this.Controls.Add(this.cMentalStrain);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label28);
@@ -3343,24 +3343,24 @@
             this.Controls.Add(this.cMot3);
             this.Controls.Add(this.cMot2);
             this.Controls.Add(this.cMot1);
-            this.Controls.Add(this.checkBox13);
-            this.Controls.Add(this.checkBox14);
-            this.Controls.Add(this.checkBox15);
-            this.Controls.Add(this.checkBox16);
-            this.Controls.Add(this.checkBox17);
-            this.Controls.Add(this.checkBox18);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox9);
-            this.Controls.Add(this.checkBox10);
-            this.Controls.Add(this.checkBox11);
-            this.Controls.Add(this.checkBox12);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.m3m6);
+            this.Controls.Add(this.m3m2);
+            this.Controls.Add(this.m3m5);
+            this.Controls.Add(this.m3m3);
+            this.Controls.Add(this.m3m4);
+            this.Controls.Add(this.m3m1);
+            this.Controls.Add(this.m2m6);
+            this.Controls.Add(this.m2m2);
+            this.Controls.Add(this.m2m5);
+            this.Controls.Add(this.m2m3);
+            this.Controls.Add(this.m2m4);
+            this.Controls.Add(this.m2m1);
+            this.Controls.Add(this.m1m6);
+            this.Controls.Add(this.m1m2);
+            this.Controls.Add(this.m1m5);
+            this.Controls.Add(this.m1m3);
+            this.Controls.Add(this.m1m4);
+            this.Controls.Add(this.m1m1);
             this.Controls.Add(this.divider1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cWillpower);
@@ -3434,24 +3434,24 @@
         private System.Windows.Forms.Label cWillpower;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox divider1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox18;
+        private System.Windows.Forms.CheckBox m1m1;
+        private System.Windows.Forms.CheckBox m1m4;
+        private System.Windows.Forms.CheckBox m1m3;
+        private System.Windows.Forms.CheckBox m1m5;
+        private System.Windows.Forms.CheckBox m1m2;
+        private System.Windows.Forms.CheckBox m1m6;
+        private System.Windows.Forms.CheckBox m2m6;
+        private System.Windows.Forms.CheckBox m2m2;
+        private System.Windows.Forms.CheckBox m2m5;
+        private System.Windows.Forms.CheckBox m2m3;
+        private System.Windows.Forms.CheckBox m2m4;
+        private System.Windows.Forms.CheckBox m2m1;
+        private System.Windows.Forms.CheckBox m3m6;
+        private System.Windows.Forms.CheckBox m3m2;
+        private System.Windows.Forms.CheckBox m3m5;
+        private System.Windows.Forms.CheckBox m3m3;
+        private System.Windows.Forms.CheckBox m3m4;
+        private System.Windows.Forms.CheckBox m3m1;
         private System.Windows.Forms.Label cMot1;
         private System.Windows.Forms.Label cMot2;
         private System.Windows.Forms.Label cMot3;
@@ -3520,21 +3520,21 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox cMentalStrain;
+        private System.Windows.Forms.TextBox cPhysicalStrain;
+        private System.Windows.Forms.TextBox cSpiritualStrain;
         private System.Windows.Forms.Label dMentalStrainMax;
         private System.Windows.Forms.Label dPhysicalStrainMax;
         private System.Windows.Forms.Label dSpiritualStrainMax;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label cHumanityMax;
+        private System.Windows.Forms.TextBox cHumanity;
         private System.Windows.Forms.TextBox cNotes;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox cInitiative;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox cMementoMori;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label s1;
         private System.Windows.Forms.Label label36;
@@ -3656,9 +3656,9 @@
         private System.Windows.Forms.ToolStripMenuItem referenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearAbilitiesToolStripMenuItem;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox cOverFocus;
+        private System.Windows.Forms.TextBox cOverHealth;
+        private System.Windows.Forms.TextBox cOverSanity;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
