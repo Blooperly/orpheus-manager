@@ -1,6 +1,9 @@
 # Orpheus Manager
 **Making the most horrible things on Earth and beyond a bit easier.**
 
+WARNING:
+The character editor is still in early development. If you save a character sheet, it will PROBABLY be broken in the next update. Backwards compatability for save files will begin on 1.0 release.
+
 ### Feature Checklist:
 1. Character Creation / Management
     - Editable character sheet
