@@ -627,9 +627,9 @@ namespace OrpheusManager
             Stream myStreamHermetic = myAssemblyHermetic.GetManifestResourceStream("OrpheusManager.archetypeHermetic.png");
             Bitmap imageHermetic = new Bitmap(myStreamHermetic);
 
-            System.Reflection.Assembly myAssemblyOccultist = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamOccultist = myAssemblyOccultist.GetManifestResourceStream("OrpheusManager.archetypeOccultist.png");
-            Bitmap imageOccultist = new Bitmap(myStreamOccultist);
+            System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
+            Bitmap imageWitch = new Bitmap(myStreamWitch);
 
             System.Reflection.Assembly myAssemblyPsychic = System.Reflection.Assembly.GetExecutingAssembly();
             Stream myStreamPsychic = myAssemblyPsychic.GetManifestResourceStream("OrpheusManager.archetypePsychic.png");
@@ -639,20 +639,50 @@ namespace OrpheusManager
             Stream myStreamWeapon = myAssemblyWeapon.GetManifestResourceStream("OrpheusManager.archetypeWeapon.png");
             Bitmap imageWeapon = new Bitmap(myStreamWeapon);
 
+            System.Reflection.Assembly myAssemblyOccultist = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamOccultist = myAssemblyOccultist.GetManifestResourceStream("OrpheusManager.archetypeOccultist.png");
+            Bitmap imageOccultist = new Bitmap(myStreamOccultist);
+
+            System.Reflection.Assembly myAssemblyCyborg = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamCyborg = myAssemblyCyborg.GetManifestResourceStream("OrpheusManager.archetypeCyborg.png");
+            Bitmap imageCyborg = new Bitmap(myStreamCyborg);
+
+            System.Reflection.Assembly myAssemblyTelekinetic = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamTelekinetic = myAssemblyTelekinetic.GetManifestResourceStream("OrpheusManager.archetypeTelekinetic.png");
+            Bitmap imageTelekinetic = new Bitmap(myStreamTelekinetic);
+
             System.Reflection.Assembly myAssemblyWendigo = System.Reflection.Assembly.GetExecutingAssembly();
             Stream myStreamWendigo = myAssemblyWendigo.GetManifestResourceStream("OrpheusManager.archetypeWendigo.png");
             Bitmap imageWendigo = new Bitmap(myStreamWendigo);
 
-            System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
-            Bitmap imageWitch = new Bitmap(myStreamWitch);
+            System.Reflection.Assembly myAssemblyWerewolf = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamWerewolf = myAssemblyWerewolf.GetManifestResourceStream("OrpheusManager.archetypeWerewolf.png");
+            Bitmap imageWerewolf = new Bitmap(myStreamWerewolf);
+
+            System.Reflection.Assembly myAssemblyTrueFaith = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamTrueFaith = myAssemblyTrueFaith.GetManifestResourceStream("OrpheusManager.archetypeTrueFaith.png");
+            Bitmap imageTrueFaith = new Bitmap(myStreamTrueFaith);
+
+            System.Reflection.Assembly myAssemblyMedium = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamMedium = myAssemblyMedium.GetManifestResourceStream("OrpheusManager.archetypeMedium.png");
+            Bitmap imageMedium = new Bitmap(myStreamMedium);
+
+            System.Reflection.Assembly myAssemblySoldier = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamSoldier = myAssemblySoldier.GetManifestResourceStream("OrpheusManager.archetypeSoldier.png");
+            Bitmap imageSoldier = new Bitmap(myStreamSoldier);
 
             if (CDATA.cArch1 == "Hermetic Magician") archetypePic.Image = imageHermetic;
-            else if (CDATA.cArch1 == "Occultist") archetypePic.Image = imageOccultist;
+            else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
             else if (CDATA.cArch1 == "Psychic") archetypePic.Image = imagePsychic;
             else if (CDATA.cArch1 == "Weapon Bearer") archetypePic.Image = imageWeapon;
+            else if (CDATA.cArch1 == "Occultist") archetypePic.Image = imageOccultist;
+            else if (CDATA.cArch1 == "Cyborg") archetypePic.Image = imageCyborg;
             else if (CDATA.cArch1 == "Wendigo") archetypePic.Image = imageWendigo;
-            else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
+            else if (CDATA.cArch1 == "Telekinetic") archetypePic.Image = imageTelekinetic;
+            else if (CDATA.cArch1 == "Werewolf") archetypePic.Image = imageWerewolf;
+            else if (CDATA.cArch1 == "True Faith") archetypePic.Image = imageTrueFaith;
+            else if (CDATA.cArch1 == "Medium") archetypePic.Image = imageMedium;
+            else if (CDATA.cArch1 == "Soldier") archetypePic.Image = imageSoldier;
             else archetypePic.Image = imageWitch;
         }
 
@@ -813,6 +843,39 @@ namespace OrpheusManager
             m3m5.Checked = false;
             m3m6.Checked = false;
 
+            FW1.Checked = false;
+            FW2.Checked = false;
+            FW3.Checked = false;
+            FW4.Checked = false;
+            FW5.Checked = false;
+            FW6.Checked = false;
+            FW7.Checked = false;
+            FW8.Checked = false;
+            FW9.Checked = false;
+            FW10.Checked = false;
+
+            HW1.Checked = false;
+            HW2.Checked = false;
+            HW3.Checked = false;
+            HW4.Checked = false;
+            HW5.Checked = false;
+            HW6.Checked = false;
+            HW7.Checked = false;
+            HW8.Checked = false;
+            HW9.Checked = false;
+            HW10.Checked = false;
+
+            SW1.Checked = false;
+            SW2.Checked = false;
+            SW3.Checked = false;
+            SW4.Checked = false;
+            SW5.Checked = false;
+            SW6.Checked = false;
+            SW7.Checked = false;
+            SW8.Checked = false;
+            SW9.Checked = false;
+            SW10.Checked = false;
+
             // Clear Skills/Abilities
             clearSkillsToolStripMenuItem_Click(this, System.EventArgs.Empty);
             clearAbilitiesToolStripMenuItem_Click(this, System.EventArgs.Empty);
@@ -868,6 +931,60 @@ namespace OrpheusManager
             Int32.TryParse(cOverHealth.Text, out CDATA.cOverHealth);
             Int32.TryParse(cOverSanity.Text, out CDATA.cOverSanity);
 
+            if (m1m1.Checked == true) CDATA.cMot1Box[0] = 1; else CDATA.cMot1Box[0] = 0;
+            if (m1m2.Checked == true) CDATA.cMot1Box[1] = 1; else CDATA.cMot1Box[1] = 0;
+            if (m1m3.Checked == true) CDATA.cMot1Box[2] = 1; else CDATA.cMot1Box[2] = 0;
+            if (m1m4.Checked == true) CDATA.cMot1Box[3] = 1; else CDATA.cMot1Box[3] = 0;
+            if (m1m5.Checked == true) CDATA.cMot1Box[4] = 1; else CDATA.cMot1Box[4] = 0;
+            if (m1m6.Checked == true) CDATA.cMot1Box[5] = 1; else CDATA.cMot1Box[5] = 0;
+
+            if (m2m1.Checked == true) CDATA.cMot2Box[0] = 1; else CDATA.cMot2Box[0] = 0;
+            if (m2m2.Checked == true) CDATA.cMot2Box[1] = 1; else CDATA.cMot2Box[1] = 0;
+            if (m2m3.Checked == true) CDATA.cMot2Box[2] = 1; else CDATA.cMot2Box[2] = 0;
+            if (m2m4.Checked == true) CDATA.cMot2Box[3] = 1; else CDATA.cMot2Box[3] = 0;
+            if (m2m5.Checked == true) CDATA.cMot2Box[4] = 1; else CDATA.cMot2Box[4] = 0;
+            if (m2m6.Checked == true) CDATA.cMot2Box[5] = 1; else CDATA.cMot2Box[5] = 0;
+
+            if (m3m1.Checked == true) CDATA.cMot3Box[0] = 1; else CDATA.cMot3Box[0] = 0;
+            if (m3m2.Checked == true) CDATA.cMot3Box[1] = 1; else CDATA.cMot3Box[1] = 0;
+            if (m3m3.Checked == true) CDATA.cMot3Box[2] = 1; else CDATA.cMot3Box[2] = 0;
+            if (m3m4.Checked == true) CDATA.cMot3Box[3] = 1; else CDATA.cMot3Box[3] = 0;
+            if (m3m5.Checked == true) CDATA.cMot3Box[4] = 1; else CDATA.cMot3Box[4] = 0;
+            if (m3m6.Checked == true) CDATA.cMot3Box[5] = 1; else CDATA.cMot3Box[5] = 0;
+
+            if (FW1.Checked == true) CDATA.cFocusWounds[0] = 1; else CDATA.cFocusWounds[0] = 0;
+            if (FW2.Checked == true) CDATA.cFocusWounds[1] = 1; else CDATA.cFocusWounds[1] = 0;
+            if (FW3.Checked == true) CDATA.cFocusWounds[2] = 1; else CDATA.cFocusWounds[2] = 0;
+            if (FW4.Checked == true) CDATA.cFocusWounds[3] = 1; else CDATA.cFocusWounds[3] = 0;
+            if (FW5.Checked == true) CDATA.cFocusWounds[4] = 1; else CDATA.cFocusWounds[4] = 0;
+            if (FW6.Checked == true) CDATA.cFocusWounds[5] = 1; else CDATA.cFocusWounds[5] = 0;
+            if (FW7.Checked == true) CDATA.cFocusWounds[6] = 1; else CDATA.cFocusWounds[6] = 0;
+            if (FW8.Checked == true) CDATA.cFocusWounds[7] = 1; else CDATA.cFocusWounds[7] = 0;
+            if (FW9.Checked == true) CDATA.cFocusWounds[8] = 1; else CDATA.cFocusWounds[8] = 0;
+            if (FW10.Checked == true) CDATA.cFocusWounds[9] = 1; else CDATA.cFocusWounds[9] = 0;
+
+            if (HW1.Checked == true) CDATA.cHealthWounds[0] = 1; else CDATA.cHealthWounds[0] = 0;
+            if (HW2.Checked == true) CDATA.cHealthWounds[1] = 1; else CDATA.cHealthWounds[1] = 0;
+            if (HW3.Checked == true) CDATA.cHealthWounds[2] = 1; else CDATA.cHealthWounds[2] = 0;
+            if (HW4.Checked == true) CDATA.cHealthWounds[3] = 1; else CDATA.cHealthWounds[3] = 0;
+            if (HW5.Checked == true) CDATA.cHealthWounds[4] = 1; else CDATA.cHealthWounds[4] = 0;
+            if (HW6.Checked == true) CDATA.cHealthWounds[5] = 1; else CDATA.cHealthWounds[5] = 0;
+            if (HW7.Checked == true) CDATA.cHealthWounds[6] = 1; else CDATA.cHealthWounds[6] = 0;
+            if (HW8.Checked == true) CDATA.cHealthWounds[7] = 1; else CDATA.cHealthWounds[7] = 0;
+            if (HW9.Checked == true) CDATA.cHealthWounds[8] = 1; else CDATA.cHealthWounds[8] = 0;
+            if (HW10.Checked == true) CDATA.cHealthWounds[9] = 1; else CDATA.cHealthWounds[9] = 0;
+
+            if (SW1.Checked == true) CDATA.cSanityWounds[0] = 1; else CDATA.cSanityWounds[0] = 0;
+            if (SW2.Checked == true) CDATA.cSanityWounds[1] = 1; else CDATA.cSanityWounds[1] = 0;
+            if (SW3.Checked == true) CDATA.cSanityWounds[2] = 1; else CDATA.cSanityWounds[2] = 0;
+            if (SW4.Checked == true) CDATA.cSanityWounds[3] = 1; else CDATA.cSanityWounds[3] = 0;
+            if (SW5.Checked == true) CDATA.cSanityWounds[4] = 1; else CDATA.cSanityWounds[4] = 0;
+            if (SW6.Checked == true) CDATA.cSanityWounds[5] = 1; else CDATA.cSanityWounds[5] = 0;
+            if (SW7.Checked == true) CDATA.cSanityWounds[6] = 1; else CDATA.cSanityWounds[6] = 0;
+            if (SW8.Checked == true) CDATA.cSanityWounds[7] = 1; else CDATA.cSanityWounds[7] = 0;
+            if (SW9.Checked == true) CDATA.cSanityWounds[8] = 1; else CDATA.cSanityWounds[8] = 0;
+            if (FW10.Checked == true) CDATA.cSanityWounds[9] = 1; else CDATA.cSanityWounds[9] = 0;
+
             SaveFileDialog saver = new SaveFileDialog();
             saver.InitialDirectory = @"C:\";
             saver.Title = this.Text;
@@ -915,6 +1032,39 @@ namespace OrpheusManager
             if (m3m4.Checked == true) CDATA.cMot3Box[3] = 1; else CDATA.cMot3Box[3] = 0;
             if (m3m5.Checked == true) CDATA.cMot3Box[4] = 1; else CDATA.cMot3Box[4] = 0;
             if (m3m6.Checked == true) CDATA.cMot3Box[5] = 1; else CDATA.cMot3Box[5] = 0;
+
+            if (FW1.Checked == true) CDATA.cFocusWounds[0] = 1; else CDATA.cFocusWounds[0] = 0;
+            if (FW2.Checked == true) CDATA.cFocusWounds[1] = 1; else CDATA.cFocusWounds[1] = 0;
+            if (FW3.Checked == true) CDATA.cFocusWounds[2] = 1; else CDATA.cFocusWounds[2] = 0;
+            if (FW4.Checked == true) CDATA.cFocusWounds[3] = 1; else CDATA.cFocusWounds[3] = 0;
+            if (FW5.Checked == true) CDATA.cFocusWounds[4] = 1; else CDATA.cFocusWounds[4] = 0;
+            if (FW6.Checked == true) CDATA.cFocusWounds[5] = 1; else CDATA.cFocusWounds[5] = 0;
+            if (FW7.Checked == true) CDATA.cFocusWounds[6] = 1; else CDATA.cFocusWounds[6] = 0;
+            if (FW8.Checked == true) CDATA.cFocusWounds[7] = 1; else CDATA.cFocusWounds[7] = 0;
+            if (FW9.Checked == true) CDATA.cFocusWounds[8] = 1; else CDATA.cFocusWounds[8] = 0;
+            if (FW10.Checked == true) CDATA.cFocusWounds[9] = 1; else CDATA.cFocusWounds[9] = 0;
+
+            if (HW1.Checked == true) CDATA.cHealthWounds[0] = 1; else CDATA.cHealthWounds[0] = 0;
+            if (HW2.Checked == true) CDATA.cHealthWounds[1] = 1; else CDATA.cHealthWounds[1] = 0;
+            if (HW3.Checked == true) CDATA.cHealthWounds[2] = 1; else CDATA.cHealthWounds[2] = 0;
+            if (HW4.Checked == true) CDATA.cHealthWounds[3] = 1; else CDATA.cHealthWounds[3] = 0;
+            if (HW5.Checked == true) CDATA.cHealthWounds[4] = 1; else CDATA.cHealthWounds[4] = 0;
+            if (HW6.Checked == true) CDATA.cHealthWounds[5] = 1; else CDATA.cHealthWounds[5] = 0;
+            if (HW7.Checked == true) CDATA.cHealthWounds[6] = 1; else CDATA.cHealthWounds[6] = 0;
+            if (HW8.Checked == true) CDATA.cHealthWounds[7] = 1; else CDATA.cHealthWounds[7] = 0;
+            if (HW9.Checked == true) CDATA.cHealthWounds[8] = 1; else CDATA.cHealthWounds[8] = 0;
+            if (HW10.Checked == true) CDATA.cHealthWounds[9] = 1; else CDATA.cHealthWounds[9] = 0;
+
+            if (SW1.Checked == true) CDATA.cSanityWounds[0] = 1; else CDATA.cSanityWounds[0] = 0;
+            if (SW2.Checked == true) CDATA.cSanityWounds[1] = 1; else CDATA.cSanityWounds[1] = 0;
+            if (SW3.Checked == true) CDATA.cSanityWounds[2] = 1; else CDATA.cSanityWounds[2] = 0;
+            if (SW4.Checked == true) CDATA.cSanityWounds[3] = 1; else CDATA.cSanityWounds[3] = 0;
+            if (SW5.Checked == true) CDATA.cSanityWounds[4] = 1; else CDATA.cSanityWounds[4] = 0;
+            if (SW6.Checked == true) CDATA.cSanityWounds[5] = 1; else CDATA.cSanityWounds[5] = 0;
+            if (SW7.Checked == true) CDATA.cSanityWounds[6] = 1; else CDATA.cSanityWounds[6] = 0;
+            if (SW8.Checked == true) CDATA.cSanityWounds[7] = 1; else CDATA.cSanityWounds[7] = 0;
+            if (SW9.Checked == true) CDATA.cSanityWounds[8] = 1; else CDATA.cSanityWounds[8] = 0;
+            if (FW10.Checked == true) CDATA.cSanityWounds[9] = 1; else CDATA.cSanityWounds[9] = 0;
 
             if (SDATA.sFilepath != "") SDATA.generateFile(SDATA.sFilepath);
             else
@@ -1125,6 +1275,42 @@ namespace OrpheusManager
                     if (SDATA.parseLine(temp, 3) == "1") m3m4.Checked = true; else m3m4.Checked = false;
                     if (SDATA.parseLine(temp, 4) == "1") m3m5.Checked = true; else m3m5.Checked = false;
                     if (SDATA.parseLine(temp, 5) == "1") m3m6.Checked = true; else m3m6.Checked = false;
+
+                    temp = SDATA.parseField("Focus Damage:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") FW1.Checked = true; else FW1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") FW2.Checked = true; else FW2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") FW3.Checked = true; else FW3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") FW4.Checked = true; else FW4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") FW5.Checked = true; else FW5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") FW6.Checked = true; else FW6.Checked = false;
+                    if (SDATA.parseLine(temp, 6) == "1") FW7.Checked = true; else FW7.Checked = false;
+                    if (SDATA.parseLine(temp, 7) == "1") FW8.Checked = true; else FW8.Checked = false;
+                    if (SDATA.parseLine(temp, 8) == "1") FW9.Checked = true; else FW9.Checked = false;
+                    if (SDATA.parseLine(temp, 9) == "1") FW10.Checked = true; else FW10.Checked = false;
+
+                    temp = SDATA.parseField("Health Damage:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") HW1.Checked = true; else HW1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") HW2.Checked = true; else HW2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") HW3.Checked = true; else HW3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") HW4.Checked = true; else HW4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") HW5.Checked = true; else HW5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") HW6.Checked = true; else HW6.Checked = false;
+                    if (SDATA.parseLine(temp, 6) == "1") HW7.Checked = true; else HW7.Checked = false;
+                    if (SDATA.parseLine(temp, 7) == "1") HW8.Checked = true; else HW8.Checked = false;
+                    if (SDATA.parseLine(temp, 8) == "1") HW9.Checked = true; else HW9.Checked = false;
+                    if (SDATA.parseLine(temp, 9) == "1") HW10.Checked = true; else HW10.Checked = false;
+
+                    temp = SDATA.parseField("Sanity Damage:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") SW1.Checked = true; else SW1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") SW2.Checked = true; else SW2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") SW3.Checked = true; else SW3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") SW4.Checked = true; else SW4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") SW5.Checked = true; else SW5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") SW6.Checked = true; else SW6.Checked = false;
+                    if (SDATA.parseLine(temp, 6) == "1") SW7.Checked = true; else SW7.Checked = false;
+                    if (SDATA.parseLine(temp, 7) == "1") SW8.Checked = true; else SW8.Checked = false;
+                    if (SDATA.parseLine(temp, 8) == "1") SW9.Checked = true; else SW9.Checked = false;
+                    if (SDATA.parseLine(temp, 9) == "1") SW10.Checked = true; else SW10.Checked = false;
 
                     reloadArch();
                     writeDATA();

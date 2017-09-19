@@ -26,9 +26,9 @@ namespace OrpheusManager
         public static string cMot2 = "Lady Killer";
         public static string cMot3 = "Death Wish";
         public static string cNotes = "";
-        public static int cMentalStrain = 0;
-        public static int cPhysicalStrain = 0;
-        public static int cSpiritualStrain = 0;
+        public static int cMentalStrain = 2;
+        public static int cPhysicalStrain = 10;
+        public static int cSpiritualStrain = 12;
         public static int cInitiative = 0;
         public static int cMementoMori = 0;
         public static int cHumanity = 100;
@@ -49,6 +49,10 @@ namespace OrpheusManager
         public static int[] cMot1Box = { 0, 0, 0, 0, 0, 0 };
         public static int[] cMot2Box = { 0, 0, 0, 0, 0, 0 };
         public static int[] cMot3Box = { 0, 0, 0, 0, 0, 0 };
+
+        public static int[] cFocusWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public static int[] cHealthWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public static int[] cSanityWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
         public static void addSkill()
         {
@@ -264,6 +268,39 @@ namespace OrpheusManager
                     saveString += CDATA.cOverHealth + "\r\n\r\n";
                     saveString += "Over Sanity:\r\n";
                     saveString += CDATA.cOverSanity + "\r\n\r\n";
+                    saveString += "Focus Damage:\r\n";
+                    saveString += CDATA.cFocusWounds[0] + "\r\n";
+                    saveString += CDATA.cFocusWounds[1] + "\r\n";
+                    saveString += CDATA.cFocusWounds[2] + "\r\n";
+                    saveString += CDATA.cFocusWounds[3] + "\r\n";
+                    saveString += CDATA.cFocusWounds[4] + "\r\n";
+                    saveString += CDATA.cFocusWounds[5] + "\r\n";
+                    saveString += CDATA.cFocusWounds[6] + "\r\n";
+                    saveString += CDATA.cFocusWounds[7] + "\r\n";
+                    saveString += CDATA.cFocusWounds[8] + "\r\n";
+                    saveString += CDATA.cFocusWounds[9] + "\r\n\r\n";
+                    saveString += "Health Damage:\r\n";
+                    saveString += CDATA.cHealthWounds[0] + "\r\n";
+                    saveString += CDATA.cHealthWounds[1] + "\r\n";
+                    saveString += CDATA.cHealthWounds[2] + "\r\n";
+                    saveString += CDATA.cHealthWounds[3] + "\r\n";
+                    saveString += CDATA.cHealthWounds[4] + "\r\n";
+                    saveString += CDATA.cHealthWounds[5] + "\r\n";
+                    saveString += CDATA.cHealthWounds[6] + "\r\n";
+                    saveString += CDATA.cHealthWounds[7] + "\r\n";
+                    saveString += CDATA.cHealthWounds[8] + "\r\n";
+                    saveString += CDATA.cHealthWounds[9] + "\r\n\r\n";
+                    saveString += "Sanity Damage:\r\n";
+                    saveString += CDATA.cSanityWounds[0] + "\r\n";
+                    saveString += CDATA.cSanityWounds[1] + "\r\n";
+                    saveString += CDATA.cSanityWounds[2] + "\r\n";
+                    saveString += CDATA.cSanityWounds[3] + "\r\n";
+                    saveString += CDATA.cSanityWounds[4] + "\r\n";
+                    saveString += CDATA.cSanityWounds[5] + "\r\n";
+                    saveString += CDATA.cSanityWounds[6] + "\r\n";
+                    saveString += CDATA.cSanityWounds[7] + "\r\n";
+                    saveString += CDATA.cSanityWounds[8] + "\r\n";
+                    saveString += CDATA.cSanityWounds[9] + "\r\n\r\n";
                     saveString += "Skills:\r\n";
                     saveString += CDATA.cSkillName[0] + "\r\n";
                     saveString += CDATA.cSkillRank[0] + "\r\n";

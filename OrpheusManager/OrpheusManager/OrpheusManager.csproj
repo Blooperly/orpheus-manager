@@ -141,5 +141,13 @@
   <ItemGroup>
     <EmbeddedResource Include="archetypeOccultist.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeCyborg.png" />
+    <EmbeddedResource Include="archetypeMedium.png" />
+    <EmbeddedResource Include="archetypeSoldier.png" />
+    <EmbeddedResource Include="archetypeTelekinetic.png" />
+    <EmbeddedResource Include="archetypeTrueFaith.png" />
+    <EmbeddedResource Include="archetypeWerewolf.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
