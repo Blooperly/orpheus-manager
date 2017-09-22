@@ -62,7 +62,7 @@ namespace OrpheusManager
             {
                 for (int i = 0; i < 22; i++)
                 {
-                    if (cSkillName[i] == "") { loc = i; break; }
+                    if (cSkillName[i] == " ") { loc = i; break; }
                     if (i == 21) full = true;
                 }
                 if (!full)
@@ -75,7 +75,7 @@ namespace OrpheusManager
             {
                 for (int i = 0; i < 22; i++)
                 {
-                    if (cCkillName[i] == "") { loc = i; break; }
+                    if (cCkillName[i] == " ") { loc = i; break; }
                     if (i == 21) full = true;
                 }
                 if (!full)
@@ -93,7 +93,7 @@ namespace OrpheusManager
 
             for (int i = 0; i < 12; i++)
             {
-                if (cAbilityName[i] == "") { loc = i; break; }
+                if (cAbilityName[i] == " ") { loc = i; break; }
                 if (i == 11) full = true;
             }
             if (!full)
