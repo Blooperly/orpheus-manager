@@ -69,6 +69,12 @@
     <Compile Include="editCharacterName.Designer.cs">
       <DependentUpon>editCharacterName.cs</DependentUpon>
     </Compile>
+    <Compile Include="maxHumanity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maxHumanity.Designer.cs">
+      <DependentUpon>maxHumanity.cs</DependentUpon>
+    </Compile>
     <Compile Include="newCharacter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="editCharacterName.resx">
       <DependentUpon>editCharacterName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maxHumanity.resx">
+      <DependentUpon>maxHumanity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newCharacter.resx">
       <DependentUpon>newCharacter.cs</DependentUpon>

@@ -918,6 +918,14 @@ namespace OrpheusManager
             writeDATA();
         }
 
+        private void maxHumanityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form eHumanity = new maxHumanity();
+            eHumanity.ShowDialog();
+            writeDATA();
+            writeDATA2();
+        }
+
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CDATA.cNotes = cNotes.Text;

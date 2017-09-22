@@ -284,6 +284,7 @@
             this.cOverFocus = new System.Windows.Forms.TextBox();
             this.cOverHealth = new System.Windows.Forms.TextBox();
             this.cOverSanity = new System.Windows.Forms.TextBox();
+            this.maxHumanityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -319,28 +320,28 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newCharacter_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -351,7 +352,8 @@
             this.addSkillToolStripMenuItem,
             this.clearSkillsToolStripMenuItem,
             this.addAbilityToolStripMenuItem,
-            this.clearAbilitiesToolStripMenuItem});
+            this.clearAbilitiesToolStripMenuItem,
+            this.maxHumanityToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
@@ -3134,6 +3136,13 @@
             this.cOverSanity.Size = new System.Drawing.Size(28, 20);
             this.cOverSanity.TabIndex = 263;
             // 
+            // maxHumanityToolStripMenuItem
+            // 
+            this.maxHumanityToolStripMenuItem.Name = "maxHumanityToolStripMenuItem";
+            this.maxHumanityToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.maxHumanityToolStripMenuItem.Text = "Max Humanity";
+            this.maxHumanityToolStripMenuItem.Click += new System.EventHandler(this.maxHumanityToolStripMenuItem_Click);
+            // 
             // CharacterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3660,6 +3669,7 @@
         private System.Windows.Forms.TextBox cOverHealth;
         private System.Windows.Forms.TextBox cOverSanity;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maxHumanityToolStripMenuItem;
     }
 }
 
