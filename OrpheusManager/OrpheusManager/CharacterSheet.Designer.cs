@@ -37,10 +37,9 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.characterNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addSkillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearSkillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addAbilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearAbilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maxHumanityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageSkillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageAbilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.referenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cName = new System.Windows.Forms.Label();
@@ -284,7 +283,8 @@
             this.cOverFocus = new System.Windows.Forms.TextBox();
             this.cOverHealth = new System.Windows.Forms.TextBox();
             this.cOverSanity = new System.Windows.Forms.TextBox();
-            this.maxHumanityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.levelUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -320,39 +320,39 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newCharacter_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.levelUpToolStripMenuItem,
+            this.manageSkillsToolStripMenuItem,
+            this.manageAbilitiesToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.characterNameToolStripMenuItem,
-            this.addSkillToolStripMenuItem,
-            this.clearSkillsToolStripMenuItem,
-            this.addAbilityToolStripMenuItem,
-            this.clearAbilitiesToolStripMenuItem,
             this.maxHumanityToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
@@ -361,37 +361,30 @@
             // characterNameToolStripMenuItem
             // 
             this.characterNameToolStripMenuItem.Name = "characterNameToolStripMenuItem";
-            this.characterNameToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.characterNameToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.characterNameToolStripMenuItem.Text = "Character Name";
             this.characterNameToolStripMenuItem.Click += new System.EventHandler(this.characterNameToolStripMenuItem_Click);
             // 
-            // addSkillToolStripMenuItem
+            // maxHumanityToolStripMenuItem
             // 
-            this.addSkillToolStripMenuItem.Name = "addSkillToolStripMenuItem";
-            this.addSkillToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.addSkillToolStripMenuItem.Text = "Add Skill";
-            this.addSkillToolStripMenuItem.Click += new System.EventHandler(this.addSkillToolStripMenuItem_Click);
+            this.maxHumanityToolStripMenuItem.Name = "maxHumanityToolStripMenuItem";
+            this.maxHumanityToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.maxHumanityToolStripMenuItem.Text = "Max Humanity";
+            this.maxHumanityToolStripMenuItem.Click += new System.EventHandler(this.maxHumanityToolStripMenuItem_Click);
             // 
-            // clearSkillsToolStripMenuItem
+            // manageSkillsToolStripMenuItem
             // 
-            this.clearSkillsToolStripMenuItem.Name = "clearSkillsToolStripMenuItem";
-            this.clearSkillsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.clearSkillsToolStripMenuItem.Text = "Clear Skills";
-            this.clearSkillsToolStripMenuItem.Click += new System.EventHandler(this.clearSkillsToolStripMenuItem_Click);
+            this.manageSkillsToolStripMenuItem.Name = "manageSkillsToolStripMenuItem";
+            this.manageSkillsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.manageSkillsToolStripMenuItem.Text = "Manage Skills";
+            this.manageSkillsToolStripMenuItem.Click += new System.EventHandler(this.manageSkillsToolStripMenuItem_Click);
             // 
-            // addAbilityToolStripMenuItem
+            // manageAbilitiesToolStripMenuItem
             // 
-            this.addAbilityToolStripMenuItem.Name = "addAbilityToolStripMenuItem";
-            this.addAbilityToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.addAbilityToolStripMenuItem.Text = "Add Ability";
-            this.addAbilityToolStripMenuItem.Click += new System.EventHandler(this.addAbilityToolStripMenuItem_Click);
-            // 
-            // clearAbilitiesToolStripMenuItem
-            // 
-            this.clearAbilitiesToolStripMenuItem.Name = "clearAbilitiesToolStripMenuItem";
-            this.clearAbilitiesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.clearAbilitiesToolStripMenuItem.Text = "Clear Abilities";
-            this.clearAbilitiesToolStripMenuItem.Click += new System.EventHandler(this.clearAbilitiesToolStripMenuItem_Click);
+            this.manageAbilitiesToolStripMenuItem.Name = "manageAbilitiesToolStripMenuItem";
+            this.manageAbilitiesToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.manageAbilitiesToolStripMenuItem.Text = "Manage Abilities";
+            this.manageAbilitiesToolStripMenuItem.Click += new System.EventHandler(this.manageAbilitiesToolStripMenuItem_Click);
             // 
             // referenceToolStripMenuItem
             // 
@@ -3136,12 +3129,16 @@
             this.cOverSanity.Size = new System.Drawing.Size(28, 20);
             this.cOverSanity.TabIndex = 263;
             // 
-            // maxHumanityToolStripMenuItem
+            // toolStripMenuItem1
             // 
-            this.maxHumanityToolStripMenuItem.Name = "maxHumanityToolStripMenuItem";
-            this.maxHumanityToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.maxHumanityToolStripMenuItem.Text = "Max Humanity";
-            this.maxHumanityToolStripMenuItem.Click += new System.EventHandler(this.maxHumanityToolStripMenuItem_Click);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(159, 6);
+            // 
+            // levelUpToolStripMenuItem
+            // 
+            this.levelUpToolStripMenuItem.Name = "levelUpToolStripMenuItem";
+            this.levelUpToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.levelUpToolStripMenuItem.Text = "Level Up";
             // 
             // CharacterSheet
             // 
@@ -3634,8 +3631,6 @@
         private System.Windows.Forms.Label c3;
         private System.Windows.Forms.Label c10;
         private System.Windows.Forms.Label c1;
-        private System.Windows.Forms.ToolStripMenuItem addSkillToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearSkillsToolStripMenuItem;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label ar1;
         private System.Windows.Forms.Label a1;
@@ -3661,15 +3656,17 @@
         private System.Windows.Forms.Label a10;
         private System.Windows.Forms.Label ar9;
         private System.Windows.Forms.Label a9;
-        private System.Windows.Forms.ToolStripMenuItem addAbilityToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem referenceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearAbilitiesToolStripMenuItem;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox cOverFocus;
         private System.Windows.Forms.TextBox cOverHealth;
         private System.Windows.Forms.TextBox cOverSanity;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem maxHumanityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageSkillsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageAbilitiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem levelUpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
     }
 }
 

@@ -69,6 +69,18 @@
     <Compile Include="editCharacterName.Designer.cs">
       <DependentUpon>editCharacterName.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageAbilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAbilities.Designer.cs">
+      <DependentUpon>ManageAbilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSkills.Designer.cs">
+      <DependentUpon>ManageSkills.cs</DependentUpon>
+    </Compile>
     <Compile Include="maxHumanity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="editCharacterName.resx">
       <DependentUpon>editCharacterName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAbilities.resx">
+      <DependentUpon>ManageAbilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSkills.resx">
+      <DependentUpon>ManageSkills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="maxHumanity.resx">
       <DependentUpon>maxHumanity.cs</DependentUpon>

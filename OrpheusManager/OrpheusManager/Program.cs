@@ -46,6 +46,10 @@ namespace OrpheusManager
         public static string[] cAbilityName = { "Inspiration", "Hungry Shadows", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
         public static string[] cAbilityRank = { "II", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
 
+        public static int[] cAbilityMasteryA = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public static int[] cAbilityMasteryB = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public static int[] cAbilityOverload = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
         public static int[] cMot1Box = { 0, 0, 0, 0, 0, 0 };
         public static int[] cMot2Box = { 0, 0, 0, 0, 0, 0 };
         public static int[] cMot3Box = { 0, 0, 0, 0, 0, 0 };
@@ -192,6 +196,44 @@ namespace OrpheusManager
 
         public static string eAbilityName = " ";
         public static string eAbilityRank = " ";
+
+        public static string numToInt(string num)
+        {
+            if (num == "I") return "1";
+            else if (num == "II") return "2";
+            else if (num == "III") return "3";
+            else if (num == "IV") return "4";
+            else if (num == "V") return "5";
+            return "";
+        }
+
+        public static string intToNum(string num)
+        {
+            if (num == "1") return "I";
+            else if (num == "2") return "II";
+            else if (num == "3") return "III";
+            else if (num == "4") return "IV";
+            else if (num == "5") return "V";
+            return " ";
+        }
+
+        public static string clearSpace(string input)
+        {
+            if (input == " ") return "";
+            else return input;
+        }
+
+        public static string addSpace(string input)
+        {
+            if (input == "") return " ";
+            else return input;
+        }
+
+        public static bool skillCheck(string input)
+        {
+            if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "") return true;
+            else return false;
+        }
     }
 
     public static class SDATA
@@ -500,13 +542,14 @@ namespace OrpheusManager
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        public static CharacterSheet mainform;
         [STAThread]
         static void Main()
         {
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CharacterSheet());
+            mainform = new CharacterSheet();
+            Application.Run(mainform);
         }
     }
 }

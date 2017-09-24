@@ -20,8 +20,13 @@ namespace OrpheusManager
             InitializeComponent();
         }
 
+        public static void outsideWrite()
+        {
+            //writeDATA();
+        }
+
         // Update Character Sheet
-        private void writeDATA()
+        public void writeDATA()
         {
             // Window Settings
             this.Text = "Orpheus Manager - " + CDATA.cName;
@@ -924,6 +929,18 @@ namespace OrpheusManager
             eHumanity.ShowDialog();
             writeDATA();
             writeDATA2();
+        }
+
+        private void manageSkillsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mSkills = new ManageSkills();
+            mSkills.Show();
+        }
+
+        private void manageAbilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mAbilities = new ManageAbilities();
+            mAbilities.Show();
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
