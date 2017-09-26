@@ -38,3 +38,6 @@ C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\o
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.maxHumanity.resources
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.ManageSkills.resources
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.ManageAbilities.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.ManageAbilities.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.ManageSkills.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.maxHumanity.resources

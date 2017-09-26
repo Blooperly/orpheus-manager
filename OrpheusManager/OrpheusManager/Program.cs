@@ -479,6 +479,45 @@ namespace OrpheusManager
                     saveString += CDATA.cMot3Box[3] + "\r\n";
                     saveString += CDATA.cMot3Box[4] + "\r\n";
                     saveString += CDATA.cMot3Box[5] + "\r\n\r\n";
+                    saveString += "Ability Mastery A:\r\n";
+                    saveString += CDATA.cAbilityMasteryA[0] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[1] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[2] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[3] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[4] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[5] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[6] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[7] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[8] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[9] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[10] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryA[11] + "\r\n\r\n";
+                    saveString += "Ability Mastery B:\r\n";
+                    saveString += CDATA.cAbilityMasteryB[0] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[1] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[2] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[3] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[4] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[5] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[6] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[7] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[8] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[9] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[10] + "\r\n";
+                    saveString += CDATA.cAbilityMasteryB[11] + "\r\n\r\n";
+                    saveString += "Ability Overload:\r\n";
+                    saveString += CDATA.cAbilityOverload[0] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[1] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[2] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[3] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[4] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[5] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[6] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[7] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[8] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[9] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[10] + "\r\n";
+                    saveString += CDATA.cAbilityOverload[11] + "\r\n\r\n";
                     saveString += "Notes:\r\n";
                     saveString += CDATA.cNotes + "[XXspecialENDstringXX]\r\n\r\n";
 
@@ -498,7 +537,8 @@ namespace OrpheusManager
             start = SDATA.sFullData.IndexOf(search, 0) + search.Length;
             end = SDATA.sFullData.IndexOf("\r\n\r\n", start);
             len = end - start;
-            return SDATA.sFullData.Substring(start, len);
+            if (len > 0) return SDATA.sFullData.Substring(start, len);
+            else return " ";
         }
 
         public static string parseFieldEnd(string search)
@@ -509,7 +549,8 @@ namespace OrpheusManager
             start = SDATA.sFullData.IndexOf(search, 0) + search.Length;
             end = SDATA.sFullData.IndexOf("[XXspecialENDstringXX]\r\n\r\n", start);
             len = end - start;
-            return SDATA.sFullData.Substring(start, len);
+            if (len > 0) return SDATA.sFullData.Substring(start, len);
+            else return " ";
         }
 
         public static string parseLine(string source, int line)
@@ -533,7 +574,8 @@ namespace OrpheusManager
                 }
             }
             len = end - start;
-            return source.Substring(start, len);
+            if (len > 0) return source.Substring(start, len);
+            else return " ";
         }
     }
 

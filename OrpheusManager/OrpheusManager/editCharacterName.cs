@@ -19,7 +19,6 @@ namespace OrpheusManager
 
         private void editCharacterName_Load(object sender, EventArgs e)
         {
-            this.ActiveControl = textBox1; // Selects Input on Start
             textBox1.Text = CDATA.cName;
         }
 

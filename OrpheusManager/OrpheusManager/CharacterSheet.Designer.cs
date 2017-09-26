@@ -36,10 +36,12 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.characterNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.maxHumanityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.levelUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageSkillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageAbilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.characterNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maxHumanityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.referenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cName = new System.Windows.Forms.Label();
@@ -283,8 +285,6 @@
             this.cOverFocus = new System.Windows.Forms.TextBox();
             this.cOverHealth = new System.Windows.Forms.TextBox();
             this.cOverSanity = new System.Windows.Forms.TextBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.levelUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -320,28 +320,28 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newCharacter_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -358,19 +358,11 @@
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
             // 
-            // characterNameToolStripMenuItem
+            // levelUpToolStripMenuItem
             // 
-            this.characterNameToolStripMenuItem.Name = "characterNameToolStripMenuItem";
-            this.characterNameToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.characterNameToolStripMenuItem.Text = "Character Name";
-            this.characterNameToolStripMenuItem.Click += new System.EventHandler(this.characterNameToolStripMenuItem_Click);
-            // 
-            // maxHumanityToolStripMenuItem
-            // 
-            this.maxHumanityToolStripMenuItem.Name = "maxHumanityToolStripMenuItem";
-            this.maxHumanityToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.maxHumanityToolStripMenuItem.Text = "Max Humanity";
-            this.maxHumanityToolStripMenuItem.Click += new System.EventHandler(this.maxHumanityToolStripMenuItem_Click);
+            this.levelUpToolStripMenuItem.Name = "levelUpToolStripMenuItem";
+            this.levelUpToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.levelUpToolStripMenuItem.Text = "Level Up";
             // 
             // manageSkillsToolStripMenuItem
             // 
@@ -385,6 +377,25 @@
             this.manageAbilitiesToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.manageAbilitiesToolStripMenuItem.Text = "Manage Abilities";
             this.manageAbilitiesToolStripMenuItem.Click += new System.EventHandler(this.manageAbilitiesToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(159, 6);
+            // 
+            // characterNameToolStripMenuItem
+            // 
+            this.characterNameToolStripMenuItem.Name = "characterNameToolStripMenuItem";
+            this.characterNameToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.characterNameToolStripMenuItem.Text = "Character Name";
+            this.characterNameToolStripMenuItem.Click += new System.EventHandler(this.characterNameToolStripMenuItem_Click);
+            // 
+            // maxHumanityToolStripMenuItem
+            // 
+            this.maxHumanityToolStripMenuItem.Name = "maxHumanityToolStripMenuItem";
+            this.maxHumanityToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.maxHumanityToolStripMenuItem.Text = "Max Humanity";
+            this.maxHumanityToolStripMenuItem.Click += new System.EventHandler(this.maxHumanityToolStripMenuItem_Click);
             // 
             // referenceToolStripMenuItem
             // 
@@ -2414,9 +2425,9 @@
             this.cr22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr22.Location = new System.Drawing.Point(704, 352);
+            this.cr22.Location = new System.Drawing.Point(693, 352);
             this.cr22.Name = "cr22";
-            this.cr22.Size = new System.Drawing.Size(16, 13);
+            this.cr22.Size = new System.Drawing.Size(27, 13);
             this.cr22.TabIndex = 219;
             this.cr22.Text = "0";
             this.cr22.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2426,9 +2437,9 @@
             this.cr21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr21.Location = new System.Drawing.Point(704, 339);
+            this.cr21.Location = new System.Drawing.Point(693, 339);
             this.cr21.Name = "cr21";
-            this.cr21.Size = new System.Drawing.Size(16, 13);
+            this.cr21.Size = new System.Drawing.Size(27, 13);
             this.cr21.TabIndex = 218;
             this.cr21.Text = "0";
             this.cr21.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2438,9 +2449,9 @@
             this.cr19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr19.Location = new System.Drawing.Point(704, 313);
+            this.cr19.Location = new System.Drawing.Point(693, 313);
             this.cr19.Name = "cr19";
-            this.cr19.Size = new System.Drawing.Size(16, 13);
+            this.cr19.Size = new System.Drawing.Size(27, 13);
             this.cr19.TabIndex = 217;
             this.cr19.Text = "0";
             this.cr19.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2450,9 +2461,9 @@
             this.cr20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr20.Location = new System.Drawing.Point(704, 326);
+            this.cr20.Location = new System.Drawing.Point(693, 326);
             this.cr20.Name = "cr20";
-            this.cr20.Size = new System.Drawing.Size(16, 13);
+            this.cr20.Size = new System.Drawing.Size(27, 13);
             this.cr20.TabIndex = 216;
             this.cr20.Text = "0";
             this.cr20.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2462,9 +2473,9 @@
             this.cr18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr18.Location = new System.Drawing.Point(704, 300);
+            this.cr18.Location = new System.Drawing.Point(693, 300);
             this.cr18.Name = "cr18";
-            this.cr18.Size = new System.Drawing.Size(16, 13);
+            this.cr18.Size = new System.Drawing.Size(27, 13);
             this.cr18.TabIndex = 215;
             this.cr18.Text = "0";
             this.cr18.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2474,9 +2485,9 @@
             this.cr17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr17.Location = new System.Drawing.Point(704, 287);
+            this.cr17.Location = new System.Drawing.Point(693, 287);
             this.cr17.Name = "cr17";
-            this.cr17.Size = new System.Drawing.Size(16, 13);
+            this.cr17.Size = new System.Drawing.Size(27, 13);
             this.cr17.TabIndex = 214;
             this.cr17.Text = "0";
             this.cr17.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2486,9 +2497,9 @@
             this.cr15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr15.Location = new System.Drawing.Point(704, 261);
+            this.cr15.Location = new System.Drawing.Point(693, 261);
             this.cr15.Name = "cr15";
-            this.cr15.Size = new System.Drawing.Size(16, 13);
+            this.cr15.Size = new System.Drawing.Size(27, 13);
             this.cr15.TabIndex = 213;
             this.cr15.Text = "0";
             this.cr15.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2498,9 +2509,9 @@
             this.cr16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr16.Location = new System.Drawing.Point(704, 274);
+            this.cr16.Location = new System.Drawing.Point(693, 274);
             this.cr16.Name = "cr16";
-            this.cr16.Size = new System.Drawing.Size(16, 13);
+            this.cr16.Size = new System.Drawing.Size(27, 13);
             this.cr16.TabIndex = 212;
             this.cr16.Text = "0";
             this.cr16.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2510,9 +2521,9 @@
             this.cr14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr14.Location = new System.Drawing.Point(704, 248);
+            this.cr14.Location = new System.Drawing.Point(693, 248);
             this.cr14.Name = "cr14";
-            this.cr14.Size = new System.Drawing.Size(16, 13);
+            this.cr14.Size = new System.Drawing.Size(27, 13);
             this.cr14.TabIndex = 211;
             this.cr14.Text = "0";
             this.cr14.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2522,9 +2533,9 @@
             this.cr13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr13.Location = new System.Drawing.Point(704, 235);
+            this.cr13.Location = new System.Drawing.Point(693, 235);
             this.cr13.Name = "cr13";
-            this.cr13.Size = new System.Drawing.Size(16, 13);
+            this.cr13.Size = new System.Drawing.Size(27, 13);
             this.cr13.TabIndex = 210;
             this.cr13.Text = "0";
             this.cr13.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2534,9 +2545,9 @@
             this.cr11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr11.Location = new System.Drawing.Point(704, 209);
+            this.cr11.Location = new System.Drawing.Point(693, 209);
             this.cr11.Name = "cr11";
-            this.cr11.Size = new System.Drawing.Size(16, 13);
+            this.cr11.Size = new System.Drawing.Size(27, 13);
             this.cr11.TabIndex = 209;
             this.cr11.Text = "0";
             this.cr11.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2546,9 +2557,9 @@
             this.cr12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr12.Location = new System.Drawing.Point(704, 222);
+            this.cr12.Location = new System.Drawing.Point(693, 222);
             this.cr12.Name = "cr12";
-            this.cr12.Size = new System.Drawing.Size(16, 13);
+            this.cr12.Size = new System.Drawing.Size(27, 13);
             this.cr12.TabIndex = 208;
             this.cr12.Text = "0";
             this.cr12.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2558,9 +2569,9 @@
             this.cr10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr10.Location = new System.Drawing.Point(704, 196);
+            this.cr10.Location = new System.Drawing.Point(693, 196);
             this.cr10.Name = "cr10";
-            this.cr10.Size = new System.Drawing.Size(16, 13);
+            this.cr10.Size = new System.Drawing.Size(27, 13);
             this.cr10.TabIndex = 207;
             this.cr10.Text = "0";
             this.cr10.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2570,9 +2581,9 @@
             this.cr9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr9.Location = new System.Drawing.Point(704, 183);
+            this.cr9.Location = new System.Drawing.Point(693, 183);
             this.cr9.Name = "cr9";
-            this.cr9.Size = new System.Drawing.Size(16, 13);
+            this.cr9.Size = new System.Drawing.Size(27, 13);
             this.cr9.TabIndex = 206;
             this.cr9.Text = "0";
             this.cr9.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2582,9 +2593,9 @@
             this.cr7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr7.Location = new System.Drawing.Point(704, 157);
+            this.cr7.Location = new System.Drawing.Point(693, 157);
             this.cr7.Name = "cr7";
-            this.cr7.Size = new System.Drawing.Size(16, 13);
+            this.cr7.Size = new System.Drawing.Size(27, 13);
             this.cr7.TabIndex = 205;
             this.cr7.Text = "0";
             this.cr7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2594,9 +2605,9 @@
             this.cr8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr8.Location = new System.Drawing.Point(704, 170);
+            this.cr8.Location = new System.Drawing.Point(693, 170);
             this.cr8.Name = "cr8";
-            this.cr8.Size = new System.Drawing.Size(16, 13);
+            this.cr8.Size = new System.Drawing.Size(27, 13);
             this.cr8.TabIndex = 204;
             this.cr8.Text = "0";
             this.cr8.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2606,9 +2617,9 @@
             this.cr6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr6.Location = new System.Drawing.Point(704, 144);
+            this.cr6.Location = new System.Drawing.Point(693, 144);
             this.cr6.Name = "cr6";
-            this.cr6.Size = new System.Drawing.Size(16, 13);
+            this.cr6.Size = new System.Drawing.Size(27, 13);
             this.cr6.TabIndex = 203;
             this.cr6.Text = "0";
             this.cr6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2618,9 +2629,9 @@
             this.cr5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr5.Location = new System.Drawing.Point(704, 131);
+            this.cr5.Location = new System.Drawing.Point(693, 131);
             this.cr5.Name = "cr5";
-            this.cr5.Size = new System.Drawing.Size(16, 13);
+            this.cr5.Size = new System.Drawing.Size(27, 13);
             this.cr5.TabIndex = 202;
             this.cr5.Text = "0";
             this.cr5.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2630,9 +2641,9 @@
             this.cr3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr3.Location = new System.Drawing.Point(704, 105);
+            this.cr3.Location = new System.Drawing.Point(693, 105);
             this.cr3.Name = "cr3";
-            this.cr3.Size = new System.Drawing.Size(16, 13);
+            this.cr3.Size = new System.Drawing.Size(27, 13);
             this.cr3.TabIndex = 201;
             this.cr3.Text = "0";
             this.cr3.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2642,9 +2653,9 @@
             this.cr4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr4.Location = new System.Drawing.Point(704, 118);
+            this.cr4.Location = new System.Drawing.Point(693, 118);
             this.cr4.Name = "cr4";
-            this.cr4.Size = new System.Drawing.Size(16, 13);
+            this.cr4.Size = new System.Drawing.Size(27, 13);
             this.cr4.TabIndex = 200;
             this.cr4.Text = "0";
             this.cr4.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2654,9 +2665,9 @@
             this.cr2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr2.Location = new System.Drawing.Point(704, 92);
+            this.cr2.Location = new System.Drawing.Point(693, 92);
             this.cr2.Name = "cr2";
-            this.cr2.Size = new System.Drawing.Size(16, 13);
+            this.cr2.Size = new System.Drawing.Size(27, 13);
             this.cr2.TabIndex = 199;
             this.cr2.Text = "0";
             this.cr2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2666,9 +2677,9 @@
             this.cr1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr1.Location = new System.Drawing.Point(704, 79);
+            this.cr1.Location = new System.Drawing.Point(693, 79);
             this.cr1.Name = "cr1";
-            this.cr1.Size = new System.Drawing.Size(16, 13);
+            this.cr1.Size = new System.Drawing.Size(27, 13);
             this.cr1.TabIndex = 198;
             this.cr1.Text = "0";
             this.cr1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2810,9 +2821,9 @@
             this.ar1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar1.Location = new System.Drawing.Point(767, 395);
+            this.ar1.Location = new System.Drawing.Point(720, 395);
             this.ar1.Name = "ar1";
-            this.ar1.Size = new System.Drawing.Size(35, 13);
+            this.ar1.Size = new System.Drawing.Size(82, 13);
             this.ar1.TabIndex = 237;
             this.ar1.Text = "0";
             this.ar1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2834,9 +2845,9 @@
             this.ar2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar2.Location = new System.Drawing.Point(767, 409);
+            this.ar2.Location = new System.Drawing.Point(720, 409);
             this.ar2.Name = "ar2";
-            this.ar2.Size = new System.Drawing.Size(35, 13);
+            this.ar2.Size = new System.Drawing.Size(82, 13);
             this.ar2.TabIndex = 239;
             this.ar2.Text = "0";
             this.ar2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2858,9 +2869,9 @@
             this.ar4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar4.Location = new System.Drawing.Point(767, 436);
+            this.ar4.Location = new System.Drawing.Point(720, 436);
             this.ar4.Name = "ar4";
-            this.ar4.Size = new System.Drawing.Size(35, 13);
+            this.ar4.Size = new System.Drawing.Size(82, 13);
             this.ar4.TabIndex = 243;
             this.ar4.Text = "0";
             this.ar4.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2882,9 +2893,9 @@
             this.ar3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar3.Location = new System.Drawing.Point(767, 422);
+            this.ar3.Location = new System.Drawing.Point(720, 422);
             this.ar3.Name = "ar3";
-            this.ar3.Size = new System.Drawing.Size(35, 13);
+            this.ar3.Size = new System.Drawing.Size(82, 13);
             this.ar3.TabIndex = 241;
             this.ar3.Text = "0";
             this.ar3.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2906,9 +2917,9 @@
             this.ar8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar8.Location = new System.Drawing.Point(767, 490);
+            this.ar8.Location = new System.Drawing.Point(720, 490);
             this.ar8.Name = "ar8";
-            this.ar8.Size = new System.Drawing.Size(35, 13);
+            this.ar8.Size = new System.Drawing.Size(82, 13);
             this.ar8.TabIndex = 251;
             this.ar8.Text = "0";
             this.ar8.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2930,9 +2941,9 @@
             this.ar7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar7.Location = new System.Drawing.Point(767, 476);
+            this.ar7.Location = new System.Drawing.Point(720, 476);
             this.ar7.Name = "ar7";
-            this.ar7.Size = new System.Drawing.Size(35, 13);
+            this.ar7.Size = new System.Drawing.Size(82, 13);
             this.ar7.TabIndex = 249;
             this.ar7.Text = "0";
             this.ar7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2954,9 +2965,9 @@
             this.ar6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar6.Location = new System.Drawing.Point(767, 463);
+            this.ar6.Location = new System.Drawing.Point(720, 463);
             this.ar6.Name = "ar6";
-            this.ar6.Size = new System.Drawing.Size(35, 13);
+            this.ar6.Size = new System.Drawing.Size(82, 13);
             this.ar6.TabIndex = 247;
             this.ar6.Text = "0";
             this.ar6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2978,9 +2989,9 @@
             this.ar5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar5.Location = new System.Drawing.Point(767, 449);
+            this.ar5.Location = new System.Drawing.Point(720, 449);
             this.ar5.Name = "ar5";
-            this.ar5.Size = new System.Drawing.Size(35, 13);
+            this.ar5.Size = new System.Drawing.Size(82, 13);
             this.ar5.TabIndex = 245;
             this.ar5.Text = "0";
             this.ar5.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3002,9 +3013,9 @@
             this.ar12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar12.Location = new System.Drawing.Point(767, 544);
+            this.ar12.Location = new System.Drawing.Point(720, 544);
             this.ar12.Name = "ar12";
-            this.ar12.Size = new System.Drawing.Size(35, 13);
+            this.ar12.Size = new System.Drawing.Size(82, 13);
             this.ar12.TabIndex = 259;
             this.ar12.Text = "0";
             this.ar12.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3026,9 +3037,9 @@
             this.ar11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar11.Location = new System.Drawing.Point(767, 530);
+            this.ar11.Location = new System.Drawing.Point(720, 530);
             this.ar11.Name = "ar11";
-            this.ar11.Size = new System.Drawing.Size(35, 13);
+            this.ar11.Size = new System.Drawing.Size(82, 13);
             this.ar11.TabIndex = 257;
             this.ar11.Text = "0";
             this.ar11.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3050,9 +3061,9 @@
             this.ar10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar10.Location = new System.Drawing.Point(767, 517);
+            this.ar10.Location = new System.Drawing.Point(720, 517);
             this.ar10.Name = "ar10";
-            this.ar10.Size = new System.Drawing.Size(35, 13);
+            this.ar10.Size = new System.Drawing.Size(82, 13);
             this.ar10.TabIndex = 255;
             this.ar10.Text = "0";
             this.ar10.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3074,9 +3085,9 @@
             this.ar9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ar9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar9.Location = new System.Drawing.Point(767, 503);
+            this.ar9.Location = new System.Drawing.Point(720, 503);
             this.ar9.Name = "ar9";
-            this.ar9.Size = new System.Drawing.Size(35, 13);
+            this.ar9.Size = new System.Drawing.Size(82, 13);
             this.ar9.TabIndex = 253;
             this.ar9.Text = "0";
             this.ar9.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3128,17 +3139,6 @@
             this.cOverSanity.Name = "cOverSanity";
             this.cOverSanity.Size = new System.Drawing.Size(28, 20);
             this.cOverSanity.TabIndex = 263;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(159, 6);
-            // 
-            // levelUpToolStripMenuItem
-            // 
-            this.levelUpToolStripMenuItem.Name = "levelUpToolStripMenuItem";
-            this.levelUpToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.levelUpToolStripMenuItem.Text = "Level Up";
             // 
             // CharacterSheet
             // 

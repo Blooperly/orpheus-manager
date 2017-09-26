@@ -541,8 +541,41 @@ namespace OrpheusManager
             cr20.Text = CDATA.cCkillRank[19];
             cr21.Text = CDATA.cCkillRank[20];
             cr22.Text = CDATA.cCkillRank[21];
-            
+
             // Ability Display
+            string[] AbilityMod = { "", "", "", "", "", "", "", "", "", "", "", "" };
+            for (int i = 0; i < 12; i++)
+            {
+                if (CDATA.cAbilityMasteryA[i] == 1)
+                {
+                    if (CDATA.cAbilityMasteryB[i] == 1)
+                    {
+                        if (CDATA.cAbilityOverload[i] == 1)
+                        {
+                            AbilityMod[i] = "ABO ";
+                        }
+                        else AbilityMod[i] = "AB ";
+                    }
+                    else if (CDATA.cAbilityOverload[i] == 1)
+                    {
+                        AbilityMod[i] = "AO ";
+                    }
+                    else AbilityMod[i] = "A ";
+                }
+                else if (CDATA.cAbilityMasteryB[i] == 1)
+                {
+                    if (CDATA.cAbilityOverload[i] == 1)
+                    {
+                        AbilityMod[i] = "BO ";
+                    }
+                    else AbilityMod[i] = "B ";
+                }
+                else if (CDATA.cAbilityOverload[i] == 1)
+                {
+                    AbilityMod[i] = "O ";
+                }
+            }
+
             a1.Text = CDATA.cAbilityName[0];
             a2.Text = CDATA.cAbilityName[1];
             a3.Text = CDATA.cAbilityName[2];
@@ -556,18 +589,18 @@ namespace OrpheusManager
             a11.Text = CDATA.cAbilityName[10];
             a12.Text = CDATA.cAbilityName[11];
 
-            ar1.Text = CDATA.cAbilityRank[0];
-            ar2.Text = CDATA.cAbilityRank[1];
-            ar3.Text = CDATA.cAbilityRank[2];
-            ar4.Text = CDATA.cAbilityRank[3];
-            ar5.Text = CDATA.cAbilityRank[4];
-            ar6.Text = CDATA.cAbilityRank[5];
-            ar7.Text = CDATA.cAbilityRank[6];
-            ar8.Text = CDATA.cAbilityRank[7];
-            ar9.Text = CDATA.cAbilityRank[8];
-            ar10.Text = CDATA.cAbilityRank[9];
-            ar11.Text = CDATA.cAbilityRank[10];
-            ar12.Text = CDATA.cAbilityRank[11];
+            ar1.Text = AbilityMod[0] + CDATA.cAbilityRank[0];
+            ar2.Text = AbilityMod[1] + CDATA.cAbilityRank[1];
+            ar3.Text = AbilityMod[2] + CDATA.cAbilityRank[2];
+            ar4.Text = AbilityMod[3] + CDATA.cAbilityRank[3];
+            ar5.Text = AbilityMod[4] + CDATA.cAbilityRank[4];
+            ar6.Text = AbilityMod[5] + CDATA.cAbilityRank[5];
+            ar7.Text = AbilityMod[6] + CDATA.cAbilityRank[6];
+            ar8.Text = AbilityMod[7] + CDATA.cAbilityRank[7];
+            ar9.Text = AbilityMod[8] + CDATA.cAbilityRank[8];
+            ar10.Text = AbilityMod[9] + CDATA.cAbilityRank[9];
+            ar11.Text = AbilityMod[10] + CDATA.cAbilityRank[10];
+            ar12.Text = AbilityMod[11] + CDATA.cAbilityRank[11];
         }
         
         private void writeDATA2()
@@ -1336,6 +1369,48 @@ namespace OrpheusManager
                     if (SDATA.parseLine(temp, 7) == "1") SW8.Checked = true; else SW8.Checked = false;
                     if (SDATA.parseLine(temp, 8) == "1") SW9.Checked = true; else SW9.Checked = false;
                     if (SDATA.parseLine(temp, 9) == "1") SW10.Checked = true; else SW10.Checked = false;
+                    
+                    temp = SDATA.parseField("Ability Mastery A:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[0] = 1; CDATA.cAbilityMasteryA[0] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[1] = 1; CDATA.cAbilityMasteryA[1] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[2] = 1; CDATA.cAbilityMasteryA[2] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[3] = 1; CDATA.cAbilityMasteryA[3] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[4] = 1; CDATA.cAbilityMasteryA[4] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[5] = 1; CDATA.cAbilityMasteryA[5] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[6] = 1; CDATA.cAbilityMasteryA[6] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[7] = 1; CDATA.cAbilityMasteryA[7] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[8] = 1; CDATA.cAbilityMasteryA[8] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[9] = 1; CDATA.cAbilityMasteryA[9] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[10] = 1; CDATA.cAbilityMasteryA[10] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[11] = 1; CDATA.cAbilityMasteryA[11] = 0;
+
+                    temp = SDATA.parseField("Ability Mastery B:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[0] = 1; CDATA.cAbilityMasteryB[0] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[1] = 1; CDATA.cAbilityMasteryB[1] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[2] = 1; CDATA.cAbilityMasteryB[2] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[3] = 1; CDATA.cAbilityMasteryB[3] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[4] = 1; CDATA.cAbilityMasteryB[4] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[5] = 1; CDATA.cAbilityMasteryB[5] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[6] = 1; CDATA.cAbilityMasteryB[6] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[7] = 1; CDATA.cAbilityMasteryB[7] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[8] = 1; CDATA.cAbilityMasteryB[8] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[9] = 1; CDATA.cAbilityMasteryB[9] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[10] = 1; CDATA.cAbilityMasteryB[10] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[11] = 1; CDATA.cAbilityMasteryB[11] = 0;
+
+                    temp = SDATA.parseField("Ability Overload:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[0] = 1; CDATA.cAbilityOverload[0] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[1] = 1; CDATA.cAbilityOverload[1] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[2] = 1; CDATA.cAbilityOverload[2] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[3] = 1; CDATA.cAbilityOverload[3] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[4] = 1; CDATA.cAbilityOverload[4] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[5] = 1; CDATA.cAbilityOverload[5] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[6] = 1; CDATA.cAbilityOverload[6] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[7] = 1; CDATA.cAbilityOverload[7] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[8] = 1; CDATA.cAbilityOverload[8] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[9] = 1; CDATA.cAbilityOverload[9] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[10] = 1; CDATA.cAbilityOverload[10] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[11] = 1; CDATA.cAbilityOverload[11] = 0;
 
                     reloadArch();
                     writeDATA();
