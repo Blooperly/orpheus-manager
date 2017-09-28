@@ -42,8 +42,6 @@ namespace OrpheusManager
             SN17.Text = EDATA.clearSpace(CDATA.cCkillName[17]);
             SN18.Text = EDATA.clearSpace(CDATA.cCkillName[18]);
             SN19.Text = EDATA.clearSpace(CDATA.cCkillName[19]);
-            SN20.Text = EDATA.clearSpace(CDATA.cCkillName[20]);
-            SN21.Text = EDATA.clearSpace(CDATA.cCkillName[21]);
 
             SR0.Text = EDATA.numToInt(CDATA.cCkillRank[0]);
             SR1.Text = EDATA.numToInt(CDATA.cCkillRank[1]);
@@ -65,8 +63,6 @@ namespace OrpheusManager
             SR17.Text = EDATA.numToInt(CDATA.cCkillRank[17]);
             SR18.Text = EDATA.numToInt(CDATA.cCkillRank[18]);
             SR19.Text = EDATA.numToInt(CDATA.cCkillRank[19]);
-            SR20.Text = EDATA.numToInt(CDATA.cCkillRank[20]);
-            SR21.Text = EDATA.numToInt(CDATA.cCkillRank[21]);
 
             NS0.Text = EDATA.clearSpace(CDATA.cSkillName[0]);
             NS1.Text = EDATA.clearSpace(CDATA.cSkillName[1]);
@@ -88,8 +84,6 @@ namespace OrpheusManager
             NS17.Text = EDATA.clearSpace(CDATA.cSkillName[17]);
             NS18.Text = EDATA.clearSpace(CDATA.cSkillName[18]);
             NS19.Text = EDATA.clearSpace(CDATA.cSkillName[19]);
-            NS20.Text = EDATA.clearSpace(CDATA.cSkillName[20]);
-            NS21.Text = EDATA.clearSpace(CDATA.cSkillName[21]);
 
             NR0.Text = EDATA.numToInt(CDATA.cSkillRank[0]);
             NR1.Text = EDATA.numToInt(CDATA.cSkillRank[1]);
@@ -111,8 +105,6 @@ namespace OrpheusManager
             NR17.Text = EDATA.numToInt(CDATA.cSkillRank[17]);
             NR18.Text = EDATA.numToInt(CDATA.cSkillRank[18]);
             NR19.Text = EDATA.numToInt(CDATA.cSkillRank[19]);
-            NR20.Text = EDATA.numToInt(CDATA.cSkillRank[20]);
-            NR21.Text = EDATA.numToInt(CDATA.cSkillRank[21]);
         }
 
         private void nCharSubmit_Click(object sender, EventArgs e)
@@ -138,8 +130,6 @@ namespace OrpheusManager
             if (!EDATA.skillCheck(SR17.Text)) good = false;
             if (!EDATA.skillCheck(SR18.Text)) good = false;
             if (!EDATA.skillCheck(SR19.Text)) good = false;
-            if (!EDATA.skillCheck(SR20.Text)) good = false;
-            if (!EDATA.skillCheck(SR21.Text)) good = false;
 
             if (!EDATA.skillCheck(NR0.Text)) good = false;
             if (!EDATA.skillCheck(NR1.Text)) good = false;
@@ -161,8 +151,6 @@ namespace OrpheusManager
             if (!EDATA.skillCheck(NR17.Text)) good = false;
             if (!EDATA.skillCheck(NR18.Text)) good = false;
             if (!EDATA.skillCheck(NR19.Text)) good = false;
-            if (!EDATA.skillCheck(NR20.Text)) good = false;
-            if (!EDATA.skillCheck(NR21.Text)) good = false;
 
             if (good)
             {
@@ -186,8 +174,6 @@ namespace OrpheusManager
                 CDATA.cSkillName[17] = EDATA.addSpace(NS17.Text);
                 CDATA.cSkillName[18] = EDATA.addSpace(NS18.Text);
                 CDATA.cSkillName[19] = EDATA.addSpace(NS19.Text);
-                CDATA.cSkillName[20] = EDATA.addSpace(NS20.Text);
-                CDATA.cSkillName[21] = EDATA.addSpace(NS21.Text);
 
                 CDATA.cSkillRank[0] = EDATA.intToNum(NR0.Text);
                 CDATA.cSkillRank[1] = EDATA.intToNum(NR1.Text);
@@ -209,8 +195,6 @@ namespace OrpheusManager
                 CDATA.cSkillRank[17] = EDATA.intToNum(NR17.Text);
                 CDATA.cSkillRank[18] = EDATA.intToNum(NR18.Text);
                 CDATA.cSkillRank[19] = EDATA.intToNum(NR19.Text);
-                CDATA.cSkillRank[20] = EDATA.intToNum(NR20.Text);
-                CDATA.cSkillRank[21] = EDATA.intToNum(NR21.Text);
 
                 CDATA.cCkillName[0] = EDATA.addSpace(SN0.Text);
                 CDATA.cCkillName[1] = EDATA.addSpace(SN1.Text);
@@ -232,8 +216,6 @@ namespace OrpheusManager
                 CDATA.cCkillName[17] = EDATA.addSpace(SN17.Text);
                 CDATA.cCkillName[18] = EDATA.addSpace(SN18.Text);
                 CDATA.cCkillName[19] = EDATA.addSpace(SN19.Text);
-                CDATA.cCkillName[20] = EDATA.addSpace(SN20.Text);
-                CDATA.cCkillName[21] = EDATA.addSpace(SN21.Text);
 
                 CDATA.cCkillRank[0] = EDATA.intToNum(SR0.Text);
                 CDATA.cCkillRank[1] = EDATA.intToNum(SR1.Text);
@@ -255,8 +237,6 @@ namespace OrpheusManager
                 CDATA.cCkillRank[17] = EDATA.intToNum(SR17.Text);
                 CDATA.cCkillRank[18] = EDATA.intToNum(SR18.Text);
                 CDATA.cCkillRank[19] = EDATA.intToNum(SR19.Text);
-                CDATA.cCkillRank[20] = EDATA.intToNum(SR20.Text);
-                CDATA.cCkillRank[21] = EDATA.intToNum(SR21.Text);
 
                 Program.mainform.writeDATA();
                 this.Close();

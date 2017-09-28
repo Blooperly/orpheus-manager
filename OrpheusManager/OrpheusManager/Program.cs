@@ -37,11 +37,11 @@ namespace OrpheusManager
         public static int cOverHealth = 0;
         public static int cOverSanity = 0;
 
-        public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
-        public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
+        public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
+        public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
 
-        public static string[] cCkillName = { "Rang. Att. (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
-        public static string[] cCkillRank = { "V", "V", "III", "III", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
+        public static string[] cCkillName = { "Rang. Att. (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
+        public static string[] cCkillRank = { "V", "V", "III", "III", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
 
         public static string[] cAbilityName = { "Inspiration", "Hungry Shadows", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
         public static string[] cAbilityRank = { "II", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
@@ -64,10 +64,10 @@ namespace OrpheusManager
             int loc = 0;
             if (EDATA.eSkillType == 0)
             {
-                for (int i = 0; i < 22; i++)
+                for (int i = 0; i < 20; i++)
                 {
                     if (cSkillName[i] == " ") { loc = i; break; }
-                    if (i == 21) full = true;
+                    if (i == 19) full = true;
                 }
                 if (!full)
                 {
@@ -77,10 +77,10 @@ namespace OrpheusManager
             }
             else if (EDATA.eSkillType == 1)
             {
-                for (int i = 0; i < 22; i++)
+                for (int i = 0; i < 20; i++)
                 {
                     if (cCkillName[i] == " ") { loc = i; break; }
-                    if (i == 21) full = true;
+                    if (i == 19) full = true;
                 }
                 if (!full)
                 {
@@ -124,19 +124,45 @@ namespace OrpheusManager
             else if (CDATA.cAttributes[1] >= 3) DDATA.dClarity = 1;
             else DDATA.dClarity = 0;
 
-            DDATA.dClarityTemp = CDATA.cAttributesTemp[1];
+            if (CDATA.cAttributes[1] + CDATA.cAttributesTemp[1] >= 5) DDATA.dClarityTemp = 2 - DDATA.dClarity;
+            else if (CDATA.cAttributes[1] + CDATA.cAttributesTemp[1] >= 3) DDATA.dClarityTemp = 1 - DDATA.dClarity;
+            else DDATA.dClarityTemp = 0 - DDATA.dClarity;
 
             if (CDATA.cAttributes[3] >= 5) DDATA.dToughness = 2;
             else if (CDATA.cAttributes[3] >= 3) DDATA.dToughness = 1;
             else DDATA.dToughness = 0;
 
-            DDATA.dToughnessTemp = CDATA.cAttributesTemp[3];
+            if (CDATA.cAttributes[3] + CDATA.cAttributesTemp[3] >= 5) DDATA.dToughnessTemp = 2 - DDATA.dToughness;
+            else if (CDATA.cAttributes[3] + CDATA.cAttributesTemp[3] >= 3) DDATA.dToughnessTemp = 1 - DDATA.dToughness;
+            else DDATA.dToughnessTemp = 0 - DDATA.dToughness;
 
             if (CDATA.cAttributes[5] >= 5) DDATA.dForceOfWill = 2;
             else if (CDATA.cAttributes[5] >= 3) DDATA.dForceOfWill = 1;
             else DDATA.dForceOfWill = 0;
 
-            DDATA.dForceOfWillTemp = CDATA.cAttributesTemp[5];
+            if (CDATA.cAttributes[5] + CDATA.cAttributesTemp[5] >= 5) DDATA.dForceOfWillTemp = 2 - DDATA.dForceOfWill;
+            else if (CDATA.cAttributes[5] + CDATA.cAttributesTemp[5] >= 3) DDATA.dForceOfWillTemp = 1 - DDATA.dForceOfWill;
+            else DDATA.dForceOfWillTemp = 0 - DDATA.dForceOfWill;
+
+            int tempx;
+            int tempy;
+            int tempz;
+
+            if (DDATA.dForceOfWill >= 1) tempx = 1;
+            else tempx = 0;
+
+            if (tempx == 0)
+            {
+                if (DDATA.dForceOfWill + DDATA.dForceOfWillTemp > 1) tempy = 1;
+                else tempy = 0;
+            }
+            else tempy = 0;
+
+            tempz = DDATA.dClarityTemp - DDATA.dClarity;
+            if (tempz < 0) tempz = 0;
+
+            DDATA.dTactics = tempx + DDATA.dClarity;
+            DDATA.dTacticsTemp = tempy + tempz;
 
             int temp1;
             int temp2;
@@ -175,6 +201,7 @@ namespace OrpheusManager
         public static int dToughness = 0;
         public static int dForceOfWill = 0;
         public static int dInitiative = 0;
+        public static int dTactics = 0;
         public static int dMentalStrainMax = 0;
         public static int dPhysicalStrainMax = 0;
         public static int dSpiritualStrainMax = 0;
@@ -186,6 +213,7 @@ namespace OrpheusManager
         public static int dToughnessTemp = 0;
         public static int dForceOfWillTemp = 0;
         public static int dInitiativeTemp = 0;
+        public static int dTacticsTemp = 0;
     }
 
     public static class EDATA
@@ -384,10 +412,6 @@ namespace OrpheusManager
                     saveString += CDATA.cSkillRank[18] + "\r\n";
                     saveString += CDATA.cSkillName[19] + "\r\n";
                     saveString += CDATA.cSkillRank[19] + "\r\n";
-                    saveString += CDATA.cSkillName[20] + "\r\n";
-                    saveString += CDATA.cSkillRank[20] + "\r\n";
-                    saveString += CDATA.cSkillName[21] + "\r\n";
-                    saveString += CDATA.cSkillRank[21] + "\r\n\r\n";
                     saveString += "Combat Skills:\r\n";
                     saveString += CDATA.cCkillName[0] + "\r\n";
                     saveString += CDATA.cCkillRank[0] + "\r\n";
@@ -429,10 +453,6 @@ namespace OrpheusManager
                     saveString += CDATA.cCkillRank[18] + "\r\n";
                     saveString += CDATA.cCkillName[19] + "\r\n";
                     saveString += CDATA.cCkillRank[19] + "\r\n";
-                    saveString += CDATA.cCkillName[20] + "\r\n";
-                    saveString += CDATA.cCkillRank[20] + "\r\n";
-                    saveString += CDATA.cCkillName[21] + "\r\n";
-                    saveString += CDATA.cCkillRank[21] + "\r\n\r\n";
                     saveString += "Abilities:\r\n";
                     saveString += CDATA.cAbilityName[0] + "\r\n";
                     saveString += CDATA.cAbilityRank[0] + "\r\n";

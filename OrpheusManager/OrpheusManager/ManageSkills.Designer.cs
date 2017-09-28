@@ -74,14 +74,6 @@
             this.SN17 = new System.Windows.Forms.TextBox();
             this.SR16 = new System.Windows.Forms.TextBox();
             this.SN16 = new System.Windows.Forms.TextBox();
-            this.SR21 = new System.Windows.Forms.TextBox();
-            this.SN21 = new System.Windows.Forms.TextBox();
-            this.SR20 = new System.Windows.Forms.TextBox();
-            this.SN20 = new System.Windows.Forms.TextBox();
-            this.NR21 = new System.Windows.Forms.TextBox();
-            this.NS21 = new System.Windows.Forms.TextBox();
-            this.NR20 = new System.Windows.Forms.TextBox();
-            this.NS20 = new System.Windows.Forms.TextBox();
             this.NR19 = new System.Windows.Forms.TextBox();
             this.NS19 = new System.Windows.Forms.TextBox();
             this.NR18 = new System.Windows.Forms.TextBox();
@@ -129,7 +121,7 @@
             // 
             // nCharCancel
             // 
-            this.nCharCancel.Location = new System.Drawing.Point(383, 660);
+            this.nCharCancel.Location = new System.Drawing.Point(389, 608);
             this.nCharCancel.Name = "nCharCancel";
             this.nCharCancel.Size = new System.Drawing.Size(75, 23);
             this.nCharCancel.TabIndex = 3;
@@ -139,7 +131,7 @@
             // 
             // nCharSubmit
             // 
-            this.nCharSubmit.Location = new System.Drawing.Point(302, 660);
+            this.nCharSubmit.Location = new System.Drawing.Point(308, 608);
             this.nCharSubmit.Name = "nCharSubmit";
             this.nCharSubmit.Size = new System.Drawing.Size(75, 23);
             this.nCharSubmit.TabIndex = 2;
@@ -469,62 +461,6 @@
             this.SN16.Size = new System.Drawing.Size(138, 20);
             this.SN16.TabIndex = 40;
             // 
-            // SR21
-            // 
-            this.SR21.Location = new System.Drawing.Point(195, 623);
-            this.SR21.Name = "SR21";
-            this.SR21.Size = new System.Drawing.Size(19, 20);
-            this.SR21.TabIndex = 51;
-            // 
-            // SN21
-            // 
-            this.SN21.Location = new System.Drawing.Point(51, 623);
-            this.SN21.Name = "SN21";
-            this.SN21.Size = new System.Drawing.Size(138, 20);
-            this.SN21.TabIndex = 50;
-            // 
-            // SR20
-            // 
-            this.SR20.Location = new System.Drawing.Point(195, 597);
-            this.SR20.Name = "SR20";
-            this.SR20.Size = new System.Drawing.Size(19, 20);
-            this.SR20.TabIndex = 49;
-            // 
-            // SN20
-            // 
-            this.SN20.Location = new System.Drawing.Point(51, 597);
-            this.SN20.Name = "SN20";
-            this.SN20.Size = new System.Drawing.Size(138, 20);
-            this.SN20.TabIndex = 48;
-            // 
-            // NR21
-            // 
-            this.NR21.Location = new System.Drawing.Point(423, 623);
-            this.NR21.Name = "NR21";
-            this.NR21.Size = new System.Drawing.Size(19, 20);
-            this.NR21.TabIndex = 99;
-            // 
-            // NS21
-            // 
-            this.NS21.Location = new System.Drawing.Point(279, 623);
-            this.NS21.Name = "NS21";
-            this.NS21.Size = new System.Drawing.Size(138, 20);
-            this.NS21.TabIndex = 98;
-            // 
-            // NR20
-            // 
-            this.NR20.Location = new System.Drawing.Point(423, 597);
-            this.NR20.Name = "NR20";
-            this.NR20.Size = new System.Drawing.Size(19, 20);
-            this.NR20.TabIndex = 97;
-            // 
-            // NS20
-            // 
-            this.NS20.Location = new System.Drawing.Point(279, 597);
-            this.NS20.Name = "NS20";
-            this.NS20.Size = new System.Drawing.Size(138, 20);
-            this.NS20.TabIndex = 96;
-            // 
             // NR19
             // 
             this.NR19.Location = new System.Drawing.Point(423, 571);
@@ -829,7 +765,7 @@
             // 
             this.report.AutoSize = true;
             this.report.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.report.Location = new System.Drawing.Point(192, 665);
+            this.report.Location = new System.Drawing.Point(198, 613);
             this.report.Name = "report";
             this.report.Size = new System.Drawing.Size(0, 13);
             this.report.TabIndex = 100;
@@ -840,12 +776,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(501, 695);
+            this.ClientSize = new System.Drawing.Size(501, 653);
             this.Controls.Add(this.report);
-            this.Controls.Add(this.NR21);
-            this.Controls.Add(this.NS21);
-            this.Controls.Add(this.NR20);
-            this.Controls.Add(this.NS20);
             this.Controls.Add(this.NR19);
             this.Controls.Add(this.NS19);
             this.Controls.Add(this.NR18);
@@ -888,10 +820,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.NS0);
-            this.Controls.Add(this.SR21);
-            this.Controls.Add(this.SN21);
-            this.Controls.Add(this.SR20);
-            this.Controls.Add(this.SN20);
             this.Controls.Add(this.SR19);
             this.Controls.Add(this.SN19);
             this.Controls.Add(this.SR18);
@@ -995,14 +923,6 @@
         private System.Windows.Forms.TextBox SN17;
         private System.Windows.Forms.TextBox SR16;
         private System.Windows.Forms.TextBox SN16;
-        private System.Windows.Forms.TextBox SR21;
-        private System.Windows.Forms.TextBox SN21;
-        private System.Windows.Forms.TextBox SR20;
-        private System.Windows.Forms.TextBox SN20;
-        private System.Windows.Forms.TextBox NR21;
-        private System.Windows.Forms.TextBox NS21;
-        private System.Windows.Forms.TextBox NR20;
-        private System.Windows.Forms.TextBox NS20;
         private System.Windows.Forms.TextBox NR19;
         private System.Windows.Forms.TextBox NS19;
         private System.Windows.Forms.TextBox NR18;

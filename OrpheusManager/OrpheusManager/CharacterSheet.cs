@@ -72,6 +72,9 @@ namespace OrpheusManager
             if (DDATA.dInitiativeTemp > 0) dInitiative.Text = DDATA.dInitiative + " + " + DDATA.dInitiativeTemp;
             else if (DDATA.dInitiativeTemp < 0) dInitiative.Text = DDATA.dInitiative + " - " + Math.Abs(DDATA.dInitiativeTemp);
             else dInitiative.Text = DDATA.dInitiative + "";
+            if (DDATA.dTacticsTemp > 0) dTactics.Text = DDATA.dTactics + " + " + DDATA.dTacticsTemp;
+            else if (DDATA.dTacticsTemp < 0) dTactics.Text = DDATA.dTactics + " - " + Math.Abs(DDATA.dTacticsTemp);
+            else dTactics.Text = DDATA.dTactics + "";
             dMentalStrainMax.Text = "/ " + DDATA.dMentalStrainMax;
             dPhysicalStrainMax.Text = "/ " + DDATA.dPhysicalStrainMax;
             dSpiritualStrainMax.Text = "/ " + DDATA.dSpiritualStrainMax;
@@ -470,8 +473,6 @@ namespace OrpheusManager
             s18.Text = CDATA.cSkillName[17];
             s19.Text = CDATA.cSkillName[18];
             s20.Text = CDATA.cSkillName[19];
-            s21.Text = CDATA.cSkillName[20];
-            s22.Text = CDATA.cSkillName[21];
 
             sr1.Text = CDATA.cSkillRank[0];
             sr2.Text = CDATA.cSkillRank[1];
@@ -493,8 +494,6 @@ namespace OrpheusManager
             sr18.Text = CDATA.cSkillRank[17];
             sr19.Text = CDATA.cSkillRank[18];
             sr20.Text = CDATA.cSkillRank[19];
-            sr21.Text = CDATA.cSkillRank[20];
-            sr22.Text = CDATA.cSkillRank[21];
 
             c1.Text = CDATA.cCkillName[0];
             c2.Text = CDATA.cCkillName[1];
@@ -516,8 +515,6 @@ namespace OrpheusManager
             c18.Text = CDATA.cCkillName[17];
             c19.Text = CDATA.cCkillName[18];
             c20.Text = CDATA.cCkillName[19];
-            c21.Text = CDATA.cCkillName[20];
-            c22.Text = CDATA.cCkillName[21];
 
             cr1.Text = CDATA.cCkillRank[0];
             cr2.Text = CDATA.cCkillRank[1];
@@ -539,8 +536,6 @@ namespace OrpheusManager
             cr18.Text = CDATA.cCkillRank[17];
             cr19.Text = CDATA.cCkillRank[18];
             cr20.Text = CDATA.cCkillRank[19];
-            cr21.Text = CDATA.cCkillRank[20];
-            cr22.Text = CDATA.cCkillRank[21];
 
             // Ability Display
             string[] AbilityMod = { "", "", "", "", "", "", "", "", "", "", "", "" };
@@ -657,6 +652,34 @@ namespace OrpheusManager
             divider2.Image = image3;
 
             writeDATA2();
+        }
+        
+        private void CharacterSheet_Paint(object sender, PaintEventArgs e)
+        {
+            System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#3E3E42"));
+            System.Drawing.SolidBrush myBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#252526"));
+            System.Drawing.Graphics formGraphics;
+            formGraphics = this.CreateGraphics();
+            // Arch Image Liner
+            formGraphics.FillRectangle(myBrush, new Rectangle(225, 80, 15, 180));
+            // Bottom Divider
+            formGraphics.FillRectangle(myBrush, new Rectangle(20, 550, 755, 3));
+            // Strain Divider
+            formGraphics.FillRectangle(myBrush, new Rectangle(25, 587, 190, 2));
+            // Wounds Divider
+            formGraphics.FillRectangle(myBrush, new Rectangle(250, 587, 310, 2));
+            // Misc Divider
+            formGraphics.FillRectangle(myBrush, new Rectangle(590, 587, 175, 2));
+            // Skills Box
+            formGraphics.FillRectangle(myBrush2, new Rectangle(360, 237, 415, 303));
+            formGraphics.FillRectangle(myBrush, new Rectangle(360, 237, 415, 1));
+            formGraphics.FillRectangle(myBrush, new Rectangle(360, 237, 1, 303));
+            formGraphics.FillRectangle(myBrush, new Rectangle(360, 539, 415, 1));
+            formGraphics.FillRectangle(myBrush, new Rectangle(774, 237, 1, 303));
+            // Motivations Divider
+            formGraphics.FillRectangle(myBrush, new Rectangle(413, 80, 290, 2));
+
+            formGraphics.Dispose();
         }
 
         private void reloadArch()
@@ -947,7 +970,7 @@ namespace OrpheusManager
 
         private void clearSkillsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 22; i++)
+            for (int i = 0; i < 20; i++)
             {
                 CDATA.cSkillName[i] = " ";
                 CDATA.cSkillRank[i] = " ";
@@ -1253,10 +1276,6 @@ namespace OrpheusManager
                     CDATA.cSkillRank[18] = SDATA.parseLine(temp, 37);
                     CDATA.cSkillName[19] = SDATA.parseLine(temp, 38);
                     CDATA.cSkillRank[19] = SDATA.parseLine(temp, 39);
-                    CDATA.cSkillName[20] = SDATA.parseLine(temp, 40);
-                    CDATA.cSkillRank[20] = SDATA.parseLine(temp, 41);
-                    CDATA.cSkillName[21] = SDATA.parseLine(temp, 42);
-                    CDATA.cSkillRank[21] = SDATA.parseLine(temp, 43);
 
                     temp = SDATA.parseField("Combat Skills:\r\n") + "\r\n";
                     CDATA.cCkillName[0] = SDATA.parseLine(temp, 0);
@@ -1299,10 +1318,6 @@ namespace OrpheusManager
                     CDATA.cCkillRank[18] = SDATA.parseLine(temp, 37);
                     CDATA.cCkillName[19] = SDATA.parseLine(temp, 38);
                     CDATA.cCkillRank[19] = SDATA.parseLine(temp, 39);
-                    CDATA.cCkillName[20] = SDATA.parseLine(temp, 40);
-                    CDATA.cCkillRank[20] = SDATA.parseLine(temp, 41);
-                    CDATA.cCkillName[21] = SDATA.parseLine(temp, 42);
-                    CDATA.cCkillRank[21] = SDATA.parseLine(temp, 43);
 
                     temp = SDATA.parseField("Abilities:\r\n") + "\r\n";
                     CDATA.cAbilityName[0] = SDATA.parseLine(temp, 0);
