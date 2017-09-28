@@ -834,6 +834,26 @@ namespace OrpheusManager
             writeDATA();
         }
 
+        private void archetypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open Dialog Box
+            Form mArchetypes = new manageArchetypes();
+            mArchetypes.ShowDialog();
+            // Update Character
+            writeDATA();
+            reloadArch();
+        }
+
+        private void attributesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open Dialog Box
+            Form mAttributes = new manageAttributes();
+            mAttributes.ShowDialog();
+            // Update Character
+            writeDATA();
+            writeDATA2();
+        }
+
         private void newCharacter_Click(object sender, EventArgs e)
         {
             // Open Dialog Box

@@ -75,6 +75,18 @@
     <Compile Include="ManageAbilities.Designer.cs">
       <DependentUpon>ManageAbilities.cs</DependentUpon>
     </Compile>
+    <Compile Include="manageArchetypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageArchetypes.Designer.cs">
+      <DependentUpon>manageArchetypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageAttributes.Designer.cs">
+      <DependentUpon>manageAttributes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageSkills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageAbilities.resx">
       <DependentUpon>ManageAbilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageArchetypes.resx">
+      <DependentUpon>manageArchetypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageAttributes.resx">
+      <DependentUpon>manageAttributes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageSkills.resx">
       <DependentUpon>ManageSkills.cs</DependentUpon>

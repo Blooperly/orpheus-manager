@@ -20,7 +20,7 @@ namespace OrpheusManager
         public static string cArch2 = "Wendigo";
         public static string cArch3 = "";
         public static string cBackground = "Criminal";
-        public static int[] cAttributes = { 2, 0, 4, 2, 3, 3 };         // PER, COG, DEX, VIT, CHAR, WILL
+        public static int[] cAttributes = { 2, 1, 4, 2, 3, 3 };         // PER, COG, DEX, VIT, CHAR, WILL
         public static int[] cAttributesTemp = { 0, 0, 0, 0, 0, 0 };
         public static string cMot1 = "Uniting Force";
         public static string cMot2 = "Lady Killer";
