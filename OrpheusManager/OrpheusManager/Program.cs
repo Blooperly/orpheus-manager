@@ -26,7 +26,7 @@ namespace OrpheusManager
         public static string cMot2 = "Lady Killer";
         public static string cMot3 = "Death Wish";
         public static string cNotes = "";
-        public static int cMentalStrain = 2;
+        public static int cMentalStrain = 5;
         public static int cPhysicalStrain = 10;
         public static int cSpiritualStrain = 12;
         public static int cInitiative = 0;
@@ -57,6 +57,10 @@ namespace OrpheusManager
         public static int[] cFocusWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public static int[] cHealthWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public static int[] cSanityWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+        public static int cMaxMentStrain = 0;
+        public static int cMaxPhysStrain = 0;
+        public static int cMaxSpirStrain = 0;
 
         public static void addSkill()
         {
@@ -146,23 +150,15 @@ namespace OrpheusManager
 
             int tempx;
             int tempy;
-            int tempz;
 
             if (DDATA.dForceOfWill >= 1) tempx = 1;
             else tempx = 0;
 
-            if (tempx == 0)
-            {
-                if (DDATA.dForceOfWill + DDATA.dForceOfWillTemp > 1) tempy = 1;
-                else tempy = 0;
-            }
+            if (DDATA.dForceOfWill + DDATA.dForceOfWillTemp >= 1) tempy = 1;
             else tempy = 0;
 
-            tempz = DDATA.dClarityTemp - DDATA.dClarity;
-            if (tempz < 0) tempz = 0;
-
             DDATA.dTactics = tempx + DDATA.dClarity;
-            DDATA.dTacticsTemp = tempy + tempz;
+            DDATA.dTacticsTemp = (tempy + (DDATA.dClarity + DDATA.dClarityTemp)) - DDATA.dTactics;
 
             int temp1;
             int temp2;
@@ -538,6 +534,12 @@ namespace OrpheusManager
                     saveString += CDATA.cAbilityOverload[9] + "\r\n";
                     saveString += CDATA.cAbilityOverload[10] + "\r\n";
                     saveString += CDATA.cAbilityOverload[11] + "\r\n\r\n";
+                    saveString += "Mental Strain Modifier:\r\n";
+                    saveString += CDATA.cMaxMentStrain + "\r\n\r\n";
+                    saveString += "Physical Strain Modifier:\r\n";
+                    saveString += CDATA.cMaxPhysStrain + "\r\n\r\n";
+                    saveString += "Spiritual Strain Modifier:\r\n";
+                    saveString += CDATA.cMaxSpirStrain + "\r\n\r\n";
                     saveString += "Notes:\r\n";
                     saveString += CDATA.cNotes + "[XXspecialENDstringXX]\r\n\r\n";
 

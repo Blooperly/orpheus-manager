@@ -75,9 +75,9 @@ namespace OrpheusManager
             if (DDATA.dTacticsTemp > 0) dTactics.Text = DDATA.dTactics + " + " + DDATA.dTacticsTemp;
             else if (DDATA.dTacticsTemp < 0) dTactics.Text = DDATA.dTactics + " - " + Math.Abs(DDATA.dTacticsTemp);
             else dTactics.Text = DDATA.dTactics + "";
-            dMentalStrainMax.Text = "/ " + DDATA.dMentalStrainMax;
-            dPhysicalStrainMax.Text = "/ " + DDATA.dPhysicalStrainMax;
-            dSpiritualStrainMax.Text = "/ " + DDATA.dSpiritualStrainMax;
+            dMentalStrainMax.Text = "/ " + (DDATA.dMentalStrainMax + CDATA.cMaxMentStrain);
+            dPhysicalStrainMax.Text = "/ " + (DDATA.dPhysicalStrainMax + CDATA.cMaxPhysStrain);
+            dSpiritualStrainMax.Text = "/ " + (DDATA.dSpiritualStrainMax + CDATA.cMaxSpirStrain);
 
             // Configure Wound Meters
             if (CDATA.cAttributes[1] == 0)
@@ -891,7 +891,6 @@ namespace OrpheusManager
             mCharisma.Text = "";
             mWillpower.Text = "";
             for (int i = 0; i < 6; i++) { CDATA.cAttributesTemp[i] = 0; }
-            DDATA.deriveDATA();
             CDATA.cMentalStrain = DDATA.dMentalStrainMax;
             CDATA.cPhysicalStrain = DDATA.dPhysicalStrainMax;
             CDATA.cSpiritualStrain = DDATA.dSpiritualStrainMax;
@@ -902,6 +901,10 @@ namespace OrpheusManager
             CDATA.cOverFocus = 0;
             CDATA.cOverHealth = 0;
             CDATA.cOverSanity = 0;
+            CDATA.cMaxMentStrain = 0;
+            CDATA.cMaxPhysStrain = 0;
+            CDATA.cMaxSpirStrain = 0;
+            DDATA.deriveDATA();
             writeDATA();
             writeDATA2();
 
@@ -995,6 +998,10 @@ namespace OrpheusManager
             {
                 CDATA.cAbilityName[i] = " ";
                 CDATA.cAbilityRank[i] = " ";
+
+                CDATA.cAbilityMasteryA[i] = 0;
+                CDATA.cAbilityMasteryB[i] = 0;
+                CDATA.cAbilityOverload[i] = 0;
             }
             writeDATA();
         }
@@ -1017,6 +1024,12 @@ namespace OrpheusManager
         {
             Form mAbilities = new ManageAbilities();
             mAbilities.Show();
+        }
+        
+        private void maxStrainToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mStrain = new manageStrain();
+            mStrain.Show();
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1217,6 +1230,9 @@ namespace OrpheusManager
                     Int32.TryParse(SDATA.parseField("Over Focus:\r\n"), out CDATA.cOverFocus);
                     Int32.TryParse(SDATA.parseField("Over Health:\r\n"), out CDATA.cOverHealth);
                     Int32.TryParse(SDATA.parseField("Over Sanity:\r\n"), out CDATA.cOverSanity);
+                    Int32.TryParse(SDATA.parseField("Mental Strain Modifier:\r\n"), out CDATA.cMaxMentStrain);
+                    Int32.TryParse(SDATA.parseField("Physical Strain Modifier:\r\n"), out CDATA.cMaxPhysStrain);
+                    Int32.TryParse(SDATA.parseField("Spiritual Strain Modifier:\r\n"), out CDATA.cMaxSpirStrain);
                     CDATA.cNotes = SDATA.parseFieldEnd("Notes:\r\n");
 
                     string temp = SDATA.parseField("Attributes (PER, COG, DEX, VIT, CHAR, WILL):\r\n") + "\r\n";

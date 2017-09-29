@@ -45,3 +45,4 @@ C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\o
 C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.manageAttributes.resources
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.manageArchetypes.resources
 C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.manageAttributes.resources
+C:\Users\Jason\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.manageStrain.resources

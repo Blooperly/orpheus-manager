@@ -93,6 +93,12 @@
     <Compile Include="ManageSkills.Designer.cs">
       <DependentUpon>ManageSkills.cs</DependentUpon>
     </Compile>
+    <Compile Include="manageStrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageStrain.Designer.cs">
+      <DependentUpon>manageStrain.cs</DependentUpon>
+    </Compile>
     <Compile Include="maxHumanity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageSkills.resx">
       <DependentUpon>ManageSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageStrain.resx">
+      <DependentUpon>manageStrain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="maxHumanity.resx">
       <DependentUpon>maxHumanity.cs</DependentUpon>
