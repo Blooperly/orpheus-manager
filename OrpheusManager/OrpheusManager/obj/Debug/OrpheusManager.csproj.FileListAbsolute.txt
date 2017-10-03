@@ -66,3 +66,4 @@ C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusMa
 C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.exe
 C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
 C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.mBackground.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.mMotivations.resources

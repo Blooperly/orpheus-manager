@@ -43,9 +43,30 @@ namespace OrpheusManager
             cVitality.Text = CDATA.cAttributes[3] + "";
             cCharisma.Text = CDATA.cAttributes[4] + "";
             cWillpower.Text = CDATA.cAttributes[5] + "";
+
             cMot1.Text = CDATA.cMot1;
             cMot2.Text = CDATA.cMot2;
             cMot3.Text = CDATA.cMot3;
+            cMot4.Text = CDATA.cMot4;
+            cMot5.Text = CDATA.cMot5;
+            cMot6.Text = CDATA.cMot6;
+            cMot7.Text = CDATA.cMot7;
+
+            if (cMot1.Text == "" || cMot1.Text == " ") { cMot1.Visible = false; m1m1.Visible = false; m1m2.Visible = false; m1m3.Visible = false; m1m4.Visible = false; m1m5.Visible = false; m1m6.Visible = false; }
+            else { cMot1.Visible = true; m1m1.Visible = true; m1m2.Visible = true; m1m3.Visible = true; m1m4.Visible = true; m1m5.Visible = true; m1m6.Visible = true; }
+            if (cMot2.Text == "" || cMot2.Text == " ") { cMot2.Visible = false; m2m1.Visible = false; m2m2.Visible = false; m2m3.Visible = false; m2m4.Visible = false; m2m5.Visible = false; m2m6.Visible = false; }
+            else { cMot2.Visible = true; m2m1.Visible = true; m2m2.Visible = true; m2m3.Visible = true; m2m4.Visible = true; m2m5.Visible = true; m2m6.Visible = true; }
+            if (cMot3.Text == "" || cMot3.Text == " ") { cMot3.Visible = false; m3m1.Visible = false; m3m2.Visible = false; m3m3.Visible = false; m3m4.Visible = false; m3m5.Visible = false; m3m6.Visible = false; }
+            else { cMot3.Visible = true; m3m1.Visible = true; m3m2.Visible = true; m3m3.Visible = true; m3m4.Visible = true; m3m5.Visible = true; m3m6.Visible = true; }
+            if (cMot4.Text == "" || cMot4.Text == " ") { cMot4.Visible = false; m4m1.Visible = false; m4m2.Visible = false; m4m3.Visible = false; m4m4.Visible = false; m4m5.Visible = false; m4m6.Visible = false; }
+            else { cMot4.Visible = true; m4m1.Visible = true; m4m2.Visible = true; m4m3.Visible = true; m4m4.Visible = true; m4m5.Visible = true; m4m6.Visible = true; }
+            if (cMot5.Text == "" || cMot5.Text == " ") { cMot5.Visible = false; m5m1.Visible = false; m5m2.Visible = false; m5m3.Visible = false; m5m4.Visible = false; m5m5.Visible = false; m5m6.Visible = false; }
+            else { cMot5.Visible = true; m5m1.Visible = true; m5m2.Visible = true; m5m3.Visible = true; m5m4.Visible = true; m5m5.Visible = true; m5m6.Visible = true; }
+            if (cMot6.Text == "" || cMot6.Text == " ") { cMot6.Visible = false; m6m1.Visible = false; m6m2.Visible = false; m6m3.Visible = false; m6m4.Visible = false; m6m5.Visible = false; m6m6.Visible = false; }
+            else { cMot6.Visible = true; m6m1.Visible = true; m6m2.Visible = true; m6m3.Visible = true; m6m4.Visible = true; m6m5.Visible = true; m6m6.Visible = true; }
+            if (cMot7.Text == "" || cMot7.Text == " ") { cMot7.Visible = false; m7m1.Visible = false; m7m2.Visible = false; m7m3.Visible = false; m7m4.Visible = false; m7m5.Visible = false; m7m6.Visible = false; }
+            else { cMot7.Visible = true; m7m1.Visible = true; m7m2.Visible = true; m7m3.Visible = true; m7m4.Visible = true; m7m5.Visible = true; m7m6.Visible = true; }
+
             cBackground.Text = "Background:\n" + CDATA.cBackground;
             cHumanityMax.Text = "/ " + CDATA.cHumanityMax;
 
@@ -935,6 +956,10 @@ namespace OrpheusManager
             CDATA.cMaxMentStrain = 0;
             CDATA.cMaxPhysStrain = 0;
             CDATA.cMaxSpirStrain = 0;
+            CDATA.cMot4 = " ";
+            CDATA.cMot5 = " ";
+            CDATA.cMot6 = " ";
+            CDATA.cMot7 = " ";
             DDATA.deriveDATA();
             writeDATA();
             writeDATA2();
@@ -957,6 +982,30 @@ namespace OrpheusManager
             m3m4.Checked = false;
             m3m5.Checked = false;
             m3m6.Checked = false;
+            m4m1.Checked = false;
+            m4m2.Checked = false;
+            m4m3.Checked = false;
+            m4m4.Checked = false;
+            m4m5.Checked = false;
+            m4m6.Checked = false;
+            m5m1.Checked = false;
+            m5m2.Checked = false;
+            m5m3.Checked = false;
+            m5m4.Checked = false;
+            m5m5.Checked = false;
+            m5m6.Checked = false;
+            m6m1.Checked = false;
+            m6m2.Checked = false;
+            m6m3.Checked = false;
+            m6m4.Checked = false;
+            m6m5.Checked = false;
+            m6m6.Checked = false;
+            m7m1.Checked = false;
+            m7m2.Checked = false;
+            m7m3.Checked = false;
+            m7m4.Checked = false;
+            m7m5.Checked = false;
+            m7m6.Checked = false;
 
             FW1.Checked = false;
             FW2.Checked = false;
@@ -1072,6 +1121,13 @@ namespace OrpheusManager
             writeDATA();
         }
 
+        private void motivationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mMotivations = new mMotivations();
+            mMotivations.ShowDialog();
+            writeDATA();
+        }
+
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CDATA.cNotes = cNotes.Text;
@@ -1105,6 +1161,34 @@ namespace OrpheusManager
             if (m3m4.Checked == true) CDATA.cMot3Box[3] = 1; else CDATA.cMot3Box[3] = 0;
             if (m3m5.Checked == true) CDATA.cMot3Box[4] = 1; else CDATA.cMot3Box[4] = 0;
             if (m3m6.Checked == true) CDATA.cMot3Box[5] = 1; else CDATA.cMot3Box[5] = 0;
+
+            if (m4m1.Checked == true) CDATA.cMot4Box[0] = 1; else CDATA.cMot4Box[0] = 0;
+            if (m4m2.Checked == true) CDATA.cMot4Box[1] = 1; else CDATA.cMot4Box[1] = 0;
+            if (m4m3.Checked == true) CDATA.cMot4Box[2] = 1; else CDATA.cMot4Box[2] = 0;
+            if (m4m4.Checked == true) CDATA.cMot4Box[3] = 1; else CDATA.cMot4Box[3] = 0;
+            if (m4m5.Checked == true) CDATA.cMot4Box[4] = 1; else CDATA.cMot4Box[4] = 0;
+            if (m4m6.Checked == true) CDATA.cMot4Box[5] = 1; else CDATA.cMot4Box[5] = 0;
+
+            if (m5m1.Checked == true) CDATA.cMot5Box[0] = 1; else CDATA.cMot5Box[0] = 0;
+            if (m5m2.Checked == true) CDATA.cMot5Box[1] = 1; else CDATA.cMot5Box[1] = 0;
+            if (m5m3.Checked == true) CDATA.cMot5Box[2] = 1; else CDATA.cMot5Box[2] = 0;
+            if (m5m4.Checked == true) CDATA.cMot5Box[3] = 1; else CDATA.cMot5Box[3] = 0;
+            if (m5m5.Checked == true) CDATA.cMot5Box[4] = 1; else CDATA.cMot5Box[4] = 0;
+            if (m5m6.Checked == true) CDATA.cMot5Box[5] = 1; else CDATA.cMot5Box[5] = 0;
+
+            if (m6m1.Checked == true) CDATA.cMot6Box[0] = 1; else CDATA.cMot6Box[0] = 0;
+            if (m6m2.Checked == true) CDATA.cMot6Box[1] = 1; else CDATA.cMot6Box[1] = 0;
+            if (m6m3.Checked == true) CDATA.cMot6Box[2] = 1; else CDATA.cMot6Box[2] = 0;
+            if (m6m4.Checked == true) CDATA.cMot6Box[3] = 1; else CDATA.cMot6Box[3] = 0;
+            if (m6m5.Checked == true) CDATA.cMot6Box[4] = 1; else CDATA.cMot6Box[4] = 0;
+            if (m6m6.Checked == true) CDATA.cMot6Box[5] = 1; else CDATA.cMot6Box[5] = 0;
+
+            if (m7m1.Checked == true) CDATA.cMot7Box[0] = 1; else CDATA.cMot7Box[0] = 0;
+            if (m7m2.Checked == true) CDATA.cMot7Box[1] = 1; else CDATA.cMot7Box[1] = 0;
+            if (m7m3.Checked == true) CDATA.cMot7Box[2] = 1; else CDATA.cMot7Box[2] = 0;
+            if (m7m4.Checked == true) CDATA.cMot7Box[3] = 1; else CDATA.cMot7Box[3] = 0;
+            if (m7m5.Checked == true) CDATA.cMot7Box[4] = 1; else CDATA.cMot7Box[4] = 0;
+            if (m7m6.Checked == true) CDATA.cMot7Box[5] = 1; else CDATA.cMot7Box[5] = 0;
 
             if (FW1.Checked == true) CDATA.cFocusWounds[0] = 1; else CDATA.cFocusWounds[0] = 0;
             if (FW2.Checked == true) CDATA.cFocusWounds[1] = 1; else CDATA.cFocusWounds[1] = 0;
@@ -1187,6 +1271,34 @@ namespace OrpheusManager
             if (m3m5.Checked == true) CDATA.cMot3Box[4] = 1; else CDATA.cMot3Box[4] = 0;
             if (m3m6.Checked == true) CDATA.cMot3Box[5] = 1; else CDATA.cMot3Box[5] = 0;
 
+            if (m4m1.Checked == true) CDATA.cMot4Box[0] = 1; else CDATA.cMot4Box[0] = 0;
+            if (m4m2.Checked == true) CDATA.cMot4Box[1] = 1; else CDATA.cMot4Box[1] = 0;
+            if (m4m3.Checked == true) CDATA.cMot4Box[2] = 1; else CDATA.cMot4Box[2] = 0;
+            if (m4m4.Checked == true) CDATA.cMot4Box[3] = 1; else CDATA.cMot4Box[3] = 0;
+            if (m4m5.Checked == true) CDATA.cMot4Box[4] = 1; else CDATA.cMot4Box[4] = 0;
+            if (m4m6.Checked == true) CDATA.cMot4Box[5] = 1; else CDATA.cMot4Box[5] = 0;
+
+            if (m5m1.Checked == true) CDATA.cMot5Box[0] = 1; else CDATA.cMot5Box[0] = 0;
+            if (m5m2.Checked == true) CDATA.cMot5Box[1] = 1; else CDATA.cMot5Box[1] = 0;
+            if (m5m3.Checked == true) CDATA.cMot5Box[2] = 1; else CDATA.cMot5Box[2] = 0;
+            if (m5m4.Checked == true) CDATA.cMot5Box[3] = 1; else CDATA.cMot5Box[3] = 0;
+            if (m5m5.Checked == true) CDATA.cMot5Box[4] = 1; else CDATA.cMot5Box[4] = 0;
+            if (m5m6.Checked == true) CDATA.cMot5Box[5] = 1; else CDATA.cMot5Box[5] = 0;
+
+            if (m6m1.Checked == true) CDATA.cMot6Box[0] = 1; else CDATA.cMot6Box[0] = 0;
+            if (m6m2.Checked == true) CDATA.cMot6Box[1] = 1; else CDATA.cMot6Box[1] = 0;
+            if (m6m3.Checked == true) CDATA.cMot6Box[2] = 1; else CDATA.cMot6Box[2] = 0;
+            if (m6m4.Checked == true) CDATA.cMot6Box[3] = 1; else CDATA.cMot6Box[3] = 0;
+            if (m6m5.Checked == true) CDATA.cMot6Box[4] = 1; else CDATA.cMot6Box[4] = 0;
+            if (m6m6.Checked == true) CDATA.cMot6Box[5] = 1; else CDATA.cMot6Box[5] = 0;
+
+            if (m7m1.Checked == true) CDATA.cMot7Box[0] = 1; else CDATA.cMot7Box[0] = 0;
+            if (m7m2.Checked == true) CDATA.cMot7Box[1] = 1; else CDATA.cMot7Box[1] = 0;
+            if (m7m3.Checked == true) CDATA.cMot7Box[2] = 1; else CDATA.cMot7Box[2] = 0;
+            if (m7m4.Checked == true) CDATA.cMot7Box[3] = 1; else CDATA.cMot7Box[3] = 0;
+            if (m7m5.Checked == true) CDATA.cMot7Box[4] = 1; else CDATA.cMot7Box[4] = 0;
+            if (m7m6.Checked == true) CDATA.cMot7Box[5] = 1; else CDATA.cMot7Box[5] = 0;
+
             if (FW1.Checked == true) CDATA.cFocusWounds[0] = 1; else CDATA.cFocusWounds[0] = 0;
             if (FW2.Checked == true) CDATA.cFocusWounds[1] = 1; else CDATA.cFocusWounds[1] = 0;
             if (FW3.Checked == true) CDATA.cFocusWounds[2] = 1; else CDATA.cFocusWounds[2] = 0;
@@ -1261,6 +1373,10 @@ namespace OrpheusManager
                     CDATA.cMot1 = SDATA.parseField("Motivation 1:\r\n");
                     CDATA.cMot2 = SDATA.parseField("Motivation 2:\r\n");
                     CDATA.cMot3 = SDATA.parseField("Motivation 3:\r\n");
+                    CDATA.cMot4 = SDATA.parseField("Motivation 4:\r\n");
+                    CDATA.cMot5 = SDATA.parseField("Motivation 5:\r\n");
+                    CDATA.cMot6 = SDATA.parseField("Motivation 6:\r\n");
+                    CDATA.cMot7 = SDATA.parseField("Motivation 7:\r\n");
                     Int32.TryParse(SDATA.parseField("Mental Strain:\r\n"), out CDATA.cMentalStrain);
                     Int32.TryParse(SDATA.parseField("Physical Strain:\r\n"), out CDATA.cPhysicalStrain);
                     Int32.TryParse(SDATA.parseField("Spiritual Strain:\r\n"), out CDATA.cSpiritualStrain);
@@ -1424,6 +1540,38 @@ namespace OrpheusManager
                     if (SDATA.parseLine(temp, 3) == "1") m3m4.Checked = true; else m3m4.Checked = false;
                     if (SDATA.parseLine(temp, 4) == "1") m3m5.Checked = true; else m3m5.Checked = false;
                     if (SDATA.parseLine(temp, 5) == "1") m3m6.Checked = true; else m3m6.Checked = false;
+
+                    temp = SDATA.parseField("Motivation 4 Boxes:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") m4m1.Checked = true; else m4m1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") m4m2.Checked = true; else m4m2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") m4m3.Checked = true; else m4m3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") m4m4.Checked = true; else m4m4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") m4m5.Checked = true; else m4m5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") m4m6.Checked = true; else m4m6.Checked = false;
+
+                    temp = SDATA.parseField("Motivation 5 Boxes:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") m5m1.Checked = true; else m5m1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") m5m2.Checked = true; else m5m2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") m5m3.Checked = true; else m5m3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") m5m4.Checked = true; else m5m4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") m5m5.Checked = true; else m5m5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") m5m6.Checked = true; else m5m6.Checked = false;
+
+                    temp = SDATA.parseField("Motivation 6 Boxes:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") m6m1.Checked = true; else m6m1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") m6m2.Checked = true; else m6m2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") m6m3.Checked = true; else m6m3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") m6m4.Checked = true; else m6m4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") m6m5.Checked = true; else m6m5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") m6m6.Checked = true; else m6m6.Checked = false;
+
+                    temp = SDATA.parseField("Motivation 7 Boxes:\r\n") + "\r\n";
+                    if (SDATA.parseLine(temp, 0) == "1") m7m1.Checked = true; else m7m1.Checked = false;
+                    if (SDATA.parseLine(temp, 1) == "1") m7m2.Checked = true; else m7m2.Checked = false;
+                    if (SDATA.parseLine(temp, 2) == "1") m7m3.Checked = true; else m7m3.Checked = false;
+                    if (SDATA.parseLine(temp, 3) == "1") m7m4.Checked = true; else m7m4.Checked = false;
+                    if (SDATA.parseLine(temp, 4) == "1") m7m5.Checked = true; else m7m5.Checked = false;
+                    if (SDATA.parseLine(temp, 5) == "1") m7m6.Checked = true; else m7m6.Checked = false;
 
                     temp = SDATA.parseField("Focus Damage:\r\n") + "\r\n";
                     if (SDATA.parseLine(temp, 0) == "1") FW1.Checked = true; else FW1.Checked = false;

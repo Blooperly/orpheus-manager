@@ -111,6 +111,12 @@
     <Compile Include="mBackground.Designer.cs">
       <DependentUpon>mBackground.cs</DependentUpon>
     </Compile>
+    <Compile Include="mMotivations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mMotivations.Designer.cs">
+      <DependentUpon>mMotivations.cs</DependentUpon>
+    </Compile>
     <Compile Include="newCharacter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mBackground.resx">
       <DependentUpon>mBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mMotivations.resx">
+      <DependentUpon>mMotivations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newCharacter.resx">
       <DependentUpon>newCharacter.cs</DependentUpon>
