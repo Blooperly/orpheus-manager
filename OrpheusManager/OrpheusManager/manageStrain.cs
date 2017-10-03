@@ -27,6 +27,8 @@ namespace OrpheusManager
             eMental.Text = CDATA.cMaxMentStrain + "";
             ePhysical.Text = CDATA.cMaxPhysStrain + "";
             eSpiritual.Text = CDATA.cMaxSpirStrain + "";
+
+            eMental.SelectionStart = 1;
         }
 
         private void nCharSubmit_Click(object sender, EventArgs e)

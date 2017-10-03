@@ -33,5 +33,10 @@ namespace OrpheusManager
         {
             this.Close();
         }
+
+        private void maxHumanity_Load(object sender, EventArgs e)
+        {
+            this.Text = "Orpheus Manager - " + CDATA.cName;
+        }
     }
 }

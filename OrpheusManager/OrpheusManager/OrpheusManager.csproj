@@ -105,6 +105,12 @@
     <Compile Include="maxHumanity.Designer.cs">
       <DependentUpon>maxHumanity.cs</DependentUpon>
     </Compile>
+    <Compile Include="mBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mBackground.Designer.cs">
+      <DependentUpon>mBackground.cs</DependentUpon>
+    </Compile>
     <Compile Include="newCharacter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="maxHumanity.resx">
       <DependentUpon>maxHumanity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mBackground.resx">
+      <DependentUpon>mBackground.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newCharacter.resx">
       <DependentUpon>newCharacter.cs</DependentUpon>

@@ -629,6 +629,36 @@ namespace OrpheusManager
             cOverSanity.Text = CDATA.cOverSanity + "";
         }
 
+        private void storeDATA2()
+        {
+            if (mPerception.Text == "" || mPerception.Text == " ") CDATA.cAttributesTemp[0] = 0;
+            else Int32.TryParse(mPerception.Text, out CDATA.cAttributesTemp[0]);
+            if (mCognition.Text == "" || mCognition.Text == " ") CDATA.cAttributesTemp[1] = 0;
+            else Int32.TryParse(mCognition.Text, out CDATA.cAttributesTemp[1]);
+            if (mDexterity.Text == "" || mDexterity.Text == " ") CDATA.cAttributesTemp[2] = 0;
+            else Int32.TryParse(mDexterity.Text, out CDATA.cAttributesTemp[2]);
+            if (mVitality.Text == "" || mVitality.Text == " ") CDATA.cAttributesTemp[3] = 0;
+            else Int32.TryParse(mVitality.Text, out CDATA.cAttributesTemp[3]);
+            if (mCharisma.Text == "" || mCharisma.Text == " ") CDATA.cAttributesTemp[4] = 0;
+            else Int32.TryParse(mCharisma.Text, out CDATA.cAttributesTemp[4]);
+            if (mWillpower.Text == "" || mWillpower.Text == " ") CDATA.cAttributesTemp[5] = 0;
+            else Int32.TryParse(mWillpower.Text, out CDATA.cAttributesTemp[5]);
+
+            CDATA.cNotes = cNotes.Text;
+
+            Int32.TryParse(cMentalStrain.Text, out CDATA.cMentalStrain);
+            Int32.TryParse(cPhysicalStrain.Text, out CDATA.cPhysicalStrain);
+            Int32.TryParse(cSpiritualStrain.Text, out CDATA.cSpiritualStrain);
+
+            Int32.TryParse(cInitiative.Text, out CDATA.cInitiative);
+            Int32.TryParse(cMementoMori.Text, out CDATA.cMementoMori);
+            Int32.TryParse(cHumanity.Text, out CDATA.cHumanity);
+
+            Int32.TryParse(cOverFocus.Text, out CDATA.cOverFocus);
+            Int32.TryParse(cOverHealth.Text, out CDATA.cOverHealth);
+            Int32.TryParse(cOverSanity.Text, out CDATA.cOverSanity);
+        }
+
         // On Load
         private void CharacterSheet_Load(object sender, EventArgs e)
         {
@@ -869,6 +899,7 @@ namespace OrpheusManager
 
         private void attributesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            storeDATA2();
             // Open Dialog Box
             Form mAttributes = new manageAttributes();
             mAttributes.ShowDialog();
@@ -1008,6 +1039,7 @@ namespace OrpheusManager
 
         private void maxHumanityToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            storeDATA2();
             Form eHumanity = new maxHumanity();
             eHumanity.ShowDialog();
             writeDATA();
@@ -1030,6 +1062,14 @@ namespace OrpheusManager
         {
             Form mStrain = new manageStrain();
             mStrain.Show();
+        }
+
+
+        private void backgroundToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mBackground = new mBackground();
+            mBackground.ShowDialog();
+            writeDATA();
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1422,46 +1462,46 @@ namespace OrpheusManager
                     if (SDATA.parseLine(temp, 9) == "1") SW10.Checked = true; else SW10.Checked = false;
                     
                     temp = SDATA.parseField("Ability Mastery A:\r\n") + "\r\n";
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[0] = 1; CDATA.cAbilityMasteryA[0] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[1] = 1; CDATA.cAbilityMasteryA[1] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[2] = 1; CDATA.cAbilityMasteryA[2] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[3] = 1; CDATA.cAbilityMasteryA[3] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[4] = 1; CDATA.cAbilityMasteryA[4] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[5] = 1; CDATA.cAbilityMasteryA[5] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[6] = 1; CDATA.cAbilityMasteryA[6] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[7] = 1; CDATA.cAbilityMasteryA[7] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[8] = 1; CDATA.cAbilityMasteryA[8] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[9] = 1; CDATA.cAbilityMasteryA[9] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[10] = 1; CDATA.cAbilityMasteryA[10] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[11] = 1; CDATA.cAbilityMasteryA[11] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryA[0] = 1; else CDATA.cAbilityMasteryA[0] = 0;
+                    if (SDATA.parseLine(temp, 1) == "1") CDATA.cAbilityMasteryA[1] = 1; else CDATA.cAbilityMasteryA[1] = 0;
+                    if (SDATA.parseLine(temp, 2) == "1") CDATA.cAbilityMasteryA[2] = 1; else CDATA.cAbilityMasteryA[2] = 0;
+                    if (SDATA.parseLine(temp, 3) == "1") CDATA.cAbilityMasteryA[3] = 1; else CDATA.cAbilityMasteryA[3] = 0;
+                    if (SDATA.parseLine(temp, 4) == "1") CDATA.cAbilityMasteryA[4] = 1; else CDATA.cAbilityMasteryA[4] = 0;
+                    if (SDATA.parseLine(temp, 5) == "1") CDATA.cAbilityMasteryA[5] = 1; else CDATA.cAbilityMasteryA[5] = 0;
+                    if (SDATA.parseLine(temp, 6) == "1") CDATA.cAbilityMasteryA[6] = 1; else CDATA.cAbilityMasteryA[6] = 0;
+                    if (SDATA.parseLine(temp, 7) == "1") CDATA.cAbilityMasteryA[7] = 1; else CDATA.cAbilityMasteryA[7] = 0;
+                    if (SDATA.parseLine(temp, 8) == "1") CDATA.cAbilityMasteryA[8] = 1; else CDATA.cAbilityMasteryA[8] = 0;
+                    if (SDATA.parseLine(temp, 9) == "1") CDATA.cAbilityMasteryA[9] = 1; else CDATA.cAbilityMasteryA[9] = 0;
+                    if (SDATA.parseLine(temp, 10) == "1") CDATA.cAbilityMasteryA[10] = 1; else CDATA.cAbilityMasteryA[10] = 0;
+                    if (SDATA.parseLine(temp, 11) == "1") CDATA.cAbilityMasteryA[11] = 1; else CDATA.cAbilityMasteryA[11] = 0;
 
                     temp = SDATA.parseField("Ability Mastery B:\r\n") + "\r\n";
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[0] = 1; CDATA.cAbilityMasteryB[0] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[1] = 1; CDATA.cAbilityMasteryB[1] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[2] = 1; CDATA.cAbilityMasteryB[2] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[3] = 1; CDATA.cAbilityMasteryB[3] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[4] = 1; CDATA.cAbilityMasteryB[4] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[5] = 1; CDATA.cAbilityMasteryB[5] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[6] = 1; CDATA.cAbilityMasteryB[6] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[7] = 1; CDATA.cAbilityMasteryB[7] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[8] = 1; CDATA.cAbilityMasteryB[8] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[9] = 1; CDATA.cAbilityMasteryB[9] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[10] = 1; CDATA.cAbilityMasteryB[10] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[11] = 1; CDATA.cAbilityMasteryB[11] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityMasteryB[0] = 1; else CDATA.cAbilityMasteryB[0] = 0;
+                    if (SDATA.parseLine(temp, 1) == "1") CDATA.cAbilityMasteryB[1] = 1; else CDATA.cAbilityMasteryB[1] = 0;
+                    if (SDATA.parseLine(temp, 2) == "1") CDATA.cAbilityMasteryB[2] = 1; else CDATA.cAbilityMasteryB[2] = 0;
+                    if (SDATA.parseLine(temp, 3) == "1") CDATA.cAbilityMasteryB[3] = 1; else CDATA.cAbilityMasteryB[3] = 0;
+                    if (SDATA.parseLine(temp, 4) == "1") CDATA.cAbilityMasteryB[4] = 1; else CDATA.cAbilityMasteryB[4] = 0;
+                    if (SDATA.parseLine(temp, 5) == "1") CDATA.cAbilityMasteryB[5] = 1; else CDATA.cAbilityMasteryB[5] = 0;
+                    if (SDATA.parseLine(temp, 6) == "1") CDATA.cAbilityMasteryB[6] = 1; else CDATA.cAbilityMasteryB[6] = 0;
+                    if (SDATA.parseLine(temp, 7) == "1") CDATA.cAbilityMasteryB[7] = 1; else CDATA.cAbilityMasteryB[7] = 0;
+                    if (SDATA.parseLine(temp, 8) == "1") CDATA.cAbilityMasteryB[8] = 1; else CDATA.cAbilityMasteryB[8] = 0;
+                    if (SDATA.parseLine(temp, 9) == "1") CDATA.cAbilityMasteryB[9] = 1; else CDATA.cAbilityMasteryB[9] = 0;
+                    if (SDATA.parseLine(temp, 10) == "1") CDATA.cAbilityMasteryB[10] = 1; else CDATA.cAbilityMasteryB[10] = 0;
+                    if (SDATA.parseLine(temp, 11) == "1") CDATA.cAbilityMasteryB[11] = 1; else CDATA.cAbilityMasteryB[11] = 0;
 
                     temp = SDATA.parseField("Ability Overload:\r\n") + "\r\n";
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[0] = 1; CDATA.cAbilityOverload[0] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[1] = 1; CDATA.cAbilityOverload[1] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[2] = 1; CDATA.cAbilityOverload[2] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[3] = 1; CDATA.cAbilityOverload[3] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[4] = 1; CDATA.cAbilityOverload[4] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[5] = 1; CDATA.cAbilityOverload[5] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[6] = 1; CDATA.cAbilityOverload[6] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[7] = 1; CDATA.cAbilityOverload[7] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[8] = 1; CDATA.cAbilityOverload[8] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[9] = 1; CDATA.cAbilityOverload[9] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[10] = 1; CDATA.cAbilityOverload[10] = 0;
-                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[11] = 1; CDATA.cAbilityOverload[11] = 0;
+                    if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityOverload[0] = 1; else CDATA.cAbilityOverload[0] = 0;
+                    if (SDATA.parseLine(temp, 1) == "1") CDATA.cAbilityOverload[1] = 1; else CDATA.cAbilityOverload[1] = 0;
+                    if (SDATA.parseLine(temp, 2) == "1") CDATA.cAbilityOverload[2] = 1; else CDATA.cAbilityOverload[2] = 0;
+                    if (SDATA.parseLine(temp, 3) == "1") CDATA.cAbilityOverload[3] = 1; else CDATA.cAbilityOverload[3] = 0;
+                    if (SDATA.parseLine(temp, 4) == "1") CDATA.cAbilityOverload[4] = 1; else CDATA.cAbilityOverload[4] = 0;
+                    if (SDATA.parseLine(temp, 5) == "1") CDATA.cAbilityOverload[5] = 1; else CDATA.cAbilityOverload[5] = 0;
+                    if (SDATA.parseLine(temp, 6) == "1") CDATA.cAbilityOverload[6] = 1; else CDATA.cAbilityOverload[6] = 0;
+                    if (SDATA.parseLine(temp, 7) == "1") CDATA.cAbilityOverload[7] = 1; else CDATA.cAbilityOverload[7] = 0;
+                    if (SDATA.parseLine(temp, 8) == "1") CDATA.cAbilityOverload[8] = 1; else CDATA.cAbilityOverload[8] = 0;
+                    if (SDATA.parseLine(temp, 9) == "1") CDATA.cAbilityOverload[9] = 1; else CDATA.cAbilityOverload[9] = 0;
+                    if (SDATA.parseLine(temp, 10) == "1") CDATA.cAbilityOverload[10] = 1; else CDATA.cAbilityOverload[10] = 0;
+                    if (SDATA.parseLine(temp, 11) == "1") CDATA.cAbilityOverload[11] = 1; else CDATA.cAbilityOverload[11] = 0;
 
                     reloadArch();
                     writeDATA();

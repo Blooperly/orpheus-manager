@@ -31,42 +31,42 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkBox37 = new System.Windows.Forms.CheckBox();
-            this.checkBox38 = new System.Windows.Forms.CheckBox();
-            this.checkBox39 = new System.Windows.Forms.CheckBox();
-            this.checkBox40 = new System.Windows.Forms.CheckBox();
-            this.checkBox41 = new System.Windows.Forms.CheckBox();
-            this.checkBox42 = new System.Windows.Forms.CheckBox();
-            this.checkBox43 = new System.Windows.Forms.CheckBox();
-            this.checkBox44 = new System.Windows.Forms.CheckBox();
-            this.checkBox45 = new System.Windows.Forms.CheckBox();
-            this.checkBox46 = new System.Windows.Forms.CheckBox();
-            this.checkBox47 = new System.Windows.Forms.CheckBox();
-            this.checkBox48 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.O12 = new System.Windows.Forms.CheckBox();
+            this.B12 = new System.Windows.Forms.CheckBox();
+            this.A12 = new System.Windows.Forms.CheckBox();
+            this.O11 = new System.Windows.Forms.CheckBox();
+            this.B11 = new System.Windows.Forms.CheckBox();
+            this.A11 = new System.Windows.Forms.CheckBox();
+            this.O10 = new System.Windows.Forms.CheckBox();
+            this.B10 = new System.Windows.Forms.CheckBox();
+            this.A10 = new System.Windows.Forms.CheckBox();
+            this.O9 = new System.Windows.Forms.CheckBox();
+            this.B9 = new System.Windows.Forms.CheckBox();
+            this.A9 = new System.Windows.Forms.CheckBox();
+            this.O8 = new System.Windows.Forms.CheckBox();
+            this.B8 = new System.Windows.Forms.CheckBox();
+            this.A8 = new System.Windows.Forms.CheckBox();
+            this.O7 = new System.Windows.Forms.CheckBox();
+            this.B7 = new System.Windows.Forms.CheckBox();
+            this.A7 = new System.Windows.Forms.CheckBox();
+            this.O6 = new System.Windows.Forms.CheckBox();
+            this.B6 = new System.Windows.Forms.CheckBox();
+            this.A6 = new System.Windows.Forms.CheckBox();
+            this.O5 = new System.Windows.Forms.CheckBox();
+            this.B5 = new System.Windows.Forms.CheckBox();
+            this.A5 = new System.Windows.Forms.CheckBox();
+            this.O4 = new System.Windows.Forms.CheckBox();
+            this.B4 = new System.Windows.Forms.CheckBox();
+            this.A4 = new System.Windows.Forms.CheckBox();
+            this.O3 = new System.Windows.Forms.CheckBox();
+            this.B3 = new System.Windows.Forms.CheckBox();
+            this.A3 = new System.Windows.Forms.CheckBox();
+            this.O2 = new System.Windows.Forms.CheckBox();
+            this.B2 = new System.Windows.Forms.CheckBox();
+            this.A2 = new System.Windows.Forms.CheckBox();
+            this.O1 = new System.Windows.Forms.CheckBox();
+            this.B1 = new System.Windows.Forms.CheckBox();
+            this.A1 = new System.Windows.Forms.CheckBox();
             this.SR11 = new System.Windows.Forms.TextBox();
             this.SN11 = new System.Windows.Forms.TextBox();
             this.SR10 = new System.Windows.Forms.TextBox();
@@ -130,329 +130,329 @@
             this.label7.TabIndex = 356;
             this.label7.Text = "Mastery A";
             // 
-            // checkBox37
-            // 
-            this.checkBox37.AutoSize = true;
-            this.checkBox37.Location = new System.Drawing.Point(261, 372);
-            this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(15, 14);
-            this.checkBox37.TabIndex = 325;
-            this.checkBox37.UseVisualStyleBackColor = true;
-            // 
-            // checkBox38
-            // 
-            this.checkBox38.AutoSize = true;
-            this.checkBox38.Location = new System.Drawing.Point(240, 372);
-            this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(15, 14);
-            this.checkBox38.TabIndex = 324;
-            this.checkBox38.UseVisualStyleBackColor = true;
-            // 
-            // checkBox39
-            // 
-            this.checkBox39.AutoSize = true;
-            this.checkBox39.Location = new System.Drawing.Point(219, 372);
-            this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(15, 14);
-            this.checkBox39.TabIndex = 323;
-            this.checkBox39.UseVisualStyleBackColor = true;
-            // 
-            // checkBox40
-            // 
-            this.checkBox40.AutoSize = true;
-            this.checkBox40.Location = new System.Drawing.Point(261, 346);
-            this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(15, 14);
-            this.checkBox40.TabIndex = 322;
-            this.checkBox40.UseVisualStyleBackColor = true;
-            // 
-            // checkBox41
-            // 
-            this.checkBox41.AutoSize = true;
-            this.checkBox41.Location = new System.Drawing.Point(240, 346);
-            this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(15, 14);
-            this.checkBox41.TabIndex = 321;
-            this.checkBox41.UseVisualStyleBackColor = true;
-            // 
-            // checkBox42
-            // 
-            this.checkBox42.AutoSize = true;
-            this.checkBox42.Location = new System.Drawing.Point(219, 346);
-            this.checkBox42.Name = "checkBox42";
-            this.checkBox42.Size = new System.Drawing.Size(15, 14);
-            this.checkBox42.TabIndex = 320;
-            this.checkBox42.UseVisualStyleBackColor = true;
-            // 
-            // checkBox43
-            // 
-            this.checkBox43.AutoSize = true;
-            this.checkBox43.Location = new System.Drawing.Point(261, 320);
-            this.checkBox43.Name = "checkBox43";
-            this.checkBox43.Size = new System.Drawing.Size(15, 14);
-            this.checkBox43.TabIndex = 319;
-            this.checkBox43.UseVisualStyleBackColor = true;
-            // 
-            // checkBox44
-            // 
-            this.checkBox44.AutoSize = true;
-            this.checkBox44.Location = new System.Drawing.Point(240, 320);
-            this.checkBox44.Name = "checkBox44";
-            this.checkBox44.Size = new System.Drawing.Size(15, 14);
-            this.checkBox44.TabIndex = 318;
-            this.checkBox44.UseVisualStyleBackColor = true;
-            // 
-            // checkBox45
-            // 
-            this.checkBox45.AutoSize = true;
-            this.checkBox45.Location = new System.Drawing.Point(219, 320);
-            this.checkBox45.Name = "checkBox45";
-            this.checkBox45.Size = new System.Drawing.Size(15, 14);
-            this.checkBox45.TabIndex = 317;
-            this.checkBox45.UseVisualStyleBackColor = true;
-            // 
-            // checkBox46
-            // 
-            this.checkBox46.AutoSize = true;
-            this.checkBox46.Location = new System.Drawing.Point(261, 294);
-            this.checkBox46.Name = "checkBox46";
-            this.checkBox46.Size = new System.Drawing.Size(15, 14);
-            this.checkBox46.TabIndex = 316;
-            this.checkBox46.UseVisualStyleBackColor = true;
-            // 
-            // checkBox47
-            // 
-            this.checkBox47.AutoSize = true;
-            this.checkBox47.Location = new System.Drawing.Point(240, 294);
-            this.checkBox47.Name = "checkBox47";
-            this.checkBox47.Size = new System.Drawing.Size(15, 14);
-            this.checkBox47.TabIndex = 315;
-            this.checkBox47.UseVisualStyleBackColor = true;
-            // 
-            // checkBox48
-            // 
-            this.checkBox48.AutoSize = true;
-            this.checkBox48.Location = new System.Drawing.Point(219, 294);
-            this.checkBox48.Name = "checkBox48";
-            this.checkBox48.Size = new System.Drawing.Size(15, 14);
-            this.checkBox48.TabIndex = 314;
-            this.checkBox48.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(261, 268);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(15, 14);
-            this.checkBox13.TabIndex = 313;
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(240, 268);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(15, 14);
-            this.checkBox14.TabIndex = 312;
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(219, 268);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(15, 14);
-            this.checkBox15.TabIndex = 311;
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(261, 242);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(15, 14);
-            this.checkBox16.TabIndex = 310;
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(240, 242);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(15, 14);
-            this.checkBox17.TabIndex = 309;
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(219, 242);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(15, 14);
-            this.checkBox18.TabIndex = 308;
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(261, 216);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(15, 14);
-            this.checkBox19.TabIndex = 307;
-            this.checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox20
-            // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(240, 216);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(15, 14);
-            this.checkBox20.TabIndex = 306;
-            this.checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // checkBox21
-            // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(219, 216);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(15, 14);
-            this.checkBox21.TabIndex = 305;
-            this.checkBox21.UseVisualStyleBackColor = true;
-            // 
-            // checkBox22
-            // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(261, 190);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(15, 14);
-            this.checkBox22.TabIndex = 304;
-            this.checkBox22.UseVisualStyleBackColor = true;
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(240, 190);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(15, 14);
-            this.checkBox23.TabIndex = 303;
-            this.checkBox23.UseVisualStyleBackColor = true;
-            // 
-            // checkBox24
-            // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(219, 190);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(15, 14);
-            this.checkBox24.TabIndex = 302;
-            this.checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(261, 164);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(15, 14);
-            this.checkBox7.TabIndex = 301;
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(240, 164);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(15, 14);
-            this.checkBox8.TabIndex = 300;
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(219, 164);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
-            this.checkBox9.TabIndex = 299;
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(261, 138);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
-            this.checkBox10.TabIndex = 298;
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(240, 138);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(15, 14);
-            this.checkBox11.TabIndex = 297;
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(219, 138);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(15, 14);
-            this.checkBox12.TabIndex = 296;
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(261, 112);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 295;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(240, 112);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 294;
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(219, 112);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
-            this.checkBox6.TabIndex = 293;
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(261, 86);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 292;
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(240, 86);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 291;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(219, 86);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 290;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            // O12
+            // 
+            this.O12.AutoSize = true;
+            this.O12.Location = new System.Drawing.Point(261, 372);
+            this.O12.Name = "O12";
+            this.O12.Size = new System.Drawing.Size(15, 14);
+            this.O12.TabIndex = 325;
+            this.O12.UseVisualStyleBackColor = true;
+            // 
+            // B12
+            // 
+            this.B12.AutoSize = true;
+            this.B12.Location = new System.Drawing.Point(240, 372);
+            this.B12.Name = "B12";
+            this.B12.Size = new System.Drawing.Size(15, 14);
+            this.B12.TabIndex = 324;
+            this.B12.UseVisualStyleBackColor = true;
+            // 
+            // A12
+            // 
+            this.A12.AutoSize = true;
+            this.A12.Location = new System.Drawing.Point(219, 372);
+            this.A12.Name = "A12";
+            this.A12.Size = new System.Drawing.Size(15, 14);
+            this.A12.TabIndex = 323;
+            this.A12.UseVisualStyleBackColor = true;
+            // 
+            // O11
+            // 
+            this.O11.AutoSize = true;
+            this.O11.Location = new System.Drawing.Point(261, 346);
+            this.O11.Name = "O11";
+            this.O11.Size = new System.Drawing.Size(15, 14);
+            this.O11.TabIndex = 322;
+            this.O11.UseVisualStyleBackColor = true;
+            // 
+            // B11
+            // 
+            this.B11.AutoSize = true;
+            this.B11.Location = new System.Drawing.Point(240, 346);
+            this.B11.Name = "B11";
+            this.B11.Size = new System.Drawing.Size(15, 14);
+            this.B11.TabIndex = 321;
+            this.B11.UseVisualStyleBackColor = true;
+            // 
+            // A11
+            // 
+            this.A11.AutoSize = true;
+            this.A11.Location = new System.Drawing.Point(219, 346);
+            this.A11.Name = "A11";
+            this.A11.Size = new System.Drawing.Size(15, 14);
+            this.A11.TabIndex = 320;
+            this.A11.UseVisualStyleBackColor = true;
+            // 
+            // O10
+            // 
+            this.O10.AutoSize = true;
+            this.O10.Location = new System.Drawing.Point(261, 320);
+            this.O10.Name = "O10";
+            this.O10.Size = new System.Drawing.Size(15, 14);
+            this.O10.TabIndex = 319;
+            this.O10.UseVisualStyleBackColor = true;
+            // 
+            // B10
+            // 
+            this.B10.AutoSize = true;
+            this.B10.Location = new System.Drawing.Point(240, 320);
+            this.B10.Name = "B10";
+            this.B10.Size = new System.Drawing.Size(15, 14);
+            this.B10.TabIndex = 318;
+            this.B10.UseVisualStyleBackColor = true;
+            // 
+            // A10
+            // 
+            this.A10.AutoSize = true;
+            this.A10.Location = new System.Drawing.Point(219, 320);
+            this.A10.Name = "A10";
+            this.A10.Size = new System.Drawing.Size(15, 14);
+            this.A10.TabIndex = 317;
+            this.A10.UseVisualStyleBackColor = true;
+            // 
+            // O9
+            // 
+            this.O9.AutoSize = true;
+            this.O9.Location = new System.Drawing.Point(261, 294);
+            this.O9.Name = "O9";
+            this.O9.Size = new System.Drawing.Size(15, 14);
+            this.O9.TabIndex = 316;
+            this.O9.UseVisualStyleBackColor = true;
+            // 
+            // B9
+            // 
+            this.B9.AutoSize = true;
+            this.B9.Location = new System.Drawing.Point(240, 294);
+            this.B9.Name = "B9";
+            this.B9.Size = new System.Drawing.Size(15, 14);
+            this.B9.TabIndex = 315;
+            this.B9.UseVisualStyleBackColor = true;
+            // 
+            // A9
+            // 
+            this.A9.AutoSize = true;
+            this.A9.Location = new System.Drawing.Point(219, 294);
+            this.A9.Name = "A9";
+            this.A9.Size = new System.Drawing.Size(15, 14);
+            this.A9.TabIndex = 314;
+            this.A9.UseVisualStyleBackColor = true;
+            // 
+            // O8
+            // 
+            this.O8.AutoSize = true;
+            this.O8.Location = new System.Drawing.Point(261, 268);
+            this.O8.Name = "O8";
+            this.O8.Size = new System.Drawing.Size(15, 14);
+            this.O8.TabIndex = 313;
+            this.O8.UseVisualStyleBackColor = true;
+            // 
+            // B8
+            // 
+            this.B8.AutoSize = true;
+            this.B8.Location = new System.Drawing.Point(240, 268);
+            this.B8.Name = "B8";
+            this.B8.Size = new System.Drawing.Size(15, 14);
+            this.B8.TabIndex = 312;
+            this.B8.UseVisualStyleBackColor = true;
+            // 
+            // A8
+            // 
+            this.A8.AutoSize = true;
+            this.A8.Location = new System.Drawing.Point(219, 268);
+            this.A8.Name = "A8";
+            this.A8.Size = new System.Drawing.Size(15, 14);
+            this.A8.TabIndex = 311;
+            this.A8.UseVisualStyleBackColor = true;
+            // 
+            // O7
+            // 
+            this.O7.AutoSize = true;
+            this.O7.Location = new System.Drawing.Point(261, 242);
+            this.O7.Name = "O7";
+            this.O7.Size = new System.Drawing.Size(15, 14);
+            this.O7.TabIndex = 310;
+            this.O7.UseVisualStyleBackColor = true;
+            // 
+            // B7
+            // 
+            this.B7.AutoSize = true;
+            this.B7.Location = new System.Drawing.Point(240, 242);
+            this.B7.Name = "B7";
+            this.B7.Size = new System.Drawing.Size(15, 14);
+            this.B7.TabIndex = 309;
+            this.B7.UseVisualStyleBackColor = true;
+            // 
+            // A7
+            // 
+            this.A7.AutoSize = true;
+            this.A7.Location = new System.Drawing.Point(219, 242);
+            this.A7.Name = "A7";
+            this.A7.Size = new System.Drawing.Size(15, 14);
+            this.A7.TabIndex = 308;
+            this.A7.UseVisualStyleBackColor = true;
+            // 
+            // O6
+            // 
+            this.O6.AutoSize = true;
+            this.O6.Location = new System.Drawing.Point(261, 216);
+            this.O6.Name = "O6";
+            this.O6.Size = new System.Drawing.Size(15, 14);
+            this.O6.TabIndex = 307;
+            this.O6.UseVisualStyleBackColor = true;
+            // 
+            // B6
+            // 
+            this.B6.AutoSize = true;
+            this.B6.Location = new System.Drawing.Point(240, 216);
+            this.B6.Name = "B6";
+            this.B6.Size = new System.Drawing.Size(15, 14);
+            this.B6.TabIndex = 306;
+            this.B6.UseVisualStyleBackColor = true;
+            // 
+            // A6
+            // 
+            this.A6.AutoSize = true;
+            this.A6.Location = new System.Drawing.Point(219, 216);
+            this.A6.Name = "A6";
+            this.A6.Size = new System.Drawing.Size(15, 14);
+            this.A6.TabIndex = 305;
+            this.A6.UseVisualStyleBackColor = true;
+            // 
+            // O5
+            // 
+            this.O5.AutoSize = true;
+            this.O5.Location = new System.Drawing.Point(261, 190);
+            this.O5.Name = "O5";
+            this.O5.Size = new System.Drawing.Size(15, 14);
+            this.O5.TabIndex = 304;
+            this.O5.UseVisualStyleBackColor = true;
+            // 
+            // B5
+            // 
+            this.B5.AutoSize = true;
+            this.B5.Location = new System.Drawing.Point(240, 190);
+            this.B5.Name = "B5";
+            this.B5.Size = new System.Drawing.Size(15, 14);
+            this.B5.TabIndex = 303;
+            this.B5.UseVisualStyleBackColor = true;
+            // 
+            // A5
+            // 
+            this.A5.AutoSize = true;
+            this.A5.Location = new System.Drawing.Point(219, 190);
+            this.A5.Name = "A5";
+            this.A5.Size = new System.Drawing.Size(15, 14);
+            this.A5.TabIndex = 302;
+            this.A5.UseVisualStyleBackColor = true;
+            // 
+            // O4
+            // 
+            this.O4.AutoSize = true;
+            this.O4.Location = new System.Drawing.Point(261, 164);
+            this.O4.Name = "O4";
+            this.O4.Size = new System.Drawing.Size(15, 14);
+            this.O4.TabIndex = 301;
+            this.O4.UseVisualStyleBackColor = true;
+            // 
+            // B4
+            // 
+            this.B4.AutoSize = true;
+            this.B4.Location = new System.Drawing.Point(240, 164);
+            this.B4.Name = "B4";
+            this.B4.Size = new System.Drawing.Size(15, 14);
+            this.B4.TabIndex = 300;
+            this.B4.UseVisualStyleBackColor = true;
+            // 
+            // A4
+            // 
+            this.A4.AutoSize = true;
+            this.A4.Location = new System.Drawing.Point(219, 164);
+            this.A4.Name = "A4";
+            this.A4.Size = new System.Drawing.Size(15, 14);
+            this.A4.TabIndex = 299;
+            this.A4.UseVisualStyleBackColor = true;
+            // 
+            // O3
+            // 
+            this.O3.AutoSize = true;
+            this.O3.Location = new System.Drawing.Point(261, 138);
+            this.O3.Name = "O3";
+            this.O3.Size = new System.Drawing.Size(15, 14);
+            this.O3.TabIndex = 298;
+            this.O3.UseVisualStyleBackColor = true;
+            // 
+            // B3
+            // 
+            this.B3.AutoSize = true;
+            this.B3.Location = new System.Drawing.Point(240, 138);
+            this.B3.Name = "B3";
+            this.B3.Size = new System.Drawing.Size(15, 14);
+            this.B3.TabIndex = 297;
+            this.B3.UseVisualStyleBackColor = true;
+            // 
+            // A3
+            // 
+            this.A3.AutoSize = true;
+            this.A3.Location = new System.Drawing.Point(219, 138);
+            this.A3.Name = "A3";
+            this.A3.Size = new System.Drawing.Size(15, 14);
+            this.A3.TabIndex = 296;
+            this.A3.UseVisualStyleBackColor = true;
+            // 
+            // O2
+            // 
+            this.O2.AutoSize = true;
+            this.O2.Location = new System.Drawing.Point(261, 112);
+            this.O2.Name = "O2";
+            this.O2.Size = new System.Drawing.Size(15, 14);
+            this.O2.TabIndex = 295;
+            this.O2.UseVisualStyleBackColor = true;
+            // 
+            // B2
+            // 
+            this.B2.AutoSize = true;
+            this.B2.Location = new System.Drawing.Point(240, 112);
+            this.B2.Name = "B2";
+            this.B2.Size = new System.Drawing.Size(15, 14);
+            this.B2.TabIndex = 294;
+            this.B2.UseVisualStyleBackColor = true;
+            // 
+            // A2
+            // 
+            this.A2.AutoSize = true;
+            this.A2.Location = new System.Drawing.Point(219, 112);
+            this.A2.Name = "A2";
+            this.A2.Size = new System.Drawing.Size(15, 14);
+            this.A2.TabIndex = 293;
+            this.A2.UseVisualStyleBackColor = true;
+            // 
+            // O1
+            // 
+            this.O1.AutoSize = true;
+            this.O1.Location = new System.Drawing.Point(261, 86);
+            this.O1.Name = "O1";
+            this.O1.Size = new System.Drawing.Size(15, 14);
+            this.O1.TabIndex = 292;
+            this.O1.UseVisualStyleBackColor = true;
+            // 
+            // B1
+            // 
+            this.B1.AutoSize = true;
+            this.B1.Location = new System.Drawing.Point(240, 86);
+            this.B1.Name = "B1";
+            this.B1.Size = new System.Drawing.Size(15, 14);
+            this.B1.TabIndex = 291;
+            this.B1.UseVisualStyleBackColor = true;
+            // 
+            // A1
+            // 
+            this.A1.AutoSize = true;
+            this.A1.Location = new System.Drawing.Point(219, 86);
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(15, 14);
+            this.A1.TabIndex = 290;
+            this.A1.UseVisualStyleBackColor = true;
             // 
             // SR11
             // 
@@ -623,7 +623,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 13);
             this.label4.TabIndex = 246;
-            this.label4.Text = "Ability Rank (1-5)";
+            this.label4.Text = "Ability Rank (1-3)";
             // 
             // label3
             // 
@@ -703,42 +703,42 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.checkBox37);
-            this.Controls.Add(this.checkBox38);
-            this.Controls.Add(this.checkBox39);
-            this.Controls.Add(this.checkBox40);
-            this.Controls.Add(this.checkBox41);
-            this.Controls.Add(this.checkBox42);
-            this.Controls.Add(this.checkBox43);
-            this.Controls.Add(this.checkBox44);
-            this.Controls.Add(this.checkBox45);
-            this.Controls.Add(this.checkBox46);
-            this.Controls.Add(this.checkBox47);
-            this.Controls.Add(this.checkBox48);
-            this.Controls.Add(this.checkBox13);
-            this.Controls.Add(this.checkBox14);
-            this.Controls.Add(this.checkBox15);
-            this.Controls.Add(this.checkBox16);
-            this.Controls.Add(this.checkBox17);
-            this.Controls.Add(this.checkBox18);
-            this.Controls.Add(this.checkBox19);
-            this.Controls.Add(this.checkBox20);
-            this.Controls.Add(this.checkBox21);
-            this.Controls.Add(this.checkBox22);
-            this.Controls.Add(this.checkBox23);
-            this.Controls.Add(this.checkBox24);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox9);
-            this.Controls.Add(this.checkBox10);
-            this.Controls.Add(this.checkBox11);
-            this.Controls.Add(this.checkBox12);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.O12);
+            this.Controls.Add(this.B12);
+            this.Controls.Add(this.A12);
+            this.Controls.Add(this.O11);
+            this.Controls.Add(this.B11);
+            this.Controls.Add(this.A11);
+            this.Controls.Add(this.O10);
+            this.Controls.Add(this.B10);
+            this.Controls.Add(this.A10);
+            this.Controls.Add(this.O9);
+            this.Controls.Add(this.B9);
+            this.Controls.Add(this.A9);
+            this.Controls.Add(this.O8);
+            this.Controls.Add(this.B8);
+            this.Controls.Add(this.A8);
+            this.Controls.Add(this.O7);
+            this.Controls.Add(this.B7);
+            this.Controls.Add(this.A7);
+            this.Controls.Add(this.O6);
+            this.Controls.Add(this.B6);
+            this.Controls.Add(this.A6);
+            this.Controls.Add(this.O5);
+            this.Controls.Add(this.B5);
+            this.Controls.Add(this.A5);
+            this.Controls.Add(this.O4);
+            this.Controls.Add(this.B4);
+            this.Controls.Add(this.A4);
+            this.Controls.Add(this.O3);
+            this.Controls.Add(this.B3);
+            this.Controls.Add(this.A3);
+            this.Controls.Add(this.O2);
+            this.Controls.Add(this.B2);
+            this.Controls.Add(this.A2);
+            this.Controls.Add(this.O1);
+            this.Controls.Add(this.B1);
+            this.Controls.Add(this.A1);
             this.Controls.Add(this.SR11);
             this.Controls.Add(this.SN11);
             this.Controls.Add(this.SR10);
@@ -780,42 +780,42 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox37;
-        private System.Windows.Forms.CheckBox checkBox38;
-        private System.Windows.Forms.CheckBox checkBox39;
-        private System.Windows.Forms.CheckBox checkBox40;
-        private System.Windows.Forms.CheckBox checkBox41;
-        private System.Windows.Forms.CheckBox checkBox42;
-        private System.Windows.Forms.CheckBox checkBox43;
-        private System.Windows.Forms.CheckBox checkBox44;
-        private System.Windows.Forms.CheckBox checkBox45;
-        private System.Windows.Forms.CheckBox checkBox46;
-        private System.Windows.Forms.CheckBox checkBox47;
-        private System.Windows.Forms.CheckBox checkBox48;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.CheckBox checkBox22;
-        private System.Windows.Forms.CheckBox checkBox23;
-        private System.Windows.Forms.CheckBox checkBox24;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox O12;
+        private System.Windows.Forms.CheckBox B12;
+        private System.Windows.Forms.CheckBox A12;
+        private System.Windows.Forms.CheckBox O11;
+        private System.Windows.Forms.CheckBox B11;
+        private System.Windows.Forms.CheckBox A11;
+        private System.Windows.Forms.CheckBox O10;
+        private System.Windows.Forms.CheckBox B10;
+        private System.Windows.Forms.CheckBox A10;
+        private System.Windows.Forms.CheckBox O9;
+        private System.Windows.Forms.CheckBox B9;
+        private System.Windows.Forms.CheckBox A9;
+        private System.Windows.Forms.CheckBox O8;
+        private System.Windows.Forms.CheckBox B8;
+        private System.Windows.Forms.CheckBox A8;
+        private System.Windows.Forms.CheckBox O7;
+        private System.Windows.Forms.CheckBox B7;
+        private System.Windows.Forms.CheckBox A7;
+        private System.Windows.Forms.CheckBox O6;
+        private System.Windows.Forms.CheckBox B6;
+        private System.Windows.Forms.CheckBox A6;
+        private System.Windows.Forms.CheckBox O5;
+        private System.Windows.Forms.CheckBox B5;
+        private System.Windows.Forms.CheckBox A5;
+        private System.Windows.Forms.CheckBox O4;
+        private System.Windows.Forms.CheckBox B4;
+        private System.Windows.Forms.CheckBox A4;
+        private System.Windows.Forms.CheckBox O3;
+        private System.Windows.Forms.CheckBox B3;
+        private System.Windows.Forms.CheckBox A3;
+        private System.Windows.Forms.CheckBox O2;
+        private System.Windows.Forms.CheckBox B2;
+        private System.Windows.Forms.CheckBox A2;
+        private System.Windows.Forms.CheckBox O1;
+        private System.Windows.Forms.CheckBox B1;
+        private System.Windows.Forms.CheckBox A1;
         private System.Windows.Forms.TextBox SR11;
         private System.Windows.Forms.TextBox SN11;
         private System.Windows.Forms.TextBox SR10;

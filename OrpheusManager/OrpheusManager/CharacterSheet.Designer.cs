@@ -43,6 +43,7 @@
             this.characterNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.archetypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.attributesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maxStrainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maxHumanityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.motivationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -313,7 +314,6 @@
             this.checkBox23 = new System.Windows.Forms.CheckBox();
             this.checkBox24 = new System.Windows.Forms.CheckBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.backgroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -349,28 +349,28 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newCharacter_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -437,6 +437,13 @@
             this.attributesToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.attributesToolStripMenuItem.Text = "Attributes";
             this.attributesToolStripMenuItem.Click += new System.EventHandler(this.attributesToolStripMenuItem_Click);
+            // 
+            // backgroundToolStripMenuItem
+            // 
+            this.backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
+            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.backgroundToolStripMenuItem.Text = "Background";
+            this.backgroundToolStripMenuItem.Click += new System.EventHandler(this.backgroundToolStripMenuItem_Click);
             // 
             // maxStrainToolStripMenuItem
             // 
@@ -3578,12 +3585,6 @@
             this.label42.Size = new System.Drawing.Size(114, 24);
             this.label42.TabIndex = 295;
             this.label42.Text = "Motivations";
-            // 
-            // backgroundToolStripMenuItem
-            // 
-            this.backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
-            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.backgroundToolStripMenuItem.Text = "Background";
             // 
             // CharacterSheet
             // 

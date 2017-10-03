@@ -96,7 +96,8 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "maxHumanity";
-            this.Text = "Edit Max Humanity";
+            this.Text = "Orpheus Manager";
+            this.Load += new System.EventHandler(this.maxHumanity_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

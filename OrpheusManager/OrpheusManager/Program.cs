@@ -258,6 +258,12 @@ namespace OrpheusManager
             if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "") return true;
             else return false;
         }
+
+        public static bool abilityCheck(string input)
+        {
+            if (input == "1" || input == "2" || input == "3" || input == "") return true;
+            else return false;
+        }
     }
 
     public static class SDATA

@@ -50,6 +50,8 @@ namespace OrpheusManager
             remaining = max - (t1 + t2 + t3 + t4 + t5 + t6);
 
             remainingAtt.Text = "Remaining Attribute Points: " + remaining + " / " + max;
+
+            nCharPer.SelectionStart = 1;
         }
 
         private void nCharSubmit_Click(object sender, EventArgs e)
