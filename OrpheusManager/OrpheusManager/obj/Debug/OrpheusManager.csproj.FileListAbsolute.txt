@@ -67,3 +67,7 @@ C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusMa
 C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
 C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.mBackground.resources
 C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.mMotivations.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.About.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.manageStrain.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.mBackground.resources
+C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.mMotivations.resources

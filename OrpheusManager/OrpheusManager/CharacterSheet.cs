@@ -1128,6 +1128,12 @@ namespace OrpheusManager
             writeDATA();
         }
 
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form abt = new About();
+            abt.Show();
+        }
+
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CDATA.cNotes = cNotes.Text;
