@@ -397,6 +397,7 @@
             this.levelUpToolStripMenuItem.Name = "levelUpToolStripMenuItem";
             this.levelUpToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.levelUpToolStripMenuItem.Text = "Level Up";
+            this.levelUpToolStripMenuItem.Click += new System.EventHandler(this.levelUpToolStripMenuItem_Click);
             // 
             // manageSkillsToolStripMenuItem
             // 

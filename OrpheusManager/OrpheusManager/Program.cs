@@ -130,9 +130,9 @@ namespace OrpheusManager
             DDATA.dRangedAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[0]) / 2);
             DDATA.dSpeed = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
 
-            DDATA.dMeleeAttTemp = CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[3];
-            DDATA.dRangedAttTemp = CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[0];
-            DDATA.dSpeedTemp = CDATA.cAttributesTemp[2] + CDATA.cAttributesTemp[3];
+            DDATA.dMeleeAttTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[3]) + CDATA.cAttributesTemp[3]) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
+            DDATA.dRangedAttTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[0] + CDATA.cAttributesTemp[0])) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[0]) / 2); ;
+            DDATA.dSpeedTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[3] + CDATA.cAttributesTemp[3])) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
 
             if (CDATA.cAttributes[1] >= 5) DDATA.dClarity = 2;
             else if (CDATA.cAttributes[1] >= 3) DDATA.dClarity = 1;
@@ -248,6 +248,12 @@ namespace OrpheusManager
         public static int lMotivationsCurrent = 0;
         public static int lMotivationsMax = 0;
 
+        public static int lAcclimationsCurrent = 0;
+        public static int lAcclimationsMax = 0;
+
+        public static int lStrainCurrent = 0;
+        public static int lStrainMax = 0;
+
         public static void calculate()
         {
             lAttributesCurrent = lAttributesMax = 0;
@@ -258,10 +264,12 @@ namespace OrpheusManager
             lAbilitySynthesisCurrent = lAbilitySynthesisMax = 0;
             lAbilityOverloadCurrent = lAbilityOverloadMax = 0;
             lMotivationsCurrent = lMotivationsMax = 0;
+            lAcclimationsCurrent = lAcclimationsMax = 0;
+            lStrainCurrent = lStrainMax = 0;
 
             for (int i = 0; i < 6; i++) { lAttributesCurrent += CDATA.cAttributes[i]; }
-            for (int i = 0; i < 20; i++) { lCspCurrent += EDATA.numToRealInt(CDATA.cCkillRank[i]); }
-            for (int i = 0; i < 20; i++) { lNcspCurrent += EDATA.numToRealInt(CDATA.cSkillRank[i]); }
+            for (int i = 0; i < 20; i++) { lCspCurrent += EDATA.numToWeightedInt(CDATA.cCkillRank[i]); }
+            for (int i = 0; i < 20; i++) { lNcspCurrent += EDATA.numToWeightedInt(CDATA.cSkillRank[i]); }
             for (int i = 0; i < 12; i++) { lAbilityRankCurrent += EDATA.numToRealInt(CDATA.cAbilityRank[i]); }
             for (int i = 0; i < 12; i++) { lAbilityMasteryCurrent += CDATA.cAbilityMasteryA[i] + CDATA.cAbilityMasteryB[i]; }
             for (int i = 0; i < 12; i++) { if (CDATA.cAbilityMasteryA[i] == 1 && CDATA.cAbilityMasteryB[i] == 1) lAbilitySynthesisCurrent += 1; }
@@ -275,226 +283,272 @@ namespace OrpheusManager
             if (CDATA.cMot6 != "" || CDATA.cMot6 != " ") lMotivationsCurrent += 1;
             if (CDATA.cMot7 != "" || CDATA.cMot7 != " ") lMotivationsCurrent += 1;
 
+            lStrainCurrent = CDATA.cMaxMentStrain + CDATA.cMaxPhysStrain + CDATA.cMaxSpirStrain;
+
             switch (CDATA.cLevel)
             {
                 case 0:
                     lAttributesMax = 15;
-                    lCspMax = 0 + CDATA.cInitialCsp;
-                    lNcspMax = 0 + CDATA.cInitialNcsp;
+                    lCspMax = 0;
+                    lNcspMax = 0;
                     lAbilityRankMax = 3;
                     lAbilityMasteryMax = 0;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 0;
                     lMotivationsMax = 3;
+                    lAcclimationsMax = 0;
+                    lStrainMax = 0;
                     break;
                 case 1:
                     lAttributesMax = 15;
-                    lCspMax = 1 + CDATA.cInitialCsp;
-                    lNcspMax = 1 + CDATA.cInitialNcsp;
+                    lCspMax = 1;
+                    lNcspMax = 1;
                     lAbilityRankMax = 4;
                     lAbilityMasteryMax = 0;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 0;
                     lMotivationsMax = 3;
+                    lAcclimationsMax = 0;
+                    lStrainMax = 0;
                     break;
                 case 2:
                     lAttributesMax = 15;
-                    lCspMax = 2 + CDATA.cInitialCsp;
-                    lNcspMax = 2 + CDATA.cInitialNcsp;
+                    lCspMax = 2;
+                    lNcspMax = 2;
                     lAbilityRankMax = 5;
                     lAbilityMasteryMax = 0;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 0;
                     lMotivationsMax = 3;
+                    lAcclimationsMax = 0;
+                    lStrainMax = 2;
                     break;
                 case 3:
                     lAttributesMax = 15;
-                    lCspMax = 3 + CDATA.cInitialCsp;
-                    lNcspMax = 3 + CDATA.cInitialNcsp;
+                    lCspMax = 3;
+                    lNcspMax = 3;
                     lAbilityRankMax = 6;
                     lAbilityMasteryMax = 1;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 0;
                     lMotivationsMax = 3;
+                    lAcclimationsMax = 0;
+                    lStrainMax = 2;
                     break;
                 case 4:
                     lAttributesMax = 16;
-                    lCspMax = 5 + CDATA.cInitialCsp;
-                    lNcspMax = 4 + CDATA.cInitialNcsp;
+                    lCspMax = 5;
+                    lNcspMax = 4;
                     lAbilityRankMax = 6;
                     lAbilityMasteryMax = 1;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 0;
                     lMotivationsMax = 3;
+                    lAcclimationsMax = 0;
+                    lStrainMax = 2;
                     break;
                 case 5:
                     lAttributesMax = 16;
-                    lCspMax = 6 + CDATA.cInitialCsp;
-                    lNcspMax = 5 + CDATA.cInitialNcsp;
+                    lCspMax = 6;
+                    lNcspMax = 5;
                     lAbilityRankMax = 7;
                     lAbilityMasteryMax = 1;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 1;
                     lMotivationsMax = 4;
+                    lAcclimationsMax = 1;
+                    lStrainMax = 2;
                     break;
                 case 6:
                     lAttributesMax = 16;
-                    lCspMax = 7 + CDATA.cInitialCsp;
-                    lNcspMax = 6 + CDATA.cInitialNcsp;
+                    lCspMax = 7;
+                    lNcspMax = 6;
                     lAbilityRankMax = 8;
                     lAbilityMasteryMax = 1;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 1;
                     lMotivationsMax = 4;
+                    lAcclimationsMax = 1;
+                    lStrainMax = 4;
                     break;
                 case 7:
                     lAttributesMax = 16;
-                    lCspMax = 8 + CDATA.cInitialCsp;
-                    lNcspMax = 7 + CDATA.cInitialNcsp;
+                    lCspMax = 8;
+                    lNcspMax = 7;
                     lAbilityRankMax = 9;
                     lAbilityMasteryMax = 2;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 1;
                     lMotivationsMax = 4;
+                    lAcclimationsMax = 1;
+                    lStrainMax = 4;
                     break;
                 case 8:
                     lAttributesMax = 17;
-                    lCspMax = 10 + CDATA.cInitialCsp;
-                    lNcspMax = 8 + CDATA.cInitialNcsp;
+                    lCspMax = 10;
+                    lNcspMax = 8;
                     lAbilityRankMax = 9;
                     lAbilityMasteryMax = 2;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 1;
                     lMotivationsMax = 4;
+                    lAcclimationsMax = 1;
+                    lStrainMax = 4;
                     break;
                 case 9:
                     lAttributesMax = 17;
-                    lCspMax = 11 + CDATA.cInitialCsp;
-                    lNcspMax = 9 + CDATA.cInitialNcsp;
+                    lCspMax = 11;
+                    lNcspMax = 9;
                     lAbilityRankMax = 10;
                     lAbilityMasteryMax = 2;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 1;
                     lMotivationsMax = 4;
+                    lAcclimationsMax = 1;
+                    lStrainMax = 4;
                     break;
                 case 10:
                     lAttributesMax = 17;
-                    lCspMax = 12 + CDATA.cInitialCsp;
-                    lNcspMax = 10 + CDATA.cInitialNcsp;
+                    lCspMax = 12;
+                    lNcspMax = 10;
                     lAbilityRankMax = 11;
                     lAbilityMasteryMax = 2;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
+                    lAcclimationsMax = 2;
+                    lStrainMax = 6;
                     break;
                 case 11:
                     lAttributesMax = 17;
-                    lCspMax = 13 + CDATA.cInitialCsp;
-                    lNcspMax = 11 + CDATA.cInitialNcsp;
+                    lCspMax = 13;
+                    lNcspMax = 11;
                     lAbilityRankMax = 12;
                     lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
+                    lAcclimationsMax = 2;
+                    lStrainMax = 6;
                     break;
                 case 12:
                     lAttributesMax = 18;
-                    lCspMax = 15 + CDATA.cInitialCsp;
-                    lNcspMax = 12 + CDATA.cInitialNcsp;
+                    lCspMax = 15;
+                    lNcspMax = 12;
                     lAbilityRankMax = 12;
                     lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
+                    lAcclimationsMax = 2;
+                    lStrainMax = 6;
                     break;
                 case 13:
                     lAttributesMax = 18;
-                    lCspMax = 16 + CDATA.cInitialCsp;
-                    lNcspMax = 13 + CDATA.cInitialNcsp;
+                    lCspMax = 16;
+                    lNcspMax = 13;
                     lAbilityRankMax = 13;
                     lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
+                    lAcclimationsMax = 2;
+                    lStrainMax = 6;
                     break;
                 case 14:
                     lAttributesMax = 18;
-                    lCspMax = 17 + CDATA.cInitialCsp;
-                    lNcspMax = 14 + CDATA.cInitialNcsp;
+                    lCspMax = 17;
+                    lNcspMax = 14;
                     lAbilityRankMax = 14;
                     lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
+                    lAcclimationsMax = 2;
+                    lStrainMax = 8;
                     break;
                 case 15:
                     lAttributesMax = 18;
-                    lCspMax = 18 + CDATA.cInitialCsp;
-                    lNcspMax = 15 + CDATA.cInitialNcsp;
+                    lCspMax = 18;
+                    lNcspMax = 15;
                     lAbilityRankMax = 15;
                     lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
                     lMotivationsMax = 6;
+                    lAcclimationsMax = 3;
+                    lStrainMax = 8;
                     break;
                 case 16:
                     lAttributesMax = 19;
-                    lCspMax = 20 + CDATA.cInitialCsp;
-                    lNcspMax = 16 + CDATA.cInitialNcsp;
+                    lCspMax = 20;
+                    lNcspMax = 16;
                     lAbilityRankMax = 15;
                     lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
                     lMotivationsMax = 6;
+                    lAcclimationsMax = 3;
+                    lStrainMax = 8;
                     break;
                 case 17:
                     lAttributesMax = 19;
-                    lCspMax = 21 + CDATA.cInitialCsp;
-                    lNcspMax = 17 + CDATA.cInitialNcsp;
+                    lCspMax = 21;
+                    lNcspMax = 17;
                     lAbilityRankMax = 16;
                     lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
                     lMotivationsMax = 6;
+                    lAcclimationsMax = 3;
+                    lStrainMax = 8;
                     break;
                 case 18:
                     lAttributesMax = 19;
-                    lCspMax = 22 + CDATA.cInitialCsp;
+                    lCspMax = 22;
                     lNcspMax = 18 + CDATA.cInitialNcsp;
                     lAbilityRankMax = 17;
                     lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
+                    lAcclimationsMax = 3;
+                    lStrainMax = 10;
                     break;
                 case 19:
                     lAttributesMax = 19;
-                    lCspMax = 23 + CDATA.cInitialCsp;
+                    lCspMax = 23;
                     lNcspMax = 19 + CDATA.cInitialNcsp;
                     lAbilityRankMax = 18;
                     lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
                     lMotivationsMax = 6;
+                    lAcclimationsMax = 3;
+                    lStrainMax = 10;
                     break;
                 case 20:
                     lAttributesMax = 20;
-                    lCspMax = 25 + CDATA.cInitialCsp;
+                    lCspMax = 25;
                     lNcspMax = 20 + CDATA.cInitialNcsp;
                     lAbilityRankMax = 18;
                     lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 2;
                     lAbilityOverloadMax = 4;
                     lMotivationsMax = 7;
+                    lAcclimationsMax = 4;
+                    lStrainMax = 10;
                     break;
                 default:
                     lAttributesMax = 15;
-                    lCspMax = 0 + CDATA.cInitialCsp;
+                    lCspMax = 0;
                     lNcspMax = 0 + CDATA.cInitialNcsp;
                     lAbilityRankMax = 3;
                     lAbilityMasteryMax = 0;
                     lAbilitySynthesisMax = 0;
                     lAbilityOverloadMax = 0;
                     lMotivationsMax = 3;
+                    lAcclimationsMax = 0;
+                    lStrainMax = 0;
                     break;
             }
             return;
@@ -527,6 +581,16 @@ namespace OrpheusManager
             else if (num == "III") return 3;
             else if (num == "IV") return 4;
             else if (num == "V") return 5;
+            return 0;
+        }
+
+        public static int numToWeightedInt(string num)
+        {
+            if (num == "I") return 1;
+            else if (num == "II") return 3;
+            else if (num == "III") return 6;
+            else if (num == "IV") return 10;
+            else if (num == "V") return 15;
             return 0;
         }
 

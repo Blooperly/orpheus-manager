@@ -1050,6 +1050,24 @@ namespace OrpheusManager
 
             // Clear Notes
             cNotes.Text = "";
+
+            // Assign Skills/Abilities
+            Form mskill = new ManageSkills();
+            Form mabilities = new ManageAbilities();
+
+            mskill.ShowDialog();
+            writeDATA();
+            writeDATA2();
+
+            mabilities.ShowDialog();
+            writeDATA();
+            writeDATA2();
+
+            CDATA.cInitialCsp = 0;
+            CDATA.cInitialNcsp = 0;
+
+            for (int i = 0; i < 20; i++) { CDATA.cInitialCsp += EDATA.numToWeightedInt(CDATA.cCkillRank[i]); }
+            for (int i = 0; i < 20; i++) { CDATA.cInitialNcsp += EDATA.numToWeightedInt(CDATA.cSkillRank[i]); }
         }
 
         private void clearSkillsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1133,6 +1151,12 @@ namespace OrpheusManager
         {
             Form abt = new About();
             abt.Show();
+        }
+
+        private void levelUpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mlv = new mLevel();
+            mlv.Show();
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
