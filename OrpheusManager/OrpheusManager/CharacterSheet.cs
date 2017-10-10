@@ -943,6 +943,7 @@ namespace OrpheusManager
             mCharisma.Text = "";
             mWillpower.Text = "";
             for (int i = 0; i < 6; i++) { CDATA.cAttributesTemp[i] = 0; }
+            DDATA.deriveDATA();
             CDATA.cMentalStrain = DDATA.dMentalStrainMax;
             CDATA.cPhysicalStrain = DDATA.dPhysicalStrainMax;
             CDATA.cSpiritualStrain = DDATA.dSpiritualStrainMax;
@@ -1392,6 +1393,8 @@ namespace OrpheusManager
                     Int32.TryParse(SDATA.parseField("Over Focus:\r\n"), out CDATA.cOverFocus);
                     Int32.TryParse(SDATA.parseField("Over Health:\r\n"), out CDATA.cOverHealth);
                     Int32.TryParse(SDATA.parseField("Over Sanity:\r\n"), out CDATA.cOverSanity);
+                    Int32.TryParse(SDATA.parseField("Initial CSP:\r\n"), out CDATA.cInitialCsp);
+                    Int32.TryParse(SDATA.parseField("Initial NCSP:\r\n"), out CDATA.cInitialNcsp);
                     Int32.TryParse(SDATA.parseField("Mental Strain Modifier:\r\n"), out CDATA.cMaxMentStrain);
                     Int32.TryParse(SDATA.parseField("Physical Strain Modifier:\r\n"), out CDATA.cMaxPhysStrain);
                     Int32.TryParse(SDATA.parseField("Spiritual Strain Modifier:\r\n"), out CDATA.cMaxSpirStrain);
