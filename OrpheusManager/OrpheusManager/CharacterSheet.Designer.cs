@@ -106,13 +106,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.mPerception = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.mWillpower = new System.Windows.Forms.TextBox();
-            this.mCharisma = new System.Windows.Forms.TextBox();
-            this.mVitality = new System.Windows.Forms.TextBox();
-            this.mDexterity = new System.Windows.Forms.TextBox();
-            this.mCognition = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.dInitiative = new System.Windows.Forms.Label();
             this.SW5 = new System.Windows.Forms.CheckBox();
@@ -564,7 +557,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(21, 350);
+            this.label6.Location = new System.Drawing.Point(39, 349);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 8;
@@ -576,7 +569,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(21, 370);
+            this.label1.Location = new System.Drawing.Point(39, 369);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 9;
@@ -588,7 +581,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(21, 390);
+            this.label2.Location = new System.Drawing.Point(39, 389);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 10;
@@ -600,7 +593,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(21, 410);
+            this.label3.Location = new System.Drawing.Point(39, 409);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 11;
@@ -612,7 +605,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(21, 430);
+            this.label4.Location = new System.Drawing.Point(39, 429);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 20);
             this.label4.TabIndex = 12;
@@ -624,7 +617,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(21, 450);
+            this.label5.Location = new System.Drawing.Point(39, 449);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 20);
             this.label5.TabIndex = 13;
@@ -636,7 +629,7 @@
             this.cPerception.AutoSize = true;
             this.cPerception.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cPerception.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cPerception.Location = new System.Drawing.Point(116, 350);
+            this.cPerception.Location = new System.Drawing.Point(134, 349);
             this.cPerception.Name = "cPerception";
             this.cPerception.Size = new System.Drawing.Size(18, 20);
             this.cPerception.TabIndex = 14;
@@ -648,7 +641,7 @@
             this.cCognition.AutoSize = true;
             this.cCognition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCognition.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cCognition.Location = new System.Drawing.Point(116, 370);
+            this.cCognition.Location = new System.Drawing.Point(134, 369);
             this.cCognition.Name = "cCognition";
             this.cCognition.Size = new System.Drawing.Size(18, 20);
             this.cCognition.TabIndex = 15;
@@ -660,7 +653,7 @@
             this.cDexterity.AutoSize = true;
             this.cDexterity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cDexterity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cDexterity.Location = new System.Drawing.Point(116, 390);
+            this.cDexterity.Location = new System.Drawing.Point(134, 389);
             this.cDexterity.Name = "cDexterity";
             this.cDexterity.Size = new System.Drawing.Size(18, 20);
             this.cDexterity.TabIndex = 16;
@@ -672,7 +665,7 @@
             this.cVitality.AutoSize = true;
             this.cVitality.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cVitality.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cVitality.Location = new System.Drawing.Point(116, 410);
+            this.cVitality.Location = new System.Drawing.Point(134, 409);
             this.cVitality.Name = "cVitality";
             this.cVitality.Size = new System.Drawing.Size(18, 20);
             this.cVitality.TabIndex = 17;
@@ -684,7 +677,7 @@
             this.cCharisma.AutoSize = true;
             this.cCharisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCharisma.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cCharisma.Location = new System.Drawing.Point(116, 430);
+            this.cCharisma.Location = new System.Drawing.Point(134, 429);
             this.cCharisma.Name = "cCharisma";
             this.cCharisma.Size = new System.Drawing.Size(18, 20);
             this.cCharisma.TabIndex = 18;
@@ -696,7 +689,7 @@
             this.cWillpower.AutoSize = true;
             this.cWillpower.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cWillpower.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cWillpower.Location = new System.Drawing.Point(116, 450);
+            this.cWillpower.Location = new System.Drawing.Point(134, 449);
             this.cWillpower.Name = "cWillpower";
             this.cWillpower.Size = new System.Drawing.Size(18, 20);
             this.cWillpower.TabIndex = 19;
@@ -708,7 +701,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(35, 311);
+            this.label7.Location = new System.Drawing.Point(53, 310);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 20;
@@ -717,7 +710,7 @@
             // divider1
             // 
             this.divider1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.divider1.Location = new System.Drawing.Point(16, 328);
+            this.divider1.Location = new System.Drawing.Point(34, 327);
             this.divider1.Name = "divider1";
             this.divider1.Size = new System.Drawing.Size(120, 20);
             this.divider1.TabIndex = 21;
@@ -957,7 +950,7 @@
             // divider2
             // 
             this.divider2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.divider2.Location = new System.Drawing.Point(206, 328);
+            this.divider2.Location = new System.Drawing.Point(175, 328);
             this.divider2.Name = "divider2";
             this.divider2.Size = new System.Drawing.Size(120, 20);
             this.divider2.TabIndex = 57;
@@ -969,7 +962,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(213, 311);
+            this.label9.Location = new System.Drawing.Point(182, 311);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 20);
             this.label9.TabIndex = 56;
@@ -981,7 +974,7 @@
             this.dForceOfWill.AutoSize = true;
             this.dForceOfWill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dForceOfWill.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dForceOfWill.Location = new System.Drawing.Point(306, 450);
+            this.dForceOfWill.Location = new System.Drawing.Point(275, 450);
             this.dForceOfWill.Name = "dForceOfWill";
             this.dForceOfWill.Size = new System.Drawing.Size(18, 20);
             this.dForceOfWill.TabIndex = 55;
@@ -993,7 +986,7 @@
             this.dToughness.AutoSize = true;
             this.dToughness.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dToughness.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dToughness.Location = new System.Drawing.Point(306, 430);
+            this.dToughness.Location = new System.Drawing.Point(275, 430);
             this.dToughness.Name = "dToughness";
             this.dToughness.Size = new System.Drawing.Size(18, 20);
             this.dToughness.TabIndex = 54;
@@ -1005,7 +998,7 @@
             this.dClarity.AutoSize = true;
             this.dClarity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dClarity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dClarity.Location = new System.Drawing.Point(306, 410);
+            this.dClarity.Location = new System.Drawing.Point(275, 410);
             this.dClarity.Name = "dClarity";
             this.dClarity.Size = new System.Drawing.Size(18, 20);
             this.dClarity.TabIndex = 53;
@@ -1017,7 +1010,7 @@
             this.dSpeed.AutoSize = true;
             this.dSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dSpeed.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dSpeed.Location = new System.Drawing.Point(306, 390);
+            this.dSpeed.Location = new System.Drawing.Point(275, 390);
             this.dSpeed.Name = "dSpeed";
             this.dSpeed.Size = new System.Drawing.Size(18, 20);
             this.dSpeed.TabIndex = 52;
@@ -1029,7 +1022,7 @@
             this.dRangedAtt.AutoSize = true;
             this.dRangedAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dRangedAtt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dRangedAtt.Location = new System.Drawing.Point(306, 370);
+            this.dRangedAtt.Location = new System.Drawing.Point(275, 370);
             this.dRangedAtt.Name = "dRangedAtt";
             this.dRangedAtt.Size = new System.Drawing.Size(18, 20);
             this.dRangedAtt.TabIndex = 51;
@@ -1041,7 +1034,7 @@
             this.dMeleeAtt.AutoSize = true;
             this.dMeleeAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dMeleeAtt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dMeleeAtt.Location = new System.Drawing.Point(306, 350);
+            this.dMeleeAtt.Location = new System.Drawing.Point(275, 350);
             this.dMeleeAtt.Name = "dMeleeAtt";
             this.dMeleeAtt.Size = new System.Drawing.Size(18, 20);
             this.dMeleeAtt.TabIndex = 50;
@@ -1053,7 +1046,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(211, 450);
+            this.label16.Location = new System.Drawing.Point(180, 450);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(104, 20);
             this.label16.TabIndex = 49;
@@ -1065,7 +1058,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(211, 430);
+            this.label17.Location = new System.Drawing.Point(180, 430);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(92, 20);
             this.label17.TabIndex = 48;
@@ -1077,7 +1070,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(211, 410);
+            this.label18.Location = new System.Drawing.Point(180, 410);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(56, 20);
             this.label18.TabIndex = 47;
@@ -1089,7 +1082,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(211, 390);
+            this.label19.Location = new System.Drawing.Point(180, 390);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(60, 20);
             this.label19.TabIndex = 46;
@@ -1101,7 +1094,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(211, 370);
+            this.label20.Location = new System.Drawing.Point(180, 370);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(95, 20);
             this.label20.TabIndex = 45;
@@ -1113,77 +1106,11 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label21.Location = new System.Drawing.Point(211, 350);
+            this.label21.Location = new System.Drawing.Point(180, 350);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(81, 20);
             this.label21.TabIndex = 44;
             this.label21.Text = "Melee Att:";
-            // 
-            // mPerception
-            // 
-            this.mPerception.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mPerception.Location = new System.Drawing.Point(151, 352);
-            this.mPerception.Name = "mPerception";
-            this.mPerception.Size = new System.Drawing.Size(28, 20);
-            this.mPerception.TabIndex = 1;
-            this.mPerception.TextChanged += new System.EventHandler(this.mPerception_TextChanged);
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(144, 333);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 13);
-            this.label10.TabIndex = 59;
-            this.label10.Text = "Modifier";
-            // 
-            // mWillpower
-            // 
-            this.mWillpower.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mWillpower.Location = new System.Drawing.Point(151, 450);
-            this.mWillpower.Name = "mWillpower";
-            this.mWillpower.Size = new System.Drawing.Size(28, 20);
-            this.mWillpower.TabIndex = 6;
-            this.mWillpower.TextChanged += new System.EventHandler(this.mWillpower_TextChanged);
-            // 
-            // mCharisma
-            // 
-            this.mCharisma.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mCharisma.Location = new System.Drawing.Point(151, 430);
-            this.mCharisma.Name = "mCharisma";
-            this.mCharisma.Size = new System.Drawing.Size(28, 20);
-            this.mCharisma.TabIndex = 5;
-            this.mCharisma.TextChanged += new System.EventHandler(this.mCharisma_TextChanged);
-            // 
-            // mVitality
-            // 
-            this.mVitality.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mVitality.Location = new System.Drawing.Point(151, 412);
-            this.mVitality.Name = "mVitality";
-            this.mVitality.Size = new System.Drawing.Size(28, 20);
-            this.mVitality.TabIndex = 4;
-            this.mVitality.TextChanged += new System.EventHandler(this.mVitality_TextChanged);
-            // 
-            // mDexterity
-            // 
-            this.mDexterity.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mDexterity.Location = new System.Drawing.Point(151, 392);
-            this.mDexterity.Name = "mDexterity";
-            this.mDexterity.Size = new System.Drawing.Size(28, 20);
-            this.mDexterity.TabIndex = 3;
-            this.mDexterity.TextChanged += new System.EventHandler(this.mDexterity_TextChanged);
-            // 
-            // mCognition
-            // 
-            this.mCognition.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mCognition.Location = new System.Drawing.Point(151, 372);
-            this.mCognition.Name = "mCognition";
-            this.mCognition.Size = new System.Drawing.Size(28, 20);
-            this.mCognition.TabIndex = 2;
-            this.mCognition.TextChanged += new System.EventHandler(this.mCognition_TextChanged);
             // 
             // label11
             // 
@@ -1191,7 +1118,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(211, 470);
+            this.label11.Location = new System.Drawing.Point(180, 470);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 20);
             this.label11.TabIndex = 65;
@@ -1203,7 +1130,7 @@
             this.dInitiative.AutoSize = true;
             this.dInitiative.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dInitiative.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dInitiative.Location = new System.Drawing.Point(306, 470);
+            this.dInitiative.Location = new System.Drawing.Point(275, 470);
             this.dInitiative.Name = "dInitiative";
             this.dInitiative.Size = new System.Drawing.Size(18, 20);
             this.dInitiative.TabIndex = 66;
@@ -1814,7 +1741,7 @@
             this.s1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s1.Location = new System.Drawing.Point(508, 276);
+            this.s1.Location = new System.Drawing.Point(486, 276);
             this.s1.Name = "s1";
             this.s1.Size = new System.Drawing.Size(26, 13);
             this.s1.TabIndex = 132;
@@ -1827,7 +1754,7 @@
             this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label36.Location = new System.Drawing.Point(452, 246);
+            this.label36.Location = new System.Drawing.Point(443, 246);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(58, 24);
             this.label36.TabIndex = 133;
@@ -1840,7 +1767,7 @@
             this.s10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s10.Location = new System.Drawing.Point(508, 394);
+            this.s10.Location = new System.Drawing.Point(486, 394);
             this.s10.Name = "s10";
             this.s10.Size = new System.Drawing.Size(26, 13);
             this.s10.TabIndex = 134;
@@ -1853,7 +1780,7 @@
             this.s3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s3.Location = new System.Drawing.Point(508, 302);
+            this.s3.Location = new System.Drawing.Point(486, 302);
             this.s3.Name = "s3";
             this.s3.Size = new System.Drawing.Size(26, 13);
             this.s3.TabIndex = 135;
@@ -1866,7 +1793,7 @@
             this.s5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s5.Location = new System.Drawing.Point(508, 328);
+            this.s5.Location = new System.Drawing.Point(486, 328);
             this.s5.Name = "s5";
             this.s5.Size = new System.Drawing.Size(26, 13);
             this.s5.TabIndex = 136;
@@ -1879,7 +1806,7 @@
             this.s4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s4.Location = new System.Drawing.Point(508, 315);
+            this.s4.Location = new System.Drawing.Point(486, 315);
             this.s4.Name = "s4";
             this.s4.Size = new System.Drawing.Size(26, 13);
             this.s4.TabIndex = 137;
@@ -1892,7 +1819,7 @@
             this.s2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s2.Location = new System.Drawing.Point(508, 289);
+            this.s2.Location = new System.Drawing.Point(486, 289);
             this.s2.Name = "s2";
             this.s2.Size = new System.Drawing.Size(26, 13);
             this.s2.TabIndex = 138;
@@ -1905,7 +1832,7 @@
             this.s8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s8.Location = new System.Drawing.Point(508, 368);
+            this.s8.Location = new System.Drawing.Point(486, 368);
             this.s8.Name = "s8";
             this.s8.Size = new System.Drawing.Size(26, 13);
             this.s8.TabIndex = 139;
@@ -1918,7 +1845,7 @@
             this.s7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s7.Location = new System.Drawing.Point(508, 355);
+            this.s7.Location = new System.Drawing.Point(486, 355);
             this.s7.Name = "s7";
             this.s7.Size = new System.Drawing.Size(26, 13);
             this.s7.TabIndex = 140;
@@ -1931,7 +1858,7 @@
             this.s9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s9.Location = new System.Drawing.Point(508, 381);
+            this.s9.Location = new System.Drawing.Point(486, 381);
             this.s9.Name = "s9";
             this.s9.Size = new System.Drawing.Size(26, 13);
             this.s9.TabIndex = 141;
@@ -1944,7 +1871,7 @@
             this.s6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s6.Location = new System.Drawing.Point(508, 342);
+            this.s6.Location = new System.Drawing.Point(486, 342);
             this.s6.Name = "s6";
             this.s6.Size = new System.Drawing.Size(26, 13);
             this.s6.TabIndex = 142;
@@ -1956,7 +1883,7 @@
             this.sr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr1.Location = new System.Drawing.Point(484, 276);
+            this.sr1.Location = new System.Drawing.Point(462, 276);
             this.sr1.Name = "sr1";
             this.sr1.Size = new System.Drawing.Size(27, 13);
             this.sr1.TabIndex = 143;
@@ -1969,7 +1896,7 @@
             this.sr2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr2.Location = new System.Drawing.Point(484, 289);
+            this.sr2.Location = new System.Drawing.Point(462, 289);
             this.sr2.Name = "sr2";
             this.sr2.Size = new System.Drawing.Size(27, 13);
             this.sr2.TabIndex = 144;
@@ -1982,7 +1909,7 @@
             this.sr4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr4.Location = new System.Drawing.Point(484, 315);
+            this.sr4.Location = new System.Drawing.Point(462, 315);
             this.sr4.Name = "sr4";
             this.sr4.Size = new System.Drawing.Size(27, 13);
             this.sr4.TabIndex = 145;
@@ -1995,7 +1922,7 @@
             this.sr3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr3.Location = new System.Drawing.Point(484, 302);
+            this.sr3.Location = new System.Drawing.Point(462, 302);
             this.sr3.Name = "sr3";
             this.sr3.Size = new System.Drawing.Size(27, 13);
             this.sr3.TabIndex = 146;
@@ -2008,7 +1935,7 @@
             this.sr7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr7.Location = new System.Drawing.Point(484, 354);
+            this.sr7.Location = new System.Drawing.Point(462, 354);
             this.sr7.Name = "sr7";
             this.sr7.Size = new System.Drawing.Size(27, 13);
             this.sr7.TabIndex = 150;
@@ -2021,7 +1948,7 @@
             this.sr8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr8.Location = new System.Drawing.Point(484, 367);
+            this.sr8.Location = new System.Drawing.Point(462, 367);
             this.sr8.Name = "sr8";
             this.sr8.Size = new System.Drawing.Size(27, 13);
             this.sr8.TabIndex = 149;
@@ -2034,7 +1961,7 @@
             this.sr6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr6.Location = new System.Drawing.Point(484, 341);
+            this.sr6.Location = new System.Drawing.Point(462, 341);
             this.sr6.Name = "sr6";
             this.sr6.Size = new System.Drawing.Size(27, 13);
             this.sr6.TabIndex = 148;
@@ -2047,7 +1974,7 @@
             this.sr5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr5.Location = new System.Drawing.Point(484, 328);
+            this.sr5.Location = new System.Drawing.Point(462, 328);
             this.sr5.Name = "sr5";
             this.sr5.Size = new System.Drawing.Size(27, 13);
             this.sr5.TabIndex = 147;
@@ -2060,7 +1987,7 @@
             this.sr11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr11.Location = new System.Drawing.Point(484, 406);
+            this.sr11.Location = new System.Drawing.Point(462, 406);
             this.sr11.Name = "sr11";
             this.sr11.Size = new System.Drawing.Size(27, 13);
             this.sr11.TabIndex = 154;
@@ -2073,7 +2000,7 @@
             this.sr12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr12.Location = new System.Drawing.Point(484, 419);
+            this.sr12.Location = new System.Drawing.Point(462, 419);
             this.sr12.Name = "sr12";
             this.sr12.Size = new System.Drawing.Size(27, 13);
             this.sr12.TabIndex = 153;
@@ -2086,7 +2013,7 @@
             this.sr10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr10.Location = new System.Drawing.Point(484, 393);
+            this.sr10.Location = new System.Drawing.Point(462, 393);
             this.sr10.Name = "sr10";
             this.sr10.Size = new System.Drawing.Size(27, 13);
             this.sr10.TabIndex = 152;
@@ -2099,7 +2026,7 @@
             this.sr9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr9.Location = new System.Drawing.Point(484, 380);
+            this.sr9.Location = new System.Drawing.Point(462, 380);
             this.sr9.Name = "sr9";
             this.sr9.Size = new System.Drawing.Size(27, 13);
             this.sr9.TabIndex = 151;
@@ -2112,7 +2039,7 @@
             this.sr15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr15.Location = new System.Drawing.Point(484, 458);
+            this.sr15.Location = new System.Drawing.Point(462, 458);
             this.sr15.Name = "sr15";
             this.sr15.Size = new System.Drawing.Size(27, 13);
             this.sr15.TabIndex = 158;
@@ -2125,7 +2052,7 @@
             this.sr16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr16.Location = new System.Drawing.Point(484, 471);
+            this.sr16.Location = new System.Drawing.Point(462, 471);
             this.sr16.Name = "sr16";
             this.sr16.Size = new System.Drawing.Size(27, 13);
             this.sr16.TabIndex = 157;
@@ -2138,7 +2065,7 @@
             this.sr14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr14.Location = new System.Drawing.Point(484, 445);
+            this.sr14.Location = new System.Drawing.Point(462, 445);
             this.sr14.Name = "sr14";
             this.sr14.Size = new System.Drawing.Size(27, 13);
             this.sr14.TabIndex = 156;
@@ -2151,7 +2078,7 @@
             this.sr13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr13.Location = new System.Drawing.Point(484, 432);
+            this.sr13.Location = new System.Drawing.Point(462, 432);
             this.sr13.Name = "sr13";
             this.sr13.Size = new System.Drawing.Size(27, 13);
             this.sr13.TabIndex = 155;
@@ -2164,7 +2091,7 @@
             this.sr19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr19.Location = new System.Drawing.Point(484, 510);
+            this.sr19.Location = new System.Drawing.Point(462, 510);
             this.sr19.Name = "sr19";
             this.sr19.Size = new System.Drawing.Size(27, 13);
             this.sr19.TabIndex = 162;
@@ -2177,7 +2104,7 @@
             this.sr20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr20.Location = new System.Drawing.Point(484, 523);
+            this.sr20.Location = new System.Drawing.Point(462, 523);
             this.sr20.Name = "sr20";
             this.sr20.Size = new System.Drawing.Size(27, 13);
             this.sr20.TabIndex = 161;
@@ -2190,7 +2117,7 @@
             this.sr18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr18.Location = new System.Drawing.Point(484, 497);
+            this.sr18.Location = new System.Drawing.Point(462, 497);
             this.sr18.Name = "sr18";
             this.sr18.Size = new System.Drawing.Size(27, 13);
             this.sr18.TabIndex = 160;
@@ -2203,7 +2130,7 @@
             this.sr17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.sr17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sr17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sr17.Location = new System.Drawing.Point(484, 484);
+            this.sr17.Location = new System.Drawing.Point(462, 484);
             this.sr17.Name = "sr17";
             this.sr17.Size = new System.Drawing.Size(27, 13);
             this.sr17.TabIndex = 159;
@@ -2217,7 +2144,7 @@
             this.s16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s16.Location = new System.Drawing.Point(508, 473);
+            this.s16.Location = new System.Drawing.Point(486, 473);
             this.s16.Name = "s16";
             this.s16.Size = new System.Drawing.Size(26, 13);
             this.s16.TabIndex = 176;
@@ -2230,7 +2157,7 @@
             this.s19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s19.Location = new System.Drawing.Point(508, 512);
+            this.s19.Location = new System.Drawing.Point(486, 512);
             this.s19.Name = "s19";
             this.s19.Size = new System.Drawing.Size(26, 13);
             this.s19.TabIndex = 175;
@@ -2243,7 +2170,7 @@
             this.s17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s17.Location = new System.Drawing.Point(508, 486);
+            this.s17.Location = new System.Drawing.Point(486, 486);
             this.s17.Name = "s17";
             this.s17.Size = new System.Drawing.Size(26, 13);
             this.s17.TabIndex = 174;
@@ -2256,7 +2183,7 @@
             this.s18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s18.Location = new System.Drawing.Point(508, 499);
+            this.s18.Location = new System.Drawing.Point(486, 499);
             this.s18.Name = "s18";
             this.s18.Size = new System.Drawing.Size(26, 13);
             this.s18.TabIndex = 173;
@@ -2269,7 +2196,7 @@
             this.s12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s12.Location = new System.Drawing.Point(508, 420);
+            this.s12.Location = new System.Drawing.Point(486, 420);
             this.s12.Name = "s12";
             this.s12.Size = new System.Drawing.Size(26, 13);
             this.s12.TabIndex = 172;
@@ -2282,7 +2209,7 @@
             this.s14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s14.Location = new System.Drawing.Point(508, 446);
+            this.s14.Location = new System.Drawing.Point(486, 446);
             this.s14.Name = "s14";
             this.s14.Size = new System.Drawing.Size(26, 13);
             this.s14.TabIndex = 171;
@@ -2295,7 +2222,7 @@
             this.s15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s15.Location = new System.Drawing.Point(508, 459);
+            this.s15.Location = new System.Drawing.Point(486, 459);
             this.s15.Name = "s15";
             this.s15.Size = new System.Drawing.Size(26, 13);
             this.s15.TabIndex = 170;
@@ -2308,7 +2235,7 @@
             this.s13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s13.Location = new System.Drawing.Point(508, 433);
+            this.s13.Location = new System.Drawing.Point(486, 433);
             this.s13.Name = "s13";
             this.s13.Size = new System.Drawing.Size(26, 13);
             this.s13.TabIndex = 169;
@@ -2321,7 +2248,7 @@
             this.s20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s20.Location = new System.Drawing.Point(508, 525);
+            this.s20.Location = new System.Drawing.Point(486, 525);
             this.s20.Name = "s20";
             this.s20.Size = new System.Drawing.Size(26, 13);
             this.s20.TabIndex = 168;
@@ -2334,7 +2261,7 @@
             this.s11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.s11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.s11.Location = new System.Drawing.Point(508, 407);
+            this.s11.Location = new System.Drawing.Point(486, 407);
             this.s11.Name = "s11";
             this.s11.Size = new System.Drawing.Size(26, 13);
             this.s11.TabIndex = 167;
@@ -2347,7 +2274,7 @@
             this.c16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c16.Location = new System.Drawing.Point(397, 473);
+            this.c16.Location = new System.Drawing.Point(360, 473);
             this.c16.Name = "c16";
             this.c16.Size = new System.Drawing.Size(26, 13);
             this.c16.TabIndex = 231;
@@ -2360,7 +2287,7 @@
             this.c19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c19.Location = new System.Drawing.Point(397, 512);
+            this.c19.Location = new System.Drawing.Point(360, 512);
             this.c19.Name = "c19";
             this.c19.Size = new System.Drawing.Size(26, 13);
             this.c19.TabIndex = 230;
@@ -2373,7 +2300,7 @@
             this.c17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c17.Location = new System.Drawing.Point(397, 486);
+            this.c17.Location = new System.Drawing.Point(360, 486);
             this.c17.Name = "c17";
             this.c17.Size = new System.Drawing.Size(26, 13);
             this.c17.TabIndex = 229;
@@ -2386,7 +2313,7 @@
             this.c18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c18.Location = new System.Drawing.Point(397, 499);
+            this.c18.Location = new System.Drawing.Point(360, 499);
             this.c18.Name = "c18";
             this.c18.Size = new System.Drawing.Size(26, 13);
             this.c18.TabIndex = 228;
@@ -2399,7 +2326,7 @@
             this.c12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c12.Location = new System.Drawing.Point(397, 420);
+            this.c12.Location = new System.Drawing.Point(360, 420);
             this.c12.Name = "c12";
             this.c12.Size = new System.Drawing.Size(26, 13);
             this.c12.TabIndex = 227;
@@ -2412,7 +2339,7 @@
             this.c14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c14.Location = new System.Drawing.Point(397, 446);
+            this.c14.Location = new System.Drawing.Point(360, 446);
             this.c14.Name = "c14";
             this.c14.Size = new System.Drawing.Size(26, 13);
             this.c14.TabIndex = 226;
@@ -2425,7 +2352,7 @@
             this.c15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c15.Location = new System.Drawing.Point(397, 459);
+            this.c15.Location = new System.Drawing.Point(360, 459);
             this.c15.Name = "c15";
             this.c15.Size = new System.Drawing.Size(26, 13);
             this.c15.TabIndex = 225;
@@ -2438,7 +2365,7 @@
             this.c13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c13.Location = new System.Drawing.Point(397, 433);
+            this.c13.Location = new System.Drawing.Point(360, 433);
             this.c13.Name = "c13";
             this.c13.Size = new System.Drawing.Size(26, 13);
             this.c13.TabIndex = 224;
@@ -2451,7 +2378,7 @@
             this.c20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c20.Location = new System.Drawing.Point(397, 525);
+            this.c20.Location = new System.Drawing.Point(360, 525);
             this.c20.Name = "c20";
             this.c20.Size = new System.Drawing.Size(26, 13);
             this.c20.TabIndex = 223;
@@ -2464,7 +2391,7 @@
             this.c11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c11.Location = new System.Drawing.Point(397, 407);
+            this.c11.Location = new System.Drawing.Point(360, 407);
             this.c11.Name = "c11";
             this.c11.Size = new System.Drawing.Size(26, 13);
             this.c11.TabIndex = 222;
@@ -2476,7 +2403,7 @@
             this.cr19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr19.Location = new System.Drawing.Point(373, 510);
+            this.cr19.Location = new System.Drawing.Point(336, 510);
             this.cr19.Name = "cr19";
             this.cr19.Size = new System.Drawing.Size(27, 13);
             this.cr19.TabIndex = 217;
@@ -2489,7 +2416,7 @@
             this.cr20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr20.Location = new System.Drawing.Point(373, 523);
+            this.cr20.Location = new System.Drawing.Point(336, 523);
             this.cr20.Name = "cr20";
             this.cr20.Size = new System.Drawing.Size(27, 13);
             this.cr20.TabIndex = 216;
@@ -2502,7 +2429,7 @@
             this.cr18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr18.Location = new System.Drawing.Point(373, 497);
+            this.cr18.Location = new System.Drawing.Point(336, 497);
             this.cr18.Name = "cr18";
             this.cr18.Size = new System.Drawing.Size(27, 13);
             this.cr18.TabIndex = 215;
@@ -2515,7 +2442,7 @@
             this.cr17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr17.Location = new System.Drawing.Point(373, 484);
+            this.cr17.Location = new System.Drawing.Point(336, 484);
             this.cr17.Name = "cr17";
             this.cr17.Size = new System.Drawing.Size(27, 13);
             this.cr17.TabIndex = 214;
@@ -2528,7 +2455,7 @@
             this.cr15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr15.Location = new System.Drawing.Point(373, 458);
+            this.cr15.Location = new System.Drawing.Point(336, 458);
             this.cr15.Name = "cr15";
             this.cr15.Size = new System.Drawing.Size(27, 13);
             this.cr15.TabIndex = 213;
@@ -2541,7 +2468,7 @@
             this.cr16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr16.Location = new System.Drawing.Point(373, 471);
+            this.cr16.Location = new System.Drawing.Point(336, 471);
             this.cr16.Name = "cr16";
             this.cr16.Size = new System.Drawing.Size(27, 13);
             this.cr16.TabIndex = 212;
@@ -2554,7 +2481,7 @@
             this.cr14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr14.Location = new System.Drawing.Point(373, 445);
+            this.cr14.Location = new System.Drawing.Point(336, 445);
             this.cr14.Name = "cr14";
             this.cr14.Size = new System.Drawing.Size(27, 13);
             this.cr14.TabIndex = 211;
@@ -2567,7 +2494,7 @@
             this.cr13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr13.Location = new System.Drawing.Point(373, 432);
+            this.cr13.Location = new System.Drawing.Point(336, 432);
             this.cr13.Name = "cr13";
             this.cr13.Size = new System.Drawing.Size(27, 13);
             this.cr13.TabIndex = 210;
@@ -2580,7 +2507,7 @@
             this.cr11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr11.Location = new System.Drawing.Point(373, 406);
+            this.cr11.Location = new System.Drawing.Point(336, 406);
             this.cr11.Name = "cr11";
             this.cr11.Size = new System.Drawing.Size(27, 13);
             this.cr11.TabIndex = 209;
@@ -2593,7 +2520,7 @@
             this.cr12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr12.Location = new System.Drawing.Point(373, 419);
+            this.cr12.Location = new System.Drawing.Point(336, 419);
             this.cr12.Name = "cr12";
             this.cr12.Size = new System.Drawing.Size(27, 13);
             this.cr12.TabIndex = 208;
@@ -2606,7 +2533,7 @@
             this.cr10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr10.Location = new System.Drawing.Point(373, 393);
+            this.cr10.Location = new System.Drawing.Point(336, 393);
             this.cr10.Name = "cr10";
             this.cr10.Size = new System.Drawing.Size(27, 13);
             this.cr10.TabIndex = 207;
@@ -2619,7 +2546,7 @@
             this.cr9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr9.Location = new System.Drawing.Point(373, 380);
+            this.cr9.Location = new System.Drawing.Point(336, 380);
             this.cr9.Name = "cr9";
             this.cr9.Size = new System.Drawing.Size(27, 13);
             this.cr9.TabIndex = 206;
@@ -2632,7 +2559,7 @@
             this.cr7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr7.Location = new System.Drawing.Point(373, 354);
+            this.cr7.Location = new System.Drawing.Point(336, 354);
             this.cr7.Name = "cr7";
             this.cr7.Size = new System.Drawing.Size(27, 13);
             this.cr7.TabIndex = 205;
@@ -2645,7 +2572,7 @@
             this.cr8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr8.Location = new System.Drawing.Point(373, 367);
+            this.cr8.Location = new System.Drawing.Point(336, 367);
             this.cr8.Name = "cr8";
             this.cr8.Size = new System.Drawing.Size(27, 13);
             this.cr8.TabIndex = 204;
@@ -2658,7 +2585,7 @@
             this.cr6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr6.Location = new System.Drawing.Point(373, 341);
+            this.cr6.Location = new System.Drawing.Point(336, 341);
             this.cr6.Name = "cr6";
             this.cr6.Size = new System.Drawing.Size(27, 13);
             this.cr6.TabIndex = 203;
@@ -2671,7 +2598,7 @@
             this.cr5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr5.Location = new System.Drawing.Point(373, 328);
+            this.cr5.Location = new System.Drawing.Point(336, 328);
             this.cr5.Name = "cr5";
             this.cr5.Size = new System.Drawing.Size(27, 13);
             this.cr5.TabIndex = 202;
@@ -2684,7 +2611,7 @@
             this.cr3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr3.Location = new System.Drawing.Point(373, 302);
+            this.cr3.Location = new System.Drawing.Point(336, 302);
             this.cr3.Name = "cr3";
             this.cr3.Size = new System.Drawing.Size(27, 13);
             this.cr3.TabIndex = 201;
@@ -2697,7 +2624,7 @@
             this.cr4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr4.Location = new System.Drawing.Point(373, 315);
+            this.cr4.Location = new System.Drawing.Point(336, 315);
             this.cr4.Name = "cr4";
             this.cr4.Size = new System.Drawing.Size(27, 13);
             this.cr4.TabIndex = 200;
@@ -2710,7 +2637,7 @@
             this.cr2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr2.Location = new System.Drawing.Point(373, 289);
+            this.cr2.Location = new System.Drawing.Point(336, 289);
             this.cr2.Name = "cr2";
             this.cr2.Size = new System.Drawing.Size(27, 13);
             this.cr2.TabIndex = 199;
@@ -2723,7 +2650,7 @@
             this.cr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.cr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cr1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cr1.Location = new System.Drawing.Point(373, 276);
+            this.cr1.Location = new System.Drawing.Point(336, 276);
             this.cr1.Name = "cr1";
             this.cr1.Size = new System.Drawing.Size(27, 13);
             this.cr1.TabIndex = 198;
@@ -2737,7 +2664,7 @@
             this.c6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c6.Location = new System.Drawing.Point(397, 342);
+            this.c6.Location = new System.Drawing.Point(360, 342);
             this.c6.Name = "c6";
             this.c6.Size = new System.Drawing.Size(26, 13);
             this.c6.TabIndex = 197;
@@ -2750,7 +2677,7 @@
             this.c9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c9.Location = new System.Drawing.Point(397, 381);
+            this.c9.Location = new System.Drawing.Point(360, 381);
             this.c9.Name = "c9";
             this.c9.Size = new System.Drawing.Size(26, 13);
             this.c9.TabIndex = 196;
@@ -2763,7 +2690,7 @@
             this.c7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c7.Location = new System.Drawing.Point(397, 355);
+            this.c7.Location = new System.Drawing.Point(360, 355);
             this.c7.Name = "c7";
             this.c7.Size = new System.Drawing.Size(26, 13);
             this.c7.TabIndex = 195;
@@ -2776,7 +2703,7 @@
             this.c8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c8.Location = new System.Drawing.Point(397, 368);
+            this.c8.Location = new System.Drawing.Point(360, 368);
             this.c8.Name = "c8";
             this.c8.Size = new System.Drawing.Size(26, 13);
             this.c8.TabIndex = 194;
@@ -2789,7 +2716,7 @@
             this.c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c2.Location = new System.Drawing.Point(397, 289);
+            this.c2.Location = new System.Drawing.Point(360, 289);
             this.c2.Name = "c2";
             this.c2.Size = new System.Drawing.Size(26, 13);
             this.c2.TabIndex = 193;
@@ -2802,7 +2729,7 @@
             this.c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c4.Location = new System.Drawing.Point(397, 315);
+            this.c4.Location = new System.Drawing.Point(360, 315);
             this.c4.Name = "c4";
             this.c4.Size = new System.Drawing.Size(26, 13);
             this.c4.TabIndex = 192;
@@ -2815,7 +2742,7 @@
             this.c5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c5.Location = new System.Drawing.Point(397, 328);
+            this.c5.Location = new System.Drawing.Point(360, 328);
             this.c5.Name = "c5";
             this.c5.Size = new System.Drawing.Size(26, 13);
             this.c5.TabIndex = 191;
@@ -2828,7 +2755,7 @@
             this.c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c3.Location = new System.Drawing.Point(397, 302);
+            this.c3.Location = new System.Drawing.Point(360, 302);
             this.c3.Name = "c3";
             this.c3.Size = new System.Drawing.Size(26, 13);
             this.c3.TabIndex = 190;
@@ -2841,7 +2768,7 @@
             this.c10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c10.Location = new System.Drawing.Point(397, 394);
+            this.c10.Location = new System.Drawing.Point(360, 394);
             this.c10.Name = "c10";
             this.c10.Size = new System.Drawing.Size(26, 13);
             this.c10.TabIndex = 189;
@@ -2854,7 +2781,7 @@
             this.c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.c1.Location = new System.Drawing.Point(397, 276);
+            this.c1.Location = new System.Drawing.Point(360, 276);
             this.c1.Name = "c1";
             this.c1.Size = new System.Drawing.Size(26, 13);
             this.c1.TabIndex = 188;
@@ -2879,7 +2806,7 @@
             this.ar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar1.Location = new System.Drawing.Point(624, 275);
+            this.ar1.Location = new System.Drawing.Point(592, 276);
             this.ar1.Name = "ar1";
             this.ar1.Size = new System.Drawing.Size(48, 13);
             this.ar1.TabIndex = 237;
@@ -2893,7 +2820,7 @@
             this.a1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a1.Location = new System.Drawing.Point(669, 275);
+            this.a1.Location = new System.Drawing.Point(637, 276);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(26, 13);
             this.a1.TabIndex = 236;
@@ -2905,7 +2832,7 @@
             this.ar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar2.Location = new System.Drawing.Point(624, 288);
+            this.ar2.Location = new System.Drawing.Point(592, 289);
             this.ar2.Name = "ar2";
             this.ar2.Size = new System.Drawing.Size(48, 13);
             this.ar2.TabIndex = 239;
@@ -2919,7 +2846,7 @@
             this.a2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a2.Location = new System.Drawing.Point(669, 288);
+            this.a2.Location = new System.Drawing.Point(637, 289);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(26, 13);
             this.a2.TabIndex = 238;
@@ -2931,7 +2858,7 @@
             this.ar4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar4.Location = new System.Drawing.Point(624, 315);
+            this.ar4.Location = new System.Drawing.Point(592, 316);
             this.ar4.Name = "ar4";
             this.ar4.Size = new System.Drawing.Size(48, 13);
             this.ar4.TabIndex = 243;
@@ -2945,7 +2872,7 @@
             this.a4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a4.Location = new System.Drawing.Point(669, 315);
+            this.a4.Location = new System.Drawing.Point(637, 316);
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(26, 13);
             this.a4.TabIndex = 242;
@@ -2957,7 +2884,7 @@
             this.ar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar3.Location = new System.Drawing.Point(624, 301);
+            this.ar3.Location = new System.Drawing.Point(592, 302);
             this.ar3.Name = "ar3";
             this.ar3.Size = new System.Drawing.Size(48, 13);
             this.ar3.TabIndex = 241;
@@ -2971,7 +2898,7 @@
             this.a3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a3.Location = new System.Drawing.Point(669, 301);
+            this.a3.Location = new System.Drawing.Point(637, 302);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(26, 13);
             this.a3.TabIndex = 240;
@@ -2983,7 +2910,7 @@
             this.ar8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar8.Location = new System.Drawing.Point(624, 369);
+            this.ar8.Location = new System.Drawing.Point(592, 370);
             this.ar8.Name = "ar8";
             this.ar8.Size = new System.Drawing.Size(48, 13);
             this.ar8.TabIndex = 251;
@@ -2997,7 +2924,7 @@
             this.a8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a8.Location = new System.Drawing.Point(669, 369);
+            this.a8.Location = new System.Drawing.Point(637, 370);
             this.a8.Name = "a8";
             this.a8.Size = new System.Drawing.Size(26, 13);
             this.a8.TabIndex = 250;
@@ -3009,7 +2936,7 @@
             this.ar7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar7.Location = new System.Drawing.Point(624, 355);
+            this.ar7.Location = new System.Drawing.Point(592, 356);
             this.ar7.Name = "ar7";
             this.ar7.Size = new System.Drawing.Size(48, 13);
             this.ar7.TabIndex = 249;
@@ -3023,7 +2950,7 @@
             this.a7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a7.Location = new System.Drawing.Point(669, 355);
+            this.a7.Location = new System.Drawing.Point(637, 356);
             this.a7.Name = "a7";
             this.a7.Size = new System.Drawing.Size(26, 13);
             this.a7.TabIndex = 248;
@@ -3035,7 +2962,7 @@
             this.ar6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar6.Location = new System.Drawing.Point(624, 342);
+            this.ar6.Location = new System.Drawing.Point(592, 343);
             this.ar6.Name = "ar6";
             this.ar6.Size = new System.Drawing.Size(48, 13);
             this.ar6.TabIndex = 247;
@@ -3049,7 +2976,7 @@
             this.a6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a6.Location = new System.Drawing.Point(669, 342);
+            this.a6.Location = new System.Drawing.Point(637, 343);
             this.a6.Name = "a6";
             this.a6.Size = new System.Drawing.Size(26, 13);
             this.a6.TabIndex = 246;
@@ -3061,7 +2988,7 @@
             this.ar5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar5.Location = new System.Drawing.Point(624, 328);
+            this.ar5.Location = new System.Drawing.Point(592, 329);
             this.ar5.Name = "ar5";
             this.ar5.Size = new System.Drawing.Size(48, 13);
             this.ar5.TabIndex = 245;
@@ -3075,7 +3002,7 @@
             this.a5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a5.Location = new System.Drawing.Point(669, 328);
+            this.a5.Location = new System.Drawing.Point(637, 329);
             this.a5.Name = "a5";
             this.a5.Size = new System.Drawing.Size(26, 13);
             this.a5.TabIndex = 244;
@@ -3087,7 +3014,7 @@
             this.ar12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar12.Location = new System.Drawing.Point(624, 423);
+            this.ar12.Location = new System.Drawing.Point(592, 424);
             this.ar12.Name = "ar12";
             this.ar12.Size = new System.Drawing.Size(48, 13);
             this.ar12.TabIndex = 259;
@@ -3101,7 +3028,7 @@
             this.a12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a12.Location = new System.Drawing.Point(669, 423);
+            this.a12.Location = new System.Drawing.Point(637, 424);
             this.a12.Name = "a12";
             this.a12.Size = new System.Drawing.Size(26, 13);
             this.a12.TabIndex = 258;
@@ -3113,7 +3040,7 @@
             this.ar11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar11.Location = new System.Drawing.Point(624, 409);
+            this.ar11.Location = new System.Drawing.Point(592, 410);
             this.ar11.Name = "ar11";
             this.ar11.Size = new System.Drawing.Size(48, 13);
             this.ar11.TabIndex = 257;
@@ -3127,7 +3054,7 @@
             this.a11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a11.Location = new System.Drawing.Point(669, 409);
+            this.a11.Location = new System.Drawing.Point(637, 410);
             this.a11.Name = "a11";
             this.a11.Size = new System.Drawing.Size(26, 13);
             this.a11.TabIndex = 256;
@@ -3139,7 +3066,7 @@
             this.ar10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar10.Location = new System.Drawing.Point(624, 396);
+            this.ar10.Location = new System.Drawing.Point(592, 397);
             this.ar10.Name = "ar10";
             this.ar10.Size = new System.Drawing.Size(48, 13);
             this.ar10.TabIndex = 255;
@@ -3153,7 +3080,7 @@
             this.a10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a10.Location = new System.Drawing.Point(669, 396);
+            this.a10.Location = new System.Drawing.Point(637, 397);
             this.a10.Name = "a10";
             this.a10.Size = new System.Drawing.Size(26, 13);
             this.a10.TabIndex = 254;
@@ -3165,7 +3092,7 @@
             this.ar9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ar9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ar9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ar9.Location = new System.Drawing.Point(624, 382);
+            this.ar9.Location = new System.Drawing.Point(592, 383);
             this.ar9.Name = "ar9";
             this.ar9.Size = new System.Drawing.Size(48, 13);
             this.ar9.TabIndex = 253;
@@ -3179,7 +3106,7 @@
             this.a9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.a9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.a9.Location = new System.Drawing.Point(669, 382);
+            this.a9.Location = new System.Drawing.Point(637, 383);
             this.a9.Name = "a9";
             this.a9.Size = new System.Drawing.Size(26, 13);
             this.a9.TabIndex = 252;
@@ -3239,7 +3166,7 @@
             this.dTactics.AutoSize = true;
             this.dTactics.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dTactics.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dTactics.Location = new System.Drawing.Point(306, 490);
+            this.dTactics.Location = new System.Drawing.Point(275, 490);
             this.dTactics.Name = "dTactics";
             this.dTactics.Size = new System.Drawing.Size(18, 20);
             this.dTactics.TabIndex = 266;
@@ -3251,7 +3178,7 @@
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label38.Location = new System.Drawing.Point(211, 490);
+            this.label38.Location = new System.Drawing.Point(180, 490);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(63, 20);
             this.label38.TabIndex = 265;
@@ -3797,13 +3724,6 @@
             this.Controls.Add(this.FW10);
             this.Controls.Add(this.dInitiative);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.mCognition);
-            this.Controls.Add(this.mDexterity);
-            this.Controls.Add(this.mVitality);
-            this.Controls.Add(this.mCharisma);
-            this.Controls.Add(this.mWillpower);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.mPerception);
             this.Controls.Add(this.divider2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dForceOfWill);
@@ -3950,13 +3870,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox mPerception;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox mWillpower;
-        private System.Windows.Forms.TextBox mCharisma;
-        private System.Windows.Forms.TextBox mVitality;
-        private System.Windows.Forms.TextBox mDexterity;
-        private System.Windows.Forms.TextBox mCognition;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label dInitiative;
         private System.Windows.Forms.CheckBox SW5;

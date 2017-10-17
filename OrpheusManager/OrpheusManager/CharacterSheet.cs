@@ -622,19 +622,6 @@ namespace OrpheusManager
         private void writeDATA2()
         {
             // Load Editable Fields
-            if (CDATA.cAttributesTemp[0] == 0) mPerception.Text = "";
-            else mPerception.Text = CDATA.cAttributesTemp[0] + "";
-            if (CDATA.cAttributesTemp[1] == 0) mCognition.Text = "";
-            else mCognition.Text = CDATA.cAttributesTemp[1] + "";
-            if (CDATA.cAttributesTemp[2] == 0) mDexterity.Text = "";
-            else mDexterity.Text = CDATA.cAttributesTemp[2] + "";
-            if (CDATA.cAttributesTemp[3] == 0) mVitality.Text = "";
-            else mVitality.Text = CDATA.cAttributesTemp[3] + "";
-            if (CDATA.cAttributesTemp[4] == 0) mCharisma.Text = "";
-            else mCharisma.Text = CDATA.cAttributesTemp[4] + "";
-            if (CDATA.cAttributesTemp[5] == 0) mWillpower.Text = "";
-            else mWillpower.Text = CDATA.cAttributesTemp[5] + "";
-
             cNotes.Text = CDATA.cNotes;
 
             cMentalStrain.Text = CDATA.cMentalStrain + "";
@@ -652,19 +639,6 @@ namespace OrpheusManager
 
         private void storeDATA2()
         {
-            if (mPerception.Text == "" || mPerception.Text == " ") CDATA.cAttributesTemp[0] = 0;
-            else Int32.TryParse(mPerception.Text, out CDATA.cAttributesTemp[0]);
-            if (mCognition.Text == "" || mCognition.Text == " ") CDATA.cAttributesTemp[1] = 0;
-            else Int32.TryParse(mCognition.Text, out CDATA.cAttributesTemp[1]);
-            if (mDexterity.Text == "" || mDexterity.Text == " ") CDATA.cAttributesTemp[2] = 0;
-            else Int32.TryParse(mDexterity.Text, out CDATA.cAttributesTemp[2]);
-            if (mVitality.Text == "" || mVitality.Text == " ") CDATA.cAttributesTemp[3] = 0;
-            else Int32.TryParse(mVitality.Text, out CDATA.cAttributesTemp[3]);
-            if (mCharisma.Text == "" || mCharisma.Text == " ") CDATA.cAttributesTemp[4] = 0;
-            else Int32.TryParse(mCharisma.Text, out CDATA.cAttributesTemp[4]);
-            if (mWillpower.Text == "" || mWillpower.Text == " ") CDATA.cAttributesTemp[5] = 0;
-            else Int32.TryParse(mWillpower.Text, out CDATA.cAttributesTemp[5]);
-
             CDATA.cNotes = cNotes.Text;
 
             Int32.TryParse(cMentalStrain.Text, out CDATA.cMentalStrain);
@@ -722,10 +696,10 @@ namespace OrpheusManager
             // Misc Divider
             formGraphics.FillRectangle(myBrush, new Rectangle(590, 587, 175, 2));
             // Skills Box
-            formGraphics.FillRectangle(myBrush2, new Rectangle(360, 237, 415, 303));
-            formGraphics.FillRectangle(myBrush, new Rectangle(360, 237, 415, 1));
-            formGraphics.FillRectangle(myBrush, new Rectangle(360, 237, 1, 303));
-            formGraphics.FillRectangle(myBrush, new Rectangle(360, 539, 415, 1));
+            formGraphics.FillRectangle(myBrush2, new Rectangle(330, 237, 445, 303));
+            formGraphics.FillRectangle(myBrush, new Rectangle(330, 237, 445, 1));
+            formGraphics.FillRectangle(myBrush, new Rectangle(330, 237, 1, 303));
+            formGraphics.FillRectangle(myBrush, new Rectangle(330, 539, 445, 1));
             formGraphics.FillRectangle(myBrush, new Rectangle(774, 237, 1, 303));
             // Motivations Divider
             formGraphics.FillRectangle(myBrush, new Rectangle(413, 80, 290, 2));
@@ -798,97 +772,6 @@ namespace OrpheusManager
             else archetypePic.Image = imageWitch;
         }
 
-        // Modifier Boxes
-        private void mPerception_TextChanged(object sender, EventArgs e)
-        {
-            int temp;
-            if (Int32.TryParse(mPerception.Text, out temp))
-            {
-                CDATA.cAttributesTemp[0] = temp;
-                writeDATA();
-            }
-            else if(mPerception.Text == "")
-            {
-                CDATA.cAttributesTemp[0] = 0;
-                writeDATA();
-            }
-        }
-
-        private void mCognition_TextChanged(object sender, EventArgs e)
-        {
-            int temp;
-            if (Int32.TryParse(mCognition.Text, out temp))
-            {
-                CDATA.cAttributesTemp[1] = temp;
-                writeDATA();
-            }
-            else if (mCognition.Text == "")
-            {
-                CDATA.cAttributesTemp[1] = 0;
-                writeDATA();
-            }
-        }
-
-        private void mDexterity_TextChanged(object sender, EventArgs e)
-        {
-            int temp;
-            if (Int32.TryParse(mDexterity.Text, out temp))
-            {
-                CDATA.cAttributesTemp[2] = temp;
-                writeDATA();
-            }
-            else if (mDexterity.Text == "")
-            {
-                CDATA.cAttributesTemp[2] = 0;
-                writeDATA();
-            }
-        }
-
-        private void mVitality_TextChanged(object sender, EventArgs e)
-        {
-            int temp;
-            if (Int32.TryParse(mVitality.Text, out temp))
-            {
-                CDATA.cAttributesTemp[3] = temp;
-                writeDATA();
-            }
-            else if (mVitality.Text == "")
-            {
-                CDATA.cAttributesTemp[3] = 0;
-                writeDATA();
-            }
-        }
-
-        private void mCharisma_TextChanged(object sender, EventArgs e)
-        {
-            int temp;
-            if (Int32.TryParse(mCharisma.Text, out temp))
-            {
-                CDATA.cAttributesTemp[4] = temp;
-                writeDATA();
-            }
-            else if (mCharisma.Text == "")
-            {
-                CDATA.cAttributesTemp[4] = 0;
-                writeDATA();
-            }
-        }
-
-        private void mWillpower_TextChanged(object sender, EventArgs e)
-        {
-            int temp;
-            if (Int32.TryParse(mWillpower.Text, out temp))
-            {
-                CDATA.cAttributesTemp[5] = temp;
-                writeDATA();
-            }
-            else if (mWillpower.Text == "")
-            {
-                CDATA.cAttributesTemp[5] = 0;
-                writeDATA();
-            }
-        }
-
         // Menu Bar
         private void characterNameToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -936,12 +819,6 @@ namespace OrpheusManager
             nChar.ShowDialog();
 
             // Update Character
-            mPerception.Text = "";
-            mCognition.Text = "";
-            mDexterity.Text = "";
-            mVitality.Text = "";
-            mCharisma.Text = "";
-            mWillpower.Text = "";
             for (int i = 0; i < 6; i++) { CDATA.cAttributesTemp[i] = 0; }
             DDATA.deriveDATA();
             CDATA.cMentalStrain = DDATA.dMentalStrainMax;

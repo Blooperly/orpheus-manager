@@ -46,7 +46,7 @@ namespace OrpheusManager
         public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
         public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
 
-        public static string[] cCkillName = { "Rang. Att. (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
+        public static string[] cCkillName = { "Attack (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
         public static string[] cCkillRank = { "V", "V", "III", "III", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
 
         public static string[] cAbilityName = { "Inspiration", "Hungry Shadows", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
@@ -275,13 +275,15 @@ namespace OrpheusManager
             for (int i = 0; i < 12; i++) { if (CDATA.cAbilityMasteryA[i] == 1 && CDATA.cAbilityMasteryB[i] == 1) lAbilitySynthesisCurrent += 1; }
             for (int i = 0; i < 12; i++) { lAbilityOverloadCurrent += CDATA.cAbilityOverload[i]; }
 
-            if (CDATA.cMot1 != "" || CDATA.cMot1 != " ") lMotivationsCurrent += 1;
-            if (CDATA.cMot2 != "" || CDATA.cMot2 != " ") lMotivationsCurrent += 1;
-            if (CDATA.cMot3 != "" || CDATA.cMot3 != " ") lMotivationsCurrent += 1;
-            if (CDATA.cMot4 != "" || CDATA.cMot4 != " ") lMotivationsCurrent += 1;
-            if (CDATA.cMot5 != "" || CDATA.cMot5 != " ") lMotivationsCurrent += 1;
-            if (CDATA.cMot6 != "" || CDATA.cMot6 != " ") lMotivationsCurrent += 1;
-            if (CDATA.cMot7 != "" || CDATA.cMot7 != " ") lMotivationsCurrent += 1;
+            lMotivationsCurrent = 7;
+
+            if (CDATA.cMot1 == "" || CDATA.cMot1 == " ") lMotivationsCurrent -= 1;
+            if (CDATA.cMot2 == "" || CDATA.cMot2 == " ") lMotivationsCurrent -= 1;
+            if (CDATA.cMot3 == "" || CDATA.cMot3 == " ") lMotivationsCurrent -= 1;
+            if (CDATA.cMot4 == "" || CDATA.cMot4 == " ") lMotivationsCurrent -= 1;
+            if (CDATA.cMot5 == "" || CDATA.cMot5 == " ") lMotivationsCurrent -= 1;
+            if (CDATA.cMot6 == "" || CDATA.cMot6 == " ") lMotivationsCurrent -= 1;
+            if (CDATA.cMot7 == "" || CDATA.cMot7 == " ") lMotivationsCurrent -= 1;
 
             lStrainCurrent = CDATA.cMaxMentStrain + CDATA.cMaxPhysStrain + CDATA.cMaxSpirStrain;
 
@@ -412,7 +414,7 @@ namespace OrpheusManager
                     lCspMax = 12;
                     lNcspMax = 10;
                     lAbilityRankMax = 11;
-                    lAbilityMasteryMax = 2;
+                    lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
@@ -424,7 +426,7 @@ namespace OrpheusManager
                     lCspMax = 13;
                     lNcspMax = 11;
                     lAbilityRankMax = 12;
-                    lAbilityMasteryMax = 3;
+                    lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
@@ -436,7 +438,7 @@ namespace OrpheusManager
                     lCspMax = 15;
                     lNcspMax = 12;
                     lAbilityRankMax = 12;
-                    lAbilityMasteryMax = 3;
+                    lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
@@ -448,7 +450,7 @@ namespace OrpheusManager
                     lCspMax = 16;
                     lNcspMax = 13;
                     lAbilityRankMax = 13;
-                    lAbilityMasteryMax = 3;
+                    lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
@@ -460,7 +462,7 @@ namespace OrpheusManager
                     lCspMax = 17;
                     lNcspMax = 14;
                     lAbilityRankMax = 14;
-                    lAbilityMasteryMax = 3;
+                    lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 2;
                     lMotivationsMax = 5;
@@ -472,7 +474,7 @@ namespace OrpheusManager
                     lCspMax = 18;
                     lNcspMax = 15;
                     lAbilityRankMax = 15;
-                    lAbilityMasteryMax = 4;
+                    lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
                     lMotivationsMax = 6;
@@ -484,7 +486,7 @@ namespace OrpheusManager
                     lCspMax = 20;
                     lNcspMax = 16;
                     lAbilityRankMax = 15;
-                    lAbilityMasteryMax = 4;
+                    lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
                     lMotivationsMax = 6;
@@ -496,7 +498,7 @@ namespace OrpheusManager
                     lCspMax = 21;
                     lNcspMax = 17;
                     lAbilityRankMax = 16;
-                    lAbilityMasteryMax = 4;
+                    lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
                     lMotivationsMax = 6;
@@ -506,20 +508,21 @@ namespace OrpheusManager
                 case 18:
                     lAttributesMax = 19;
                     lCspMax = 22;
-                    lNcspMax = 18 + CDATA.cInitialNcsp;
+                    lNcspMax = 18;
                     lAbilityRankMax = 17;
-                    lAbilityMasteryMax = 4;
+                    lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
+                    lMotivationsMax = 6;
                     lAcclimationsMax = 3;
                     lStrainMax = 10;
                     break;
                 case 19:
                     lAttributesMax = 19;
                     lCspMax = 23;
-                    lNcspMax = 19 + CDATA.cInitialNcsp;
+                    lNcspMax = 19;
                     lAbilityRankMax = 18;
-                    lAbilityMasteryMax = 5;
+                    lAbilityMasteryMax = 6;
                     lAbilitySynthesisMax = 1;
                     lAbilityOverloadMax = 3;
                     lMotivationsMax = 6;
@@ -529,9 +532,9 @@ namespace OrpheusManager
                 case 20:
                     lAttributesMax = 20;
                     lCspMax = 25;
-                    lNcspMax = 20 + CDATA.cInitialNcsp;
+                    lNcspMax = 20;
                     lAbilityRankMax = 18;
-                    lAbilityMasteryMax = 5;
+                    lAbilityMasteryMax = 7;
                     lAbilitySynthesisMax = 2;
                     lAbilityOverloadMax = 4;
                     lMotivationsMax = 7;
@@ -541,7 +544,7 @@ namespace OrpheusManager
                 default:
                     lAttributesMax = 15;
                     lCspMax = 0;
-                    lNcspMax = 0 + CDATA.cInitialNcsp;
+                    lNcspMax = 0;
                     lAbilityRankMax = 3;
                     lAbilityMasteryMax = 0;
                     lAbilitySynthesisMax = 0;

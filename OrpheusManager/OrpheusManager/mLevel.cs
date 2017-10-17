@@ -20,16 +20,16 @@ namespace OrpheusManager
         private void writeLDATA()
         {
             LDATA.calculate();
-            lAttributes.Text = "Attribute Points: " + (LDATA.lAttributesMax - LDATA.lAttributesCurrent) + " / " + LDATA.lAttributesMax;
-            csp.Text = "Combat Skill Points: " + (LDATA.lCspMax - (LDATA.lCspCurrent - CDATA.cInitialCsp)) + " / " + LDATA.lCspMax;
-            ncsp.Text = "Non-Combat Skill Points: " + (LDATA.lNcspMax - (LDATA.lNcspCurrent - CDATA.cInitialNcsp)) + " / " + LDATA.lNcspMax;
-            ability.Text = "Ability Points: " + (LDATA.lAbilityRankMax - LDATA.lAbilityRankCurrent) + " / " + LDATA.lAbilityRankMax;
-            masteries.Text = "Ability Masteries: " + (LDATA.lAbilityMasteryMax - LDATA.lAbilityMasteryCurrent) + " / " + LDATA.lAbilityMasteryMax;
-            synth.Text = "Ability Synthesis: " + (LDATA.lAbilitySynthesisMax - LDATA.lAbilitySynthesisCurrent) + " / " + LDATA.lAbilitySynthesisMax;
-            overload.Text = "Ability Overloads: " + (LDATA.lAbilityOverloadMax - LDATA.lAbilityOverloadCurrent) + " / " + LDATA.lAbilityOverloadMax;
-            mots.Text = "Motivations: " + (LDATA.lMotivationsMax - LDATA.lMotivationsCurrent) + " / " + LDATA.lMotivationsMax;
-            acc.Text = "Horror Acclimations: " + (LDATA.lAcclimationsMax - LDATA.lAcclimationsCurrent) + " / " + LDATA.lAcclimationsMax;
-            strain.Text = "Bonus Strain: " + (LDATA.lStrainMax - LDATA.lStrainCurrent) + " / " + LDATA.lStrainMax;
+            lAttributes.Text = (LDATA.lAttributesMax - LDATA.lAttributesCurrent) + " Attribute Points";
+            csp.Text = (LDATA.lCspMax - (LDATA.lCspCurrent - CDATA.cInitialCsp)) + " Combat Skill Points";
+            ncsp.Text = (LDATA.lNcspMax - (LDATA.lNcspCurrent - CDATA.cInitialNcsp)) + " Non-Combat Skill Points";
+            ability.Text = (LDATA.lAbilityRankMax - LDATA.lAbilityRankCurrent) + " Ability Points";
+            masteries.Text = (LDATA.lAbilityMasteryMax - LDATA.lAbilityMasteryCurrent) + " Ability Masteries";
+            synth.Text = (LDATA.lAbilitySynthesisMax - LDATA.lAbilitySynthesisCurrent) + " Ability Synthesis";
+            overload.Text = (LDATA.lAbilityOverloadMax - LDATA.lAbilityOverloadCurrent) + " Ability Overloads";
+            mots.Text = (LDATA.lMotivationsMax - LDATA.lMotivationsCurrent) + " Motivations";
+            acc.Text = (LDATA.lAcclimationsMax - LDATA.lAcclimationsCurrent) + " Horror Acclimations";
+            strain.Text = (LDATA.lStrainMax - LDATA.lStrainCurrent) + " Bonus Strain";
         }
 
         private void mLevel_Load(object sender, EventArgs e)
@@ -51,6 +51,75 @@ namespace OrpheusManager
         {
             Form mAtt = new manageAttributes();
             mAtt.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form mSkll = new ManageSkills();
+            mSkll.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form mSkll = new ManageSkills();
+            mSkll.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form mAbil = new ManageAbilities();
+            mAbil.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form mAbil = new ManageAbilities();
+            mAbil.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form mAbil = new ManageAbilities();
+            mAbil.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form mAbil = new ManageAbilities();
+            mAbil.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form mMot = new mMotivations();
+            mMot.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form mStr = new manageStrain();
+            mStr.ShowDialog();
             Program.mainform.writeDATA();
             writeLDATA();
         }
