@@ -35,6 +35,7 @@
             this.gameinfolink = new System.Windows.Forms.LinkLabel();
             this.podcastinfo = new System.Windows.Forms.LinkLabel();
             this.managerinfo = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,6 +92,7 @@
             this.gameinfolink.TabIndex = 46;
             this.gameinfolink.TabStop = true;
             this.gameinfolink.Text = "linkLabel1";
+            this.gameinfolink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gameinfolink_LinkClicked);
             // 
             // podcastinfo
             // 
@@ -116,12 +118,23 @@
             this.managerinfo.TabStop = true;
             this.managerinfo.Text = "linkLabel2";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(12, 660);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(194, 13);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Orpheus Manager v1.0 by Jason Brown";
+            // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(531, 682);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.managerinfo);
             this.Controls.Add(this.podcastinfo);
             this.Controls.Add(this.gameinfolink);
@@ -148,5 +161,6 @@
         private System.Windows.Forms.LinkLabel gameinfolink;
         private System.Windows.Forms.LinkLabel podcastinfo;
         private System.Windows.Forms.LinkLabel managerinfo;
+        private System.Windows.Forms.Label label1;
     }
 }

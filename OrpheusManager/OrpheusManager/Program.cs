@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -42,6 +42,10 @@ namespace OrpheusManager
         public static int cOverSanity = 0;
         public static int cInitialCsp = 0;
         public static int cInitialNcsp = 0;
+        public static int cAcc1 = 0;
+        public static int cAcc2 = 0;
+        public static int cAcc3 = 0;
+        public static int cAcc4 = 0;
 
         public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
         public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
@@ -284,6 +288,11 @@ namespace OrpheusManager
             if (CDATA.cMot5 == "" || CDATA.cMot5 == " ") lMotivationsCurrent -= 1;
             if (CDATA.cMot6 == "" || CDATA.cMot6 == " ") lMotivationsCurrent -= 1;
             if (CDATA.cMot7 == "" || CDATA.cMot7 == " ") lMotivationsCurrent -= 1;
+
+            if (CDATA.cAcc1 == 1) lAcclimationsCurrent++;
+            if (CDATA.cAcc2 == 1) lAcclimationsCurrent++;
+            if (CDATA.cAcc3 == 1) lAcclimationsCurrent++;
+            if (CDATA.cAcc4 == 1) lAcclimationsCurrent++;
 
             lStrainCurrent = CDATA.cMaxMentStrain + CDATA.cMaxPhysStrain + CDATA.cMaxSpirStrain;
 
@@ -718,6 +727,14 @@ namespace OrpheusManager
                     saveString += CDATA.cInitialCsp + "\r\n\r\n";
                     saveString += "Initial NCSP:\r\n";
                     saveString += CDATA.cInitialNcsp + "\r\n\r\n";
+                    saveString += "Acclimation 1:\r\n";
+                    saveString += CDATA.cAcc1 + "\r\n\r\n";
+                    saveString += "Acclimation 2:\r\n";
+                    saveString += CDATA.cAcc2 + "\r\n\r\n";
+                    saveString += "Acclimation 3:\r\n";
+                    saveString += CDATA.cAcc3 + "\r\n\r\n";
+                    saveString += "Acclimation 4:\r\n";
+                    saveString += CDATA.cAcc4 + "\r\n\r\n";
                     saveString += "Focus Damage:\r\n";
                     saveString += CDATA.cFocusWounds[0] + "\r\n";
                     saveString += CDATA.cFocusWounds[1] + "\r\n";

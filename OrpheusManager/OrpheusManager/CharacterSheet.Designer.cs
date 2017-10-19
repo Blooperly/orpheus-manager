@@ -307,6 +307,14 @@
             this.m7m4 = new System.Windows.Forms.CheckBox();
             this.m7m1 = new System.Windows.Forms.CheckBox();
             this.label42 = new System.Windows.Forms.Label();
+            this.acclimationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cAcc1 = new System.Windows.Forms.Label();
+            this.cAcc2 = new System.Windows.Forms.Label();
+            this.cAcc3 = new System.Windows.Forms.Label();
+            this.cAcc4 = new System.Windows.Forms.Label();
+            this.skillLevelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.attributesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.derivedAttributesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -380,7 +388,8 @@
             this.backgroundToolStripMenuItem,
             this.maxStrainToolStripMenuItem,
             this.maxHumanityToolStripMenuItem,
-            this.motivationsToolStripMenuItem});
+            this.motivationsToolStripMenuItem,
+            this.acclimationsToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
@@ -462,6 +471,10 @@
             // 
             // referenceToolStripMenuItem
             // 
+            this.referenceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.skillLevelsToolStripMenuItem,
+            this.attributesToolStripMenuItem1,
+            this.derivedAttributesToolStripMenuItem});
             this.referenceToolStripMenuItem.Name = "referenceToolStripMenuItem";
             this.referenceToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.referenceToolStripMenuItem.Text = "Reference";
@@ -557,7 +570,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(39, 349);
+            this.label6.Location = new System.Drawing.Point(39, 360);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 8;
@@ -569,7 +582,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(39, 369);
+            this.label1.Location = new System.Drawing.Point(39, 380);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 9;
@@ -581,7 +594,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(39, 389);
+            this.label2.Location = new System.Drawing.Point(39, 400);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 10;
@@ -593,7 +606,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(39, 409);
+            this.label3.Location = new System.Drawing.Point(39, 420);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 11;
@@ -605,7 +618,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(39, 429);
+            this.label4.Location = new System.Drawing.Point(39, 440);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 20);
             this.label4.TabIndex = 12;
@@ -617,7 +630,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(39, 449);
+            this.label5.Location = new System.Drawing.Point(39, 460);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 20);
             this.label5.TabIndex = 13;
@@ -629,7 +642,7 @@
             this.cPerception.AutoSize = true;
             this.cPerception.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cPerception.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cPerception.Location = new System.Drawing.Point(134, 349);
+            this.cPerception.Location = new System.Drawing.Point(134, 360);
             this.cPerception.Name = "cPerception";
             this.cPerception.Size = new System.Drawing.Size(18, 20);
             this.cPerception.TabIndex = 14;
@@ -641,7 +654,7 @@
             this.cCognition.AutoSize = true;
             this.cCognition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCognition.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cCognition.Location = new System.Drawing.Point(134, 369);
+            this.cCognition.Location = new System.Drawing.Point(134, 380);
             this.cCognition.Name = "cCognition";
             this.cCognition.Size = new System.Drawing.Size(18, 20);
             this.cCognition.TabIndex = 15;
@@ -653,7 +666,7 @@
             this.cDexterity.AutoSize = true;
             this.cDexterity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cDexterity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cDexterity.Location = new System.Drawing.Point(134, 389);
+            this.cDexterity.Location = new System.Drawing.Point(134, 400);
             this.cDexterity.Name = "cDexterity";
             this.cDexterity.Size = new System.Drawing.Size(18, 20);
             this.cDexterity.TabIndex = 16;
@@ -665,7 +678,7 @@
             this.cVitality.AutoSize = true;
             this.cVitality.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cVitality.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cVitality.Location = new System.Drawing.Point(134, 409);
+            this.cVitality.Location = new System.Drawing.Point(134, 420);
             this.cVitality.Name = "cVitality";
             this.cVitality.Size = new System.Drawing.Size(18, 20);
             this.cVitality.TabIndex = 17;
@@ -677,7 +690,7 @@
             this.cCharisma.AutoSize = true;
             this.cCharisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCharisma.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cCharisma.Location = new System.Drawing.Point(134, 429);
+            this.cCharisma.Location = new System.Drawing.Point(134, 440);
             this.cCharisma.Name = "cCharisma";
             this.cCharisma.Size = new System.Drawing.Size(18, 20);
             this.cCharisma.TabIndex = 18;
@@ -689,7 +702,7 @@
             this.cWillpower.AutoSize = true;
             this.cWillpower.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cWillpower.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cWillpower.Location = new System.Drawing.Point(134, 449);
+            this.cWillpower.Location = new System.Drawing.Point(134, 460);
             this.cWillpower.Name = "cWillpower";
             this.cWillpower.Size = new System.Drawing.Size(18, 20);
             this.cWillpower.TabIndex = 19;
@@ -701,7 +714,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(53, 310);
+            this.label7.Location = new System.Drawing.Point(53, 321);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 20;
@@ -710,7 +723,7 @@
             // divider1
             // 
             this.divider1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.divider1.Location = new System.Drawing.Point(34, 327);
+            this.divider1.Location = new System.Drawing.Point(34, 338);
             this.divider1.Name = "divider1";
             this.divider1.Size = new System.Drawing.Size(120, 20);
             this.divider1.TabIndex = 21;
@@ -950,7 +963,7 @@
             // divider2
             // 
             this.divider2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.divider2.Location = new System.Drawing.Point(175, 328);
+            this.divider2.Location = new System.Drawing.Point(175, 339);
             this.divider2.Name = "divider2";
             this.divider2.Size = new System.Drawing.Size(120, 20);
             this.divider2.TabIndex = 57;
@@ -962,7 +975,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(182, 311);
+            this.label9.Location = new System.Drawing.Point(182, 322);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 20);
             this.label9.TabIndex = 56;
@@ -974,7 +987,7 @@
             this.dForceOfWill.AutoSize = true;
             this.dForceOfWill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dForceOfWill.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dForceOfWill.Location = new System.Drawing.Point(275, 450);
+            this.dForceOfWill.Location = new System.Drawing.Point(275, 461);
             this.dForceOfWill.Name = "dForceOfWill";
             this.dForceOfWill.Size = new System.Drawing.Size(18, 20);
             this.dForceOfWill.TabIndex = 55;
@@ -986,7 +999,7 @@
             this.dToughness.AutoSize = true;
             this.dToughness.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dToughness.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dToughness.Location = new System.Drawing.Point(275, 430);
+            this.dToughness.Location = new System.Drawing.Point(275, 441);
             this.dToughness.Name = "dToughness";
             this.dToughness.Size = new System.Drawing.Size(18, 20);
             this.dToughness.TabIndex = 54;
@@ -998,7 +1011,7 @@
             this.dClarity.AutoSize = true;
             this.dClarity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dClarity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dClarity.Location = new System.Drawing.Point(275, 410);
+            this.dClarity.Location = new System.Drawing.Point(275, 421);
             this.dClarity.Name = "dClarity";
             this.dClarity.Size = new System.Drawing.Size(18, 20);
             this.dClarity.TabIndex = 53;
@@ -1010,7 +1023,7 @@
             this.dSpeed.AutoSize = true;
             this.dSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dSpeed.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dSpeed.Location = new System.Drawing.Point(275, 390);
+            this.dSpeed.Location = new System.Drawing.Point(275, 401);
             this.dSpeed.Name = "dSpeed";
             this.dSpeed.Size = new System.Drawing.Size(18, 20);
             this.dSpeed.TabIndex = 52;
@@ -1022,7 +1035,7 @@
             this.dRangedAtt.AutoSize = true;
             this.dRangedAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dRangedAtt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dRangedAtt.Location = new System.Drawing.Point(275, 370);
+            this.dRangedAtt.Location = new System.Drawing.Point(275, 381);
             this.dRangedAtt.Name = "dRangedAtt";
             this.dRangedAtt.Size = new System.Drawing.Size(18, 20);
             this.dRangedAtt.TabIndex = 51;
@@ -1034,7 +1047,7 @@
             this.dMeleeAtt.AutoSize = true;
             this.dMeleeAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dMeleeAtt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dMeleeAtt.Location = new System.Drawing.Point(275, 350);
+            this.dMeleeAtt.Location = new System.Drawing.Point(275, 361);
             this.dMeleeAtt.Name = "dMeleeAtt";
             this.dMeleeAtt.Size = new System.Drawing.Size(18, 20);
             this.dMeleeAtt.TabIndex = 50;
@@ -1046,7 +1059,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(180, 450);
+            this.label16.Location = new System.Drawing.Point(180, 461);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(104, 20);
             this.label16.TabIndex = 49;
@@ -1058,7 +1071,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(180, 430);
+            this.label17.Location = new System.Drawing.Point(180, 441);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(92, 20);
             this.label17.TabIndex = 48;
@@ -1070,7 +1083,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(180, 410);
+            this.label18.Location = new System.Drawing.Point(180, 421);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(56, 20);
             this.label18.TabIndex = 47;
@@ -1082,7 +1095,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(180, 390);
+            this.label19.Location = new System.Drawing.Point(180, 401);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(60, 20);
             this.label19.TabIndex = 46;
@@ -1094,7 +1107,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(180, 370);
+            this.label20.Location = new System.Drawing.Point(180, 381);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(95, 20);
             this.label20.TabIndex = 45;
@@ -1106,7 +1119,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label21.Location = new System.Drawing.Point(180, 350);
+            this.label21.Location = new System.Drawing.Point(180, 361);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(81, 20);
             this.label21.TabIndex = 44;
@@ -1118,7 +1131,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(180, 470);
+            this.label11.Location = new System.Drawing.Point(180, 481);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 20);
             this.label11.TabIndex = 65;
@@ -1130,7 +1143,7 @@
             this.dInitiative.AutoSize = true;
             this.dInitiative.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dInitiative.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dInitiative.Location = new System.Drawing.Point(275, 470);
+            this.dInitiative.Location = new System.Drawing.Point(275, 481);
             this.dInitiative.Name = "dInitiative";
             this.dInitiative.Size = new System.Drawing.Size(18, 20);
             this.dInitiative.TabIndex = 66;
@@ -3166,7 +3179,7 @@
             this.dTactics.AutoSize = true;
             this.dTactics.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dTactics.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dTactics.Location = new System.Drawing.Point(275, 490);
+            this.dTactics.Location = new System.Drawing.Point(275, 501);
             this.dTactics.Name = "dTactics";
             this.dTactics.Size = new System.Drawing.Size(18, 20);
             this.dTactics.TabIndex = 266;
@@ -3178,7 +3191,7 @@
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label38.Location = new System.Drawing.Point(180, 490);
+            this.label38.Location = new System.Drawing.Point(180, 501);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(63, 20);
             this.label38.TabIndex = 265;
@@ -3516,6 +3529,90 @@
             this.label42.TabIndex = 295;
             this.label42.Text = "Motivations";
             // 
+            // acclimationsToolStripMenuItem
+            // 
+            this.acclimationsToolStripMenuItem.Name = "acclimationsToolStripMenuItem";
+            this.acclimationsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.acclimationsToolStripMenuItem.Text = "Acclimations";
+            this.acclimationsToolStripMenuItem.Click += new System.EventHandler(this.acclimationsToolStripMenuItem_Click);
+            // 
+            // cAcc1
+            // 
+            this.cAcc1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cAcc1.AutoSize = true;
+            this.cAcc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.cAcc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cAcc1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cAcc1.Location = new System.Drawing.Point(54, 276);
+            this.cAcc1.Name = "cAcc1";
+            this.cAcc1.Size = new System.Drawing.Size(15, 13);
+            this.cAcc1.TabIndex = 296;
+            this.cAcc1.Text = "R";
+            this.cAcc1.Visible = false;
+            // 
+            // cAcc2
+            // 
+            this.cAcc2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cAcc2.AutoSize = true;
+            this.cAcc2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(104)))), ((int)(((byte)(54)))));
+            this.cAcc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cAcc2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cAcc2.Location = new System.Drawing.Point(99, 276);
+            this.cAcc2.Name = "cAcc2";
+            this.cAcc2.Size = new System.Drawing.Size(14, 13);
+            this.cAcc2.TabIndex = 297;
+            this.cAcc2.Text = "C";
+            this.cAcc2.Visible = false;
+            // 
+            // cAcc3
+            // 
+            this.cAcc3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cAcc3.AutoSize = true;
+            this.cAcc3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(104)))), ((int)(((byte)(55)))));
+            this.cAcc3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cAcc3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cAcc3.Location = new System.Drawing.Point(139, 276);
+            this.cAcc3.Name = "cAcc3";
+            this.cAcc3.Size = new System.Drawing.Size(14, 13);
+            this.cAcc3.TabIndex = 298;
+            this.cAcc3.Text = "S";
+            this.cAcc3.Visible = false;
+            // 
+            // cAcc4
+            // 
+            this.cAcc4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cAcc4.AutoSize = true;
+            this.cAcc4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(64)))), ((int)(((byte)(104)))));
+            this.cAcc4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cAcc4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cAcc4.Location = new System.Drawing.Point(181, 276);
+            this.cAcc4.Name = "cAcc4";
+            this.cAcc4.Size = new System.Drawing.Size(13, 13);
+            this.cAcc4.TabIndex = 299;
+            this.cAcc4.Text = "F";
+            this.cAcc4.Visible = false;
+            // 
+            // skillLevelsToolStripMenuItem
+            // 
+            this.skillLevelsToolStripMenuItem.Name = "skillLevelsToolStripMenuItem";
+            this.skillLevelsToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.skillLevelsToolStripMenuItem.Text = "Skill Ranks";
+            this.skillLevelsToolStripMenuItem.Click += new System.EventHandler(this.skillLevelsToolStripMenuItem_Click);
+            // 
+            // attributesToolStripMenuItem1
+            // 
+            this.attributesToolStripMenuItem1.Name = "attributesToolStripMenuItem1";
+            this.attributesToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
+            this.attributesToolStripMenuItem1.Text = "Attributes";
+            this.attributesToolStripMenuItem1.Click += new System.EventHandler(this.attributesToolStripMenuItem1_Click);
+            // 
+            // derivedAttributesToolStripMenuItem
+            // 
+            this.derivedAttributesToolStripMenuItem.Name = "derivedAttributesToolStripMenuItem";
+            this.derivedAttributesToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.derivedAttributesToolStripMenuItem.Text = "Derived Attributes";
+            this.derivedAttributesToolStripMenuItem.Click += new System.EventHandler(this.derivedAttributesToolStripMenuItem_Click);
+            // 
             // CharacterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3523,6 +3620,10 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(1108, 711);
+            this.Controls.Add(this.cAcc4);
+            this.Controls.Add(this.cAcc3);
+            this.Controls.Add(this.cAcc2);
+            this.Controls.Add(this.cAcc1);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.cMot7);
             this.Controls.Add(this.m7m6);
@@ -4083,6 +4184,14 @@
         private System.Windows.Forms.CheckBox m7m1;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.ToolStripMenuItem backgroundToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acclimationsToolStripMenuItem;
+        private System.Windows.Forms.Label cAcc1;
+        private System.Windows.Forms.Label cAcc2;
+        private System.Windows.Forms.Label cAcc3;
+        private System.Windows.Forms.Label cAcc4;
+        private System.Windows.Forms.ToolStripMenuItem skillLevelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem attributesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem derivedAttributesToolStripMenuItem;
     }
 }
 

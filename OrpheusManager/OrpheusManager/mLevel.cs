@@ -113,7 +113,10 @@ namespace OrpheusManager
 
         private void button9_Click(object sender, EventArgs e)
         {
-
+            Form mAcc = new mAcclimations();
+            mAcc.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
         }
 
         private void button10_Click(object sender, EventArgs e)

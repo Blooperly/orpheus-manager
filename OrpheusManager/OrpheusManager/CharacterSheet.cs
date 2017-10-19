@@ -20,11 +20,6 @@ namespace OrpheusManager
             InitializeComponent();
         }
 
-        public static void outsideWrite()
-        {
-            //writeDATA();
-        }
-
         // Update Character Sheet
         public void writeDATA()
         {
@@ -684,7 +679,9 @@ namespace OrpheusManager
             System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#3E3E42"));
             System.Drawing.SolidBrush myBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#252526"));
             System.Drawing.Graphics formGraphics;
+
             formGraphics = this.CreateGraphics();
+
             // Arch Image Liner
             formGraphics.FillRectangle(myBrush, new Rectangle(225, 80, 15, 180));
             // Bottom Divider
@@ -817,6 +814,21 @@ namespace OrpheusManager
             // Open Dialog Box
             Form nChar = new newCharacter();
             nChar.ShowDialog();
+
+            // Clear Graphics
+            System.Drawing.Graphics formGraphics;
+
+            formGraphics = this.CreateGraphics();
+
+            System.Drawing.SolidBrush clearBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#1B1B1B"));
+            formGraphics.FillRectangle(clearBrush, 49, 267, 163, 27);
+
+            cAcc1.Visible = false;
+            cAcc2.Visible = false;
+            cAcc3.Visible = false;
+            cAcc4.Visible = false;
+
+            formGraphics.Dispose();
 
             // Update Character
             for (int i = 0; i < 6; i++) { CDATA.cAttributesTemp[i] = 0; }
@@ -1034,6 +1046,75 @@ namespace OrpheusManager
         {
             Form mlv = new mLevel();
             mlv.Show();
+        }
+
+        private void acclimationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mAcc = new mAcclimations();
+            mAcc.ShowDialog();
+
+            // Acclimations
+            System.Drawing.Graphics formGraphics;
+
+            formGraphics = this.CreateGraphics();
+
+            System.Drawing.SolidBrush clearBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#1B1B1B"));
+            formGraphics.FillRectangle(clearBrush, 49, 267, 163, 27);
+
+            cAcc1.Visible = false;
+            cAcc2.Visible = false;
+            cAcc3.Visible = false;
+            cAcc4.Visible = false;
+
+            if (CDATA.cAcc1 == 1)
+            {
+                System.Drawing.Pen ruthlessPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#683636"));
+                System.Drawing.SolidBrush ruthlessBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#683636"));
+                formGraphics.DrawEllipse(ruthlessPen, 50, 268, 24, 24);
+                formGraphics.FillEllipse(ruthlessBrush, 50, 268, 24, 24);
+
+                cAcc1.Left = 55;
+                cAcc1.Top = 274;
+                cAcc1.Visible = true;
+            }
+
+            if (CDATA.cAcc2 == 1)
+            {
+                System.Drawing.Pen calousPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#676836"));
+                System.Drawing.SolidBrush calousBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#676836"));
+                formGraphics.DrawEllipse(calousPen, 95, 268, 24, 24);
+                formGraphics.FillEllipse(calousBrush, 95, 268, 24, 24);
+
+                cAcc2.Left = 101;
+                cAcc2.Top = 274;
+                cAcc2.Visible = true;
+            }
+
+            if (CDATA.cAcc3 == 1)
+            {
+                System.Drawing.Pen stomachPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#366837"));
+                System.Drawing.SolidBrush stomachBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#366837"));
+                formGraphics.DrawEllipse(stomachPen, 140, 268, 24, 24);
+                formGraphics.FillEllipse(stomachBrush, 140, 268, 24, 24);
+
+                cAcc3.Left = 146;
+                cAcc3.Top = 274;
+                cAcc3.Visible = true;
+            }
+
+            if (CDATA.cAcc4 == 1)
+            {
+                System.Drawing.Pen fatalisticPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#364068"));
+                System.Drawing.SolidBrush fatalisticBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#364068"));
+                formGraphics.DrawEllipse(fatalisticPen, 185, 268, 24, 24);
+                formGraphics.FillEllipse(fatalisticBrush, 185, 268, 24, 24);
+
+                cAcc4.Left = 191;
+                cAcc4.Top = 274;
+                cAcc4.Visible = true;
+            }
+
+            formGraphics.Dispose();
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1269,6 +1350,22 @@ namespace OrpheusManager
             {
                 if (File.Exists(opener.FileName)) 
                 {
+                    // Clear Graphics
+                    System.Drawing.Graphics formGraphics;
+
+                    formGraphics = this.CreateGraphics();
+
+                    System.Drawing.SolidBrush clearBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#1B1B1B"));
+                    formGraphics.FillRectangle(clearBrush, 49, 267, 163, 27);
+
+                    cAcc1.Visible = false;
+                    cAcc2.Visible = false;
+                    cAcc3.Visible = false;
+                    cAcc4.Visible = false;
+
+                    formGraphics.Dispose();
+
+                    // Open File
                     SDATA.sFilepath = opener.FileName;
                     SDATA.sFullData = File.ReadAllText(opener.FileName);
 
@@ -1291,11 +1388,16 @@ namespace OrpheusManager
                     Int32.TryParse(SDATA.parseField("Initiative:\r\n"), out CDATA.cInitiative);
                     Int32.TryParse(SDATA.parseField("Memento Mori:\r\n"), out CDATA.cMementoMori);
                     Int32.TryParse(SDATA.parseField("Humanity:\r\n"), out CDATA.cHumanity);
+                    Int32.TryParse(SDATA.parseField("Humanity Max:\r\n"), out CDATA.cHumanityMax);
                     Int32.TryParse(SDATA.parseField("Over Focus:\r\n"), out CDATA.cOverFocus);
                     Int32.TryParse(SDATA.parseField("Over Health:\r\n"), out CDATA.cOverHealth);
                     Int32.TryParse(SDATA.parseField("Over Sanity:\r\n"), out CDATA.cOverSanity);
                     Int32.TryParse(SDATA.parseField("Initial CSP:\r\n"), out CDATA.cInitialCsp);
                     Int32.TryParse(SDATA.parseField("Initial NCSP:\r\n"), out CDATA.cInitialNcsp);
+                    Int32.TryParse(SDATA.parseField("Acclimation 1:\r\n"), out CDATA.cAcc1);
+                    Int32.TryParse(SDATA.parseField("Acclimation 2:\r\n"), out CDATA.cAcc2);
+                    Int32.TryParse(SDATA.parseField("Acclimation 3:\r\n"), out CDATA.cAcc3);
+                    Int32.TryParse(SDATA.parseField("Acclimation 4:\r\n"), out CDATA.cAcc4);
                     Int32.TryParse(SDATA.parseField("Mental Strain Modifier:\r\n"), out CDATA.cMaxMentStrain);
                     Int32.TryParse(SDATA.parseField("Physical Strain Modifier:\r\n"), out CDATA.cMaxPhysStrain);
                     Int32.TryParse(SDATA.parseField("Spiritual Strain Modifier:\r\n"), out CDATA.cMaxSpirStrain);
@@ -1564,8 +1666,82 @@ namespace OrpheusManager
                     reloadArch();
                     writeDATA();
                     writeDATA2();
+
+                    // Draw Acclimations
+                    System.Drawing.Graphics formGraphics2;
+
+                    formGraphics2 = this.CreateGraphics();
+
+                    if (CDATA.cAcc1 == 1)
+                    {
+                        System.Drawing.Pen ruthlessPen2 = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#683636"));
+                        System.Drawing.SolidBrush ruthlessBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#683636"));
+                        formGraphics2.DrawEllipse(ruthlessPen2, 50, 268, 24, 24);
+                        formGraphics2.FillEllipse(ruthlessBrush2, 50, 268, 24, 24);
+
+                        cAcc1.Left = 55;
+                        cAcc1.Top = 274;
+                        cAcc1.Visible = true;
+                    }
+
+                    if (CDATA.cAcc2 == 1)
+                    {
+                        System.Drawing.Pen calousPen2 = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#676836"));
+                        System.Drawing.SolidBrush calousBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#676836"));
+                        formGraphics2.DrawEllipse(calousPen2, 95, 268, 24, 24);
+                        formGraphics2.FillEllipse(calousBrush2, 95, 268, 24, 24);
+
+                        cAcc2.Left = 101;
+                        cAcc2.Top = 274;
+                        cAcc2.Visible = true;
+                    }
+
+                    if (CDATA.cAcc3 == 1)
+                    {
+                        System.Drawing.Pen stomachPen2 = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#366837"));
+                        System.Drawing.SolidBrush stomachBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#366837"));
+                        formGraphics2.DrawEllipse(stomachPen2, 140, 268, 24, 24);
+                        formGraphics2.FillEllipse(stomachBrush2, 140, 268, 24, 24);
+
+                        cAcc3.Left = 146;
+                        cAcc3.Top = 274;
+                        cAcc3.Visible = true;
+                    }
+
+                    if (CDATA.cAcc4 == 1)
+                    {
+                        System.Drawing.Pen fatalisticPen2 = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#364068"));
+                        System.Drawing.SolidBrush fatalisticBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#364068"));
+                        formGraphics2.DrawEllipse(fatalisticPen2, 185, 268, 24, 24);
+                        formGraphics2.FillEllipse(fatalisticBrush2, 185, 268, 24, 24);
+                        
+                        cAcc4.Left = 191;
+                        cAcc4.Top = 274;
+                        cAcc4.Visible = true;
+                    }
+
+                    formGraphics2.Dispose();
                 }
             }
+        }
+
+        // References
+        private void skillLevelsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rskl = new rSkills();
+            rskl.Show();
+        }
+
+        private void attributesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form ratt = new rAttributes();
+            ratt.Show();
+        }
+
+        private void derivedAttributesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rdatt = new rDAttributes();
+            rdatt.Show();
         }
     }
 }

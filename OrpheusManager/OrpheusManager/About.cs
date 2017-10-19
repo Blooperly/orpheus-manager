@@ -22,6 +22,10 @@ namespace OrpheusManager
 
         private void About_Load(object sender, EventArgs e)
         {
+            this.Text = "Orpheus Manager";
+
+            label1.Text = "Orpheus Manager " + CDATA.version + " by Jason Brown";
+
             // Load Title Image
             System.Reflection.Assembly myAssembly2 = System.Reflection.Assembly.GetExecutingAssembly();
             Stream myStream2 = myAssembly2.GetManifestResourceStream("OrpheusManager.OrpheusTitle.png");
@@ -119,6 +123,11 @@ namespace OrpheusManager
             {
                 MessageBox.Show("Item clicked: " + target);
             }
+        }
+
+        private void gameinfolink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }
