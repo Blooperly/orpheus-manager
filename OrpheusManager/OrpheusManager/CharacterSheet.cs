@@ -754,7 +754,17 @@ namespace OrpheusManager
             Stream myStreamSoldier = myAssemblySoldier.GetManifestResourceStream("OrpheusManager.archetypeSoldier.png");
             Bitmap imageSoldier = new Bitmap(myStreamSoldier);
 
-            if (CDATA.cArch1 == "Hermetic Magician") archetypePic.Image = imageHermetic;
+            System.Reflection.Assembly myAssemblyMitch = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamMitch = myAssemblyMitch.GetManifestResourceStream("OrpheusManager.archetypeMitch.png");
+            Bitmap imageMitch = new Bitmap(myStreamMitch);
+
+            System.Reflection.Assembly myAssemblyPierce = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamPierce = myAssemblyPierce.GetManifestResourceStream("OrpheusManager.archetypePierce.png");
+            Bitmap imagePierce = new Bitmap(myStreamPierce);
+
+            if (CDATA.cName == "Mitch Hook" || CDATA.cName == "Mitchell Hook" || CDATA.cName == "Mitch") archetypePic.Image = imageMitch;
+            else if (CDATA.cName == "Pierce Keswick" || CDATA.cName == "Pierce") archetypePic.Image = imagePierce;
+            else if (CDATA.cArch1 == "Hermetic Magician") archetypePic.Image = imageHermetic;
             else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
             else if (CDATA.cArch1 == "Psychic") archetypePic.Image = imagePsychic;
             else if (CDATA.cArch1 == "Weapon Bearer") archetypePic.Image = imageWeapon;
