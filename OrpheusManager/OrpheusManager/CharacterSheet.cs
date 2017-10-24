@@ -1753,5 +1753,35 @@ namespace OrpheusManager
             Form rdatt = new rDAttributes();
             rdatt.Show();
         }
+
+        private void dazeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rdaz = new rDaze();
+            rdaz.Show();
+        }
+
+        private void bleedingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rbled = new rBleeding();
+            rbled.Show();
+        }
+
+        private void temporaryInsanityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rins = new rTemporaryInsanity();
+            rins.Show();
+        }
+
+        private void upChecksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rups = new rUpChecks();
+            rups.Show();
+        }
+
+        private void deathChecksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rded = new rDeathChecks();
+            rded.Show();
+        }
     }
 }

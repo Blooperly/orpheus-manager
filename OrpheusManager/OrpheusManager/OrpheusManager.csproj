@@ -149,17 +149,47 @@
     <Compile Include="rAttributes.Designer.cs">
       <DependentUpon>rAttributes.cs</DependentUpon>
     </Compile>
+    <Compile Include="rBleeding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rBleeding.Designer.cs">
+      <DependentUpon>rBleeding.cs</DependentUpon>
+    </Compile>
     <Compile Include="rDAttributes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rDAttributes.Designer.cs">
       <DependentUpon>rDAttributes.cs</DependentUpon>
     </Compile>
+    <Compile Include="rDaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDaze.Designer.cs">
+      <DependentUpon>rDaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rDeathChecks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDeathChecks.Designer.cs">
+      <DependentUpon>rDeathChecks.cs</DependentUpon>
+    </Compile>
     <Compile Include="rSkills.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rSkills.Designer.cs">
       <DependentUpon>rSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rTemporaryInsanity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rTemporaryInsanity.Designer.cs">
+      <DependentUpon>rTemporaryInsanity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rUpChecks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rUpChecks.Designer.cs">
+      <DependentUpon>rUpChecks.cs</DependentUpon>
     </Compile>
     <Compile Include="vertBar.cs">
       <SubType>Component</SubType>
@@ -224,11 +254,26 @@
     <EmbeddedResource Include="rAttributes.resx">
       <DependentUpon>rAttributes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rBleeding.resx">
+      <DependentUpon>rBleeding.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rDAttributes.resx">
       <DependentUpon>rDAttributes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rDaze.resx">
+      <DependentUpon>rDaze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rDeathChecks.resx">
+      <DependentUpon>rDeathChecks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rSkills.resx">
       <DependentUpon>rSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rTemporaryInsanity.resx">
+      <DependentUpon>rTemporaryInsanity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rUpChecks.resx">
+      <DependentUpon>rUpChecks.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
