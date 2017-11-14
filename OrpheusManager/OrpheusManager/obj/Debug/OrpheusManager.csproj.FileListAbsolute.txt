@@ -92,3 +92,16 @@ C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\o
 C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rDeathChecks.resources
 C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rUpChecks.resources
 C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.ManageSkillsFirst.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.mAcclimations.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.ManageSkillsFirst.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rAttributes.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rBleeding.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rDAttributes.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rDaze.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rDeathChecks.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rSkills.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rTemporaryInsanity.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rUpChecks.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rMotivations.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rRolls.resources
+C:\Users\jbrow\Downloads\orpheus-manager-master\orpheus-manager-master\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rLuck.resources
