@@ -179,6 +179,24 @@
     <Compile Include="rDeathChecks.Designer.cs">
       <DependentUpon>rDeathChecks.cs</DependentUpon>
     </Compile>
+    <Compile Include="rLuck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rLuck.Designer.cs">
+      <DependentUpon>rLuck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMotivations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMotivations.Designer.cs">
+      <DependentUpon>rMotivations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rRolls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rRolls.Designer.cs">
+      <DependentUpon>rRolls.cs</DependentUpon>
+    </Compile>
     <Compile Include="rSkills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +292,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rDeathChecks.resx">
       <DependentUpon>rDeathChecks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rLuck.resx">
+      <DependentUpon>rLuck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMotivations.resx">
+      <DependentUpon>rMotivations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rRolls.resx">
+      <DependentUpon>rRolls.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rSkills.resx">
       <DependentUpon>rSkills.cs</DependentUpon>

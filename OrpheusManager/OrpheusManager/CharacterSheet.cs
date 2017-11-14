@@ -1788,5 +1788,23 @@ namespace OrpheusManager
             Form rded = new rDeathChecks();
             rded.Show();
         }
+
+        private void motivationsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rmot = new rMotivations();
+            rmot.Show();
+        }
+
+        private void rollingDiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rrol = new rRolls();
+            rrol.Show();
+        }
+
+        private void luckToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rluk = new rLuck();
+            rluk.Show();
+        }
     }
 }
