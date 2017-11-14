@@ -762,8 +762,13 @@ namespace OrpheusManager
             Stream myStreamPierce = myAssemblyPierce.GetManifestResourceStream("OrpheusManager.archetypePierce.png");
             Bitmap imagePierce = new Bitmap(myStreamPierce);
 
+            System.Reflection.Assembly myAssemblyKiera = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStreamKiera = myAssemblyKiera.GetManifestResourceStream("OrpheusManager.archetypeKiera.png");
+            Bitmap imageKiera = new Bitmap(myStreamKiera);
+
             if (CDATA.cName == "Mitch Hook" || CDATA.cName == "Mitchell Hook" || CDATA.cName == "Mitch") archetypePic.Image = imageMitch;
             else if (CDATA.cName == "Pierce Keswick" || CDATA.cName == "Pierce") archetypePic.Image = imagePierce;
+            else if (CDATA.cName == "Kiera Jackson" || CDATA.cName == "Kiera") archetypePic.Image = imageKiera;
             else if (CDATA.cArch1 == "Hermetic Magician") archetypePic.Image = imageHermetic;
             else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
             else if (CDATA.cArch1 == "Psychic") archetypePic.Image = imagePsychic;
@@ -951,7 +956,7 @@ namespace OrpheusManager
             cNotes.Text = "";
 
             // Assign Skills/Abilities
-            Form mskill = new ManageSkills();
+            Form mskill = new ManageSkillsFirst();
             Form mabilities = new ManageAbilities();
 
             mskill.ShowDialog();

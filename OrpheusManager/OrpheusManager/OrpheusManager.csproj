@@ -105,6 +105,12 @@
     <Compile Include="ManageSkills.Designer.cs">
       <DependentUpon>ManageSkills.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageSkillsFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSkillsFirst.Designer.cs">
+      <DependentUpon>ManageSkillsFirst.cs</DependentUpon>
+    </Compile>
     <Compile Include="manageStrain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     <EmbeddedResource Include="ManageSkills.resx">
       <DependentUpon>ManageSkills.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageSkillsFirst.resx">
+      <DependentUpon>ManageSkillsFirst.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="manageStrain.resx">
       <DependentUpon>manageStrain.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +332,9 @@
   <ItemGroup>
     <EmbeddedResource Include="archetypeMitch.png" />
     <EmbeddedResource Include="archetypePierce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeKiera.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
