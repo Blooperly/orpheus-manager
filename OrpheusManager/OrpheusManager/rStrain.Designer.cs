@@ -1,6 +1,6 @@
 ﻿namespace OrpheusManager
 {
-    partial class rDeathChecks
+    partial class rStrain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rDeathChecks));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rStrain));
             this.label36 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(309, 172);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(410, 325);
-            this.label1.TabIndex = 154;
-            this.label1.Text = resources.GetString("label1.Text");
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(254, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 325);
-            this.label3.TabIndex = 153;
-            this.label3.Text = "Mental:\r\nPhysical:\r\nSpiritual:\r\n\r\n\r\n\r\n\r\nMental:\r\nPhysical:\r\nSpiritual:\r\n\r\n\r\n\r\n\r\nM" +
-    "ental:\r\nPhysical:\r\nSpiritual:\r\n\r\n\r\n\r\n\r\nMental:\r\nPhysical:\r\n\r\nSpiritual:";
             // 
             // label36
             // 
@@ -62,35 +39,33 @@
             this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label36.Location = new System.Drawing.Point(23, 19);
+            this.label36.Location = new System.Drawing.Point(24, 19);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(139, 24);
-            this.label36.TabIndex = 152;
-            this.label36.Text = "Death Checks";
+            this.label36.Size = new System.Drawing.Size(63, 24);
+            this.label36.TabIndex = 154;
+            this.label36.Text = "Strain";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(40, 54);
+            this.label2.Location = new System.Drawing.Point(41, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(502, 494);
-            this.label2.TabIndex = 151;
+            this.label2.Size = new System.Drawing.Size(503, 130);
+            this.label2.TabIndex = 153;
             this.label2.Text = resources.GetString("label2.Text");
             // 
-            // rDeathChecks
+            // rStrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(771, 593);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(579, 225);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "rDeathChecks";
-            this.Text = "Orpheus Manager - Death Checks";
+            this.Name = "rStrain";
+            this.Text = "Orpheus Manager - Strain";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,8 +73,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label2;
     }

@@ -118,70 +118,84 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
+    <value>1 Initiative. Gain +1 to your next attack, provided your attack immediately follows your
+aim action. You may take this action up to 3 times before attacking. Moving target
+penalties are reduced by 1 for each Initiative spent aiming. If you take damage while
+Aiming, you must check Stability or Discipline against damage taken to avoid losing the
+benefits of the Aim action.
 
+1-4 Initiative (Based on complexity; 1 = Loading 1 shotgun shell. 4 = reloading
+an RPG, GM Discretion)
 
+2 Initiative.
 
-All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
+1 Initiative. You may instead draw a weapon at 0 Initiative cost if you attack
+immediately at -1 to hit.
 
+8 – (Speed Check w/ Athletics Skill) Initiative, minimum 2. Go anywhere in your Area,
+or take this Action 2 times to reach another Area. This Initiative is paid 1-at-a-time,
+allowing you to cancel your movement, and others to react to it. If you don't complete
+the movement, reasonable GM discretion as to where in your Area you end up.
 
+8 – (Speed Check) Initiative, minimum 2. Combines a movement and attack, but the
+attack is at -1 to hit. Initiative is spent 1-at-a-time, as with Move actions, but the attack
+only occurs if the movement is completed. If you don't complete the movement,
+reasonable GM discretion as to where in your Area you end up.
 
-All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
+2 Initiative. Move a very short distance (through a door you were touching, one long
+stride, etc.) This Initiative is not spent 1-at-a-time and does not prompt opportunity.
+However, this movement never functionally removes you from melee with an enemy.
 
+ 1 Initiative. Open a door, take something from your pocket, or some other very minor
+action per GM discretion. Minor actions may be taken during movement without
+spending Initiative.
 
+3 Initiative unless specified otherwise.
 
-Permanent Sense loss (blindness, deafness, etc. as appropriate by GM discretion.)
-Permanent limb loss, paralysis, etc. (GM discretion.) Roll a 1d3, on a 1-2 go
-unconscious for 2d3 additional days.
-Permanent madness, behavioral disorders, etc. (GM discretion)</value>
+3 Initiative if successful (See Tactics section).
+
+1 Initiative. Try to speak to someone in combat. Short, sentence-or-so (GM discretion)
+utterances cost 1 Initiative, and continuing to speak takes more.</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>At the end of a Scene in which you took at least 5 points of Damage beyond your track, you fall
-unconscious and must make a Death Check, checking Cognition, Vitality, or Willpower (as appropriate)
-against Damage taken in excess of the Track. Death Checks are not affected by Wound Penalties. Note
-that First Aid and Medicine can be used to aid a character at the end of a scene before they make their
-Death Check, provided they receive immediate aid. A failed Death Check has the following repercussions
-based on Degrees of Failure:
+  <data name="label4.Text" xml:space="preserve">
+    <value>4 Initiative. Successes on this check can be spent in the following ways:
 
-1 Degree of Failure-
-Unconscious for 2d3 x 10 Minutes.
-A permanent -1 penalty to the following:
+2 Successes: *Give an ally who has taken damage in excess of one of their damage
+                         tracks +1 to Up Checks and Death Checks this Scene.
+                       *Stabilize Bleeding.
 
+4 Successes: *Reduce ally's temporary wound penalty of one type by 1.
+                      *Stabilize Serious Bleeding.
 
+6 Successes: *Wake an unconscious ally.
+                      *Give an ally who has taken damage in excess of one of their damage
+                        tracks +2 to Up Checks and Death Checks this Scene.
+                      *Stabilize Arterial Bleeding.
 
+10 Successes: *Reduce ally's temporary wound penalty of one type by 2.
+                        *Give an ally who has taken damage in excess of one of their damage
+                          tracks +3 to Up Checks and Death Checks this Scene.
 
-2 Degrees of Failure-
-Unconscious for 2d3 Hours.
-A permanent -2 penalty to the following:
+NOTE: If you fail to meet the DV for a First Aid check in combat, you may continue
+treatment by spending a number of Initiative equal to double your degrees of failure. At
+the end of this period, the first aid is successful. First Aid Initiative is spent 1-at-a-time
+as with Movement. First aid may be used on yourself, but with a -2 penalty.
 
+1 Initiative, may be spent out of turn. +1 to avoid an attack. (Counts as tactics for
+modifier type.)
 
+2 Initiative, may be spent out of turn. Roll an Attack check with a melee weapon (or
+Dodge with Dexterity) to block or parry an incoming melee attack. If successful,
+attacker loses 2 Initiative. If the blocked attack was unarmed, attacker takes your attack's
+damage instead.
 
+3 Initiative, may be spent out of turn as an enemy closes to melee with you. Check
+Athletics with Speed against enemy's Athletics with Speed. If successful, they still reach
+your area, but are not in melee with you and must move again to close with you. 
 
-3 Degrees of Failure-
-Unconscious for 2d3 x 5 Hours.
-A permanent -3 penalty to the following:
-
-
-
-
-4 Degrees of Failure-
-Unconscious for 2d3 Days.
-A permanant debility:
-
-
-
-
-
-5 Degrees of Failure-
-Death</value>
+Spend Initiative on a 2-for-1 basis to gain Interrupt Initiative (II). You may spend II to
+take actions out-of-turn, interrupting other entities' turns as desired and as is narratively
+appropriate. If multiple characters have II, their interrupt actions are resolved in order of
+their base Initiative Attribute, and with further ties resolved by random die roll.</value>
   </data>
 </root>

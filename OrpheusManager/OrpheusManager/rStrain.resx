@@ -117,71 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
-
-
-
-All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
-
-
-
-All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
-
-
-
-Permanent Sense loss (blindness, deafness, etc. as appropriate by GM discretion.)
-Permanent limb loss, paralysis, etc. (GM discretion.) Roll a 1d3, on a 1-2 go
-unconscious for 2d3 additional days.
-Permanent madness, behavioral disorders, etc. (GM discretion)</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>At the end of a Scene in which you took at least 5 points of Damage beyond your track, you fall
-unconscious and must make a Death Check, checking Cognition, Vitality, or Willpower (as appropriate)
-against Damage taken in excess of the Track. Death Checks are not affected by Wound Penalties. Note
-that First Aid and Medicine can be used to aid a character at the end of a scene before they make their
-Death Check, provided they receive immediate aid. A failed Death Check has the following repercussions
-based on Degrees of Failure:
+    <value>Strain is a limited resource you spend for various bonuses, and also to reduce damage you'd otherwise
+be taking. You have 3 separate pools of Strain; Mental, Physical, and Spiritual, and Strain must be spent
+on actions of its associated type. (For example, you must pay Physical Strain to boost attacks, dodges,
+etc. while you must pay Mental Strain to boost Awareness checks and Ranged attacks, or Spiritual to
+boost a Stability Check.)
 
-1 Degree of Failure-
-Unconscious for 2d3 x 10 Minutes.
-A permanent -1 penalty to the following:
-
-
-
-
-2 Degrees of Failure-
-Unconscious for 2d3 Hours.
-A permanent -2 penalty to the following:
-
-
-
-
-3 Degrees of Failure-
-Unconscious for 2d3 x 5 Hours.
-A permanent -3 penalty to the following:
-
-
-
-
-4 Degrees of Failure-
-Unconscious for 2d3 Days.
-A permanant debility:
-
-
-
-
-
-5 Degrees of Failure-
-Death</value>
+You can spend strain to get +1 on a check. You may also spend 1 strain to reduce damage by 1 + Your
+Clarity(Mental), Toughness (Physical), or Force of Will (Spiritual) bonus. You may only spend for +1 to
+a check once per check, unless you have ranks in the appropriate skill, while you can reduce damage as
+much as you wish, given you have the strain to spend.</value>
   </data>
 </root>

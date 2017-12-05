@@ -1,6 +1,6 @@
 ﻿namespace OrpheusManager
 {
-    partial class rDeathChecks
+    partial class rCollaborative
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rDeathChecks));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rCollaborative));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -39,22 +39,23 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(309, 172);
+            this.label1.Location = new System.Drawing.Point(306, 126);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(410, 325);
-            this.label1.TabIndex = 154;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Size = new System.Drawing.Size(104, 117);
+            this.label1.TabIndex = 158;
+            this.label1.Text = "-1 to Overall Check.\r\n\r\n+0 to Overall Check.\r\n\r\n+1 to Overall Check.\r\n\r\n+2 to Ove" +
+    "rall Check.\r\n\r\n+3 to Overall Check.";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(254, 172);
+            this.label3.Location = new System.Drawing.Point(100, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 325);
-            this.label3.TabIndex = 153;
-            this.label3.Text = "Mental:\r\nPhysical:\r\nSpiritual:\r\n\r\n\r\n\r\n\r\nMental:\r\nPhysical:\r\nSpiritual:\r\n\r\n\r\n\r\n\r\nM" +
-    "ental:\r\nPhysical:\r\nSpiritual:\r\n\r\n\r\n\r\n\r\nMental:\r\nPhysical:\r\n\r\nSpiritual:";
+            this.label3.Size = new System.Drawing.Size(179, 117);
+            this.label3.TabIndex = 157;
+            this.label3.Text = "Lead PLayer\'s Result -4 (or less):\r\n\r\nLead PLayer\'s Result -3:\r\n\r\nLead PLayer\'s R" +
+    "esult -2:\r\n\r\nLead PLayer\'s Result -1:\r\n\r\nLead PLayer\'s Result +0 (or greater):";
             // 
             // label36
             // 
@@ -62,42 +63,41 @@
             this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label36.Location = new System.Drawing.Point(23, 19);
+            this.label36.Location = new System.Drawing.Point(21, 19);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(139, 24);
-            this.label36.TabIndex = 152;
-            this.label36.Text = "Death Checks";
+            this.label36.Size = new System.Drawing.Size(206, 24);
+            this.label36.TabIndex = 156;
+            this.label36.Text = "Collaborative Checks";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(40, 54);
+            this.label2.Location = new System.Drawing.Point(38, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(502, 494);
-            this.label2.TabIndex = 151;
+            this.label2.Size = new System.Drawing.Size(488, 52);
+            this.label2.TabIndex = 155;
             this.label2.Text = resources.GetString("label2.Text");
             // 
-            // rDeathChecks
+            // rCollaborative
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(771, 593);
+            this.ClientSize = new System.Drawing.Size(553, 279);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "rDeathChecks";
-            this.Text = "Orpheus Manager - Death Checks";
+            this.Name = "rCollaborative";
+            this.Text = "Orpheus Manager - Collaborative Checks";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label36;

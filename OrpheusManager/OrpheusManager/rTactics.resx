@@ -117,71 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
-
-
-
-All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
-
-
-
-All checks with a given sense (GM discretion.) May be healed by magick or surgery.
-All checks with Dexterity/Vitality (GM discretion.) May be healed by magick or surgery.
-All checks with Charisma or Willpower (GM discretion, take a long-term insanity.) May
-be healed by long-term therapy.
-
-
-
-Permanent Sense loss (blindness, deafness, etc. as appropriate by GM discretion.)
-Permanent limb loss, paralysis, etc. (GM discretion.) Roll a 1d3, on a 1-2 go
-unconscious for 2d3 additional days.
-Permanent madness, behavioral disorders, etc. (GM discretion)</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>At the end of a Scene in which you took at least 5 points of Damage beyond your track, you fall
-unconscious and must make a Death Check, checking Cognition, Vitality, or Willpower (as appropriate)
-against Damage taken in excess of the Track. Death Checks are not affected by Wound Penalties. Note
-that First Aid and Medicine can be used to aid a character at the end of a scene before they make their
-Death Check, provided they receive immediate aid. A failed Death Check has the following repercussions
-based on Degrees of Failure:
+    <value>Tactics cover many, many things. Some uses of Tactics could look like a situational bonus to combat
+based on flanking, surprise, intimidation, etc. granting a disadvantage to the defender, or an advantage
+to the attacker, depending on what makes the most narrative sense (GM discretion).
 
-1 Degree of Failure-
-Unconscious for 2d3 x 10 Minutes.
-A permanent -1 penalty to the following:
+You can use Tactics in or out of Combat. It is rolled as a normal Check with the appropriate Attribute
+(see below), and a Skill, if relevant. The player must determine what effect they wish to achieve, and
+calculate the Difficulty Value based on the table below. If the DV is not met, the player has 2 options:
 
+           1: On your next action, spend Initiative equal to the degrees of failure to use the Tactics. (Not
+               applicable to Tactics with “Opposed” difficulty)
 
+           2: Forfeit 1 Initiative (rather than the 3 normally required by Tactics) and cancel the Tactics.
 
+NOTE: Tactics that are martial in nature (Throwing or wrestling people, etc) always cost the full 3 Initiative.
 
-2 Degrees of Failure-
-Unconscious for 2d3 Hours.
-A permanent -2 penalty to the following:
-
-
-
-
-3 Degrees of Failure-
-Unconscious for 2d3 x 5 Hours.
-A permanent -3 penalty to the following:
-
-
-
-
-4 Degrees of Failure-
-Unconscious for 2d3 Days.
-A permanant debility:
-
-
-
-
-
-5 Degrees of Failure-
-Death</value>
+Many Tactics elements can be bought multiple times for one Tactics action, adding their difficulty cost
+multiple times. Each Tactics element is listed with the maximum number of stacks it can have in one
+Tactics action.</value>
   </data>
 </root>

@@ -65,7 +65,7 @@
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "rMotivations";
-            this.Text = "Orpheus Manager";
+            this.Text = "Orpheus Manager - Motivations";
             this.ResumeLayout(false);
             this.PerformLayout();
 
