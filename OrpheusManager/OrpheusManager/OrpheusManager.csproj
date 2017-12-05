@@ -149,6 +149,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rActions.Designer.cs">
+      <DependentUpon>rActions.cs</DependentUpon>
+    </Compile>
     <Compile Include="rAttributes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,12 @@
     </Compile>
     <Compile Include="rBleeding.Designer.cs">
       <DependentUpon>rBleeding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rCollaborative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rCollaborative.Designer.cs">
+      <DependentUpon>rCollaborative.cs</DependentUpon>
     </Compile>
     <Compile Include="rDAttributes.cs">
       <SubType>Form</SubType>
@@ -197,11 +209,29 @@
     <Compile Include="rRolls.Designer.cs">
       <DependentUpon>rRolls.cs</DependentUpon>
     </Compile>
+    <Compile Include="rSkillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rSkillList.Designer.cs">
+      <DependentUpon>rSkillList.cs</DependentUpon>
+    </Compile>
     <Compile Include="rSkills.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rSkills.Designer.cs">
       <DependentUpon>rSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rStrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rStrain.Designer.cs">
+      <DependentUpon>rStrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rTactics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rTactics.Designer.cs">
+      <DependentUpon>rTactics.cs</DependentUpon>
     </Compile>
     <Compile Include="rTemporaryInsanity.cs">
       <SubType>Form</SubType>
@@ -214,6 +244,12 @@
     </Compile>
     <Compile Include="rUpChecks.Designer.cs">
       <DependentUpon>rUpChecks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rWoundPenalties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rWoundPenalties.Designer.cs">
+      <DependentUpon>rWoundPenalties.cs</DependentUpon>
     </Compile>
     <Compile Include="vertBar.cs">
       <SubType>Component</SubType>
@@ -278,11 +314,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rActions.resx">
+      <DependentUpon>rActions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rAttributes.resx">
       <DependentUpon>rAttributes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rBleeding.resx">
       <DependentUpon>rBleeding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rCollaborative.resx">
+      <DependentUpon>rCollaborative.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rDAttributes.resx">
       <DependentUpon>rDAttributes.cs</DependentUpon>
@@ -302,14 +344,26 @@
     <EmbeddedResource Include="rRolls.resx">
       <DependentUpon>rRolls.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rSkillList.resx">
+      <DependentUpon>rSkillList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rSkills.resx">
       <DependentUpon>rSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rStrain.resx">
+      <DependentUpon>rStrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rTactics.resx">
+      <DependentUpon>rTactics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rTemporaryInsanity.resx">
       <DependentUpon>rTemporaryInsanity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rUpChecks.resx">
       <DependentUpon>rUpChecks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rWoundPenalties.resx">
+      <DependentUpon>rWoundPenalties.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

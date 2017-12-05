@@ -1806,5 +1806,89 @@ namespace OrpheusManager
             Form rluk = new rLuck();
             rluk.Show();
         }
+
+        private void woundPenaltiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rpen = new rWoundPenalties();
+            rpen.Show();
+        }
+
+        private void strainToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rstn = new rStrain();
+            rstn.Show();
+        }
+
+        private void skillListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rsls = new rSkillList();
+            rsls.Show();
+        }
+
+        private void skillRanksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rskl = new rSkills();
+            rskl.Show();
+        }
+
+        private void skillListToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rsls = new rSkillList();
+            rsls.Show();
+        }
+
+        private void attributeTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ratt = new rAttributes();
+            ratt.Show();
+        }
+
+        private void derivedAttributesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rdatt = new rDAttributes();
+            rdatt.Show();
+        }
+
+        private void rollingDiceToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rrol = new rRolls();
+            rrol.Show();
+        }
+
+        private void motivationsToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form rmot = new rMotivations();
+            rmot.Show();
+        }
+
+        private void strainToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rstn = new rStrain();
+            rstn.Show();
+        }
+
+        private void luckChecksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rluk = new rLuck();
+            rluk.Show();
+        }
+
+        private void collaborativeChecksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rcol = new rCollaborative();
+            rcol.Show();
+        }
+
+        private void tacticsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rtac = new rTactics();
+            rtac.Show();
+        }
+
+        private void listOfCommonActionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ract = new rActions();
+            ract.Show();
+        }
     }
 }
