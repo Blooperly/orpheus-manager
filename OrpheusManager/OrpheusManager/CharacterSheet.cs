@@ -1132,6 +1132,72 @@ namespace OrpheusManager
             formGraphics.Dispose();
         }
 
+        public void updateAcclimations()
+        {
+            // Acclimations
+            System.Drawing.Graphics formGraphics;
+
+            formGraphics = this.CreateGraphics();
+
+            System.Drawing.SolidBrush clearBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#1B1B1B"));
+            formGraphics.FillRectangle(clearBrush, 49, 267, 163, 27);
+
+            cAcc1.Visible = false;
+            cAcc2.Visible = false;
+            cAcc3.Visible = false;
+            cAcc4.Visible = false;
+
+            if (CDATA.cAcc1 == 1)
+            {
+                System.Drawing.Pen ruthlessPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#683636"));
+                System.Drawing.SolidBrush ruthlessBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#683636"));
+                formGraphics.DrawEllipse(ruthlessPen, 50, 268, 24, 24);
+                formGraphics.FillEllipse(ruthlessBrush, 50, 268, 24, 24);
+
+                cAcc1.Left = 55;
+                cAcc1.Top = 274;
+                cAcc1.Visible = true;
+            }
+
+            if (CDATA.cAcc2 == 1)
+            {
+                System.Drawing.Pen calousPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#676836"));
+                System.Drawing.SolidBrush calousBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#676836"));
+                formGraphics.DrawEllipse(calousPen, 95, 268, 24, 24);
+                formGraphics.FillEllipse(calousBrush, 95, 268, 24, 24);
+
+                cAcc2.Left = 101;
+                cAcc2.Top = 274;
+                cAcc2.Visible = true;
+            }
+
+            if (CDATA.cAcc3 == 1)
+            {
+                System.Drawing.Pen stomachPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#366837"));
+                System.Drawing.SolidBrush stomachBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#366837"));
+                formGraphics.DrawEllipse(stomachPen, 140, 268, 24, 24);
+                formGraphics.FillEllipse(stomachBrush, 140, 268, 24, 24);
+
+                cAcc3.Left = 146;
+                cAcc3.Top = 274;
+                cAcc3.Visible = true;
+            }
+
+            if (CDATA.cAcc4 == 1)
+            {
+                System.Drawing.Pen fatalisticPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#364068"));
+                System.Drawing.SolidBrush fatalisticBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#364068"));
+                formGraphics.DrawEllipse(fatalisticPen, 185, 268, 24, 24);
+                formGraphics.FillEllipse(fatalisticBrush, 185, 268, 24, 24);
+
+                cAcc4.Left = 191;
+                cAcc4.Top = 274;
+                cAcc4.Visible = true;
+            }
+
+            formGraphics.Dispose();
+        }
+
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CDATA.cNotes = cNotes.Text;
@@ -1889,6 +1955,42 @@ namespace OrpheusManager
         {
             Form ract = new rActions();
             ract.Show();
+        }
+
+        private void initiativeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rini = new rInitiative();
+            rini.Show();
+        }
+
+        private void initiativeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rini = new rInitiative();
+            rini.Show();
+        }
+
+        private void tacticsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rtac = new rTactics();
+            rtac.Show();
+        }
+
+        private void movementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rmov = new rMovement();
+            rmov.Show();
+        }
+
+        private void listOfCommonActionsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form ract = new rActions();
+            ract.Show();
+        }
+
+        private void listOfWeaponsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form rwep = new rMeleeWeapons();
+            rwep.Show();
         }
     }
 }

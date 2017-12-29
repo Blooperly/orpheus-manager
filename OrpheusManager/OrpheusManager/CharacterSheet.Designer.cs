@@ -49,11 +49,24 @@
             this.motivationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acclimationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.referenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.attributesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.attributeTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.derivedAttributesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.skillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skillRanksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skillListToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gameMechanicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rollingDiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.motivationsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.strainToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.luckChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.collaborativeChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consequencesOfDamageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dazeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bleedingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temporaryInsanityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.woundPenaltiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.upChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deathChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -319,21 +332,13 @@
             this.cAcc2 = new System.Windows.Forms.Label();
             this.cAcc3 = new System.Windows.Forms.Label();
             this.cAcc4 = new System.Windows.Forms.Label();
-            this.woundPenaltiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.skillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.skillListToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.skillRanksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.attributesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.attributeTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.derivedAttributesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.gameMechanicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rollingDiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.motivationsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.strainToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.luckChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.collaborativeChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tacticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listOfCommonActionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.combatMechanicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.initiativeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tacticsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.movementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listOfCommonActionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.weaponsArmorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listOfWeaponsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -501,10 +506,104 @@
             this.attributesToolStripMenuItem2,
             this.skillsToolStripMenuItem,
             this.gameMechanicsToolStripMenuItem,
+            this.combatMechanicsToolStripMenuItem,
             this.consequencesOfDamageToolStripMenuItem});
             this.referenceToolStripMenuItem.Name = "referenceToolStripMenuItem";
             this.referenceToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.referenceToolStripMenuItem.Text = "Reference";
+            // 
+            // attributesToolStripMenuItem2
+            // 
+            this.attributesToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.attributeTypesToolStripMenuItem,
+            this.derivedAttributesToolStripMenuItem1});
+            this.attributesToolStripMenuItem2.Name = "attributesToolStripMenuItem2";
+            this.attributesToolStripMenuItem2.Size = new System.Drawing.Size(212, 22);
+            this.attributesToolStripMenuItem2.Text = "Attributes";
+            // 
+            // attributeTypesToolStripMenuItem
+            // 
+            this.attributeTypesToolStripMenuItem.Name = "attributeTypesToolStripMenuItem";
+            this.attributeTypesToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.attributeTypesToolStripMenuItem.Text = "Attribute Types";
+            this.attributeTypesToolStripMenuItem.Click += new System.EventHandler(this.attributeTypesToolStripMenuItem_Click);
+            // 
+            // derivedAttributesToolStripMenuItem1
+            // 
+            this.derivedAttributesToolStripMenuItem1.Name = "derivedAttributesToolStripMenuItem1";
+            this.derivedAttributesToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
+            this.derivedAttributesToolStripMenuItem1.Text = "Derived Attributes";
+            this.derivedAttributesToolStripMenuItem1.Click += new System.EventHandler(this.derivedAttributesToolStripMenuItem1_Click);
+            // 
+            // skillsToolStripMenuItem
+            // 
+            this.skillsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.skillRanksToolStripMenuItem,
+            this.skillListToolStripMenuItem1});
+            this.skillsToolStripMenuItem.Name = "skillsToolStripMenuItem";
+            this.skillsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.skillsToolStripMenuItem.Text = "Skills";
+            // 
+            // skillRanksToolStripMenuItem
+            // 
+            this.skillRanksToolStripMenuItem.Name = "skillRanksToolStripMenuItem";
+            this.skillRanksToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.skillRanksToolStripMenuItem.Text = "Skill Ranks";
+            this.skillRanksToolStripMenuItem.Click += new System.EventHandler(this.skillRanksToolStripMenuItem_Click);
+            // 
+            // skillListToolStripMenuItem1
+            // 
+            this.skillListToolStripMenuItem1.Name = "skillListToolStripMenuItem1";
+            this.skillListToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.skillListToolStripMenuItem1.Text = "Skill List";
+            this.skillListToolStripMenuItem1.Click += new System.EventHandler(this.skillListToolStripMenuItem1_Click);
+            // 
+            // gameMechanicsToolStripMenuItem
+            // 
+            this.gameMechanicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rollingDiceToolStripMenuItem1,
+            this.motivationsToolStripMenuItem2,
+            this.strainToolStripMenuItem1,
+            this.luckChecksToolStripMenuItem,
+            this.collaborativeChecksToolStripMenuItem});
+            this.gameMechanicsToolStripMenuItem.Name = "gameMechanicsToolStripMenuItem";
+            this.gameMechanicsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.gameMechanicsToolStripMenuItem.Text = "Game Mechanics";
+            // 
+            // rollingDiceToolStripMenuItem1
+            // 
+            this.rollingDiceToolStripMenuItem1.Name = "rollingDiceToolStripMenuItem1";
+            this.rollingDiceToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
+            this.rollingDiceToolStripMenuItem1.Text = "Rolling Dice";
+            this.rollingDiceToolStripMenuItem1.Click += new System.EventHandler(this.rollingDiceToolStripMenuItem1_Click);
+            // 
+            // motivationsToolStripMenuItem2
+            // 
+            this.motivationsToolStripMenuItem2.Name = "motivationsToolStripMenuItem2";
+            this.motivationsToolStripMenuItem2.Size = new System.Drawing.Size(185, 22);
+            this.motivationsToolStripMenuItem2.Text = "Motivations";
+            this.motivationsToolStripMenuItem2.Click += new System.EventHandler(this.motivationsToolStripMenuItem2_Click);
+            // 
+            // strainToolStripMenuItem1
+            // 
+            this.strainToolStripMenuItem1.Name = "strainToolStripMenuItem1";
+            this.strainToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
+            this.strainToolStripMenuItem1.Text = "Strain";
+            this.strainToolStripMenuItem1.Click += new System.EventHandler(this.strainToolStripMenuItem1_Click);
+            // 
+            // luckChecksToolStripMenuItem
+            // 
+            this.luckChecksToolStripMenuItem.Name = "luckChecksToolStripMenuItem";
+            this.luckChecksToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.luckChecksToolStripMenuItem.Text = "Luck Checks";
+            this.luckChecksToolStripMenuItem.Click += new System.EventHandler(this.luckChecksToolStripMenuItem_Click);
+            // 
+            // collaborativeChecksToolStripMenuItem
+            // 
+            this.collaborativeChecksToolStripMenuItem.Name = "collaborativeChecksToolStripMenuItem";
+            this.collaborativeChecksToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.collaborativeChecksToolStripMenuItem.Text = "Collaborative Checks";
+            this.collaborativeChecksToolStripMenuItem.Click += new System.EventHandler(this.collaborativeChecksToolStripMenuItem_Click);
             // 
             // consequencesOfDamageToolStripMenuItem
             // 
@@ -545,6 +644,13 @@
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(173, 6);
+            // 
+            // woundPenaltiesToolStripMenuItem
+            // 
+            this.woundPenaltiesToolStripMenuItem.Name = "woundPenaltiesToolStripMenuItem";
+            this.woundPenaltiesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.woundPenaltiesToolStripMenuItem.Text = "Wound Penalties";
+            this.woundPenaltiesToolStripMenuItem.Click += new System.EventHandler(this.woundPenaltiesToolStripMenuItem_Click);
             // 
             // upChecksToolStripMenuItem
             // 
@@ -3404,121 +3510,60 @@
             this.cAcc4.Text = "F";
             this.cAcc4.Visible = false;
             // 
-            // woundPenaltiesToolStripMenuItem
+            // combatMechanicsToolStripMenuItem
             // 
-            this.woundPenaltiesToolStripMenuItem.Name = "woundPenaltiesToolStripMenuItem";
-            this.woundPenaltiesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.woundPenaltiesToolStripMenuItem.Text = "Wound Penalties";
-            this.woundPenaltiesToolStripMenuItem.Click += new System.EventHandler(this.woundPenaltiesToolStripMenuItem_Click);
+            this.combatMechanicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.initiativeToolStripMenuItem1,
+            this.listOfCommonActionsToolStripMenuItem1,
+            this.tacticsToolStripMenuItem1,
+            this.movementToolStripMenuItem,
+            this.weaponsArmorToolStripMenuItem});
+            this.combatMechanicsToolStripMenuItem.Name = "combatMechanicsToolStripMenuItem";
+            this.combatMechanicsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.combatMechanicsToolStripMenuItem.Text = "Combat Mechanics";
             // 
-            // skillsToolStripMenuItem
+            // initiativeToolStripMenuItem1
             // 
-            this.skillsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.skillRanksToolStripMenuItem,
-            this.skillListToolStripMenuItem1});
-            this.skillsToolStripMenuItem.Name = "skillsToolStripMenuItem";
-            this.skillsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
-            this.skillsToolStripMenuItem.Text = "Skills";
+            this.initiativeToolStripMenuItem1.Name = "initiativeToolStripMenuItem1";
+            this.initiativeToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.initiativeToolStripMenuItem1.Text = "Initiative";
+            this.initiativeToolStripMenuItem1.Click += new System.EventHandler(this.initiativeToolStripMenuItem1_Click);
             // 
-            // skillListToolStripMenuItem1
+            // tacticsToolStripMenuItem1
             // 
-            this.skillListToolStripMenuItem1.Name = "skillListToolStripMenuItem1";
-            this.skillListToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.skillListToolStripMenuItem1.Text = "Skill List";
-            this.skillListToolStripMenuItem1.Click += new System.EventHandler(this.skillListToolStripMenuItem1_Click);
+            this.tacticsToolStripMenuItem1.Name = "tacticsToolStripMenuItem1";
+            this.tacticsToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.tacticsToolStripMenuItem1.Text = "Tactics";
+            this.tacticsToolStripMenuItem1.Click += new System.EventHandler(this.tacticsToolStripMenuItem1_Click);
             // 
-            // skillRanksToolStripMenuItem
+            // movementToolStripMenuItem
             // 
-            this.skillRanksToolStripMenuItem.Name = "skillRanksToolStripMenuItem";
-            this.skillRanksToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.skillRanksToolStripMenuItem.Text = "Skill Ranks";
-            this.skillRanksToolStripMenuItem.Click += new System.EventHandler(this.skillRanksToolStripMenuItem_Click);
+            this.movementToolStripMenuItem.Name = "movementToolStripMenuItem";
+            this.movementToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.movementToolStripMenuItem.Text = "Movement";
+            this.movementToolStripMenuItem.Click += new System.EventHandler(this.movementToolStripMenuItem_Click);
             // 
-            // attributesToolStripMenuItem2
+            // listOfCommonActionsToolStripMenuItem1
             // 
-            this.attributesToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.attributeTypesToolStripMenuItem,
-            this.derivedAttributesToolStripMenuItem1});
-            this.attributesToolStripMenuItem2.Name = "attributesToolStripMenuItem2";
-            this.attributesToolStripMenuItem2.Size = new System.Drawing.Size(212, 22);
-            this.attributesToolStripMenuItem2.Text = "Attributes";
+            this.listOfCommonActionsToolStripMenuItem1.Name = "listOfCommonActionsToolStripMenuItem1";
+            this.listOfCommonActionsToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.listOfCommonActionsToolStripMenuItem1.Text = "List of Common Actions";
+            this.listOfCommonActionsToolStripMenuItem1.Click += new System.EventHandler(this.listOfCommonActionsToolStripMenuItem1_Click);
             // 
-            // attributeTypesToolStripMenuItem
+            // weaponsArmorToolStripMenuItem
             // 
-            this.attributeTypesToolStripMenuItem.Name = "attributeTypesToolStripMenuItem";
-            this.attributeTypesToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.attributeTypesToolStripMenuItem.Text = "Attribute Types";
-            this.attributeTypesToolStripMenuItem.Click += new System.EventHandler(this.attributeTypesToolStripMenuItem_Click);
+            this.weaponsArmorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listOfWeaponsToolStripMenuItem});
+            this.weaponsArmorToolStripMenuItem.Name = "weaponsArmorToolStripMenuItem";
+            this.weaponsArmorToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.weaponsArmorToolStripMenuItem.Text = "Weapons/Armor";
             // 
-            // derivedAttributesToolStripMenuItem1
+            // listOfWeaponsToolStripMenuItem
             // 
-            this.derivedAttributesToolStripMenuItem1.Name = "derivedAttributesToolStripMenuItem1";
-            this.derivedAttributesToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
-            this.derivedAttributesToolStripMenuItem1.Text = "Derived Attributes";
-            this.derivedAttributesToolStripMenuItem1.Click += new System.EventHandler(this.derivedAttributesToolStripMenuItem1_Click);
-            // 
-            // gameMechanicsToolStripMenuItem
-            // 
-            this.gameMechanicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listOfCommonActionsToolStripMenuItem,
-            this.rollingDiceToolStripMenuItem1,
-            this.motivationsToolStripMenuItem2,
-            this.strainToolStripMenuItem1,
-            this.tacticsToolStripMenuItem,
-            this.luckChecksToolStripMenuItem,
-            this.collaborativeChecksToolStripMenuItem});
-            this.gameMechanicsToolStripMenuItem.Name = "gameMechanicsToolStripMenuItem";
-            this.gameMechanicsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
-            this.gameMechanicsToolStripMenuItem.Text = "Game Mechanics";
-            // 
-            // rollingDiceToolStripMenuItem1
-            // 
-            this.rollingDiceToolStripMenuItem1.Name = "rollingDiceToolStripMenuItem1";
-            this.rollingDiceToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
-            this.rollingDiceToolStripMenuItem1.Text = "Rolling Dice";
-            this.rollingDiceToolStripMenuItem1.Click += new System.EventHandler(this.rollingDiceToolStripMenuItem1_Click);
-            // 
-            // motivationsToolStripMenuItem2
-            // 
-            this.motivationsToolStripMenuItem2.Name = "motivationsToolStripMenuItem2";
-            this.motivationsToolStripMenuItem2.Size = new System.Drawing.Size(203, 22);
-            this.motivationsToolStripMenuItem2.Text = "Motivations";
-            this.motivationsToolStripMenuItem2.Click += new System.EventHandler(this.motivationsToolStripMenuItem2_Click);
-            // 
-            // strainToolStripMenuItem1
-            // 
-            this.strainToolStripMenuItem1.Name = "strainToolStripMenuItem1";
-            this.strainToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
-            this.strainToolStripMenuItem1.Text = "Strain";
-            this.strainToolStripMenuItem1.Click += new System.EventHandler(this.strainToolStripMenuItem1_Click);
-            // 
-            // luckChecksToolStripMenuItem
-            // 
-            this.luckChecksToolStripMenuItem.Name = "luckChecksToolStripMenuItem";
-            this.luckChecksToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.luckChecksToolStripMenuItem.Text = "Luck Checks";
-            this.luckChecksToolStripMenuItem.Click += new System.EventHandler(this.luckChecksToolStripMenuItem_Click);
-            // 
-            // collaborativeChecksToolStripMenuItem
-            // 
-            this.collaborativeChecksToolStripMenuItem.Name = "collaborativeChecksToolStripMenuItem";
-            this.collaborativeChecksToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.collaborativeChecksToolStripMenuItem.Text = "Collaborative Checks";
-            this.collaborativeChecksToolStripMenuItem.Click += new System.EventHandler(this.collaborativeChecksToolStripMenuItem_Click);
-            // 
-            // tacticsToolStripMenuItem
-            // 
-            this.tacticsToolStripMenuItem.Name = "tacticsToolStripMenuItem";
-            this.tacticsToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.tacticsToolStripMenuItem.Text = "Tactics";
-            this.tacticsToolStripMenuItem.Click += new System.EventHandler(this.tacticsToolStripMenuItem_Click);
-            // 
-            // listOfCommonActionsToolStripMenuItem
-            // 
-            this.listOfCommonActionsToolStripMenuItem.Name = "listOfCommonActionsToolStripMenuItem";
-            this.listOfCommonActionsToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.listOfCommonActionsToolStripMenuItem.Text = "List of Common Actions";
-            this.listOfCommonActionsToolStripMenuItem.Click += new System.EventHandler(this.listOfCommonActionsToolStripMenuItem_Click);
+            this.listOfWeaponsToolStripMenuItem.Name = "listOfWeaponsToolStripMenuItem";
+            this.listOfWeaponsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.listOfWeaponsToolStripMenuItem.Text = "List of Weapons";
+            this.listOfWeaponsToolStripMenuItem.Click += new System.EventHandler(this.listOfWeaponsToolStripMenuItem_Click);
             // 
             // CharacterSheet
             // 
@@ -4116,8 +4161,13 @@
         private System.Windows.Forms.ToolStripMenuItem strainToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem luckChecksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem collaborativeChecksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tacticsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listOfCommonActionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem combatMechanicsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem initiativeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tacticsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem movementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listOfCommonActionsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem weaponsArmorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listOfWeaponsToolStripMenuItem;
     }
 }
 
