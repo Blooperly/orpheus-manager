@@ -37,7 +37,7 @@ namespace OrpheusManager
                 CDATA.cMot1 = nCharMot1.Text;
                 CDATA.cMot2 = nCharMot2.Text;
                 CDATA.cMot3 = nCharMot3.Text;
-                Int32.TryParse(nCharLv.Text, out CDATA.cLevel);
+                Int32.TryParse("0", out CDATA.cLevel);
                 Int32.TryParse(nCharPer.Text, out CDATA.cAttributes[0]);
                 Int32.TryParse(nCharCog.Text, out CDATA.cAttributes[1]);
                 Int32.TryParse(nCharDex.Text, out CDATA.cAttributes[2]);
@@ -64,8 +64,6 @@ namespace OrpheusManager
             int remaining = 0;
             int lv = 0;
 
-            Int32.TryParse(nCharLv.Text, out lv);
-
             if (lv >= 20) max = 20;
             else if (lv >= 16) max = 19;
             else if (lv >= 12) max = 18;
@@ -90,8 +88,6 @@ namespace OrpheusManager
             int max = 0;
             int remaining = 0;
             int lv = 0;
-
-            Int32.TryParse(nCharLv.Text, out lv);
 
             if (lv >= 20) max = 20;
             else if (lv >= 16) max = 19;
@@ -118,8 +114,6 @@ namespace OrpheusManager
             int remaining = 0;
             int lv = 0;
 
-            Int32.TryParse(nCharLv.Text, out lv);
-
             if (lv >= 20) max = 20;
             else if (lv >= 16) max = 19;
             else if (lv >= 12) max = 18;
@@ -144,8 +138,6 @@ namespace OrpheusManager
             int max = 0;
             int remaining = 0;
             int lv = 0;
-
-            Int32.TryParse(nCharLv.Text, out lv);
 
             if (lv >= 20) max = 20;
             else if (lv >= 16) max = 19;
@@ -172,8 +164,6 @@ namespace OrpheusManager
             int remaining = 0;
             int lv = 0;
 
-            Int32.TryParse(nCharLv.Text, out lv);
-
             if (lv >= 20) max = 20;
             else if (lv >= 16) max = 19;
             else if (lv >= 12) max = 18;
@@ -199,8 +189,6 @@ namespace OrpheusManager
             int remaining = 0;
             int lv = 0;
 
-            Int32.TryParse(nCharLv.Text, out lv);
-
             if (lv >= 20) max = 20;
             else if (lv >= 16) max = 19;
             else if (lv >= 12) max = 18;
@@ -225,8 +213,6 @@ namespace OrpheusManager
             int max = 0;
             int remaining = 0;
             int lv = 0;
-
-            Int32.TryParse(nCharLv.Text, out lv);
 
             if (lv >= 20) max = 20;
             else if (lv >= 16) max = 19;

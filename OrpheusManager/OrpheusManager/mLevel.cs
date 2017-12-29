@@ -117,6 +117,7 @@ namespace OrpheusManager
             mAcc.ShowDialog();
             Program.mainform.writeDATA();
             writeLDATA();
+            Program.mainform.updateAcclimations();
         }
 
         private void button10_Click(object sender, EventArgs e)

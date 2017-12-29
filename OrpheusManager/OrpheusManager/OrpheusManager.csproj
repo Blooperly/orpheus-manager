@@ -191,17 +191,35 @@
     <Compile Include="rDeathChecks.Designer.cs">
       <DependentUpon>rDeathChecks.cs</DependentUpon>
     </Compile>
+    <Compile Include="rInitiative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rInitiative.Designer.cs">
+      <DependentUpon>rInitiative.cs</DependentUpon>
+    </Compile>
     <Compile Include="rLuck.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rLuck.Designer.cs">
       <DependentUpon>rLuck.cs</DependentUpon>
     </Compile>
+    <Compile Include="rMeleeWeapons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMeleeWeapons.Designer.cs">
+      <DependentUpon>rMeleeWeapons.cs</DependentUpon>
+    </Compile>
     <Compile Include="rMotivations.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rMotivations.Designer.cs">
       <DependentUpon>rMotivations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMovement.Designer.cs">
+      <DependentUpon>rMovement.cs</DependentUpon>
     </Compile>
     <Compile Include="rRolls.cs">
       <SubType>Form</SubType>
@@ -335,11 +353,20 @@
     <EmbeddedResource Include="rDeathChecks.resx">
       <DependentUpon>rDeathChecks.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rInitiative.resx">
+      <DependentUpon>rInitiative.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rLuck.resx">
       <DependentUpon>rLuck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rMeleeWeapons.resx">
+      <DependentUpon>rMeleeWeapons.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rMotivations.resx">
       <DependentUpon>rMotivations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMovement.resx">
+      <DependentUpon>rMovement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rRolls.resx">
       <DependentUpon>rRolls.cs</DependentUpon>

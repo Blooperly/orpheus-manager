@@ -44,7 +44,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.nCharMot3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.nCharLv = new System.Windows.Forms.TextBox();
             this.nCharVit = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.nCharDex = new System.Windows.Forms.TextBox();
@@ -61,7 +60,6 @@
             this.nCharArch2 = new System.Windows.Forms.ComboBox();
             this.nCharArch3 = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.remainingAtt = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -210,14 +208,6 @@
             this.label8.Size = new System.Drawing.Size(65, 13);
             this.label8.TabIndex = 17;
             this.label8.Text = "Motivation 3";
-            // 
-            // nCharLv
-            // 
-            this.nCharLv.Location = new System.Drawing.Point(215, 83);
-            this.nCharLv.Name = "nCharLv";
-            this.nCharLv.Size = new System.Drawing.Size(27, 20);
-            this.nCharLv.TabIndex = 1;
-            this.nCharLv.TextChanged += new System.EventHandler(this.nCharLv_TextChanged);
             // 
             // nCharVit
             // 
@@ -396,17 +386,6 @@
             this.label15.TabIndex = 36;
             this.label15.Text = "New Character";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(206, 61);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 16);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "Level";
-            // 
             // remainingAtt
             // 
             this.remainingAtt.AutoSize = true;
@@ -437,7 +416,6 @@
             this.ClientSize = new System.Drawing.Size(392, 529);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.remainingAtt);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.nCharArch3);
             this.Controls.Add(this.nCharArch2);
@@ -454,7 +432,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.nCharPer);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.nCharLv);
             this.Controls.Add(this.nCharMot3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.nCharMot2);
@@ -498,7 +475,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox nCharMot3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox nCharLv;
         private System.Windows.Forms.TextBox nCharVit;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox nCharDex;
@@ -515,7 +491,6 @@
         private System.Windows.Forms.ComboBox nCharArch2;
         private System.Windows.Forms.ComboBox nCharArch3;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label remainingAtt;
         private System.Windows.Forms.Label label6;
     }

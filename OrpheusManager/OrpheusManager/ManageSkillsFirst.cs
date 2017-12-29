@@ -21,7 +21,7 @@ namespace OrpheusManager
         {
             this.Text = "Orpheus Manager - " + CDATA.cName;
 
-            reportAlt2.Text = "Combat Skills: 16 Levels\nNon-Combat Skills: 18 Levels";
+            reportAlt2.Text = "Combat Skills: 16 Levels\nNon-Combat Skills: 23 Levels";
             reportAlt.Text = "Assign Lv 0 Skills ONLY,\nAdditional Skill Points will be\nlisted in the \"Level Up\" tab.\n";
 
             // Load Current
@@ -254,7 +254,7 @@ namespace OrpheusManager
 
         private void skillCheck2()
         {
-            int temp = 18;
+            int temp = 23;
             int temp2 = 16;
             int temp3;
 
