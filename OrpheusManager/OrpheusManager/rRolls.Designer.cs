@@ -153,7 +153,7 @@
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "rRolls";
-            this.Text = "Orpheus Manager";
+            this.Text = "Orpheus Manager - Rolling Dice";
             this.ResumeLayout(false);
             this.PerformLayout();
 
