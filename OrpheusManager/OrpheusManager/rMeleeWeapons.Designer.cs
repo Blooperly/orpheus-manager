@@ -42,9 +42,10 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(97, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 221);
+            this.label1.Size = new System.Drawing.Size(309, 221);
             this.label1.TabIndex = 150;
             this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 

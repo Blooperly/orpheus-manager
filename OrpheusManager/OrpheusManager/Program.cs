@@ -29,7 +29,7 @@ namespace OrpheusManager
         public static string cMot5 = " ";
         public static string cMot6 = " ";
         public static string cMot7 = " ";
-        public static string cNotes = "";
+        public static string cNotes = "Welcome to the Orpheus Manager!\r\n-------------------------------------------------------\r\n\r\nTo create a new character sheet, click on \"File > New\". This will launch a character creation dialog. You MUST input your starting skills and ablities when prompted, as some calculations rely on starting skill ranks.\r\n\r\nCharacter sheets can be saved as .txt files by clicking \"File > Save\". Saved character sheets can be loaded by clicking \"File > Open\"\r\n\r\nThe \"Edit\" tab allows you to change all the values of your character sheet. \"Edit > Level Up\" tracks all of the upgrades you have free to spend.\r\n\r\nThe \"Reference\" tab has excerpts from the official rules that can serve as quick references while you play. Some nuance is excluded, and the official rules should be trusted when in doubt.";
         public static int cMentalStrain = 5;
         public static int cPhysicalStrain = 10;
         public static int cSpiritualStrain = 12;
@@ -40,8 +40,8 @@ namespace OrpheusManager
         public static int cOverFocus = 0;
         public static int cOverHealth = 0;
         public static int cOverSanity = 0;
-        public static int cInitialCsp = 0;
-        public static int cInitialNcsp = 0;
+        public static int cInitialCsp = 43;
+        public static int cInitialNcsp = 51;
         public static int cAcc1 = 0;
         public static int cAcc2 = 0;
         public static int cAcc3 = 0;

@@ -130,11 +130,11 @@ Baseball Bat
 
 .45 Bullet, Machete, Fire Axe
 
-.556 Bullet, Sword, Shotgun, Small Improvised Explosive
+5.56 Bullet, Sword, Shotgun, Small Improvised Explosive
 
 Enormous Blunt Object
 
-50 Cal Sniper Round, Greatsword, Large IED, Military Grenades</value>
+.50 Cal Sniper Round, Greatsword, Large IED, Military Grenades</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Weapons function as bonus successes to your damage. The difference, however, is that the damage
