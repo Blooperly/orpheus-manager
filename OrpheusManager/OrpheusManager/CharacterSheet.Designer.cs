@@ -61,6 +61,13 @@
             this.strainToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.luckChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.collaborativeChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.combatMechanicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.initiativeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listOfCommonActionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tacticsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.movementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.weaponsArmorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listOfWeaponsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consequencesOfDamageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dazeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bleedingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -332,13 +339,13 @@
             this.cAcc2 = new System.Windows.Forms.Label();
             this.cAcc3 = new System.Windows.Forms.Label();
             this.cAcc4 = new System.Windows.Forms.Label();
-            this.combatMechanicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.initiativeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tacticsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.movementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listOfCommonActionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.weaponsArmorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listOfWeaponsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.situationalModifiersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opportunityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.advantageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.attackingAMeleeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.surpriseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movingTargetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rushToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -604,6 +611,62 @@
             this.collaborativeChecksToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.collaborativeChecksToolStripMenuItem.Text = "Collaborative Checks";
             this.collaborativeChecksToolStripMenuItem.Click += new System.EventHandler(this.collaborativeChecksToolStripMenuItem_Click);
+            // 
+            // combatMechanicsToolStripMenuItem
+            // 
+            this.combatMechanicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.initiativeToolStripMenuItem1,
+            this.listOfCommonActionsToolStripMenuItem1,
+            this.tacticsToolStripMenuItem1,
+            this.movementToolStripMenuItem,
+            this.weaponsArmorToolStripMenuItem,
+            this.situationalModifiersToolStripMenuItem});
+            this.combatMechanicsToolStripMenuItem.Name = "combatMechanicsToolStripMenuItem";
+            this.combatMechanicsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.combatMechanicsToolStripMenuItem.Text = "Combat Mechanics";
+            // 
+            // initiativeToolStripMenuItem1
+            // 
+            this.initiativeToolStripMenuItem1.Name = "initiativeToolStripMenuItem1";
+            this.initiativeToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.initiativeToolStripMenuItem1.Text = "Initiative";
+            this.initiativeToolStripMenuItem1.Click += new System.EventHandler(this.initiativeToolStripMenuItem1_Click);
+            // 
+            // listOfCommonActionsToolStripMenuItem1
+            // 
+            this.listOfCommonActionsToolStripMenuItem1.Name = "listOfCommonActionsToolStripMenuItem1";
+            this.listOfCommonActionsToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.listOfCommonActionsToolStripMenuItem1.Text = "List of Common Actions";
+            this.listOfCommonActionsToolStripMenuItem1.Click += new System.EventHandler(this.listOfCommonActionsToolStripMenuItem1_Click);
+            // 
+            // tacticsToolStripMenuItem1
+            // 
+            this.tacticsToolStripMenuItem1.Name = "tacticsToolStripMenuItem1";
+            this.tacticsToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.tacticsToolStripMenuItem1.Text = "Tactics";
+            this.tacticsToolStripMenuItem1.Click += new System.EventHandler(this.tacticsToolStripMenuItem1_Click);
+            // 
+            // movementToolStripMenuItem
+            // 
+            this.movementToolStripMenuItem.Name = "movementToolStripMenuItem";
+            this.movementToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.movementToolStripMenuItem.Text = "Movement";
+            this.movementToolStripMenuItem.Click += new System.EventHandler(this.movementToolStripMenuItem_Click);
+            // 
+            // weaponsArmorToolStripMenuItem
+            // 
+            this.weaponsArmorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listOfWeaponsToolStripMenuItem});
+            this.weaponsArmorToolStripMenuItem.Name = "weaponsArmorToolStripMenuItem";
+            this.weaponsArmorToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.weaponsArmorToolStripMenuItem.Text = "Weapons/Armor";
+            // 
+            // listOfWeaponsToolStripMenuItem
+            // 
+            this.listOfWeaponsToolStripMenuItem.Name = "listOfWeaponsToolStripMenuItem";
+            this.listOfWeaponsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.listOfWeaponsToolStripMenuItem.Text = "List of Weapons";
+            this.listOfWeaponsToolStripMenuItem.Click += new System.EventHandler(this.listOfWeaponsToolStripMenuItem_Click);
             // 
             // consequencesOfDamageToolStripMenuItem
             // 
@@ -903,6 +966,7 @@
             this.m1m1.Size = new System.Drawing.Size(15, 14);
             this.m1m1.TabIndex = 22;
             this.m1m1.UseVisualStyleBackColor = true;
+            this.m1m1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m1m4
             // 
@@ -912,6 +976,7 @@
             this.m1m4.Size = new System.Drawing.Size(15, 14);
             this.m1m4.TabIndex = 23;
             this.m1m4.UseVisualStyleBackColor = true;
+            this.m1m4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m1m3
             // 
@@ -921,6 +986,7 @@
             this.m1m3.Size = new System.Drawing.Size(15, 14);
             this.m1m3.TabIndex = 24;
             this.m1m3.UseVisualStyleBackColor = true;
+            this.m1m3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m1m5
             // 
@@ -930,6 +996,7 @@
             this.m1m5.Size = new System.Drawing.Size(15, 14);
             this.m1m5.TabIndex = 25;
             this.m1m5.UseVisualStyleBackColor = true;
+            this.m1m5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m1m2
             // 
@@ -939,6 +1006,7 @@
             this.m1m2.Size = new System.Drawing.Size(15, 14);
             this.m1m2.TabIndex = 26;
             this.m1m2.UseVisualStyleBackColor = true;
+            this.m1m2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m1m6
             // 
@@ -949,6 +1017,7 @@
             this.m1m6.Size = new System.Drawing.Size(13, 12);
             this.m1m6.TabIndex = 27;
             this.m1m6.UseVisualStyleBackColor = true;
+            this.m1m6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m2m6
             // 
@@ -959,6 +1028,7 @@
             this.m2m6.Size = new System.Drawing.Size(13, 12);
             this.m2m6.TabIndex = 33;
             this.m2m6.UseVisualStyleBackColor = true;
+            this.m2m6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m2m2
             // 
@@ -968,6 +1038,7 @@
             this.m2m2.Size = new System.Drawing.Size(15, 14);
             this.m2m2.TabIndex = 32;
             this.m2m2.UseVisualStyleBackColor = true;
+            this.m2m2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m2m5
             // 
@@ -977,6 +1048,7 @@
             this.m2m5.Size = new System.Drawing.Size(15, 14);
             this.m2m5.TabIndex = 31;
             this.m2m5.UseVisualStyleBackColor = true;
+            this.m2m5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m2m3
             // 
@@ -986,6 +1058,7 @@
             this.m2m3.Size = new System.Drawing.Size(15, 14);
             this.m2m3.TabIndex = 30;
             this.m2m3.UseVisualStyleBackColor = true;
+            this.m2m3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m2m4
             // 
@@ -995,6 +1068,7 @@
             this.m2m4.Size = new System.Drawing.Size(15, 14);
             this.m2m4.TabIndex = 29;
             this.m2m4.UseVisualStyleBackColor = true;
+            this.m2m4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m2m1
             // 
@@ -1004,6 +1078,7 @@
             this.m2m1.Size = new System.Drawing.Size(15, 14);
             this.m2m1.TabIndex = 28;
             this.m2m1.UseVisualStyleBackColor = true;
+            this.m2m1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m3m6
             // 
@@ -1014,6 +1089,7 @@
             this.m3m6.Size = new System.Drawing.Size(13, 12);
             this.m3m6.TabIndex = 39;
             this.m3m6.UseVisualStyleBackColor = true;
+            this.m3m6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m3m2
             // 
@@ -1023,6 +1099,7 @@
             this.m3m2.Size = new System.Drawing.Size(15, 14);
             this.m3m2.TabIndex = 38;
             this.m3m2.UseVisualStyleBackColor = true;
+            this.m3m2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m3m5
             // 
@@ -1032,6 +1109,7 @@
             this.m3m5.Size = new System.Drawing.Size(15, 14);
             this.m3m5.TabIndex = 37;
             this.m3m5.UseVisualStyleBackColor = true;
+            this.m3m5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m3m3
             // 
@@ -1041,6 +1119,7 @@
             this.m3m3.Size = new System.Drawing.Size(15, 14);
             this.m3m3.TabIndex = 36;
             this.m3m3.UseVisualStyleBackColor = true;
+            this.m3m3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m3m4
             // 
@@ -1050,6 +1129,7 @@
             this.m3m4.Size = new System.Drawing.Size(15, 14);
             this.m3m4.TabIndex = 35;
             this.m3m4.UseVisualStyleBackColor = true;
+            this.m3m4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m3m1
             // 
@@ -1059,6 +1139,7 @@
             this.m3m1.Size = new System.Drawing.Size(15, 14);
             this.m3m1.TabIndex = 34;
             this.m3m1.UseVisualStyleBackColor = true;
+            this.m3m1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // cMot1
             // 
@@ -1285,6 +1366,7 @@
             this.SW5.Size = new System.Drawing.Size(15, 14);
             this.SW5.TabIndex = 84;
             this.SW5.UseVisualStyleBackColor = true;
+            this.SW5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // SW9
             // 
@@ -1294,6 +1376,7 @@
             this.SW9.Size = new System.Drawing.Size(15, 14);
             this.SW9.TabIndex = 83;
             this.SW9.UseVisualStyleBackColor = true;
+            this.SW9.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // SW6
             // 
@@ -1303,6 +1386,7 @@
             this.SW6.Size = new System.Drawing.Size(15, 14);
             this.SW6.TabIndex = 82;
             this.SW6.UseVisualStyleBackColor = true;
+            this.SW6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // SW8
             // 
@@ -1312,6 +1396,7 @@
             this.SW8.Size = new System.Drawing.Size(15, 14);
             this.SW8.TabIndex = 81;
             this.SW8.UseVisualStyleBackColor = true;
+            this.SW8.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // SW7
             // 
@@ -1321,6 +1406,7 @@
             this.SW7.Size = new System.Drawing.Size(15, 14);
             this.SW7.TabIndex = 80;
             this.SW7.UseVisualStyleBackColor = true;
+            this.SW7.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // SW10
             // 
@@ -1330,6 +1416,7 @@
             this.SW10.Size = new System.Drawing.Size(15, 14);
             this.SW10.TabIndex = 79;
             this.SW10.UseVisualStyleBackColor = true;
+            this.SW10.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW5
             // 
@@ -1339,6 +1426,7 @@
             this.HW5.Size = new System.Drawing.Size(15, 14);
             this.HW5.TabIndex = 78;
             this.HW5.UseVisualStyleBackColor = true;
+            this.HW5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW9
             // 
@@ -1348,6 +1436,7 @@
             this.HW9.Size = new System.Drawing.Size(15, 14);
             this.HW9.TabIndex = 77;
             this.HW9.UseVisualStyleBackColor = true;
+            this.HW9.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW6
             // 
@@ -1357,6 +1446,7 @@
             this.HW6.Size = new System.Drawing.Size(15, 14);
             this.HW6.TabIndex = 76;
             this.HW6.UseVisualStyleBackColor = true;
+            this.HW6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW8
             // 
@@ -1366,6 +1456,7 @@
             this.HW8.Size = new System.Drawing.Size(15, 14);
             this.HW8.TabIndex = 75;
             this.HW8.UseVisualStyleBackColor = true;
+            this.HW8.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW7
             // 
@@ -1375,6 +1466,7 @@
             this.HW7.Size = new System.Drawing.Size(15, 14);
             this.HW7.TabIndex = 74;
             this.HW7.UseVisualStyleBackColor = true;
+            this.HW7.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW10
             // 
@@ -1384,6 +1476,7 @@
             this.HW10.Size = new System.Drawing.Size(15, 14);
             this.HW10.TabIndex = 73;
             this.HW10.UseVisualStyleBackColor = true;
+            this.HW10.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW5
             // 
@@ -1393,6 +1486,7 @@
             this.FW5.Size = new System.Drawing.Size(15, 14);
             this.FW5.TabIndex = 72;
             this.FW5.UseVisualStyleBackColor = true;
+            this.FW5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW9
             // 
@@ -1402,6 +1496,7 @@
             this.FW9.Size = new System.Drawing.Size(15, 14);
             this.FW9.TabIndex = 71;
             this.FW9.UseVisualStyleBackColor = true;
+            this.FW9.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW6
             // 
@@ -1411,6 +1506,7 @@
             this.FW6.Size = new System.Drawing.Size(15, 14);
             this.FW6.TabIndex = 70;
             this.FW6.UseVisualStyleBackColor = true;
+            this.FW6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW8
             // 
@@ -1420,6 +1516,7 @@
             this.FW8.Size = new System.Drawing.Size(15, 14);
             this.FW8.TabIndex = 69;
             this.FW8.UseVisualStyleBackColor = true;
+            this.FW8.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW7
             // 
@@ -1429,6 +1526,7 @@
             this.FW7.Size = new System.Drawing.Size(15, 14);
             this.FW7.TabIndex = 68;
             this.FW7.UseVisualStyleBackColor = true;
+            this.FW7.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW10
             // 
@@ -1438,6 +1536,7 @@
             this.FW10.Size = new System.Drawing.Size(15, 14);
             this.FW10.TabIndex = 67;
             this.FW10.UseVisualStyleBackColor = true;
+            this.FW10.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // label12
             // 
@@ -1458,6 +1557,7 @@
             this.SW3.Size = new System.Drawing.Size(15, 14);
             this.SW3.TabIndex = 102;
             this.SW3.UseVisualStyleBackColor = true;
+            this.SW3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // SW2
             // 
@@ -1467,6 +1567,7 @@
             this.SW2.Size = new System.Drawing.Size(15, 14);
             this.SW2.TabIndex = 100;
             this.SW2.UseVisualStyleBackColor = true;
+            this.SW2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // SW1
             // 
@@ -1476,6 +1577,7 @@
             this.SW1.Size = new System.Drawing.Size(15, 14);
             this.SW1.TabIndex = 99;
             this.SW1.UseVisualStyleBackColor = true;
+            this.SW1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // SW4
             // 
@@ -1485,6 +1587,7 @@
             this.SW4.Size = new System.Drawing.Size(15, 14);
             this.SW4.TabIndex = 98;
             this.SW4.UseVisualStyleBackColor = true;
+            this.SW4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW3
             // 
@@ -1494,6 +1597,7 @@
             this.HW3.Size = new System.Drawing.Size(15, 14);
             this.HW3.TabIndex = 96;
             this.HW3.UseVisualStyleBackColor = true;
+            this.HW3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW2
             // 
@@ -1503,6 +1607,7 @@
             this.HW2.Size = new System.Drawing.Size(15, 14);
             this.HW2.TabIndex = 94;
             this.HW2.UseVisualStyleBackColor = true;
+            this.HW2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW1
             // 
@@ -1512,6 +1617,7 @@
             this.HW1.Size = new System.Drawing.Size(15, 14);
             this.HW1.TabIndex = 93;
             this.HW1.UseVisualStyleBackColor = true;
+            this.HW1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // HW4
             // 
@@ -1521,6 +1627,7 @@
             this.HW4.Size = new System.Drawing.Size(15, 14);
             this.HW4.TabIndex = 92;
             this.HW4.UseVisualStyleBackColor = true;
+            this.HW4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW3
             // 
@@ -1530,6 +1637,7 @@
             this.FW3.Size = new System.Drawing.Size(15, 14);
             this.FW3.TabIndex = 90;
             this.FW3.UseVisualStyleBackColor = true;
+            this.FW3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW2
             // 
@@ -1539,6 +1647,7 @@
             this.FW2.Size = new System.Drawing.Size(15, 14);
             this.FW2.TabIndex = 88;
             this.FW2.UseVisualStyleBackColor = true;
+            this.FW2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW1
             // 
@@ -1548,6 +1657,7 @@
             this.FW1.Size = new System.Drawing.Size(15, 14);
             this.FW1.TabIndex = 87;
             this.FW1.UseVisualStyleBackColor = true;
+            this.FW1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // FW4
             // 
@@ -1557,6 +1667,7 @@
             this.FW4.Size = new System.Drawing.Size(15, 14);
             this.FW4.TabIndex = 86;
             this.FW4.UseVisualStyleBackColor = true;
+            this.FW4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // label13
             // 
@@ -1674,6 +1785,7 @@
             this.cMentalStrain.Name = "cMentalStrain";
             this.cMentalStrain.Size = new System.Drawing.Size(28, 20);
             this.cMentalStrain.TabIndex = 113;
+            this.cMentalStrain.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // cPhysicalStrain
             // 
@@ -1681,6 +1793,7 @@
             this.cPhysicalStrain.Name = "cPhysicalStrain";
             this.cPhysicalStrain.Size = new System.Drawing.Size(28, 20);
             this.cPhysicalStrain.TabIndex = 114;
+            this.cPhysicalStrain.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // cSpiritualStrain
             // 
@@ -1688,6 +1801,7 @@
             this.cSpiritualStrain.Name = "cSpiritualStrain";
             this.cSpiritualStrain.Size = new System.Drawing.Size(28, 20);
             this.cSpiritualStrain.TabIndex = 115;
+            this.cSpiritualStrain.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // dMentalStrainMax
             // 
@@ -1750,6 +1864,7 @@
             this.cHumanity.Name = "cHumanity";
             this.cHumanity.Size = new System.Drawing.Size(28, 20);
             this.cHumanity.TabIndex = 9;
+            this.cHumanity.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // cNotes
             // 
@@ -1759,6 +1874,7 @@
             this.cNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.cNotes.Size = new System.Drawing.Size(288, 471);
             this.cNotes.TabIndex = 9;
+            this.cNotes.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // label31
             // 
@@ -1777,6 +1893,7 @@
             this.cInitiative.Name = "cInitiative";
             this.cInitiative.Size = new System.Drawing.Size(28, 20);
             this.cInitiative.TabIndex = 7;
+            this.cInitiative.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // label33
             // 
@@ -1806,6 +1923,7 @@
             this.cMementoMori.Name = "cMementoMori";
             this.cMementoMori.Size = new System.Drawing.Size(28, 20);
             this.cMementoMori.TabIndex = 8;
+            this.cMementoMori.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // label32
             // 
@@ -3107,6 +3225,7 @@
             this.cOverFocus.Name = "cOverFocus";
             this.cOverFocus.Size = new System.Drawing.Size(28, 20);
             this.cOverFocus.TabIndex = 261;
+            this.cOverFocus.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // cOverHealth
             // 
@@ -3114,6 +3233,7 @@
             this.cOverHealth.Name = "cOverHealth";
             this.cOverHealth.Size = new System.Drawing.Size(28, 20);
             this.cOverHealth.TabIndex = 262;
+            this.cOverHealth.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // cOverSanity
             // 
@@ -3121,6 +3241,7 @@
             this.cOverSanity.Name = "cOverSanity";
             this.cOverSanity.Size = new System.Drawing.Size(28, 20);
             this.cOverSanity.TabIndex = 263;
+            this.cOverSanity.TextChanged += new System.EventHandler(this.invalidateSave);
             // 
             // label30
             // 
@@ -3201,6 +3322,7 @@
             this.m6m6.TabIndex = 284;
             this.m6m6.UseVisualStyleBackColor = true;
             this.m6m6.Visible = false;
+            this.m6m6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m6m2
             // 
@@ -3211,6 +3333,7 @@
             this.m6m2.TabIndex = 283;
             this.m6m2.UseVisualStyleBackColor = true;
             this.m6m2.Visible = false;
+            this.m6m2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m6m5
             // 
@@ -3221,6 +3344,7 @@
             this.m6m5.TabIndex = 282;
             this.m6m5.UseVisualStyleBackColor = true;
             this.m6m5.Visible = false;
+            this.m6m5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m6m3
             // 
@@ -3231,6 +3355,7 @@
             this.m6m3.TabIndex = 281;
             this.m6m3.UseVisualStyleBackColor = true;
             this.m6m3.Visible = false;
+            this.m6m3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m6m4
             // 
@@ -3241,6 +3366,7 @@
             this.m6m4.TabIndex = 280;
             this.m6m4.UseVisualStyleBackColor = true;
             this.m6m4.Visible = false;
+            this.m6m4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m6m1
             // 
@@ -3251,6 +3377,7 @@
             this.m6m1.TabIndex = 279;
             this.m6m1.UseVisualStyleBackColor = true;
             this.m6m1.Visible = false;
+            this.m6m1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m5m6
             // 
@@ -3262,6 +3389,7 @@
             this.m5m6.TabIndex = 278;
             this.m5m6.UseVisualStyleBackColor = true;
             this.m5m6.Visible = false;
+            this.m5m6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m5m2
             // 
@@ -3272,6 +3400,7 @@
             this.m5m2.TabIndex = 277;
             this.m5m2.UseVisualStyleBackColor = true;
             this.m5m2.Visible = false;
+            this.m5m2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m5m5
             // 
@@ -3282,6 +3411,7 @@
             this.m5m5.TabIndex = 276;
             this.m5m5.UseVisualStyleBackColor = true;
             this.m5m5.Visible = false;
+            this.m5m5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m5m3
             // 
@@ -3292,6 +3422,7 @@
             this.m5m3.TabIndex = 275;
             this.m5m3.UseVisualStyleBackColor = true;
             this.m5m3.Visible = false;
+            this.m5m3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m5m4
             // 
@@ -3302,6 +3433,7 @@
             this.m5m4.TabIndex = 274;
             this.m5m4.UseVisualStyleBackColor = true;
             this.m5m4.Visible = false;
+            this.m5m4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m5m1
             // 
@@ -3312,6 +3444,7 @@
             this.m5m1.TabIndex = 273;
             this.m5m1.UseVisualStyleBackColor = true;
             this.m5m1.Visible = false;
+            this.m5m1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m4m6
             // 
@@ -3323,6 +3456,7 @@
             this.m4m6.TabIndex = 272;
             this.m4m6.UseVisualStyleBackColor = true;
             this.m4m6.Visible = false;
+            this.m4m6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m4m2
             // 
@@ -3333,6 +3467,7 @@
             this.m4m2.TabIndex = 271;
             this.m4m2.UseVisualStyleBackColor = true;
             this.m4m2.Visible = false;
+            this.m4m2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m4m5
             // 
@@ -3343,6 +3478,7 @@
             this.m4m5.TabIndex = 270;
             this.m4m5.UseVisualStyleBackColor = true;
             this.m4m5.Visible = false;
+            this.m4m5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m4m3
             // 
@@ -3353,6 +3489,7 @@
             this.m4m3.TabIndex = 269;
             this.m4m3.UseVisualStyleBackColor = true;
             this.m4m3.Visible = false;
+            this.m4m3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m4m4
             // 
@@ -3363,6 +3500,7 @@
             this.m4m4.TabIndex = 268;
             this.m4m4.UseVisualStyleBackColor = true;
             this.m4m4.Visible = false;
+            this.m4m4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m4m1
             // 
@@ -3373,6 +3511,7 @@
             this.m4m1.TabIndex = 267;
             this.m4m1.UseVisualStyleBackColor = true;
             this.m4m1.Visible = false;
+            this.m4m1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // cMot7
             // 
@@ -3396,6 +3535,7 @@
             this.m7m6.TabIndex = 293;
             this.m7m6.UseVisualStyleBackColor = true;
             this.m7m6.Visible = false;
+            this.m7m6.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m7m2
             // 
@@ -3406,6 +3546,7 @@
             this.m7m2.TabIndex = 292;
             this.m7m2.UseVisualStyleBackColor = true;
             this.m7m2.Visible = false;
+            this.m7m2.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m7m5
             // 
@@ -3416,6 +3557,7 @@
             this.m7m5.TabIndex = 291;
             this.m7m5.UseVisualStyleBackColor = true;
             this.m7m5.Visible = false;
+            this.m7m5.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m7m3
             // 
@@ -3426,6 +3568,7 @@
             this.m7m3.TabIndex = 290;
             this.m7m3.UseVisualStyleBackColor = true;
             this.m7m3.Visible = false;
+            this.m7m3.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m7m4
             // 
@@ -3436,6 +3579,7 @@
             this.m7m4.TabIndex = 289;
             this.m7m4.UseVisualStyleBackColor = true;
             this.m7m4.Visible = false;
+            this.m7m4.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // m7m1
             // 
@@ -3446,6 +3590,7 @@
             this.m7m1.TabIndex = 288;
             this.m7m1.UseVisualStyleBackColor = true;
             this.m7m1.Visible = false;
+            this.m7m1.CheckedChanged += new System.EventHandler(this.invalidateSave);
             // 
             // label42
             // 
@@ -3510,60 +3655,60 @@
             this.cAcc4.Text = "F";
             this.cAcc4.Visible = false;
             // 
-            // combatMechanicsToolStripMenuItem
+            // situationalModifiersToolStripMenuItem
             // 
-            this.combatMechanicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.initiativeToolStripMenuItem1,
-            this.listOfCommonActionsToolStripMenuItem1,
-            this.tacticsToolStripMenuItem1,
-            this.movementToolStripMenuItem,
-            this.weaponsArmorToolStripMenuItem});
-            this.combatMechanicsToolStripMenuItem.Name = "combatMechanicsToolStripMenuItem";
-            this.combatMechanicsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
-            this.combatMechanicsToolStripMenuItem.Text = "Combat Mechanics";
+            this.situationalModifiersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.opportunityToolStripMenuItem,
+            this.advantageToolStripMenuItem,
+            this.attackingAMeleeToolStripMenuItem,
+            this.surpriseToolStripMenuItem,
+            this.movingTargetToolStripMenuItem,
+            this.rushToolStripMenuItem});
+            this.situationalModifiersToolStripMenuItem.Name = "situationalModifiersToolStripMenuItem";
+            this.situationalModifiersToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.situationalModifiersToolStripMenuItem.Text = "Situational Modifiers";
             // 
-            // initiativeToolStripMenuItem1
+            // opportunityToolStripMenuItem
             // 
-            this.initiativeToolStripMenuItem1.Name = "initiativeToolStripMenuItem1";
-            this.initiativeToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
-            this.initiativeToolStripMenuItem1.Text = "Initiative";
-            this.initiativeToolStripMenuItem1.Click += new System.EventHandler(this.initiativeToolStripMenuItem1_Click);
+            this.opportunityToolStripMenuItem.Name = "opportunityToolStripMenuItem";
+            this.opportunityToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.opportunityToolStripMenuItem.Text = "Opportunity";
+            this.opportunityToolStripMenuItem.Click += new System.EventHandler(this.opportunityToolStripMenuItem_Click);
             // 
-            // tacticsToolStripMenuItem1
+            // advantageToolStripMenuItem
             // 
-            this.tacticsToolStripMenuItem1.Name = "tacticsToolStripMenuItem1";
-            this.tacticsToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
-            this.tacticsToolStripMenuItem1.Text = "Tactics";
-            this.tacticsToolStripMenuItem1.Click += new System.EventHandler(this.tacticsToolStripMenuItem1_Click);
+            this.advantageToolStripMenuItem.Name = "advantageToolStripMenuItem";
+            this.advantageToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.advantageToolStripMenuItem.Text = "Advantage";
+            this.advantageToolStripMenuItem.Click += new System.EventHandler(this.advantageToolStripMenuItem_Click);
             // 
-            // movementToolStripMenuItem
+            // attackingAMeleeToolStripMenuItem
             // 
-            this.movementToolStripMenuItem.Name = "movementToolStripMenuItem";
-            this.movementToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.movementToolStripMenuItem.Text = "Movement";
-            this.movementToolStripMenuItem.Click += new System.EventHandler(this.movementToolStripMenuItem_Click);
+            this.attackingAMeleeToolStripMenuItem.Name = "attackingAMeleeToolStripMenuItem";
+            this.attackingAMeleeToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.attackingAMeleeToolStripMenuItem.Text = "Attacking a Melee";
+            this.attackingAMeleeToolStripMenuItem.Click += new System.EventHandler(this.attackingAMeleeToolStripMenuItem_Click);
             // 
-            // listOfCommonActionsToolStripMenuItem1
+            // surpriseToolStripMenuItem
             // 
-            this.listOfCommonActionsToolStripMenuItem1.Name = "listOfCommonActionsToolStripMenuItem1";
-            this.listOfCommonActionsToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
-            this.listOfCommonActionsToolStripMenuItem1.Text = "List of Common Actions";
-            this.listOfCommonActionsToolStripMenuItem1.Click += new System.EventHandler(this.listOfCommonActionsToolStripMenuItem1_Click);
+            this.surpriseToolStripMenuItem.Name = "surpriseToolStripMenuItem";
+            this.surpriseToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.surpriseToolStripMenuItem.Text = "Surprise";
+            this.surpriseToolStripMenuItem.Click += new System.EventHandler(this.surpriseToolStripMenuItem_Click);
             // 
-            // weaponsArmorToolStripMenuItem
+            // movingTargetToolStripMenuItem
             // 
-            this.weaponsArmorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listOfWeaponsToolStripMenuItem});
-            this.weaponsArmorToolStripMenuItem.Name = "weaponsArmorToolStripMenuItem";
-            this.weaponsArmorToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.weaponsArmorToolStripMenuItem.Text = "Weapons/Armor";
+            this.movingTargetToolStripMenuItem.Name = "movingTargetToolStripMenuItem";
+            this.movingTargetToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.movingTargetToolStripMenuItem.Text = "Moving Target";
+            this.movingTargetToolStripMenuItem.Click += new System.EventHandler(this.movingTargetToolStripMenuItem_Click);
             // 
-            // listOfWeaponsToolStripMenuItem
+            // rushToolStripMenuItem
             // 
-            this.listOfWeaponsToolStripMenuItem.Name = "listOfWeaponsToolStripMenuItem";
-            this.listOfWeaponsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.listOfWeaponsToolStripMenuItem.Text = "List of Weapons";
-            this.listOfWeaponsToolStripMenuItem.Click += new System.EventHandler(this.listOfWeaponsToolStripMenuItem_Click);
+            this.rushToolStripMenuItem.Name = "rushToolStripMenuItem";
+            this.rushToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.rushToolStripMenuItem.Text = "Rush";
+            this.rushToolStripMenuItem.Click += new System.EventHandler(this.rushToolStripMenuItem_Click);
             // 
             // CharacterSheet
             // 
@@ -3843,6 +3988,7 @@
             this.MinimumSize = new System.Drawing.Size(960, 39);
             this.Name = "CharacterSheet";
             this.Text = "Orpheus Manager";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CharacterSheet_FormClosing);
             this.Load += new System.EventHandler(this.CharacterSheet_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.CharacterSheet_Paint);
             this.menuStrip1.ResumeLayout(false);
@@ -4168,6 +4314,13 @@
         private System.Windows.Forms.ToolStripMenuItem listOfCommonActionsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem weaponsArmorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listOfWeaponsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem situationalModifiersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem opportunityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem advantageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem attackingAMeleeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem surpriseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem movingTargetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rushToolStripMenuItem;
     }
 }
 

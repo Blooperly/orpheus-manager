@@ -269,6 +269,12 @@
     <Compile Include="rWoundPenalties.Designer.cs">
       <DependentUpon>rWoundPenalties.cs</DependentUpon>
     </Compile>
+    <Compile Include="sQuitSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sQuitSave.Designer.cs">
+      <DependentUpon>sQuitSave.cs</DependentUpon>
+    </Compile>
     <Compile Include="vertBar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -391,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rWoundPenalties.resx">
       <DependentUpon>rWoundPenalties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sQuitSave.resx">
+      <DependentUpon>sQuitSave.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

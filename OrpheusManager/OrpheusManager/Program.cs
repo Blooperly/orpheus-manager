@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,56 +10,65 @@ using System.Text;
 
 namespace OrpheusManager
 {
+    // Character Data Class
+    //      Contains all the integral data for one character sheet.
+    //      Default values are what appear when the app is opened.
     public static class CDATA
     {
-        public static string version = "v1.0";
-        public static string gameVersion = "v2.1.2";
-        public static string cName = "Rodrigo Ledesma";
-        public static int cLevel = 0;
-        public static string cArch1 = "Weapon Bearer";
-        public static string cArch2 = "Wendigo";
-        public static string cArch3 = "";
-        public static string cBackground = "Criminal";
-        public static int[] cAttributes = { 2, 1, 4, 2, 3, 3 };         // PER, COG, DEX, VIT, CHAR, WILL
-        public static int[] cAttributesTemp = { 0, 0, 0, 0, 0, 0 };
-        public static string cMot1 = "Uniting Force";
-        public static string cMot2 = "Lady Killer";
-        public static string cMot3 = "Death Wish";
-        public static string cMot4 = " ";
-        public static string cMot5 = " ";
-        public static string cMot6 = " ";
-        public static string cMot7 = " ";
-        public static string cNotes = "Welcome to the Orpheus Manager!\r\n-------------------------------------------------------\r\n\r\nTo create a new character sheet, click on \"File > New\". This will launch a character creation dialog. You MUST input your starting skills and ablities when prompted, as some calculations rely on starting skill ranks.\r\n\r\nCharacter sheets can be saved as .txt files by clicking \"File > Save\". Saved character sheets can be loaded by clicking \"File > Open\"\r\n\r\nThe \"Edit\" tab allows you to change all the values of your character sheet. \"Edit > Level Up\" tracks all of the upgrades you have free to spend.\r\n\r\nThe \"Reference\" tab has excerpts from the official rules that can serve as quick references while you play. Some nuance is excluded, and the official rules should be trusted when in doubt.";
-        public static int cMentalStrain = 5;
-        public static int cPhysicalStrain = 10;
-        public static int cSpiritualStrain = 12;
-        public static int cInitiative = 0;
-        public static int cMementoMori = 0;
-        public static int cHumanity = 100;
-        public static int cHumanityMax = 100;
-        public static int cOverFocus = 0;
-        public static int cOverHealth = 0;
-        public static int cOverSanity = 0;
-        public static int cInitialCsp = 43;
-        public static int cInitialNcsp = 51;
-        public static int cAcc1 = 0;
-        public static int cAcc2 = 0;
-        public static int cAcc3 = 0;
-        public static int cAcc4 = 0;
+        public static string version = "v1.0";                          // Orpheus Manager Version
+        public static string gameVersion = "v2.1.2";                    // The Orpheus Protocol Rules Version
+        public static string cName = "Rodrigo Ledesma";                 // Character Name
+        public static int cLevel = 0;                                   // Level
+        public static string cArch1 = "Weapon Bearer";                  // Archetype 1 (Primary)
+        public static string cArch2 = "Wendigo";                        // Archetype 2
+        public static string cArch3 = "";                               // Archetype 3
+        public static string cBackground = "Criminal";                  // Background
+        public static int[] cAttributes = { 2, 1, 4, 2, 3, 3 };         // Attributes (PER, COG, DEX, VIT, CHAR, WILL)
+        public static int[] cAttributesTemp = { 0, 0, 0, 0, 0, 0 };     // Attribute Modifiers (Debuffs, Wounds) [REMOVED DO NOT USE]
+        public static string cMot1 = "Uniting Force";                   // Motivation 1
+        public static string cMot2 = "Lady Killer";                     // Motivation 2
+        public static string cMot3 = "Death Wish";                      // Motivation 3
+        public static string cMot4 = " ";                               // Motivation 4
+        public static string cMot5 = " ";                               // Motivation 5
+        public static string cMot6 = " ";                               // Motivation 6
+        public static string cMot7 = " ";                               // Motivation 7
+        public static string cNotes = "";                               // Notes Box [Intro message added when program launches]
+        public static int cMentalStrain = 5;                            // Current Mental Strain
+        public static int cPhysicalStrain = 10;                         // Current Physical Strain
+        public static int cSpiritualStrain = 12;                        // Current Spiritual Strain
+        public static int cMaxMentStrain = 0;                           // Max Mental Strain MODIFIER
+        public static int cMaxPhysStrain = 0;                           // Max Physical Strain MODIFIER
+        public static int cMaxSpirStrain = 0;                           // Max Spiritual Strain MODIFIER
+        public static int cInitiative = 0;                              // Initiative
+        public static int cMementoMori = 0;                             // Memento Mori
+        public static int cHumanity = 100;                              // Current Humanity
+        public static int cHumanityMax = 100;                           // Max Humanity
+        public static int cOverFocus = 0;                               // Focus Wound Spillover
+        public static int cOverHealth = 0;                              // Health Wound Spillover
+        public static int cOverSanity = 0;                              // Sanity Wound Spillover
+        public static int cInitialCsp = 43;                             // Initial Combat Skill Points (Calculated at character creation)
+        public static int cInitialNcsp = 51;                            // Initial Non-Combat Skill Points (Calculated at character creation)
+        public static int cAcc1 = 0;                                    // Horror Acclimation: Ruthless
+        public static int cAcc2 = 0;                                    // Horror Acclimation: Callous
+        public static int cAcc3 = 0;                                    // Horror Acclimation: Strong Stomach
+        public static int cAcc4 = 0;                                    // Horror Acclimation: Fatalistic
 
+        // Non-Combat Skills paired with Skill Ranks
         public static string[] cSkillName = { "Intimidation", "Presence", "Athletics", "Deception", "Cont. (Underworld)", "Security", "Sleight of Hand", "Empathy", "Investigation", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
         public static string[] cSkillRank = { "V", "V", "III", "III", "II", "II", "I", "I", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
 
+        // Combat Skills paired with Skill Ranks
         public static string[] cCkillName = { "Attack (Pistols)", "Stealth", "Stability", "Dodge", "Discipline", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
         public static string[] cCkillRank = { "V", "V", "III", "III", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", };
 
+        // Abilities paired with Ability Ranks, Ability Upgrades (Mastery A, Mastery B, Overload)
         public static string[] cAbilityName = { "Inspiration", "Hungry Shadows", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
         public static string[] cAbilityRank = { "II", "I", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
-
         public static int[] cAbilityMasteryA = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public static int[] cAbilityMasteryB = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public static int[] cAbilityOverload = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
+        // Motivation Usage
         public static int[] cMot1Box = { 0, 0, 0, 0, 0, 0 };
         public static int[] cMot2Box = { 0, 0, 0, 0, 0, 0 };
         public static int[] cMot3Box = { 0, 0, 0, 0, 0, 0 };
@@ -68,14 +77,12 @@ namespace OrpheusManager
         public static int[] cMot6Box = { 0, 0, 0, 0, 0, 0 };
         public static int[] cMot7Box = { 0, 0, 0, 0, 0, 0 };
 
+        // Wound Tracks
         public static int[] cFocusWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public static int[] cHealthWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public static int[] cSanityWounds = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-        public static int cMaxMentStrain = 0;
-        public static int cMaxPhysStrain = 0;
-        public static int cMaxSpirStrain = 0;
-
+        // Add Skill to Skill Array [REMOVED DO NOT USE]
         public static void addSkill()
         {
             bool full = false;
@@ -108,6 +115,7 @@ namespace OrpheusManager
             }
         }
 
+        // Add Ability to Ability Array [REMOVED DO NOT USE]
         public static void addAbility()
         {
             bool full = false;
@@ -126,38 +134,70 @@ namespace OrpheusManager
         }
     }
 
+    // Derived Data Class
+    //      Contains all stats derived from CDATA and functions for calculation.
+    //      Can be re-derived arbitrarily, no need to save long term.
     public static class DDATA
     {
+        public static int dMeleeAtt = 0;                                // Melee Attack
+        public static int dRangedAtt = 0;                               // Ranged Attack
+        public static int dSpeed = 0;                                   // Speed
+        public static int dClarity = 0;                                 // Clarity
+        public static int dToughness = 0;                               // Toughness
+        public static int dForceOfWill = 0;                             // Force of Will
+        public static int dInitiative = 0;                              // Initiative
+        public static int dTactics = 0;                                 // Tactics
+        public static int dMentalStrainMax = 0;                         // Max Mental Strain
+        public static int dPhysicalStrainMax = 0;                       // Max Physical Strain
+        public static int dSpiritualStrainMax = 0;                      // Max Spiritual Strain
+
+        // Derived Attribute Modifiers [REMOVED DO NOT USE]
+        public static int dMeleeAttTemp = 0;                            // Melee Attack Modifier
+        public static int dRangedAttTemp = 0;                           // Ranged Attack Modifier
+        public static int dSpeedTemp = 0;                               // Speed Modifier
+        public static int dClarityTemp = 0;                             // Clarity Modifier
+        public static int dToughnessTemp = 0;                           // Toughness Modifier
+        public static int dForceOfWillTemp = 0;                         // Force of Will Modifier
+        public static int dInitiativeTemp = 0;                          // Initiative Modifier
+        public static int dTacticsTemp = 0;                             // Tactics Modifier
+
+        // Run all Derived Data Calculations
         public static void deriveDATA()
         {
-            DDATA.dMeleeAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
-            DDATA.dRangedAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[0]) / 2);
-            DDATA.dSpeed = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
+            DDATA.dMeleeAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);      // Melee Attack Attribute
+            DDATA.dRangedAtt = ((CDATA.cAttributes[2] + CDATA.cAttributes[0]) / 2);     // Ranged Attack Attribute
+            DDATA.dSpeed = ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);         // Speed Attribute
 
-            DDATA.dMeleeAttTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[3]) + CDATA.cAttributesTemp[3]) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
-            DDATA.dRangedAttTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[0] + CDATA.cAttributesTemp[0])) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[0]) / 2); ;
-            DDATA.dSpeedTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[3] + CDATA.cAttributesTemp[3])) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);
+            DDATA.dMeleeAttTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[3]) + CDATA.cAttributesTemp[3]) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);      // Melee Attack Modifier [REMOVED DO NOT USE]
+            DDATA.dRangedAttTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[0] + CDATA.cAttributesTemp[0])) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[0]) / 2);     // Ranged Attack Modifier [REMOVED DO NOT USE]
+            DDATA.dSpeedTemp = (((CDATA.cAttributes[2] + CDATA.cAttributesTemp[2]) + (CDATA.cAttributes[3] + CDATA.cAttributesTemp[3])) / 2) - ((CDATA.cAttributes[2] + CDATA.cAttributes[3]) / 2);         // Speed Modifier [REMOVED DO NOT USE]
 
+            // Clarity Attribute
             if (CDATA.cAttributes[1] >= 5) DDATA.dClarity = 2;
             else if (CDATA.cAttributes[1] >= 3) DDATA.dClarity = 1;
             else DDATA.dClarity = 0;
 
+            // Clarity Modifier [REMOVED DO NOT USE]
             if (CDATA.cAttributes[1] + CDATA.cAttributesTemp[1] >= 5) DDATA.dClarityTemp = 2 - DDATA.dClarity;
             else if (CDATA.cAttributes[1] + CDATA.cAttributesTemp[1] >= 3) DDATA.dClarityTemp = 1 - DDATA.dClarity;
             else DDATA.dClarityTemp = 0 - DDATA.dClarity;
 
+            // Toughness Attribute
             if (CDATA.cAttributes[3] >= 5) DDATA.dToughness = 2;
             else if (CDATA.cAttributes[3] >= 3) DDATA.dToughness = 1;
             else DDATA.dToughness = 0;
 
+            // Toughness Modifier [REMOVED DO NOT USE]
             if (CDATA.cAttributes[3] + CDATA.cAttributesTemp[3] >= 5) DDATA.dToughnessTemp = 2 - DDATA.dToughness;
             else if (CDATA.cAttributes[3] + CDATA.cAttributesTemp[3] >= 3) DDATA.dToughnessTemp = 1 - DDATA.dToughness;
             else DDATA.dToughnessTemp = 0 - DDATA.dToughness;
 
+            // Force of Will Attribute
             if (CDATA.cAttributes[5] >= 5) DDATA.dForceOfWill = 2;
             else if (CDATA.cAttributes[5] >= 3) DDATA.dForceOfWill = 1;
             else DDATA.dForceOfWill = 0;
 
+            // Force of Will Modifier [REMOVED DO NOT USE]
             if (CDATA.cAttributes[5] + CDATA.cAttributesTemp[5] >= 5) DDATA.dForceOfWillTemp = 2 - DDATA.dForceOfWill;
             else if (CDATA.cAttributes[5] + CDATA.cAttributesTemp[5] >= 3) DDATA.dForceOfWillTemp = 1 - DDATA.dForceOfWill;
             else DDATA.dForceOfWillTemp = 0 - DDATA.dForceOfWill;
@@ -171,8 +211,8 @@ namespace OrpheusManager
             if (DDATA.dForceOfWill + DDATA.dForceOfWillTemp >= 1) tempy = 1;
             else tempy = 0;
 
-            DDATA.dTactics = tempx + DDATA.dClarity;
-            DDATA.dTacticsTemp = (tempy + (DDATA.dClarity + DDATA.dClarityTemp)) - DDATA.dTactics;
+            DDATA.dTactics = tempx + DDATA.dClarity;                                                    // Tactics Attribute
+            DDATA.dTacticsTemp = (tempy + (DDATA.dClarity + DDATA.dClarityTemp)) - DDATA.dTactics;      // Tactics Modifier [REMOVED DO NOT USE]
 
             int temp1;
             int temp2;
@@ -182,7 +222,8 @@ namespace OrpheusManager
             temp2 = CDATA.cAttributes[0] + CDATA.cAttributesTemp[0] + CDATA.cAttributes[5] + CDATA.cAttributesTemp[5] + dClarity;
             temp3 = CDATA.cAttributes[0] + CDATA.cAttributesTemp[0] + CDATA.cAttributes[2] + CDATA.cAttributesTemp[2] + dClarity;
 
-
+            // Initiative Attribute
+            // and Initiative Modifier [REMOVED DO NOT USE]
             if (temp1 >= temp2 && temp1 >= temp3)
             {
                 DDATA.dInitiative = CDATA.cAttributes[2] + CDATA.cAttributes[5] + dClarity;
@@ -199,67 +240,50 @@ namespace OrpheusManager
                 DDATA.dInitiativeTemp = CDATA.cAttributesTemp[0] + CDATA.cAttributesTemp[2];
             }
 
-            dMentalStrainMax = CDATA.cAttributes[0] + (3 * CDATA.cAttributes[1]);
-            dPhysicalStrainMax = CDATA.cAttributes[2] + (3 * CDATA.cAttributes[3]);
-            dSpiritualStrainMax = CDATA.cAttributes[4] + (3 * CDATA.cAttributes[5]);
+            dMentalStrainMax = CDATA.cAttributes[0] + (3 * CDATA.cAttributes[1]);           // Max Mental Strain
+            dPhysicalStrainMax = CDATA.cAttributes[2] + (3 * CDATA.cAttributes[3]);         // Max Physical Strain
+            dSpiritualStrainMax = CDATA.cAttributes[4] + (3 * CDATA.cAttributes[5]);        // Max Spiritual Strain
         }
-
-        public static int dMeleeAtt = 0;
-        public static int dRangedAtt = 0;
-        public static int dSpeed = 0;
-        public static int dClarity = 0;
-        public static int dToughness = 0;
-        public static int dForceOfWill = 0;
-        public static int dInitiative = 0;
-        public static int dTactics = 0;
-        public static int dMentalStrainMax = 0;
-        public static int dPhysicalStrainMax = 0;
-        public static int dSpiritualStrainMax = 0;
-
-        public static int dMeleeAttTemp = 0;
-        public static int dRangedAttTemp = 0;
-        public static int dSpeedTemp = 0;
-        public static int dClarityTemp = 0;
-        public static int dToughnessTemp = 0;
-        public static int dForceOfWillTemp = 0;
-        public static int dInitiativeTemp = 0;
-        public static int dTacticsTemp = 0;
     }
 
+    // Level Up Data Class
+    //      Contains values and functions used in calculating what upgrades are available at a given level.
     public static class LDATA
     {
-        public static int lAttributesCurrent = 0;
-        public static int lAttributesMax = 0;
+        public static int lAttributesCurrent = 0;               // Total Attribute Points
+        public static int lAttributesMax = 0;                   // Max Attribute Points
 
-        public static int lCspCurrent = 0;
-        public static int lCspMax = 0;
+        public static int lCspCurrent = 0;                      // Total Combat Skill Points 
+        public static int lCspMax = 0;                          // Max Combat Skill Points
 
-        public static int lNcspCurrent = 0;
-        public static int lNcspMax = 0;
+        public static int lNcspCurrent = 0;                     // Total Non-Combat Skill Points
+        public static int lNcspMax = 0;                         // Max Non-Combat Skill Points
 
-        public static int lAbilityRankCurrent = 0;
-        public static int lAbilityRankMax = 0;
+        public static int lAbilityRankCurrent = 0;              // Total Ability Ranks
+        public static int lAbilityRankMax = 0;                  // Max Ability Ranks
 
-        public static int lAbilityMasteryCurrent = 0;
-        public static int lAbilityMasteryMax = 0;
+        public static int lAbilityMasteryCurrent = 0;           // Total Ability Masteries
+        public static int lAbilityMasteryMax = 0;               // Max Ability Masteries
 
-        public static int lAbilitySynthesisCurrent = 0;
-        public static int lAbilitySynthesisMax = 0;
+        public static int lAbilitySynthesisCurrent = 0;         // Total Synthesis Masteries
+        public static int lAbilitySynthesisMax = 0;             // Max Synthesis Masteries
 
-        public static int lAbilityOverloadCurrent = 0;
-        public static int lAbilityOverloadMax = 0;
+        public static int lAbilityOverloadCurrent = 0;          // Total Ability Overloads
+        public static int lAbilityOverloadMax = 0;              // Max Ability Overloads
 
-        public static int lMotivationsCurrent = 0;
-        public static int lMotivationsMax = 0;
+        public static int lMotivationsCurrent = 0;              // Total Motivations
+        public static int lMotivationsMax = 0;                  // Max Motivations
 
-        public static int lAcclimationsCurrent = 0;
-        public static int lAcclimationsMax = 0;
+        public static int lAcclimationsCurrent = 0;             // Total Horror Acclimations
+        public static int lAcclimationsMax = 0;                 // Max Horror Acclimations
 
-        public static int lStrainCurrent = 0;
-        public static int lStrainMax = 0;
+        public static int lStrainCurrent = 0;                   // Total Max Strain
+        public static int lStrainMax = 0;                       // Max Max Strain
 
+        // Run all Level Data Calculations
         public static void calculate()
         {
+            // Clear Level Data
             lAttributesCurrent = lAttributesMax = 0;
             lCspCurrent = lCspMax = 0;
             lNcspCurrent = lNcspMax = 0;
@@ -271,6 +295,7 @@ namespace OrpheusManager
             lAcclimationsCurrent = lAcclimationsMax = 0;
             lStrainCurrent = lStrainMax = 0;
 
+            // Gather current Level Data
             for (int i = 0; i < 6; i++) { lAttributesCurrent += CDATA.cAttributes[i]; }
             for (int i = 0; i < 20; i++) { lCspCurrent += EDATA.numToWeightedInt(CDATA.cCkillRank[i]); }
             for (int i = 0; i < 20; i++) { lNcspCurrent += EDATA.numToWeightedInt(CDATA.cSkillRank[i]); }
@@ -280,7 +305,7 @@ namespace OrpheusManager
             for (int i = 0; i < 12; i++) { lAbilityOverloadCurrent += CDATA.cAbilityOverload[i]; }
 
             lMotivationsCurrent = 7;
-
+            
             if (CDATA.cMot1 == "" || CDATA.cMot1 == " ") lMotivationsCurrent -= 1;
             if (CDATA.cMot2 == "" || CDATA.cMot2 == " ") lMotivationsCurrent -= 1;
             if (CDATA.cMot3 == "" || CDATA.cMot3 == " ") lMotivationsCurrent -= 1;
@@ -296,6 +321,7 @@ namespace OrpheusManager
 
             lStrainCurrent = CDATA.cMaxMentStrain + CDATA.cMaxPhysStrain + CDATA.cMaxSpirStrain;
 
+            // Level Upgrades Lookup Table
             switch (CDATA.cLevel)
             {
                 case 0:
@@ -567,15 +593,18 @@ namespace OrpheusManager
         }
     }
 
+    // Edit Data Class
+    //      Global functions for preparing, manipulating, and converting custom data types.
     public static class EDATA
     {
-        public static int eSkillType = 0;
-        public static string eSkillName = " ";
-        public static string eSkillRank = " ";
+        public static int eSkillType = 0;               // Skill Type [REMOVED DO NOT USE]
+        public static string eSkillName = " ";          // Skill Name [REMOVED DO NOT USE]
+        public static string eSkillRank = " ";          // Skill Rank [REMOVED DO NOT USE]
 
-        public static string eAbilityName = " ";
-        public static string eAbilityRank = " ";
+        public static string eAbilityName = " ";        // Ability Name [REMOVED DO NOT USE]
+        public static string eAbilityRank = " ";        // Ability Rank [REMOVED DO NOT USE]
 
+        // Numeral to Integer (string) Conversion
         public static string numToInt(string num)
         {
             if (num == "I") return "1";
@@ -586,6 +615,7 @@ namespace OrpheusManager
             return "";
         }
 
+        // Numeral to Integer Conversion
         public static int numToRealInt(string num)
         {
             if (num == "I") return 1;
@@ -596,6 +626,7 @@ namespace OrpheusManager
             return 0;
         }
 
+        // Integer (string) to Integer Conversion
         public static int intToRealInt(string num)
         {
             if (num == "1") return 1;
@@ -606,6 +637,7 @@ namespace OrpheusManager
             return 0;
         }
 
+        // Numeral to total Skill Points Conversion
         public static int numToWeightedInt(string num)
         {
             if (num == "I") return 1;
@@ -616,6 +648,18 @@ namespace OrpheusManager
             return 0;
         }
 
+        // Integer to total Skill Points Conversion
+        public static int intToWeightedInt(int num)
+        {
+            if (num == 1) return 1;
+            else if (num == 2) return 3;
+            else if (num == 3) return 6;
+            else if (num == 4) return 10;
+            else if (num == 5) return 15;
+            return 0;
+        }
+
+        // Integer (string) to Numeral Conversion
         public static string intToNum(string num)
         {
             if (num == "1") return "I";
@@ -626,24 +670,28 @@ namespace OrpheusManager
             return " ";
         }
 
+        // Removes space character
         public static string clearSpace(string input)
         {
             if (input == " ") return "";
             else return input;
         }
 
+        // Adds space character
         public static string addSpace(string input)
         {
             if (input == "") return " ";
             else return input;
         }
 
+        // Checks if input is a valid skill value
         public static bool skillCheck(string input)
         {
             if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "") return true;
             else return false;
         }
 
+        // Checks if input is a valid ability value
         public static bool abilityCheck(string input)
         {
             if (input == "1" || input == "2" || input == "3" || input == "") return true;
@@ -651,13 +699,20 @@ namespace OrpheusManager
         }
     }
 
+    // Save Data Class
+    //      Functions associated with saving and loading a character sheet.
     public static class SDATA
     {
-        public static string sFilepath = "";
-        public static string sFullData = "";
+        public static string sFilepath = "";        // Filepath to a save file
+        public static string sFullData = "";        // Full contents of a file
 
+        public static bool sRecentSave = true;
+        public static bool sSaveFlag = false;
+
+        // Constructs the save file.
         public static void generateFile(string filepath)
         {
+            // v1.0 Save Generation
             if (CDATA.version == "v1.0")
             {
                 if (File.Exists(filepath))
@@ -990,6 +1045,7 @@ namespace OrpheusManager
             }
         }
 
+        // Captures the value of a saved field.
         public static string parseField(string search)
         {
             int start = 0;
@@ -1002,6 +1058,7 @@ namespace OrpheusManager
             else return " ";
         }
 
+        // Captures the body of the saved data (also validates the data is correct)
         public static string parseFieldEnd(string search)
         {
             int start = 0;
@@ -1014,6 +1071,7 @@ namespace OrpheusManager
             else return " ";
         }
 
+        // Captures the value of a saved line
         public static string parseLine(string source, int line)
         {
             int start = 0;
@@ -1040,6 +1098,7 @@ namespace OrpheusManager
         }
     }
 
+    // Launch App
     static class Program
     {
         /// <summary>
@@ -1049,6 +1108,7 @@ namespace OrpheusManager
         [STAThread]
         static void Main()
         {
+            CDATA.cNotes = "Welcome to the Orpheus Manager!\r\n-------------------------------------------------------\r\n\r\nTo create a new character sheet, click on \"File > New\". This will launch a character creation dialog. You MUST input your starting skills and ablities when prompted, as some calculations rely on starting skill ranks.\r\n\r\nCharacter sheets can be saved as .txt files by clicking \"File > Save\". Saved character sheets can be loaded by clicking \"File > Open\"\r\n\r\nThe \"Edit\" tab allows you to change all the values of your character sheet. \"Edit > Level Up\" tracks all of the upgrades you have free to spend.\r\n\r\nThe \"Reference\" tab has excerpts from the official rules that can serve as quick references while you play. Some nuance is excluded, and the official rules should be trusted when in doubt.";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             mainform = new CharacterSheet();

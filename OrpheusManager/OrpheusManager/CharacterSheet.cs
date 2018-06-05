@@ -612,6 +612,8 @@ namespace OrpheusManager
             ar10.Text = AbilityMod[9] + CDATA.cAbilityRank[9];
             ar11.Text = AbilityMod[10] + CDATA.cAbilityRank[10];
             ar12.Text = AbilityMod[11] + CDATA.cAbilityRank[11];
+
+            SDATA.sRecentSave = false;
         }
         
         private void writeDATA2()
@@ -630,6 +632,8 @@ namespace OrpheusManager
             cOverFocus.Text = CDATA.cOverFocus + "";
             cOverHealth.Text = CDATA.cOverHealth + "";
             cOverSanity.Text = CDATA.cOverSanity + "";
+
+            SDATA.sRecentSave = false;
         }
 
         private void storeDATA2()
@@ -647,6 +651,8 @@ namespace OrpheusManager
             Int32.TryParse(cOverFocus.Text, out CDATA.cOverFocus);
             Int32.TryParse(cOverHealth.Text, out CDATA.cOverHealth);
             Int32.TryParse(cOverSanity.Text, out CDATA.cOverSanity);
+
+            SDATA.sRecentSave = false;
         }
 
         // On Load
@@ -672,6 +678,8 @@ namespace OrpheusManager
             divider2.Image = image3;
 
             writeDATA2();
+
+            SDATA.sRecentSave = true;
         }
         
         private void CharacterSheet_Paint(object sender, PaintEventArgs e)
@@ -1095,10 +1103,10 @@ namespace OrpheusManager
 
             if (CDATA.cAcc2 == 1)
             {
-                System.Drawing.Pen calousPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#676836"));
-                System.Drawing.SolidBrush calousBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#676836"));
-                formGraphics.DrawEllipse(calousPen, 95, 268, 24, 24);
-                formGraphics.FillEllipse(calousBrush, 95, 268, 24, 24);
+                System.Drawing.Pen callousPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#676836"));
+                System.Drawing.SolidBrush callousBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#676836"));
+                formGraphics.DrawEllipse(callousPen, 95, 268, 24, 24);
+                formGraphics.FillEllipse(callousBrush, 95, 268, 24, 24);
 
                 cAcc2.Left = 101;
                 cAcc2.Top = 274;
@@ -1130,6 +1138,7 @@ namespace OrpheusManager
             }
 
             formGraphics.Dispose();
+            SDATA.sRecentSave = false;
         }
 
         public void updateAcclimations()
@@ -1196,6 +1205,7 @@ namespace OrpheusManager
             }
 
             formGraphics.Dispose();
+            SDATA.sRecentSave = false;
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1304,10 +1314,16 @@ namespace OrpheusManager
             {
                 SDATA.generateFile(saver.FileName);
                 SDATA.sFilepath = saver.FileName;
+                SDATA.sRecentSave = true;
             }
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveCharacterSheet();
+        }
+
+        public void saveCharacterSheet()
         {
             CDATA.cNotes = cNotes.Text;
             Int32.TryParse(cMentalStrain.Text, out CDATA.cMentalStrain);
@@ -1402,7 +1418,11 @@ namespace OrpheusManager
             if (SW9.Checked == true) CDATA.cSanityWounds[8] = 1; else CDATA.cSanityWounds[8] = 0;
             if (FW10.Checked == true) CDATA.cSanityWounds[9] = 1; else CDATA.cSanityWounds[9] = 0;
 
-            if (SDATA.sFilepath != "") SDATA.generateFile(SDATA.sFilepath);
+            if (SDATA.sFilepath != "")
+            {
+                SDATA.generateFile(SDATA.sFilepath);
+                SDATA.sRecentSave = true;
+            }
             else
             {
                 SaveFileDialog saver = new SaveFileDialog();
@@ -1416,6 +1436,7 @@ namespace OrpheusManager
                 {
                     SDATA.generateFile(saver.FileName);
                     SDATA.sFilepath = saver.FileName;
+                    SDATA.sRecentSave = true;
                 }
             }
         }
@@ -1802,6 +1823,7 @@ namespace OrpheusManager
                     }
 
                     formGraphics2.Dispose();
+                    SDATA.sRecentSave = true;
                 }
             }
         }
@@ -1991,6 +2013,57 @@ namespace OrpheusManager
         {
             Form rwep = new rMeleeWeapons();
             rwep.Show();
+        }
+
+        private void CharacterSheet_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (SDATA.sRecentSave == false)
+            {
+                Form qtsv = new sQuitSave();
+                qtsv.ShowDialog();
+
+                if (SDATA.sSaveFlag) saveCharacterSheet();
+
+                if (SDATA.sRecentSave == false)
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        private void invalidateSave(object sender, EventArgs e)
+        {
+            SDATA.sRecentSave = false;
+        }
+
+        private void opportunityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void advantageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void attackingAMeleeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void surpriseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void movingTargetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rushToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,6 +21,8 @@ namespace OrpheusManager
         {
             this.Text = "Orpheus Manager - " + CDATA.cName;
 
+            skillCheck2();
+
             // Load Current
             SN0.Text = EDATA.clearSpace(CDATA.cCkillName[0]);
             SN1.Text = EDATA.clearSpace(CDATA.cCkillName[1]);
@@ -247,6 +249,104 @@ namespace OrpheusManager
         private void nCharCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void skillCheck2()
+        {
+            LDATA.calculate();
+
+            int temp = CDATA.cInitialNcsp + LDATA.lNcspMax;
+            int temp2 = CDATA.cInitialCsp + LDATA.lCspMax;
+            int temp3;
+
+            Int32.TryParse(SR0.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR1.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR2.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR3.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR4.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR5.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR6.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR7.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR8.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR9.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR10.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR11.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR12.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR13.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR14.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR15.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR16.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR17.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR18.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(SR19.Text, out temp3);
+            temp2 -= EDATA.intToWeightedInt(temp3);
+
+            Int32.TryParse(NR0.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR1.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR2.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR3.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR4.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR5.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR6.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR7.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR8.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR9.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR10.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR11.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR12.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR13.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR14.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR15.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR16.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR17.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR18.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+            Int32.TryParse(NR19.Text, out temp3);
+            temp -= EDATA.intToWeightedInt(temp3);
+
+            report.Text = "Combat Skills: " + temp2 + " Points\nNon-Combat Skills: " + temp + " Points";
+        }
+
+        private void SR0_TextChanged(object sender, EventArgs e)
+        {
+            skillCheck2();
         }
     }
 }

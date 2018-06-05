@@ -162,3 +162,4 @@ C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csproj.GenerateResource.Cache
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.exe
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.sQuitSave.resources

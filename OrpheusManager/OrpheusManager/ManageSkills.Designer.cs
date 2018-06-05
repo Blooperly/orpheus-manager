@@ -194,6 +194,7 @@
             this.SR0.Name = "SR0";
             this.SR0.Size = new System.Drawing.Size(19, 20);
             this.SR0.TabIndex = 9;
+            this.SR0.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SR1
             // 
@@ -201,6 +202,7 @@
             this.SR1.Name = "SR1";
             this.SR1.Size = new System.Drawing.Size(19, 20);
             this.SR1.TabIndex = 11;
+            this.SR1.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN1
             // 
@@ -215,6 +217,7 @@
             this.SR3.Name = "SR3";
             this.SR3.Size = new System.Drawing.Size(19, 20);
             this.SR3.TabIndex = 15;
+            this.SR3.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN3
             // 
@@ -229,6 +232,7 @@
             this.SR2.Name = "SR2";
             this.SR2.Size = new System.Drawing.Size(19, 20);
             this.SR2.TabIndex = 13;
+            this.SR2.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN2
             // 
@@ -243,6 +247,7 @@
             this.SR7.Name = "SR7";
             this.SR7.Size = new System.Drawing.Size(19, 20);
             this.SR7.TabIndex = 23;
+            this.SR7.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN7
             // 
@@ -257,6 +262,7 @@
             this.SR6.Name = "SR6";
             this.SR6.Size = new System.Drawing.Size(19, 20);
             this.SR6.TabIndex = 21;
+            this.SR6.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN6
             // 
@@ -271,6 +277,7 @@
             this.SR5.Name = "SR5";
             this.SR5.Size = new System.Drawing.Size(19, 20);
             this.SR5.TabIndex = 19;
+            this.SR5.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN5
             // 
@@ -285,6 +292,7 @@
             this.SR4.Name = "SR4";
             this.SR4.Size = new System.Drawing.Size(19, 20);
             this.SR4.TabIndex = 17;
+            this.SR4.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN4
             // 
@@ -299,6 +307,7 @@
             this.SR11.Name = "SR11";
             this.SR11.Size = new System.Drawing.Size(19, 20);
             this.SR11.TabIndex = 31;
+            this.SR11.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN11
             // 
@@ -313,6 +322,7 @@
             this.SR10.Name = "SR10";
             this.SR10.Size = new System.Drawing.Size(19, 20);
             this.SR10.TabIndex = 29;
+            this.SR10.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN10
             // 
@@ -327,6 +337,7 @@
             this.SR9.Name = "SR9";
             this.SR9.Size = new System.Drawing.Size(19, 20);
             this.SR9.TabIndex = 27;
+            this.SR9.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN9
             // 
@@ -341,6 +352,7 @@
             this.SR8.Name = "SR8";
             this.SR8.Size = new System.Drawing.Size(19, 20);
             this.SR8.TabIndex = 25;
+            this.SR8.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN8
             // 
@@ -355,6 +367,7 @@
             this.SR15.Name = "SR15";
             this.SR15.Size = new System.Drawing.Size(19, 20);
             this.SR15.TabIndex = 39;
+            this.SR15.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN15
             // 
@@ -369,6 +382,7 @@
             this.SR14.Name = "SR14";
             this.SR14.Size = new System.Drawing.Size(19, 20);
             this.SR14.TabIndex = 37;
+            this.SR14.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN14
             // 
@@ -383,6 +397,7 @@
             this.SR13.Name = "SR13";
             this.SR13.Size = new System.Drawing.Size(19, 20);
             this.SR13.TabIndex = 35;
+            this.SR13.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN13
             // 
@@ -397,6 +412,7 @@
             this.SR12.Name = "SR12";
             this.SR12.Size = new System.Drawing.Size(19, 20);
             this.SR12.TabIndex = 33;
+            this.SR12.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN12
             // 
@@ -411,6 +427,7 @@
             this.SR19.Name = "SR19";
             this.SR19.Size = new System.Drawing.Size(19, 20);
             this.SR19.TabIndex = 47;
+            this.SR19.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN19
             // 
@@ -425,6 +442,7 @@
             this.SR18.Name = "SR18";
             this.SR18.Size = new System.Drawing.Size(19, 20);
             this.SR18.TabIndex = 45;
+            this.SR18.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN18
             // 
@@ -439,6 +457,7 @@
             this.SR17.Name = "SR17";
             this.SR17.Size = new System.Drawing.Size(19, 20);
             this.SR17.TabIndex = 43;
+            this.SR17.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN17
             // 
@@ -453,6 +472,7 @@
             this.SR16.Name = "SR16";
             this.SR16.Size = new System.Drawing.Size(19, 20);
             this.SR16.TabIndex = 41;
+            this.SR16.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // SN16
             // 
@@ -467,6 +487,7 @@
             this.NR19.Name = "NR19";
             this.NR19.Size = new System.Drawing.Size(19, 20);
             this.NR19.TabIndex = 95;
+            this.NR19.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS19
             // 
@@ -481,6 +502,7 @@
             this.NR18.Name = "NR18";
             this.NR18.Size = new System.Drawing.Size(19, 20);
             this.NR18.TabIndex = 93;
+            this.NR18.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS18
             // 
@@ -495,6 +517,7 @@
             this.NR17.Name = "NR17";
             this.NR17.Size = new System.Drawing.Size(19, 20);
             this.NR17.TabIndex = 91;
+            this.NR17.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS17
             // 
@@ -509,6 +532,7 @@
             this.NR16.Name = "NR16";
             this.NR16.Size = new System.Drawing.Size(19, 20);
             this.NR16.TabIndex = 89;
+            this.NR16.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS16
             // 
@@ -523,6 +547,7 @@
             this.NR15.Name = "NR15";
             this.NR15.Size = new System.Drawing.Size(19, 20);
             this.NR15.TabIndex = 87;
+            this.NR15.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS15
             // 
@@ -537,6 +562,7 @@
             this.NR14.Name = "NR14";
             this.NR14.Size = new System.Drawing.Size(19, 20);
             this.NR14.TabIndex = 85;
+            this.NR14.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS14
             // 
@@ -551,6 +577,7 @@
             this.NR13.Name = "NR13";
             this.NR13.Size = new System.Drawing.Size(19, 20);
             this.NR13.TabIndex = 83;
+            this.NR13.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS13
             // 
@@ -565,6 +592,7 @@
             this.NR12.Name = "NR12";
             this.NR12.Size = new System.Drawing.Size(19, 20);
             this.NR12.TabIndex = 81;
+            this.NR12.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS12
             // 
@@ -579,6 +607,7 @@
             this.NR11.Name = "NR11";
             this.NR11.Size = new System.Drawing.Size(19, 20);
             this.NR11.TabIndex = 79;
+            this.NR11.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS11
             // 
@@ -593,6 +622,7 @@
             this.NR10.Name = "NR10";
             this.NR10.Size = new System.Drawing.Size(19, 20);
             this.NR10.TabIndex = 77;
+            this.NR10.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS10
             // 
@@ -607,6 +637,7 @@
             this.NR9.Name = "NR9";
             this.NR9.Size = new System.Drawing.Size(19, 20);
             this.NR9.TabIndex = 75;
+            this.NR9.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS9
             // 
@@ -621,6 +652,7 @@
             this.NR8.Name = "NR8";
             this.NR8.Size = new System.Drawing.Size(19, 20);
             this.NR8.TabIndex = 73;
+            this.NR8.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS8
             // 
@@ -635,6 +667,7 @@
             this.NR7.Name = "NR7";
             this.NR7.Size = new System.Drawing.Size(19, 20);
             this.NR7.TabIndex = 71;
+            this.NR7.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS7
             // 
@@ -649,6 +682,7 @@
             this.NR6.Name = "NR6";
             this.NR6.Size = new System.Drawing.Size(19, 20);
             this.NR6.TabIndex = 69;
+            this.NR6.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS6
             // 
@@ -663,6 +697,7 @@
             this.NR5.Name = "NR5";
             this.NR5.Size = new System.Drawing.Size(19, 20);
             this.NR5.TabIndex = 67;
+            this.NR5.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS5
             // 
@@ -677,6 +712,7 @@
             this.NR4.Name = "NR4";
             this.NR4.Size = new System.Drawing.Size(19, 20);
             this.NR4.TabIndex = 65;
+            this.NR4.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS4
             // 
@@ -691,6 +727,7 @@
             this.NR3.Name = "NR3";
             this.NR3.Size = new System.Drawing.Size(19, 20);
             this.NR3.TabIndex = 63;
+            this.NR3.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS3
             // 
@@ -705,6 +742,7 @@
             this.NR2.Name = "NR2";
             this.NR2.Size = new System.Drawing.Size(19, 20);
             this.NR2.TabIndex = 61;
+            this.NR2.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS2
             // 
@@ -719,6 +757,7 @@
             this.NR1.Name = "NR1";
             this.NR1.Size = new System.Drawing.Size(19, 20);
             this.NR1.TabIndex = 59;
+            this.NR1.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // NS1
             // 
@@ -733,6 +772,7 @@
             this.NR0.Name = "NR0";
             this.NR0.Size = new System.Drawing.Size(19, 20);
             this.NR0.TabIndex = 57;
+            this.NR0.TextChanged += new System.EventHandler(this.SR0_TextChanged);
             // 
             // label5
             // 
@@ -765,7 +805,7 @@
             // 
             this.report.AutoSize = true;
             this.report.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.report.Location = new System.Drawing.Point(198, 613);
+            this.report.Location = new System.Drawing.Point(62, 608);
             this.report.Name = "report";
             this.report.Size = new System.Drawing.Size(0, 13);
             this.report.TabIndex = 100;
