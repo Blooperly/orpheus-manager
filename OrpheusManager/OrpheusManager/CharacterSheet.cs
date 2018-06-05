@@ -2038,32 +2038,38 @@ namespace OrpheusManager
 
         private void opportunityToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form oppo = new rOpportunity();
+            oppo.Show();
         }
 
         private void advantageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form adva = new rAdvantage();
+            adva.Show();
         }
 
         private void attackingAMeleeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form atam = new rAttackingMelee();
+            atam.Show();
         }
 
         private void surpriseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form surp = new rSurprise();
+            surp.Show();
         }
 
         private void movingTargetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form movn = new rMovingTarget();
+            movn.Show();
         }
 
         private void rushToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form rush = new rRush();
+            rush.Show();
         }
     }
 }

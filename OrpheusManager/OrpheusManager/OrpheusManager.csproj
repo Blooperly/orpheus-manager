@@ -155,6 +155,18 @@
     <Compile Include="rActions.Designer.cs">
       <DependentUpon>rActions.cs</DependentUpon>
     </Compile>
+    <Compile Include="rAdvantage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rAdvantage.Designer.cs">
+      <DependentUpon>rAdvantage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttackingMelee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rAttackingMelee.Designer.cs">
+      <DependentUpon>rAttackingMelee.cs</DependentUpon>
+    </Compile>
     <Compile Include="rAttributes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,11 +233,29 @@
     <Compile Include="rMovement.Designer.cs">
       <DependentUpon>rMovement.cs</DependentUpon>
     </Compile>
+    <Compile Include="rMovingTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMovingTarget.Designer.cs">
+      <DependentUpon>rMovingTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rOpportunity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rOpportunity.Designer.cs">
+      <DependentUpon>rOpportunity.cs</DependentUpon>
+    </Compile>
     <Compile Include="rRolls.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rRolls.Designer.cs">
       <DependentUpon>rRolls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rRush.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rRush.Designer.cs">
+      <DependentUpon>rRush.cs</DependentUpon>
     </Compile>
     <Compile Include="rSkillList.cs">
       <SubType>Form</SubType>
@@ -244,6 +274,12 @@
     </Compile>
     <Compile Include="rStrain.Designer.cs">
       <DependentUpon>rStrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rSurprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rSurprise.Designer.cs">
+      <DependentUpon>rSurprise.cs</DependentUpon>
     </Compile>
     <Compile Include="rTactics.cs">
       <SubType>Form</SubType>
@@ -341,6 +377,12 @@
     <EmbeddedResource Include="rActions.resx">
       <DependentUpon>rActions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rAdvantage.resx">
+      <DependentUpon>rAdvantage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttackingMelee.resx">
+      <DependentUpon>rAttackingMelee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rAttributes.resx">
       <DependentUpon>rAttributes.cs</DependentUpon>
     </EmbeddedResource>
@@ -374,8 +416,17 @@
     <EmbeddedResource Include="rMovement.resx">
       <DependentUpon>rMovement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rMovingTarget.resx">
+      <DependentUpon>rMovingTarget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rOpportunity.resx">
+      <DependentUpon>rOpportunity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rRolls.resx">
       <DependentUpon>rRolls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rRush.resx">
+      <DependentUpon>rRush.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rSkillList.resx">
       <DependentUpon>rSkillList.cs</DependentUpon>
@@ -385,6 +436,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rStrain.resx">
       <DependentUpon>rStrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rSurprise.resx">
+      <DependentUpon>rSurprise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rTactics.resx">
       <DependentUpon>rTactics.cs</DependentUpon>

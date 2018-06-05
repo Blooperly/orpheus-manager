@@ -163,3 +163,9 @@ C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.exe
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.pdb
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.sQuitSave.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rOpportunity.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rAdvantage.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rAttackingMelee.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rMovingTarget.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rRush.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rSurprise.resources
