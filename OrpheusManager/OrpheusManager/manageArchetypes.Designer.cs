@@ -64,6 +64,17 @@
             this.nCharArch3.FormattingEnabled = true;
             this.nCharArch3.Items.AddRange(new object[] {
             "",
+            "Hermetic Magician",
+            "Witch",
+            "Psychic",
+            "Weapon Bearer",
+            "Occultist",
+            "Cyborg",
+            "Wendigo",
+            "Telekinetic",
+            "Werewolf",
+            "True Faith",
+            "Medium",
             "Soldier"});
             this.nCharArch3.Location = new System.Drawing.Point(116, 80);
             this.nCharArch3.Name = "nCharArch3";
@@ -80,6 +91,7 @@
             "Witch",
             "Psychic",
             "Weapon Bearer",
+            "Occultist",
             "Cyborg",
             "Wendigo",
             "Telekinetic",
@@ -102,6 +114,7 @@
             "Witch",
             "Psychic",
             "Weapon Bearer",
+            "Occultist",
             "Cyborg",
             "Wendigo",
             "Telekinetic",

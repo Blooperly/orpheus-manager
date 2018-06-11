@@ -179,11 +179,23 @@
     <Compile Include="rBleeding.Designer.cs">
       <DependentUpon>rBleeding.cs</DependentUpon>
     </Compile>
+    <Compile Include="rCalledShots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rCalledShots.Designer.cs">
+      <DependentUpon>rCalledShots.cs</DependentUpon>
+    </Compile>
     <Compile Include="rCollaborative.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rCollaborative.Designer.cs">
       <DependentUpon>rCollaborative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rCourtingDeath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rCourtingDeath.Designer.cs">
+      <DependentUpon>rCourtingDeath.cs</DependentUpon>
     </Compile>
     <Compile Include="rDAttributes.cs">
       <SubType>Form</SubType>
@@ -203,6 +215,30 @@
     <Compile Include="rDeathChecks.Designer.cs">
       <DependentUpon>rDeathChecks.cs</DependentUpon>
     </Compile>
+    <Compile Include="rEmbrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rEmbrace.Designer.cs">
+      <DependentUpon>rEmbrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEncumbrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rEncumbrance.Designer.cs">
+      <DependentUpon>rEncumbrance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rHorrorAcclimations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rHorrorAcclimations.Designer.cs">
+      <DependentUpon>rHorrorAcclimations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rHumanity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rHumanity.Designer.cs">
+      <DependentUpon>rHumanity.cs</DependentUpon>
+    </Compile>
     <Compile Include="rInitiative.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +256,12 @@
     </Compile>
     <Compile Include="rMeleeWeapons.Designer.cs">
       <DependentUpon>rMeleeWeapons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMemento.Designer.cs">
+      <DependentUpon>rMemento.cs</DependentUpon>
     </Compile>
     <Compile Include="rMotivations.cs">
       <SubType>Form</SubType>
@@ -244,6 +286,12 @@
     </Compile>
     <Compile Include="rOpportunity.Designer.cs">
       <DependentUpon>rOpportunity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rRateOfFire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rRateOfFire.Designer.cs">
+      <DependentUpon>rRateOfFire.cs</DependentUpon>
     </Compile>
     <Compile Include="rRolls.cs">
       <SubType>Form</SubType>
@@ -274,6 +322,12 @@
     </Compile>
     <Compile Include="rStrain.Designer.cs">
       <DependentUpon>rStrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rSuppressingHorror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rSuppressingHorror.Designer.cs">
+      <DependentUpon>rSuppressingHorror.cs</DependentUpon>
     </Compile>
     <Compile Include="rSurprise.cs">
       <SubType>Form</SubType>
@@ -389,8 +443,14 @@
     <EmbeddedResource Include="rBleeding.resx">
       <DependentUpon>rBleeding.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rCalledShots.resx">
+      <DependentUpon>rCalledShots.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rCollaborative.resx">
       <DependentUpon>rCollaborative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rCourtingDeath.resx">
+      <DependentUpon>rCourtingDeath.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rDAttributes.resx">
       <DependentUpon>rDAttributes.cs</DependentUpon>
@@ -401,6 +461,18 @@
     <EmbeddedResource Include="rDeathChecks.resx">
       <DependentUpon>rDeathChecks.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rEmbrace.resx">
+      <DependentUpon>rEmbrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEncumbrance.resx">
+      <DependentUpon>rEncumbrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rHorrorAcclimations.resx">
+      <DependentUpon>rHorrorAcclimations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rHumanity.resx">
+      <DependentUpon>rHumanity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rInitiative.resx">
       <DependentUpon>rInitiative.cs</DependentUpon>
     </EmbeddedResource>
@@ -409,6 +481,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rMeleeWeapons.resx">
       <DependentUpon>rMeleeWeapons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMemento.resx">
+      <DependentUpon>rMemento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rMotivations.resx">
       <DependentUpon>rMotivations.cs</DependentUpon>
@@ -421,6 +496,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rOpportunity.resx">
       <DependentUpon>rOpportunity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rRateOfFire.resx">
+      <DependentUpon>rRateOfFire.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rRolls.resx">
       <DependentUpon>rRolls.cs</DependentUpon>
@@ -436,6 +514,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rStrain.resx">
       <DependentUpon>rStrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rSuppressingHorror.resx">
+      <DependentUpon>rSuppressingHorror.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rSurprise.resx">
       <DependentUpon>rSurprise.cs</DependentUpon>

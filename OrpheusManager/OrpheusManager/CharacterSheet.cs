@@ -962,6 +962,7 @@ namespace OrpheusManager
 
             // Clear Notes
             cNotes.Text = "";
+            CDATA.cNotes = "";
 
             // Assign Skills/Abilities
             Form mskill = new ManageSkillsFirst();
@@ -2070,6 +2071,131 @@ namespace OrpheusManager
         {
             Form rush = new rRush();
             rush.Show();
+        }
+
+        private void mementoMoriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form memo = new rMemento();
+            memo.Show();
+        }
+
+        private void attributeTypesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form ratt = new rAttributes();
+            ratt.Show();
+        }
+
+        private void derivedAttributesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form rdatt = new rDAttributes();
+            rdatt.Show();
+        }
+
+        private void skillRanksToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rskl = new rSkills();
+            rskl.Show();
+        }
+
+        private void skillListToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form rsls = new rSkillList();
+            rsls.Show();
+        }
+
+        private void dazeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bleedingToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rbled = new rBleeding();
+            rbled.Show();
+        }
+
+        private void temporaryInsanityToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rins = new rTemporaryInsanity();
+            rins.Show();
+        }
+
+        private void woundPenaltiesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rpen = new rWoundPenalties();
+            rpen.Show();
+        }
+
+        private void upChecksToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rups = new rUpChecks();
+            rups.Show();
+        }
+
+        private void deathChecksToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form rded = new rDeathChecks();
+            rded.Show();
+        }
+
+        private void strainToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form rstn = new rStrain();
+            rstn.Show();
+        }
+
+        private void motivationsToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Form rmot = new rMotivations();
+            rmot.Show();
+        }
+
+        private void courtingDeathToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form cort = new rCourtingDeath();
+            cort.Show();
+        }
+
+        private void humanityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form huma = new rHumanity();
+            huma.Show();
+        }
+
+        private void rateOfFireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form roff = new rRateOfFire();
+            roff.Show();
+        }
+
+        private void calledShotsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form csht = new rCalledShots();
+            csht.Show();
+        }
+
+        private void encumbranceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form heav = new rEncumbrance();
+            heav.Show();
+        }
+
+        private void horrorAcclimationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form accl = new rHorrorAcclimations();
+            accl.Show();
+        }
+
+        private void embracingYourDarkestSelfToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form embr = new rEmbrace();
+            embr.Show();
+        }
+
+        private void suppressingHorrorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form supr = new rSuppressingHorror();
+            supr.Show();
         }
     }
 }
