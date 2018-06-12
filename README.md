@@ -1,37 +1,18 @@
 # Orpheus Manager
 **Making the most horrible things on Earth and beyond a bit easier.**
 
-WARNING:
-The character editor is still in early development. If you save a character sheet, it will PROBABLY be broken in the next update. Backwards compatability for save files will begin on 1.0 release.
+The Orpheus Manager is a character creation and management tool for The Orpheus Protocol RPG System. The manager is feature complete as of v2.1.2 of The Orpheus Protocol official rules. The character sheet itself does all the stat calculation for you during character creation, and will alert you if you are missing anything important. During gameplay, the manager gives you a streamlined interface to track resources, reference rules, and take notes. You can save your character sheet between sessions, and the file format is designed to be compatible with other community developed tools for The Orpheus Protocol.
 
-### Feature Checklist:
+### Features:
 1. Character Creation / Management
     - Editable character sheet
-    - Motivation tracking
-    - Backgrounds
-    - Attributes
-    - Auto-Calculation of derived attributes
-    - Damage tracks
-    - Status effects
-    - Permanant wounds
-    - Strain tracking
-    - Skills
-    - Initiative tracking
-    - Weapons
-    - Armor
-    - Memento Mori
-    - Humanity
-    - Acclimations
-    - Level
-    - Exp
+    - Resource tracking
+    - Auto-calculation of derived attributes
+    - You can save your sheet for later
+    - Sleek design
 2. Reference
-    - Ability references
     - Rules cheat-sheet
-        - List of common actions
-        - Special weapon rules
-        - Horror Checks
-        - Strain Refresh
-        - Advancement Table
-3. Expansion
-    - Ability to add custom archetypes
-    - Ability to add custom backgrounds
+        - Character creation references
+        - Combat rules
+        - General system rules
+        - Great references for GM's too
