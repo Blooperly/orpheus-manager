@@ -11,7 +11,7 @@ The Orpheus Manager is a character creation and management tool for [The Orpheus
 2. Launch the Application
     - You may have to ignore a security warning to run the application. This is a personal project, and I did not have the funds to buy an expensive certification to get Windows to accept me. I promise it is safe :)
 3. Have Fun
-    - There are instructions when you launch the app. Direct any questions to me on the "Rules and Game Discussion" channel of the official Orpeus Discord. Please let me know if you see any pesky bugs!
+    - There are instructions when you launch the app. Direct any questions to me on the "Rules and Game Discussion" channel of the official Orpheus Discord. Please let me know if you see any pesky bugs!
 
 ### Features:
 1. Character Creation / Management
