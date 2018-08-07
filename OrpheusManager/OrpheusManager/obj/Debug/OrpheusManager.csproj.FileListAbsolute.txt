@@ -120,7 +120,6 @@ C:\Users\jbrown\Downloads\orpheus-manager-master\OrpheusManager\OrpheusManager\o
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.exe.config
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.exe
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\bin\Debug\OrpheusManager.pdb
-C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csprojResolveAssemblyReference.cache
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.About.resources
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.addAbilityForm.resources
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.addSkillForm.resources
@@ -177,3 +176,15 @@ C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rEncumbrance.resources
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rHorrorAcclimations.resources
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rEmbrace.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csprojAssemblyReference.cache
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rSuppressingHorror.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.csproj.CoreCompileInputs.cache
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rDualWielding.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rFirearmsList.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rExplosives.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rArmor.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rActionReports.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rStrainRefresh.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rDowntime.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rExperienceGain.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rLevelUp.resources

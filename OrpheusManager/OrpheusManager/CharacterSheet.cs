@@ -2197,5 +2197,65 @@ namespace OrpheusManager
             Form supr = new rSuppressingHorror();
             supr.Show();
         }
+
+        private void calledShotsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form csht = new rCalledShots();
+            csht.Show();
+        }
+
+        private void dualWieldingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form dual = new rDualWielding();
+            dual.Show();
+        }
+
+        private void listOfFirearmsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form lfir = new rFirearmsList();
+            lfir.Show();
+        }
+
+        private void listOfExplosivesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form boom = new rExplosives();
+            boom.Show();
+        }
+
+        private void listOfArmorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form larm = new rArmor();
+            larm.Show();
+        }
+
+        private void actionReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form acrp = new rActionReports();
+            acrp.Show();
+        }
+
+        private void strainRefreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ahhh = new rStrainRefresh();
+            ahhh.Show();
+        }
+
+        private void downtimeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form down = new rDowntime();
+            down.Show();
+        }
+
+        private void experienceGainToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form expr = new rExperienceGain();
+            expr.Show();
+        }
+
+        private void levellingUpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form lvup = new rLevelUp();
+            lvup.Show();
+        }
     }
 }

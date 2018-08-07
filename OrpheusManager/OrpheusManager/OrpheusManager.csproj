@@ -149,6 +149,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rActionReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rActionReports.Designer.cs">
+      <DependentUpon>rActionReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="rActions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,12 @@
     </Compile>
     <Compile Include="rAdvantage.Designer.cs">
       <DependentUpon>rAdvantage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rArmor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rArmor.Designer.cs">
+      <DependentUpon>rArmor.cs</DependentUpon>
     </Compile>
     <Compile Include="rAttackingMelee.cs">
       <SubType>Form</SubType>
@@ -215,6 +227,18 @@
     <Compile Include="rDeathChecks.Designer.cs">
       <DependentUpon>rDeathChecks.cs</DependentUpon>
     </Compile>
+    <Compile Include="rDowntime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDowntime.Designer.cs">
+      <DependentUpon>rDowntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rDualWielding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDualWielding.Designer.cs">
+      <DependentUpon>rDualWielding.cs</DependentUpon>
+    </Compile>
     <Compile Include="rEmbrace.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +250,24 @@
     </Compile>
     <Compile Include="rEncumbrance.Designer.cs">
       <DependentUpon>rEncumbrance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rExperienceGain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rExperienceGain.Designer.cs">
+      <DependentUpon>rExperienceGain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rExplosives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rExplosives.Designer.cs">
+      <DependentUpon>rExplosives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rFirearmsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rFirearmsList.Designer.cs">
+      <DependentUpon>rFirearmsList.cs</DependentUpon>
     </Compile>
     <Compile Include="rHorrorAcclimations.cs">
       <SubType>Form</SubType>
@@ -244,6 +286,12 @@
     </Compile>
     <Compile Include="rInitiative.Designer.cs">
       <DependentUpon>rInitiative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rLevelUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rLevelUp.Designer.cs">
+      <DependentUpon>rLevelUp.cs</DependentUpon>
     </Compile>
     <Compile Include="rLuck.cs">
       <SubType>Form</SubType>
@@ -322,6 +370,12 @@
     </Compile>
     <Compile Include="rStrain.Designer.cs">
       <DependentUpon>rStrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rStrainRefresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rStrainRefresh.Designer.cs">
+      <DependentUpon>rStrainRefresh.cs</DependentUpon>
     </Compile>
     <Compile Include="rSuppressingHorror.cs">
       <SubType>Form</SubType>
@@ -428,11 +482,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rActionReports.resx">
+      <DependentUpon>rActionReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rActions.resx">
       <DependentUpon>rActions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rAdvantage.resx">
       <DependentUpon>rAdvantage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rArmor.resx">
+      <DependentUpon>rArmor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rAttackingMelee.resx">
       <DependentUpon>rAttackingMelee.cs</DependentUpon>
@@ -461,11 +521,26 @@
     <EmbeddedResource Include="rDeathChecks.resx">
       <DependentUpon>rDeathChecks.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rDowntime.resx">
+      <DependentUpon>rDowntime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rDualWielding.resx">
+      <DependentUpon>rDualWielding.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rEmbrace.resx">
       <DependentUpon>rEmbrace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rEncumbrance.resx">
       <DependentUpon>rEncumbrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rExperienceGain.resx">
+      <DependentUpon>rExperienceGain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rExplosives.resx">
+      <DependentUpon>rExplosives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rFirearmsList.resx">
+      <DependentUpon>rFirearmsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rHorrorAcclimations.resx">
       <DependentUpon>rHorrorAcclimations.cs</DependentUpon>
@@ -475,6 +550,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rInitiative.resx">
       <DependentUpon>rInitiative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rLevelUp.resx">
+      <DependentUpon>rLevelUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rLuck.resx">
       <DependentUpon>rLuck.cs</DependentUpon>
@@ -514,6 +592,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rStrain.resx">
       <DependentUpon>rStrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rStrainRefresh.resx">
+      <DependentUpon>rStrainRefresh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rSuppressingHorror.resx">
       <DependentUpon>rSuppressingHorror.cs</DependentUpon>
