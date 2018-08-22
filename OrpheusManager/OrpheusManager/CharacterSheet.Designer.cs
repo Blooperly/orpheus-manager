@@ -60,6 +60,8 @@
             this.motivationsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.humanityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horrorAcclimationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.experienceGainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.levellingUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gameMechanicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rollingDiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.luckChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,6 +70,9 @@
             this.courtingDeathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.embracingYourDarkestSelfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suppressingHorrorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actionReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.strainRefreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.downtimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combatMechanicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.initiativeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.listOfCommonActionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,8 +80,12 @@
             this.movementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weaponsArmorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listOfWeaponsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listOfFirearmsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listOfExplosivesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listOfArmorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rateOfFireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.encumbranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dualWieldingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.situationalModifiersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opportunityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advantageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,6 +93,7 @@
             this.surpriseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movingTargetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rushToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calledShotsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consequencesOfDamageToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dazeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bleedingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -355,16 +365,14 @@
             this.cAcc2 = new System.Windows.Forms.Label();
             this.cAcc3 = new System.Windows.Forms.Label();
             this.cAcc4 = new System.Windows.Forms.Label();
-            this.calledShotsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dualWieldingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listOfFirearmsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listOfExplosivesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listOfArmorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actionReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.strainRefreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.downtimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.experienceGainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.levellingUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dWariness = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.dVigilance = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.dParry = new System.Windows.Forms.Label();
+            this.dEvade = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archetypePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titlePic)).BeginInit();
@@ -625,6 +633,20 @@
             this.horrorAcclimationToolStripMenuItem.Text = "Horror Acclimations";
             this.horrorAcclimationToolStripMenuItem.Click += new System.EventHandler(this.horrorAcclimationToolStripMenuItem_Click);
             // 
+            // experienceGainToolStripMenuItem
+            // 
+            this.experienceGainToolStripMenuItem.Name = "experienceGainToolStripMenuItem";
+            this.experienceGainToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.experienceGainToolStripMenuItem.Text = "Experience Gain";
+            this.experienceGainToolStripMenuItem.Click += new System.EventHandler(this.experienceGainToolStripMenuItem_Click);
+            // 
+            // levellingUpToolStripMenuItem
+            // 
+            this.levellingUpToolStripMenuItem.Name = "levellingUpToolStripMenuItem";
+            this.levellingUpToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.levellingUpToolStripMenuItem.Text = "Levelling Up";
+            this.levellingUpToolStripMenuItem.Click += new System.EventHandler(this.levellingUpToolStripMenuItem_Click);
+            // 
             // gameMechanicsToolStripMenuItem
             // 
             this.gameMechanicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -691,6 +713,27 @@
             this.suppressingHorrorToolStripMenuItem.Text = "Suppressing Horror";
             this.suppressingHorrorToolStripMenuItem.Click += new System.EventHandler(this.suppressingHorrorToolStripMenuItem_Click);
             // 
+            // actionReportsToolStripMenuItem
+            // 
+            this.actionReportsToolStripMenuItem.Name = "actionReportsToolStripMenuItem";
+            this.actionReportsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.actionReportsToolStripMenuItem.Text = "Action Reports";
+            this.actionReportsToolStripMenuItem.Click += new System.EventHandler(this.actionReportsToolStripMenuItem_Click);
+            // 
+            // strainRefreshToolStripMenuItem
+            // 
+            this.strainRefreshToolStripMenuItem.Name = "strainRefreshToolStripMenuItem";
+            this.strainRefreshToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.strainRefreshToolStripMenuItem.Text = "Strain Refresh";
+            this.strainRefreshToolStripMenuItem.Click += new System.EventHandler(this.strainRefreshToolStripMenuItem_Click);
+            // 
+            // downtimeToolStripMenuItem
+            // 
+            this.downtimeToolStripMenuItem.Name = "downtimeToolStripMenuItem";
+            this.downtimeToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.downtimeToolStripMenuItem.Text = "Downtime";
+            this.downtimeToolStripMenuItem.Click += new System.EventHandler(this.downtimeToolStripMenuItem_Click);
+            // 
             // combatMechanicsToolStripMenuItem
             // 
             this.combatMechanicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -750,23 +793,51 @@
             // listOfWeaponsToolStripMenuItem
             // 
             this.listOfWeaponsToolStripMenuItem.Name = "listOfWeaponsToolStripMenuItem";
-            this.listOfWeaponsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listOfWeaponsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.listOfWeaponsToolStripMenuItem.Text = "List of Weapons";
             this.listOfWeaponsToolStripMenuItem.Click += new System.EventHandler(this.listOfWeaponsToolStripMenuItem_Click);
+            // 
+            // listOfFirearmsToolStripMenuItem
+            // 
+            this.listOfFirearmsToolStripMenuItem.Name = "listOfFirearmsToolStripMenuItem";
+            this.listOfFirearmsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.listOfFirearmsToolStripMenuItem.Text = "List of Firearms";
+            this.listOfFirearmsToolStripMenuItem.Click += new System.EventHandler(this.listOfFirearmsToolStripMenuItem_Click);
+            // 
+            // listOfExplosivesToolStripMenuItem
+            // 
+            this.listOfExplosivesToolStripMenuItem.Name = "listOfExplosivesToolStripMenuItem";
+            this.listOfExplosivesToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.listOfExplosivesToolStripMenuItem.Text = "List of Explosives";
+            this.listOfExplosivesToolStripMenuItem.Click += new System.EventHandler(this.listOfExplosivesToolStripMenuItem_Click);
+            // 
+            // listOfArmorToolStripMenuItem
+            // 
+            this.listOfArmorToolStripMenuItem.Name = "listOfArmorToolStripMenuItem";
+            this.listOfArmorToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.listOfArmorToolStripMenuItem.Text = "List of Armor";
+            this.listOfArmorToolStripMenuItem.Click += new System.EventHandler(this.listOfArmorToolStripMenuItem_Click);
             // 
             // rateOfFireToolStripMenuItem
             // 
             this.rateOfFireToolStripMenuItem.Name = "rateOfFireToolStripMenuItem";
-            this.rateOfFireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rateOfFireToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.rateOfFireToolStripMenuItem.Text = "Rate of Fire";
             this.rateOfFireToolStripMenuItem.Click += new System.EventHandler(this.rateOfFireToolStripMenuItem_Click);
             // 
             // encumbranceToolStripMenuItem
             // 
             this.encumbranceToolStripMenuItem.Name = "encumbranceToolStripMenuItem";
-            this.encumbranceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.encumbranceToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.encumbranceToolStripMenuItem.Text = "Encumbrance";
             this.encumbranceToolStripMenuItem.Click += new System.EventHandler(this.encumbranceToolStripMenuItem_Click);
+            // 
+            // dualWieldingToolStripMenuItem
+            // 
+            this.dualWieldingToolStripMenuItem.Name = "dualWieldingToolStripMenuItem";
+            this.dualWieldingToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.dualWieldingToolStripMenuItem.Text = "Dual Wielding";
+            this.dualWieldingToolStripMenuItem.Click += new System.EventHandler(this.dualWieldingToolStripMenuItem_Click);
             // 
             // situationalModifiersToolStripMenuItem
             // 
@@ -785,44 +856,51 @@
             // opportunityToolStripMenuItem
             // 
             this.opportunityToolStripMenuItem.Name = "opportunityToolStripMenuItem";
-            this.opportunityToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.opportunityToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.opportunityToolStripMenuItem.Text = "Opportunity";
             this.opportunityToolStripMenuItem.Click += new System.EventHandler(this.opportunityToolStripMenuItem_Click);
             // 
             // advantageToolStripMenuItem
             // 
             this.advantageToolStripMenuItem.Name = "advantageToolStripMenuItem";
-            this.advantageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.advantageToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.advantageToolStripMenuItem.Text = "Advantage";
             this.advantageToolStripMenuItem.Click += new System.EventHandler(this.advantageToolStripMenuItem_Click);
             // 
             // attackingAMeleeToolStripMenuItem
             // 
             this.attackingAMeleeToolStripMenuItem.Name = "attackingAMeleeToolStripMenuItem";
-            this.attackingAMeleeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.attackingAMeleeToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.attackingAMeleeToolStripMenuItem.Text = "Attacking a Melee";
             this.attackingAMeleeToolStripMenuItem.Click += new System.EventHandler(this.attackingAMeleeToolStripMenuItem_Click);
             // 
             // surpriseToolStripMenuItem
             // 
             this.surpriseToolStripMenuItem.Name = "surpriseToolStripMenuItem";
-            this.surpriseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.surpriseToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.surpriseToolStripMenuItem.Text = "Surprise";
             this.surpriseToolStripMenuItem.Click += new System.EventHandler(this.surpriseToolStripMenuItem_Click);
             // 
             // movingTargetToolStripMenuItem
             // 
             this.movingTargetToolStripMenuItem.Name = "movingTargetToolStripMenuItem";
-            this.movingTargetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.movingTargetToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.movingTargetToolStripMenuItem.Text = "Moving Target";
             this.movingTargetToolStripMenuItem.Click += new System.EventHandler(this.movingTargetToolStripMenuItem_Click);
             // 
             // rushToolStripMenuItem
             // 
             this.rushToolStripMenuItem.Name = "rushToolStripMenuItem";
-            this.rushToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rushToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.rushToolStripMenuItem.Text = "Rush";
             this.rushToolStripMenuItem.Click += new System.EventHandler(this.rushToolStripMenuItem_Click);
+            // 
+            // calledShotsToolStripMenuItem1
+            // 
+            this.calledShotsToolStripMenuItem1.Name = "calledShotsToolStripMenuItem1";
+            this.calledShotsToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
+            this.calledShotsToolStripMenuItem1.Text = "Called Shots";
+            this.calledShotsToolStripMenuItem1.Click += new System.EventHandler(this.calledShotsToolStripMenuItem1_Click);
             // 
             // consequencesOfDamageToolStripMenuItem1
             // 
@@ -841,47 +919,47 @@
             // dazeToolStripMenuItem1
             // 
             this.dazeToolStripMenuItem1.Name = "dazeToolStripMenuItem1";
-            this.dazeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.dazeToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.dazeToolStripMenuItem1.Text = "Daze";
             this.dazeToolStripMenuItem1.Click += new System.EventHandler(this.dazeToolStripMenuItem1_Click);
             // 
             // bleedingToolStripMenuItem1
             // 
             this.bleedingToolStripMenuItem1.Name = "bleedingToolStripMenuItem1";
-            this.bleedingToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.bleedingToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.bleedingToolStripMenuItem1.Text = "Bleeding";
             this.bleedingToolStripMenuItem1.Click += new System.EventHandler(this.bleedingToolStripMenuItem1_Click);
             // 
             // temporaryInsanityToolStripMenuItem1
             // 
             this.temporaryInsanityToolStripMenuItem1.Name = "temporaryInsanityToolStripMenuItem1";
-            this.temporaryInsanityToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.temporaryInsanityToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.temporaryInsanityToolStripMenuItem1.Text = "Temporary Insanity";
             this.temporaryInsanityToolStripMenuItem1.Click += new System.EventHandler(this.temporaryInsanityToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(173, 6);
             // 
             // woundPenaltiesToolStripMenuItem1
             // 
             this.woundPenaltiesToolStripMenuItem1.Name = "woundPenaltiesToolStripMenuItem1";
-            this.woundPenaltiesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.woundPenaltiesToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.woundPenaltiesToolStripMenuItem1.Text = "Wound Penalties";
             this.woundPenaltiesToolStripMenuItem1.Click += new System.EventHandler(this.woundPenaltiesToolStripMenuItem1_Click);
             // 
             // upChecksToolStripMenuItem1
             // 
             this.upChecksToolStripMenuItem1.Name = "upChecksToolStripMenuItem1";
-            this.upChecksToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.upChecksToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.upChecksToolStripMenuItem1.Text = "Up Checks";
             this.upChecksToolStripMenuItem1.Click += new System.EventHandler(this.upChecksToolStripMenuItem1_Click);
             // 
             // deathChecksToolStripMenuItem1
             // 
             this.deathChecksToolStripMenuItem1.Name = "deathChecksToolStripMenuItem1";
-            this.deathChecksToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.deathChecksToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.deathChecksToolStripMenuItem1.Text = "Death Checks";
             this.deathChecksToolStripMenuItem1.Click += new System.EventHandler(this.deathChecksToolStripMenuItem1_Click);
             // 
@@ -966,132 +1044,132 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(39, 360);
+            this.label6.Location = new System.Drawing.Point(30, 341);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 20);
+            this.label6.Size = new System.Drawing.Size(76, 16);
             this.label6.TabIndex = 8;
             this.label6.Text = "Perception:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(39, 380);
+            this.label1.Location = new System.Drawing.Point(30, 357);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "Cognition:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(39, 400);
+            this.label2.Location = new System.Drawing.Point(30, 373);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
+            this.label2.Size = new System.Drawing.Size(63, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Dexterity:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(39, 420);
+            this.label3.Location = new System.Drawing.Point(30, 389);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.Size = new System.Drawing.Size(50, 16);
             this.label3.TabIndex = 11;
             this.label3.Text = "Vitality:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(39, 440);
+            this.label4.Location = new System.Drawing.Point(30, 405);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 20);
+            this.label4.Size = new System.Drawing.Size(68, 16);
             this.label4.TabIndex = 12;
             this.label4.Text = "Charisma:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(39, 460);
+            this.label5.Location = new System.Drawing.Point(30, 421);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 20);
+            this.label5.Size = new System.Drawing.Size(73, 16);
             this.label5.TabIndex = 13;
             this.label5.Text = "Willpower: ";
             // 
             // cPerception
             // 
             this.cPerception.AutoSize = true;
-            this.cPerception.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cPerception.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cPerception.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cPerception.Location = new System.Drawing.Point(134, 360);
+            this.cPerception.Location = new System.Drawing.Point(125, 341);
             this.cPerception.Name = "cPerception";
-            this.cPerception.Size = new System.Drawing.Size(18, 20);
+            this.cPerception.Size = new System.Drawing.Size(15, 16);
             this.cPerception.TabIndex = 14;
             this.cPerception.Text = "0";
             // 
             // cCognition
             // 
             this.cCognition.AutoSize = true;
-            this.cCognition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cCognition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCognition.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cCognition.Location = new System.Drawing.Point(134, 380);
+            this.cCognition.Location = new System.Drawing.Point(125, 357);
             this.cCognition.Name = "cCognition";
-            this.cCognition.Size = new System.Drawing.Size(18, 20);
+            this.cCognition.Size = new System.Drawing.Size(15, 16);
             this.cCognition.TabIndex = 15;
             this.cCognition.Text = "0";
             // 
             // cDexterity
             // 
             this.cDexterity.AutoSize = true;
-            this.cDexterity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cDexterity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cDexterity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cDexterity.Location = new System.Drawing.Point(134, 400);
+            this.cDexterity.Location = new System.Drawing.Point(125, 373);
             this.cDexterity.Name = "cDexterity";
-            this.cDexterity.Size = new System.Drawing.Size(18, 20);
+            this.cDexterity.Size = new System.Drawing.Size(15, 16);
             this.cDexterity.TabIndex = 16;
             this.cDexterity.Text = "0";
             // 
             // cVitality
             // 
             this.cVitality.AutoSize = true;
-            this.cVitality.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cVitality.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cVitality.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cVitality.Location = new System.Drawing.Point(134, 420);
+            this.cVitality.Location = new System.Drawing.Point(125, 389);
             this.cVitality.Name = "cVitality";
-            this.cVitality.Size = new System.Drawing.Size(18, 20);
+            this.cVitality.Size = new System.Drawing.Size(15, 16);
             this.cVitality.TabIndex = 17;
             this.cVitality.Text = "0";
             // 
             // cCharisma
             // 
             this.cCharisma.AutoSize = true;
-            this.cCharisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cCharisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCharisma.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cCharisma.Location = new System.Drawing.Point(134, 440);
+            this.cCharisma.Location = new System.Drawing.Point(125, 405);
             this.cCharisma.Name = "cCharisma";
-            this.cCharisma.Size = new System.Drawing.Size(18, 20);
+            this.cCharisma.Size = new System.Drawing.Size(15, 16);
             this.cCharisma.TabIndex = 18;
             this.cCharisma.Text = "0";
             // 
             // cWillpower
             // 
             this.cWillpower.AutoSize = true;
-            this.cWillpower.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cWillpower.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cWillpower.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cWillpower.Location = new System.Drawing.Point(134, 460);
+            this.cWillpower.Location = new System.Drawing.Point(125, 421);
             this.cWillpower.Name = "cWillpower";
-            this.cWillpower.Size = new System.Drawing.Size(18, 20);
+            this.cWillpower.Size = new System.Drawing.Size(15, 16);
             this.cWillpower.TabIndex = 19;
             this.cWillpower.Text = "0";
             // 
@@ -1100,7 +1178,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(53, 321);
+            this.label7.Location = new System.Drawing.Point(44, 302);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 20;
@@ -1108,7 +1186,7 @@
             // 
             // divider1
             // 
-            this.divider1.Location = new System.Drawing.Point(34, 338);
+            this.divider1.Location = new System.Drawing.Point(25, 319);
             this.divider1.Name = "divider1";
             this.divider1.Size = new System.Drawing.Size(120, 20);
             this.divider1.TabIndex = 21;
@@ -1117,7 +1195,7 @@
             // m1m1
             // 
             this.m1m1.AutoSize = true;
-            this.m1m1.Location = new System.Drawing.Point(426, 88);
+            this.m1m1.Location = new System.Drawing.Point(418, 87);
             this.m1m1.Name = "m1m1";
             this.m1m1.Size = new System.Drawing.Size(15, 14);
             this.m1m1.TabIndex = 22;
@@ -1127,7 +1205,7 @@
             // m1m4
             // 
             this.m1m4.AutoSize = true;
-            this.m1m4.Location = new System.Drawing.Point(489, 88);
+            this.m1m4.Location = new System.Drawing.Point(481, 87);
             this.m1m4.Name = "m1m4";
             this.m1m4.Size = new System.Drawing.Size(15, 14);
             this.m1m4.TabIndex = 23;
@@ -1137,7 +1215,7 @@
             // m1m3
             // 
             this.m1m3.AutoSize = true;
-            this.m1m3.Location = new System.Drawing.Point(468, 88);
+            this.m1m3.Location = new System.Drawing.Point(460, 87);
             this.m1m3.Name = "m1m3";
             this.m1m3.Size = new System.Drawing.Size(15, 14);
             this.m1m3.TabIndex = 24;
@@ -1147,7 +1225,7 @@
             // m1m5
             // 
             this.m1m5.AutoSize = true;
-            this.m1m5.Location = new System.Drawing.Point(510, 88);
+            this.m1m5.Location = new System.Drawing.Point(502, 87);
             this.m1m5.Name = "m1m5";
             this.m1m5.Size = new System.Drawing.Size(15, 14);
             this.m1m5.TabIndex = 25;
@@ -1157,7 +1235,7 @@
             // m1m2
             // 
             this.m1m2.AutoSize = true;
-            this.m1m2.Location = new System.Drawing.Point(447, 88);
+            this.m1m2.Location = new System.Drawing.Point(439, 87);
             this.m1m2.Name = "m1m2";
             this.m1m2.Size = new System.Drawing.Size(15, 14);
             this.m1m2.TabIndex = 26;
@@ -1168,7 +1246,7 @@
             // 
             this.m1m6.AutoSize = true;
             this.m1m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m1m6.Location = new System.Drawing.Point(531, 88);
+            this.m1m6.Location = new System.Drawing.Point(523, 87);
             this.m1m6.Name = "m1m6";
             this.m1m6.Size = new System.Drawing.Size(13, 12);
             this.m1m6.TabIndex = 27;
@@ -1179,7 +1257,7 @@
             // 
             this.m2m6.AutoSize = true;
             this.m2m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m2m6.Location = new System.Drawing.Point(531, 108);
+            this.m2m6.Location = new System.Drawing.Point(523, 107);
             this.m2m6.Name = "m2m6";
             this.m2m6.Size = new System.Drawing.Size(13, 12);
             this.m2m6.TabIndex = 33;
@@ -1189,7 +1267,7 @@
             // m2m2
             // 
             this.m2m2.AutoSize = true;
-            this.m2m2.Location = new System.Drawing.Point(447, 108);
+            this.m2m2.Location = new System.Drawing.Point(439, 107);
             this.m2m2.Name = "m2m2";
             this.m2m2.Size = new System.Drawing.Size(15, 14);
             this.m2m2.TabIndex = 32;
@@ -1199,7 +1277,7 @@
             // m2m5
             // 
             this.m2m5.AutoSize = true;
-            this.m2m5.Location = new System.Drawing.Point(510, 108);
+            this.m2m5.Location = new System.Drawing.Point(502, 107);
             this.m2m5.Name = "m2m5";
             this.m2m5.Size = new System.Drawing.Size(15, 14);
             this.m2m5.TabIndex = 31;
@@ -1209,7 +1287,7 @@
             // m2m3
             // 
             this.m2m3.AutoSize = true;
-            this.m2m3.Location = new System.Drawing.Point(468, 108);
+            this.m2m3.Location = new System.Drawing.Point(460, 107);
             this.m2m3.Name = "m2m3";
             this.m2m3.Size = new System.Drawing.Size(15, 14);
             this.m2m3.TabIndex = 30;
@@ -1219,7 +1297,7 @@
             // m2m4
             // 
             this.m2m4.AutoSize = true;
-            this.m2m4.Location = new System.Drawing.Point(489, 108);
+            this.m2m4.Location = new System.Drawing.Point(481, 107);
             this.m2m4.Name = "m2m4";
             this.m2m4.Size = new System.Drawing.Size(15, 14);
             this.m2m4.TabIndex = 29;
@@ -1229,7 +1307,7 @@
             // m2m1
             // 
             this.m2m1.AutoSize = true;
-            this.m2m1.Location = new System.Drawing.Point(426, 108);
+            this.m2m1.Location = new System.Drawing.Point(418, 107);
             this.m2m1.Name = "m2m1";
             this.m2m1.Size = new System.Drawing.Size(15, 14);
             this.m2m1.TabIndex = 28;
@@ -1240,7 +1318,7 @@
             // 
             this.m3m6.AutoSize = true;
             this.m3m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m3m6.Location = new System.Drawing.Point(531, 128);
+            this.m3m6.Location = new System.Drawing.Point(523, 127);
             this.m3m6.Name = "m3m6";
             this.m3m6.Size = new System.Drawing.Size(13, 12);
             this.m3m6.TabIndex = 39;
@@ -1250,7 +1328,7 @@
             // m3m2
             // 
             this.m3m2.AutoSize = true;
-            this.m3m2.Location = new System.Drawing.Point(447, 128);
+            this.m3m2.Location = new System.Drawing.Point(439, 127);
             this.m3m2.Name = "m3m2";
             this.m3m2.Size = new System.Drawing.Size(15, 14);
             this.m3m2.TabIndex = 38;
@@ -1260,7 +1338,7 @@
             // m3m5
             // 
             this.m3m5.AutoSize = true;
-            this.m3m5.Location = new System.Drawing.Point(510, 128);
+            this.m3m5.Location = new System.Drawing.Point(502, 127);
             this.m3m5.Name = "m3m5";
             this.m3m5.Size = new System.Drawing.Size(15, 14);
             this.m3m5.TabIndex = 37;
@@ -1270,7 +1348,7 @@
             // m3m3
             // 
             this.m3m3.AutoSize = true;
-            this.m3m3.Location = new System.Drawing.Point(468, 128);
+            this.m3m3.Location = new System.Drawing.Point(460, 127);
             this.m3m3.Name = "m3m3";
             this.m3m3.Size = new System.Drawing.Size(15, 14);
             this.m3m3.TabIndex = 36;
@@ -1280,7 +1358,7 @@
             // m3m4
             // 
             this.m3m4.AutoSize = true;
-            this.m3m4.Location = new System.Drawing.Point(489, 128);
+            this.m3m4.Location = new System.Drawing.Point(481, 127);
             this.m3m4.Name = "m3m4";
             this.m3m4.Size = new System.Drawing.Size(15, 14);
             this.m3m4.TabIndex = 35;
@@ -1290,7 +1368,7 @@
             // m3m1
             // 
             this.m3m1.AutoSize = true;
-            this.m3m1.Location = new System.Drawing.Point(426, 128);
+            this.m3m1.Location = new System.Drawing.Point(418, 127);
             this.m3m1.Name = "m3m1";
             this.m3m1.Size = new System.Drawing.Size(15, 14);
             this.m3m1.TabIndex = 34;
@@ -1302,7 +1380,7 @@
             this.cMot1.AutoSize = true;
             this.cMot1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot1.Location = new System.Drawing.Point(550, 88);
+            this.cMot1.Location = new System.Drawing.Point(542, 87);
             this.cMot1.Name = "cMot1";
             this.cMot1.Size = new System.Drawing.Size(113, 13);
             this.cMot1.TabIndex = 40;
@@ -1313,7 +1391,7 @@
             this.cMot2.AutoSize = true;
             this.cMot2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot2.Location = new System.Drawing.Point(550, 108);
+            this.cMot2.Location = new System.Drawing.Point(542, 107);
             this.cMot2.Name = "cMot2";
             this.cMot2.Size = new System.Drawing.Size(147, 13);
             this.cMot2.TabIndex = 41;
@@ -1324,7 +1402,7 @@
             this.cMot3.AutoSize = true;
             this.cMot3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot3.Location = new System.Drawing.Point(550, 128);
+            this.cMot3.Location = new System.Drawing.Point(542, 127);
             this.cMot3.Name = "cMot3";
             this.cMot3.Size = new System.Drawing.Size(63, 13);
             this.cMot3.TabIndex = 42;
@@ -1343,7 +1421,7 @@
             // 
             // divider2
             // 
-            this.divider2.Location = new System.Drawing.Point(175, 339);
+            this.divider2.Location = new System.Drawing.Point(166, 320);
             this.divider2.Name = "divider2";
             this.divider2.Size = new System.Drawing.Size(120, 20);
             this.divider2.TabIndex = 57;
@@ -1354,7 +1432,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(182, 322);
+            this.label9.Location = new System.Drawing.Point(173, 303);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 20);
             this.label9.TabIndex = 56;
@@ -1363,154 +1441,154 @@
             // dForceOfWill
             // 
             this.dForceOfWill.AutoSize = true;
-            this.dForceOfWill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dForceOfWill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dForceOfWill.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dForceOfWill.Location = new System.Drawing.Point(275, 461);
+            this.dForceOfWill.Location = new System.Drawing.Point(266, 486);
             this.dForceOfWill.Name = "dForceOfWill";
-            this.dForceOfWill.Size = new System.Drawing.Size(18, 20);
+            this.dForceOfWill.Size = new System.Drawing.Size(15, 16);
             this.dForceOfWill.TabIndex = 55;
             this.dForceOfWill.Text = "0";
             // 
             // dToughness
             // 
             this.dToughness.AutoSize = true;
-            this.dToughness.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dToughness.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dToughness.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dToughness.Location = new System.Drawing.Point(275, 441);
+            this.dToughness.Location = new System.Drawing.Point(266, 470);
             this.dToughness.Name = "dToughness";
-            this.dToughness.Size = new System.Drawing.Size(18, 20);
+            this.dToughness.Size = new System.Drawing.Size(15, 16);
             this.dToughness.TabIndex = 54;
             this.dToughness.Text = "0";
             // 
             // dClarity
             // 
             this.dClarity.AutoSize = true;
-            this.dClarity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dClarity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dClarity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dClarity.Location = new System.Drawing.Point(275, 421);
+            this.dClarity.Location = new System.Drawing.Point(266, 454);
             this.dClarity.Name = "dClarity";
-            this.dClarity.Size = new System.Drawing.Size(18, 20);
+            this.dClarity.Size = new System.Drawing.Size(15, 16);
             this.dClarity.TabIndex = 53;
             this.dClarity.Text = "0";
             // 
             // dSpeed
             // 
             this.dSpeed.AutoSize = true;
-            this.dSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dSpeed.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dSpeed.Location = new System.Drawing.Point(275, 401);
+            this.dSpeed.Location = new System.Drawing.Point(266, 374);
             this.dSpeed.Name = "dSpeed";
-            this.dSpeed.Size = new System.Drawing.Size(18, 20);
+            this.dSpeed.Size = new System.Drawing.Size(15, 16);
             this.dSpeed.TabIndex = 52;
             this.dSpeed.Text = "0";
             // 
             // dRangedAtt
             // 
             this.dRangedAtt.AutoSize = true;
-            this.dRangedAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dRangedAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dRangedAtt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dRangedAtt.Location = new System.Drawing.Point(275, 381);
+            this.dRangedAtt.Location = new System.Drawing.Point(266, 358);
             this.dRangedAtt.Name = "dRangedAtt";
-            this.dRangedAtt.Size = new System.Drawing.Size(18, 20);
+            this.dRangedAtt.Size = new System.Drawing.Size(15, 16);
             this.dRangedAtt.TabIndex = 51;
             this.dRangedAtt.Text = "0";
             // 
             // dMeleeAtt
             // 
             this.dMeleeAtt.AutoSize = true;
-            this.dMeleeAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dMeleeAtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dMeleeAtt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dMeleeAtt.Location = new System.Drawing.Point(275, 361);
+            this.dMeleeAtt.Location = new System.Drawing.Point(266, 342);
             this.dMeleeAtt.Name = "dMeleeAtt";
-            this.dMeleeAtt.Size = new System.Drawing.Size(18, 20);
+            this.dMeleeAtt.Size = new System.Drawing.Size(15, 16);
             this.dMeleeAtt.TabIndex = 50;
             this.dMeleeAtt.Text = "0";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(180, 461);
+            this.label16.Location = new System.Drawing.Point(171, 486);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(104, 20);
+            this.label16.Size = new System.Drawing.Size(88, 16);
             this.label16.TabIndex = 49;
             this.label16.Text = "Force of Will: ";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(180, 441);
+            this.label17.Location = new System.Drawing.Point(171, 470);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(92, 20);
+            this.label17.Size = new System.Drawing.Size(79, 16);
             this.label17.TabIndex = 48;
             this.label17.Text = "Toughness:";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(180, 421);
+            this.label18.Location = new System.Drawing.Point(171, 454);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(56, 20);
+            this.label18.Size = new System.Drawing.Size(48, 16);
             this.label18.TabIndex = 47;
             this.label18.Text = "Clarity:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(180, 401);
+            this.label19.Location = new System.Drawing.Point(171, 374);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(60, 20);
+            this.label19.Size = new System.Drawing.Size(52, 16);
             this.label19.TabIndex = 46;
             this.label19.Text = "Speed:";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(180, 381);
+            this.label20.Location = new System.Drawing.Point(171, 358);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(95, 20);
+            this.label20.Size = new System.Drawing.Size(82, 16);
             this.label20.TabIndex = 45;
-            this.label20.Text = "Ranged Att:";
+            this.label20.Text = "Ranged Atk:";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label21.Location = new System.Drawing.Point(180, 361);
+            this.label21.Location = new System.Drawing.Point(171, 342);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(81, 20);
+            this.label21.Size = new System.Drawing.Size(71, 16);
             this.label21.TabIndex = 44;
-            this.label21.Text = "Melee Att:";
+            this.label21.Text = "Melee Atk:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(180, 481);
+            this.label11.Location = new System.Drawing.Point(171, 502);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 20);
+            this.label11.Size = new System.Drawing.Size(59, 16);
             this.label11.TabIndex = 65;
             this.label11.Text = "Initiative:";
             // 
             // dInitiative
             // 
             this.dInitiative.AutoSize = true;
-            this.dInitiative.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dInitiative.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dInitiative.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dInitiative.Location = new System.Drawing.Point(275, 481);
+            this.dInitiative.Location = new System.Drawing.Point(266, 502);
             this.dInitiative.Name = "dInitiative";
-            this.dInitiative.Size = new System.Drawing.Size(18, 20);
+            this.dInitiative.Size = new System.Drawing.Size(15, 16);
             this.dInitiative.TabIndex = 66;
             this.dInitiative.Text = "0";
             // 
@@ -3413,22 +3491,22 @@
             // dTactics
             // 
             this.dTactics.AutoSize = true;
-            this.dTactics.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dTactics.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dTactics.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dTactics.Location = new System.Drawing.Point(275, 501);
+            this.dTactics.Location = new System.Drawing.Point(266, 518);
             this.dTactics.Name = "dTactics";
-            this.dTactics.Size = new System.Drawing.Size(18, 20);
+            this.dTactics.Size = new System.Drawing.Size(15, 16);
             this.dTactics.TabIndex = 266;
             this.dTactics.Text = "0";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label38.Location = new System.Drawing.Point(180, 501);
+            this.label38.Location = new System.Drawing.Point(171, 518);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(63, 20);
+            this.label38.Size = new System.Drawing.Size(55, 16);
             this.label38.TabIndex = 265;
             this.label38.Text = "Tactics:";
             // 
@@ -3437,7 +3515,7 @@
             this.cMot6.AutoSize = true;
             this.cMot6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot6.Location = new System.Drawing.Point(550, 188);
+            this.cMot6.Location = new System.Drawing.Point(542, 187);
             this.cMot6.Name = "cMot6";
             this.cMot6.Size = new System.Drawing.Size(63, 13);
             this.cMot6.TabIndex = 287;
@@ -3449,7 +3527,7 @@
             this.cMot5.AutoSize = true;
             this.cMot5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot5.Location = new System.Drawing.Point(550, 168);
+            this.cMot5.Location = new System.Drawing.Point(542, 167);
             this.cMot5.Name = "cMot5";
             this.cMot5.Size = new System.Drawing.Size(147, 13);
             this.cMot5.TabIndex = 286;
@@ -3461,7 +3539,7 @@
             this.cMot4.AutoSize = true;
             this.cMot4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot4.Location = new System.Drawing.Point(550, 148);
+            this.cMot4.Location = new System.Drawing.Point(542, 147);
             this.cMot4.Name = "cMot4";
             this.cMot4.Size = new System.Drawing.Size(113, 13);
             this.cMot4.TabIndex = 285;
@@ -3472,7 +3550,7 @@
             // 
             this.m6m6.AutoSize = true;
             this.m6m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m6m6.Location = new System.Drawing.Point(531, 188);
+            this.m6m6.Location = new System.Drawing.Point(523, 187);
             this.m6m6.Name = "m6m6";
             this.m6m6.Size = new System.Drawing.Size(13, 12);
             this.m6m6.TabIndex = 284;
@@ -3483,7 +3561,7 @@
             // m6m2
             // 
             this.m6m2.AutoSize = true;
-            this.m6m2.Location = new System.Drawing.Point(447, 188);
+            this.m6m2.Location = new System.Drawing.Point(439, 187);
             this.m6m2.Name = "m6m2";
             this.m6m2.Size = new System.Drawing.Size(15, 14);
             this.m6m2.TabIndex = 283;
@@ -3494,7 +3572,7 @@
             // m6m5
             // 
             this.m6m5.AutoSize = true;
-            this.m6m5.Location = new System.Drawing.Point(510, 188);
+            this.m6m5.Location = new System.Drawing.Point(502, 187);
             this.m6m5.Name = "m6m5";
             this.m6m5.Size = new System.Drawing.Size(15, 14);
             this.m6m5.TabIndex = 282;
@@ -3505,7 +3583,7 @@
             // m6m3
             // 
             this.m6m3.AutoSize = true;
-            this.m6m3.Location = new System.Drawing.Point(468, 188);
+            this.m6m3.Location = new System.Drawing.Point(460, 187);
             this.m6m3.Name = "m6m3";
             this.m6m3.Size = new System.Drawing.Size(15, 14);
             this.m6m3.TabIndex = 281;
@@ -3516,7 +3594,7 @@
             // m6m4
             // 
             this.m6m4.AutoSize = true;
-            this.m6m4.Location = new System.Drawing.Point(489, 188);
+            this.m6m4.Location = new System.Drawing.Point(481, 187);
             this.m6m4.Name = "m6m4";
             this.m6m4.Size = new System.Drawing.Size(15, 14);
             this.m6m4.TabIndex = 280;
@@ -3527,7 +3605,7 @@
             // m6m1
             // 
             this.m6m1.AutoSize = true;
-            this.m6m1.Location = new System.Drawing.Point(426, 188);
+            this.m6m1.Location = new System.Drawing.Point(418, 187);
             this.m6m1.Name = "m6m1";
             this.m6m1.Size = new System.Drawing.Size(15, 14);
             this.m6m1.TabIndex = 279;
@@ -3539,7 +3617,7 @@
             // 
             this.m5m6.AutoSize = true;
             this.m5m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m5m6.Location = new System.Drawing.Point(531, 168);
+            this.m5m6.Location = new System.Drawing.Point(523, 167);
             this.m5m6.Name = "m5m6";
             this.m5m6.Size = new System.Drawing.Size(13, 12);
             this.m5m6.TabIndex = 278;
@@ -3550,7 +3628,7 @@
             // m5m2
             // 
             this.m5m2.AutoSize = true;
-            this.m5m2.Location = new System.Drawing.Point(447, 168);
+            this.m5m2.Location = new System.Drawing.Point(439, 167);
             this.m5m2.Name = "m5m2";
             this.m5m2.Size = new System.Drawing.Size(15, 14);
             this.m5m2.TabIndex = 277;
@@ -3561,7 +3639,7 @@
             // m5m5
             // 
             this.m5m5.AutoSize = true;
-            this.m5m5.Location = new System.Drawing.Point(510, 168);
+            this.m5m5.Location = new System.Drawing.Point(502, 167);
             this.m5m5.Name = "m5m5";
             this.m5m5.Size = new System.Drawing.Size(15, 14);
             this.m5m5.TabIndex = 276;
@@ -3572,7 +3650,7 @@
             // m5m3
             // 
             this.m5m3.AutoSize = true;
-            this.m5m3.Location = new System.Drawing.Point(468, 168);
+            this.m5m3.Location = new System.Drawing.Point(460, 167);
             this.m5m3.Name = "m5m3";
             this.m5m3.Size = new System.Drawing.Size(15, 14);
             this.m5m3.TabIndex = 275;
@@ -3583,7 +3661,7 @@
             // m5m4
             // 
             this.m5m4.AutoSize = true;
-            this.m5m4.Location = new System.Drawing.Point(489, 168);
+            this.m5m4.Location = new System.Drawing.Point(481, 167);
             this.m5m4.Name = "m5m4";
             this.m5m4.Size = new System.Drawing.Size(15, 14);
             this.m5m4.TabIndex = 274;
@@ -3594,7 +3672,7 @@
             // m5m1
             // 
             this.m5m1.AutoSize = true;
-            this.m5m1.Location = new System.Drawing.Point(426, 168);
+            this.m5m1.Location = new System.Drawing.Point(418, 167);
             this.m5m1.Name = "m5m1";
             this.m5m1.Size = new System.Drawing.Size(15, 14);
             this.m5m1.TabIndex = 273;
@@ -3606,7 +3684,7 @@
             // 
             this.m4m6.AutoSize = true;
             this.m4m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m4m6.Location = new System.Drawing.Point(531, 148);
+            this.m4m6.Location = new System.Drawing.Point(523, 147);
             this.m4m6.Name = "m4m6";
             this.m4m6.Size = new System.Drawing.Size(13, 12);
             this.m4m6.TabIndex = 272;
@@ -3617,7 +3695,7 @@
             // m4m2
             // 
             this.m4m2.AutoSize = true;
-            this.m4m2.Location = new System.Drawing.Point(447, 148);
+            this.m4m2.Location = new System.Drawing.Point(439, 147);
             this.m4m2.Name = "m4m2";
             this.m4m2.Size = new System.Drawing.Size(15, 14);
             this.m4m2.TabIndex = 271;
@@ -3628,7 +3706,7 @@
             // m4m5
             // 
             this.m4m5.AutoSize = true;
-            this.m4m5.Location = new System.Drawing.Point(510, 148);
+            this.m4m5.Location = new System.Drawing.Point(502, 147);
             this.m4m5.Name = "m4m5";
             this.m4m5.Size = new System.Drawing.Size(15, 14);
             this.m4m5.TabIndex = 270;
@@ -3639,7 +3717,7 @@
             // m4m3
             // 
             this.m4m3.AutoSize = true;
-            this.m4m3.Location = new System.Drawing.Point(468, 148);
+            this.m4m3.Location = new System.Drawing.Point(460, 147);
             this.m4m3.Name = "m4m3";
             this.m4m3.Size = new System.Drawing.Size(15, 14);
             this.m4m3.TabIndex = 269;
@@ -3650,7 +3728,7 @@
             // m4m4
             // 
             this.m4m4.AutoSize = true;
-            this.m4m4.Location = new System.Drawing.Point(489, 148);
+            this.m4m4.Location = new System.Drawing.Point(481, 147);
             this.m4m4.Name = "m4m4";
             this.m4m4.Size = new System.Drawing.Size(15, 14);
             this.m4m4.TabIndex = 268;
@@ -3661,7 +3739,7 @@
             // m4m1
             // 
             this.m4m1.AutoSize = true;
-            this.m4m1.Location = new System.Drawing.Point(426, 148);
+            this.m4m1.Location = new System.Drawing.Point(418, 147);
             this.m4m1.Name = "m4m1";
             this.m4m1.Size = new System.Drawing.Size(15, 14);
             this.m4m1.TabIndex = 267;
@@ -3674,7 +3752,7 @@
             this.cMot7.AutoSize = true;
             this.cMot7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot7.Location = new System.Drawing.Point(550, 208);
+            this.cMot7.Location = new System.Drawing.Point(542, 207);
             this.cMot7.Name = "cMot7";
             this.cMot7.Size = new System.Drawing.Size(113, 13);
             this.cMot7.TabIndex = 294;
@@ -3685,7 +3763,7 @@
             // 
             this.m7m6.AutoSize = true;
             this.m7m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m7m6.Location = new System.Drawing.Point(531, 208);
+            this.m7m6.Location = new System.Drawing.Point(523, 207);
             this.m7m6.Name = "m7m6";
             this.m7m6.Size = new System.Drawing.Size(13, 12);
             this.m7m6.TabIndex = 293;
@@ -3696,7 +3774,7 @@
             // m7m2
             // 
             this.m7m2.AutoSize = true;
-            this.m7m2.Location = new System.Drawing.Point(447, 208);
+            this.m7m2.Location = new System.Drawing.Point(439, 207);
             this.m7m2.Name = "m7m2";
             this.m7m2.Size = new System.Drawing.Size(15, 14);
             this.m7m2.TabIndex = 292;
@@ -3707,7 +3785,7 @@
             // m7m5
             // 
             this.m7m5.AutoSize = true;
-            this.m7m5.Location = new System.Drawing.Point(510, 208);
+            this.m7m5.Location = new System.Drawing.Point(502, 207);
             this.m7m5.Name = "m7m5";
             this.m7m5.Size = new System.Drawing.Size(15, 14);
             this.m7m5.TabIndex = 291;
@@ -3718,7 +3796,7 @@
             // m7m3
             // 
             this.m7m3.AutoSize = true;
-            this.m7m3.Location = new System.Drawing.Point(468, 208);
+            this.m7m3.Location = new System.Drawing.Point(460, 207);
             this.m7m3.Name = "m7m3";
             this.m7m3.Size = new System.Drawing.Size(15, 14);
             this.m7m3.TabIndex = 290;
@@ -3729,7 +3807,7 @@
             // m7m4
             // 
             this.m7m4.AutoSize = true;
-            this.m7m4.Location = new System.Drawing.Point(489, 208);
+            this.m7m4.Location = new System.Drawing.Point(481, 207);
             this.m7m4.Name = "m7m4";
             this.m7m4.Size = new System.Drawing.Size(15, 14);
             this.m7m4.TabIndex = 289;
@@ -3740,7 +3818,7 @@
             // m7m1
             // 
             this.m7m1.AutoSize = true;
-            this.m7m1.Location = new System.Drawing.Point(426, 208);
+            this.m7m1.Location = new System.Drawing.Point(418, 207);
             this.m7m1.Name = "m7m1";
             this.m7m1.Size = new System.Drawing.Size(15, 14);
             this.m7m1.TabIndex = 288;
@@ -3753,7 +3831,7 @@
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label42.Location = new System.Drawing.Point(412, 53);
+            this.label42.Location = new System.Drawing.Point(404, 52);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(114, 24);
             this.label42.TabIndex = 295;
@@ -3811,75 +3889,93 @@
             this.cAcc4.Text = "F";
             this.cAcc4.Visible = false;
             // 
-            // calledShotsToolStripMenuItem1
+            // dWariness
             // 
-            this.calledShotsToolStripMenuItem1.Name = "calledShotsToolStripMenuItem1";
-            this.calledShotsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.calledShotsToolStripMenuItem1.Text = "Called Shots";
-            this.calledShotsToolStripMenuItem1.Click += new System.EventHandler(this.calledShotsToolStripMenuItem1_Click);
+            this.dWariness.AutoSize = true;
+            this.dWariness.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dWariness.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dWariness.Location = new System.Drawing.Point(266, 438);
+            this.dWariness.Name = "dWariness";
+            this.dWariness.Size = new System.Drawing.Size(15, 16);
+            this.dWariness.TabIndex = 307;
+            this.dWariness.Text = "0";
             // 
-            // dualWieldingToolStripMenuItem
+            // label37
             // 
-            this.dualWieldingToolStripMenuItem.Name = "dualWieldingToolStripMenuItem";
-            this.dualWieldingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dualWieldingToolStripMenuItem.Text = "Dual Wielding";
-            this.dualWieldingToolStripMenuItem.Click += new System.EventHandler(this.dualWieldingToolStripMenuItem_Click);
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label37.Location = new System.Drawing.Point(171, 438);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(68, 16);
+            this.label37.TabIndex = 306;
+            this.label37.Text = "Wariness:";
             // 
-            // listOfFirearmsToolStripMenuItem
+            // dVigilance
             // 
-            this.listOfFirearmsToolStripMenuItem.Name = "listOfFirearmsToolStripMenuItem";
-            this.listOfFirearmsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listOfFirearmsToolStripMenuItem.Text = "List of Firearms";
-            this.listOfFirearmsToolStripMenuItem.Click += new System.EventHandler(this.listOfFirearmsToolStripMenuItem_Click);
+            this.dVigilance.AutoSize = true;
+            this.dVigilance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dVigilance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dVigilance.Location = new System.Drawing.Point(266, 422);
+            this.dVigilance.Name = "dVigilance";
+            this.dVigilance.Size = new System.Drawing.Size(15, 16);
+            this.dVigilance.TabIndex = 305;
+            this.dVigilance.Text = "0";
             // 
-            // listOfExplosivesToolStripMenuItem
+            // label40
             // 
-            this.listOfExplosivesToolStripMenuItem.Name = "listOfExplosivesToolStripMenuItem";
-            this.listOfExplosivesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listOfExplosivesToolStripMenuItem.Text = "List of Explosives";
-            this.listOfExplosivesToolStripMenuItem.Click += new System.EventHandler(this.listOfExplosivesToolStripMenuItem_Click);
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label40.Location = new System.Drawing.Point(171, 422);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(67, 16);
+            this.label40.TabIndex = 304;
+            this.label40.Text = "Vigilance:";
             // 
-            // listOfArmorToolStripMenuItem
+            // dParry
             // 
-            this.listOfArmorToolStripMenuItem.Name = "listOfArmorToolStripMenuItem";
-            this.listOfArmorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listOfArmorToolStripMenuItem.Text = "List of Armor";
-            this.listOfArmorToolStripMenuItem.Click += new System.EventHandler(this.listOfArmorToolStripMenuItem_Click);
+            this.dParry.AutoSize = true;
+            this.dParry.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dParry.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dParry.Location = new System.Drawing.Point(266, 406);
+            this.dParry.Name = "dParry";
+            this.dParry.Size = new System.Drawing.Size(15, 16);
+            this.dParry.TabIndex = 303;
+            this.dParry.Text = "0";
             // 
-            // actionReportsToolStripMenuItem
+            // dEvade
             // 
-            this.actionReportsToolStripMenuItem.Name = "actionReportsToolStripMenuItem";
-            this.actionReportsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.actionReportsToolStripMenuItem.Text = "Action Reports";
-            this.actionReportsToolStripMenuItem.Click += new System.EventHandler(this.actionReportsToolStripMenuItem_Click);
+            this.dEvade.AutoSize = true;
+            this.dEvade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dEvade.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dEvade.Location = new System.Drawing.Point(266, 390);
+            this.dEvade.Name = "dEvade";
+            this.dEvade.Size = new System.Drawing.Size(15, 16);
+            this.dEvade.TabIndex = 302;
+            this.dEvade.Text = "0";
             // 
-            // strainRefreshToolStripMenuItem
+            // label44
             // 
-            this.strainRefreshToolStripMenuItem.Name = "strainRefreshToolStripMenuItem";
-            this.strainRefreshToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.strainRefreshToolStripMenuItem.Text = "Strain Refresh";
-            this.strainRefreshToolStripMenuItem.Click += new System.EventHandler(this.strainRefreshToolStripMenuItem_Click);
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label44.Location = new System.Drawing.Point(171, 406);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(46, 16);
+            this.label44.TabIndex = 301;
+            this.label44.Text = "Parry: ";
             // 
-            // downtimeToolStripMenuItem
+            // label45
             // 
-            this.downtimeToolStripMenuItem.Name = "downtimeToolStripMenuItem";
-            this.downtimeToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.downtimeToolStripMenuItem.Text = "Downtime";
-            this.downtimeToolStripMenuItem.Click += new System.EventHandler(this.downtimeToolStripMenuItem_Click);
-            // 
-            // experienceGainToolStripMenuItem
-            // 
-            this.experienceGainToolStripMenuItem.Name = "experienceGainToolStripMenuItem";
-            this.experienceGainToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.experienceGainToolStripMenuItem.Text = "Experience Gain";
-            this.experienceGainToolStripMenuItem.Click += new System.EventHandler(this.experienceGainToolStripMenuItem_Click);
-            // 
-            // levellingUpToolStripMenuItem
-            // 
-            this.levellingUpToolStripMenuItem.Name = "levellingUpToolStripMenuItem";
-            this.levellingUpToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.levellingUpToolStripMenuItem.Text = "Levelling Up";
-            this.levellingUpToolStripMenuItem.Click += new System.EventHandler(this.levellingUpToolStripMenuItem_Click);
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label45.Location = new System.Drawing.Point(171, 390);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(51, 16);
+            this.label45.TabIndex = 300;
+            this.label45.Text = "Evade:";
             // 
             // CharacterSheet
             // 
@@ -3888,6 +3984,14 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(1108, 711);
+            this.Controls.Add(this.dWariness);
+            this.Controls.Add(this.label37);
+            this.Controls.Add(this.dVigilance);
+            this.Controls.Add(this.label40);
+            this.Controls.Add(this.dParry);
+            this.Controls.Add(this.dEvade);
+            this.Controls.Add(this.label44);
+            this.Controls.Add(this.label45);
             this.Controls.Add(this.cAcc4);
             this.Controls.Add(this.cAcc3);
             this.Controls.Add(this.cAcc2);
@@ -4511,6 +4615,14 @@
         private System.Windows.Forms.ToolStripMenuItem downtimeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem experienceGainToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem levellingUpToolStripMenuItem;
+        private System.Windows.Forms.Label dWariness;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label dVigilance;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label dParry;
+        private System.Windows.Forms.Label dEvade;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
     }
 }
 

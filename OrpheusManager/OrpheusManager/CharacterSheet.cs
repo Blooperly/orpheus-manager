@@ -94,6 +94,10 @@ namespace OrpheusManager
             dMentalStrainMax.Text = "/ " + (DDATA.dMentalStrainMax + CDATA.cMaxMentStrain);
             dPhysicalStrainMax.Text = "/ " + (DDATA.dPhysicalStrainMax + CDATA.cMaxPhysStrain);
             dSpiritualStrainMax.Text = "/ " + (DDATA.dSpiritualStrainMax + CDATA.cMaxSpirStrain);
+            dEvade.Text = DDATA.dEvade +"";
+            dParry.Text = DDATA.dParry + "";
+            dVigilance.Text = DDATA.dVigilance + "";
+            dWariness.Text = DDATA.dWariness + "";
 
             // Configure Wound Meters
             if (CDATA.cAttributes[1] == 0)
@@ -792,46 +796,6 @@ namespace OrpheusManager
             else archetypePic.Image = imageWitch;
         }
 
-        // Menu Bar
-        private void characterNameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Open Dialog Box
-            Form eCharName = new editCharacterName();
-            eCharName.ShowDialog();
-            // Update Character Name
-            writeDATA();
-        }
-
-        private void addSkillToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Open Dialog Box
-            Form aSkill = new addSkillForm();
-            aSkill.ShowDialog();
-            // Update Character
-            writeDATA();
-        }
-
-        private void archetypesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Open Dialog Box
-            Form mArchetypes = new manageArchetypes();
-            mArchetypes.ShowDialog();
-            // Update Character
-            writeDATA();
-            reloadArch();
-        }
-
-        private void attributesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            storeDATA2();
-            // Open Dialog Box
-            Form mAttributes = new manageAttributes();
-            mAttributes.ShowDialog();
-            // Update Character
-            writeDATA();
-            writeDATA2();
-        }
-
         private void newCharacter_Click(object sender, EventArgs e)
         {
             // Open Dialog Box
@@ -1014,6 +978,7 @@ namespace OrpheusManager
                 CDATA.cAbilityMasteryA[i] = 0;
                 CDATA.cAbilityMasteryB[i] = 0;
                 CDATA.cAbilityOverload[i] = 0;
+                CDATA.cAbilityApotheosis[i] = 0;
             }
             writeDATA();
         }
@@ -1472,6 +1437,11 @@ namespace OrpheusManager
                     SDATA.sFilepath = opener.FileName;
                     SDATA.sFullData = File.ReadAllText(opener.FileName);
 
+                    string fileVersion = SDATA.parseField("Orpheus Manager:\r\n");      // Get version of save file to load (Compatibility)
+                    double fileVersionDouble = 1.0;
+                    if (fileVersion == "v1.0") fileVersionDouble = 1.0;
+                    else if (fileVersion == "v1.1") fileVersionDouble = 1.1;
+
                     CDATA.cName = SDATA.parseField("Character Name:\r\n");
                     Int32.TryParse(SDATA.parseField("Level:\r\n"), out CDATA.cLevel);
                     CDATA.cArch1 = SDATA.parseField("Archetype 1:\r\n");
@@ -1766,6 +1736,23 @@ namespace OrpheusManager
                     if (SDATA.parseLine(temp, 10) == "1") CDATA.cAbilityOverload[10] = 1; else CDATA.cAbilityOverload[10] = 0;
                     if (SDATA.parseLine(temp, 11) == "1") CDATA.cAbilityOverload[11] = 1; else CDATA.cAbilityOverload[11] = 0;
 
+                    if (fileVersionDouble >= 1.1)
+                    {
+                        temp = SDATA.parseField("Ability Apotheosis:\r\n") + "\r\n";
+                        if (SDATA.parseLine(temp, 0) == "1") CDATA.cAbilityApotheosis[0] = 1; else CDATA.cAbilityApotheosis[0] = 0;
+                        if (SDATA.parseLine(temp, 1) == "1") CDATA.cAbilityApotheosis[1] = 1; else CDATA.cAbilityApotheosis[1] = 0;
+                        if (SDATA.parseLine(temp, 2) == "1") CDATA.cAbilityApotheosis[2] = 1; else CDATA.cAbilityApotheosis[2] = 0;
+                        if (SDATA.parseLine(temp, 3) == "1") CDATA.cAbilityApotheosis[3] = 1; else CDATA.cAbilityApotheosis[3] = 0;
+                        if (SDATA.parseLine(temp, 4) == "1") CDATA.cAbilityApotheosis[4] = 1; else CDATA.cAbilityApotheosis[4] = 0;
+                        if (SDATA.parseLine(temp, 5) == "1") CDATA.cAbilityApotheosis[5] = 1; else CDATA.cAbilityApotheosis[5] = 0;
+                        if (SDATA.parseLine(temp, 6) == "1") CDATA.cAbilityApotheosis[6] = 1; else CDATA.cAbilityApotheosis[6] = 0;
+                        if (SDATA.parseLine(temp, 7) == "1") CDATA.cAbilityApotheosis[7] = 1; else CDATA.cAbilityApotheosis[7] = 0;
+                        if (SDATA.parseLine(temp, 8) == "1") CDATA.cAbilityApotheosis[8] = 1; else CDATA.cAbilityApotheosis[8] = 0;
+                        if (SDATA.parseLine(temp, 9) == "1") CDATA.cAbilityApotheosis[9] = 1; else CDATA.cAbilityApotheosis[9] = 0;
+                        if (SDATA.parseLine(temp, 10) == "1") CDATA.cAbilityApotheosis[10] = 1; else CDATA.cAbilityApotheosis[10] = 0;
+                        if (SDATA.parseLine(temp, 11) == "1") CDATA.cAbilityApotheosis[11] = 1; else CDATA.cAbilityApotheosis[11] = 0;
+                    }
+
                     reloadArch();
                     writeDATA();
                     writeDATA2();
@@ -1828,6 +1815,48 @@ namespace OrpheusManager
                 }
             }
         }
+
+        // Menu Bar
+        private void characterNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open Dialog Box
+            Form eCharName = new editCharacterName();
+            eCharName.ShowDialog();
+            // Update Character Name
+            writeDATA();
+        }
+
+        private void addSkillToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open Dialog Box
+            Form aSkill = new addSkillForm();
+            aSkill.ShowDialog();
+            // Update Character
+            writeDATA();
+        }
+
+        private void archetypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open Dialog Box
+            Form mArchetypes = new manageArchetypes();
+            mArchetypes.ShowDialog();
+            // Update Character
+            writeDATA();
+            reloadArch();
+        }
+
+        private void attributesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            storeDATA2();
+            // Open Dialog Box
+            Form mAttributes = new manageAttributes();
+            mAttributes.ShowDialog();
+            // Update Character
+            writeDATA();
+            writeDATA2();
+        }
+
+
 
         // References
         private void skillLevelsToolStripMenuItem_Click(object sender, EventArgs e)

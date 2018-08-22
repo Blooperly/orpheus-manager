@@ -51,6 +51,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.apotheosis = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label16
@@ -195,7 +197,7 @@
             this.mots.AutoSize = true;
             this.mots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mots.Location = new System.Drawing.Point(214, 337);
+            this.mots.Location = new System.Drawing.Point(214, 366);
             this.mots.Name = "mots";
             this.mots.Size = new System.Drawing.Size(120, 18);
             this.mots.TabIndex = 51;
@@ -206,7 +208,7 @@
             this.acc.AutoSize = true;
             this.acc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.acc.Location = new System.Drawing.Point(214, 366);
+            this.acc.Location = new System.Drawing.Point(214, 395);
             this.acc.Name = "acc";
             this.acc.Size = new System.Drawing.Size(128, 18);
             this.acc.TabIndex = 52;
@@ -217,7 +219,7 @@
             this.strain.AutoSize = true;
             this.strain.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.strain.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.strain.Location = new System.Drawing.Point(214, 395);
+            this.strain.Location = new System.Drawing.Point(214, 424);
             this.strain.Name = "strain";
             this.strain.Size = new System.Drawing.Size(129, 18);
             this.strain.TabIndex = 53;
@@ -265,7 +267,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(89, 336);
+            this.button8.Location = new System.Drawing.Point(89, 365);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(119, 23);
             this.button8.TabIndex = 58;
@@ -275,7 +277,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(89, 365);
+            this.button9.Location = new System.Drawing.Point(89, 394);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(119, 23);
             this.button9.TabIndex = 59;
@@ -285,7 +287,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(89, 394);
+            this.button10.Location = new System.Drawing.Point(89, 423);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(119, 23);
             this.button10.TabIndex = 60;
@@ -293,12 +295,35 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(89, 336);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(119, 23);
+            this.button11.TabIndex = 62;
+            this.button11.Text = "Manage Abilities";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // apotheosis
+            // 
+            this.apotheosis.AutoSize = true;
+            this.apotheosis.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.apotheosis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.apotheosis.Location = new System.Drawing.Point(214, 337);
+            this.apotheosis.Name = "apotheosis";
+            this.apotheosis.Size = new System.Drawing.Size(159, 18);
+            this.apotheosis.TabIndex = 61;
+            this.apotheosis.Text = "Ability Apotheosis: 0/15";
+            // 
             // mLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(481, 475);
+            this.ClientSize = new System.Drawing.Size(481, 510);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.apotheosis);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -356,5 +381,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label apotheosis;
     }
 }

@@ -27,6 +27,7 @@ namespace OrpheusManager
             masteries.Text = (LDATA.lAbilityMasteryMax - LDATA.lAbilityMasteryCurrent) + " Ability Masteries";
             synth.Text = (LDATA.lAbilitySynthesisMax - LDATA.lAbilitySynthesisCurrent) + " Ability Synthesis";
             overload.Text = (LDATA.lAbilityOverloadMax - LDATA.lAbilityOverloadCurrent) + " Ability Overloads";
+            apotheosis.Text = (LDATA.lAbilityApotheosisMax - LDATA.lAbilityApotheosisCurrent) + " Ability Apotheosis";
             mots.Text = (LDATA.lMotivationsMax - LDATA.lMotivationsCurrent) + " Motivations";
             acc.Text = (LDATA.lAcclimationsMax - LDATA.lAcclimationsCurrent) + " Horror Acclimations";
             strain.Text = (LDATA.lStrainMax - LDATA.lStrainCurrent) + " Bonus Strain";
@@ -124,6 +125,14 @@ namespace OrpheusManager
         {
             Form mStr = new manageStrain();
             mStr.ShowDialog();
+            Program.mainform.writeDATA();
+            writeLDATA();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form mAbil = new ManageAbilities();
+            mAbil.ShowDialog();
             Program.mainform.writeDATA();
             writeLDATA();
         }

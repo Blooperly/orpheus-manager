@@ -162,7 +162,7 @@
             // 
             this.nCharMot1.Location = new System.Drawing.Point(121, 210);
             this.nCharMot1.Name = "nCharMot1";
-            this.nCharMot1.Size = new System.Drawing.Size(179, 20);
+            this.nCharMot1.Size = new System.Drawing.Size(235, 20);
             this.nCharMot1.TabIndex = 5;
             // 
             // noooo
@@ -179,7 +179,7 @@
             // 
             this.nCharMot2.Location = new System.Drawing.Point(121, 236);
             this.nCharMot2.Name = "nCharMot2";
-            this.nCharMot2.Size = new System.Drawing.Size(179, 20);
+            this.nCharMot2.Size = new System.Drawing.Size(235, 20);
             this.nCharMot2.TabIndex = 6;
             // 
             // label7
@@ -196,7 +196,7 @@
             // 
             this.nCharMot3.Location = new System.Drawing.Point(121, 262);
             this.nCharMot3.Name = "nCharMot3";
-            this.nCharMot3.Size = new System.Drawing.Size(179, 20);
+            this.nCharMot3.Size = new System.Drawing.Size(235, 20);
             this.nCharMot3.TabIndex = 7;
             // 
             // label8
@@ -334,7 +334,11 @@
             "Werewolf",
             "True Faith",
             "Medium",
-            "Soldier"});
+            "Soldier",
+            "Vampire Thrall",
+            "Pathokinetic",
+            "Hero",
+            "???"});
             this.nCharArch1.Location = new System.Drawing.Point(121, 120);
             this.nCharArch1.Name = "nCharArch1";
             this.nCharArch1.Size = new System.Drawing.Size(121, 21);
@@ -357,7 +361,11 @@
             "Werewolf",
             "True Faith",
             "Medium",
-            "Soldier"});
+            "Soldier",
+            "Vampire Thrall",
+            "Pathokinetic",
+            "Hero",
+            "???"});
             this.nCharArch2.Location = new System.Drawing.Point(121, 146);
             this.nCharArch2.Name = "nCharArch2";
             this.nCharArch2.Size = new System.Drawing.Size(121, 21);
@@ -380,7 +388,11 @@
             "Werewolf",
             "True Faith",
             "Medium",
-            "Soldier"});
+            "Soldier",
+            "Vampire Thrall",
+            "Pathokinetic",
+            "Hero",
+            "???"});
             this.nCharArch3.Location = new System.Drawing.Point(121, 172);
             this.nCharArch3.Name = "nCharArch3";
             this.nCharArch3.Size = new System.Drawing.Size(121, 21);
