@@ -5,11 +5,11 @@ The Orpheus Manager is a character creation and management tool for [The Orpheus
 
 ### Instructions:
 1. Download the Application
-    - You will probably want the .exe file in the "Stable Version" folder. This is the most current complete build of the application.
+    - You will probably want the .exe file in the top directory. This is the most current complete build of the application.
     - The Orpheus Manager is constantly under development. If you want to test a beta build, or if a new version of the rules was recently released and I am still working on updating the app, you can try whatever build is in the "Unstable Versions" folder.
     - If you want to play with an older version of the rules, check the "Past Versions" folder. This will contain the most complete version of the manager for every version of the Orpheus official rules.
 2. Launch the Application
-    - You may have to ignore a security warning to run the application. This is a personal project, and I did not have the funds to buy an expensive certification to get Windows to accept me. I promise it is safe :)
+    - You may have to ignore a security warning to run the application. This is a personal project, and I did not have the funds to buy an expensive certificate to get Windows to accept me. I promise it is safe :)
 3. Have Fun
     - There are instructions when you launch the app. Direct any questions to me on the "Rules and Game Discussion" channel of the official Orpheus Discord. Please let me know if you see any pesky bugs!
 
