@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nCharSubmit = new System.Windows.Forms.Button();
-            this.nCharCancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.nCharName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.nCharAlert = new System.Windows.Forms.Label();
-            this.nCharBackground = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.nCharMot1 = new System.Windows.Forms.TextBox();
             this.noooo = new System.Windows.Forms.Label();
@@ -62,27 +59,9 @@
             this.label15 = new System.Windows.Forms.Label();
             this.remainingAtt = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.nCharBackground = new System.Windows.Forms.ComboBox();
+            this.nCharSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // nCharSubmit
-            // 
-            this.nCharSubmit.Location = new System.Drawing.Point(193, 483);
-            this.nCharSubmit.Name = "nCharSubmit";
-            this.nCharSubmit.Size = new System.Drawing.Size(75, 23);
-            this.nCharSubmit.TabIndex = 15;
-            this.nCharSubmit.Text = "Submit";
-            this.nCharSubmit.UseVisualStyleBackColor = true;
-            this.nCharSubmit.Click += new System.EventHandler(this.nCharSubmit_Click);
-            // 
-            // nCharCancel
-            // 
-            this.nCharCancel.Location = new System.Drawing.Point(274, 483);
-            this.nCharCancel.Name = "nCharCancel";
-            this.nCharCancel.Size = new System.Drawing.Size(75, 23);
-            this.nCharCancel.TabIndex = 16;
-            this.nCharCancel.Text = "Cancel";
-            this.nCharCancel.UseVisualStyleBackColor = true;
-            this.nCharCancel.Click += new System.EventHandler(this.nCharCancel_Click);
             // 
             // label1
             // 
@@ -140,13 +119,6 @@
             this.nCharAlert.Name = "nCharAlert";
             this.nCharAlert.Size = new System.Drawing.Size(0, 13);
             this.nCharAlert.TabIndex = 10;
-            // 
-            // nCharBackground
-            // 
-            this.nCharBackground.Location = new System.Drawing.Point(121, 299);
-            this.nCharBackground.Name = "nCharBackground";
-            this.nCharBackground.Size = new System.Drawing.Size(121, 20);
-            this.nCharBackground.TabIndex = 8;
             // 
             // label5
             // 
@@ -430,6 +402,36 @@
             this.label6.TabIndex = 39;
             this.label6.Text = "Attributes";
             // 
+            // nCharBackground
+            // 
+            this.nCharBackground.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.nCharBackground.FormattingEnabled = true;
+            this.nCharBackground.Items.AddRange(new object[] {
+            "Custom",
+            "Scientist",
+            "Occult Scholar",
+            "Logistics Operator",
+            "Criminal",
+            "Turned Cultist",
+            "Combat Veteran",
+            "Medical Professional",
+            "Intelligence Asset",
+            "Cyber Security Specialist"});
+            this.nCharBackground.Location = new System.Drawing.Point(121, 299);
+            this.nCharBackground.Name = "nCharBackground";
+            this.nCharBackground.Size = new System.Drawing.Size(121, 21);
+            this.nCharBackground.TabIndex = 40;
+            // 
+            // nCharSubmit
+            // 
+            this.nCharSubmit.Location = new System.Drawing.Point(281, 482);
+            this.nCharSubmit.Name = "nCharSubmit";
+            this.nCharSubmit.Size = new System.Drawing.Size(75, 23);
+            this.nCharSubmit.TabIndex = 15;
+            this.nCharSubmit.Text = "Submit";
+            this.nCharSubmit.UseVisualStyleBackColor = true;
+            this.nCharSubmit.Click += new System.EventHandler(this.nCharSubmit_Click);
+            // 
             // newCharacter
             // 
             this.AcceptButton = this.nCharSubmit;
@@ -437,6 +439,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(392, 529);
+            this.Controls.Add(this.nCharBackground);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.remainingAtt);
             this.Controls.Add(this.label15);
@@ -461,7 +464,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.nCharMot1);
             this.Controls.Add(this.noooo);
-            this.Controls.Add(this.nCharBackground);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.nCharAlert);
             this.Controls.Add(this.label4);
@@ -469,7 +471,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nCharName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.nCharCancel);
             this.Controls.Add(this.nCharSubmit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "newCharacter";
@@ -481,16 +482,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button nCharSubmit;
-        private System.Windows.Forms.Button nCharCancel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox nCharName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label nCharAlert;
-        private System.Windows.Forms.TextBox nCharBackground;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox nCharMot1;
         private System.Windows.Forms.Label noooo;
@@ -516,5 +513,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label remainingAtt;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox nCharBackground;
+        private System.Windows.Forms.Button nCharSubmit;
     }
 }

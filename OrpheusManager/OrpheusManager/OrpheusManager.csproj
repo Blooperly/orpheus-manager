@@ -63,6 +63,12 @@
     <Compile Include="addSkillForm.Designer.cs">
       <DependentUpon>addSkillForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="cBackgroundFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cBackgroundFirst.Designer.cs">
+      <DependentUpon>cBackgroundFirst.cs</DependentUpon>
+    </Compile>
     <Compile Include="CharacterSheet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -430,6 +436,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addSkillForm.resx">
       <DependentUpon>addSkillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cBackgroundFirst.resx">
+      <DependentUpon>cBackgroundFirst.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CharacterSheet.resx">
       <DependentUpon>CharacterSheet.cs</DependentUpon>

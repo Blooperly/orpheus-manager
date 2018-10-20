@@ -19,8 +19,37 @@ namespace OrpheusManager
         {
             InitializeComponent();
         }
+        
+        // On Load
+        private void CharacterSheet_Load(object sender, EventArgs e)
+        {
+            // Load CDATA
+            writeDATA();
+            this.ActiveControl = cName;
 
-        // Update Character Sheet
+            // Load Archetype Image
+            reloadArch();
+
+            // Load Title Image
+            System.Reflection.Assembly myAssembly2 = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStream2 = myAssembly2.GetManifestResourceStream("OrpheusManager.OrpheusTitle.png");
+            Bitmap image2 = new Bitmap(myStream2);
+            titlePic.Image = image2;
+
+            // Load Divider Image
+            System.Reflection.Assembly myAssembly3 = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStream3 = myAssembly3.GetManifestResourceStream("OrpheusManager.divider.png");
+            Bitmap image3 = new Bitmap(myStream3);
+            divider1.Image = image3;
+            divider2.Image = image3;
+
+            // Load Editable Data
+            writeDATA2();
+
+            SDATA.sRecentSave = true;
+        }
+
+        // Update Character Sheet with Stored Values
         public void writeDATA()
         {
             // Window Settings
@@ -619,10 +648,10 @@ namespace OrpheusManager
 
             SDATA.sRecentSave = false;
         }
-        
+
+        // Load Editable Fields
         private void writeDATA2()
         {
-            // Load Editable Fields
             cNotes.Text = CDATA.cNotes;
 
             cMentalStrain.Text = CDATA.cMentalStrain + "";
@@ -640,6 +669,7 @@ namespace OrpheusManager
             SDATA.sRecentSave = false;
         }
 
+        // Store Editable Fields
         private void storeDATA2()
         {
             CDATA.cNotes = cNotes.Text;
@@ -658,34 +688,8 @@ namespace OrpheusManager
 
             SDATA.sRecentSave = false;
         }
-
-        // On Load
-        private void CharacterSheet_Load(object sender, EventArgs e)
-        {
-            writeDATA();
-            this.ActiveControl = cName;
-
-            // Load Archetype Image
-            reloadArch();
-
-            // Load Title Image
-            System.Reflection.Assembly myAssembly2 = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStream2 = myAssembly2.GetManifestResourceStream("OrpheusManager.OrpheusTitle.png");
-            Bitmap image2 = new Bitmap(myStream2);
-            titlePic.Image = image2;
-
-            // Load Divider Image
-            System.Reflection.Assembly myAssembly3 = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStream3 = myAssembly3.GetManifestResourceStream("OrpheusManager.divider.png");
-            Bitmap image3 = new Bitmap(myStream3);
-            divider1.Image = image3;
-            divider2.Image = image3;
-
-            writeDATA2();
-
-            SDATA.sRecentSave = true;
-        }
         
+        // Draw Graphics to Window
         private void CharacterSheet_Paint(object sender, PaintEventArgs e)
         {
             System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#3E3E42"));
@@ -716,86 +720,140 @@ namespace OrpheusManager
             formGraphics.Dispose();
         }
 
+        // Reaload Archetype Image
         private void reloadArch()
         {
-            System.Reflection.Assembly myAssemblyHermetic = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamHermetic = myAssemblyHermetic.GetManifestResourceStream("OrpheusManager.archetypeHermetic.png");
-            Bitmap imageHermetic = new Bitmap(myStreamHermetic);
-
-            System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
-            Bitmap imageWitch = new Bitmap(myStreamWitch);
-
-            System.Reflection.Assembly myAssemblyPsychic = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamPsychic = myAssemblyPsychic.GetManifestResourceStream("OrpheusManager.archetypePsychic.png");
-            Bitmap imagePsychic = new Bitmap(myStreamPsychic);
-
-            System.Reflection.Assembly myAssemblyWeapon = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamWeapon = myAssemblyWeapon.GetManifestResourceStream("OrpheusManager.archetypeWeapon.png");
-            Bitmap imageWeapon = new Bitmap(myStreamWeapon);
-
-            System.Reflection.Assembly myAssemblyOccultist = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamOccultist = myAssemblyOccultist.GetManifestResourceStream("OrpheusManager.archetypeOccultist.png");
-            Bitmap imageOccultist = new Bitmap(myStreamOccultist);
-
-            System.Reflection.Assembly myAssemblyCyborg = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamCyborg = myAssemblyCyborg.GetManifestResourceStream("OrpheusManager.archetypeCyborg.png");
-            Bitmap imageCyborg = new Bitmap(myStreamCyborg);
-
-            System.Reflection.Assembly myAssemblyTelekinetic = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamTelekinetic = myAssemblyTelekinetic.GetManifestResourceStream("OrpheusManager.archetypeTelekinetic.png");
-            Bitmap imageTelekinetic = new Bitmap(myStreamTelekinetic);
-
-            System.Reflection.Assembly myAssemblyWendigo = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamWendigo = myAssemblyWendigo.GetManifestResourceStream("OrpheusManager.archetypeWendigo.png");
-            Bitmap imageWendigo = new Bitmap(myStreamWendigo);
-
-            System.Reflection.Assembly myAssemblyWerewolf = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamWerewolf = myAssemblyWerewolf.GetManifestResourceStream("OrpheusManager.archetypeWerewolf.png");
-            Bitmap imageWerewolf = new Bitmap(myStreamWerewolf);
-
-            System.Reflection.Assembly myAssemblyTrueFaith = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamTrueFaith = myAssemblyTrueFaith.GetManifestResourceStream("OrpheusManager.archetypeTrueFaith.png");
-            Bitmap imageTrueFaith = new Bitmap(myStreamTrueFaith);
-
-            System.Reflection.Assembly myAssemblyMedium = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamMedium = myAssemblyMedium.GetManifestResourceStream("OrpheusManager.archetypeMedium.png");
-            Bitmap imageMedium = new Bitmap(myStreamMedium);
-
-            System.Reflection.Assembly myAssemblySoldier = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamSoldier = myAssemblySoldier.GetManifestResourceStream("OrpheusManager.archetypeSoldier.png");
-            Bitmap imageSoldier = new Bitmap(myStreamSoldier);
-
-            System.Reflection.Assembly myAssemblyMitch = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamMitch = myAssemblyMitch.GetManifestResourceStream("OrpheusManager.archetypeMitch.png");
-            Bitmap imageMitch = new Bitmap(myStreamMitch);
-
-            System.Reflection.Assembly myAssemblyPierce = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamPierce = myAssemblyPierce.GetManifestResourceStream("OrpheusManager.archetypePierce.png");
-            Bitmap imagePierce = new Bitmap(myStreamPierce);
-
-            System.Reflection.Assembly myAssemblyKiera = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStreamKiera = myAssemblyKiera.GetManifestResourceStream("OrpheusManager.archetypeKiera.png");
-            Bitmap imageKiera = new Bitmap(myStreamKiera);
-
-            if (CDATA.cName == "Mitch Hook" || CDATA.cName == "Mitchell Hook" || CDATA.cName == "Mitch") archetypePic.Image = imageMitch;
-            else if (CDATA.cName == "Pierce Keswick" || CDATA.cName == "Pierce") archetypePic.Image = imagePierce;
-            else if (CDATA.cName == "Kiera Jackson" || CDATA.cName == "Kiera") archetypePic.Image = imageKiera;
-            else if (CDATA.cArch1 == "Hermetic Magician") archetypePic.Image = imageHermetic;
-            else if (CDATA.cArch1 == "Witch") archetypePic.Image = imageWitch;
-            else if (CDATA.cArch1 == "Psychic") archetypePic.Image = imagePsychic;
-            else if (CDATA.cArch1 == "Weapon Bearer") archetypePic.Image = imageWeapon;
-            else if (CDATA.cArch1 == "Occultist") archetypePic.Image = imageOccultist;
-            else if (CDATA.cArch1 == "Cyborg") archetypePic.Image = imageCyborg;
-            else if (CDATA.cArch1 == "Wendigo") archetypePic.Image = imageWendigo;
-            else if (CDATA.cArch1 == "Telekinetic") archetypePic.Image = imageTelekinetic;
-            else if (CDATA.cArch1 == "Werewolf") archetypePic.Image = imageWerewolf;
-            else if (CDATA.cArch1 == "True Faith") archetypePic.Image = imageTrueFaith;
-            else if (CDATA.cArch1 == "Medium") archetypePic.Image = imageMedium;
-            else if (CDATA.cArch1 == "Soldier") archetypePic.Image = imageSoldier;
-            else archetypePic.Image = imageWitch;
+            // Mitch Default
+            if (CDATA.cName == "Mitch Hook" || CDATA.cName == "Mitchell Hook" || CDATA.cName == "Mitch")
+            {
+                System.Reflection.Assembly myAssemblyMitch = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamMitch = myAssemblyMitch.GetManifestResourceStream("OrpheusManager.archetypeMitch.png");
+                Bitmap imageMitch = new Bitmap(myStreamMitch);
+                archetypePic.Image = imageMitch;
+            }
+            // Pierce Default
+            else if (CDATA.cName == "Pierce Keswick" || CDATA.cName == "Pierce")
+            {
+                System.Reflection.Assembly myAssemblyPierce = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamPierce = myAssemblyPierce.GetManifestResourceStream("OrpheusManager.archetypePierce.png");
+                Bitmap imagePierce = new Bitmap(myStreamPierce);
+                archetypePic.Image = imagePierce;
+            }
+            // Keira Default
+            else if (CDATA.cName == "Kiera Jackson" || CDATA.cName == "Kiera")
+            {
+                System.Reflection.Assembly myAssemblyKiera = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamKiera = myAssemblyKiera.GetManifestResourceStream("OrpheusManager.archetypeKiera.png");
+                Bitmap imageKiera = new Bitmap(myStreamKiera);
+                archetypePic.Image = imageKiera;
+            }
+            // Hermetic Magician Default
+            else if (CDATA.cArch1 == "Hermetic Magician")
+            {
+                System.Reflection.Assembly myAssemblyHermetic = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamHermetic = myAssemblyHermetic.GetManifestResourceStream("OrpheusManager.archetypeHermetic.png");
+                Bitmap imageHermetic = new Bitmap(myStreamHermetic);
+                archetypePic.Image = imageHermetic;
+            }
+            // Witch Default
+            else if (CDATA.cArch1 == "Witch")
+            {
+                System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
+                Bitmap imageWitch = new Bitmap(myStreamWitch);
+                archetypePic.Image = imageWitch;
+            }
+            // Psychic Default
+            else if (CDATA.cArch1 == "Psychic")
+            {
+                System.Reflection.Assembly myAssemblyPsychic = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamPsychic = myAssemblyPsychic.GetManifestResourceStream("OrpheusManager.archetypePsychic.png");
+                Bitmap imagePsychic = new Bitmap(myStreamPsychic);
+                archetypePic.Image = imagePsychic;
+            }
+            // Weapon Bearer Default
+            else if (CDATA.cArch1 == "Weapon Bearer")
+            {
+                System.Reflection.Assembly myAssemblyWeapon = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamWeapon = myAssemblyWeapon.GetManifestResourceStream("OrpheusManager.archetypeWeapon.png");
+                Bitmap imageWeapon = new Bitmap(myStreamWeapon);
+                archetypePic.Image = imageWeapon;
+            }
+            // Occultist Default
+            else if (CDATA.cArch1 == "Occultist")
+            {
+                System.Reflection.Assembly myAssemblyOccultist = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamOccultist = myAssemblyOccultist.GetManifestResourceStream("OrpheusManager.archetypeOccultist.png");
+                Bitmap imageOccultist = new Bitmap(myStreamOccultist);
+                archetypePic.Image = imageOccultist;
+            }
+            // Cyborg Default
+            else if (CDATA.cArch1 == "Cyborg")
+            {
+                System.Reflection.Assembly myAssemblyCyborg = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamCyborg = myAssemblyCyborg.GetManifestResourceStream("OrpheusManager.archetypeCyborg.png");
+                Bitmap imageCyborg = new Bitmap(myStreamCyborg);
+                archetypePic.Image = imageCyborg;
+            }
+            // Wendigo Default
+            else if (CDATA.cArch1 == "Wendigo")
+            {
+                System.Reflection.Assembly myAssemblyWendigo = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamWendigo = myAssemblyWendigo.GetManifestResourceStream("OrpheusManager.archetypeWendigo.png");
+                Bitmap imageWendigo = new Bitmap(myStreamWendigo);
+                archetypePic.Image = imageWendigo;
+            }
+            // Telekinetic Default
+            else if (CDATA.cArch1 == "Telekinetic")
+            {
+                System.Reflection.Assembly myAssemblyTelekinetic = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamTelekinetic = myAssemblyTelekinetic.GetManifestResourceStream("OrpheusManager.archetypeTelekinetic.png");
+                Bitmap imageTelekinetic = new Bitmap(myStreamTelekinetic);
+                archetypePic.Image = imageTelekinetic;
+            }
+            // Werewolf Default
+            else if (CDATA.cArch1 == "Werewolf")
+            {
+                System.Reflection.Assembly myAssemblyWerewolf = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamWerewolf = myAssemblyWerewolf.GetManifestResourceStream("OrpheusManager.archetypeWerewolf.png");
+                Bitmap imageWerewolf = new Bitmap(myStreamWerewolf);
+                archetypePic.Image = imageWerewolf;
+            }
+            // True Faith Default
+            else if (CDATA.cArch1 == "True Faith")
+            {
+                System.Reflection.Assembly myAssemblyTrueFaith = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamTrueFaith = myAssemblyTrueFaith.GetManifestResourceStream("OrpheusManager.archetypeTrueFaith.png");
+                Bitmap imageTrueFaith = new Bitmap(myStreamTrueFaith);
+                archetypePic.Image = imageTrueFaith;
+            }
+            // Medium Default
+            else if (CDATA.cArch1 == "Medium")
+            {
+                System.Reflection.Assembly myAssemblyMedium = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamMedium = myAssemblyMedium.GetManifestResourceStream("OrpheusManager.archetypeMedium.png");
+                Bitmap imageMedium = new Bitmap(myStreamMedium);
+                archetypePic.Image = imageMedium;
+            }
+            // Soldier Default
+            else if (CDATA.cArch1 == "Soldier")
+            {
+                System.Reflection.Assembly myAssemblySoldier = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamSoldier = myAssemblySoldier.GetManifestResourceStream("OrpheusManager.archetypeSoldier.png");
+                Bitmap imageSoldier = new Bitmap(myStreamSoldier);
+                archetypePic.Image = imageSoldier;
+            }
+            // Default
+            else
+            {
+                System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
+                Bitmap imageWitch = new Bitmap(myStreamWitch);
+                archetypePic.Image = imageWitch;
+            }
         }
 
+        // Create New Character Sheet
         private void newCharacter_Click(object sender, EventArgs e)
         {
             // Open Dialog Box
@@ -928,6 +986,89 @@ namespace OrpheusManager
             cNotes.Text = "";
             CDATA.cNotes = "";
 
+            // Open Background Dialog
+            if (CDATA.cBackground == "Custom")
+            {
+                Form nBack = new cBackgroundFirst();
+                nBack.ShowDialog();
+            }
+            else
+            {
+                // Background Starting Skills
+                if (CDATA.cBackground == "Scientist")
+                {
+                    CDATA.cSkillName[0] = "Knowledge (Science Type)";
+                    CDATA.cSkillName[1] = "Investigation";
+                    CDATA.cSkillName[2] = "Craft (Lab Use)";
+                    CDATA.cSkillName[3] = "Contacts (Academia)";
+                    CDATA.cCkillName[0] = "Discipline";
+                }
+                else if (CDATA.cBackground == "Occult Scholar")
+                {
+                    CDATA.cSkillName[0] = "Knowledge (Occult)";
+                    CDATA.cSkillName[1] = "Investigation";
+                    CDATA.cSkillName[2] = "Contacts (Occult Dealers)";
+                    CDATA.cSkillName[3] = "Knowledge (Eldritch)";
+                    CDATA.cCkillName[0] = "Discipline";
+                }
+                else if (CDATA.cBackground == "Logistics Operator")
+                {
+                    CDATA.cSkillName[0] = "Knowledge (Tradecraft)";
+                    CDATA.cSkillName[1] = "Digital Security";
+                    CDATA.cSkillName[2] = "Craft (Forgery)";
+                    CDATA.cSkillName[3] = "Analog Security";
+                    CDATA.cCkillName[0] = "Stealth";
+                }
+                else if (CDATA.cBackground == "Criminal")
+                {
+                    CDATA.cSkillName[0] = "Intimidation";
+                    CDATA.cSkillName[1] = "Contacts (Underworld or Gangs)";
+                    CDATA.cSkillName[2] = "Security";
+                    CDATA.cSkillName[3] = "Deception";
+                    CDATA.cCkillName[0] = "Stealth";
+                }
+                else if (CDATA.cBackground == "Turned Cultist")
+                {
+                    CDATA.cSkillName[0] = "Deception";
+                    CDATA.cSkillName[1] = "Knowledge (Occult)";
+                    CDATA.cSkillName[2] = "Empathy";
+                    CDATA.cSkillName[3] = "Knowledge (Eldritch)";
+                    CDATA.cCkillName[0] = "Stability";
+                }
+                else if (CDATA.cBackground == "Combat Veteran")
+                {
+                    CDATA.cSkillName[0] = "Athletics";
+                    CDATA.cSkillName[1] = "Intimidation";
+                    CDATA.cSkillName[2] = "Endurance";
+                    CDATA.cSkillName[3] = "Might";
+                    CDATA.cCkillName[0] = "Attack (Weapon Type)";
+                }
+                else if (CDATA.cBackground == "Medical Professional")
+                {
+                    CDATA.cSkillName[0] = "Craft (Psychiatry or Medicine";
+                    CDATA.cSkillName[1] = "Knowledge (Medicine)";
+                    CDATA.cSkillName[2] = "Craft (Lab Use)";
+                    CDATA.cSkillName[3] = "Investigation";
+                    CDATA.cCkillName[0] = "First Aid";
+                }
+                else if (CDATA.cBackground == "Intelligence Asset")
+                {
+                    CDATA.cSkillName[0] = "Empathy";
+                    CDATA.cSkillName[1] = "Deception";
+                    CDATA.cSkillName[2] = "Language";
+                    CDATA.cSkillName[3] = "Analog Security";
+                    CDATA.cCkillName[0] = "Stealth";
+                }
+                else if (CDATA.cBackground == "Cyber Security Specialist")
+                {
+                    CDATA.cSkillName[0] = "Craft (Computer Hacking)";
+                    CDATA.cSkillName[1] = "Investigation";
+                    CDATA.cSkillName[2] = "Knowlege (Computer Science)";
+                    CDATA.cSkillName[3] = "Contacts (Deep Web)";
+                    CDATA.cCkillName[0] = "Discipline";
+                }
+            }
+
             // Assign Skills/Abilities
             Form mskill = new ManageSkillsFirst();
             Form mabilities = new ManageAbilities();
@@ -947,6 +1088,8 @@ namespace OrpheusManager
             for (int i = 0; i < 20; i++) { CDATA.cInitialNcsp += EDATA.numToWeightedInt(CDATA.cSkillRank[i]); }
         }
 
+        // Clear Skills
+        //    [No longer a button, still used when a new character is created]
         private void clearSkillsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < 20; i++)
@@ -959,6 +1102,8 @@ namespace OrpheusManager
             writeDATA();
         }
 
+        // Add Ability
+        //    [Removed, Do Not Use]
         private void addAbilityToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Open Dialog Box
@@ -968,6 +1113,8 @@ namespace OrpheusManager
             writeDATA();
         }
 
+        // Clear Abilities
+        //    [No longer a button, still used when a new character is created]
         private void clearAbilitiesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < 12; i++)
@@ -983,6 +1130,7 @@ namespace OrpheusManager
             writeDATA();
         }
 
+        // TOOLSTRIP BUTTONS
         private void maxHumanityToolStripMenuItem_Click(object sender, EventArgs e)
         {
             storeDATA2();
@@ -1042,71 +1190,13 @@ namespace OrpheusManager
             Form mAcc = new mAcclimations();
             mAcc.ShowDialog();
 
-            // Acclimations
-            System.Drawing.Graphics formGraphics;
+            // Refresh Acclimation Graphics
+            updateAcclimations();
 
-            formGraphics = this.CreateGraphics();
-
-            System.Drawing.SolidBrush clearBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#1B1B1B"));
-            formGraphics.FillRectangle(clearBrush, 49, 267, 163, 27);
-
-            cAcc1.Visible = false;
-            cAcc2.Visible = false;
-            cAcc3.Visible = false;
-            cAcc4.Visible = false;
-
-            if (CDATA.cAcc1 == 1)
-            {
-                System.Drawing.Pen ruthlessPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#683636"));
-                System.Drawing.SolidBrush ruthlessBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#683636"));
-                formGraphics.DrawEllipse(ruthlessPen, 50, 268, 24, 24);
-                formGraphics.FillEllipse(ruthlessBrush, 50, 268, 24, 24);
-
-                cAcc1.Left = 55;
-                cAcc1.Top = 274;
-                cAcc1.Visible = true;
-            }
-
-            if (CDATA.cAcc2 == 1)
-            {
-                System.Drawing.Pen callousPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#676836"));
-                System.Drawing.SolidBrush callousBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#676836"));
-                formGraphics.DrawEllipse(callousPen, 95, 268, 24, 24);
-                formGraphics.FillEllipse(callousBrush, 95, 268, 24, 24);
-
-                cAcc2.Left = 101;
-                cAcc2.Top = 274;
-                cAcc2.Visible = true;
-            }
-
-            if (CDATA.cAcc3 == 1)
-            {
-                System.Drawing.Pen stomachPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#366837"));
-                System.Drawing.SolidBrush stomachBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#366837"));
-                formGraphics.DrawEllipse(stomachPen, 140, 268, 24, 24);
-                formGraphics.FillEllipse(stomachBrush, 140, 268, 24, 24);
-
-                cAcc3.Left = 146;
-                cAcc3.Top = 274;
-                cAcc3.Visible = true;
-            }
-
-            if (CDATA.cAcc4 == 1)
-            {
-                System.Drawing.Pen fatalisticPen = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#364068"));
-                System.Drawing.SolidBrush fatalisticBrush = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#364068"));
-                formGraphics.DrawEllipse(fatalisticPen, 185, 268, 24, 24);
-                formGraphics.FillEllipse(fatalisticBrush, 185, 268, 24, 24);
-
-                cAcc4.Left = 191;
-                cAcc4.Top = 274;
-                cAcc4.Visible = true;
-            }
-
-            formGraphics.Dispose();
             SDATA.sRecentSave = false;
         }
 
+        // Refresh Acclimation Graphics
         public void updateAcclimations()
         {
             // Acclimations
@@ -1173,124 +1263,21 @@ namespace OrpheusManager
             formGraphics.Dispose();
             SDATA.sRecentSave = false;
         }
-
+        
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CDATA.cNotes = cNotes.Text;
-            Int32.TryParse(cMentalStrain.Text, out CDATA.cMentalStrain);
-            Int32.TryParse(cPhysicalStrain.Text, out CDATA.cPhysicalStrain);
-            Int32.TryParse(cSpiritualStrain.Text, out CDATA.cSpiritualStrain);
-            Int32.TryParse(cInitiative.Text, out CDATA.cInitiative);
-            Int32.TryParse(cMementoMori.Text, out CDATA.cMementoMori);
-            Int32.TryParse(cHumanity.Text, out CDATA.cHumanity);
-            Int32.TryParse(cOverFocus.Text, out CDATA.cOverFocus);
-            Int32.TryParse(cOverHealth.Text, out CDATA.cOverHealth);
-            Int32.TryParse(cOverSanity.Text, out CDATA.cOverSanity);
-
-            if (m1m1.Checked == true) CDATA.cMot1Box[0] = 1; else CDATA.cMot1Box[0] = 0;
-            if (m1m2.Checked == true) CDATA.cMot1Box[1] = 1; else CDATA.cMot1Box[1] = 0;
-            if (m1m3.Checked == true) CDATA.cMot1Box[2] = 1; else CDATA.cMot1Box[2] = 0;
-            if (m1m4.Checked == true) CDATA.cMot1Box[3] = 1; else CDATA.cMot1Box[3] = 0;
-            if (m1m5.Checked == true) CDATA.cMot1Box[4] = 1; else CDATA.cMot1Box[4] = 0;
-            if (m1m6.Checked == true) CDATA.cMot1Box[5] = 1; else CDATA.cMot1Box[5] = 0;
-
-            if (m2m1.Checked == true) CDATA.cMot2Box[0] = 1; else CDATA.cMot2Box[0] = 0;
-            if (m2m2.Checked == true) CDATA.cMot2Box[1] = 1; else CDATA.cMot2Box[1] = 0;
-            if (m2m3.Checked == true) CDATA.cMot2Box[2] = 1; else CDATA.cMot2Box[2] = 0;
-            if (m2m4.Checked == true) CDATA.cMot2Box[3] = 1; else CDATA.cMot2Box[3] = 0;
-            if (m2m5.Checked == true) CDATA.cMot2Box[4] = 1; else CDATA.cMot2Box[4] = 0;
-            if (m2m6.Checked == true) CDATA.cMot2Box[5] = 1; else CDATA.cMot2Box[5] = 0;
-
-            if (m3m1.Checked == true) CDATA.cMot3Box[0] = 1; else CDATA.cMot3Box[0] = 0;
-            if (m3m2.Checked == true) CDATA.cMot3Box[1] = 1; else CDATA.cMot3Box[1] = 0;
-            if (m3m3.Checked == true) CDATA.cMot3Box[2] = 1; else CDATA.cMot3Box[2] = 0;
-            if (m3m4.Checked == true) CDATA.cMot3Box[3] = 1; else CDATA.cMot3Box[3] = 0;
-            if (m3m5.Checked == true) CDATA.cMot3Box[4] = 1; else CDATA.cMot3Box[4] = 0;
-            if (m3m6.Checked == true) CDATA.cMot3Box[5] = 1; else CDATA.cMot3Box[5] = 0;
-
-            if (m4m1.Checked == true) CDATA.cMot4Box[0] = 1; else CDATA.cMot4Box[0] = 0;
-            if (m4m2.Checked == true) CDATA.cMot4Box[1] = 1; else CDATA.cMot4Box[1] = 0;
-            if (m4m3.Checked == true) CDATA.cMot4Box[2] = 1; else CDATA.cMot4Box[2] = 0;
-            if (m4m4.Checked == true) CDATA.cMot4Box[3] = 1; else CDATA.cMot4Box[3] = 0;
-            if (m4m5.Checked == true) CDATA.cMot4Box[4] = 1; else CDATA.cMot4Box[4] = 0;
-            if (m4m6.Checked == true) CDATA.cMot4Box[5] = 1; else CDATA.cMot4Box[5] = 0;
-
-            if (m5m1.Checked == true) CDATA.cMot5Box[0] = 1; else CDATA.cMot5Box[0] = 0;
-            if (m5m2.Checked == true) CDATA.cMot5Box[1] = 1; else CDATA.cMot5Box[1] = 0;
-            if (m5m3.Checked == true) CDATA.cMot5Box[2] = 1; else CDATA.cMot5Box[2] = 0;
-            if (m5m4.Checked == true) CDATA.cMot5Box[3] = 1; else CDATA.cMot5Box[3] = 0;
-            if (m5m5.Checked == true) CDATA.cMot5Box[4] = 1; else CDATA.cMot5Box[4] = 0;
-            if (m5m6.Checked == true) CDATA.cMot5Box[5] = 1; else CDATA.cMot5Box[5] = 0;
-
-            if (m6m1.Checked == true) CDATA.cMot6Box[0] = 1; else CDATA.cMot6Box[0] = 0;
-            if (m6m2.Checked == true) CDATA.cMot6Box[1] = 1; else CDATA.cMot6Box[1] = 0;
-            if (m6m3.Checked == true) CDATA.cMot6Box[2] = 1; else CDATA.cMot6Box[2] = 0;
-            if (m6m4.Checked == true) CDATA.cMot6Box[3] = 1; else CDATA.cMot6Box[3] = 0;
-            if (m6m5.Checked == true) CDATA.cMot6Box[4] = 1; else CDATA.cMot6Box[4] = 0;
-            if (m6m6.Checked == true) CDATA.cMot6Box[5] = 1; else CDATA.cMot6Box[5] = 0;
-
-            if (m7m1.Checked == true) CDATA.cMot7Box[0] = 1; else CDATA.cMot7Box[0] = 0;
-            if (m7m2.Checked == true) CDATA.cMot7Box[1] = 1; else CDATA.cMot7Box[1] = 0;
-            if (m7m3.Checked == true) CDATA.cMot7Box[2] = 1; else CDATA.cMot7Box[2] = 0;
-            if (m7m4.Checked == true) CDATA.cMot7Box[3] = 1; else CDATA.cMot7Box[3] = 0;
-            if (m7m5.Checked == true) CDATA.cMot7Box[4] = 1; else CDATA.cMot7Box[4] = 0;
-            if (m7m6.Checked == true) CDATA.cMot7Box[5] = 1; else CDATA.cMot7Box[5] = 0;
-
-            if (FW1.Checked == true) CDATA.cFocusWounds[0] = 1; else CDATA.cFocusWounds[0] = 0;
-            if (FW2.Checked == true) CDATA.cFocusWounds[1] = 1; else CDATA.cFocusWounds[1] = 0;
-            if (FW3.Checked == true) CDATA.cFocusWounds[2] = 1; else CDATA.cFocusWounds[2] = 0;
-            if (FW4.Checked == true) CDATA.cFocusWounds[3] = 1; else CDATA.cFocusWounds[3] = 0;
-            if (FW5.Checked == true) CDATA.cFocusWounds[4] = 1; else CDATA.cFocusWounds[4] = 0;
-            if (FW6.Checked == true) CDATA.cFocusWounds[5] = 1; else CDATA.cFocusWounds[5] = 0;
-            if (FW7.Checked == true) CDATA.cFocusWounds[6] = 1; else CDATA.cFocusWounds[6] = 0;
-            if (FW8.Checked == true) CDATA.cFocusWounds[7] = 1; else CDATA.cFocusWounds[7] = 0;
-            if (FW9.Checked == true) CDATA.cFocusWounds[8] = 1; else CDATA.cFocusWounds[8] = 0;
-            if (FW10.Checked == true) CDATA.cFocusWounds[9] = 1; else CDATA.cFocusWounds[9] = 0;
-
-            if (HW1.Checked == true) CDATA.cHealthWounds[0] = 1; else CDATA.cHealthWounds[0] = 0;
-            if (HW2.Checked == true) CDATA.cHealthWounds[1] = 1; else CDATA.cHealthWounds[1] = 0;
-            if (HW3.Checked == true) CDATA.cHealthWounds[2] = 1; else CDATA.cHealthWounds[2] = 0;
-            if (HW4.Checked == true) CDATA.cHealthWounds[3] = 1; else CDATA.cHealthWounds[3] = 0;
-            if (HW5.Checked == true) CDATA.cHealthWounds[4] = 1; else CDATA.cHealthWounds[4] = 0;
-            if (HW6.Checked == true) CDATA.cHealthWounds[5] = 1; else CDATA.cHealthWounds[5] = 0;
-            if (HW7.Checked == true) CDATA.cHealthWounds[6] = 1; else CDATA.cHealthWounds[6] = 0;
-            if (HW8.Checked == true) CDATA.cHealthWounds[7] = 1; else CDATA.cHealthWounds[7] = 0;
-            if (HW9.Checked == true) CDATA.cHealthWounds[8] = 1; else CDATA.cHealthWounds[8] = 0;
-            if (HW10.Checked == true) CDATA.cHealthWounds[9] = 1; else CDATA.cHealthWounds[9] = 0;
-
-            if (SW1.Checked == true) CDATA.cSanityWounds[0] = 1; else CDATA.cSanityWounds[0] = 0;
-            if (SW2.Checked == true) CDATA.cSanityWounds[1] = 1; else CDATA.cSanityWounds[1] = 0;
-            if (SW3.Checked == true) CDATA.cSanityWounds[2] = 1; else CDATA.cSanityWounds[2] = 0;
-            if (SW4.Checked == true) CDATA.cSanityWounds[3] = 1; else CDATA.cSanityWounds[3] = 0;
-            if (SW5.Checked == true) CDATA.cSanityWounds[4] = 1; else CDATA.cSanityWounds[4] = 0;
-            if (SW6.Checked == true) CDATA.cSanityWounds[5] = 1; else CDATA.cSanityWounds[5] = 0;
-            if (SW7.Checked == true) CDATA.cSanityWounds[6] = 1; else CDATA.cSanityWounds[6] = 0;
-            if (SW8.Checked == true) CDATA.cSanityWounds[7] = 1; else CDATA.cSanityWounds[7] = 0;
-            if (SW9.Checked == true) CDATA.cSanityWounds[8] = 1; else CDATA.cSanityWounds[8] = 0;
-            if (FW10.Checked == true) CDATA.cSanityWounds[9] = 1; else CDATA.cSanityWounds[9] = 0;
-
-            SaveFileDialog saver = new SaveFileDialog();
-            saver.InitialDirectory = @"C:\";
-            saver.Title = this.Text;
-            saver.DefaultExt = "txt";
-            saver.CheckPathExists = true;
-            saver.FileName = CDATA.cName;
-
-            if (saver.ShowDialog() == DialogResult.OK)
-            {
-                SDATA.generateFile(saver.FileName);
-                SDATA.sFilepath = saver.FileName;
-                SDATA.sRecentSave = true;
-            }
+            saveCharacterSheet(1);
         }
-
+        
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            saveCharacterSheet();
+            saveCharacterSheet(0);
         }
 
-        public void saveCharacterSheet()
+        // Save Character Sheet
+        public void saveCharacterSheet(int saveAs)
         {
+            // Store All Fields
             CDATA.cNotes = cNotes.Text;
             Int32.TryParse(cMentalStrain.Text, out CDATA.cMentalStrain);
             Int32.TryParse(cPhysicalStrain.Text, out CDATA.cPhysicalStrain);
@@ -1384,13 +1371,15 @@ namespace OrpheusManager
             if (SW9.Checked == true) CDATA.cSanityWounds[8] = 1; else CDATA.cSanityWounds[8] = 0;
             if (FW10.Checked == true) CDATA.cSanityWounds[9] = 1; else CDATA.cSanityWounds[9] = 0;
 
-            if (SDATA.sFilepath != "")
+            if (SDATA.sFilepath != "" && saveAs == 0)
             {
+                // Quiet Save
                 SDATA.generateFile(SDATA.sFilepath);
                 SDATA.sRecentSave = true;
             }
             else
             {
+                // Verbose Save
                 SaveFileDialog saver = new SaveFileDialog();
                 saver.InitialDirectory = @"C:\";
                 saver.Title = this.Text;
@@ -1407,6 +1396,7 @@ namespace OrpheusManager
             }
         }
 
+        // Open Saved Character Sheet
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog opener = new OpenFileDialog();
@@ -1756,67 +1746,15 @@ namespace OrpheusManager
                     reloadArch();
                     writeDATA();
                     writeDATA2();
+                    
+                    // Refresh Acclimation Graphics
+                    updateAcclimations();
 
-                    // Draw Acclimations
-                    System.Drawing.Graphics formGraphics2;
-
-                    formGraphics2 = this.CreateGraphics();
-
-                    if (CDATA.cAcc1 == 1)
-                    {
-                        System.Drawing.Pen ruthlessPen2 = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#683636"));
-                        System.Drawing.SolidBrush ruthlessBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#683636"));
-                        formGraphics2.DrawEllipse(ruthlessPen2, 50, 268, 24, 24);
-                        formGraphics2.FillEllipse(ruthlessBrush2, 50, 268, 24, 24);
-
-                        cAcc1.Left = 55;
-                        cAcc1.Top = 274;
-                        cAcc1.Visible = true;
-                    }
-
-                    if (CDATA.cAcc2 == 1)
-                    {
-                        System.Drawing.Pen calousPen2 = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#676836"));
-                        System.Drawing.SolidBrush calousBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#676836"));
-                        formGraphics2.DrawEllipse(calousPen2, 95, 268, 24, 24);
-                        formGraphics2.FillEllipse(calousBrush2, 95, 268, 24, 24);
-
-                        cAcc2.Left = 101;
-                        cAcc2.Top = 274;
-                        cAcc2.Visible = true;
-                    }
-
-                    if (CDATA.cAcc3 == 1)
-                    {
-                        System.Drawing.Pen stomachPen2 = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#366837"));
-                        System.Drawing.SolidBrush stomachBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#366837"));
-                        formGraphics2.DrawEllipse(stomachPen2, 140, 268, 24, 24);
-                        formGraphics2.FillEllipse(stomachBrush2, 140, 268, 24, 24);
-
-                        cAcc3.Left = 146;
-                        cAcc3.Top = 274;
-                        cAcc3.Visible = true;
-                    }
-
-                    if (CDATA.cAcc4 == 1)
-                    {
-                        System.Drawing.Pen fatalisticPen2 = new System.Drawing.Pen(System.Drawing.ColorTranslator.FromHtml("#364068"));
-                        System.Drawing.SolidBrush fatalisticBrush2 = new System.Drawing.SolidBrush(System.Drawing.ColorTranslator.FromHtml("#364068"));
-                        formGraphics2.DrawEllipse(fatalisticPen2, 185, 268, 24, 24);
-                        formGraphics2.FillEllipse(fatalisticBrush2, 185, 268, 24, 24);
-                        
-                        cAcc4.Left = 191;
-                        cAcc4.Top = 274;
-                        cAcc4.Visible = true;
-                    }
-
-                    formGraphics2.Dispose();
                     SDATA.sRecentSave = true;
                 }
             }
         }
-
-        // Menu Bar
+        
         private void characterNameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Open Dialog Box
@@ -1855,8 +1793,6 @@ namespace OrpheusManager
             writeDATA();
             writeDATA2();
         }
-
-
 
         // References
         private void skillLevelsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2045,6 +1981,7 @@ namespace OrpheusManager
             rwep.Show();
         }
 
+        // Save on Program Close Dialog
         private void CharacterSheet_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (SDATA.sRecentSave == false)
@@ -2052,7 +1989,7 @@ namespace OrpheusManager
                 Form qtsv = new sQuitSave();
                 qtsv.ShowDialog();
 
-                if (SDATA.sSaveFlag) saveCharacterSheet();
+                if (SDATA.sSaveFlag) saveCharacterSheet(0);
 
                 if (SDATA.sRecentSave == false)
                 {
@@ -2134,7 +2071,8 @@ namespace OrpheusManager
 
         private void dazeToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Form rdaz = new rDaze();
+            rdaz.Show();
         }
 
         private void bleedingToolStripMenuItem1_Click(object sender, EventArgs e)

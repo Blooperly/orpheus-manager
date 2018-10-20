@@ -25,7 +25,7 @@ namespace OrpheusManager
         public static string cBackground = "Criminal";                                  // Background
         public static int[] cAttributes = { 2, 1, 4, 2, 3, 3 };                         // Attributes (PER, COG, DEX, VIT, CHAR, WILL)
         public static int[] cAttributesTemp = { 0, 0, 0, 0, 0, 0 };                     // Attribute Modifiers (Debuffs, Wounds) [REMOVED DO NOT USE]
-        public static string cMot1 = "Bond: Renegades && Outlaws (Desires Respect)";     // Motivation 1
+        public static string cMot1 = "Bond: Renegades && Outlaws (Desires Respect)";    // Motivation 1
         public static string cMot2 = "Principle: Defy Danger to Succeed";               // Motivation 2
         public static string cMot3 = "Fear: Being Trapped";                             // Motivation 3
         public static string cMot4 = " ";                                               // Motivation 4

@@ -1195,7 +1195,7 @@
             // m1m1
             // 
             this.m1m1.AutoSize = true;
-            this.m1m1.Location = new System.Drawing.Point(418, 87);
+            this.m1m1.Location = new System.Drawing.Point(426, 88);
             this.m1m1.Name = "m1m1";
             this.m1m1.Size = new System.Drawing.Size(15, 14);
             this.m1m1.TabIndex = 22;
@@ -1205,7 +1205,7 @@
             // m1m4
             // 
             this.m1m4.AutoSize = true;
-            this.m1m4.Location = new System.Drawing.Point(481, 87);
+            this.m1m4.Location = new System.Drawing.Point(489, 88);
             this.m1m4.Name = "m1m4";
             this.m1m4.Size = new System.Drawing.Size(15, 14);
             this.m1m4.TabIndex = 23;
@@ -1215,7 +1215,7 @@
             // m1m3
             // 
             this.m1m3.AutoSize = true;
-            this.m1m3.Location = new System.Drawing.Point(460, 87);
+            this.m1m3.Location = new System.Drawing.Point(468, 88);
             this.m1m3.Name = "m1m3";
             this.m1m3.Size = new System.Drawing.Size(15, 14);
             this.m1m3.TabIndex = 24;
@@ -1225,7 +1225,7 @@
             // m1m5
             // 
             this.m1m5.AutoSize = true;
-            this.m1m5.Location = new System.Drawing.Point(502, 87);
+            this.m1m5.Location = new System.Drawing.Point(510, 88);
             this.m1m5.Name = "m1m5";
             this.m1m5.Size = new System.Drawing.Size(15, 14);
             this.m1m5.TabIndex = 25;
@@ -1235,7 +1235,7 @@
             // m1m2
             // 
             this.m1m2.AutoSize = true;
-            this.m1m2.Location = new System.Drawing.Point(439, 87);
+            this.m1m2.Location = new System.Drawing.Point(447, 88);
             this.m1m2.Name = "m1m2";
             this.m1m2.Size = new System.Drawing.Size(15, 14);
             this.m1m2.TabIndex = 26;
@@ -1246,7 +1246,7 @@
             // 
             this.m1m6.AutoSize = true;
             this.m1m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m1m6.Location = new System.Drawing.Point(523, 87);
+            this.m1m6.Location = new System.Drawing.Point(531, 88);
             this.m1m6.Name = "m1m6";
             this.m1m6.Size = new System.Drawing.Size(13, 12);
             this.m1m6.TabIndex = 27;
@@ -1257,7 +1257,7 @@
             // 
             this.m2m6.AutoSize = true;
             this.m2m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m2m6.Location = new System.Drawing.Point(523, 107);
+            this.m2m6.Location = new System.Drawing.Point(531, 108);
             this.m2m6.Name = "m2m6";
             this.m2m6.Size = new System.Drawing.Size(13, 12);
             this.m2m6.TabIndex = 33;
@@ -1267,7 +1267,7 @@
             // m2m2
             // 
             this.m2m2.AutoSize = true;
-            this.m2m2.Location = new System.Drawing.Point(439, 107);
+            this.m2m2.Location = new System.Drawing.Point(447, 108);
             this.m2m2.Name = "m2m2";
             this.m2m2.Size = new System.Drawing.Size(15, 14);
             this.m2m2.TabIndex = 32;
@@ -1277,7 +1277,7 @@
             // m2m5
             // 
             this.m2m5.AutoSize = true;
-            this.m2m5.Location = new System.Drawing.Point(502, 107);
+            this.m2m5.Location = new System.Drawing.Point(510, 108);
             this.m2m5.Name = "m2m5";
             this.m2m5.Size = new System.Drawing.Size(15, 14);
             this.m2m5.TabIndex = 31;
@@ -1287,7 +1287,7 @@
             // m2m3
             // 
             this.m2m3.AutoSize = true;
-            this.m2m3.Location = new System.Drawing.Point(460, 107);
+            this.m2m3.Location = new System.Drawing.Point(468, 108);
             this.m2m3.Name = "m2m3";
             this.m2m3.Size = new System.Drawing.Size(15, 14);
             this.m2m3.TabIndex = 30;
@@ -1297,7 +1297,7 @@
             // m2m4
             // 
             this.m2m4.AutoSize = true;
-            this.m2m4.Location = new System.Drawing.Point(481, 107);
+            this.m2m4.Location = new System.Drawing.Point(489, 108);
             this.m2m4.Name = "m2m4";
             this.m2m4.Size = new System.Drawing.Size(15, 14);
             this.m2m4.TabIndex = 29;
@@ -1307,7 +1307,7 @@
             // m2m1
             // 
             this.m2m1.AutoSize = true;
-            this.m2m1.Location = new System.Drawing.Point(418, 107);
+            this.m2m1.Location = new System.Drawing.Point(426, 108);
             this.m2m1.Name = "m2m1";
             this.m2m1.Size = new System.Drawing.Size(15, 14);
             this.m2m1.TabIndex = 28;
@@ -1318,7 +1318,7 @@
             // 
             this.m3m6.AutoSize = true;
             this.m3m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m3m6.Location = new System.Drawing.Point(523, 127);
+            this.m3m6.Location = new System.Drawing.Point(531, 128);
             this.m3m6.Name = "m3m6";
             this.m3m6.Size = new System.Drawing.Size(13, 12);
             this.m3m6.TabIndex = 39;
@@ -1328,7 +1328,7 @@
             // m3m2
             // 
             this.m3m2.AutoSize = true;
-            this.m3m2.Location = new System.Drawing.Point(439, 127);
+            this.m3m2.Location = new System.Drawing.Point(447, 128);
             this.m3m2.Name = "m3m2";
             this.m3m2.Size = new System.Drawing.Size(15, 14);
             this.m3m2.TabIndex = 38;
@@ -1338,7 +1338,7 @@
             // m3m5
             // 
             this.m3m5.AutoSize = true;
-            this.m3m5.Location = new System.Drawing.Point(502, 127);
+            this.m3m5.Location = new System.Drawing.Point(510, 128);
             this.m3m5.Name = "m3m5";
             this.m3m5.Size = new System.Drawing.Size(15, 14);
             this.m3m5.TabIndex = 37;
@@ -1348,7 +1348,7 @@
             // m3m3
             // 
             this.m3m3.AutoSize = true;
-            this.m3m3.Location = new System.Drawing.Point(460, 127);
+            this.m3m3.Location = new System.Drawing.Point(468, 128);
             this.m3m3.Name = "m3m3";
             this.m3m3.Size = new System.Drawing.Size(15, 14);
             this.m3m3.TabIndex = 36;
@@ -1358,7 +1358,7 @@
             // m3m4
             // 
             this.m3m4.AutoSize = true;
-            this.m3m4.Location = new System.Drawing.Point(481, 127);
+            this.m3m4.Location = new System.Drawing.Point(489, 128);
             this.m3m4.Name = "m3m4";
             this.m3m4.Size = new System.Drawing.Size(15, 14);
             this.m3m4.TabIndex = 35;
@@ -1368,7 +1368,7 @@
             // m3m1
             // 
             this.m3m1.AutoSize = true;
-            this.m3m1.Location = new System.Drawing.Point(418, 127);
+            this.m3m1.Location = new System.Drawing.Point(426, 128);
             this.m3m1.Name = "m3m1";
             this.m3m1.Size = new System.Drawing.Size(15, 14);
             this.m3m1.TabIndex = 34;
@@ -1380,7 +1380,7 @@
             this.cMot1.AutoSize = true;
             this.cMot1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot1.Location = new System.Drawing.Point(542, 87);
+            this.cMot1.Location = new System.Drawing.Point(550, 88);
             this.cMot1.Name = "cMot1";
             this.cMot1.Size = new System.Drawing.Size(113, 13);
             this.cMot1.TabIndex = 40;
@@ -1391,7 +1391,7 @@
             this.cMot2.AutoSize = true;
             this.cMot2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot2.Location = new System.Drawing.Point(542, 107);
+            this.cMot2.Location = new System.Drawing.Point(550, 108);
             this.cMot2.Name = "cMot2";
             this.cMot2.Size = new System.Drawing.Size(147, 13);
             this.cMot2.TabIndex = 41;
@@ -1402,7 +1402,7 @@
             this.cMot3.AutoSize = true;
             this.cMot3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot3.Location = new System.Drawing.Point(542, 127);
+            this.cMot3.Location = new System.Drawing.Point(550, 128);
             this.cMot3.Name = "cMot3";
             this.cMot3.Size = new System.Drawing.Size(63, 13);
             this.cMot3.TabIndex = 42;
@@ -3515,7 +3515,7 @@
             this.cMot6.AutoSize = true;
             this.cMot6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot6.Location = new System.Drawing.Point(542, 187);
+            this.cMot6.Location = new System.Drawing.Point(550, 188);
             this.cMot6.Name = "cMot6";
             this.cMot6.Size = new System.Drawing.Size(63, 13);
             this.cMot6.TabIndex = 287;
@@ -3527,7 +3527,7 @@
             this.cMot5.AutoSize = true;
             this.cMot5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot5.Location = new System.Drawing.Point(542, 167);
+            this.cMot5.Location = new System.Drawing.Point(550, 168);
             this.cMot5.Name = "cMot5";
             this.cMot5.Size = new System.Drawing.Size(147, 13);
             this.cMot5.TabIndex = 286;
@@ -3539,7 +3539,7 @@
             this.cMot4.AutoSize = true;
             this.cMot4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot4.Location = new System.Drawing.Point(542, 147);
+            this.cMot4.Location = new System.Drawing.Point(550, 148);
             this.cMot4.Name = "cMot4";
             this.cMot4.Size = new System.Drawing.Size(113, 13);
             this.cMot4.TabIndex = 285;
@@ -3550,7 +3550,7 @@
             // 
             this.m6m6.AutoSize = true;
             this.m6m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m6m6.Location = new System.Drawing.Point(523, 187);
+            this.m6m6.Location = new System.Drawing.Point(531, 188);
             this.m6m6.Name = "m6m6";
             this.m6m6.Size = new System.Drawing.Size(13, 12);
             this.m6m6.TabIndex = 284;
@@ -3561,7 +3561,7 @@
             // m6m2
             // 
             this.m6m2.AutoSize = true;
-            this.m6m2.Location = new System.Drawing.Point(439, 187);
+            this.m6m2.Location = new System.Drawing.Point(447, 188);
             this.m6m2.Name = "m6m2";
             this.m6m2.Size = new System.Drawing.Size(15, 14);
             this.m6m2.TabIndex = 283;
@@ -3572,7 +3572,7 @@
             // m6m5
             // 
             this.m6m5.AutoSize = true;
-            this.m6m5.Location = new System.Drawing.Point(502, 187);
+            this.m6m5.Location = new System.Drawing.Point(510, 188);
             this.m6m5.Name = "m6m5";
             this.m6m5.Size = new System.Drawing.Size(15, 14);
             this.m6m5.TabIndex = 282;
@@ -3583,7 +3583,7 @@
             // m6m3
             // 
             this.m6m3.AutoSize = true;
-            this.m6m3.Location = new System.Drawing.Point(460, 187);
+            this.m6m3.Location = new System.Drawing.Point(468, 188);
             this.m6m3.Name = "m6m3";
             this.m6m3.Size = new System.Drawing.Size(15, 14);
             this.m6m3.TabIndex = 281;
@@ -3594,7 +3594,7 @@
             // m6m4
             // 
             this.m6m4.AutoSize = true;
-            this.m6m4.Location = new System.Drawing.Point(481, 187);
+            this.m6m4.Location = new System.Drawing.Point(489, 188);
             this.m6m4.Name = "m6m4";
             this.m6m4.Size = new System.Drawing.Size(15, 14);
             this.m6m4.TabIndex = 280;
@@ -3605,7 +3605,7 @@
             // m6m1
             // 
             this.m6m1.AutoSize = true;
-            this.m6m1.Location = new System.Drawing.Point(418, 187);
+            this.m6m1.Location = new System.Drawing.Point(426, 188);
             this.m6m1.Name = "m6m1";
             this.m6m1.Size = new System.Drawing.Size(15, 14);
             this.m6m1.TabIndex = 279;
@@ -3617,7 +3617,7 @@
             // 
             this.m5m6.AutoSize = true;
             this.m5m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m5m6.Location = new System.Drawing.Point(523, 167);
+            this.m5m6.Location = new System.Drawing.Point(531, 168);
             this.m5m6.Name = "m5m6";
             this.m5m6.Size = new System.Drawing.Size(13, 12);
             this.m5m6.TabIndex = 278;
@@ -3628,7 +3628,7 @@
             // m5m2
             // 
             this.m5m2.AutoSize = true;
-            this.m5m2.Location = new System.Drawing.Point(439, 167);
+            this.m5m2.Location = new System.Drawing.Point(447, 168);
             this.m5m2.Name = "m5m2";
             this.m5m2.Size = new System.Drawing.Size(15, 14);
             this.m5m2.TabIndex = 277;
@@ -3639,7 +3639,7 @@
             // m5m5
             // 
             this.m5m5.AutoSize = true;
-            this.m5m5.Location = new System.Drawing.Point(502, 167);
+            this.m5m5.Location = new System.Drawing.Point(510, 168);
             this.m5m5.Name = "m5m5";
             this.m5m5.Size = new System.Drawing.Size(15, 14);
             this.m5m5.TabIndex = 276;
@@ -3650,7 +3650,7 @@
             // m5m3
             // 
             this.m5m3.AutoSize = true;
-            this.m5m3.Location = new System.Drawing.Point(460, 167);
+            this.m5m3.Location = new System.Drawing.Point(468, 168);
             this.m5m3.Name = "m5m3";
             this.m5m3.Size = new System.Drawing.Size(15, 14);
             this.m5m3.TabIndex = 275;
@@ -3661,7 +3661,7 @@
             // m5m4
             // 
             this.m5m4.AutoSize = true;
-            this.m5m4.Location = new System.Drawing.Point(481, 167);
+            this.m5m4.Location = new System.Drawing.Point(489, 168);
             this.m5m4.Name = "m5m4";
             this.m5m4.Size = new System.Drawing.Size(15, 14);
             this.m5m4.TabIndex = 274;
@@ -3672,7 +3672,7 @@
             // m5m1
             // 
             this.m5m1.AutoSize = true;
-            this.m5m1.Location = new System.Drawing.Point(418, 167);
+            this.m5m1.Location = new System.Drawing.Point(426, 168);
             this.m5m1.Name = "m5m1";
             this.m5m1.Size = new System.Drawing.Size(15, 14);
             this.m5m1.TabIndex = 273;
@@ -3684,7 +3684,7 @@
             // 
             this.m4m6.AutoSize = true;
             this.m4m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m4m6.Location = new System.Drawing.Point(523, 147);
+            this.m4m6.Location = new System.Drawing.Point(531, 148);
             this.m4m6.Name = "m4m6";
             this.m4m6.Size = new System.Drawing.Size(13, 12);
             this.m4m6.TabIndex = 272;
@@ -3695,7 +3695,7 @@
             // m4m2
             // 
             this.m4m2.AutoSize = true;
-            this.m4m2.Location = new System.Drawing.Point(439, 147);
+            this.m4m2.Location = new System.Drawing.Point(447, 148);
             this.m4m2.Name = "m4m2";
             this.m4m2.Size = new System.Drawing.Size(15, 14);
             this.m4m2.TabIndex = 271;
@@ -3706,7 +3706,7 @@
             // m4m5
             // 
             this.m4m5.AutoSize = true;
-            this.m4m5.Location = new System.Drawing.Point(502, 147);
+            this.m4m5.Location = new System.Drawing.Point(510, 148);
             this.m4m5.Name = "m4m5";
             this.m4m5.Size = new System.Drawing.Size(15, 14);
             this.m4m5.TabIndex = 270;
@@ -3717,7 +3717,7 @@
             // m4m3
             // 
             this.m4m3.AutoSize = true;
-            this.m4m3.Location = new System.Drawing.Point(460, 147);
+            this.m4m3.Location = new System.Drawing.Point(468, 148);
             this.m4m3.Name = "m4m3";
             this.m4m3.Size = new System.Drawing.Size(15, 14);
             this.m4m3.TabIndex = 269;
@@ -3728,7 +3728,7 @@
             // m4m4
             // 
             this.m4m4.AutoSize = true;
-            this.m4m4.Location = new System.Drawing.Point(481, 147);
+            this.m4m4.Location = new System.Drawing.Point(489, 148);
             this.m4m4.Name = "m4m4";
             this.m4m4.Size = new System.Drawing.Size(15, 14);
             this.m4m4.TabIndex = 268;
@@ -3739,7 +3739,7 @@
             // m4m1
             // 
             this.m4m1.AutoSize = true;
-            this.m4m1.Location = new System.Drawing.Point(418, 147);
+            this.m4m1.Location = new System.Drawing.Point(426, 148);
             this.m4m1.Name = "m4m1";
             this.m4m1.Size = new System.Drawing.Size(15, 14);
             this.m4m1.TabIndex = 267;
@@ -3752,7 +3752,7 @@
             this.cMot7.AutoSize = true;
             this.cMot7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cMot7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cMot7.Location = new System.Drawing.Point(542, 207);
+            this.cMot7.Location = new System.Drawing.Point(550, 208);
             this.cMot7.Name = "cMot7";
             this.cMot7.Size = new System.Drawing.Size(113, 13);
             this.cMot7.TabIndex = 294;
@@ -3763,7 +3763,7 @@
             // 
             this.m7m6.AutoSize = true;
             this.m7m6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.m7m6.Location = new System.Drawing.Point(523, 207);
+            this.m7m6.Location = new System.Drawing.Point(531, 208);
             this.m7m6.Name = "m7m6";
             this.m7m6.Size = new System.Drawing.Size(13, 12);
             this.m7m6.TabIndex = 293;
@@ -3774,7 +3774,7 @@
             // m7m2
             // 
             this.m7m2.AutoSize = true;
-            this.m7m2.Location = new System.Drawing.Point(439, 207);
+            this.m7m2.Location = new System.Drawing.Point(447, 208);
             this.m7m2.Name = "m7m2";
             this.m7m2.Size = new System.Drawing.Size(15, 14);
             this.m7m2.TabIndex = 292;
@@ -3785,7 +3785,7 @@
             // m7m5
             // 
             this.m7m5.AutoSize = true;
-            this.m7m5.Location = new System.Drawing.Point(502, 207);
+            this.m7m5.Location = new System.Drawing.Point(510, 208);
             this.m7m5.Name = "m7m5";
             this.m7m5.Size = new System.Drawing.Size(15, 14);
             this.m7m5.TabIndex = 291;
@@ -3796,7 +3796,7 @@
             // m7m3
             // 
             this.m7m3.AutoSize = true;
-            this.m7m3.Location = new System.Drawing.Point(460, 207);
+            this.m7m3.Location = new System.Drawing.Point(468, 208);
             this.m7m3.Name = "m7m3";
             this.m7m3.Size = new System.Drawing.Size(15, 14);
             this.m7m3.TabIndex = 290;
@@ -3807,7 +3807,7 @@
             // m7m4
             // 
             this.m7m4.AutoSize = true;
-            this.m7m4.Location = new System.Drawing.Point(481, 207);
+            this.m7m4.Location = new System.Drawing.Point(489, 208);
             this.m7m4.Name = "m7m4";
             this.m7m4.Size = new System.Drawing.Size(15, 14);
             this.m7m4.TabIndex = 289;
@@ -3818,7 +3818,7 @@
             // m7m1
             // 
             this.m7m1.AutoSize = true;
-            this.m7m1.Location = new System.Drawing.Point(418, 207);
+            this.m7m1.Location = new System.Drawing.Point(426, 208);
             this.m7m1.Name = "m7m1";
             this.m7m1.Size = new System.Drawing.Size(15, 14);
             this.m7m1.TabIndex = 288;

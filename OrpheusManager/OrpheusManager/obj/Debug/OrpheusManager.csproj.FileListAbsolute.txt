@@ -188,3 +188,4 @@ C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rDowntime.resources
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rExperienceGain.resources
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.rLevelUp.resources
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Debug\OrpheusManager.cBackgroundFirst.resources

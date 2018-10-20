@@ -56,6 +56,7 @@ namespace OrpheusManager
         private void newCharacter_Load(object sender, EventArgs e)
         {
             remainingAtt.Text = "Remaining Attribute Points: 15 / 15";
+            nCharBackground.SelectedIndex = 0;
         }
 
         private void nCharLv_TextChanged(object sender, EventArgs e)
