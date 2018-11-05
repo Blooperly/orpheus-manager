@@ -358,7 +358,7 @@ namespace OrpheusManager
                 case 1:
                     lAttributesMax = 15;
                     lCspMax = 1;
-                    lNcspMax = 1;
+                    lNcspMax = 2;
                     lAbilityRankMax = 4;
                     lAbilityMasteryMax = 0;
                     lAbilitySynthesisMax = 0;
@@ -371,7 +371,7 @@ namespace OrpheusManager
                 case 2:
                     lAttributesMax = 15;
                     lCspMax = 2;
-                    lNcspMax = 2;
+                    lNcspMax = 4;
                     lAbilityRankMax = 5;
                     lAbilityMasteryMax = 0;
                     lAbilitySynthesisMax = 0;
@@ -384,7 +384,7 @@ namespace OrpheusManager
                 case 3:
                     lAttributesMax = 15;
                     lCspMax = 3;
-                    lNcspMax = 3;
+                    lNcspMax = 6;
                     lAbilityRankMax = 6;
                     lAbilityMasteryMax = 1;
                     lAbilitySynthesisMax = 0;
@@ -397,7 +397,7 @@ namespace OrpheusManager
                 case 4:
                     lAttributesMax = 16;
                     lCspMax = 5;
-                    lNcspMax = 4;
+                    lNcspMax = 7;
                     lAbilityRankMax = 6;
                     lAbilityMasteryMax = 1;
                     lAbilitySynthesisMax = 0;
@@ -410,7 +410,7 @@ namespace OrpheusManager
                 case 5:
                     lAttributesMax = 16;
                     lCspMax = 6;
-                    lNcspMax = 5;
+                    lNcspMax = 9;
                     lAbilityRankMax = 7;
                     lAbilityMasteryMax = 1;
                     lAbilitySynthesisMax = 0;
@@ -423,7 +423,7 @@ namespace OrpheusManager
                 case 6:
                     lAttributesMax = 16;
                     lCspMax = 7;
-                    lNcspMax = 6;
+                    lNcspMax = 11;
                     lAbilityRankMax = 8;
                     lAbilityMasteryMax = 2;
                     lAbilitySynthesisMax = 1;
@@ -436,7 +436,7 @@ namespace OrpheusManager
                 case 7:
                     lAttributesMax = 16;
                     lCspMax = 8;
-                    lNcspMax = 7;
+                    lNcspMax = 13;
                     lAbilityRankMax = 9;
                     lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
@@ -449,7 +449,7 @@ namespace OrpheusManager
                 case 8:
                     lAttributesMax = 17;
                     lCspMax = 10;
-                    lNcspMax = 8;
+                    lNcspMax = 15;
                     lAbilityRankMax = 9;
                     lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
@@ -462,7 +462,7 @@ namespace OrpheusManager
                 case 9:
                     lAttributesMax = 17;
                     lCspMax = 11;
-                    lNcspMax = 9;
+                    lNcspMax = 17;
                     lAbilityRankMax = 10;
                     lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
@@ -475,7 +475,7 @@ namespace OrpheusManager
                 case 10:
                     lAttributesMax = 17;
                     lCspMax = 12;
-                    lNcspMax = 10;
+                    lNcspMax = 19;
                     lAbilityRankMax = 11;
                     lAbilityMasteryMax = 3;
                     lAbilitySynthesisMax = 1;
@@ -488,7 +488,7 @@ namespace OrpheusManager
                 case 11:
                     lAttributesMax = 17;
                     lCspMax = 13;
-                    lNcspMax = 11;
+                    lNcspMax = 21;
                     lAbilityRankMax = 12;
                     lAbilityMasteryMax = 4;
                     lAbilitySynthesisMax = 1;
@@ -501,7 +501,7 @@ namespace OrpheusManager
                 case 12:
                     lAttributesMax = 18;
                     lCspMax = 15;
-                    lNcspMax = 12;
+                    lNcspMax = 22;
                     lAbilityRankMax = 12;
                     lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 2;
@@ -514,7 +514,7 @@ namespace OrpheusManager
                 case 13:
                     lAttributesMax = 18;
                     lCspMax = 16;
-                    lNcspMax = 13;
+                    lNcspMax = 24;
                     lAbilityRankMax = 13;
                     lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 2;
@@ -527,7 +527,7 @@ namespace OrpheusManager
                 case 14:
                     lAttributesMax = 18;
                     lCspMax = 17;
-                    lNcspMax = 14;
+                    lNcspMax = 26;
                     lAbilityRankMax = 14;
                     lAbilityMasteryMax = 5;
                     lAbilitySynthesisMax = 2;
@@ -540,7 +540,7 @@ namespace OrpheusManager
                 case 15:
                     lAttributesMax = 18;
                     lCspMax = 18;
-                    lNcspMax = 15;
+                    lNcspMax = 28;
                     lAbilityRankMax = 15;
                     lAbilityMasteryMax = 6;
                     lAbilitySynthesisMax = 2;
@@ -553,7 +553,7 @@ namespace OrpheusManager
                 case 16:
                     lAttributesMax = 19;
                     lCspMax = 20;
-                    lNcspMax = 16;
+                    lNcspMax = 29;
                     lAbilityRankMax = 15;
                     lAbilityMasteryMax = 6;
                     lAbilitySynthesisMax = 2;
@@ -566,7 +566,7 @@ namespace OrpheusManager
                 case 17:
                     lAttributesMax = 19;
                     lCspMax = 21;
-                    lNcspMax = 17;
+                    lNcspMax = 31;
                     lAbilityRankMax = 16;
                     lAbilityMasteryMax = 6;
                     lAbilitySynthesisMax = 2;
@@ -579,7 +579,7 @@ namespace OrpheusManager
                 case 18:
                     lAttributesMax = 19;
                     lCspMax = 22;
-                    lNcspMax = 18;
+                    lNcspMax = 33;
                     lAbilityRankMax = 17;
                     lAbilityMasteryMax = 6;
                     lAbilitySynthesisMax = 2;
@@ -592,7 +592,7 @@ namespace OrpheusManager
                 case 19:
                     lAttributesMax = 19;
                     lCspMax = 23;
-                    lNcspMax = 19;
+                    lNcspMax = 35;
                     lAbilityRankMax = 18;
                     lAbilityMasteryMax = 7;
                     lAbilitySynthesisMax = 2;
@@ -605,7 +605,7 @@ namespace OrpheusManager
                 case 20:
                     lAttributesMax = 20;
                     lCspMax = 25;
-                    lNcspMax = 20;
+                    lNcspMax = 36;
                     lAbilityRankMax = 18;
                     lAbilityMasteryMax = 7;
                     lAbilitySynthesisMax = 2;
