@@ -69,3 +69,5 @@ C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Release\OrpheusManager.csproj.CoreCompileInputs.cache
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Release\OrpheusManager.exe
 C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Release\OrpheusManager.pdb
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Release\OrpheusManager.csprojAssemblyReference.cache
+C:\Users\jbrown\Desktop\orpheus-manager.git\trunk\OrpheusManager\OrpheusManager\obj\Release\OrpheusManager.mPortrait.resources

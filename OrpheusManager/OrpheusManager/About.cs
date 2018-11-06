@@ -24,7 +24,7 @@ namespace OrpheusManager
         {
             this.Text = "Orpheus Manager";
 
-            label1.Text = "Orpheus Manager " + CDATA.version + " by Jason Brown";
+            versionLabel.Text = "Orpheus Manager " + CDATA.version + " by Jason Brown";
 
             // Load Title Image
             System.Reflection.Assembly myAssembly2 = System.Reflection.Assembly.GetExecutingAssembly();

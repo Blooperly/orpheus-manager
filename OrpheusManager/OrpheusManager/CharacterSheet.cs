@@ -592,32 +592,21 @@ namespace OrpheusManager
             {
                 if (CDATA.cAbilityMasteryA[i] == 1)
                 {
-                    if (CDATA.cAbilityMasteryB[i] == 1)
-                    {
-                        if (CDATA.cAbilityOverload[i] == 1)
-                        {
-                            AbilityMod[i] = "ABO ";
-                        }
-                        else AbilityMod[i] = "AB ";
-                    }
-                    else if (CDATA.cAbilityOverload[i] == 1)
-                    {
-                        AbilityMod[i] = "AO ";
-                    }
-                    else AbilityMod[i] = "A ";
+                    AbilityMod[i] += "A";
                 }
-                else if (CDATA.cAbilityMasteryB[i] == 1)
+                if (CDATA.cAbilityMasteryB[i] == 1)
                 {
-                    if (CDATA.cAbilityOverload[i] == 1)
-                    {
-                        AbilityMod[i] = "BO ";
-                    }
-                    else AbilityMod[i] = "B ";
+                    AbilityMod[i] += "B";
                 }
-                else if (CDATA.cAbilityOverload[i] == 1)
+                if (CDATA.cAbilityOverload[i] == 1)
                 {
-                    AbilityMod[i] = "O ";
+                    AbilityMod[i] += "O";
                 }
+                if (CDATA.cAbilityApotheosis[i] == 1)
+                {
+                    AbilityMod[i] += "@";
+                }
+                AbilityMod[i] += " ";
             }
 
             a1.Text = CDATA.cAbilityName[0];
@@ -720,128 +709,179 @@ namespace OrpheusManager
             formGraphics.Dispose();
         }
 
-        // Reaload Archetype Image
+        // Reload Archetype Image
+        // IF MODIFIED, COPY TO [mPortrait.cs]
         private void reloadArch()
         {
-            // Mitch Default
-            if (CDATA.cName == "Mitch Hook" || CDATA.cName == "Mitchell Hook" || CDATA.cName == "Mitch")
+            // Mitch
+            if (((CDATA.cName == "Mitch Hook" || CDATA.cName == "Mitchell Hook" || CDATA.cName == "Mitch") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 16)
             {
                 System.Reflection.Assembly myAssemblyMitch = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamMitch = myAssemblyMitch.GetManifestResourceStream("OrpheusManager.archetypeMitch.png");
                 Bitmap imageMitch = new Bitmap(myStreamMitch);
                 archetypePic.Image = imageMitch;
             }
-            // Pierce Default
-            else if (CDATA.cName == "Pierce Keswick" || CDATA.cName == "Pierce")
+            // Pierce
+            else if (((CDATA.cName == "Pierce Keswick" || CDATA.cName == "Pierce") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 17)
             {
                 System.Reflection.Assembly myAssemblyPierce = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamPierce = myAssemblyPierce.GetManifestResourceStream("OrpheusManager.archetypePierce.png");
                 Bitmap imagePierce = new Bitmap(myStreamPierce);
                 archetypePic.Image = imagePierce;
             }
-            // Keira Default
-            else if (CDATA.cName == "Kiera Jackson" || CDATA.cName == "Kiera")
+            // Pierce Keswick, Corrupted
+            else if (CDATA.cPortrait == 18)
+            {
+                System.Reflection.Assembly myAssemblyPierceCorrupted = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamPierceCorrupted = myAssemblyPierceCorrupted.GetManifestResourceStream("OrpheusManager.archetypePierceCorrupted.png");
+                Bitmap imagePierceCorrupted = new Bitmap(myStreamPierceCorrupted);
+                archetypePic.Image = imagePierceCorrupted;
+            }
+            // Keira
+            else if (((CDATA.cName == "Kiera Jackson" || CDATA.cName == "Kiera") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 19)
             {
                 System.Reflection.Assembly myAssemblyKiera = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamKiera = myAssemblyKiera.GetManifestResourceStream("OrpheusManager.archetypeKiera.png");
                 Bitmap imageKiera = new Bitmap(myStreamKiera);
                 archetypePic.Image = imageKiera;
             }
-            // Hermetic Magician Default
-            else if (CDATA.cArch1 == "Hermetic Magician")
+            // Hermetic Magician
+            else if (((CDATA.cArch1 == "Hermetic Magician") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 1)
             {
                 System.Reflection.Assembly myAssemblyHermetic = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamHermetic = myAssemblyHermetic.GetManifestResourceStream("OrpheusManager.archetypeHermetic.png");
                 Bitmap imageHermetic = new Bitmap(myStreamHermetic);
                 archetypePic.Image = imageHermetic;
             }
-            // Witch Default
-            else if (CDATA.cArch1 == "Witch")
+            // Witch
+            else if (((CDATA.cArch1 == "Witch") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 2)
             {
                 System.Reflection.Assembly myAssemblyWitch = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamWitch = myAssemblyWitch.GetManifestResourceStream("OrpheusManager.archetypeWitch.png");
                 Bitmap imageWitch = new Bitmap(myStreamWitch);
                 archetypePic.Image = imageWitch;
             }
-            // Psychic Default
-            else if (CDATA.cArch1 == "Psychic")
+            // Psychic
+            else if (((CDATA.cArch1 == "Psychic") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 3)
             {
                 System.Reflection.Assembly myAssemblyPsychic = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamPsychic = myAssemblyPsychic.GetManifestResourceStream("OrpheusManager.archetypePsychic.png");
                 Bitmap imagePsychic = new Bitmap(myStreamPsychic);
                 archetypePic.Image = imagePsychic;
             }
-            // Weapon Bearer Default
-            else if (CDATA.cArch1 == "Weapon Bearer")
+            // Weapon Bearer
+            else if (((CDATA.cArch1 == "Weapon Bearer") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 4)
             {
                 System.Reflection.Assembly myAssemblyWeapon = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamWeapon = myAssemblyWeapon.GetManifestResourceStream("OrpheusManager.archetypeWeapon.png");
                 Bitmap imageWeapon = new Bitmap(myStreamWeapon);
                 archetypePic.Image = imageWeapon;
             }
-            // Occultist Default
-            else if (CDATA.cArch1 == "Occultist")
+            // Occultist
+            else if (((CDATA.cArch1 == "Occultist") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 5)
             {
                 System.Reflection.Assembly myAssemblyOccultist = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamOccultist = myAssemblyOccultist.GetManifestResourceStream("OrpheusManager.archetypeOccultist.png");
                 Bitmap imageOccultist = new Bitmap(myStreamOccultist);
                 archetypePic.Image = imageOccultist;
             }
-            // Cyborg Default
-            else if (CDATA.cArch1 == "Cyborg")
+            // Cyborg
+            else if (((CDATA.cArch1 == "Cyborg") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 6)
             {
                 System.Reflection.Assembly myAssemblyCyborg = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamCyborg = myAssemblyCyborg.GetManifestResourceStream("OrpheusManager.archetypeCyborg.png");
                 Bitmap imageCyborg = new Bitmap(myStreamCyborg);
                 archetypePic.Image = imageCyborg;
             }
-            // Wendigo Default
-            else if (CDATA.cArch1 == "Wendigo")
+            // Wendigo
+            else if (((CDATA.cArch1 == "Wendigo") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 7)
             {
                 System.Reflection.Assembly myAssemblyWendigo = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamWendigo = myAssemblyWendigo.GetManifestResourceStream("OrpheusManager.archetypeWendigo.png");
                 Bitmap imageWendigo = new Bitmap(myStreamWendigo);
                 archetypePic.Image = imageWendigo;
             }
-            // Telekinetic Default
-            else if (CDATA.cArch1 == "Telekinetic")
+            // Telekinetic
+            else if (((CDATA.cArch1 == "Telekinetic") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 8)
             {
                 System.Reflection.Assembly myAssemblyTelekinetic = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamTelekinetic = myAssemblyTelekinetic.GetManifestResourceStream("OrpheusManager.archetypeTelekinetic.png");
                 Bitmap imageTelekinetic = new Bitmap(myStreamTelekinetic);
                 archetypePic.Image = imageTelekinetic;
             }
-            // Werewolf Default
-            else if (CDATA.cArch1 == "Werewolf")
+            // Werewolf
+            else if (((CDATA.cArch1 == "Werewolf") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 9)
             {
                 System.Reflection.Assembly myAssemblyWerewolf = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamWerewolf = myAssemblyWerewolf.GetManifestResourceStream("OrpheusManager.archetypeWerewolf.png");
                 Bitmap imageWerewolf = new Bitmap(myStreamWerewolf);
                 archetypePic.Image = imageWerewolf;
             }
-            // True Faith Default
-            else if (CDATA.cArch1 == "True Faith")
+            // True Faith
+            else if (((CDATA.cArch1 == "True Faith") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 10)
             {
                 System.Reflection.Assembly myAssemblyTrueFaith = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamTrueFaith = myAssemblyTrueFaith.GetManifestResourceStream("OrpheusManager.archetypeTrueFaith.png");
                 Bitmap imageTrueFaith = new Bitmap(myStreamTrueFaith);
                 archetypePic.Image = imageTrueFaith;
             }
-            // Medium Default
-            else if (CDATA.cArch1 == "Medium")
+            // Medium
+            else if (((CDATA.cArch1 == "Medium") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 11)
             {
                 System.Reflection.Assembly myAssemblyMedium = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamMedium = myAssemblyMedium.GetManifestResourceStream("OrpheusManager.archetypeMedium.png");
                 Bitmap imageMedium = new Bitmap(myStreamMedium);
                 archetypePic.Image = imageMedium;
             }
-            // Soldier Default
-            else if (CDATA.cArch1 == "Soldier")
+            // Soldier
+            else if (((CDATA.cArch1 == "Soldier") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 12)
             {
                 System.Reflection.Assembly myAssemblySoldier = System.Reflection.Assembly.GetExecutingAssembly();
                 Stream myStreamSoldier = myAssemblySoldier.GetManifestResourceStream("OrpheusManager.archetypeSoldier.png");
                 Bitmap imageSoldier = new Bitmap(myStreamSoldier);
                 archetypePic.Image = imageSoldier;
+            }
+            // Vampire Thrall
+            else if (((CDATA.cArch1 == "Vampire Thrall") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 13)
+            {
+                System.Reflection.Assembly myAssemblyVampire = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamVampire = myAssemblyVampire.GetManifestResourceStream("OrpheusManager.archetypeVampire.png");
+                Bitmap imageVampire = new Bitmap(myStreamVampire);
+                archetypePic.Image = imageVampire;
+            }
+            // Pathokinetic
+            else if (((CDATA.cArch1 == "Pathokinetic") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 14)
+            {
+                System.Reflection.Assembly myAssemblyPathokinetic = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamPathokinetic = myAssemblyPathokinetic.GetManifestResourceStream("OrpheusManager.archetypePathokinetic.png");
+                Bitmap imagePathokinetic = new Bitmap(myStreamPathokinetic);
+                archetypePic.Image = imagePathokinetic;
+            }
+            // Hero
+            else if (((CDATA.cArch1 == "Hero") && CDATA.cPortrait == 0)
+                || CDATA.cPortrait == 15)
+            {
+                System.Reflection.Assembly myAssemblyHero = System.Reflection.Assembly.GetExecutingAssembly();
+                Stream myStreamHero = myAssemblyHero.GetManifestResourceStream("OrpheusManager.archetypeHero.png");
+                Bitmap imageHero = new Bitmap(myStreamHero);
+                archetypePic.Image = imageHero;
             }
             // Default
             else
@@ -853,7 +893,7 @@ namespace OrpheusManager
             }
         }
 
-        // Create New Character Sheet
+            // Create New Character Sheet
         private void newCharacter_Click(object sender, EventArgs e)
         {
             // Open Dialog Box
@@ -980,6 +1020,7 @@ namespace OrpheusManager
             clearAbilitiesToolStripMenuItem_Click(this, System.EventArgs.Empty);
 
             // Load Archetype Image
+            CDATA.cPortrait = 0;
             reloadArch();
 
             // Clear Notes
@@ -1431,12 +1472,19 @@ namespace OrpheusManager
                     double fileVersionDouble = 1.0;
                     if (fileVersion == "v1.0") fileVersionDouble = 1.0;
                     else if (fileVersion == "v1.1") fileVersionDouble = 1.1;
+                    else if (fileVersion == "v1.2") fileVersionDouble = 1.2;
 
                     CDATA.cName = SDATA.parseField("Character Name:\r\n");
                     Int32.TryParse(SDATA.parseField("Level:\r\n"), out CDATA.cLevel);
                     CDATA.cArch1 = SDATA.parseField("Archetype 1:\r\n");
                     CDATA.cArch2 = SDATA.parseField("Archetype 2:\r\n");
                     CDATA.cArch3 = SDATA.parseField("Archetype 3:\r\n");
+                    
+                    if (fileVersionDouble >= 1.2)
+                    {
+                        Int32.TryParse(SDATA.parseField("Character Portrait:\r\n"), out CDATA.cPortrait);
+                    }
+
                     CDATA.cBackground = SDATA.parseField("Background:\r\n");
                     CDATA.cMot1 = SDATA.parseField("Motivation 1:\r\n");
                     CDATA.cMot2 = SDATA.parseField("Motivation 2:\r\n");
@@ -2223,6 +2271,13 @@ namespace OrpheusManager
         {
             Form lvup = new rLevelUp();
             lvup.Show();
+        }
+
+        private void characterPortraitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form port = new mPortrait();
+            port.ShowDialog();
+            reloadArch();
         }
     }
 }

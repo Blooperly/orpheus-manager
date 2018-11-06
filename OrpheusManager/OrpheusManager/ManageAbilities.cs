@@ -19,7 +19,7 @@ namespace OrpheusManager
 
         private void ManageAbilities_Load(object sender, EventArgs e)
         {
-            this.Text = "Orpheus Manage - " + CDATA.cName;
+            this.Text = "Orpheus Manager - " + CDATA.cName;
 
             // Load Current
             SN0.Text = EDATA.clearSpace(CDATA.cAbilityName[0]);
@@ -87,10 +87,22 @@ namespace OrpheusManager
             if (CDATA.cAbilityOverload[10] == 1) O11.Checked = true;
             if (CDATA.cAbilityOverload[11] == 1) O12.Checked = true;
 
+            if (CDATA.cAbilityApotheosis[0] == 1) P1.Checked = true;
+            if (CDATA.cAbilityApotheosis[1] == 1) P2.Checked = true;
+            if (CDATA.cAbilityApotheosis[2] == 1) P3.Checked = true;
+            if (CDATA.cAbilityApotheosis[3] == 1) P4.Checked = true;
+            if (CDATA.cAbilityApotheosis[4] == 1) P5.Checked = true;
+            if (CDATA.cAbilityApotheosis[5] == 1) P6.Checked = true;
+            if (CDATA.cAbilityApotheosis[6] == 1) P7.Checked = true;
+            if (CDATA.cAbilityApotheosis[7] == 1) P8.Checked = true;
+            if (CDATA.cAbilityApotheosis[8] == 1) P9.Checked = true;
+            if (CDATA.cAbilityApotheosis[9] == 1) P10.Checked = true;
+            if (CDATA.cAbilityApotheosis[10] == 1) P11.Checked = true;
+            if (CDATA.cAbilityApotheosis[11] == 1) P12.Checked = true;
+
             SN0.SelectionStart = 0;
         }
-
-
+        
         private void nCharSubmit_Click(object sender, EventArgs e)
         {
             bool good = true;
@@ -173,6 +185,19 @@ namespace OrpheusManager
                 if (O10.Checked == true) CDATA.cAbilityOverload[9] = 1; else CDATA.cAbilityOverload[9] = 0;
                 if (O11.Checked == true) CDATA.cAbilityOverload[10] = 1; else CDATA.cAbilityOverload[10] = 0;
                 if (O12.Checked == true) CDATA.cAbilityOverload[11] = 1; else CDATA.cAbilityOverload[11] = 0;
+
+                if (P1.Checked == true) CDATA.cAbilityApotheosis[0] = 1; else CDATA.cAbilityApotheosis[0] = 0;
+                if (P2.Checked == true) CDATA.cAbilityApotheosis[1] = 1; else CDATA.cAbilityApotheosis[1] = 0;
+                if (P3.Checked == true) CDATA.cAbilityApotheosis[2] = 1; else CDATA.cAbilityApotheosis[2] = 0;
+                if (P4.Checked == true) CDATA.cAbilityApotheosis[3] = 1; else CDATA.cAbilityApotheosis[3] = 0;
+                if (P5.Checked == true) CDATA.cAbilityApotheosis[4] = 1; else CDATA.cAbilityApotheosis[4] = 0;
+                if (P6.Checked == true) CDATA.cAbilityApotheosis[5] = 1; else CDATA.cAbilityApotheosis[5] = 0;
+                if (P7.Checked == true) CDATA.cAbilityApotheosis[6] = 1; else CDATA.cAbilityApotheosis[6] = 0;
+                if (P8.Checked == true) CDATA.cAbilityApotheosis[7] = 1; else CDATA.cAbilityApotheosis[7] = 0;
+                if (P9.Checked == true) CDATA.cAbilityApotheosis[8] = 1; else CDATA.cAbilityApotheosis[8] = 0;
+                if (P10.Checked == true) CDATA.cAbilityApotheosis[9] = 1; else CDATA.cAbilityApotheosis[9] = 0;
+                if (P11.Checked == true) CDATA.cAbilityApotheosis[10] = 1; else CDATA.cAbilityApotheosis[10] = 0;
+                if (P12.Checked == true) CDATA.cAbilityApotheosis[11] = 1; else CDATA.cAbilityApotheosis[11] = 0;
 
                 Program.mainform.writeDATA();
                 this.Close();
