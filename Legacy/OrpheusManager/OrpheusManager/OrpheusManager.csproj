@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4449580-E2A7-423D-A5EC-FBE5C131E3BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OrpheusManager</RootNamespace>
+    <AssemblyName>OrpheusManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addAbilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addAbilityForm.Designer.cs">
+      <DependentUpon>addAbilityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addSkillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSkillForm.Designer.cs">
+      <DependentUpon>addSkillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cBackgroundFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cBackgroundFirst.Designer.cs">
+      <DependentUpon>cBackgroundFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharacterSheet.Designer.cs">
+      <DependentUpon>CharacterSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editCharacterName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCharacterName.Designer.cs">
+      <DependentUpon>editCharacterName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mAcclimations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mAcclimations.Designer.cs">
+      <DependentUpon>mAcclimations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAbilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAbilities.Designer.cs">
+      <DependentUpon>ManageAbilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageArchetypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageArchetypes.Designer.cs">
+      <DependentUpon>manageArchetypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageAttributes.Designer.cs">
+      <DependentUpon>manageAttributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSkills.Designer.cs">
+      <DependentUpon>ManageSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSkillsFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSkillsFirst.Designer.cs">
+      <DependentUpon>ManageSkillsFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageStrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageStrain.Designer.cs">
+      <DependentUpon>manageStrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maxHumanity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maxHumanity.Designer.cs">
+      <DependentUpon>maxHumanity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mBackground.Designer.cs">
+      <DependentUpon>mBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mLevel.Designer.cs">
+      <DependentUpon>mLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mMotivations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mMotivations.Designer.cs">
+      <DependentUpon>mMotivations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mPortrait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mPortrait.Designer.cs">
+      <DependentUpon>mPortrait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newCharacter.Designer.cs">
+      <DependentUpon>newCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rActionReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rActionReports.Designer.cs">
+      <DependentUpon>rActionReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rActions.Designer.cs">
+      <DependentUpon>rActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAdvantage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rAdvantage.Designer.cs">
+      <DependentUpon>rAdvantage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rArmor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rArmor.Designer.cs">
+      <DependentUpon>rArmor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttackingMelee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rAttackingMelee.Designer.cs">
+      <DependentUpon>rAttackingMelee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rAttributes.Designer.cs">
+      <DependentUpon>rAttributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rBleeding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rBleeding.Designer.cs">
+      <DependentUpon>rBleeding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rCalledShots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rCalledShots.Designer.cs">
+      <DependentUpon>rCalledShots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rCollaborative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rCollaborative.Designer.cs">
+      <DependentUpon>rCollaborative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rCourtingDeath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rCourtingDeath.Designer.cs">
+      <DependentUpon>rCourtingDeath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rDAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDAttributes.Designer.cs">
+      <DependentUpon>rDAttributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rDaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDaze.Designer.cs">
+      <DependentUpon>rDaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rDeathChecks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDeathChecks.Designer.cs">
+      <DependentUpon>rDeathChecks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rDowntime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDowntime.Designer.cs">
+      <DependentUpon>rDowntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rDualWielding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rDualWielding.Designer.cs">
+      <DependentUpon>rDualWielding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEmbrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rEmbrace.Designer.cs">
+      <DependentUpon>rEmbrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEncumbrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rEncumbrance.Designer.cs">
+      <DependentUpon>rEncumbrance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rExperienceGain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rExperienceGain.Designer.cs">
+      <DependentUpon>rExperienceGain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rExplosives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rExplosives.Designer.cs">
+      <DependentUpon>rExplosives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rFirearmsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rFirearmsList.Designer.cs">
+      <DependentUpon>rFirearmsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rHorrorAcclimations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rHorrorAcclimations.Designer.cs">
+      <DependentUpon>rHorrorAcclimations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rHumanity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rHumanity.Designer.cs">
+      <DependentUpon>rHumanity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rInitiative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rInitiative.Designer.cs">
+      <DependentUpon>rInitiative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rLevelUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rLevelUp.Designer.cs">
+      <DependentUpon>rLevelUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rLuck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rLuck.Designer.cs">
+      <DependentUpon>rLuck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMeleeWeapons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMeleeWeapons.Designer.cs">
+      <DependentUpon>rMeleeWeapons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMemento.Designer.cs">
+      <DependentUpon>rMemento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMotivations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMotivations.Designer.cs">
+      <DependentUpon>rMotivations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMovement.Designer.cs">
+      <DependentUpon>rMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMovingTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMovingTarget.Designer.cs">
+      <DependentUpon>rMovingTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rOpportunity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rOpportunity.Designer.cs">
+      <DependentUpon>rOpportunity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rRateOfFire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rRateOfFire.Designer.cs">
+      <DependentUpon>rRateOfFire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rRolls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rRolls.Designer.cs">
+      <DependentUpon>rRolls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rRush.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rRush.Designer.cs">
+      <DependentUpon>rRush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rSkillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rSkillList.Designer.cs">
+      <DependentUpon>rSkillList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rSkills.Designer.cs">
+      <DependentUpon>rSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rStrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rStrain.Designer.cs">
+      <DependentUpon>rStrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rStrainRefresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rStrainRefresh.Designer.cs">
+      <DependentUpon>rStrainRefresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rSuppressingHorror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rSuppressingHorror.Designer.cs">
+      <DependentUpon>rSuppressingHorror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rSurprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rSurprise.Designer.cs">
+      <DependentUpon>rSurprise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rTactics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rTactics.Designer.cs">
+      <DependentUpon>rTactics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rTemporaryInsanity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rTemporaryInsanity.Designer.cs">
+      <DependentUpon>rTemporaryInsanity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rUpChecks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rUpChecks.Designer.cs">
+      <DependentUpon>rUpChecks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rWoundPenalties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rWoundPenalties.Designer.cs">
+      <DependentUpon>rWoundPenalties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sQuitSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sQuitSave.Designer.cs">
+      <DependentUpon>sQuitSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vertBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addAbilityForm.resx">
+      <DependentUpon>addAbilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSkillForm.resx">
+      <DependentUpon>addSkillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cBackgroundFirst.resx">
+      <DependentUpon>cBackgroundFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharacterSheet.resx">
+      <DependentUpon>CharacterSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editCharacterName.resx">
+      <DependentUpon>editCharacterName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mAcclimations.resx">
+      <DependentUpon>mAcclimations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAbilities.resx">
+      <DependentUpon>ManageAbilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageArchetypes.resx">
+      <DependentUpon>manageArchetypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageAttributes.resx">
+      <DependentUpon>manageAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSkills.resx">
+      <DependentUpon>ManageSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSkillsFirst.resx">
+      <DependentUpon>ManageSkillsFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageStrain.resx">
+      <DependentUpon>manageStrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maxHumanity.resx">
+      <DependentUpon>maxHumanity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mBackground.resx">
+      <DependentUpon>mBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mLevel.resx">
+      <DependentUpon>mLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mMotivations.resx">
+      <DependentUpon>mMotivations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mPortrait.resx">
+      <DependentUpon>mPortrait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newCharacter.resx">
+      <DependentUpon>newCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rActionReports.resx">
+      <DependentUpon>rActionReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rActions.resx">
+      <DependentUpon>rActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAdvantage.resx">
+      <DependentUpon>rAdvantage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rArmor.resx">
+      <DependentUpon>rArmor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttackingMelee.resx">
+      <DependentUpon>rAttackingMelee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttributes.resx">
+      <DependentUpon>rAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rBleeding.resx">
+      <DependentUpon>rBleeding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rCalledShots.resx">
+      <DependentUpon>rCalledShots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rCollaborative.resx">
+      <DependentUpon>rCollaborative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rCourtingDeath.resx">
+      <DependentUpon>rCourtingDeath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rDAttributes.resx">
+      <DependentUpon>rDAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rDaze.resx">
+      <DependentUpon>rDaze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rDeathChecks.resx">
+      <DependentUpon>rDeathChecks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rDowntime.resx">
+      <DependentUpon>rDowntime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rDualWielding.resx">
+      <DependentUpon>rDualWielding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEmbrace.resx">
+      <DependentUpon>rEmbrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEncumbrance.resx">
+      <DependentUpon>rEncumbrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rExperienceGain.resx">
+      <DependentUpon>rExperienceGain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rExplosives.resx">
+      <DependentUpon>rExplosives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rFirearmsList.resx">
+      <DependentUpon>rFirearmsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rHorrorAcclimations.resx">
+      <DependentUpon>rHorrorAcclimations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rHumanity.resx">
+      <DependentUpon>rHumanity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rInitiative.resx">
+      <DependentUpon>rInitiative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rLevelUp.resx">
+      <DependentUpon>rLevelUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rLuck.resx">
+      <DependentUpon>rLuck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMeleeWeapons.resx">
+      <DependentUpon>rMeleeWeapons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMemento.resx">
+      <DependentUpon>rMemento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMotivations.resx">
+      <DependentUpon>rMotivations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMovement.resx">
+      <DependentUpon>rMovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMovingTarget.resx">
+      <DependentUpon>rMovingTarget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rOpportunity.resx">
+      <DependentUpon>rOpportunity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rRateOfFire.resx">
+      <DependentUpon>rRateOfFire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rRolls.resx">
+      <DependentUpon>rRolls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rRush.resx">
+      <DependentUpon>rRush.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rSkillList.resx">
+      <DependentUpon>rSkillList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rSkills.resx">
+      <DependentUpon>rSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rStrain.resx">
+      <DependentUpon>rStrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rStrainRefresh.resx">
+      <DependentUpon>rStrainRefresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rSuppressingHorror.resx">
+      <DependentUpon>rSuppressingHorror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rSurprise.resx">
+      <DependentUpon>rSurprise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rTactics.resx">
+      <DependentUpon>rTactics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rTemporaryInsanity.resx">
+      <DependentUpon>rTemporaryInsanity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rUpChecks.resx">
+      <DependentUpon>rUpChecks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rWoundPenalties.resx">
+      <DependentUpon>rWoundPenalties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sQuitSave.resx">
+      <DependentUpon>sQuitSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeWendigo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OrpheusTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="divider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeHermetic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeWitch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypePsychic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeWeapon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeOccultist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeCyborg.png" />
+    <EmbeddedResource Include="archetypeMedium.png" />
+    <EmbeddedResource Include="archetypeSoldier.png" />
+    <EmbeddedResource Include="archetypeTelekinetic.png" />
+    <EmbeddedResource Include="archetypeTrueFaith.png" />
+    <EmbeddedResource Include="archetypeWerewolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeMitch.png" />
+    <EmbeddedResource Include="archetypePierce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeKiera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeVampire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypePathokinetic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypeHero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="archetypePierceCorrupted.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
