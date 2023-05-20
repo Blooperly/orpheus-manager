@@ -1,0 +1,220 @@
+/* Structural modifications */
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	height: 100%;
+}
+
+canvas {
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
+hr {
+	border: 1px solid black;
+	border-style: solid none none none;
+}
+
+form {
+	margin-bottom: 0px;
+}
+
+/* Materialize override */
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	min-width: 1280px;
+	width: 90%;
+}
+
+.row {
+	margin: 0px;
+	padding: 0px;
+}
+
+.tabs-vertical .tabs {
+	height: auto;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.tabs-vertical .tab {
+	width: 100%;
+}
+
+.tabs-vertical .tab .active {
+  -moz-transition: border-color .5s ease;
+  -o-transition: border-color .5s ease;
+  -webkit-transition: border-color .5s ease;
+  transition: border-color .5s ease;
+  border-right: 3px solid #424242;
+}
+
+.card {
+	margin: 0px;
+	padding: 0px;
+}
+
+.card-content {
+	margin: 0px;
+	padding: 0px;
+}
+
+.card .card-content {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Chasm classes */
+.noble { /* Prevents highlighting/dragging */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+.testoutline { /*Simple border for checking boundaries*/
+	border: 1px solid red;
+}
+
+.hidden {
+	display: none;
+}
+
+.pixelart {
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
+.flex {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.unflex {
+	display: block;
+}
+
+.vertcenter {
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+}
+
+.hcenter {
+	text-align: center;
+}
+
+/* ID's */
+#chasm_title {
+	padding-left: 34px;
+}
+
+#left_col {
+	margin: 10px 0px 12px 0px;
+	padding: 0px 10px 0px 0px;
+
+	position: sticky;
+	top: 8px;
+}
+
+#currency_box {
+	height: calc(100% - 22px);
+	padding: 10px 10px 10px 12px;
+}
+
+#mid_col {
+	margin: 10px 0px 12px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#earth_box {
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+}
+
+#water_box {
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+}
+
+#right_col {
+	margin: 10px 0px 12px 0px;
+	padding: 0px 0px 0px 10px;
+
+	position: sticky;
+	top: 8px;
+}
+
+#inspector_box {
+	margin: 0px 0px 8px 0px;
+	padding: 10px 10px 10px 12px;
+
+	line-height: 1.3;
+}
+
+#inspector_title {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 4px;
+}
+
+#inspector_text {
+	margin-top: 4px;
+
+	font-size: 14px;
+}
+
+#inspector_cost {
+	width: fit-content;
+	border-radius: 4px;
+	
+	margin-top: 6px;
+	margin-left: 4px;
+	margin-bottom: 8px;
+	padding-top: 4px;
+	padding-right: 2px;
+	padding-bottom: 4px;
+	padding-left: 3px;
+	
+	background-color: #546e7a;
+	font-size: 14px;
+}
+
+#inspector_subtext {
+	font-size: 14px;
+}
+
+#log_box {
+	height: 100%;
+	padding-top: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+	
+	line-height: 1.3;
+
+	color: white;
+	overflow: hidden;
+}
+
+#currency_mass_value {
+	font-size: 28px;
+}

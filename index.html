@@ -1,0 +1,65 @@
+<!DOCTYPE html style = "height: 100%">
+
+<head>
+	<title>Orpheus Manager</title>
+	<meta charset = "utf-8">
+
+	<!--Library sources-->
+		<!--jQuery-->
+		<script src = "https://code.jquery.com/jquery-3.6.0.min.js" integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin = "anonymous"></script>
+
+		<!--Materialize-->
+    	<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    	<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+		<!--Remote lib_chasm source-->
+		<script type = "text/javascript" src = "https://blooperly.github.io/lib_chasm/source/lib_chasm.js"></script>
+		<script type = "text/javascript" src = "https://blooperly.github.io/lib_chasm/source/lib_chasm_timing.js"></script>
+		<script type = "text/javascript" src = "https://blooperly.github.io/lib_chasm/source/lib_chasm_save.js"></script>
+
+		<!--Local lib_chasm source (for parallel development)-->
+		<!--
+		<script type = "text/javascript" src = "../lib_chasm/source/lib_chasm.js"></script>
+		<script type = "text/javascript" src = "../lib_chasm/source/lib_chasm_timing.js"></script>
+		<script type = "text/javascript" src = "../lib_chasm/source/lib_chasm_save.js"></script>
+		-->
+
+		<!--Game script source-->
+		<script type = "text/javascript" src = "./OrpheusManager.js"></script>
+		<link rel = "stylesheet" href = "./OrpheusManager.css">
+</head>
+
+<body onload = "ManagerInit();">
+
+	<!--Navbar-->
+	<nav class = "nav-extended noble">
+		<!--Upper Navbar-->
+		<div class = "nav-wrapper blue-grey darken-2">
+			
+			<!--Title-->
+			<div id = "chasm_title">
+				<p class = "brand-logo">Orpheus Manager<i class = "material-icons ">queue_music</i></p>
+			</div>
+
+			<!--lib_chasm link-->
+			<ul class = "right hide-on-med-and-down vertcenter">
+				<li><a href = "https://github.com/Blooperly/lib_chasm" target = ”_blank” style = "vertical-align: middle;" draggable = "false"><img src = "images/GitHub-Mark-32px.png" style = "vertical-align: middle;"><span style = "margin-left: 8px; margin-top: 8px;">lib_chasm <span id = "lib_chasm_version" style = "color: lightSlateGray">x.x.x</span></span></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--Game-->
+	<div id = "manager_box" class = "container noble" style = "display: none;">
+		<div class = "row">
+			<!--Middle Column-->
+			<div id = "mid_col" class = "col s12 m12">
+				<div class = "card blue-grey lighten-4">
+					<p>stuff</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
