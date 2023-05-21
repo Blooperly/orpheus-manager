@@ -8,6 +8,9 @@
 		<!--jQuery-->
 		<script src = "https://code.jquery.com/jquery-3.6.0.min.js" integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin = "anonymous"></script>
 
+		<!--bignumber.js-->
+		<script src = "https://cdn.jsdelivr.net/npm/bignumber.js@9.0.2/bignumber.min.js"></script>
+
 		<!--Materialize-->
     	<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
     	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -38,7 +41,7 @@
 		<div class = "nav-wrapper blue-grey darken-2">
 			
 			<!--Title-->
-			<div id = "chasm_title">
+			<div id = "title">
 				<p class = "brand-logo">Orpheus Manager<i class = "material-icons ">queue_music</i></p>
 			</div>
 
@@ -52,10 +55,249 @@
 	<!--Game-->
 	<div id = "manager_box" class = "container noble" style = "display: none;">
 		<div class = "row">
-			<!--Middle Column-->
-			<div id = "mid_col" class = "col s12 m12">
-				<div class = "card blue-grey lighten-4">
-					<p>stuff</p>
+			<!--Character Sheet-->
+			<div id = "character_sheet" class = "col s12 m12">
+				<div class = "card white flex">
+					<div id = "left_column">
+						
+						<!--Attributes-->
+						<div id = "attributes_box">
+							<table class = "styled-table">
+								<thead>
+									<tr>
+										<th>Attribute</th>
+										<th>Score</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style = "background-color: #00aeef;">Perception</td>
+										<td style = "background-color: #44c8f5;"></td>
+									</tr>
+									<tr>
+										<td style = "background-color: #00aeef;">Focus</td>
+										<td style = "background-color: #44c8f5;"></td>
+									</tr>
+									<tr>
+										<td style = "background-color: #d2232a;">Dexterity</td>
+										<td style = "background-color: #e18067;"></td>
+									</tr>
+									<tr>
+										<td style = "background-color: #d2232a;">Vitality</td>
+										<td style = "background-color: #e18067;"></td>
+									</tr>
+									<tr>
+										<td style = "background-color: #41ad49;">Charisma</td>
+										<td style = "background-color: #93c789;"></td>
+									</tr>
+									<tr>
+										<td style = "background-color: #41ad49;">Willpower</td>
+										<td style = "background-color: #93c789;"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!--Derived Attributes-->
+						<div id = "derived_attributes_box">
+							<table class = "styled-table">
+								<thead>
+									<tr>
+										<th>Derived Attributes</th>
+										<th>Score</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Melee Attack</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Ranged Attack</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Unnatural Attack</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Evade</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Parry</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Vigilance</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Wariness</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Speed</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Acuity</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Toughness</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Force of Will</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Tactical Acumen</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Initiative</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<!--Wounds-->
+						<div id = "wounds_box">
+							<table class = "styled-table">
+								<thead>
+									<tr>
+										<th>Wounds</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style = "background-color: #00aeef;">Clarity:</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #44c8f5;">Light</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #44c8f5;">Severe</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #44c8f5;">Critical</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #d2232a;">Health:</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #e18067;">Light</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #e18067;">Severe</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #e18067;">Critical</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #41ad49;">Stress:</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #93c789;">Light</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #93c789;">Severe</td>
+									</tr>
+									<tr>
+										<td style = "background-color: #93c789;">Critical</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div id = "mid_column" class = "flex">
+						<div id = "mid_upper_left_column">
+
+							<!--Caracter Info-->
+							<div id = "character_box">
+								<table class = "styled-table">
+									<tbody>
+										<tr>
+											<td style = "background-color: #9c8cc3;">Name</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td style = "background-color: #9c8cc3;">Archetype</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td style = "background-color: #9c8cc3;">Background</td>
+											<td></td>
+										</tr>
+										<tr style = "height: 93px;">
+											<td style = "background-color: #9c8cc3;">Motivations</td>
+											<td></td>
+										</tr>
+										<tr style = "height: 64px;">
+											<td style = "background-color: #9c8cc3;">Fears</td>
+											<td></td>
+										</tr>
+										<tr style = "height: 64px;">
+											<td style = "background-color: #9c8cc3;">Session Goal</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div id = "mid_upper_right_column">
+							<div class = "hcenter" style = "margin-bottom: 10px;">
+								<img src = "images/orpheus_title.png">
+							</div>
+							
+							<!--Conditions & Injuries-->
+							<div id = "conditions_box">
+								<table class = "styled-table">
+									<thead>
+										<tr>
+											<th>Conditions & Injuries</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr style = "height: 60px;">
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<!--Acclimations-->
+							<div id = "acclimations_box">
+								<table class = "styled-table">
+									<thead>
+										<tr>
+											<th>Acclimations</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr style = "height: 32px;">
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<!--Experience-->
+							<div id = "experience_box">
+								<table class = "styled-table">
+									<tbody>
+										<tr>
+											<td style = "background-color: #9c8cc3;">Experience</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
