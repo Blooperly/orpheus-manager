@@ -24,9 +24,6 @@ function ManagerInit() {
 // | Task Callbacks |
 // +----------------+
 
-function animation_tick() {
-}
-
 // +-----------------+
 // | Button Handling |
 // +-----------------+
@@ -34,7 +31,6 @@ function animation_tick() {
 // +---------------+
 // | UI Management |
 // +---------------+
-
 // Materialize UI
 $(document).ready(function(){
 	M.AutoInit();

@@ -150,11 +150,11 @@ form {
     border-bottom: none;
 }
 
-.styled-table tbody td:nth-of-type(even) {
+.styled-table tbody td:not(:first-child) {
     border-left: 1px solid black;
 }
 
-.styled-table thead th:nth-of-type(even) {
+.styled-table thead th:not(:first-child) {
     border-left: 1px solid black;
 }
 
@@ -176,15 +176,36 @@ form {
 #mid_column {
 	width: 698px;
 	padding: 10px 10px 10px 0px;
+	height: fit-content;
 }
 
 #mid_upper_left_column {
 	width: 421px;
 	margin-right: 10px;
+	height: fit-content;
 }
 
 #mid_upper_right_column {
 	width: 257px;
+	height: fit-content;
+}
+
+#mid_mid_left_column {
+	width: 320px;
+	margin-right: 10px;
+}
+
+#mid_mid_right_column {
+	width: 358px;
+}
+
+#mid_lower_left_column {
+	width: 240px;
+	margin-right: 10px;
+}
+
+#mid_lower_right_column {
+	width: 438px;
 }
 
 #attributes_box {
@@ -230,6 +251,58 @@ form {
 }
 
 #experience_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 10px;
+}
+
+#combat_skills_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 10px;
+}
+
+#strain_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 10px;
+}
+
+#humanity_box {
+	margin-top: 10px;
+}
+
+#memento_mori_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 10px;
+}
+
+#noncombat_skills_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 10px;
+}
+
+#horror_thresholds_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 10px;
+}
+
+#equipment_box {
 	border-width: 2px;
 	border-style: solid;
 	border-color: black;
