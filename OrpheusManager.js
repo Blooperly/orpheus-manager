@@ -165,6 +165,17 @@ class saveData {
 	attrCha;
 	attrWil;
 
+	charName;
+	charArchetype;
+	charBackground;
+	charMotivation;
+	charFears;
+	charGoal;
+
+	charConditions;
+	charAcclimations;
+	charExperience;
+
 	constructor() {
 		this.saveCount = 0;
 
@@ -174,6 +185,17 @@ class saveData {
 		this.attrVit = "";
 		this.attrCha = "";
 		this.attrWil = "";
+		
+		this.charName = "";
+		this.charArchetype = "";
+		this.charBackground = "";
+		this.charMotivation = "";
+		this.charFears = "";
+		this.charGoal = "";
+
+		this.charConditions = "";
+		this.charAcclimations = "";
+		this.charExperience = "";
 	}
 }
 
@@ -196,21 +218,72 @@ function loadSave() {
 		$("#attrVit").html(chasm_save.attrVit);
 		$("#attrCha").html(chasm_save.attrCha);
 		$("#attrWil").html(chasm_save.attrWil);
+
+		$("#charName").html(chasm_save.charName);
+		$("#charArchetype").html(chasm_save.charArchetype);
+		$("#charBackground").html(chasm_save.charBackground);
+		$("#charMotivation").html(chasm_save.charMotivation);
+		$("#charFears").html(chasm_save.charFears);
+		$("#charGoal").html(chasm_save.charGoal);
+
+		$("#charConditions").html(chasm_save.charConditions);
+		$("#charAcclimations").html(chasm_save.charAcclimations);
+		$("#charExperience").html(chasm_save.charExperience);
 	}
 }
 
-function storeSave() {
+function generateSave() {
 	chasm_save.saveCount++;
+
 	chasm_save.attrPer 	= $("#attrPer").html();
 	chasm_save.attrFoc 	= $("#attrFoc").html();
 	chasm_save.attrDex 	= $("#attrDex").html();
 	chasm_save.attrVit 	= $("#attrVit").html();
 	chasm_save.attrCha 	= $("#attrCha").html();
 	chasm_save.attrWil 	= $("#attrWil").html();
+	
+	chasm_save.charName 		= $("#charName").html();
+	chasm_save.charArchetype 	= $("#charArchetype").html();
+	chasm_save.charBackground 	= $("#charBackground").html();
+	chasm_save.charMotivation 	= $("#charMotivation").html();
+	chasm_save.charFears 		= $("#charFears").html();
+	chasm_save.charGoal 		= $("#charGoal").html();
+
+	chasm_save.charConditions 	= $("#charConditions").html();
+	chasm_save.charAcclimations = $("#charAcclimations").html();
+	chasm_save.charExperience 	= $("#charExperience").html();
+}
+
+function storeSave() {
+	// Generate Save
+	generateSave();
 
 	// Save to Local Storage
 	lib_chasm_store_save(save_path, chasm_save);
 }
+
+function copySave() {
+	// Generate Save
+	generateSave();
+
+	// Copy to Clipboard
+	var textArea = document.createElement("textarea");
+	textArea.value = JSON.stringify(chasm_save);
+	// Avoid scrolling to bottom
+	textArea.style.top = "0";
+	textArea.style.left = "0";
+	textArea.style.position = "fixed";
+	document.body.appendChild(textArea);
+	textArea.focus();
+	textArea.select();
+	try {
+	  document.execCommand('copy');
+	} catch (err) {
+	  console.error('Copy failed ', err);
+	}
+	document.body.removeChild(textArea);
+}
+
 
 function autoSave() {
 	//storeSave();

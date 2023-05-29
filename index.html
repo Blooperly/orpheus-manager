@@ -59,6 +59,7 @@
 			<div id = "character_sheet" class = "col s12 m12">
 				<a id = "debug_save_game" class = "waves-effect waves-light btn orange lighten-2 black-text" onclick = "storeSave();">Save</a>
 				<a id = "debug_clear_game" class = "waves-effect waves-light btn orange lighten-2 black-text" onclick = "clearSave();">Clear</a>
+				<a id = "debug_copy_game" class = "waves-effect waves-light btn orange lighten-2 black-text" onclick = "copySave();">Copy</a>
 				<div class = "card white flex">
 					<div id = "left_column">
 						
@@ -74,27 +75,27 @@
 								<tbody>
 									<tr>
 										<td style = "background-color: #00aeef;">Perception</td>
-										<td style = "background-color: #44c8f5;" contenteditable = "true" id = "attrPer"></td>
+										<td style = "background-color: #44c8f5;" class = "hcenter" contenteditable = "true" id = "attrPer"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #00aeef;">Focus</td>
-										<td style = "background-color: #44c8f5;" contenteditable = "true" id = "attrFoc"></td>
+										<td style = "background-color: #44c8f5;" class = "hcenter" contenteditable = "true" id = "attrFoc"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #d2232a;">Dexterity</td>
-										<td style = "background-color: #e18067;" contenteditable = "true" id = "attrDex"></td>
+										<td style = "background-color: #e18067;" class = "hcenter" contenteditable = "true" id = "attrDex"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #d2232a;">Vitality</td>
-										<td style = "background-color: #e18067;" contenteditable = "true" id = "attrVit"></td>
+										<td style = "background-color: #e18067;" class = "hcenter" contenteditable = "true" id = "attrVit"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #41ad49;">Charisma</td>
-										<td style = "background-color: #93c789;" contenteditable = "true" id = "attrCha"></td>
+										<td style = "background-color: #93c789;" class = "hcenter" contenteditable = "true" id = "attrCha"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #41ad49;">Willpower</td>
-										<td style = "background-color: #93c789;" contenteditable = "true" id = "attrWil"></td>
+										<td style = "background-color: #93c789;" class = "hcenter" contenteditable = "true" id = "attrWil"></td>
 									</tr>
 								</tbody>
 							</table>
@@ -112,55 +113,55 @@
 								<tbody>
 									<tr>
 										<td>Melee Attack</td>
-										<td id = "derMelee"></td>
+										<td id = "derMelee" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Ranged Attack</td>
-										<td id = "derRanged"></td>
+										<td id = "derRanged" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Unnatural Attack</td>
-										<td id = "derUnnatural"></td>
+										<td id = "derUnnatural" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Evade</td>
-										<td id = "derEvade"></td>
+										<td id = "derEvade" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Parry</td>
-										<td id = "derParry"></td>
+										<td id = "derParry" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Vigilance</td>
-										<td id = "derVigilance"></td>
+										<td id = "derVigilance" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Wariness</td>
-										<td id = "derWariness"></td>
+										<td id = "derWariness" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Speed</td>
-										<td id = "derSpeed"></td>
+										<td id = "derSpeed" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Acuity</td>
-										<td id = "derAcuity"></td>
+										<td id = "derAcuity" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Toughness</td>
-										<td id = "derToughness"></td>
+										<td id = "derToughness" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Force of Will</td>
-										<td id = "derFoW"></td>
+										<td id = "derFoW" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Tactical Acumen</td>
-										<td id = "derAcumen"></td>
+										<td id = "derAcumen" class = "hcenter"></td>
 									</tr>
 									<tr>
 										<td>Initiative</td>
-										<td id = "derInitiative"></td>
+										<td id = "derInitiative" class = "hcenter"></td>
 									</tr>
 								</tbody>
 							</table>
@@ -224,27 +225,27 @@
 									<tbody>
 										<tr>
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Name</td>
-											<td contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charName" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr>
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Archetype</td>
-											<td contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charArchetype" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr>
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Background</td>
-											<td contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charBackground" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr style = "height: 93px;">
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Motivations</td>
-											<td contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charMotivation" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr style = "height: 64px;">
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Fears</td>
-											<td contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charFears" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr style = "height: 64px;">
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Session Goal</td>
-											<td contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charGoal" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -265,7 +266,7 @@
 									</thead>
 									<tbody>
 										<tr style = "height: 60px;">
-											<td contenteditable = "true"></td>
+											<td id = "charConditions" contenteditable = "true"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -281,7 +282,7 @@
 									</thead>
 									<tbody>
 										<tr style = "height: 32px;">
-											<td contenteditable = "true"></td>
+											<td id = "charAcclimations" contenteditable = "true"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -293,7 +294,7 @@
 									<tbody>
 										<tr>
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Experience</td>
-											<td style = "width: 120px;" contenteditable = "true"></td>
+											<td id = "charExperience" class = "hcenter" style = "width: 120px;" contenteditable = "true"></td>
 										</tr>
 									</tbody>
 								</table>
