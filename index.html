@@ -57,6 +57,8 @@
 		<div class = "row">
 			<!--Character Sheet-->
 			<div id = "character_sheet" class = "col s12 m12">
+				<a id = "debug_save_game" class = "waves-effect waves-light btn orange lighten-2 black-text" onclick = "storeSave();">Save</a>
+				<a id = "debug_clear_game" class = "waves-effect waves-light btn orange lighten-2 black-text" onclick = "clearSave();">Clear</a>
 				<div class = "card white flex">
 					<div id = "left_column">
 						
@@ -72,27 +74,27 @@
 								<tbody>
 									<tr>
 										<td style = "background-color: #00aeef;">Perception</td>
-										<td style = "background-color: #44c8f5;" contenteditable = "true"></td>
+										<td style = "background-color: #44c8f5;" contenteditable = "true" id = "attrPer"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #00aeef;">Focus</td>
-										<td style = "background-color: #44c8f5;" contenteditable = "true"></td>
+										<td style = "background-color: #44c8f5;" contenteditable = "true" id = "attrFoc"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #d2232a;">Dexterity</td>
-										<td style = "background-color: #e18067;" contenteditable = "true"></td>
+										<td style = "background-color: #e18067;" contenteditable = "true" id = "attrDex"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #d2232a;">Vitality</td>
-										<td style = "background-color: #e18067;" contenteditable = "true"></td>
+										<td style = "background-color: #e18067;" contenteditable = "true" id = "attrVit"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #41ad49;">Charisma</td>
-										<td style = "background-color: #93c789;" contenteditable = "true"></td>
+										<td style = "background-color: #93c789;" contenteditable = "true" id = "attrCha"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #41ad49;">Willpower</td>
-										<td style = "background-color: #93c789;" contenteditable = "true"></td>
+										<td style = "background-color: #93c789;" contenteditable = "true" id = "attrWil"></td>
 									</tr>
 								</tbody>
 							</table>
@@ -110,55 +112,55 @@
 								<tbody>
 									<tr>
 										<td>Melee Attack</td>
-										<td></td>
+										<td id = "derMelee"></td>
 									</tr>
 									<tr>
 										<td>Ranged Attack</td>
-										<td></td>
+										<td id = "derRanged"></td>
 									</tr>
 									<tr>
 										<td>Unnatural Attack</td>
-										<td></td>
+										<td id = "derUnnatural"></td>
 									</tr>
 									<tr>
 										<td>Evade</td>
-										<td></td>
+										<td id = "derEvade"></td>
 									</tr>
 									<tr>
 										<td>Parry</td>
-										<td></td>
+										<td id = "derParry"></td>
 									</tr>
 									<tr>
 										<td>Vigilance</td>
-										<td></td>
+										<td id = "derVigilance"></td>
 									</tr>
 									<tr>
 										<td>Wariness</td>
-										<td></td>
+										<td id = "derWariness"></td>
 									</tr>
 									<tr>
 										<td>Speed</td>
-										<td></td>
+										<td id = "derSpeed"></td>
 									</tr>
 									<tr>
 										<td>Acuity</td>
-										<td></td>
+										<td id = "derAcuity"></td>
 									</tr>
 									<tr>
 										<td>Toughness</td>
-										<td></td>
+										<td id = "derToughness"></td>
 									</tr>
 									<tr>
 										<td>Force of Will</td>
-										<td></td>
+										<td id = "derFoW"></td>
 									</tr>
 									<tr>
 										<td>Tactical Acumen</td>
-										<td></td>
+										<td id = "derAcumen"></td>
 									</tr>
 									<tr>
 										<td>Initiative</td>
-										<td></td>
+										<td id = "derInitiative"></td>
 									</tr>
 								</tbody>
 							</table>

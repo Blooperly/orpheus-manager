@@ -14,9 +14,10 @@ function ManagerInit() {
 	//chasm_timing_init(animation_tick);
 
 	// Load Saved Sheet
-	//loadSave();
+	loadSave();
 
 	// Loading finished, reveal the game
+	refreshUi();
 	$("#manager_box").css("display", "block")
 }
 
@@ -31,6 +32,119 @@ function ManagerInit() {
 // +---------------+
 // | UI Management |
 // +---------------+
+
+// Refresh UI
+function refreshUi() {
+	displayDerivedAttr();
+}
+
+// Derived Attributes
+function parseNumerals(string) {
+	if (string == 'I' || string == 'i' || string == '1') {
+		return 1;
+	} else if (string == 'II' || string == 'ii' || string == '2') {
+		return 2;
+	} else if (string == 'III' || string == 'iii' || string == '3') {
+		return 3;
+	} else if (string == 'IV' || string == 'iv' || string == '4') {
+		return 4;
+	} else if (string == 'V' || string == 'v' || string == '5') {
+		return 5;
+	}
+	return 0;
+}
+
+function displayDerivedAttr() {
+	let per = parseNumerals($("#attrPer").html());
+	let foc = parseNumerals($("#attrFoc").html());
+	let dex = parseNumerals($("#attrDex").html());
+	let vit = parseNumerals($("#attrVit").html());
+	let cha = parseNumerals($("#attrCha").html());
+	let wil = parseNumerals($("#attrWil").html());
+
+	if (dex && vit) {
+		$("#derMelee").html(Math.floor(0.5 * (dex + vit)));
+		$("#derParry").html(Math.floor(0.5 * (dex + vit)));
+		$("#derSpeed").html(Math.floor(0.5 * (dex + vit)));
+	} else {
+		$("#derMelee").html("");
+		$("#derParry").html("");
+		$("#derSpeed").html("");
+	}
+
+	if (dex && per) {
+		$("#derRanged").html(Math.floor(0.5 * (dex + per)));
+		$("#derEvade").html(Math.floor(0.5 * (dex + per)));
+	} else {
+		$("#derRanged").html("");
+		$("#derEvade").html("");
+	}
+
+	if (per && (wil || foc)) {
+		$("#derUnnatural").html(Math.floor(0.5 * (per + Math.max(wil, foc))));
+	} else {
+		$("#derUnnatural").html("");
+	}
+
+	if (per && foc) {
+		$("#derVigilance").html(Math.floor(0.5 * (per + foc)));
+	} else {
+		$("#derVigilance").html(Math.floor(""));
+	}
+
+	if (cha && (wil || foc)) {
+		$("#derWariness").html(Math.floor(0.5 * (cha + Math.max(wil, foc))));
+	} else {
+		$("#derWariness").html("");
+	}
+
+	if (foc) {
+		if (foc >= 5) {
+			$("#derAcuity").html("2");
+			$("#derAcumen").html("2");
+		} else if (foc >= 3) {6
+			$("#derAcuity").html("1");
+			$("#derAcumen").html("1");
+		} else {
+			$("#derAcuity").html("0");
+			$("#derAcumen").html("0");
+		}
+	} else {
+		$("#derAcuity").html("");
+		$("#derAcumen").html("");
+	}
+
+	if (vit) {
+		if (vit >= 5) {
+			$("#derToughness").html("2");
+		} else if (vit >= 3) {6
+			$("#derToughness").html("1");
+		} else {
+			$("#derToughness").html("0");
+		}
+	} else {
+		$("#derToughness").html("");
+	}
+
+	if (wil) {
+		if (wil >= 5) {
+			$("#derFoW").html("2");
+		} else if (wil >= 3) {6
+			$("#derFoW").html("1");
+		} else {
+			$("#derFoW").html("0");
+		}
+	} else {
+		$("#derFoW").html("");
+	}
+
+	if ((foc && wil) || (wil && dex) || (dex && foc)) {
+		$("#derInitiative").html(foc + wil + dex - Math.min(foc, wil, dex));
+	} else {
+		$("#derInitiative").html("");
+	}
+}
+
 // Materialize UI
 $(document).ready(function(){
 	M.AutoInit();
@@ -44,14 +158,28 @@ $(document).ready(function(){
 class saveData {
 	saveCount;
 
+	attrPer;
+	attrFoc;
+	attrDex;
+	attrVit;
+	attrCha;
+	attrWil;
+
 	constructor() {
-		this.saveCount 		= 0;
+		this.saveCount = 0;
+
+		this.attrPer = "";
+		this.attrFoc = "";
+		this.attrDex = "";
+		this.attrVit = "";
+		this.attrCha = "";
+		this.attrWil = "";
 	}
 }
 
 var chasm_save;
 var chasm_incoming_save;
-const save_path = "chasm";
+const save_path = "orpheus";
 
 function loadSave() {
 	chasm_save = new saveData();
@@ -62,24 +190,23 @@ function loadSave() {
 		lib_chasm_merge_save(chasm_save, chasm_incoming_save);
 
 		// Load Game
-		save_unpack_achievements(chasm_save.achievements);
-		save_unpack_milestones(chasm_save.milestones);
-		save_unpack_currency(chasm_save.currency);
-		save_unpack_upgrades(chasm_save.upgrades);
-		save_unpack_storage(chasm_save.storage);
-
-		// Update UI elements
-		refresh_ui();
+		$("#attrPer").html(chasm_save.attrPer);
+		$("#attrFoc").html(chasm_save.attrFoc);
+		$("#attrDex").html(chasm_save.attrDex);
+		$("#attrVit").html(chasm_save.attrVit);
+		$("#attrCha").html(chasm_save.attrCha);
+		$("#attrWil").html(chasm_save.attrWil);
 	}
 }
 
 function storeSave() {
 	chasm_save.saveCount++;
-	chasm_save.achievements 	= save_pack_achievements();
-	chasm_save.milestones 		= save_pack_milestones();
-	chasm_save.currency 		= save_pack_currency();
-	chasm_save.upgrades 		= save_pack_upgrades();
-	chasm_save.storage			= save_pack_storage();
+	chasm_save.attrPer 	= $("#attrPer").html();
+	chasm_save.attrFoc 	= $("#attrFoc").html();
+	chasm_save.attrDex 	= $("#attrDex").html();
+	chasm_save.attrVit 	= $("#attrVit").html();
+	chasm_save.attrCha 	= $("#attrCha").html();
+	chasm_save.attrWil 	= $("#attrWil").html();
 
 	// Save to Local Storage
 	lib_chasm_store_save(save_path, chasm_save);
@@ -91,86 +218,4 @@ function autoSave() {
 
 function clearSave() {
 	lib_chasm_delete_save(save_path);
-}
-
-// Save data population
-function save_pack_achievements() {
-	var object = {};
-	for (let i = aid.achievement_first; i < aid.achievement_count; i++) {
-		object[chasm_achievements[i].name] = chasm_achievements[i].unlocked;
-	}
-	return object;
-}
-
-function save_unpack_achievements(object) {
-	for (var prop in object) {
-		chasm_achievements[aid[prop]].unlocked = object[prop];
-	}
-}
-
-function save_pack_milestones() {
-	var object = {};
-	for (let i = mid.milestone_first; i < mid.milestone_count; i++) {
-		object[chasm_milestones[i].name] = chasm_milestones[i].unlocked;
-	}
-	return object;
-}
-
-function save_unpack_milestones(object) {
-	for (var prop in object) {
-		chasm_milestones[mid[prop]].unlocked = object[prop];
-	}
-}
-
-function save_pack_currency() {
-	var object = {};
-	for (let i = cid.currency_first; i < cid.currency_count; i++) {
-		object[chasm_currency[i].resource.name] = lib_chasm_pack_resource(chasm_currency[i].resource);
-	}
-	return object;
-}
-
-function save_unpack_currency(object) {
-	for (var prop in object) {
-		chasm_currency[cid[prop]].resource = lib_chasm_unpack_resource(prop, object[prop]);
-	}
-}
-
-function save_pack_upgrades() {
-	var object = {};
-	for (let i = uid.upgrade_first; i < uid.upgrade_count; i++) {
-		object[chasm_upgrades[i].name] = chasm_upgrades[i].unlocked;
-	}
-	return object;
-}
-
-function save_unpack_upgrades(object) {
-	for (var prop in object) {
-		chasm_upgrades[uid[prop]].unlocked = object[prop];
-	}
-}
-
-function save_pack_storage() {
-	var object = {};
-	for (let i = sid.storage_first; i < sid.storage_count; i++) {
-		object[chasm_storage[i].name] = {};
-		object[chasm_storage[i].name].workers_gather 	= chasm_storage[i].workers_gather;
-		object[chasm_storage[i].name].workers_drop 		= chasm_storage[i].workers_drop;
-		object[chasm_storage[i].name].workers_survey	= chasm_storage[i].workers_survey;
-		object[chasm_storage[i].name].machinery_1		= chasm_storage[i].machinery_1;
-		object[chasm_storage[i].name].gather_progress	= chasm_storage[i].gather_progress;
-		object[chasm_storage[i].name].drop_progress		= chasm_storage[i].drop_progress;
-	}
-	return object;
-}
-
-function save_unpack_storage(object) {
-	for (var storage in object) {
-		chasm_storage[sid[storage]].workers_gather 		= object[storage].workers_gather;
-		chasm_storage[sid[storage]].workers_drop 		= object[storage].workers_drop;
-		chasm_storage[sid[storage]].workers_survey 		= object[storage].workers_survey;
-		chasm_storage[sid[storage]].machinery_1			= object[storage].machinery_1;
-		chasm_storage[sid[storage]].gather_progress 	= object[storage].gather_progress;
-		chasm_storage[sid[storage]].drop_progress 		= object[storage].drop_progress;
-	}
 }
