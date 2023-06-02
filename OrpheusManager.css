@@ -158,6 +158,16 @@ form {
     border-left: 1px solid black;
 }
 
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: unset;
+    opacity: 1;
+    pointer-events:all;
+}
+
+.skill_checkbox {
+	margin-right: 8px;
+}
+
 /* ID's */
 #title {
 	padding-left: 34px;

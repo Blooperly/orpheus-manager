@@ -176,6 +176,95 @@ class saveData {
 	charAcclimations;
 	charExperience;
 
+	cSkill0;
+	cSkill1;
+	cSkill2;
+	cSkill3;
+	cSkill4;
+	cSkill5;
+	cSkill6;
+	cSkill7;
+	cSkill8;
+	cSkill9;
+	cSkill10;
+
+	cSkill0_1;
+	cSkill0_2;
+	cSkill0_3;
+	cSkill0_4;
+	cSkill0_5;
+	cSkill0_6;
+
+	cSkill1_1;
+	cSkill1_2;
+	cSkill1_3;
+	cSkill1_4;
+	cSkill1_5;
+	cSkill1_6;
+
+	cSkill2_1;
+	cSkill2_2;
+	cSkill2_3;
+	cSkill2_4;
+	cSkill2_5;
+	cSkill2_6;
+
+	cSkill3_1;
+	cSkill3_2;
+	cSkill3_3;
+	cSkill3_4;
+	cSkill3_5;
+	cSkill3_6;
+
+	cSkill4_1;
+	cSkill4_2;
+	cSkill4_3;
+	cSkill4_4;
+	cSkill4_5;
+	cSkill4_6;
+
+	cSkill5_1;
+	cSkill5_2;
+	cSkill5_3;
+	cSkill5_4;
+	cSkill5_5;
+	cSkill5_6;
+
+	cSkill6_1;
+	cSkill6_2;
+	cSkill6_3;
+	cSkill6_4;
+	cSkill6_5;
+	cSkill6_6;
+
+	cSkill7_1;
+	cSkill7_2;
+	cSkill7_3;
+	cSkill7_4;
+	cSkill7_5;
+	cSkill7_6;
+
+	cSkill8_1;
+	cSkill8_2;
+	cSkill8_3;
+	cSkill8_4;
+	cSkill8_5;
+	cSkill8_6;
+
+	cSkill9_1;
+	cSkill9_2;
+	cSkill9_3;
+	cSkill9_4;
+	cSkill9_5;
+	cSkill9_6;
+
+	cSkill10_1;
+	cSkill10_2;
+	cSkill10_3;
+	cSkill10_4;
+	cSkill10_5;
+	cSkill10_6;
+
 	constructor() {
 		this.saveCount = 0;
 
@@ -196,6 +285,95 @@ class saveData {
 		this.charConditions = "";
 		this.charAcclimations = "";
 		this.charExperience = "";
+		
+		this.cSkill0 = "";
+		this.cSkill1 = "";
+		this.cSkill2 = "";
+		this.cSkill3 = "";
+		this.cSkill4 = "";
+		this.cSkill5 = "";
+		this.cSkill6 = "";
+		this.cSkill7 = "";
+		this.cSkill8 = "";
+		this.cSkill9 = "";
+		this.cSkill10 = "";
+
+		this.cSkill0_1 = false;
+		this.cSkill0_2 = false;
+		this.cSkill0_3 = false;
+		this.cSkill0_4 = false;
+		this.cSkill0_5 = false;
+		this.cSkill0_6 = false;
+	
+		this.cSkill1_1 = false;
+		this.cSkill1_2 = false;
+		this.cSkill1_3 = false;
+		this.cSkill1_4 = false;
+		this.cSkill1_5 = false;
+		this.cSkill1_6 = false;
+	
+		this.cSkill2_1 = false;
+		this.cSkill2_2 = false;
+		this.cSkill2_3 = false;
+		this.cSkill2_4 = false;
+		this.cSkill2_5 = false;
+		this.cSkill2_6 = false;
+	
+		this.cSkill3_1 = false;
+		this.cSkill3_2 = false;
+		this.cSkill3_3 = false;
+		this.cSkill3_4 = false;
+		this.cSkill3_5 = false;
+		this.cSkill3_6 = false;
+	
+		this.cSkill4_1 = false;
+		this.cSkill4_2 = false;
+		this.cSkill4_3 = false;
+		this.cSkill4_4 = false;
+		this.cSkill4_5 = false;
+		this.cSkill4_6 = false;
+	
+		this.cSkill5_1 = false;
+		this.cSkill5_2 = false;
+		this.cSkill5_3 = false;
+		this.cSkill5_4 = false;
+		this.cSkill5_5 = false;
+		this.cSkill5_6 = false;
+	
+		this.cSkill6_1 = false;
+		this.cSkill6_2 = false;
+		this.cSkill6_3 = false;
+		this.cSkill6_4 = false;
+		this.cSkill6_5 = false;
+		this.cSkill6_6 = false;
+	
+		this.cSkill7_1 = false;
+		this.cSkill7_2 = false;
+		this.cSkill7_3 = false;
+		this.cSkill7_4 = false;
+		this.cSkill7_5 = false;
+		this.cSkill7_6 = false;
+	
+		this.cSkill8_1 = false;
+		this.cSkill8_2 = false;
+		this.cSkill8_3 = false;
+		this.cSkill8_4 = false;
+		this.cSkill8_5 = false;
+		this.cSkill8_6 = false;
+	
+		this.cSkill9_1 = false;
+		this.cSkill9_2 = false;
+		this.cSkill9_3 = false;
+		this.cSkill9_4 = false;
+		this.cSkill9_5 = false;
+		this.cSkill9_6 = false;
+	
+		this.cSkill10_1 = false;
+		this.cSkill10_2 = false;
+		this.cSkill10_3 = false;
+		this.cSkill10_4 = false;
+		this.cSkill10_5 = false;
+		this.cSkill10_6 = false;
 	}
 }
 
@@ -229,6 +407,95 @@ function loadSave() {
 		$("#charConditions").html(chasm_save.charConditions);
 		$("#charAcclimations").html(chasm_save.charAcclimations);
 		$("#charExperience").html(chasm_save.charExperience);
+		
+		$("#cSkill0").html(chasm_save.cSkill0);
+		$("#cSkill1").html(chasm_save.cSkill1);
+		$("#cSkill2").html(chasm_save.cSkill2);
+		$("#cSkill3").html(chasm_save.cSkill3);
+		$("#cSkill4").html(chasm_save.cSkill4);
+		$("#cSkill5").html(chasm_save.cSkill5);
+		$("#cSkill6").html(chasm_save.cSkill6);
+		$("#cSkill7").html(chasm_save.cSkill7);
+		$("#cSkill8").html(chasm_save.cSkill8);
+		$("#cSkill9").html(chasm_save.cSkill9);
+		$("#cSkill10").html(chasm_save.cSkill10);
+
+		if (chasm_save.cSkill0_1) $("#cSkill0_1").prop('checked', true);
+		if (chasm_save.cSkill0_2) $("#cSkill0_2").prop('checked', true);
+		if (chasm_save.cSkill0_3) $("#cSkill0_3").prop('checked', true);
+		if (chasm_save.cSkill0_4) $("#cSkill0_4").prop('checked', true);
+		if (chasm_save.cSkill0_5) $("#cSkill0_5").prop('checked', true);
+		if (chasm_save.cSkill0_6) $("#cSkill0_6").prop('checked', true);
+
+		if (chasm_save.cSkill1_1) $("#cSkill1_1").prop('checked', true);
+		if (chasm_save.cSkill1_2) $("#cSkill1_2").prop('checked', true);
+		if (chasm_save.cSkill1_3) $("#cSkill1_3").prop('checked', true);
+		if (chasm_save.cSkill1_4) $("#cSkill1_4").prop('checked', true);
+		if (chasm_save.cSkill1_5) $("#cSkill1_5").prop('checked', true);
+		if (chasm_save.cSkill1_6) $("#cSkill1_6").prop('checked', true);
+
+		if (chasm_save.cSkill2_1) $("#cSkill2_1").prop('checked', true);
+		if (chasm_save.cSkill2_2) $("#cSkill2_2").prop('checked', true);
+		if (chasm_save.cSkill2_3) $("#cSkill2_3").prop('checked', true);
+		if (chasm_save.cSkill2_4) $("#cSkill2_4").prop('checked', true);
+		if (chasm_save.cSkill2_5) $("#cSkill2_5").prop('checked', true);
+		if (chasm_save.cSkill2_6) $("#cSkill2_6").prop('checked', true);
+
+		if (chasm_save.cSkill3_1) $("#cSkill3_1").prop('checked', true);
+		if (chasm_save.cSkill3_2) $("#cSkill3_2").prop('checked', true);
+		if (chasm_save.cSkill3_3) $("#cSkill3_3").prop('checked', true);
+		if (chasm_save.cSkill3_4) $("#cSkill3_4").prop('checked', true);
+		if (chasm_save.cSkill3_5) $("#cSkill3_5").prop('checked', true);
+		if (chasm_save.cSkill3_6) $("#cSkill3_6").prop('checked', true);
+
+		if (chasm_save.cSkill4_1) $("#cSkill4_1").prop('checked', true);
+		if (chasm_save.cSkill4_2) $("#cSkill4_2").prop('checked', true);
+		if (chasm_save.cSkill4_3) $("#cSkill4_3").prop('checked', true);
+		if (chasm_save.cSkill4_4) $("#cSkill4_4").prop('checked', true);
+		if (chasm_save.cSkill4_5) $("#cSkill4_5").prop('checked', true);
+		if (chasm_save.cSkill4_6) $("#cSkill4_6").prop('checked', true);
+
+		if (chasm_save.cSkill5_1) $("#cSkill5_1").prop('checked', true);
+		if (chasm_save.cSkill5_2) $("#cSkill5_2").prop('checked', true);
+		if (chasm_save.cSkill5_3) $("#cSkill5_3").prop('checked', true);
+		if (chasm_save.cSkill5_4) $("#cSkill5_4").prop('checked', true);
+		if (chasm_save.cSkill5_5) $("#cSkill5_5").prop('checked', true);
+		if (chasm_save.cSkill5_6) $("#cSkill5_6").prop('checked', true);
+
+		if (chasm_save.cSkill6_1) $("#cSkill6_1").prop('checked', true);
+		if (chasm_save.cSkill6_2) $("#cSkill6_2").prop('checked', true);
+		if (chasm_save.cSkill6_3) $("#cSkill6_3").prop('checked', true);
+		if (chasm_save.cSkill6_4) $("#cSkill6_4").prop('checked', true);
+		if (chasm_save.cSkill6_5) $("#cSkill6_5").prop('checked', true);
+		if (chasm_save.cSkill6_6) $("#cSkill6_6").prop('checked', true);
+
+		if (chasm_save.cSkill7_1) $("#cSkill7_1").prop('checked', true);
+		if (chasm_save.cSkill7_2) $("#cSkill7_2").prop('checked', true);
+		if (chasm_save.cSkill7_3) $("#cSkill7_3").prop('checked', true);
+		if (chasm_save.cSkill7_4) $("#cSkill7_4").prop('checked', true);
+		if (chasm_save.cSkill7_5) $("#cSkill7_5").prop('checked', true);
+		if (chasm_save.cSkill7_6) $("#cSkill7_6").prop('checked', true);
+
+		if (chasm_save.cSkill8_1) $("#cSkill8_1").prop('checked', true);
+		if (chasm_save.cSkill8_2) $("#cSkill8_2").prop('checked', true);
+		if (chasm_save.cSkill8_3) $("#cSkill8_3").prop('checked', true);
+		if (chasm_save.cSkill8_4) $("#cSkill8_4").prop('checked', true);
+		if (chasm_save.cSkill8_5) $("#cSkill8_5").prop('checked', true);
+		if (chasm_save.cSkill8_6) $("#cSkill8_6").prop('checked', true);
+
+		if (chasm_save.cSkill9_1) $("#cSkill9_1").prop('checked', true);
+		if (chasm_save.cSkill9_2) $("#cSkill9_2").prop('checked', true);
+		if (chasm_save.cSkill9_3) $("#cSkill9_3").prop('checked', true);
+		if (chasm_save.cSkill9_4) $("#cSkill9_4").prop('checked', true);
+		if (chasm_save.cSkill9_5) $("#cSkill9_5").prop('checked', true);
+		if (chasm_save.cSkill9_6) $("#cSkill9_6").prop('checked', true);
+
+		if (chasm_save.cSkill10_1) $("#cSkill10_1").prop('checked', true);
+		if (chasm_save.cSkill10_2) $("#cSkill10_2").prop('checked', true);
+		if (chasm_save.cSkill10_3) $("#cSkill10_3").prop('checked', true);
+		if (chasm_save.cSkill10_4) $("#cSkill10_4").prop('checked', true);
+		if (chasm_save.cSkill10_5) $("#cSkill10_5").prop('checked', true);
+		if (chasm_save.cSkill10_6) $("#cSkill10_6").prop('checked', true);
 	}
 }
 
@@ -252,6 +519,95 @@ function generateSave() {
 	chasm_save.charConditions 	= $("#charConditions").html();
 	chasm_save.charAcclimations = $("#charAcclimations").html();
 	chasm_save.charExperience 	= $("#charExperience").html();
+
+	chasm_save.cSkill0	= $("#cSkill0").html();
+	chasm_save.cSkill1	= $("#cSkill1").html();
+	chasm_save.cSkill2	= $("#cSkill2").html();
+	chasm_save.cSkill3	= $("#cSkill3").html();
+	chasm_save.cSkill4	= $("#cSkill4").html();
+	chasm_save.cSkill5	= $("#cSkill5").html();
+	chasm_save.cSkill6	= $("#cSkill6").html();
+	chasm_save.cSkill7	= $("#cSkill7").html();
+	chasm_save.cSkill8	= $("#cSkill8").html();
+	chasm_save.cSkill9	= $("#cSkill9").html();
+	chasm_save.cSkill10	= $("#cSkill10").html();
+
+	chasm_save.cSkill0_1 = $("#cSkill0_1").is(":checked");
+	chasm_save.cSkill0_2 = $("#cSkill0_2").is(":checked");
+	chasm_save.cSkill0_3 = $("#cSkill0_3").is(":checked");
+	chasm_save.cSkill0_4 = $("#cSkill0_4").is(":checked");
+	chasm_save.cSkill0_5 = $("#cSkill0_5").is(":checked");
+	chasm_save.cSkill0_6 = $("#cSkill0_6").is(":checked");
+
+	chasm_save.cSkill1_1 = $("#cSkill1_1").is(":checked");
+	chasm_save.cSkill1_2 = $("#cSkill1_2").is(":checked");
+	chasm_save.cSkill1_3 = $("#cSkill1_3").is(":checked");
+	chasm_save.cSkill1_4 = $("#cSkill1_4").is(":checked");
+	chasm_save.cSkill1_5 = $("#cSkill1_5").is(":checked");
+	chasm_save.cSkill1_6 = $("#cSkill1_6").is(":checked");
+
+	chasm_save.cSkill2_1 = $("#cSkill2_1").is(":checked");
+	chasm_save.cSkill2_2 = $("#cSkill2_2").is(":checked");
+	chasm_save.cSkill2_3 = $("#cSkill2_3").is(":checked");
+	chasm_save.cSkill2_4 = $("#cSkill2_4").is(":checked");
+	chasm_save.cSkill2_5 = $("#cSkill2_5").is(":checked");
+	chasm_save.cSkill2_6 = $("#cSkill2_6").is(":checked");
+
+	chasm_save.cSkill3_1 = $("#cSkill3_1").is(":checked");
+	chasm_save.cSkill3_2 = $("#cSkill3_2").is(":checked");
+	chasm_save.cSkill3_3 = $("#cSkill3_3").is(":checked");
+	chasm_save.cSkill3_4 = $("#cSkill3_4").is(":checked");
+	chasm_save.cSkill3_5 = $("#cSkill3_5").is(":checked");
+	chasm_save.cSkill3_6 = $("#cSkill3_6").is(":checked");
+
+	chasm_save.cSkill4_1 = $("#cSkill4_1").is(":checked");
+	chasm_save.cSkill4_2 = $("#cSkill4_2").is(":checked");
+	chasm_save.cSkill4_3 = $("#cSkill4_3").is(":checked");
+	chasm_save.cSkill4_4 = $("#cSkill4_4").is(":checked");
+	chasm_save.cSkill4_5 = $("#cSkill4_5").is(":checked");
+	chasm_save.cSkill4_6 = $("#cSkill4_6").is(":checked");
+
+	chasm_save.cSkill5_1 = $("#cSkill5_1").is(":checked");
+	chasm_save.cSkill5_2 = $("#cSkill5_2").is(":checked");
+	chasm_save.cSkill5_3 = $("#cSkill5_3").is(":checked");
+	chasm_save.cSkill5_4 = $("#cSkill5_4").is(":checked");
+	chasm_save.cSkill5_5 = $("#cSkill5_5").is(":checked");
+	chasm_save.cSkill5_6 = $("#cSkill5_6").is(":checked");
+
+	chasm_save.cSkill6_1 = $("#cSkill6_1").is(":checked");
+	chasm_save.cSkill6_2 = $("#cSkill6_2").is(":checked");
+	chasm_save.cSkill6_3 = $("#cSkill6_3").is(":checked");
+	chasm_save.cSkill6_4 = $("#cSkill6_4").is(":checked");
+	chasm_save.cSkill6_5 = $("#cSkill6_5").is(":checked");
+	chasm_save.cSkill6_6 = $("#cSkill6_6").is(":checked");
+
+	chasm_save.cSkill7_1 = $("#cSkill7_1").is(":checked");
+	chasm_save.cSkill7_2 = $("#cSkill7_2").is(":checked");
+	chasm_save.cSkill7_3 = $("#cSkill7_3").is(":checked");
+	chasm_save.cSkill7_4 = $("#cSkill7_4").is(":checked");
+	chasm_save.cSkill7_5 = $("#cSkill7_5").is(":checked");
+	chasm_save.cSkill7_6 = $("#cSkill7_6").is(":checked");
+
+	chasm_save.cSkill8_1 = $("#cSkill8_1").is(":checked");
+	chasm_save.cSkill8_2 = $("#cSkill8_2").is(":checked");
+	chasm_save.cSkill8_3 = $("#cSkill8_3").is(":checked");
+	chasm_save.cSkill8_4 = $("#cSkill8_4").is(":checked");
+	chasm_save.cSkill8_5 = $("#cSkill8_5").is(":checked");
+	chasm_save.cSkill8_6 = $("#cSkill8_6").is(":checked");
+
+	chasm_save.cSkill9_1 = $("#cSkill9_1").is(":checked");
+	chasm_save.cSkill9_2 = $("#cSkill9_2").is(":checked");
+	chasm_save.cSkill9_3 = $("#cSkill9_3").is(":checked");
+	chasm_save.cSkill9_4 = $("#cSkill9_4").is(":checked");
+	chasm_save.cSkill9_5 = $("#cSkill9_5").is(":checked");
+	chasm_save.cSkill9_6 = $("#cSkill9_6").is(":checked");
+
+	chasm_save.cSkill10_1 = $("#cSkill10_1").is(":checked");
+	chasm_save.cSkill10_2 = $("#cSkill10_2").is(":checked");
+	chasm_save.cSkill10_3 = $("#cSkill10_3").is(":checked");
+	chasm_save.cSkill10_4 = $("#cSkill10_4").is(":checked");
+	chasm_save.cSkill10_5 = $("#cSkill10_5").is(":checked");
+	chasm_save.cSkill10_6 = $("#cSkill10_6").is(":checked");
 }
 
 function storeSave() {
