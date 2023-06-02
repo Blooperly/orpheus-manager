@@ -188,6 +188,18 @@ class saveData {
 	cSkill9;
 	cSkill10;
 
+	cSkill0_rank;
+	cSkill1_rank;
+	cSkill2_rank;
+	cSkill3_rank;
+	cSkill4_rank;
+	cSkill5_rank;
+	cSkill6_rank;
+	cSkill7_rank;
+	cSkill8_rank;
+	cSkill9_rank;
+	cSkill10_rank;
+
 	cSkill0_1;
 	cSkill0_2;
 	cSkill0_3;
@@ -297,6 +309,18 @@ class saveData {
 		this.cSkill8 = "";
 		this.cSkill9 = "";
 		this.cSkill10 = "";
+		
+		this.cSkill0_rank = "";
+		this.cSkill1_rank = "";
+		this.cSkill2_rank = "";
+		this.cSkill3_rank = "";
+		this.cSkill4_rank = "";
+		this.cSkill5_rank = "";
+		this.cSkill6_rank = "";
+		this.cSkill7_rank = "";
+		this.cSkill8_rank = "";
+		this.cSkill9_rank = "";
+		this.cSkill10_rank = "";
 
 		this.cSkill0_1 = false;
 		this.cSkill0_2 = false;
@@ -419,6 +443,18 @@ function loadSave() {
 		$("#cSkill8").html(chasm_save.cSkill8);
 		$("#cSkill9").html(chasm_save.cSkill9);
 		$("#cSkill10").html(chasm_save.cSkill10);
+		
+		$("#cSkill0_rank").html(chasm_save.cSkill0_rank);
+		$("#cSkill1_rank").html(chasm_save.cSkill1_rank);
+		$("#cSkill2_rank").html(chasm_save.cSkill2_rank);
+		$("#cSkill3_rank").html(chasm_save.cSkill3_rank);
+		$("#cSkill4_rank").html(chasm_save.cSkill4_rank);
+		$("#cSkill5_rank").html(chasm_save.cSkill5_rank);
+		$("#cSkill6_rank").html(chasm_save.cSkill6_rank);
+		$("#cSkill7_rank").html(chasm_save.cSkill7_rank);
+		$("#cSkill8_rank").html(chasm_save.cSkill8_rank);
+		$("#cSkill9_rank").html(chasm_save.cSkill9_rank);
+		$("#cSkill10_rank").html(chasm_save.cSkill10_rank);
 
 		if (chasm_save.cSkill0_1) $("#cSkill0_1").prop('checked', true);
 		if (chasm_save.cSkill0_2) $("#cSkill0_2").prop('checked', true);
@@ -531,6 +567,18 @@ function generateSave() {
 	chasm_save.cSkill8	= $("#cSkill8").html();
 	chasm_save.cSkill9	= $("#cSkill9").html();
 	chasm_save.cSkill10	= $("#cSkill10").html();
+
+	chasm_save.cSkill0_rank		= $("#cSkill0_rank").html();
+	chasm_save.cSkill1_rank		= $("#cSkill1_rank").html();
+	chasm_save.cSkill2_rank		= $("#cSkill2_rank").html();
+	chasm_save.cSkill3_rank		= $("#cSkill3_rank").html();
+	chasm_save.cSkill4_rank		= $("#cSkill4_rank").html();
+	chasm_save.cSkill5_rank		= $("#cSkill5_rank").html();
+	chasm_save.cSkill6_rank		= $("#cSkill6_rank").html();
+	chasm_save.cSkill7_rank		= $("#cSkill7_rank").html();
+	chasm_save.cSkill8_rank		= $("#cSkill8_rank").html();
+	chasm_save.cSkill9_rank		= $("#cSkill9_rank").html();
+	chasm_save.cSkill10_rank	= $("#cSkill10_rank").html();
 
 	chasm_save.cSkill0_1 = $("#cSkill0_1").is(":checked");
 	chasm_save.cSkill0_2 = $("#cSkill0_2").is(":checked");
