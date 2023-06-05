@@ -89,7 +89,7 @@ function displayDerivedAttr() {
 	if (per && foc) {
 		$("#derVigilance").html(Math.floor(0.5 * (per + foc)));
 	} else {
-		$("#derVigilance").html(Math.floor(""));
+		$("#derVigilance").html("");
 	}
 
 	if (cha && (wil || foc)) {
@@ -177,6 +177,16 @@ class saveData {
 	charExperience;
 
 	charEquipment;
+
+	humanityCurrent;
+	humanityMax;
+
+	strainMentalCurrent;
+	strainMentalMax;
+	strainPhysicalCurrent;
+	strainPhysicalMax;
+	strainSpiritualCurrent;
+	strainSpiritualMax;
 
 	cSkill0;
 	cSkill1;
@@ -474,6 +484,16 @@ class saveData {
 		this.charExperience = "";
 		
 		this.charEquipment = "";
+
+		this.humanityCurrent = "";
+		this.humanityMax = "";
+		
+		this.strainMentalCurrent = "";
+		this.strainMentalMax = "";
+		this.strainPhysicalCurrent = "";
+		this.strainPhysicalMax = "";
+		this.strainSpiritualCurrent = "";
+		this.strainSpiritualMax = "";
 		
 		this.cSkill0 = "";
 		this.cSkill1 = "";
@@ -784,6 +804,16 @@ function loadSave() {
 
 		$("#charEquipment").html(chasm_save.charEquipment);
 		
+		$("#humanityCurrent").html(chasm_save.humanityCurrent);
+		$("#humanityMax").html(chasm_save.humanityMax);
+		
+		$("#strainMentalCurrent").html(chasm_save.strainMentalCurrent);
+		$("#strainMentalMax").html(chasm_save.strainMentalMax);
+		$("#strainPhysicalCurrent").html(chasm_save.strainPhysicalCurrent);
+		$("#strainPhysicalMax").html(chasm_save.strainPhysicalMax);
+		$("#strainSpiritualCurrent").html(chasm_save.strainSpiritualCurrent);
+		$("#strainSpiritualMax").html(chasm_save.strainSpiritualMax);
+		
 		$("#cSkill0").html(chasm_save.cSkill0);
 		$("#cSkill1").html(chasm_save.cSkill1);
 		$("#cSkill2").html(chasm_save.cSkill2);
@@ -1082,6 +1112,16 @@ function generateSave() {
 	chasm_save.charExperience 	= $("#charExperience").html();
 
 	chasm_save.charEquipment	= $("#charEquipment").html();
+
+	chasm_save.humanityCurrent 	= $("#humanityCurrent").html();
+	chasm_save.humanityMax 		= $("#humanityMax").html();
+		
+	chasm_save.strainMentalCurrent 		= $("#strainMentalCurrent").html();
+	chasm_save.strainMentalMax 			= $("#strainMentalMax").html();
+	chasm_save.strainPhysicalCurrent 	= $("#strainPhysicalCurrent").html();
+	chasm_save.strainPhysicalMax 		= $("#strainPhysicalMax").html();
+	chasm_save.strainSpiritualCurrent 	= $("#strainSpiritualCurrent").html();
+	chasm_save.strainSpiritualMax 		= $("#strainSpiritualMax").html();
 
 	chasm_save.cSkill0	= $("#cSkill0").html();
 	chasm_save.cSkill1	= $("#cSkill1").html();
