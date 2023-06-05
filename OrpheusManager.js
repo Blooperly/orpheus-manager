@@ -183,6 +183,12 @@ class saveData {
 
 	mementoMori;
 
+	thresholdDanger;
+	thresholdDespair;
+	thresholdDisgust;
+
+	charNotes;
+
 	strainMentalCurrent;
 	strainMentalMax;
 	strainPhysicalCurrent;
@@ -491,6 +497,12 @@ class saveData {
 		this.humanityMax = "";
 
 		this.mementoMori = "";
+
+		this.thresholdDanger = "";
+		this.thresholdDespair = "";
+		this.thresholdDisgust = "";
+
+		this.charNotes = "";
 		
 		this.strainMentalCurrent = "";
 		this.strainMentalMax = "";
@@ -812,6 +824,12 @@ function loadSave() {
 		$("#humanityMax").html(chasm_save.humanityMax);
 		
 		$("#mementoMori").html(chasm_save.mementoMori);
+
+		$("#thresholdDanger").html(chasm_save.thresholdDanger);
+		$("#thresholdDespair").html(chasm_save.thresholdDespair);
+		$("#thresholdDisgust").html(chasm_save.thresholdDisgust);
+
+		$("#charNotes").html(chasm_save.charNotes);
 		
 		$("#strainMentalCurrent").html(chasm_save.strainMentalCurrent);
 		$("#strainMentalMax").html(chasm_save.strainMentalMax);
@@ -1122,7 +1140,13 @@ function generateSave() {
 	chasm_save.humanityCurrent 	= $("#humanityCurrent").html();
 	chasm_save.humanityMax 		= $("#humanityMax").html();
 	
-	chasm_save.mementoMori	= $("#mementoMori").html();
+	chasm_save.mementoMori		= $("#mementoMori").html();
+
+	chasm_save.thresholdDanger 	= $("#thresholdDanger").html();
+	chasm_save.thresholdDespair = $("#thresholdDespair").html();
+	chasm_save.thresholdDisgust = $("#thresholdDisgust").html();
+
+	chasm_save.charNotes 		= $("#charNotes").html();
 		
 	chasm_save.strainMentalCurrent 		= $("#strainMentalCurrent").html();
 	chasm_save.strainMentalMax 			= $("#strainMentalMax").html();

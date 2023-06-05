@@ -57,9 +57,12 @@
 		<div class = "row">
 			<!--Character Sheet-->
 			<div id = "character_sheet" class = "col s12 m12">
-				<a id = "debug_save_game" class = "waves-effect waves-light btn orange lighten-2 black-text" onclick = "storeSave();">Save</a>
-				<a id = "debug_clear_game" class = "waves-effect waves-light btn orange lighten-2 black-text" onclick = "clearSave();">Clear</a>
-				<a id = "debug_copy_game" class = "waves-effect waves-light btn orange lighten-2 black-text" onclick = "copySave();">Copy</a>
+				<div class = "card white flex" style = "padding: 10px 10px 10px 10px; margin-bottom: 10px;">
+					<a id = "debug_save_game" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "storeSave();">Save</a>
+					<a id = "debug_clear_game" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "clearSave();">Clear</a>
+					<a id = "debug_copy_game" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "copySave();">Copy</a>
+				</div>
+
 				<div class = "card white flex">
 					<div id = "left_column">
 						
@@ -500,7 +503,7 @@
 							<!--Memento Mori-->
 							<div id = "memento_mori_box" class = "flex">
 								<div style = "background-color: #818285; width: 170px; height: 30px; padding-left: 8px;"><p style = "padding-top: 2px; font-weight: bold; font-size: 1.2em;">Memento Mori</p></div>
-								<div style = "background-color: #818285; width: 70px; height: 30px; border-left: 1px solid black; padding-top: 3px;" id = "mementoMori" class = "hcenter" contenteditable = "true"></div>
+								<div style = "background-color: #818285; width: 66px; height: 30px; border-left: 1px solid black; padding-top: 3px;" id = "mementoMori" class = "hcenter" contenteditable = "true"></div>
 							</div>
 						</div>
 						<div id = "mid_mid_right_column">
@@ -755,22 +758,21 @@
 								<table class = "styled-table">
 									<thead>
 										<tr>
-											<th>Horror Thresholds</th>
-											<th></th>
+											<th colspan = "2">Horror Thresholds</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>Danger</td>
-											<td></td>
+											<td style = "width: 145px;" class = "hcenter" contenteditable = "true" id = "thresholdDanger"></td>
 										</tr>
 										<tr>
 											<td>Despair</td>
-											<td></td>
+											<td style = "width: 145px;" class = "hcenter" contenteditable = "true" id = "thresholdDespair"></td>
 										</tr>
 										<tr>
 											<td>Disgust</td>
-											<td></td>
+											<td style = "width: 145px;" class = "hcenter" contenteditable = "true" id = "thresholdDisgust"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -794,6 +796,24 @@
 								</table>
 							</div>
 						</div>
+					</div>
+				</div>
+				
+				<div class = "card white flex" style = "padding: 10px 10px 10px 10px; margin-top: 10px;">
+					<!--Notes-->
+					<div id = "notes_box">
+						<table class = "styled-table">
+							<thead>
+								<tr>
+									<th style = "width: 940px;">Notes</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td id = "charNotes" style = "vertical-align: top; height: 256px;" contenteditable = "true"></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>

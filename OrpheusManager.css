@@ -321,3 +321,11 @@ form {
 
 	margin-top: 10px;
 }
+
+#notes_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 0px;
+}
