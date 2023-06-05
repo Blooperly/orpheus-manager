@@ -294,6 +294,8 @@ form {
 	border-color: black;
 
 	margin-top: 10px;
+
+	width: fit-content;
 }
 
 #noncombat_skills_box {

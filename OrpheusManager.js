@@ -181,6 +181,8 @@ class saveData {
 	humanityCurrent;
 	humanityMax;
 
+	mementoMori;
+
 	strainMentalCurrent;
 	strainMentalMax;
 	strainPhysicalCurrent;
@@ -487,6 +489,8 @@ class saveData {
 
 		this.humanityCurrent = "";
 		this.humanityMax = "";
+
+		this.mementoMori = "";
 		
 		this.strainMentalCurrent = "";
 		this.strainMentalMax = "";
@@ -807,6 +811,8 @@ function loadSave() {
 		$("#humanityCurrent").html(chasm_save.humanityCurrent);
 		$("#humanityMax").html(chasm_save.humanityMax);
 		
+		$("#mementoMori").html(chasm_save.mementoMori);
+		
 		$("#strainMentalCurrent").html(chasm_save.strainMentalCurrent);
 		$("#strainMentalMax").html(chasm_save.strainMentalMax);
 		$("#strainPhysicalCurrent").html(chasm_save.strainPhysicalCurrent);
@@ -1115,6 +1121,8 @@ function generateSave() {
 
 	chasm_save.humanityCurrent 	= $("#humanityCurrent").html();
 	chasm_save.humanityMax 		= $("#humanityMax").html();
+	
+	chasm_save.mementoMori	= $("#mementoMori").html();
 		
 	chasm_save.strainMentalCurrent 		= $("#strainMentalCurrent").html();
 	chasm_save.strainMentalMax 			= $("#strainMentalMax").html();
