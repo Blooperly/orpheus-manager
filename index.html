@@ -55,12 +55,17 @@
 	<!--Game-->
 	<div id = "manager_box" class = "container noble" style = "display: none;">
 		<div class = "row">
+			<!--Hidden Elements-->
+			<input type = "file" id = "fileinput" class = "hidden">
+
 			<!--Character Sheet-->
 			<div id = "character_sheet" class = "col s12 m12">
 				<div class = "card white flex" style = "padding: 10px 10px 10px 10px; margin-bottom: 10px;">
-					<a id = "debug_save_game" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "storeSave();">Save</a>
-					<a id = "debug_clear_game" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "clearSave();">Clear</a>
-					<a id = "debug_copy_game" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "copySave();">Copy</a>
+					<a id = "debug_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "storeSave();">Save</a>
+					<a id = "debug_clear_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "clearSave();">Clear</a>
+					<a id = "debug_copy_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "copySave();">Copy</a>
+					<a id = "debug_download_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "downloadSave();">Download</a>
+					<a id = "debug_import_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "importSave();">Import</a>
 				</div>
 
 				<div class = "card white flex">
@@ -175,45 +180,93 @@
 							<table class = "styled-table">
 								<thead>
 									<tr>
-										<th>Wounds</th>
+										<th colspan = "2">Wounds</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td style = "background-color: #00aeef;">Clarity:</td>
+										<td style = "background-color: #00aeef;" colspan = "2">Clarity:</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #44c8f5;">Light</td>
+										<td style = "background-color: #44c8f5; width: 105px;">Light</td>
+										<td style = "background-color: #44c8f5; border-left: none;">
+											<input id = "wClarityLight1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wClarityLight2" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wClarityLight3" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wClarityLight4" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #44c8f5;">Severe</td>
+										<td style = "background-color: #44c8f5; width: 105px;">Severe</td>
+										<td style = "background-color: #44c8f5; border-left: none;">
+											<input id = "wClaritySevere1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wClaritySevere2" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wClaritySevere3" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wClaritySevere4" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #44c8f5;">Critical</td>
+										<td style = "background-color: #44c8f5; width: 105px;">Critical</td>
+										<td style = "background-color: #44c8f5; border-left: none;">
+											<input id = "wClarityCritical1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wClarityCritical2" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #d2232a;">Health:</td>
+										<td style = "background-color: #d2232a;" colspan = "2">Health:</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #e18067;">Light</td>
+										<td style = "background-color: #e18067; width: 105px;">Light</td>
+										<td style = "background-color: #e18067; border-left: none;">
+											<input id = "wHealthLight1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wHealthLight2" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wHealthLight3" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wHealthLight4" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #e18067;">Severe</td>
+										<td style = "background-color: #e18067; width: 105px;">Severe</td>
+										<td style = "background-color: #e18067; border-left: none;">
+											<input id = "wHealthSevere1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wHealthSevere2" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wHealthSevere3" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wHealthSevere4" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #e18067;">Critical</td>
+										<td style = "background-color: #e18067; width: 105px;">Critical</td>
+										<td style = "background-color: #e18067; border-left: none;">
+											<input id = "wHealthCritical1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wHealthCritical2" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #41ad49;">Stress:</td>
+										<td style = "background-color: #41ad49;" colspan = "2">Stress:</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #93c789;">Light</td>
+										<td style = "background-color: #93c789; width: 105px;">Light</td>
+										<td style = "background-color: #93c789; border-left: none;">
+											<input id = "wStressLight1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wStressLight2" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wStressLight3" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wStressLight4" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #93c789;">Severe</td>
+										<td style = "background-color: #93c789; width: 105px;">Severe</td>
+										<td style = "background-color: #93c789; border-left: none;">
+											<input id = "wStressSevere1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wStressSevere2" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wStressSevere3" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wStressSevere4" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 									<tr>
-										<td style = "background-color: #93c789;">Critical</td>
+										<td style = "background-color: #93c789; width: 105px;">Critical</td>
+										<td style = "background-color: #93c789; border-left: none;">
+											<input id = "wStressCritical1" type = "checkbox" class = "wound_checkbox" />
+											<input id = "wStressCritical2" type = "checkbox" class = "wound_checkbox" />
+										</td>
 									</tr>
 								</tbody>
 							</table>

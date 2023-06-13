@@ -16,6 +16,9 @@ function ManagerInit() {
 	// Load Saved Sheet
 	loadSave();
 
+	// Event handlers
+	$("#fileinput").on("change", importHandler);
+
 	// Loading finished, reveal the game
 	refreshUi();
 	$("#manager_box").css("display", "block")
@@ -470,6 +473,45 @@ class saveData {
 	nSkill18_5;
 	nSkill18_6;
 
+	wClarityLight1;
+	wClarityLight2;
+	wClarityLight3;
+	wClarityLight4;
+
+	wClaritySevere1;
+	wClaritySevere2;
+	wClaritySevere3;
+	wClaritySevere4;
+
+	wClarityCritical1;
+	wClarityCritical2;
+
+	wHealthLight1;
+	wHealthLight2;
+	wHealthLight3;
+	wHealthLight4;
+
+	wHealthSevere1;
+	wHealthSevere2;
+	wHealthSevere3;
+	wHealthSevere4;
+
+	wHealthCritical1;
+	wHealthCritical2;
+
+	wStressLight1;
+	wStressLight2;
+	wStressLight3;
+	wStressLight4;
+
+	wStressSevere1;
+	wStressSevere2;
+	wStressSevere3;
+	wStressSevere4;
+
+	wStressCritical1;
+	wStressCritical2;
+
 	constructor() {
 		this.saveCount = 0;
 
@@ -784,6 +826,45 @@ class saveData {
 		this.nSkill18_4 = false;
 		this.nSkill18_5 = false;
 		this.nSkill18_6 = false;
+
+		this.wClarityLight1;
+		this.wClarityLight2;
+		this.wClarityLight3;
+		this.wClarityLight4;
+	
+		this.wClaritySevere1;
+		this.wClaritySevere2;
+		this.wClaritySevere3;
+		this.wClaritySevere4;
+	
+		this.wClarityCritical1;
+		this.wClarityCritical2;
+	
+		this.wHealthLight1;
+		this.wHealthLight2;
+		this.wHealthLight3;
+		this.wHealthLight4;
+	
+		this.wHealthSevere1;
+		this.wHealthSevere2;
+		this.wHealthSevere3;
+		this.wHealthSevere4;
+	
+		this.wHealthCritical1;
+		this.wHealthCritical2;
+	
+		this.wStressLight1;
+		this.wStressLight2;
+		this.wStressLight3;
+		this.wStressLight4;
+	
+		this.wStressSevere1;
+		this.wStressSevere2;
+		this.wStressSevere3;
+		this.wStressSevere4;
+	
+		this.wStressCritical1;
+		this.wStressCritical2;
 	}
 }
 
@@ -792,12 +873,16 @@ var chasm_incoming_save;
 const save_path = "orpheus";
 
 function loadSave() {
-	chasm_save = new saveData();
-	chasm_incoming_save = lib_chasm_load_save(save_path);
+	loadSaveFromObject(lib_chasm_load_save(save_path));
+	refreshUi();
+}
 
-	if (chasm_incoming_save) {
+function loadSaveFromObject(object) {
+	if (object) {
+		chasm_save = new saveData();
+
 		// Merge Save
-		lib_chasm_merge_save(chasm_save, chasm_incoming_save);
+		lib_chasm_merge_save(chasm_save, object);
 
 		// Load Game
 		$("#attrPer").html(chasm_save.attrPer);
@@ -1111,6 +1196,45 @@ function loadSave() {
 		if (chasm_save.nSkill18_4) $("#nSkill18_4").prop('checked', true);
 		if (chasm_save.nSkill18_5) $("#nSkill18_5").prop('checked', true);
 		if (chasm_save.nSkill18_6) $("#nSkill18_6").prop('checked', true);
+
+		if (chasm_save.wClarityLight1) $("#wClarityLight1").prop('checked', true);
+		if (chasm_save.wClarityLight2) $("#wClarityLight2").prop('checked', true);
+		if (chasm_save.wClarityLight3) $("#wClarityLight3").prop('checked', true);
+		if (chasm_save.wClarityLight4) $("#wClarityLight4").prop('checked', true);
+	
+		if (chasm_save.wClaritySevere1) $("#wClaritySevere1").prop('checked', true);
+		if (chasm_save.wClaritySevere2) $("#wClaritySevere2").prop('checked', true);
+		if (chasm_save.wClaritySevere3) $("#wClaritySevere3").prop('checked', true);
+		if (chasm_save.wClaritySevere4) $("#wClaritySevere4").prop('checked', true);
+	
+		if (chasm_save.wClarityCritical1) $("#wClarityCritical1").prop('checked', true);
+		if (chasm_save.wClarityCritical2) $("#wClarityCritical2").prop('checked', true);
+	
+		if (chasm_save.wHealthLight1) $("#wHealthLight1").prop('checked', true);
+		if (chasm_save.wHealthLight2) $("#wHealthLight2").prop('checked', true);
+		if (chasm_save.wHealthLight3) $("#wHealthLight3").prop('checked', true);
+		if (chasm_save.wHealthLight4) $("#wHealthLight4").prop('checked', true);
+
+		if (chasm_save.wHealthSevere1) $("#wHealthSevere1").prop('checked', true);
+		if (chasm_save.wHealthSevere2) $("#wHealthSevere2").prop('checked', true);
+		if (chasm_save.wHealthSevere3) $("#wHealthSevere3").prop('checked', true);
+		if (chasm_save.wHealthSevere4) $("#wHealthSevere4").prop('checked', true);
+
+		if (chasm_save.wHealthCritical1) $("#wHealthCritical1").prop('checked', true);
+		if (chasm_save.wHealthCritical2) $("#wHealthCritical2").prop('checked', true);
+
+		if (chasm_save.wStressLight1) $("#wStressLight1").prop('checked', true);
+		if (chasm_save.wStressLight2) $("#wStressLight2").prop('checked', true);
+		if (chasm_save.wStressLight3) $("#wStressLight3").prop('checked', true);
+		if (chasm_save.wStressLight4) $("#wStressLight4").prop('checked', true);
+
+		if (chasm_save.wStressSevere1) $("#wStressSevere1").prop('checked', true);
+		if (chasm_save.wStressSevere2) $("#wStressSevere2").prop('checked', true);
+		if (chasm_save.wStressSevere3) $("#wStressSevere3").prop('checked', true);
+		if (chasm_save.wStressSevere4) $("#wStressSevere4").prop('checked', true);
+
+		if (chasm_save.wStressCritical1) $("#wStressCritical1").prop('checked', true);
+		if (chasm_save.wStressCritical2) $("#wStressCritical2").prop('checked', true);
 	}
 }
 
@@ -1428,6 +1552,45 @@ function generateSave() {
 	chasm_save.nSkill18_4 = $("#nSkill18_4").is(":checked");
 	chasm_save.nSkill18_5 = $("#nSkill18_5").is(":checked");
 	chasm_save.nSkill18_6 = $("#nSkill18_6").is(":checked");
+
+	chasm_save.wClarityLight1 = $("#wClarityLight1").is(":checked");
+	chasm_save.wClarityLight2 = $("#wClarityLight2").is(":checked");
+	chasm_save.wClarityLight3 = $("#wClarityLight3").is(":checked");
+	chasm_save.wClarityLight4 = $("#wClarityLight4").is(":checked");
+
+	chasm_save.wClaritySevere1 = $("#wClaritySevere1").is(":checked");
+	chasm_save.wClaritySevere2 = $("#wClaritySevere2").is(":checked");
+	chasm_save.wClaritySevere3 = $("#wClaritySevere3").is(":checked");
+	chasm_save.wClaritySevere4 = $("#wClaritySevere4").is(":checked");
+
+	chasm_save.wClarityCritical1 = $("#wClarityCritical1").is(":checked");
+	chasm_save.wClarityCritical2 = $("#wClarityCritical2").is(":checked");
+
+	chasm_save.wHealthLight1 = $("#wHealthLight1").is(":checked");
+	chasm_save.wHealthLight2 = $("#wHealthLight2").is(":checked");
+	chasm_save.wHealthLight3 = $("#wHealthLight3").is(":checked");
+	chasm_save.wHealthLight4 = $("#wHealthLight4").is(":checked");
+
+	chasm_save.wHealthSevere1 = $("#wHealthSevere1").is(":checked");
+	chasm_save.wHealthSevere2 = $("#wHealthSevere2").is(":checked");
+	chasm_save.wHealthSevere3 = $("#wHealthSevere3").is(":checked");
+	chasm_save.wHealthSevere4 = $("#wHealthSevere4").is(":checked");
+
+	chasm_save.wHealthCritical1 = $("#wHealthCritical1").is(":checked");
+	chasm_save.wHealthCritical2 = $("#wHealthCritical2").is(":checked");
+
+	chasm_save.wStressLight1 = $("#wStressLight1").is(":checked");
+	chasm_save.wStressLight2 = $("#wStressLight2").is(":checked");
+	chasm_save.wStressLight3 = $("#wStressLight3").is(":checked");
+	chasm_save.wStressLight4 = $("#wStressLight4").is(":checked");
+
+	chasm_save.wStressSevere1 = $("#wStressSevere1").is(":checked");
+	chasm_save.wStressSevere2 = $("#wStressSevere2").is(":checked");
+	chasm_save.wStressSevere3 = $("#wStressSevere3").is(":checked");
+	chasm_save.wStressSevere4 = $("#wStressSevere4").is(":checked");
+
+	chasm_save.wStressCritical1 = $("#wStressCritical1").is(":checked");
+	chasm_save.wStressCritical2 = $("#wStressCritical2").is(":checked");
 }
 
 function storeSave() {
@@ -1467,4 +1630,46 @@ function autoSave() {
 
 function clearSave() {
 	lib_chasm_delete_save(save_path);
+}
+
+function downloadSave() {
+	// Create an invisible A element
+	var textArea = document.createElement("a");
+	// Avoid scrolling to bottom
+	textArea.style.top = "0";
+	textArea.style.left = "0";
+	textArea.style.position = "fixed";
+	textArea.style.display = "none";
+
+	textArea.href = 'data:attachment/text,' + encodeURI(JSON.stringify(chasm_save));
+	let filename = $("#charName").html();
+	filename = filename.replace(/\s/g, '');
+	filename = filename.substring(0, 20);
+	filename += ".txt";
+	textArea.download = filename;
+
+	document.body.appendChild(textArea);
+	textArea.click();
+
+	// Cleanup
+	document.body.removeChild(textArea);
+}
+
+function importSave() {
+	if (window.File && window.FileReader && window.FileList && window.Blob) {
+		$("#fileinput").click();
+	}
+}
+
+function importHandler() {
+	if ($("#fileinput").val() != "") {
+		let reader = new FileReader();
+		let files = $("#fileinput").prop("files");
+		reader.readAsText(files[0], 'UTF-8');
+	
+		reader.onload = function() {
+			loadSaveFromObject(JSON.parse(this.result));
+			refreshUi();
+		}
+	}
 }

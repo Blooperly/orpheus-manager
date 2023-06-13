@@ -168,6 +168,10 @@ form {
 	margin-right: 3px;
 }
 
+.wound_checkbox {
+	margin-right: 10px;
+}
+
 /* ID's */
 #title {
 	padding-left: 34px;
