@@ -38,7 +38,15 @@ function ManagerInit() {
 
 // Refresh UI
 function refreshUi() {
-	displayDerivedAttr();
+	let per = parseNumerals($("#attrPer").html());
+	let foc = parseNumerals($("#attrFoc").html());
+	let dex = parseNumerals($("#attrDex").html());
+	let vit = parseNumerals($("#attrVit").html());
+	let cha = parseNumerals($("#attrCha").html());
+	let wil = parseNumerals($("#attrWil").html());
+
+	displayDerivedAttr(per, foc, dex, vit, cha, wil);
+	displayDerivedStrain(per, foc, dex, vit, cha, wil);
 }
 
 // Derived Attributes
@@ -57,14 +65,7 @@ function parseNumerals(string) {
 	return 0;
 }
 
-function displayDerivedAttr() {
-	let per = parseNumerals($("#attrPer").html());
-	let foc = parseNumerals($("#attrFoc").html());
-	let dex = parseNumerals($("#attrDex").html());
-	let vit = parseNumerals($("#attrVit").html());
-	let cha = parseNumerals($("#attrCha").html());
-	let wil = parseNumerals($("#attrWil").html());
-
+function displayDerivedAttr(per, foc, dex, vit, cha, wil) {
 	if (dex && vit) {
 		$("#derMelee").html(Math.floor(0.5 * (dex + vit)));
 		$("#derParry").html(Math.floor(0.5 * (dex + vit)));
@@ -146,6 +147,17 @@ function displayDerivedAttr() {
 	} else {
 		$("#derInitiative").html("");
 	}
+}
+
+
+function displayDerivedStrain(per, foc, dex, vit, cha, wil) {
+	let ment = per + (3 * foc);
+	let phys = dex + (3 * vit);
+	let spir = cha + (3 * wil);
+
+	$("#strainMentalMax").html(ment.toString());
+	$("#strainPhysicalMax").html(phys.toString());
+	$("#strainSpiritualMax").html(spir.toString());
 }
 
 function rollDice() {
@@ -230,11 +242,8 @@ class saveData {
 	charAbilities;
 
 	strainMentalCurrent;
-	strainMentalMax;
 	strainPhysicalCurrent;
-	strainPhysicalMax;
 	strainSpiritualCurrent;
-	strainSpiritualMax;
 
 	cSkill0;
 	cSkill1;
@@ -585,11 +594,8 @@ class saveData {
 		this.charAbilities = "";
 		
 		this.strainMentalCurrent = "";
-		this.strainMentalMax = "";
 		this.strainPhysicalCurrent = "";
-		this.strainPhysicalMax = "";
 		this.strainSpiritualCurrent = "";
-		this.strainSpiritualMax = "";
 		
 		this.cSkill0 = "";
 		this.cSkill1 = "";
@@ -956,11 +962,8 @@ function loadSaveFromObject(object) {
 		$("#charAbilities").html(chasm_save.charAbilities);
 		
 		$("#strainMentalCurrent").html(chasm_save.strainMentalCurrent);
-		$("#strainMentalMax").html(chasm_save.strainMentalMax);
 		$("#strainPhysicalCurrent").html(chasm_save.strainPhysicalCurrent);
-		$("#strainPhysicalMax").html(chasm_save.strainPhysicalMax);
 		$("#strainSpiritualCurrent").html(chasm_save.strainSpiritualCurrent);
-		$("#strainSpiritualMax").html(chasm_save.strainSpiritualMax);
 		
 		$("#cSkill0").html(chasm_save.cSkill0);
 		$("#cSkill1").html(chasm_save.cSkill1);
@@ -1313,11 +1316,8 @@ function generateSave() {
 	chasm_save.charAbilities 	= $("#charAbilities").html();
 		
 	chasm_save.strainMentalCurrent 		= $("#strainMentalCurrent").html();
-	chasm_save.strainMentalMax 			= $("#strainMentalMax").html();
 	chasm_save.strainPhysicalCurrent 	= $("#strainPhysicalCurrent").html();
-	chasm_save.strainPhysicalMax 		= $("#strainPhysicalMax").html();
 	chasm_save.strainSpiritualCurrent 	= $("#strainSpiritualCurrent").html();
-	chasm_save.strainSpiritualMax 		= $("#strainSpiritualMax").html();
 
 	chasm_save.cSkill0	= $("#cSkill0").html();
 	chasm_save.cSkill1	= $("#cSkill1").html();
