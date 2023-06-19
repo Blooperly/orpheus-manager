@@ -148,6 +148,42 @@ function displayDerivedAttr() {
 	}
 }
 
+function rollDice() {
+	let r1 = Math.floor(Math.random() * 3) - 1;
+	let r2 = Math.floor(Math.random() * 3) - 1;
+	let r3 = Math.floor(Math.random() * 3) - 1;
+
+	let rr = r1 + r2 + r3;
+	let rrr = rr.toString();
+	if (rr > 0) rrr = "+" + rrr;
+
+	if (r1 == -1) {
+		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
+	} else if (r1 == 0) {
+		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
+	} else {
+		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
+	}
+
+	if (r2 == -1) {
+		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
+	} else if (r2 == 0) {
+		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
+	} else {
+		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
+	}
+
+	if (r3 == -1) {
+		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
+	} else if (r3 == 0) {
+		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
+	} else {
+		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
+	}
+	
+	$("#roller_result").html(rrr);
+}
+
 // Materialize UI
 $(document).ready(function(){
 	M.AutoInit();
@@ -191,6 +227,7 @@ class saveData {
 	thresholdDisgust;
 
 	charNotes;
+	charAbilities;
 
 	strainMentalCurrent;
 	strainMentalMax;
@@ -545,6 +582,7 @@ class saveData {
 		this.thresholdDisgust = "";
 
 		this.charNotes = "";
+		this.charAbilities = "";
 		
 		this.strainMentalCurrent = "";
 		this.strainMentalMax = "";
@@ -915,6 +953,7 @@ function loadSaveFromObject(object) {
 		$("#thresholdDisgust").html(chasm_save.thresholdDisgust);
 
 		$("#charNotes").html(chasm_save.charNotes);
+		$("#charAbilities").html(chasm_save.charAbilities);
 		
 		$("#strainMentalCurrent").html(chasm_save.strainMentalCurrent);
 		$("#strainMentalMax").html(chasm_save.strainMentalMax);
@@ -1271,6 +1310,7 @@ function generateSave() {
 	chasm_save.thresholdDisgust = $("#thresholdDisgust").html();
 
 	chasm_save.charNotes 		= $("#charNotes").html();
+	chasm_save.charAbilities 	= $("#charAbilities").html();
 		
 	chasm_save.strainMentalCurrent 		= $("#strainMentalCurrent").html();
 	chasm_save.strainMentalMax 			= $("#strainMentalMax").html();

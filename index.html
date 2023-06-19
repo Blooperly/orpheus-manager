@@ -853,20 +853,64 @@
 				</div>
 				
 				<div class = "card white flex" style = "padding: 10px 10px 10px 10px; margin-top: 10px;">
-					<!--Notes-->
-					<div id = "notes_box">
-						<table class = "styled-table">
-							<thead>
-								<tr>
-									<th style = "width: 940px;">Notes</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td id = "charNotes" style = "vertical-align: top; height: 256px;" contenteditable = "true"></td>
-								</tr>
-							</tbody>
-						</table>
+					<div id = "supplement_left_column">
+						<!--Roller-->
+						<div id = "roller_box">
+							<table class = "styled-table">
+								<thead>
+									<tr>
+										<th>Dice Roller</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style = "vertical-align: top; padding: 0px 0px 0px 0px;">
+											<div class = "flex" style = "padding-top: 15px; padding-bottom: 15px; background-color: #e4e4e7;">
+												<a id = "roller" class = "waves-effect waves-light btn orange lighten-2 black-text vertcenter" style = "margin-left: 42px; margin-right: 30px; margin-top: 7px;" onclick = "rollDice();">Roll</a>
+												<div id = "roller_1" style = "width: 50px; height: 50px; margin-right: 20px; border: 1px solid black; border-radius: 12px; background-color: white;"></div>
+												<div id = "roller_2" style = "width: 50px; height: 50px; margin-right: 20px; border: 1px solid black; border-radius: 12px; background-color: white;"></div>
+												<div id = "roller_3" style = "width: 50px; height: 50px; margin-right: 20px; border: 1px solid black; border-radius: 12px; background-color: white;"></div>
+												<div class = "hcenter vertcenter" style = "height: 50px; margin-right: 20px;"><p style = "font-size: 1.6em;">=</p></div>
+												<div class = "hcenter vertcenter" style = "height: 50px; margin-right: 20px;"><p id = "roller_result" style = "font-size: 1.6em;"></p></div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<!--Notes-->
+						<div id = "notes_box">
+							<table class = "styled-table">
+								<thead>
+									<tr>
+										<th>Notes</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td id = "charNotes" style = "vertical-align: top; height: 256px;" contenteditable = "true"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div id = "supplement_right_column">
+						<!--Abilities-->
+						<div id = "abilities_box">
+							<table class = "styled-table">
+								<thead>
+									<tr>
+										<th>Abilities</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td id = "charAbilities" style = "vertical-align: top; height: 385px;" contenteditable = "true"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>

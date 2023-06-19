@@ -222,6 +222,15 @@ form {
 	width: 438px;
 }
 
+#supplement_left_column {
+	width: 465px;
+	margin-right: 10px;
+}
+
+#supplement_right_column {
+	width: 465px;
+}
+
 #attributes_box {
 	border-width: 2px;
 	border-style: solid;
@@ -326,7 +335,23 @@ form {
 	margin-top: 10px;
 }
 
+#roller_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 0px;
+}
+
 #notes_box {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+
+	margin-top: 10px;
+}
+
+#abilities_box {
 	border-width: 2px;
 	border-style: solid;
 	border-color: black;
