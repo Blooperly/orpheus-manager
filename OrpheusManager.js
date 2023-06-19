@@ -18,6 +18,12 @@ function ManagerInit() {
 
 	// Event handlers
 	$("#fileinput").on("change", importHandler);
+	$('#attrPer').on('blur', refreshUi);
+	$('#attrFoc').on('blur', refreshUi);
+	$('#attrDex').on('blur', refreshUi);
+	$('#attrVit').on('blur', refreshUi);
+	$('#attrCha').on('blur', refreshUi);
+	$('#attrWil').on('blur', refreshUi);
 
 	// Loading finished, reveal the game
 	refreshUi();
@@ -31,6 +37,42 @@ function ManagerInit() {
 // +-----------------+
 // | Button Handling |
 // +-----------------+
+
+function rollDice() {
+	let r1 = Math.floor(Math.random() * 3) - 1;
+	let r2 = Math.floor(Math.random() * 3) - 1;
+	let r3 = Math.floor(Math.random() * 3) - 1;
+
+	let rr = r1 + r2 + r3;
+	let rrr = rr.toString();
+	if (rr > 0) rrr = "+" + rrr;
+
+	if (r1 == -1) {
+		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
+	} else if (r1 == 0) {
+		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
+	} else {
+		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
+	}
+
+	if (r2 == -1) {
+		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
+	} else if (r2 == 0) {
+		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
+	} else {
+		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
+	}
+
+	if (r3 == -1) {
+		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
+	} else if (r3 == 0) {
+		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
+	} else {
+		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
+	}
+	
+	$("#roller_result").html(rrr);
+}
 
 // +---------------+
 // | UI Management |
@@ -47,6 +89,7 @@ function refreshUi() {
 
 	displayDerivedAttr(per, foc, dex, vit, cha, wil);
 	displayDerivedStrain(per, foc, dex, vit, cha, wil);
+	displayWoundBoxes(foc, vit, wil);
 }
 
 // Derived Attributes
@@ -149,7 +192,6 @@ function displayDerivedAttr(per, foc, dex, vit, cha, wil) {
 	}
 }
 
-
 function displayDerivedStrain(per, foc, dex, vit, cha, wil) {
 	let ment = per + (3 * foc);
 	let phys = dex + (3 * vit);
@@ -160,40 +202,156 @@ function displayDerivedStrain(per, foc, dex, vit, cha, wil) {
 	$("#strainSpiritualMax").html(spir.toString());
 }
 
-function rollDice() {
-	let r1 = Math.floor(Math.random() * 3) - 1;
-	let r2 = Math.floor(Math.random() * 3) - 1;
-	let r3 = Math.floor(Math.random() * 3) - 1;
-
-	let rr = r1 + r2 + r3;
-	let rrr = rr.toString();
-	if (rr > 0) rrr = "+" + rrr;
-
-	if (r1 == -1) {
-		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
-	} else if (r1 == 0) {
-		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
+function displayWoundBoxes(foc, vit, wil) {
+	if (foc >= 5) {
+		$("#wClarityLight3").attr("disabled", false);
+		$("#wClarityLight4").attr("disabled", false);
+		
+		$("#wClaritySevere3").attr("disabled", false);
+		$("#wClaritySevere4").attr("disabled", false);
+		
+		$("#wClarityCritical2").attr("disabled", false);
+	} else if (foc >= 4) {
+		$("#wClarityLight3").attr("disabled", false);
+		$("#wClarityLight4").attr("disabled", false);
+		
+		$("#wClaritySevere3").attr("disabled", false);
+		$("#wClaritySevere4").attr("disabled", true);
+		
+		$("#wClarityCritical2").attr("disabled", false);
+	} else if (foc >= 3) {
+		$("#wClarityLight3").attr("disabled", false);
+		$("#wClarityLight4").attr("disabled", true);
+		
+		$("#wClaritySevere3").attr("disabled", false);
+		$("#wClaritySevere4").attr("disabled", true);
+		
+		$("#wClarityCritical2").attr("disabled", false);
+	} else if (foc >= 2) {
+		$("#wClarityLight3").attr("disabled", false);
+		$("#wClarityLight4").attr("disabled", true);
+		
+		$("#wClaritySevere3").attr("disabled", false);
+		$("#wClaritySevere4").attr("disabled", true);
+		
+		$("#wClarityCritical2").attr("disabled", true);
+	} else if (foc >= 1) {
+		$("#wClarityLight3").attr("disabled", false);
+		$("#wClarityLight4").attr("disabled", true);
+		
+		$("#wClaritySevere3").attr("disabled", true);
+		$("#wClaritySevere4").attr("disabled", true);
+		
+		$("#wClarityCritical2").attr("disabled", true);
 	} else {
-		$("#roller_1").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
-	}
-
-	if (r2 == -1) {
-		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
-	} else if (r2 == 0) {
-		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
-	} else {
-		$("#roller_2").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
-	}
-
-	if (r3 == -1) {
-		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_dissatisfied</i>");
-	} else if (r3 == 0) {
-		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_neutral</i>");
-	} else {
-		$("#roller_3").html("<i class = 'material-icons' style = 'font-size: 48px;'>sentiment_very_satisfied</i>");
+		$("#wClarityLight3").attr("disabled", true);
+		$("#wClarityLight4").attr("disabled", true);
+		
+		$("#wClaritySevere3").attr("disabled", true);
+		$("#wClaritySevere4").attr("disabled", true);
+		
+		$("#wClarityCritical2").attr("disabled", true);
 	}
 	
-	$("#roller_result").html(rrr);
+	if (vit >= 5) {
+		$("#wHealthLight3").attr("disabled", false);
+		$("#wHealthLight4").attr("disabled", false);
+		
+		$("#wHealthSevere3").attr("disabled", false);
+		$("#wHealthSevere4").attr("disabled", false);
+		
+		$("#wHealthCritical2").attr("disabled", false);
+	} else if (vit >= 4) {
+		$("#wHealthLight3").attr("disabled", false);
+		$("#wHealthLight4").attr("disabled", false);
+		
+		$("#wHealthSevere3").attr("disabled", false);
+		$("#wHealthSevere4").attr("disabled", true);
+		
+		$("#wHealthCritical2").attr("disabled", false);
+	} else if (vit >= 3) {
+		$("#wHealthLight3").attr("disabled", false);
+		$("#wHealthLight4").attr("disabled", true);
+		
+		$("#wHealthSevere3").attr("disabled", false);
+		$("#wHealthSevere4").attr("disabled", true);
+		
+		$("#wHealthCritical2").attr("disabled", false);
+	} else if (vit >= 2) {
+		$("#wHealthLight3").attr("disabled", false);
+		$("#wHealthLight4").attr("disabled", true);
+		
+		$("#wHealthSevere3").attr("disabled", false);
+		$("#wHealthSevere4").attr("disabled", true);
+		
+		$("#wHealthCritical2").attr("disabled", true);
+	} else if (vit >= 1) {
+		$("#wHealthLight3").attr("disabled", false);
+		$("#wHealthLight4").attr("disabled", true);
+		
+		$("#wHealthSevere3").attr("disabled", true);
+		$("#wHealthSevere4").attr("disabled", true);
+		
+		$("#wHealthCritical2").attr("disabled", true);
+	} else {
+		$("#wHealthLight3").attr("disabled", true);
+		$("#wHealthLight4").attr("disabled", true);
+		
+		$("#wHealthSevere3").attr("disabled", true);
+		$("#wHealthSevere4").attr("disabled", true);
+		
+		$("#wHealthCritical2").attr("disabled", true);
+	}
+	
+	if (wil >= 5) {
+		$("#wStressLight3").attr("disabled", false);
+		$("#wStressLight4").attr("disabled", false);
+		
+		$("#wStressSevere3").attr("disabled", false);
+		$("#wStressSevere4").attr("disabled", false);
+		
+		$("#wStressCritical2").attr("disabled", false);
+	} else if (wil >= 4) {
+		$("#wStressLight3").attr("disabled", false);
+		$("#wStressLight4").attr("disabled", false);
+		
+		$("#wStressSevere3").attr("disabled", false);
+		$("#wStressSevere4").attr("disabled", true);
+		
+		$("#wStressCritical2").attr("disabled", false);
+	} else if (wil >= 3) {
+		$("#wStressLight3").attr("disabled", false);
+		$("#wStressLight4").attr("disabled", true);
+		
+		$("#wStressSevere3").attr("disabled", false);
+		$("#wStressSevere4").attr("disabled", true);
+		
+		$("#wStressCritical2").attr("disabled", false);
+	} else if (wil >= 2) {
+		$("#wStressLight3").attr("disabled", false);
+		$("#wStressLight4").attr("disabled", true);
+		
+		$("#wStressSevere3").attr("disabled", false);
+		$("#wStressSevere4").attr("disabled", true);
+		
+		$("#wStressCritical2").attr("disabled", true);
+	} else if (wil >= 1) {
+		$("#wStressLight3").attr("disabled", false);
+		$("#wStressLight4").attr("disabled", true);
+		
+		$("#wStressSevere3").attr("disabled", true);
+		$("#wStressSevere4").attr("disabled", true);
+		
+		$("#wStressCritical2").attr("disabled", true);
+	} else {
+		$("#wStressLight3").attr("disabled", true);
+		$("#wStressLight4").attr("disabled", true);
+		
+		$("#wStressSevere3").attr("disabled", true);
+		$("#wStressSevere4").attr("disabled", true);
+		
+		$("#wStressCritical2").attr("disabled", true);
+	}
 }
 
 // Materialize UI
