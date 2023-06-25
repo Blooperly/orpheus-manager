@@ -378,6 +378,8 @@ class saveData {
 	charArchetype;
 	charBackground;
 	charMotivation;
+	charMotivation2;
+	charMotivation3;
 	charFears;
 	charGoal;
 
@@ -730,6 +732,8 @@ class saveData {
 		this.charArchetype = "";
 		this.charBackground = "";
 		this.charMotivation = "";
+		this.charMotivation2 = "";
+		this.charMotivation3 = "";
 		this.charFears = "";
 		this.charGoal = "";
 
@@ -1098,6 +1102,8 @@ function loadSaveFromObject(object) {
 		$("#charArchetype").html(chasm_save.charArchetype);
 		$("#charBackground").html(chasm_save.charBackground);
 		$("#charMotivation").html(chasm_save.charMotivation);
+		$("#charMotivation2").html(chasm_save.charMotivation2);
+		$("#charMotivation3").html(chasm_save.charMotivation3);
 		$("#charFears").html(chasm_save.charFears);
 		$("#charGoal").html(chasm_save.charGoal);
 
@@ -1452,6 +1458,8 @@ function generateSave() {
 	chasm_save.charArchetype 	= $("#charArchetype").html();
 	chasm_save.charBackground 	= $("#charBackground").html();
 	chasm_save.charMotivation 	= $("#charMotivation").html();
+	chasm_save.charMotivation2 	= $("#charMotivation2").html();
+	chasm_save.charMotivation3 	= $("#charMotivation3").html();
 	chasm_save.charFears 		= $("#charFears").html();
 	chasm_save.charGoal 		= $("#charGoal").html();
 

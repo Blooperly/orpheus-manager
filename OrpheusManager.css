@@ -172,6 +172,16 @@ form {
 	margin-right: 10px;
 }
 
+.roto_text {
+	-webkit-transform: rotate(65deg);
+	font-weight: normal;
+	font-size: 0.6em;
+	overflow: hidden;
+	display: inline-block;
+	height: 100%;
+	vertical-align: text-bottom;
+}
+
 /* ID's */
 #title {
 	padding-left: 34px;
