@@ -172,6 +172,10 @@ form {
 	margin-right: 10px;
 }
 
+.mot_checkbox {
+	margin-right: 0px;
+}
+
 .roto_text {
 	-webkit-transform: rotate(65deg);
 	font-weight: normal;

@@ -383,6 +383,11 @@ class saveData {
 	charFears;
 	charGoal;
 
+	motCheck1;
+	motCheck2;
+	motCheck3;
+	motCheck4;
+
 	charConditions;
 	charAcclimations;
 	charExperience;
@@ -736,6 +741,11 @@ class saveData {
 		this.charMotivation3 = "";
 		this.charFears = "";
 		this.charGoal = "";
+
+		this.motCheck1 = false;
+		this.motCheck2 = false;
+		this.motCheck3 = false;
+		this.motCheck4 = false;
 
 		this.charConditions = "";
 		this.charAcclimations = "";
@@ -1107,6 +1117,11 @@ function loadSaveFromObject(object) {
 		$("#charFears").html(chasm_save.charFears);
 		$("#charGoal").html(chasm_save.charGoal);
 
+		if (chasm_save.motCheck1) $("#motCheck1").prop('checked', true);
+		if (chasm_save.motCheck2) $("#motCheck2").prop('checked', true);
+		if (chasm_save.motCheck3) $("#motCheck3").prop('checked', true);
+		if (chasm_save.motCheck4) $("#motCheck4").prop('checked', true);
+
 		$("#charConditions").html(chasm_save.charConditions);
 		$("#charAcclimations").html(chasm_save.charAcclimations);
 		$("#charExperience").html(chasm_save.charExperience);
@@ -1462,6 +1477,16 @@ function generateSave() {
 	chasm_save.charMotivation3 	= $("#charMotivation3").html();
 	chasm_save.charFears 		= $("#charFears").html();
 	chasm_save.charGoal 		= $("#charGoal").html();
+	
+	chasm_save.motCheck1 = $("#motCheck1").is(":checked");
+	chasm_save.motCheck2 = $("#motCheck2").is(":checked");
+	chasm_save.motCheck3 = $("#motCheck3").is(":checked");
+	chasm_save.motCheck4 = $("#motCheck4").is(":checked");
+
+	chasm_save.motCheck1		= $("#motCheck1").is(":checked");
+	chasm_save.motCheck2		= $("#motCheck2").is(":checked");
+	chasm_save.motCheck3		= $("#motCheck3").is(":checked");
+	chasm_save.motCheck4		= $("#motCheck4").is(":checked");
 
 	chasm_save.charConditions 	= $("#charConditions").html();
 	chasm_save.charAcclimations = $("#charAcclimations").html();
