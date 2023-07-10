@@ -61,11 +61,11 @@
 			<!--Character Sheet-->
 			<div id = "character_sheet" class = "col s12 m12">
 				<div class = "card white flex" style = "padding: 10px 10px 10px 10px; margin-bottom: 10px;">
-					<a id = "debug_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "storeSave();">Save</a>
-					<a id = "debug_clear_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "clearSave();">Clear</a>
-					<a id = "debug_copy_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "copySave();">Copy</a>
-					<a id = "debug_download_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "downloadSave();">Download</a>
-					<a id = "debug_import_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "importSave();">Import</a>
+					<!--<a id = "debug_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "storeSave();">Save</a>-->
+					<a id = "debug_clear_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "clearSave();">New Character</a>
+					<!--<a id = "debug_copy_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "copySave();">Copy</a>-->
+					<a id = "debug_download_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "downloadSave();">Export Character</a>
+					<a id = "debug_import_save" class = "waves-effect waves-light btn orange lighten-2 black-text" style = "margin-right: 8px;" onclick = "importSave();">Import Character</a>
 				</div>
 
 				<div class = "card white flex">
@@ -83,27 +83,27 @@
 								<tbody>
 									<tr>
 										<td style = "background-color: #00aeef;">Perception</td>
-										<td style = "background-color: #44c8f5;" class = "hcenter" contenteditable = "true" id = "attrPer"></td>
+										<td style = "background-color: #44c8f5;" class = "hcenter saveableText" contenteditable = "true" id = "attrPer"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #00aeef;">Focus</td>
-										<td style = "background-color: #44c8f5;" class = "hcenter" contenteditable = "true" id = "attrFoc"></td>
+										<td style = "background-color: #44c8f5;" class = "hcenter saveableText" contenteditable = "true" id = "attrFoc"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #d2232a;">Dexterity</td>
-										<td style = "background-color: #e18067;" class = "hcenter" contenteditable = "true" id = "attrDex"></td>
+										<td style = "background-color: #e18067;" class = "hcenter saveableText" contenteditable = "true" id = "attrDex"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #d2232a;">Vitality</td>
-										<td style = "background-color: #e18067;" class = "hcenter" contenteditable = "true" id = "attrVit"></td>
+										<td style = "background-color: #e18067;" class = "hcenter saveableText" contenteditable = "true" id = "attrVit"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #41ad49;">Charisma</td>
-										<td style = "background-color: #93c789;" class = "hcenter" contenteditable = "true" id = "attrCha"></td>
+										<td style = "background-color: #93c789;" class = "hcenter saveableText" contenteditable = "true" id = "attrCha"></td>
 									</tr>
 									<tr>
 										<td style = "background-color: #41ad49;">Willpower</td>
-										<td style = "background-color: #93c789;" class = "hcenter" contenteditable = "true" id = "attrWil"></td>
+										<td style = "background-color: #93c789;" class = "hcenter saveableText" contenteditable = "true" id = "attrWil"></td>
 									</tr>
 								</tbody>
 							</table>
@@ -281,43 +281,43 @@
 									<tbody>
 										<tr>
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Name</td>
-											<td id = "charName" contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charName" class = "saveableText" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr>
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Archetype</td>
-											<td id = "charArchetype" contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charArchetype" class = "saveableText" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr>
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Background</td>
-											<td id = "charBackground" contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charBackground" class = "saveableText" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr style = "height: 31px; border-bottom: none;">
 											<td style = "font-weight: bold; background-color: #9c8cc3; text-align: right;">
 												<input id = "motCheck1" type = "checkbox" class = "mot_checkbox" />
 												<input id = "motCheck2" type = "checkbox" class = "mot_checkbox" />
 											</td>
-											<td id = "charMotivation" contenteditable = "true" style = "width: 280px; border-bottom: 1px solid black;"></td>
+											<td id = "charMotivation" class = "saveableText" contenteditable = "true" style = "width: 280px; border-bottom: 1px solid black;"></td>
 										</tr>
 										<tr style = "height: 31px; border-bottom: none;">
 											<td style = "font-weight: bold; background-color: #9c8cc3;">
 												Motivations
 												<input id = "motCheck3" type = "checkbox" class = "mot_checkbox" style = "margin-left: 2px;" />
 											</td>
-											<td id = "charMotivation2" contenteditable = "true" style = "width: 280px; border-left: 1px solid black; border-bottom: 1px solid black;"></td>
+											<td id = "charMotivation2" class = "saveableText" contenteditable = "true" style = "width: 280px; border-left: 1px solid black; border-bottom: 1px solid black;"></td>
 										</tr>
 										<tr style = "height: 31px;">
 											<td style = "font-weight: bold; background-color: #9c8cc3; text-align: right;">
 												<input id = "motCheck4" type = "checkbox" class = "mot_checkbox" />
 											</td>
-											<td id = "charMotivation3" contenteditable = "true" style = "width: 280px; border-left: 1px solid black;"></td>
+											<td id = "charMotivation3" class = "saveableText" contenteditable = "true" style = "width: 280px; border-left: 1px solid black;"></td>
 										</tr>
 										<tr style = "height: 64px;">
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Fears</td>
-											<td id = "charFears" contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charFears" class = "saveableText" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 										<tr style = "height: 64px;">
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Session Goal</td>
-											<td id = "charGoal" contenteditable = "true" style = "width: 280px;"></td>
+											<td id = "charGoal" class = "saveableText" contenteditable = "true" style = "width: 280px;"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -338,7 +338,7 @@
 									</thead>
 									<tbody>
 										<tr style = "height: 60px;">
-											<td id = "charConditions" contenteditable = "true"></td>
+											<td id = "charConditions" class = "saveableText" contenteditable = "true"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -354,7 +354,7 @@
 									</thead>
 									<tbody>
 										<tr style = "height: 32px;">
-											<td id = "charAcclimations" contenteditable = "true"></td>
+											<td id = "charAcclimations" class = "saveableText" contenteditable = "true"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -366,7 +366,7 @@
 									<tbody>
 										<tr>
 											<td style = "font-weight: bold; background-color: #9c8cc3;">Experience</td>
-											<td id = "charExperience" class = "hcenter" style = "width: 120px;" contenteditable = "true"></td>
+											<td id = "charExperience" class = "hcenter saveableText" style = "width: 120px;" contenteditable = "true"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -393,8 +393,8 @@
 									</thead>
 									<tbody>
 										<tr style = "height: 30px;">
-											<td id = "cSkill0" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill0_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill0" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill0_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill0_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill0_2" type = "checkbox" class = "skill_checkbox" />
@@ -405,8 +405,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill1" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill1_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill1" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill1_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill1_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill1_2" type = "checkbox" class = "skill_checkbox" />
@@ -417,8 +417,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill2" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill2_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill2" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill2_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill2_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill2_2" type = "checkbox" class = "skill_checkbox" />
@@ -429,8 +429,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill3" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill3_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill3" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill3_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill3_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill3_2" type = "checkbox" class = "skill_checkbox" />
@@ -441,8 +441,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill4" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill4_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill4" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill4_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill4_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill4_2" type = "checkbox" class = "skill_checkbox" />
@@ -453,8 +453,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill5" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill5_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill5" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill5_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill5_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill5_2" type = "checkbox" class = "skill_checkbox" />
@@ -465,8 +465,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill6" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill6_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill6" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill6_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill6_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill6_2" type = "checkbox" class = "skill_checkbox" />
@@ -477,8 +477,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill7" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill7_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill7" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill7_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill7_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill7_2" type = "checkbox" class = "skill_checkbox" />
@@ -489,8 +489,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill8" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill8_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill8" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill8_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill8_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill8_2" type = "checkbox" class = "skill_checkbox" />
@@ -501,8 +501,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill9" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill9_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill9" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill9_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill9_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill9_2" type = "checkbox" class = "skill_checkbox" />
@@ -513,8 +513,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "cSkill10" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "cSkill10_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "cSkill10" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "cSkill10_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "cSkill10_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "cSkill10_2" type = "checkbox" class = "skill_checkbox" />
@@ -541,17 +541,17 @@
 									<tbody>
 										<tr>
 											<td style = "background-color: #00aeef;">Mental</td>
-											<td style = "background-color: #44c8f5; width: 100px;" id = "strainMentalCurrent" class = "hcenter" contenteditable = "true"></td>
+											<td style = "background-color: #44c8f5; width: 100px;" id = "strainMentalCurrent" class = "hcenter saveableText" contenteditable = "true"></td>
 											<td style = "background-color: #44c8f5; width: 100px;" id = "strainMentalMax" class = "hcenter"></td>
 										</tr>
 										<tr>
 											<td style = "background-color: #d2232a;">Physical</td>
-											<td style = "background-color: #e18067; width: 100px;" id = "strainPhysicalCurrent" class = "hcenter" contenteditable = "true"></td>
+											<td style = "background-color: #e18067; width: 100px;" id = "strainPhysicalCurrent" class = "hcenter saveableText" contenteditable = "true"></td>
 											<td style = "background-color: #e18067; width: 100px;" id = "strainPhysicalMax" class = "hcenter"></td>
 										</tr>
 										<tr>
 											<td style = "background-color: #41ad49;">Spiritual</td>
-											<td style = "background-color: #93c789; width: 100px;" id = "strainSpiritualCurrent" class = "hcenter" contenteditable = "true"></td>
+											<td style = "background-color: #93c789; width: 100px;" id = "strainSpiritualCurrent" class = "hcenter saveableText" contenteditable = "true"></td>
 											<td style = "background-color: #93c789; width: 100px;" id = "strainSpiritualMax" class = "hcenter"></td>
 										</tr>
 									</tbody>
@@ -569,8 +569,8 @@
 									<tbody>
 										<tr>
 											<td style = "background-color: #ec008c;">Humanity</td>
-											<td style = "width: 100px; background-color: #f287b7;" id = "humanityCurrent" class = "hcenter" contenteditable = "true"></td>
-											<td style = "width: 100px; background-color: #f287b7;" id = "humanityMax" class = "hcenter" contenteditable = "true"></td>
+											<td style = "width: 100px; background-color: #f287b7;" id = "humanityCurrent" class = "hcenter saveableText" contenteditable = "true"></td>
+											<td style = "width: 100px; background-color: #f287b7;" id = "humanityMax" class = "hcenter saveableText" contenteditable = "true"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -579,7 +579,7 @@
 							<!--Memento Mori-->
 							<div id = "memento_mori_box" class = "flex">
 								<div style = "background-color: #818285; width: 170px; height: 30px; padding-left: 8px;"><p style = "padding-top: 2px; font-weight: bold; font-size: 1.2em;">Memento Mori</p></div>
-								<div style = "background-color: #818285; width: 66px; height: 30px; border-left: 1px solid black; padding-top: 3px;" id = "mementoMori" class = "hcenter" contenteditable = "true"></div>
+								<div style = "background-color: #818285; width: 66px; height: 30px; border-left: 1px solid black; padding-top: 3px;" id = "mementoMori" class = "hcenter saveableText" contenteditable = "true"></div>
 							</div>
 						</div>
 						<div id = "mid_mid_right_column">
@@ -603,8 +603,8 @@
 									</thead>
 									<tbody>
 										<tr style = "height: 30px;">
-											<td id = "nSkill0" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill0_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill0" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill0_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill0_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill0_2" type = "checkbox" class = "skill_checkbox" />
@@ -615,8 +615,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill1" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill1_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill1" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill1_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill1_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill1_2" type = "checkbox" class = "skill_checkbox" />
@@ -627,8 +627,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill2" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill2_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill2" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill2_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill2_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill2_2" type = "checkbox" class = "skill_checkbox" />
@@ -639,8 +639,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill3" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill3_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill3" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill3_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill3_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill3_2" type = "checkbox" class = "skill_checkbox" />
@@ -651,8 +651,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill4" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill4_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill4" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill4_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill4_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill4_2" type = "checkbox" class = "skill_checkbox" />
@@ -663,8 +663,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill5" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill5_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill5" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill5_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill5_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill5_2" type = "checkbox" class = "skill_checkbox" />
@@ -675,8 +675,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill6" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill6_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill6" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill6_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill6_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill6_2" type = "checkbox" class = "skill_checkbox" />
@@ -687,8 +687,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill7" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill7_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill7" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill7_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill7_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill7_2" type = "checkbox" class = "skill_checkbox" />
@@ -699,8 +699,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill8" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill8_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill8" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill8_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill8_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill8_2" type = "checkbox" class = "skill_checkbox" />
@@ -711,8 +711,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill9" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill9_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill9" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill9_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill9_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill9_2" type = "checkbox" class = "skill_checkbox" />
@@ -723,8 +723,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill10" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill10_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill10" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill10_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill10_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill10_2" type = "checkbox" class = "skill_checkbox" />
@@ -735,8 +735,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill11" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill11_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill11" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill11_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill11_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill11_2" type = "checkbox" class = "skill_checkbox" />
@@ -747,8 +747,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill12" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill12_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill12" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill12_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill12_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill12_2" type = "checkbox" class = "skill_checkbox" />
@@ -759,8 +759,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill13" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill13_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill13" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill13_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill13_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill13_2" type = "checkbox" class = "skill_checkbox" />
@@ -771,8 +771,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill14" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill14_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill14" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill14_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill14_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill14_2" type = "checkbox" class = "skill_checkbox" />
@@ -783,8 +783,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill15" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill15_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill15" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill15_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill15_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill15_2" type = "checkbox" class = "skill_checkbox" />
@@ -795,8 +795,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill16" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill16_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill16" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill16_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill16_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill16_2" type = "checkbox" class = "skill_checkbox" />
@@ -807,8 +807,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill17" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill17_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill17" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill17_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill17_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill17_2" type = "checkbox" class = "skill_checkbox" />
@@ -819,8 +819,8 @@
 											</td>
 										</tr>
 										<tr style = "height: 30px;">
-											<td id = "nSkill18" style = "max-width: 146px;" contenteditable = "true"></td>
-											<td id = "nSkill18_rank" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
+											<td id = "nSkill18" class = "saveableText" style = "max-width: 146px;" contenteditable = "true"></td>
+											<td id = "nSkill18_rank" class = "saveableText" style = "max-width: 30px; width: 30px;" contenteditable = "true"></td> 
 											<td style = "padding-left: 10px;">
 												<input id = "nSkill18_1" type = "checkbox" class = "skill_checkbox" />
 												<input id = "nSkill18_2" type = "checkbox" class = "skill_checkbox" />
@@ -847,15 +847,15 @@
 									<tbody>
 										<tr>
 											<td>Danger</td>
-											<td style = "width: 145px;" class = "hcenter" contenteditable = "true" id = "thresholdDanger"></td>
+											<td style = "width: 145px;" class = "hcenter saveableText" contenteditable = "true" id = "thresholdDanger"></td>
 										</tr>
 										<tr>
 											<td>Despair</td>
-											<td style = "width: 145px;" class = "hcenter" contenteditable = "true" id = "thresholdDespair"></td>
+											<td style = "width: 145px;" class = "hcenter saveableText" contenteditable = "true" id = "thresholdDespair"></td>
 										</tr>
 										<tr>
 											<td>Disgust</td>
-											<td style = "width: 145px;" class = "hcenter" contenteditable = "true" id = "thresholdDisgust"></td>
+											<td style = "width: 145px;" class = "hcenter saveableText" contenteditable = "true" id = "thresholdDisgust"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -873,7 +873,7 @@
 									</thead>
 									<tbody>
 										<tr style = "height: 156px;">
-											<td id = "charEquipment" style = "vertical-align: top;" contenteditable = "true"></td>
+											<td id = "charEquipment" class = "saveableText" style = "vertical-align: top;" contenteditable = "true"></td>
 										</tr>
 									</tbody>
 								</table>
@@ -919,7 +919,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td id = "charNotes" style = "vertical-align: top; height: 256px;" contenteditable = "true"></td>
+										<td id = "charNotes" class = "saveableText" style = "vertical-align: top; height: 256px;" contenteditable = "true"></td>
 									</tr>
 								</tbody>
 							</table>
@@ -936,7 +936,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td id = "charAbilities" style = "vertical-align: top; height: 385px;" contenteditable = "true"></td>
+										<td id = "charAbilities" class = "saveableText" style = "vertical-align: top; height: 385px;" contenteditable = "true"></td>
 									</tr>
 								</tbody>
 							</table>

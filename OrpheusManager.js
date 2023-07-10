@@ -18,12 +18,18 @@ function ManagerInit() {
 
 	// Event handlers
 	$("#fileinput").on("change", importHandler);
+
 	$('#attrPer').on('blur', refreshUi);
 	$('#attrFoc').on('blur', refreshUi);
 	$('#attrDex').on('blur', refreshUi);
 	$('#attrVit').on('blur', refreshUi);
 	$('#attrCha').on('blur', refreshUi);
 	$('#attrWil').on('blur', refreshUi);
+
+	$(".saveableText").on('blur', storeSave);
+	$(".skill_checkbox").change(storeSave);
+	$(".wound_checkbox").change(storeSave);
+	$(".mot_checkbox").change(storeSave);
 
 	// Loading finished, reveal the game
 	refreshUi();
@@ -1117,10 +1123,10 @@ function loadSaveFromObject(object) {
 		$("#charFears").html(chasm_save.charFears);
 		$("#charGoal").html(chasm_save.charGoal);
 
-		if (chasm_save.motCheck1) $("#motCheck1").prop('checked', true);
-		if (chasm_save.motCheck2) $("#motCheck2").prop('checked', true);
-		if (chasm_save.motCheck3) $("#motCheck3").prop('checked', true);
-		if (chasm_save.motCheck4) $("#motCheck4").prop('checked', true);
+		if (chasm_save.motCheck1) $("#motCheck1").prop('checked', true); else $("#motCheck1").prop('checked', false);
+		if (chasm_save.motCheck2) $("#motCheck2").prop('checked', true); else $("#motCheck2").prop('checked', false);
+		if (chasm_save.motCheck3) $("#motCheck3").prop('checked', true); else $("#motCheck3").prop('checked', false);
+		if (chasm_save.motCheck4) $("#motCheck4").prop('checked', true); else $("#motCheck4").prop('checked', false);
 
 		$("#charConditions").html(chasm_save.charConditions);
 		$("#charAcclimations").html(chasm_save.charAcclimations);
@@ -1168,82 +1174,82 @@ function loadSaveFromObject(object) {
 		$("#cSkill9_rank").html(chasm_save.cSkill9_rank);
 		$("#cSkill10_rank").html(chasm_save.cSkill10_rank);
 
-		if (chasm_save.cSkill0_1) $("#cSkill0_1").prop('checked', true);
-		if (chasm_save.cSkill0_2) $("#cSkill0_2").prop('checked', true);
-		if (chasm_save.cSkill0_3) $("#cSkill0_3").prop('checked', true);
-		if (chasm_save.cSkill0_4) $("#cSkill0_4").prop('checked', true);
-		if (chasm_save.cSkill0_5) $("#cSkill0_5").prop('checked', true);
-		if (chasm_save.cSkill0_6) $("#cSkill0_6").prop('checked', true);
+		if (chasm_save.cSkill0_1) $("#cSkill0_1").prop('checked', true); else $("#cSkill0_1").prop('checked', false);
+		if (chasm_save.cSkill0_2) $("#cSkill0_2").prop('checked', true); else $("#cSkill0_2").prop('checked', false);
+		if (chasm_save.cSkill0_3) $("#cSkill0_3").prop('checked', true); else $("#cSkill0_3").prop('checked', false);
+		if (chasm_save.cSkill0_4) $("#cSkill0_4").prop('checked', true); else $("#cSkill0_4").prop('checked', false);
+		if (chasm_save.cSkill0_5) $("#cSkill0_5").prop('checked', true); else $("#cSkill0_5").prop('checked', false);
+		if (chasm_save.cSkill0_6) $("#cSkill0_6").prop('checked', true); else $("#cSkill0_6").prop('checked', false);
 
-		if (chasm_save.cSkill1_1) $("#cSkill1_1").prop('checked', true);
-		if (chasm_save.cSkill1_2) $("#cSkill1_2").prop('checked', true);
-		if (chasm_save.cSkill1_3) $("#cSkill1_3").prop('checked', true);
-		if (chasm_save.cSkill1_4) $("#cSkill1_4").prop('checked', true);
-		if (chasm_save.cSkill1_5) $("#cSkill1_5").prop('checked', true);
-		if (chasm_save.cSkill1_6) $("#cSkill1_6").prop('checked', true);
+		if (chasm_save.cSkill1_1) $("#cSkill1_1").prop('checked', true); else $("#cSkill1_1").prop('checked', false);
+		if (chasm_save.cSkill1_2) $("#cSkill1_2").prop('checked', true); else $("#cSkill1_2").prop('checked', false);
+		if (chasm_save.cSkill1_3) $("#cSkill1_3").prop('checked', true); else $("#cSkill1_3").prop('checked', false);
+		if (chasm_save.cSkill1_4) $("#cSkill1_4").prop('checked', true); else $("#cSkill1_4").prop('checked', false);
+		if (chasm_save.cSkill1_5) $("#cSkill1_5").prop('checked', true); else $("#cSkill1_5").prop('checked', false);
+		if (chasm_save.cSkill1_6) $("#cSkill1_6").prop('checked', true); else $("#cSkill1_6").prop('checked', false);
 
-		if (chasm_save.cSkill2_1) $("#cSkill2_1").prop('checked', true);
-		if (chasm_save.cSkill2_2) $("#cSkill2_2").prop('checked', true);
-		if (chasm_save.cSkill2_3) $("#cSkill2_3").prop('checked', true);
-		if (chasm_save.cSkill2_4) $("#cSkill2_4").prop('checked', true);
-		if (chasm_save.cSkill2_5) $("#cSkill2_5").prop('checked', true);
-		if (chasm_save.cSkill2_6) $("#cSkill2_6").prop('checked', true);
+		if (chasm_save.cSkill2_1) $("#cSkill2_1").prop('checked', true); else $("#cSkill2_1").prop('checked', false);
+		if (chasm_save.cSkill2_2) $("#cSkill2_2").prop('checked', true); else $("#cSkill2_2").prop('checked', false);
+		if (chasm_save.cSkill2_3) $("#cSkill2_3").prop('checked', true); else $("#cSkill2_3").prop('checked', false);
+		if (chasm_save.cSkill2_4) $("#cSkill2_4").prop('checked', true); else $("#cSkill2_4").prop('checked', false);
+		if (chasm_save.cSkill2_5) $("#cSkill2_5").prop('checked', true); else $("#cSkill2_5").prop('checked', false);
+		if (chasm_save.cSkill2_6) $("#cSkill2_6").prop('checked', true); else $("#cSkill2_6").prop('checked', false);
 
-		if (chasm_save.cSkill3_1) $("#cSkill3_1").prop('checked', true);
-		if (chasm_save.cSkill3_2) $("#cSkill3_2").prop('checked', true);
-		if (chasm_save.cSkill3_3) $("#cSkill3_3").prop('checked', true);
-		if (chasm_save.cSkill3_4) $("#cSkill3_4").prop('checked', true);
-		if (chasm_save.cSkill3_5) $("#cSkill3_5").prop('checked', true);
-		if (chasm_save.cSkill3_6) $("#cSkill3_6").prop('checked', true);
+		if (chasm_save.cSkill3_1) $("#cSkill3_1").prop('checked', true); else $("#cSkill3_1").prop('checked', false);
+		if (chasm_save.cSkill3_2) $("#cSkill3_2").prop('checked', true); else $("#cSkill3_2").prop('checked', false);
+		if (chasm_save.cSkill3_3) $("#cSkill3_3").prop('checked', true); else $("#cSkill3_3").prop('checked', false);
+		if (chasm_save.cSkill3_4) $("#cSkill3_4").prop('checked', true); else $("#cSkill3_4").prop('checked', false);
+		if (chasm_save.cSkill3_5) $("#cSkill3_5").prop('checked', true); else $("#cSkill3_5").prop('checked', false);
+		if (chasm_save.cSkill3_6) $("#cSkill3_6").prop('checked', true); else $("#cSkill3_6").prop('checked', false);
 
-		if (chasm_save.cSkill4_1) $("#cSkill4_1").prop('checked', true);
-		if (chasm_save.cSkill4_2) $("#cSkill4_2").prop('checked', true);
-		if (chasm_save.cSkill4_3) $("#cSkill4_3").prop('checked', true);
-		if (chasm_save.cSkill4_4) $("#cSkill4_4").prop('checked', true);
-		if (chasm_save.cSkill4_5) $("#cSkill4_5").prop('checked', true);
-		if (chasm_save.cSkill4_6) $("#cSkill4_6").prop('checked', true);
+		if (chasm_save.cSkill4_1) $("#cSkill4_1").prop('checked', true); else $("#cSkill4_1").prop('checked', false);
+		if (chasm_save.cSkill4_2) $("#cSkill4_2").prop('checked', true); else $("#cSkill4_2").prop('checked', false);
+		if (chasm_save.cSkill4_3) $("#cSkill4_3").prop('checked', true); else $("#cSkill4_3").prop('checked', false);
+		if (chasm_save.cSkill4_4) $("#cSkill4_4").prop('checked', true); else $("#cSkill4_4").prop('checked', false);
+		if (chasm_save.cSkill4_5) $("#cSkill4_5").prop('checked', true); else $("#cSkill4_5").prop('checked', false);
+		if (chasm_save.cSkill4_6) $("#cSkill4_6").prop('checked', true); else $("#cSkill4_6").prop('checked', false);
 
-		if (chasm_save.cSkill5_1) $("#cSkill5_1").prop('checked', true);
-		if (chasm_save.cSkill5_2) $("#cSkill5_2").prop('checked', true);
-		if (chasm_save.cSkill5_3) $("#cSkill5_3").prop('checked', true);
-		if (chasm_save.cSkill5_4) $("#cSkill5_4").prop('checked', true);
-		if (chasm_save.cSkill5_5) $("#cSkill5_5").prop('checked', true);
-		if (chasm_save.cSkill5_6) $("#cSkill5_6").prop('checked', true);
+		if (chasm_save.cSkill5_1) $("#cSkill5_1").prop('checked', true); else $("#cSkill5_1").prop('checked', false);
+		if (chasm_save.cSkill5_2) $("#cSkill5_2").prop('checked', true); else $("#cSkill5_2").prop('checked', false);
+		if (chasm_save.cSkill5_3) $("#cSkill5_3").prop('checked', true); else $("#cSkill5_3").prop('checked', false);
+		if (chasm_save.cSkill5_4) $("#cSkill5_4").prop('checked', true); else $("#cSkill5_4").prop('checked', false);
+		if (chasm_save.cSkill5_5) $("#cSkill5_5").prop('checked', true); else $("#cSkill5_5").prop('checked', false);
+		if (chasm_save.cSkill5_6) $("#cSkill5_6").prop('checked', true); else $("#cSkill5_6").prop('checked', false);
 
-		if (chasm_save.cSkill6_1) $("#cSkill6_1").prop('checked', true);
-		if (chasm_save.cSkill6_2) $("#cSkill6_2").prop('checked', true);
-		if (chasm_save.cSkill6_3) $("#cSkill6_3").prop('checked', true);
-		if (chasm_save.cSkill6_4) $("#cSkill6_4").prop('checked', true);
-		if (chasm_save.cSkill6_5) $("#cSkill6_5").prop('checked', true);
-		if (chasm_save.cSkill6_6) $("#cSkill6_6").prop('checked', true);
+		if (chasm_save.cSkill6_1) $("#cSkill6_1").prop('checked', true); else $("#cSkill6_1").prop('checked', false);
+		if (chasm_save.cSkill6_2) $("#cSkill6_2").prop('checked', true); else $("#cSkill6_2").prop('checked', false);
+		if (chasm_save.cSkill6_3) $("#cSkill6_3").prop('checked', true); else $("#cSkill6_3").prop('checked', false);
+		if (chasm_save.cSkill6_4) $("#cSkill6_4").prop('checked', true); else $("#cSkill6_4").prop('checked', false);
+		if (chasm_save.cSkill6_5) $("#cSkill6_5").prop('checked', true); else $("#cSkill6_5").prop('checked', false);
+		if (chasm_save.cSkill6_6) $("#cSkill6_6").prop('checked', true); else $("#cSkill6_6").prop('checked', false);
 
-		if (chasm_save.cSkill7_1) $("#cSkill7_1").prop('checked', true);
-		if (chasm_save.cSkill7_2) $("#cSkill7_2").prop('checked', true);
-		if (chasm_save.cSkill7_3) $("#cSkill7_3").prop('checked', true);
-		if (chasm_save.cSkill7_4) $("#cSkill7_4").prop('checked', true);
-		if (chasm_save.cSkill7_5) $("#cSkill7_5").prop('checked', true);
-		if (chasm_save.cSkill7_6) $("#cSkill7_6").prop('checked', true);
+		if (chasm_save.cSkill7_1) $("#cSkill7_1").prop('checked', true); else $("#cSkill7_1").prop('checked', false);
+		if (chasm_save.cSkill7_2) $("#cSkill7_2").prop('checked', true); else $("#cSkill7_2").prop('checked', false);
+		if (chasm_save.cSkill7_3) $("#cSkill7_3").prop('checked', true); else $("#cSkill7_3").prop('checked', false);
+		if (chasm_save.cSkill7_4) $("#cSkill7_4").prop('checked', true); else $("#cSkill7_4").prop('checked', false);
+		if (chasm_save.cSkill7_5) $("#cSkill7_5").prop('checked', true); else $("#cSkill7_5").prop('checked', false);
+		if (chasm_save.cSkill7_6) $("#cSkill7_6").prop('checked', true); else $("#cSkill7_6").prop('checked', false);
 
-		if (chasm_save.cSkill8_1) $("#cSkill8_1").prop('checked', true);
-		if (chasm_save.cSkill8_2) $("#cSkill8_2").prop('checked', true);
-		if (chasm_save.cSkill8_3) $("#cSkill8_3").prop('checked', true);
-		if (chasm_save.cSkill8_4) $("#cSkill8_4").prop('checked', true);
-		if (chasm_save.cSkill8_5) $("#cSkill8_5").prop('checked', true);
-		if (chasm_save.cSkill8_6) $("#cSkill8_6").prop('checked', true);
+		if (chasm_save.cSkill8_1) $("#cSkill8_1").prop('checked', true); else $("#cSkill8_1").prop('checked', false);
+		if (chasm_save.cSkill8_2) $("#cSkill8_2").prop('checked', true); else $("#cSkill8_2").prop('checked', false);
+		if (chasm_save.cSkill8_3) $("#cSkill8_3").prop('checked', true); else $("#cSkill8_3").prop('checked', false);
+		if (chasm_save.cSkill8_4) $("#cSkill8_4").prop('checked', true); else $("#cSkill8_4").prop('checked', false);
+		if (chasm_save.cSkill8_5) $("#cSkill8_5").prop('checked', true); else $("#cSkill8_5").prop('checked', false);
+		if (chasm_save.cSkill8_6) $("#cSkill8_6").prop('checked', true); else $("#cSkill8_6").prop('checked', false);
 
-		if (chasm_save.cSkill9_1) $("#cSkill9_1").prop('checked', true);
-		if (chasm_save.cSkill9_2) $("#cSkill9_2").prop('checked', true);
-		if (chasm_save.cSkill9_3) $("#cSkill9_3").prop('checked', true);
-		if (chasm_save.cSkill9_4) $("#cSkill9_4").prop('checked', true);
-		if (chasm_save.cSkill9_5) $("#cSkill9_5").prop('checked', true);
-		if (chasm_save.cSkill9_6) $("#cSkill9_6").prop('checked', true);
+		if (chasm_save.cSkill9_1) $("#cSkill9_1").prop('checked', true); else $("#cSkill9_1").prop('checked', false);
+		if (chasm_save.cSkill9_2) $("#cSkill9_2").prop('checked', true); else $("#cSkill9_2").prop('checked', false);
+		if (chasm_save.cSkill9_3) $("#cSkill9_3").prop('checked', true); else $("#cSkill9_3").prop('checked', false);
+		if (chasm_save.cSkill9_4) $("#cSkill9_4").prop('checked', true); else $("#cSkill9_4").prop('checked', false);
+		if (chasm_save.cSkill9_5) $("#cSkill9_5").prop('checked', true); else $("#cSkill9_5").prop('checked', false);
+		if (chasm_save.cSkill9_6) $("#cSkill9_6").prop('checked', true); else $("#cSkill9_6").prop('checked', false);
 
-		if (chasm_save.cSkill10_1) $("#cSkill10_1").prop('checked', true);
-		if (chasm_save.cSkill10_2) $("#cSkill10_2").prop('checked', true);
-		if (chasm_save.cSkill10_3) $("#cSkill10_3").prop('checked', true);
-		if (chasm_save.cSkill10_4) $("#cSkill10_4").prop('checked', true);
-		if (chasm_save.cSkill10_5) $("#cSkill10_5").prop('checked', true);
-		if (chasm_save.cSkill10_6) $("#cSkill10_6").prop('checked', true);
+		if (chasm_save.cSkill10_1) $("#cSkill10_1").prop('checked', true); else $("#cSkill10_1").prop('checked', false);
+		if (chasm_save.cSkill10_2) $("#cSkill10_2").prop('checked', true); else $("#cSkill10_2").prop('checked', false);
+		if (chasm_save.cSkill10_3) $("#cSkill10_3").prop('checked', true); else $("#cSkill10_3").prop('checked', false);
+		if (chasm_save.cSkill10_4) $("#cSkill10_4").prop('checked', true); else $("#cSkill10_4").prop('checked', false);
+		if (chasm_save.cSkill10_5) $("#cSkill10_5").prop('checked', true); else $("#cSkill10_5").prop('checked', false);
+		if (chasm_save.cSkill10_6) $("#cSkill10_6").prop('checked', true); else $("#cSkill10_6").prop('checked', false);
 		
 		$("#nSkill0").html(chasm_save.nSkill0);
 		$("#nSkill1").html(chasm_save.nSkill1);
@@ -1285,177 +1291,177 @@ function loadSaveFromObject(object) {
 		$("#nSkill17_rank").html(chasm_save.nSkill17_rank);
 		$("#nSkill18_rank").html(chasm_save.nSkill18_rank);
 
-		if (chasm_save.nSkill0_1) $("#nSkill0_1").prop('checked', true);
-		if (chasm_save.nSkill0_2) $("#nSkill0_2").prop('checked', true);
-		if (chasm_save.nSkill0_3) $("#nSkill0_3").prop('checked', true);
-		if (chasm_save.nSkill0_4) $("#nSkill0_4").prop('checked', true);
-		if (chasm_save.nSkill0_5) $("#nSkill0_5").prop('checked', true);
-		if (chasm_save.nSkill0_6) $("#nSkill0_6").prop('checked', true);
+		if (chasm_save.nSkill0_1) $("#nSkill0_1").prop('checked', true); else $("#nSkill0_1").prop('checked', false);
+		if (chasm_save.nSkill0_2) $("#nSkill0_2").prop('checked', true); else $("#nSkill0_2").prop('checked', false);
+		if (chasm_save.nSkill0_3) $("#nSkill0_3").prop('checked', true); else $("#nSkill0_3").prop('checked', false);
+		if (chasm_save.nSkill0_4) $("#nSkill0_4").prop('checked', true); else $("#nSkill0_4").prop('checked', false);
+		if (chasm_save.nSkill0_5) $("#nSkill0_5").prop('checked', true); else $("#nSkill0_5").prop('checked', false);
+		if (chasm_save.nSkill0_6) $("#nSkill0_6").prop('checked', true); else $("#nSkill0_6").prop('checked', false);
 
-		if (chasm_save.nSkill1_1) $("#nSkill1_1").prop('checked', true);
-		if (chasm_save.nSkill1_2) $("#nSkill1_2").prop('checked', true);
-		if (chasm_save.nSkill1_3) $("#nSkill1_3").prop('checked', true);
-		if (chasm_save.nSkill1_4) $("#nSkill1_4").prop('checked', true);
-		if (chasm_save.nSkill1_5) $("#nSkill1_5").prop('checked', true);
-		if (chasm_save.nSkill1_6) $("#nSkill1_6").prop('checked', true);
+		if (chasm_save.nSkill1_1) $("#nSkill1_1").prop('checked', true); else $("#nSkill1_1").prop('checked', false);
+		if (chasm_save.nSkill1_2) $("#nSkill1_2").prop('checked', true); else $("#nSkill1_2").prop('checked', false);
+		if (chasm_save.nSkill1_3) $("#nSkill1_3").prop('checked', true); else $("#nSkill1_3").prop('checked', false);
+		if (chasm_save.nSkill1_4) $("#nSkill1_4").prop('checked', true); else $("#nSkill1_4").prop('checked', false);
+		if (chasm_save.nSkill1_5) $("#nSkill1_5").prop('checked', true); else $("#nSkill1_5").prop('checked', false);
+		if (chasm_save.nSkill1_6) $("#nSkill1_6").prop('checked', true); else $("#nSkill1_6").prop('checked', false);
 
-		if (chasm_save.nSkill2_1) $("#nSkill2_1").prop('checked', true);
-		if (chasm_save.nSkill2_2) $("#nSkill2_2").prop('checked', true);
-		if (chasm_save.nSkill2_3) $("#nSkill2_3").prop('checked', true);
-		if (chasm_save.nSkill2_4) $("#nSkill2_4").prop('checked', true);
-		if (chasm_save.nSkill2_5) $("#nSkill2_5").prop('checked', true);
-		if (chasm_save.nSkill2_6) $("#nSkill2_6").prop('checked', true);
+		if (chasm_save.nSkill2_1) $("#nSkill2_1").prop('checked', true); else $("#nSkill2_1").prop('checked', false);
+		if (chasm_save.nSkill2_2) $("#nSkill2_2").prop('checked', true); else $("#nSkill2_2").prop('checked', false);
+		if (chasm_save.nSkill2_3) $("#nSkill2_3").prop('checked', true); else $("#nSkill2_3").prop('checked', false);
+		if (chasm_save.nSkill2_4) $("#nSkill2_4").prop('checked', true); else $("#nSkill2_4").prop('checked', false);
+		if (chasm_save.nSkill2_5) $("#nSkill2_5").prop('checked', true); else $("#nSkill2_5").prop('checked', false);
+		if (chasm_save.nSkill2_6) $("#nSkill2_6").prop('checked', true); else $("#nSkill2_6").prop('checked', false);
 
-		if (chasm_save.nSkill3_1) $("#nSkill3_1").prop('checked', true);
-		if (chasm_save.nSkill3_2) $("#nSkill3_2").prop('checked', true);
-		if (chasm_save.nSkill3_3) $("#nSkill3_3").prop('checked', true);
-		if (chasm_save.nSkill3_4) $("#nSkill3_4").prop('checked', true);
-		if (chasm_save.nSkill3_5) $("#nSkill3_5").prop('checked', true);
-		if (chasm_save.nSkill3_6) $("#nSkill3_6").prop('checked', true);
+		if (chasm_save.nSkill3_1) $("#nSkill3_1").prop('checked', true); else $("#nSkill3_1").prop('checked', false);
+		if (chasm_save.nSkill3_2) $("#nSkill3_2").prop('checked', true); else $("#nSkill3_2").prop('checked', false);
+		if (chasm_save.nSkill3_3) $("#nSkill3_3").prop('checked', true); else $("#nSkill3_3").prop('checked', false);
+		if (chasm_save.nSkill3_4) $("#nSkill3_4").prop('checked', true); else $("#nSkill3_4").prop('checked', false);
+		if (chasm_save.nSkill3_5) $("#nSkill3_5").prop('checked', true); else $("#nSkill3_5").prop('checked', false);
+		if (chasm_save.nSkill3_6) $("#nSkill3_6").prop('checked', true); else $("#nSkill3_6").prop('checked', false);
 
-		if (chasm_save.nSkill4_1) $("#nSkill4_1").prop('checked', true);
-		if (chasm_save.nSkill4_2) $("#nSkill4_2").prop('checked', true);
-		if (chasm_save.nSkill4_3) $("#nSkill4_3").prop('checked', true);
-		if (chasm_save.nSkill4_4) $("#nSkill4_4").prop('checked', true);
-		if (chasm_save.nSkill4_5) $("#nSkill4_5").prop('checked', true);
-		if (chasm_save.nSkill4_6) $("#nSkill4_6").prop('checked', true);
+		if (chasm_save.nSkill4_1) $("#nSkill4_1").prop('checked', true); else $("#nSkill4_1").prop('checked', false);
+		if (chasm_save.nSkill4_2) $("#nSkill4_2").prop('checked', true); else $("#nSkill4_2").prop('checked', false);
+		if (chasm_save.nSkill4_3) $("#nSkill4_3").prop('checked', true); else $("#nSkill4_3").prop('checked', false);
+		if (chasm_save.nSkill4_4) $("#nSkill4_4").prop('checked', true); else $("#nSkill4_4").prop('checked', false);
+		if (chasm_save.nSkill4_5) $("#nSkill4_5").prop('checked', true); else $("#nSkill4_5").prop('checked', false);
+		if (chasm_save.nSkill4_6) $("#nSkill4_6").prop('checked', true); else $("#nSkill4_6").prop('checked', false);
 
-		if (chasm_save.nSkill5_1) $("#nSkill5_1").prop('checked', true);
-		if (chasm_save.nSkill5_2) $("#nSkill5_2").prop('checked', true);
-		if (chasm_save.nSkill5_3) $("#nSkill5_3").prop('checked', true);
-		if (chasm_save.nSkill5_4) $("#nSkill5_4").prop('checked', true);
-		if (chasm_save.nSkill5_5) $("#nSkill5_5").prop('checked', true);
-		if (chasm_save.nSkill5_6) $("#nSkill5_6").prop('checked', true);
+		if (chasm_save.nSkill5_1) $("#nSkill5_1").prop('checked', true); else $("#nSkill5_1").prop('checked', false);
+		if (chasm_save.nSkill5_2) $("#nSkill5_2").prop('checked', true); else $("#nSkill5_2").prop('checked', false);
+		if (chasm_save.nSkill5_3) $("#nSkill5_3").prop('checked', true); else $("#nSkill5_3").prop('checked', false);
+		if (chasm_save.nSkill5_4) $("#nSkill5_4").prop('checked', true); else $("#nSkill5_4").prop('checked', false);
+		if (chasm_save.nSkill5_5) $("#nSkill5_5").prop('checked', true); else $("#nSkill5_5").prop('checked', false);
+		if (chasm_save.nSkill5_6) $("#nSkill5_6").prop('checked', true); else $("#nSkill5_6").prop('checked', false);
 
-		if (chasm_save.nSkill6_1) $("#nSkill6_1").prop('checked', true);
-		if (chasm_save.nSkill6_2) $("#nSkill6_2").prop('checked', true);
-		if (chasm_save.nSkill6_3) $("#nSkill6_3").prop('checked', true);
-		if (chasm_save.nSkill6_4) $("#nSkill6_4").prop('checked', true);
-		if (chasm_save.nSkill6_5) $("#nSkill6_5").prop('checked', true);
-		if (chasm_save.nSkill6_6) $("#nSkill6_6").prop('checked', true);
+		if (chasm_save.nSkill6_1) $("#nSkill6_1").prop('checked', true); else $("#nSkill6_1").prop('checked', false);
+		if (chasm_save.nSkill6_2) $("#nSkill6_2").prop('checked', true); else $("#nSkill6_2").prop('checked', false);
+		if (chasm_save.nSkill6_3) $("#nSkill6_3").prop('checked', true); else $("#nSkill6_3").prop('checked', false);
+		if (chasm_save.nSkill6_4) $("#nSkill6_4").prop('checked', true); else $("#nSkill6_4").prop('checked', false);
+		if (chasm_save.nSkill6_5) $("#nSkill6_5").prop('checked', true); else $("#nSkill6_5").prop('checked', false);
+		if (chasm_save.nSkill6_6) $("#nSkill6_6").prop('checked', true); else $("#nSkill6_6").prop('checked', false);
 
-		if (chasm_save.nSkill7_1) $("#nSkill7_1").prop('checked', true);
-		if (chasm_save.nSkill7_2) $("#nSkill7_2").prop('checked', true);
-		if (chasm_save.nSkill7_3) $("#nSkill7_3").prop('checked', true);
-		if (chasm_save.nSkill7_4) $("#nSkill7_4").prop('checked', true);
-		if (chasm_save.nSkill7_5) $("#nSkill7_5").prop('checked', true);
-		if (chasm_save.nSkill7_6) $("#nSkill7_6").prop('checked', true);
+		if (chasm_save.nSkill7_1) $("#nSkill7_1").prop('checked', true); else $("#nSkill7_1").prop('checked', false);
+		if (chasm_save.nSkill7_2) $("#nSkill7_2").prop('checked', true); else $("#nSkill7_2").prop('checked', false);
+		if (chasm_save.nSkill7_3) $("#nSkill7_3").prop('checked', true); else $("#nSkill7_3").prop('checked', false);
+		if (chasm_save.nSkill7_4) $("#nSkill7_4").prop('checked', true); else $("#nSkill7_4").prop('checked', false);
+		if (chasm_save.nSkill7_5) $("#nSkill7_5").prop('checked', true); else $("#nSkill7_5").prop('checked', false);
+		if (chasm_save.nSkill7_6) $("#nSkill7_6").prop('checked', true); else $("#nSkill7_6").prop('checked', false);
 
-		if (chasm_save.nSkill8_1) $("#nSkill8_1").prop('checked', true);
-		if (chasm_save.nSkill8_2) $("#nSkill8_2").prop('checked', true);
-		if (chasm_save.nSkill8_3) $("#nSkill8_3").prop('checked', true);
-		if (chasm_save.nSkill8_4) $("#nSkill8_4").prop('checked', true);
-		if (chasm_save.nSkill8_5) $("#nSkill8_5").prop('checked', true);
-		if (chasm_save.nSkill8_6) $("#nSkill8_6").prop('checked', true);
+		if (chasm_save.nSkill8_1) $("#nSkill8_1").prop('checked', true); else $("#nSkill8_1").prop('checked', false);
+		if (chasm_save.nSkill8_2) $("#nSkill8_2").prop('checked', true); else $("#nSkill8_2").prop('checked', false);
+		if (chasm_save.nSkill8_3) $("#nSkill8_3").prop('checked', true); else $("#nSkill8_3").prop('checked', false);
+		if (chasm_save.nSkill8_4) $("#nSkill8_4").prop('checked', true); else $("#nSkill8_4").prop('checked', false);
+		if (chasm_save.nSkill8_5) $("#nSkill8_5").prop('checked', true); else $("#nSkill8_5").prop('checked', false);
+		if (chasm_save.nSkill8_6) $("#nSkill8_6").prop('checked', true); else $("#nSkill8_6").prop('checked', false);
 
-		if (chasm_save.nSkill9_1) $("#nSkill9_1").prop('checked', true);
-		if (chasm_save.nSkill9_2) $("#nSkill9_2").prop('checked', true);
-		if (chasm_save.nSkill9_3) $("#nSkill9_3").prop('checked', true);
-		if (chasm_save.nSkill9_4) $("#nSkill9_4").prop('checked', true);
-		if (chasm_save.nSkill9_5) $("#nSkill9_5").prop('checked', true);
-		if (chasm_save.nSkill9_6) $("#nSkill9_6").prop('checked', true);
+		if (chasm_save.nSkill9_1) $("#nSkill9_1").prop('checked', true); else $("#nSkill9_1").prop('checked', false);
+		if (chasm_save.nSkill9_2) $("#nSkill9_2").prop('checked', true); else $("#nSkill9_2").prop('checked', false);
+		if (chasm_save.nSkill9_3) $("#nSkill9_3").prop('checked', true); else $("#nSkill9_3").prop('checked', false);
+		if (chasm_save.nSkill9_4) $("#nSkill9_4").prop('checked', true); else $("#nSkill9_4").prop('checked', false);
+		if (chasm_save.nSkill9_5) $("#nSkill9_5").prop('checked', true); else $("#nSkill9_5").prop('checked', false);
+		if (chasm_save.nSkill9_6) $("#nSkill9_6").prop('checked', true); else $("#nSkill9_6").prop('checked', false);
 
-		if (chasm_save.nSkill10_1) $("#nSkill10_1").prop('checked', true);
-		if (chasm_save.nSkill10_2) $("#nSkill10_2").prop('checked', true);
-		if (chasm_save.nSkill10_3) $("#nSkill10_3").prop('checked', true);
-		if (chasm_save.nSkill10_4) $("#nSkill10_4").prop('checked', true);
-		if (chasm_save.nSkill10_5) $("#nSkill10_5").prop('checked', true);
-		if (chasm_save.nSkill10_6) $("#nSkill10_6").prop('checked', true);
+		if (chasm_save.nSkill10_1) $("#nSkill10_1").prop('checked', true); else $("#nSkill10_1").prop('checked', false);
+		if (chasm_save.nSkill10_2) $("#nSkill10_2").prop('checked', true); else $("#nSkill10_2").prop('checked', false);
+		if (chasm_save.nSkill10_3) $("#nSkill10_3").prop('checked', true); else $("#nSkill10_3").prop('checked', false);
+		if (chasm_save.nSkill10_4) $("#nSkill10_4").prop('checked', true); else $("#nSkill10_4").prop('checked', false);
+		if (chasm_save.nSkill10_5) $("#nSkill10_5").prop('checked', true); else $("#nSkill10_5").prop('checked', false);
+		if (chasm_save.nSkill10_6) $("#nSkill10_6").prop('checked', true); else $("#nSkill10_6").prop('checked', false);
 
-		if (chasm_save.nSkill11_1) $("#nSkill11_1").prop('checked', true);
-		if (chasm_save.nSkill11_2) $("#nSkill11_2").prop('checked', true);
-		if (chasm_save.nSkill11_3) $("#nSkill11_3").prop('checked', true);
-		if (chasm_save.nSkill11_4) $("#nSkill11_4").prop('checked', true);
-		if (chasm_save.nSkill11_5) $("#nSkill11_5").prop('checked', true);
-		if (chasm_save.nSkill11_6) $("#nSkill11_6").prop('checked', true);
+		if (chasm_save.nSkill11_1) $("#nSkill11_1").prop('checked', true); else $("#nSkill11_1").prop('checked', false);
+		if (chasm_save.nSkill11_2) $("#nSkill11_2").prop('checked', true); else $("#nSkill11_2").prop('checked', false);
+		if (chasm_save.nSkill11_3) $("#nSkill11_3").prop('checked', true); else $("#nSkill11_3").prop('checked', false);
+		if (chasm_save.nSkill11_4) $("#nSkill11_4").prop('checked', true); else $("#nSkill11_4").prop('checked', false);
+		if (chasm_save.nSkill11_5) $("#nSkill11_5").prop('checked', true); else $("#nSkill11_5").prop('checked', false);
+		if (chasm_save.nSkill11_6) $("#nSkill11_6").prop('checked', true); else $("#nSkill11_6").prop('checked', false);
 
-		if (chasm_save.nSkill12_1) $("#nSkill12_1").prop('checked', true);
-		if (chasm_save.nSkill12_2) $("#nSkill12_2").prop('checked', true);
-		if (chasm_save.nSkill12_3) $("#nSkill12_3").prop('checked', true);
-		if (chasm_save.nSkill12_4) $("#nSkill12_4").prop('checked', true);
-		if (chasm_save.nSkill12_5) $("#nSkill12_5").prop('checked', true);
-		if (chasm_save.nSkill12_6) $("#nSkill12_6").prop('checked', true);
+		if (chasm_save.nSkill12_1) $("#nSkill12_1").prop('checked', true); else $("#nSkill12_1").prop('checked', false);
+		if (chasm_save.nSkill12_2) $("#nSkill12_2").prop('checked', true); else $("#nSkill12_2").prop('checked', false);
+		if (chasm_save.nSkill12_3) $("#nSkill12_3").prop('checked', true); else $("#nSkill12_3").prop('checked', false);
+		if (chasm_save.nSkill12_4) $("#nSkill12_4").prop('checked', true); else $("#nSkill12_4").prop('checked', false);
+		if (chasm_save.nSkill12_5) $("#nSkill12_5").prop('checked', true); else $("#nSkill12_5").prop('checked', false);
+		if (chasm_save.nSkill12_6) $("#nSkill12_6").prop('checked', true); else $("#nSkill12_6").prop('checked', false);
 
-		if (chasm_save.nSkill13_1) $("#nSkill13_1").prop('checked', true);
-		if (chasm_save.nSkill13_2) $("#nSkill13_2").prop('checked', true);
-		if (chasm_save.nSkill13_3) $("#nSkill13_3").prop('checked', true);
-		if (chasm_save.nSkill13_4) $("#nSkill13_4").prop('checked', true);
-		if (chasm_save.nSkill13_5) $("#nSkill13_5").prop('checked', true);
-		if (chasm_save.nSkill13_6) $("#nSkill13_6").prop('checked', true);
+		if (chasm_save.nSkill13_1) $("#nSkill13_1").prop('checked', true); else $("#nSkill13_1").prop('checked', false);
+		if (chasm_save.nSkill13_2) $("#nSkill13_2").prop('checked', true); else $("#nSkill13_2").prop('checked', false);
+		if (chasm_save.nSkill13_3) $("#nSkill13_3").prop('checked', true); else $("#nSkill13_3").prop('checked', false);
+		if (chasm_save.nSkill13_4) $("#nSkill13_4").prop('checked', true); else $("#nSkill13_4").prop('checked', false);
+		if (chasm_save.nSkill13_5) $("#nSkill13_5").prop('checked', true); else $("#nSkill13_5").prop('checked', false);
+		if (chasm_save.nSkill13_6) $("#nSkill13_6").prop('checked', true); else $("#nSkill13_6").prop('checked', false);
 
-		if (chasm_save.nSkill14_1) $("#nSkill14_1").prop('checked', true);
-		if (chasm_save.nSkill14_2) $("#nSkill14_2").prop('checked', true);
-		if (chasm_save.nSkill14_3) $("#nSkill14_3").prop('checked', true);
-		if (chasm_save.nSkill14_4) $("#nSkill14_4").prop('checked', true);
-		if (chasm_save.nSkill14_5) $("#nSkill14_5").prop('checked', true);
-		if (chasm_save.nSkill14_6) $("#nSkill14_6").prop('checked', true);
+		if (chasm_save.nSkill14_1) $("#nSkill14_1").prop('checked', true); else $("#nSkill14_1").prop('checked', false);
+		if (chasm_save.nSkill14_2) $("#nSkill14_2").prop('checked', true); else $("#nSkill14_2").prop('checked', false);
+		if (chasm_save.nSkill14_3) $("#nSkill14_3").prop('checked', true); else $("#nSkill14_3").prop('checked', false);
+		if (chasm_save.nSkill14_4) $("#nSkill14_4").prop('checked', true); else $("#nSkill14_4").prop('checked', false);
+		if (chasm_save.nSkill14_5) $("#nSkill14_5").prop('checked', true); else $("#nSkill14_5").prop('checked', false);
+		if (chasm_save.nSkill14_6) $("#nSkill14_6").prop('checked', true); else $("#nSkill14_6").prop('checked', false);
 
-		if (chasm_save.nSkill15_1) $("#nSkill15_1").prop('checked', true);
-		if (chasm_save.nSkill15_2) $("#nSkill15_2").prop('checked', true);
-		if (chasm_save.nSkill15_3) $("#nSkill15_3").prop('checked', true);
-		if (chasm_save.nSkill15_4) $("#nSkill15_4").prop('checked', true);
-		if (chasm_save.nSkill15_5) $("#nSkill15_5").prop('checked', true);
-		if (chasm_save.nSkill15_6) $("#nSkill15_6").prop('checked', true);
+		if (chasm_save.nSkill15_1) $("#nSkill15_1").prop('checked', true); else $("#nSkill15_1").prop('checked', false);
+		if (chasm_save.nSkill15_2) $("#nSkill15_2").prop('checked', true); else $("#nSkill15_2").prop('checked', false);
+		if (chasm_save.nSkill15_3) $("#nSkill15_3").prop('checked', true); else $("#nSkill15_3").prop('checked', false);
+		if (chasm_save.nSkill15_4) $("#nSkill15_4").prop('checked', true); else $("#nSkill15_4").prop('checked', false);
+		if (chasm_save.nSkill15_5) $("#nSkill15_5").prop('checked', true); else $("#nSkill15_5").prop('checked', false);
+		if (chasm_save.nSkill15_6) $("#nSkill15_6").prop('checked', true); else $("#nSkill15_6").prop('checked', false);
 
-		if (chasm_save.nSkill16_1) $("#nSkill16_1").prop('checked', true);
-		if (chasm_save.nSkill16_2) $("#nSkill16_2").prop('checked', true);
-		if (chasm_save.nSkill16_3) $("#nSkill16_3").prop('checked', true);
-		if (chasm_save.nSkill16_4) $("#nSkill16_4").prop('checked', true);
-		if (chasm_save.nSkill16_5) $("#nSkill16_5").prop('checked', true);
-		if (chasm_save.nSkill16_6) $("#nSkill16_6").prop('checked', true);
+		if (chasm_save.nSkill16_1) $("#nSkill16_1").prop('checked', true); else $("#nSkill16_1").prop('checked', false);
+		if (chasm_save.nSkill16_2) $("#nSkill16_2").prop('checked', true); else $("#nSkill16_2").prop('checked', false);
+		if (chasm_save.nSkill16_3) $("#nSkill16_3").prop('checked', true); else $("#nSkill16_3").prop('checked', false);
+		if (chasm_save.nSkill16_4) $("#nSkill16_4").prop('checked', true); else $("#nSkill16_4").prop('checked', false);
+		if (chasm_save.nSkill16_5) $("#nSkill16_5").prop('checked', true); else $("#nSkill16_5").prop('checked', false);
+		if (chasm_save.nSkill16_6) $("#nSkill16_6").prop('checked', true); else $("#nSkill16_6").prop('checked', false);
 
-		if (chasm_save.nSkill17_1) $("#nSkill17_1").prop('checked', true);
-		if (chasm_save.nSkill17_2) $("#nSkill17_2").prop('checked', true);
-		if (chasm_save.nSkill17_3) $("#nSkill17_3").prop('checked', true);
-		if (chasm_save.nSkill17_4) $("#nSkill17_4").prop('checked', true);
-		if (chasm_save.nSkill17_5) $("#nSkill17_5").prop('checked', true);
-		if (chasm_save.nSkill17_6) $("#nSkill17_6").prop('checked', true);
+		if (chasm_save.nSkill17_1) $("#nSkill17_1").prop('checked', true); else $("#nSkill17_1").prop('checked', false);
+		if (chasm_save.nSkill17_2) $("#nSkill17_2").prop('checked', true); else $("#nSkill17_2").prop('checked', false);
+		if (chasm_save.nSkill17_3) $("#nSkill17_3").prop('checked', true); else $("#nSkill17_3").prop('checked', false);
+		if (chasm_save.nSkill17_4) $("#nSkill17_4").prop('checked', true); else $("#nSkill17_4").prop('checked', false);
+		if (chasm_save.nSkill17_5) $("#nSkill17_5").prop('checked', true); else $("#nSkill17_5").prop('checked', false);
+		if (chasm_save.nSkill17_6) $("#nSkill17_6").prop('checked', true); else $("#nSkill17_6").prop('checked', false);
 
-		if (chasm_save.nSkill18_1) $("#nSkill18_1").prop('checked', true);
-		if (chasm_save.nSkill18_2) $("#nSkill18_2").prop('checked', true);
-		if (chasm_save.nSkill18_3) $("#nSkill18_3").prop('checked', true);
-		if (chasm_save.nSkill18_4) $("#nSkill18_4").prop('checked', true);
-		if (chasm_save.nSkill18_5) $("#nSkill18_5").prop('checked', true);
-		if (chasm_save.nSkill18_6) $("#nSkill18_6").prop('checked', true);
+		if (chasm_save.nSkill18_1) $("#nSkill18_1").prop('checked', true); else $("#nSkill18_1").prop('checked', false);
+		if (chasm_save.nSkill18_2) $("#nSkill18_2").prop('checked', true); else $("#nSkill18_2").prop('checked', false);
+		if (chasm_save.nSkill18_3) $("#nSkill18_3").prop('checked', true); else $("#nSkill18_3").prop('checked', false);
+		if (chasm_save.nSkill18_4) $("#nSkill18_4").prop('checked', true); else $("#nSkill18_4").prop('checked', false);
+		if (chasm_save.nSkill18_5) $("#nSkill18_5").prop('checked', true); else $("#nSkill18_5").prop('checked', false);
+		if (chasm_save.nSkill18_6) $("#nSkill18_6").prop('checked', true); else $("#nSkill18_6").prop('checked', false);
 
-		if (chasm_save.wClarityLight1) $("#wClarityLight1").prop('checked', true);
-		if (chasm_save.wClarityLight2) $("#wClarityLight2").prop('checked', true);
-		if (chasm_save.wClarityLight3) $("#wClarityLight3").prop('checked', true);
-		if (chasm_save.wClarityLight4) $("#wClarityLight4").prop('checked', true);
+		if (chasm_save.wClarityLight1) $("#wClarityLight1").prop('checked', true); else $("#wClarityLight1").prop('checked', false);
+		if (chasm_save.wClarityLight2) $("#wClarityLight2").prop('checked', true); else $("#wClarityLight2").prop('checked', false);
+		if (chasm_save.wClarityLight3) $("#wClarityLight3").prop('checked', true); else $("#wClarityLight3").prop('checked', false);
+		if (chasm_save.wClarityLight4) $("#wClarityLight4").prop('checked', true); else $("#wClarityLight4").prop('checked', false);
 	
-		if (chasm_save.wClaritySevere1) $("#wClaritySevere1").prop('checked', true);
-		if (chasm_save.wClaritySevere2) $("#wClaritySevere2").prop('checked', true);
-		if (chasm_save.wClaritySevere3) $("#wClaritySevere3").prop('checked', true);
-		if (chasm_save.wClaritySevere4) $("#wClaritySevere4").prop('checked', true);
+		if (chasm_save.wClaritySevere1) $("#wClaritySevere1").prop('checked', true); else $("#wClaritySevere1").prop('checked', false);
+		if (chasm_save.wClaritySevere2) $("#wClaritySevere2").prop('checked', true); else $("#wClaritySevere2").prop('checked', false);
+		if (chasm_save.wClaritySevere3) $("#wClaritySevere3").prop('checked', true); else $("#wClaritySevere3").prop('checked', false);
+		if (chasm_save.wClaritySevere4) $("#wClaritySevere4").prop('checked', true); else $("#wClaritySevere4").prop('checked', false);
 	
-		if (chasm_save.wClarityCritical1) $("#wClarityCritical1").prop('checked', true);
-		if (chasm_save.wClarityCritical2) $("#wClarityCritical2").prop('checked', true);
+		if (chasm_save.wClarityCritical1) $("#wClarityCritical1").prop('checked', true); else $("#wClarityCritical1").prop('checked', false);
+		if (chasm_save.wClarityCritical2) $("#wClarityCritical2").prop('checked', true); else $("#wClarityCritical2").prop('checked', false);
 	
-		if (chasm_save.wHealthLight1) $("#wHealthLight1").prop('checked', true);
-		if (chasm_save.wHealthLight2) $("#wHealthLight2").prop('checked', true);
-		if (chasm_save.wHealthLight3) $("#wHealthLight3").prop('checked', true);
-		if (chasm_save.wHealthLight4) $("#wHealthLight4").prop('checked', true);
+		if (chasm_save.wHealthLight1) $("#wHealthLight1").prop('checked', true); else $("#wHealthLight1").prop('checked', false);
+		if (chasm_save.wHealthLight2) $("#wHealthLight2").prop('checked', true); else $("#wHealthLight2").prop('checked', false);
+		if (chasm_save.wHealthLight3) $("#wHealthLight3").prop('checked', true); else $("#wHealthLight3").prop('checked', false);
+		if (chasm_save.wHealthLight4) $("#wHealthLight4").prop('checked', true); else $("#wHealthLight4").prop('checked', false);
 
-		if (chasm_save.wHealthSevere1) $("#wHealthSevere1").prop('checked', true);
-		if (chasm_save.wHealthSevere2) $("#wHealthSevere2").prop('checked', true);
-		if (chasm_save.wHealthSevere3) $("#wHealthSevere3").prop('checked', true);
-		if (chasm_save.wHealthSevere4) $("#wHealthSevere4").prop('checked', true);
+		if (chasm_save.wHealthSevere1) $("#wHealthSevere1").prop('checked', true); else $("#wHealthSevere1").prop('checked', false);
+		if (chasm_save.wHealthSevere2) $("#wHealthSevere2").prop('checked', true); else $("#wHealthSevere2").prop('checked', false);
+		if (chasm_save.wHealthSevere3) $("#wHealthSevere3").prop('checked', true); else $("#wHealthSevere3").prop('checked', false);
+		if (chasm_save.wHealthSevere4) $("#wHealthSevere4").prop('checked', true); else $("#wHealthSevere4").prop('checked', false);
 
-		if (chasm_save.wHealthCritical1) $("#wHealthCritical1").prop('checked', true);
-		if (chasm_save.wHealthCritical2) $("#wHealthCritical2").prop('checked', true);
+		if (chasm_save.wHealthCritical1) $("#wHealthCritical1").prop('checked', true); else $("#wHealthCritical1").prop('checked', false);
+		if (chasm_save.wHealthCritical2) $("#wHealthCritical2").prop('checked', true); else $("#wHealthCritical2").prop('checked', false);
 
-		if (chasm_save.wStressLight1) $("#wStressLight1").prop('checked', true);
-		if (chasm_save.wStressLight2) $("#wStressLight2").prop('checked', true);
-		if (chasm_save.wStressLight3) $("#wStressLight3").prop('checked', true);
-		if (chasm_save.wStressLight4) $("#wStressLight4").prop('checked', true);
+		if (chasm_save.wStressLight1) $("#wStressLight1").prop('checked', true); else $("#wStressLight1").prop('checked', false);
+		if (chasm_save.wStressLight2) $("#wStressLight2").prop('checked', true); else $("#wStressLight2").prop('checked', false);
+		if (chasm_save.wStressLight3) $("#wStressLight3").prop('checked', true); else $("#wStressLight3").prop('checked', false);
+		if (chasm_save.wStressLight4) $("#wStressLight4").prop('checked', true); else $("#wStressLight4").prop('checked', false);
 
-		if (chasm_save.wStressSevere1) $("#wStressSevere1").prop('checked', true);
-		if (chasm_save.wStressSevere2) $("#wStressSevere2").prop('checked', true);
-		if (chasm_save.wStressSevere3) $("#wStressSevere3").prop('checked', true);
-		if (chasm_save.wStressSevere4) $("#wStressSevere4").prop('checked', true);
+		if (chasm_save.wStressSevere1) $("#wStressSevere1").prop('checked', true); else $("#wStressSevere1").prop('checked', false);
+		if (chasm_save.wStressSevere2) $("#wStressSevere2").prop('checked', true); else $("#wStressSevere2").prop('checked', false);
+		if (chasm_save.wStressSevere3) $("#wStressSevere3").prop('checked', true); else $("#wStressSevere3").prop('checked', false);
+		if (chasm_save.wStressSevere4) $("#wStressSevere4").prop('checked', true); else $("#wStressSevere4").prop('checked', false);
 
-		if (chasm_save.wStressCritical1) $("#wStressCritical1").prop('checked', true);
-		if (chasm_save.wStressCritical2) $("#wStressCritical2").prop('checked', true);
+		if (chasm_save.wStressCritical1) $("#wStressCritical1").prop('checked', true); else $("#wStressCritical1").prop('checked', false);
+		if (chasm_save.wStressCritical2) $("#wStressCritical2").prop('checked', true); else $("#wStressCritical2").prop('checked', false);
 	}
 }
 
