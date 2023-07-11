@@ -1860,13 +1860,16 @@ function copySave() {
 	document.body.removeChild(textArea);
 }
 
-
 function autoSave() {
 	//storeSave();
 }
 
 function clearSave() {
-	lib_chasm_delete_save(save_path);
+	if (confirm("Creating a new character will erase your current sheet. Consider exporting your character first.")) {
+		lib_chasm_delete_save(save_path);
+		loadSaveFromObject(new saveData());
+		refreshUi();
+	}
 }
 
 function downloadSave() {
@@ -1907,6 +1910,7 @@ function importHandler() {
 		reader.onload = function() {
 			loadSaveFromObject(JSON.parse(this.result));
 			refreshUi();
+			storeSave();
 		}
 	}
 }
